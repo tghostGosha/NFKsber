@@ -1,0 +1,103 @@
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "../../node_modules/swiper/swiper-bundle.min";
+@import "../../node_modules/swiper/swiper.scss";
+@import "../../node_modules/swiper/modules/navigation/navigation.scss";
+
+
+@import "fonts";
+@import "header";
+@import "hero";
+@import "popular-services";
+@import "ideas";
+
+:root {
+  --primary-green: #44953D;
+  --secondary-green: #2D7A26;
+  --primary-grey: #F4F6F8;
+  --grey-button: #E4EAEE;
+  --white: #ffffff;
+  --primary-text: #1D252C;
+  --secondary-text: #6D7889;
+
+}
+
+body {
+  font-family: Segoe UI;
+  font-size: 16px;
+  line-height: 22px;
+  background-color: #ffffff;
+  color: var(--primary-text)
+}
+
+.container {
+  max-width: 1280px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: #1D252C;
+  outline: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: gilroy;
+  margin: 0;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 38px;
+  margin-bottom: 40px;
+}
+
+h4 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 24px;
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+}
+
+button {
+  outline: 0;
+  border-radius: 5px;
+  text-align: center;
+  border: 0;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out 0.1s;
+}
+
+.primary-button {
+  background-color: var(--primary-green);
+  color: var(--white);
+}
+
+.primary-button:hover {
+  background-color: var(--secondary-green);
+}
+
+.grey-button {
+  background-color: var(--grey-button);
+  color: var(--primary-text);
+}
+
+@media (max-width: 768px) {
+  span {
+    font-size: 20px;
+  }
+
+  body {
+    background-color: bisque;
+  }
+}

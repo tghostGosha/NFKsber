@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+	<html lang="en">
+		<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Главная</title>
+</head>
+
+<body>
+	<header class="header">
+  <div class="header__line"></div>
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>   -->
+        </div>
+        <div class="modal-body">
+          <span class="modal-span">Получить бесплатную консультацию</span>
+          <h3 class="modal-title">Контактные данные</h3>
+          <button type="button" class="close close-btn" data-bs-dismiss="modal" aria-label="Close">
+            <svg width="14px" height="14px" class="svg-close-dims">
+                <use xlink:href="img/icons/icons.svg#close"></use>
+              </svg>
+          </button>
+          <form  class="modal__form">
+            <div class="modal__form-item">
+              <!-- <label for="exampleFormControlInput1" class="form-label">Email address</label> -->
+              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Фамилия, имя и отчество*">
+            </div>
+            <div class="modal__form-item">
+              <!-- <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label> -->
+              <input type="tel" class="form-control" id="exampleFormControlInput" placeholder="Мобильный телефон*">
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+              <!-- <span class="form-check-icon"><svg width="14px" height="10px" class="svg-Check-dims">
+                <use xlink:href="img/icons/icons.svg#Check"></use>
+              </svg></span> -->
+              <label class="form-check-label" for="flexCheckChecked">
+                Даю согласие на <a href="#">обработку персональных данных</a> <br> и <a href="#">подтверждаю согласие на коммуникацию</a>
+              </label>
+            </div>
+            <div class="col-auto">
+              <button type="submit" class="button primary-button modal__form-btn">Отправить</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="container header__container">
+    <a href="#" class="header__link-phone">8 800 200-84-84</a>
+    <a   type="button" class="header__link-consalt" data-bs-toggle="modal" data-bs-target="#exampleModal">Получить бесплатную консультанцию</a>
+    
+    <a href="#" class="header__link-demo"> Демо счет</a>
+    <a href="#" class="header__link-login">
+      <svg width="20px" height="20px" class="svg-LogIn-dims">
+        <use xlink:href="img/icons/icons.svg#LogIn"></use>
+      </svg>
+      <span class="login-span">Личный кабинет</span>
+    </a>
+    <div class="header__logo">
+      <a href="#" class="logo__first">
+        <img src="img/logo/logo-first.png">
+      </a>
+      <a href="#" class="logo__second">
+        <img src="img/logo/logo-second.png">
+      </a>
+    </div>
+    <nav class="header__nav">
+      <ul class="header__nav-list">
+        <li class="header__nav-item">
+          <a href="#" class="dropdown-toggle" role="button">Тарифы</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="#" class="dropdown-toggle" role="button" id="dropdownMenuServices" data-bs-toggle="dropdown"
+            aria-expanded="false">Услуги</a>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuServices">
+            <li><a class="dropdown-item" href="#">Брокеркое обслуживание</a></li>
+            <li><a class="dropdown-item" href="#">Доверительное управление</a></li>
+            <li><a class="dropdown-item" href="#">Финансирование без справок
+              и поручителей на любые цели!</a></li>
+            <li><a class="dropdown-item" href="#">Универсальный инвестиционный счёт</a></li>
+            <li><a class="dropdown-item" href="#">Индивидуальный инвестиционный счёт</a></li>
+            <li><a class="dropdown-item" href="#">Обслуживание на валютном рынке</a></li>
+            <li><a class="dropdown-item" href="#">Обслуживание на рынке драгоценных металлов</a></li>
+            
+            <li><a class="dropdown-item" href="#">Депозитарная деятельность</a></li>
+            <li><a class="dropdown-item" href="#">Статус квалифицированного инвестора</a></li>
+          </ul>
+        </li>
+        <li class="header__nav-item">Аналитика</li>
+        <li class="header__nav-item">Обучение</li>
+        <li class="header__nav-item">
+          <a href="#" class="dropdown-toggle" role="button" id="dropdownMenuCompany" data-bs-toggle="dropdown"
+            aria-expanded="false">Компания</a>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuCompany">
+            <li><a class="dropdown-item" href="about.html">О компании</a></li>
+            <li><a class="dropdown-item" href="#">Раскрытие информации</a></li>
+            <li><a class="dropdown-item" href="#">Электронный документооборот</a></li>
+            <li><a class="dropdown-item" href="#">Иностранным налогоплательщикам</a></li>
+            <li><a class="dropdown-item" href="#">Форум</a></li>
+            <li><a class="dropdown-item" href="#">Вопрос-ответ</a></li>
+          </ul>
+        </li>
+        <li class="header__nav-item">Контакты</li>
+      </ul>
+    </nav>
+    <button class="button primary-button header__button">Контакты</button>
+  </div>
+</header>
+	<main></main>
+	<footer>
+  
+</footer>
+</body>
+
+</html>
