@@ -1,0 +1,272 @@
+.brokers__hero {
+  background-color: var(--primary-grey);
+  height: 480px;
+
+  &-container {
+    background-image: url('../img/brokerage-services/hero.png');
+    padding: 24px 50% 43px 0;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+  }
+
+  &-title {
+    margin-bottom: 24px;
+  }
+
+  &-buttons {
+    display: inline-block;
+    margin-top: auto;
+
+    &-grey {
+      padding: 14px 32px;
+      margin-right: 32px;
+      border-radius: 5px;
+    }
+  }
+}
+
+.brokers__card-img {
+  display: block;
+  width: 620px;
+  height: 280px;
+
+}
+
+.brokers__list {
+  padding-left: 20px;
+  margin-bottom: 92px;
+
+  &-item {
+    position: relative;
+  }
+
+  &-item:not(:last-child) {
+    margin-bottom: 18px;
+  }
+
+  &-item::before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: var(--primary-green);
+    top: 10px;
+    left: -20px;
+  }
+}
+
+.brokers__description {
+  padding-top: 64px;
+}
+
+.brokers__about {
+  margin-bottom: 64px;
+
+  &-title {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  &-card {
+    display: flex;
+    margin-top: 40px;
+    background-color: var(--primary-grey);
+    border-radius: 10px;
+
+    &-left {
+      background-image: url('../img/brokerage-services/about.png');
+      background-repeat: no-repeat;
+      background-position: center bottom;
+    }
+
+    &-right {
+      padding: 40px 48px 40px 16px;
+    }
+  }
+}
+
+.card-left {
+  display: block;
+  width: 620px;
+  height: 280px;
+}
+
+.card-right {
+  max-width: 620px;
+}
+
+.brokers__conditions {
+  margin-bottom: 64px;
+
+  &-title {
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+}
+
+.conditions-container {
+  display: flex;
+}
+
+.conditions__card {
+  max-width: 392px;
+
+  &-header {
+    width: 98px;
+    height: 98px;
+    margin: 0 auto;
+    background-color: var(--primary-grey);
+    border-radius: 10px;
+    padding: 22px 27px;
+    margin-bottom: 24px;
+  }
+
+  &-title {
+    text-align: center;
+    margin-bottom: 16px;
+  }
+
+  &-description {
+    padding: 0 5px;
+    text-align: center;
+    color: var(--secondary-text);
+  }
+}
+
+.conditions__card:not(:last-child) {
+  margin-right: 32px;
+}
+
+.brokers__app {
+  margin-bottom: 64px;
+
+  &-card {
+    display: flex;
+    background-color: var(--primary-grey);
+    border-radius: 10px;
+    padding-top: 40px;
+
+    &-left {
+      padding: 0 0 40px 48px;
+    }
+
+    &-right {
+      background-image: url('../img/brokerage-services/app.png');
+      background-repeat: no-repeat;
+      background-size: 80%;
+      background-position: center bottom;
+    }
+  }
+
+  &-list {
+    margin-bottom: 34px;
+  }
+
+  &-buttons {
+    display: flex;
+  }
+}
+
+.google-btn {
+  margin: 0;
+  display: block;
+  width: 168px;
+  height: 46px;
+  background-color: var(--primary-text);
+  border-radius: 5px;
+  transition: all 0.1s ease-in-out 0.1s;
+  background-image: url('../img/brokerage-services/google-play.png');
+  background-repeat: no-repeat;
+  background-size: 85%;
+  background-position: center center;
+  margin-right: 24px;
+}
+
+.app-btn {
+  display: block;
+  width: 151px;
+  height: 46px;
+  background-color: var(--primary-text);
+  border-radius: 5px;
+  transition: all 0.1s ease-in-out 0.1s;
+  background-image: url('../img/brokerage-services/app-store.png');
+  background-repeat: no-repeat;
+  background-size: 85%;
+  background-position: center center;
+}
+
+.brokers__service {
+  margin-bottom: 64px;
+
+  &-card {
+    border-radius: 10px;
+    padding-top: 40px;
+    background-color: var(--primary-grey);
+    display: flex;
+    height: 422px;
+
+    &-left {
+      height: 382px;
+      background-image: url('../img/brokerage-services/service.png');
+      background-repeat: no-repeat;
+      background-size: 80%;
+      background-position: center bottom;
+    }
+  }
+
+  &-list {
+    margin: 0;
+  }
+}
+
+.brokers__education {
+  margin-bottom: 64px;
+
+  &-title {
+    color: #ffffff;
+  }
+
+  &-description {
+    color: #ffffff;
+    margin-bottom: 40px;
+  }
+
+  &-card {
+    background-color: var(--primary-text);
+    border-radius: 10px;
+    padding-top: 40px;
+    display: flex;
+    &-right {
+      background-image: url('../img/brokerage-services/education.png');
+      background-repeat: no-repeat;
+      background-size: 80%;
+      background-position: center bottom;
+    }
+    &-left {
+      padding: 40px 10px 40px 40px;
+    }
+  }
+
+  &-buttons {
+    display: flex;
+  }
+}
+.education-btn {
+  border: 1px solid var(--grey-button);
+  border-radius: 5px;
+  background-color: inherit;
+  transition: all 0.1s ease-in-out 0.1s;
+  padding: 18px 26px;
+  color: var(--grey-button);
+  margin-right: 28px;
+}
+.demo-btn {
+  background-color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  color: var(--primary-text);
+  transition: all 0.1s ease-in-out 0.1s;
+  padding: 18px 26px;
+}
