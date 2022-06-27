@@ -18,7 +18,8 @@
     "bootstrap": "^5.2.0-beta1",
     "gulp-cli": "^2.3.0",
     "inputmask": "^5.0.7",
-    "jquery": "^3.6.0"
+    "jquery": "^3.6.0",
+    "just-validate": "^3.8.1"
   },
   "devDependencies": {
     "browser-sync": "latest",

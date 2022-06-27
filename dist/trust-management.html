@@ -263,37 +263,55 @@
     </section>
     <section class="trust__about">
       <div class="container">
-        <form  class="trust__form">
-          <div class="trust__form-item">
-            <!-- <label for="exampleFormControlInput1" class="form-label">Email address</label> -->
-            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Фамилия, имя и отчество*">
-          </div>
-          <div class="trust__form-item">
-            <!-- <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label> -->
-            <input type="tel" class="form-control" id="exampleFormControlInput" placeholder="Мобильный телефон*">
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-            <!-- <span class="form-check-icon"><svg width="14px" height="10px" class="svg-Check-dims">
-              <use xlink:href="img/icons/icons.svg#Check"></use>
-            </svg></span> -->
-            <label class="form-check-label" for="flexCheckChecked">
-              Даю согласие на <a href="#">обработку персональных данных</a> <br> и <a href="#">подтверждаю согласие на коммуникацию</a>
-            </label>
-          </div>
-          <div class="col-auto">
-            <button type="submit" class="button primary-button trust__form-btn">Отправить</button>
-          </div>
-        </form>
+        <div class="window__account">
+          <h3 class="window__account-title">Открытие брокерского счета</h3>
+          <form action="#" class="account__form" id="accountform">
+            <div class="account__form-text">
+              <!-- <label for="firstname">Enter your name</label> -->
+              <input type="text" class="account__form-input" id="firstname" placeholder="Фамилия*">
+            </div>
+            <div class="account__form-text">
+              <!-- <label for="exampleFormControlInput1" class="form-label">Email address</label> -->
+              <input type="text" class="account__form-input" id="secondname" placeholder="Имя*">
+            </div>
+            <div class="account__form-text">
+              <!-- <label for="exampleFormControlInput1" class="form-label">Email address</label> -->
+              <input type="text" class="account__form-input" id="surname" placeholder="Отчество*">
+            </div>
+            <div class="account__form-tel">
+              <!-- <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label> -->
+              <input type="tel" class="account__form-input " id="tel" placeholder="Мобильный телефон*">
+            </div>
+            <div class="account__form-mail">
+              <!-- <label for="mail">Enter your name</label> -->
+              <input type="email" class="account__form-input " id="mail" placeholder="Электронная почта*">
+            </div>
+            <span class="account__form-transcription">* - поля, обязательные для заполнения</span>
+            <div class="form-check account__form-check">
+              <input class="form-check-input" type="checkbox" value="" id="accountCheck" checked>
+              <!-- <span class="form-check-icon"><svg width="14px" height="10px" class="svg-Check-dims">
+                <use xlink:href="img/icons/icons.svg#Check"></use>
+              </svg></span> -->
+              <label class="form-check-label" for="accountCheck">
+                <span class="check-span">Даю согласие на</span> <a href="#">обработку персональных данных</a> <br> <span class="check-span">и</span><a href="#">подтверждаю согласие на
+                  коммуникацию</a>
+              </label>
+            </div>
+            <button type="submit" class="button primary-button account__form-btn">Отправить</button>
+          </form>
+        </div>
+
         <div class="trust__about-block">
           <p class="trust__about-description">Перед заключением договора доверительного управления компания составляет
             Инвестиционный профиль. Инвестиционный профиль представляет собой сведения о доходности от доверительного
             управления, на которую рассчитывает клиент (ожидаемой доходности), риске, который способен нести в рамках
-            определенной стратегии управления и периоде времени, за который определяются ожидаемая доходность и допустимый
+            определенной стратегии управления и периоде времени, за который определяются ожидаемая доходность и
+            допустимый
             риск (инвестиционный горизонт).
           </p>
           <p class="trust__about-description">Приглашаем вас посетить офис нашей компании, где наши специалисты с
-            готовностью ответят на все возникающие вопросы и разъяснят как преимущества доверительного управления в целом,
+            готовностью ответят на все возникающие вопросы и разъяснят как преимущества доверительного управления в
+            целом,
             так и возможности, доступные даже начинающим инвесторам, располагающим относительно небольшими суммами. Мы
             определим ваш индивидуальный инвестиционный профиль на базе тех данных, которые вы нам предоставите, и
             подберем для вас индивидуальную стратегию управления – вы сможете регулярно контролировать результаты
@@ -304,7 +322,8 @@
             получать от государства предусмотренное Налоговым кодексом РФ возмещение налога на доходы физических лиц в
             сумме до 52 000 рублей ежегодно.
           </p>
-          <p class="trust__about-description">С документами, связанными с доверительным управлением, можно ознакомиться по
+          <p class="trust__about-description">С документами, связанными с доверительным управлением, можно ознакомиться
+            по
             следующей ссылке.
           </p>
           <p class="trust__about-description">С информацией о стандартных стратегиях управления можно ознакомиться по
@@ -314,11 +333,12 @@
             является гарантией или обещанием эффективности деятельности (доходности вложений) Информация подлежит
             раскрытию на основании п. 5.2 Положения Банка России от 03.08.2015 N 482-П.
           </p>
-        </div >
-        
+        </div>
+
         <div class="trust__about-consult">
           <span class="consult-text">Заполните заявку для получения консультации</span>
-          <a  type="button" class="button primary-button consult-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Получить консультанцию</a>
+          <a type="button" class="button primary-button consult-btn" data-bs-toggle="modal"
+            data-bs-target="#exampleModal">Получить консультанцию</a>
         </div>
       </div>
       <div class="trust__about-line"></div>

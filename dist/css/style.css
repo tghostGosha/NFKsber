@@ -11700,7 +11700,7 @@ button.swiper-pagination-bullet {
 
 .form-check-input:focus,
 .form-control:focus {
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 0px 16px rgba(29, 37, 44, 0.16);
   border: 1px solid var(--secondary-text);
 }
 
@@ -12357,11 +12357,11 @@ button.swiper-pagination-bullet {
   border-top: 1px solid var(--grey-button);
 }
 
-.trust__form {
+.window__account {
   position: relative;
   top: -67px;
   width: 816px;
-  height: 659px;
+  height: 673px;
   margin: 0 auto;
   background: #FFFFFF;
   border: 1px solid var(--grey-button);
@@ -12369,6 +12369,90 @@ button.swiper-pagination-bullet {
   border-radius: 10px;
   border-top: 12px solid var(--primary-text);
   padding: 52px 106px;
+}
+.window__account-title {
+  text-align: center;
+}
+
+.account__form {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  row-gap: 24px;
+  column-gap: 32px;
+}
+.account__form-text {
+  position: relative;
+  grid-column: 1/span 6;
+}
+.account__form-text:focus {
+  box-shadow: 0px 0px 16px rgba(29, 37, 44, 0.16);
+  border: 1px solid var(--secondary-text);
+}
+.account__form-input {
+  display: block;
+  outline: none;
+  width: 100%;
+  padding: 17px 0 16px 26px;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  appearance: none;
+  border-radius: 0.375rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.account__form-input:focus {
+  box-shadow: 0px 0px 16px rgba(29, 37, 44, 0.16);
+  border: 1px solid var(--secondary-text);
+}
+.account__form-input.is-valid {
+  border: 1px solid var(--primary-green);
+  color: var(--primary-green);
+}
+.account__form-input.is-invalid {
+  border: 1px solid rgb(220, 53, 69);
+  color: rgb(220, 53, 69);
+}
+.account__form-tel {
+  position: relative;
+  grid-column: 1/span 3;
+}
+.account__form-mail {
+  position: relative;
+  grid-column: 4/span 3;
+}
+.account__form-transcription {
+  grid-column: 1/span 6;
+  color: var(--secondary-text);
+  font-size: 14px;
+  line-height: 18px;
+  border-bottom: 1px solid var(--grey-button);
+  padding-bottom: 28px;
+}
+.account__form-check {
+  grid-column: 1/span 4;
+  margin: 0;
+}
+.account__form-check > .just-validate-error-label {
+  left: -1px;
+}
+.account__form-btn {
+  padding: 14px 32px;
+  grid-column: 5/span 2;
+  align-items: flex-end;
+  color: #dc3545;
+}
+
+.just-validate-error-label {
+  position: absolute;
+  top: -21px;
+}
+
+.check-span {
+  color: var(--secondary-text);
 }
 
 :root {
