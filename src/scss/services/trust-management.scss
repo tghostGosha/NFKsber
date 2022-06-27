@@ -1,0 +1,193 @@
+.trust__strategy {
+  padding-bottom: 133px;
+}
+
+.trust__hero {
+  background-color: var(--primary-grey);
+  height: 480px;
+
+  &-container {
+    background-image: url('../img/trust-management/hero.png');
+    padding: 24px 50% 64px 0;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    height: 100%;
+  }
+
+  &-title {
+    margin-bottom: 24px;
+  }
+
+  &-description {
+    margin-bottom: 115px;
+  }
+
+  &-button {
+    display: inline-block;
+    margin-top: auto;
+    border-radius: 5px;
+  }
+}
+
+
+.strategy__about {
+  margin-bottom: 64px;
+
+  &-card {
+    display: flex;
+    margin-top: 40px;
+    background-color: var(--primary-grey);
+    border-radius: 10px;
+
+    &-left {
+      background-image: url('../img/trust-management/strategy-about.png');
+      background-repeat: no-repeat;
+      background-position: center bottom;
+      display: block;
+      width: 620px;
+      height: 298px;
+    }
+
+    &-right {
+      padding: 40px 8px 40px 16px;
+      max-width: 620px;
+    }
+  }
+}
+
+.trust__strategy {
+  &-title {
+
+    margin-bottom: 40px;
+  }
+
+  &-cards-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &-card {
+    display: flex;
+    border-radius: 10px;
+    border: 1px solid var(--grey-button);
+    border-radius: 10px;
+  }
+
+  &-card:not(:last-child) {
+    margin-bottom: 24px;
+  }
+}
+
+.strategy-card__left {
+  width: 423px;
+  height: 339px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background-color: var(--primary-grey);
+
+  &-img-container {}
+}
+
+.strategy-card__right {
+  padding: 40px 46px;
+
+}
+
+.card__right {
+  &-title {
+    margin-bottom: 16px;
+  }
+
+  &-description {
+    margin-bottom: 16px;
+  }
+
+  &-conditions {
+    border-top: 1px solid var(--grey-button);
+    display: flex;
+    padding-top: 16px;
+    padding-bottom: 1px;
+    margin-bottom: 30px;
+  }
+
+  &-button {
+    padding: 14px 32px;
+  }
+}
+
+.conditions-bet {
+
+  &-title {
+    font-family: gilroy;
+    position: relative;
+    margin: 0;
+  }
+
+  &-title span {
+    color: var(--primary-text);
+    position: absolute;
+    top: -5px;
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  &-description {
+    color: var(--secondary-text);
+  }
+}
+
+.conditions-element:not(:last-child) {
+  margin-right: 48px;
+}
+
+.trust__about {
+  background-color: var(--primary-grey);
+  position: relative;
+  &-description {
+    color: var(--secondary-text);
+    font-size: 14px;
+    line-height: 19px;
+    
+  }
+
+  &-description:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  &-block {
+    margin-bottom: 64px;
+  }
+  &-consult {
+    padding-top: 22px;
+    padding-bottom: 21px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.consult-text {
+  color: var(--secondary-text);
+}
+.consult-btn {
+  padding: 16px 32px;
+}
+.trust__about-line {
+  width: 100%;
+  position: absolute;
+  bottom: 96px;
+  border-top: 1px solid  var(--grey-button);
+}
+.trust__form {
+  position: relative;
+  top: -67px;
+  width: 816px;
+  height: 659px;
+  margin: 0 auto;
+  background: #FFFFFF;
+  border: 1px solid var(--grey-button);
+  box-shadow: 0px 0px 16px rgba(29, 37, 44, 0.16);
+  border-radius: 10px;
+  border-top: 12px solid var(--primary-text);
+  padding: 52px 106px;
+}
+

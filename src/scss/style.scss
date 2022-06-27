@@ -9,7 +9,8 @@
 @import "hero";
 @import "popular-services";
 @import "ideas";
-@import "brokerage-servoces/brokers-hero.scss";
+@import "services/brokers-hero.scss";
+@import "services/trust-management.scss";
 
 :root {
   --primary-green: #44953D;
@@ -41,7 +42,9 @@ a {
   color: #1D252C;
   outline: none;
 }
-
+p {
+  margin: 0;
+}
 h1,
 h2,
 h3,
@@ -92,10 +95,13 @@ button {
 .primary-button {
   background-color: var(--primary-green);
   color: var(--white);
+  border-radius: 5px;
+  
 }
 
 .primary-button:hover {
   background-color: var(--secondary-green);
+  color: #ffffff;
 }
 
 .grey-button {
