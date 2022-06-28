@@ -58,6 +58,7 @@
 
 .brokers__description {
   padding-top: 64px;
+  padding-bottom: 128px;
 }
 
 .brokers__about {
@@ -222,7 +223,7 @@
 }
 
 .brokers__education {
-  margin-bottom: 64px;
+  
 
   &-title {
     color: #ffffff;
@@ -238,12 +239,14 @@
     border-radius: 10px;
     padding-top: 40px;
     display: flex;
+
     &-right {
       background-image: url('../img/brokerage-services/education.png');
       background-repeat: no-repeat;
       background-size: 80%;
       background-position: center bottom;
     }
+
     &-left {
       padding: 40px 10px 40px 40px;
     }
@@ -253,6 +256,7 @@
     display: flex;
   }
 }
+
 .education-btn {
   border: 1px solid var(--grey-button);
   border-radius: 5px;
@@ -262,6 +266,7 @@
   color: var(--grey-button);
   margin-right: 28px;
 }
+
 .demo-btn {
   background-color: #ffffff;
   border: none;
@@ -269,4 +274,23 @@
   color: var(--primary-text);
   transition: all 0.1s ease-in-out 0.1s;
   padding: 18px 26px;
+}
+
+.brokers__info {
+  background: linear-gradient(180deg, #F4F6F8 0%, rgba(244, 246, 248, 0) 100%);
+  position: relative;
+  &-consult {
+    padding-top: 22px;
+    padding-bottom: 21px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &-line {
+    width: 100%;
+    position: absolute;
+    bottom: 96px;
+    border-top: 1px solid var(--grey-button);
+  }
 }

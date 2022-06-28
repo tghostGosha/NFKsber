@@ -11893,7 +11893,7 @@ button.swiper-pagination-bullet {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-button: 32px;
+  margin-bottom: 32px;
 }
 .footer__contacts-list {
   display: flex;
@@ -11905,6 +11905,53 @@ button.swiper-pagination-bullet {
 .footer__contacts-social-list {
   display: flex;
   align-items: center;
+}
+.footer-info {
+  margin-bottom: 32px;
+  padding-right: 459px;
+}
+.footer-info-text {
+  color: var(--secondary-text);
+  font-size: 14px;
+  line-height: 19px;
+}
+.footer__consult {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 22px 0;
+  position: relative;
+}
+.footer__consult-text {
+  color: var(--secondary-text);
+  font-size: 14px;
+  line-height: 19px;
+}
+.footer__consult-btn {
+  padding: 16px 32px;
+  color: var(--secondary-text);
+}
+.footer__consult-line {
+  left: -265px;
+  width: 200%;
+  position: absolute;
+  border-top: 1px solid var(--grey-button);
+}
+.footer__copyright {
+  padding: 37px 0;
+}
+.footer__copyright-text {
+  color: var(--secondary-text);
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.top-line {
+  top: 0;
+}
+
+.bottom-line {
+  bottom: 0;
 }
 
 .social__list-item:not(:last-child) {
@@ -12183,6 +12230,7 @@ button.swiper-pagination-bullet {
 
 .brokers__description {
   padding-top: 64px;
+  padding-bottom: 128px;
 }
 
 .brokers__about {
@@ -12329,9 +12377,6 @@ button.swiper-pagination-bullet {
   margin: 0;
 }
 
-.brokers__education {
-  margin-bottom: 64px;
-}
 .brokers__education-title {
   color: #ffffff;
 }
@@ -12375,6 +12420,24 @@ button.swiper-pagination-bullet {
   color: var(--primary-text);
   transition: all 0.1s ease-in-out 0.1s;
   padding: 18px 26px;
+}
+
+.brokers__info {
+  background: linear-gradient(180deg, #F4F6F8 0%, rgba(244, 246, 248, 0) 100%);
+  position: relative;
+}
+.brokers__info-consult {
+  padding-top: 22px;
+  padding-bottom: 21px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.brokers__info-line {
+  width: 100%;
+  position: absolute;
+  bottom: 96px;
+  border-top: 1px solid var(--grey-button);
 }
 
 .trust__strategy {
@@ -12838,6 +12901,28 @@ button {
   font-size: 14px;
   line-height: 19px;
   color: var(--secondary-text);
+  transition: all 0.1s ease-in-out 0.1s;
+}
+
+.page-link:focus,
+.page-link:hover {
+  color: var(--primary-text);
+  background-color: inherit;
+  outline: none;
+  box-shadow: none;
+}
+
+.page-item {
+  outline: none;
+  border: none;
+}
+
+.page-item:hover .page-link,
+.page-item:focus .page-link {
+  color: var(--primary-text);
+  background-color: inherit;
+  outline: none;
+  box-shadow: none;
 }
 
 .bi-chevron-right {
