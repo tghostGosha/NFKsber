@@ -6,11 +6,14 @@
 
 @import "fonts";
 @import "header";
+@import "footer";
+@import "window-account";
 @import "hero";
 @import "popular-services";
 @import "ideas";
 @import "services/brokers-hero.scss";
 @import "services/trust-management.scss";
+@import "services/universal-account.scss";
 
 :root {
   --primary-green: #44953D;
@@ -20,6 +23,7 @@
   --white: #ffffff;
   --primary-text: #1D252C;
   --secondary-text: #6D7889;
+  --primary-blue: #428BF9;
 
 }
 
@@ -72,6 +76,11 @@ h4 {
   line-height: 28px;
   margin-bottom: 24px;
 }
+h5 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+}
 
 ul,
 li {
@@ -80,8 +89,8 @@ li {
   padding: 0;
 }
 img {
-  width: 100%;
-  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
 }
 button {
   outline: 0;

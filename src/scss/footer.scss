@@ -1,0 +1,81 @@
+.footer {
+  background-color: var(--primary-grey);
+  padding-top: 68px;
+
+  &__nav {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 32px;
+    margin-bottom: 31px;
+
+    &-title {
+      margin-bottom: 16px;
+    }
+
+    &-services {
+      display: flex;
+      flex-direction: column;
+      grid-column: 1/ span 4;
+    }
+
+    &-news {
+      display: flex;
+      flex-direction: column;
+      grid-column: 5/ span 4;
+    }
+
+    &-company {
+      display: flex;
+      flex-direction: column;
+      grid-column: 9/ span 4;
+    }
+
+    &-item:not(:last-child) {
+      margin-bottom: 12px;
+    }
+
+    &-link {
+      color: var(--secondary-text);
+      font-size: 14px;
+      line-height: 19px;
+      transition: all 0.1s ease-in-out 0.1s;
+    }
+
+    &-link:hover {
+      color: var(--primary-text);
+    }
+  }
+
+  &__contacts {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    &-list {
+      display: flex;
+      align-items: center;
+      &-item:not(:last-child) {
+        margin-right: 30px;
+      }
+    }
+     &-social-list {
+      display: flex;
+      align-items: center;
+      
+     }
+
+  }
+}
+.social__list-item:not(:last-child) {
+  margin-right: 27px;
+}
+.social__list-icon {
+  display: block;
+}
+.svg-social {
+  transition: all 0.1s ease-in-out 0.1s;
+}
+.svg-social:hover,
+.svg-social:focus {
+  color: var(--primary-green);
+}
