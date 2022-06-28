@@ -41,7 +41,8 @@
       transition: all 0.1s ease-in-out 0.1s;
     }
 
-    &-link:hover {
+    &-link:hover,
+    &-link:focus {
       color: var(--primary-text);
     }
 
@@ -141,7 +142,28 @@
   transition: all 0.1s ease-in-out 0.1s;
 }
 
-.svg-social:hover,
-.svg-social:focus {
-  color: var(--primary-green);
+// .svg-social:hover,
+// .svg-social:focus {
+//   color: var(--primary-green);
+// }
+.svg-vk-dims:hover,
+.svg-vk-dims:focus {
+  color: #4C75A3;
+}
+.svg-fb-dims:hover,
+.svg-fb-dims:focus {
+  color: #3b5998;
+}
+.svg-twitter-dims:hover,
+.svg-twitter-dims:focus {
+  color: #00acee;
+}
+.svg-classmates-dims:hover,
+.svg-classmates-dims:focus {
+  color: #ed812b;
+}
+.svg-vc-dims:hover,
+.svg-vc-dims:focus {
+  color: red;
+ 
 }
