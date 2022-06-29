@@ -54,7 +54,8 @@ p {
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5 {
   font-family: gilroy;
   margin: 0;
 }
@@ -83,19 +84,8 @@ h5 {
   font-size: 16px;
   line-height: 21px;
 }
-td {
-  color: var(--secondary-text);
-}
-th {
-  font-family: gilroy;
-  font-weight: 700;
-}
-td,
-th {
-  // text-align: center;
-  vertical-align: top;  
-  padding: 20px 0 !important;
-}
+
+
 ul,
 li {
   list-style: none;
@@ -147,10 +137,11 @@ button {
   --bs-pagination-border-width: none;
   display: flex;
   align-items: center;
-  margin-bottom: 46px;
+  margin-bottom: 47px;
 }
 
 .page-link {
+  padding: 0;
   font-weight: 400;
   font-size: 14px;
   line-height: 19px;
@@ -177,4 +168,6 @@ button {
 }
 .bi-chevron-right {
   color: var(--secondary-text);
+  margin-right: 12px;
+  margin-left: 12px;
 }

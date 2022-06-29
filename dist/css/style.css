@@ -11640,8 +11640,8 @@ button.swiper-pagination-bullet {
   font-style: normal;
 }
 .header {
-  padding-top: 13px;
-  padding-bottom: 19px;
+  padding-top: 14px;
+  padding-bottom: 21px;
 }
 
 .modal-dialog {
@@ -11755,7 +11755,7 @@ button.swiper-pagination-bullet {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   column-gap: 32px;
-  row-gap: 32px;
+  row-gap: 28px;
 }
 
 .header__link-phone {
@@ -11782,17 +11782,25 @@ button.swiper-pagination-bullet {
   grid-row: 1/span 1;
 }
 
+.svg-LogIn-dims {
+  margin-right: 16px;
+}
+
 .header__logo {
   display: flex;
   align-items: center;
-  grid-column: 1/span 2;
+  grid-column: 1/span 3;
   grid-row: 2/span 1;
+}
+
+.logo__first {
+  margin-right: 10px;
 }
 
 .header__nav {
   display: flex;
   align-items: center;
-  grid-column: 3/span 7;
+  grid-column: 4/span 7;
   grid-row: 2/span 1;
 }
 
@@ -11806,11 +11814,11 @@ button.swiper-pagination-bullet {
 }
 
 .header__nav-item:not(:last-child) {
-  margin-right: 32px;
+  margin-right: 54px;
 }
 
 .header__button {
-  grid-column: 12/span 1;
+  grid-column: 11/span 2;
   grid-row: 2/span 1;
   padding: 10px 26px;
 }
@@ -12797,9 +12805,9 @@ button.swiper-pagination-bullet {
 }
 .rates__hero-container {
   background-image: url("../img/rates/rates-hero.png");
-  padding: 24px 50% 43px 0;
+  padding: 24px 50% 59px 0;
   background-repeat: no-repeat;
-  background-position: right bottom;
+  background-position: 636px bottom;
 }
 .rates__hero-title {
   margin-bottom: 190px;
@@ -12815,6 +12823,7 @@ button.swiper-pagination-bullet {
 }
 
 .rates__table {
+  position: relative;
   padding-top: 67px;
 }
 .rates__table-nav {
@@ -12839,7 +12848,131 @@ button.swiper-pagination-bullet {
 }
 
 .tab-content {
-  padding-top: 36px;
+  padding-top: 17px;
+}
+
+.tr-title {
+  margin-top: 40px;
+  margin-bottom: 28px;
+}
+
+.primary-text-color {
+  color: var(--primary-text);
+}
+
+.primary-text {
+  color: var(--primary-text);
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.secondary-text {
+  color: var(--secondary-text);
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.secondary-text-color {
+  color: var(--secondary-text);
+}
+
+.tr-border {
+  border-bottom: 1px solid var(--grey-button);
+  border-top: 1px solid var(--grey-button);
+}
+
+tr,
+td,
+table,
+th {
+  border: none;
+}
+
+td {
+  color: var(--secondary-text);
+  font-size: 16px;
+  line-height: 19px;
+}
+
+th {
+  font-family: gilroy;
+  font-weight: 700;
+}
+
+th {
+  padding: 20px 0 !important;
+}
+
+td {
+  vertical-align: top;
+  padding: 20px 16px 20px 0 !important;
+}
+
+.rates__about-line {
+  width: 100%;
+  position: absolute;
+  bottom: 96px;
+  border-top: 1px solid var(--grey-button);
+}
+
+.svg-pdf-dims {
+  width: 48px;
+  height: 48px;
+  color: var(--primary-green);
+}
+
+.memo__info {
+  padding-top: 68px;
+  padding-bottom: 112px;
+}
+.memo__info-title {
+  font-weight: 700;
+  line-height: 22px;
+  margin-bottom: 40px;
+}
+.memo__info-conditions {
+  margin-bottom: 20px;
+}
+.memo__info-description {
+  margin-bottom: 68px;
+}
+.memo__info-link {
+  display: flex;
+  max-width: 350px;
+  align-items: center;
+  transition: all 0.1s ease-in-out 0.1s;
+  margin-bottom: 68px;
+}
+.memo__info-link:hover .svg-pdf-dims, .memo__info-link:focus .svg-pdf-dims {
+  color: #3eb30f;
+}
+.memo__info-link:hover .brief-info, .memo__info-link:focus .brief-info {
+  color: #3eb30f;
+}
+.memo__info-footnotes-first {
+  color: var(--secondary-text);
+  font-size: 14px;
+  line-height: 19px;
+  margin-bottom: 20px;
+}
+.memo__info-footnotes-second {
+  color: var(--secondary-text);
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.info__link-text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 18px;
+}
+
+.brief-info {
+  margin-bottom: 2px;
+}
+
+.file-size {
+  color: var(--secondary-text);
 }
 
 :root {
@@ -12883,7 +13016,9 @@ h2,
 h3,
 .h3,
 h4,
-.h4 {
+.h4,
+h5,
+.h5 {
   font-family: gilroy;
   margin: 0;
 }
@@ -12912,21 +13047,6 @@ h5, .h5 {
   font-weight: 600;
   font-size: 16px;
   line-height: 21px;
-}
-
-td {
-  color: var(--secondary-text);
-}
-
-th {
-  font-family: gilroy;
-  font-weight: 700;
-}
-
-td,
-th {
-  vertical-align: top;
-  padding: 20px 0 !important;
 }
 
 ul,
@@ -12979,10 +13099,11 @@ button {
   --bs-pagination-border-width: none;
   display: flex;
   align-items: center;
-  margin-bottom: 46px;
+  margin-bottom: 47px;
 }
 
 .page-link {
+  padding: 0;
   font-weight: 400;
   font-size: 14px;
   line-height: 19px;
@@ -13013,4 +13134,6 @@ button {
 
 .bi-chevron-right {
   color: var(--secondary-text);
+  margin-right: 12px;
+  margin-left: 12px;
 }
