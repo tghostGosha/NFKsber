@@ -12791,6 +12791,57 @@ button.swiper-pagination-bullet {
   border-top: 1px solid var(--grey-button);
 }
 
+.rates__hero {
+  background-color: var(--primary-grey);
+  height: 480px;
+}
+.rates__hero-container {
+  background-image: url("../img/rates/rates-hero.png");
+  padding: 24px 50% 43px 0;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+.rates__hero-title {
+  margin-bottom: 190px;
+}
+.rates__hero-buttons {
+  display: inline-block;
+  margin-top: auto;
+}
+.rates__hero-buttons-grey {
+  padding: 14px 32px;
+  margin-right: 32px;
+  border-radius: 5px;
+}
+
+.rates__table {
+  padding-top: 67px;
+}
+.rates__table-nav {
+  justify-content: center;
+  margin-bottom: 36px;
+}
+
+.nav-pills .nav-link.active {
+  background-color: var(--primary-text);
+  color: #ffffff;
+}
+
+.nav-pills .nav-link {
+  border-radius: 40px;
+  background-color: var(--primary-grey);
+  color: var(--primary-text);
+  padding: 16px 24px;
+}
+
+.nav-item:not(:last-child) {
+  margin-right: 18px;
+}
+
+.tab-content {
+  padding-top: 36px;
+}
+
 :root {
   --primary-green: #44953D;
   --secondary-green: #2D7A26;
@@ -12861,6 +12912,21 @@ h5, .h5 {
   font-weight: 600;
   font-size: 16px;
   line-height: 21px;
+}
+
+td {
+  color: var(--secondary-text);
+}
+
+th {
+  font-family: gilroy;
+  font-weight: 700;
+}
+
+td,
+th {
+  vertical-align: top;
+  padding: 20px 0 !important;
 }
 
 ul,

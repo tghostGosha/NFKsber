@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-	<html lang="en">
-		<head>
+<html lang="en">
+<head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +10,8 @@
 </head>
 
 <body>
-	<header class="header">
+
+  <header class="header">
   <div class="header__line"></div>
   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
@@ -112,8 +113,125 @@
     <button class="button primary-button header__button">Контакты</button>
   </div>
 </header>
-	<main></main>
-	<footer class="footer">
+  <main>
+    <section class="rates__hero">
+      <div class="container">
+        <div class="rates__hero-container">
+          <nav aria-label="Page navigation example">
+            <ul class="pagination">
+              <li class="page-item"><a class="page-link" href="index.html">Главная</a></li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="8" height="16" fill="currentColor"
+                class="bi bi-chevron-right" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+              </svg>
+              <li class="page-item"><a class="page-link" href="rates.html">Тарифы</a></li>
+            </ul>
+          </nav>
+          <h2 class="rates__hero-title">Тарифы на брокерское
+            обслуживание</h2>
+          <div class="rates__hero-buttons">
+            <a type="button" class="header__link-consalt grey-button rates__hero-buttons-grey" data-bs-toggle="modal"
+              data-bs-target="#exampleModal">
+              Подробная информация о тарифах</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="rates__table">
+      <div class="container">
+        <!-- Nav tabs -->
+        <ul class="nav nav-pills rates__table-nav" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="memo-tab" data-bs-toggle="tab" data-bs-target="#memo" type="button"
+              role="tab" aria-controls="memo" aria-selected="true">Краткая памятка</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="stock-market-tab" data-bs-toggle="tab" data-bs-target="#stockMarket" type="button"
+              role="tab" aria-controls="stock-market" aria-selected="false">Сделки на биржах</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="messages-tab" data-bs-toggle="tab" data-bs-target="#messages" type="button"
+              role="tab" aria-controls="messages" aria-selected="false">Маржинальные сделки</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="settings-tab" data-bs-toggle="tab" data-bs-target="#settings" type="button"
+              role="tab" aria-controls="settings" aria-selected="false">Рынки Т+2</button>
+          </li>
+        </ul>
+
+        <!-- Tab panes -->
+        <div class="tab-content">
+          <div class="tab-pane active" id="memo" role="tabpanel" aria-labelledby="memo-tab" tabindex="0">
+            <table class="table">
+              <thead>
+                <tr>
+                  <td class="col-3" scope="col">Тарифы</td>
+                  <th scope="col" class="col-2">Минимальный дневной</th>
+                  <th scope="col" class="col-2">Инвестор</th>
+                  <th scope="col" class="col-2">Фиксированный</th>
+                  <th scope="col" class="col-2">Нулевая комиссия</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td scope="row">Абонентская плата</td>
+                  <th>0 ₽ в месяц</th>
+                  <th>0 ₽ в месяц</th>
+                  <th>8 000 ₽ в месяц</th>
+                  <th>0 ₽ в месяц</th>
+                </tr>
+                <tr>
+                  <td scope="row">Кому подходит</td>
+                  <td>Тариф подходит для активной торговли ликвидными инструментами фондового рынка, а также при совершении достаточно крупных сделок (от 100 тыс. руб.) с менее ликвидными инструментами и инструментами в рамках IPO.</td>
+                  <td>Тариф для начинающих инвесторов, а также инвесторов с относительно низкой частотой сделок или инвесторов с невысокими торговыми оборотами, совершающих сделки в т.ч. в рамках IDO</td>
+                  <td>Тариф для инвесторов, заключающих значительный объем сделок в месяц (от 4 млн руб.) и предпочитающих оплачивать ежемесячное фиксированное вознаграждение брокеру.</td>
+                  <td></td>
+                </tr>
+                
+              </tbody>
+            </table>  
+          </div>
+          <div class="tab-pane" id="stockMarket" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Fsdfsfst</th>
+                  <th scope="col">Lafsfsfst</th>
+                  <th scope="col">Hanfsfsffsdle</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>@fat</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td colspan="2">Larry the Bird</td>
+                  <td>@twitter</td>
+                </tr>
+              </tbody>
+            </table>  
+          </div>
+          <div class="tab-pane" id="messages" role="tabpanel" aria-labelledby="messages-tab" tabindex="0">...</div>
+          <div class="tab-pane" id="settings" role="tabpanel" aria-labelledby="settings-tab" tabindex="0">...</div>
+        </div>
+        
+      </div>
+
+    </section>
+  </main>
+  <footer class="footer">
   <div class="container">
     <div class="footer__nav">
       <ul class="footer__nav-services">
@@ -253,6 +371,13 @@
     </div>
   </div>
 </footer>
+  <script src="js/app.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
+  <!-- <script src="https://unpkg.com/@popperjs/core@2"></script> -->
+
+
 </body>
 
 </html>
