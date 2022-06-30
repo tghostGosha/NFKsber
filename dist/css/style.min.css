@@ -12740,19 +12740,6 @@ button.swiper-pagination-bullet {
   position: relative;
   padding-bottom: 112px;
 }
-.universal__about-important {
-  display: flex;
-  align-items: center;
-  background-color: #E8F1FE;
-  border-radius: 5px;
-  border-left: 5px solid var(--primary-blue);
-  padding: 26px 166px 26px 35px;
-  margin-bottom: 68px;
-}
-.universal__about-important-description {
-  font-size: 14px;
-  line-height: 19px;
-}
 .universal__about-description {
   position: relative;
   padding-left: 8px;
@@ -12797,6 +12784,7 @@ button.swiper-pagination-bullet {
 .rates__table {
   position: relative;
   padding-top: 67px;
+  padding-bottom: 112px;
 }
 .rates__table-nav {
   justify-content: center;
@@ -12843,6 +12831,12 @@ button.swiper-pagination-bullet {
   line-height: 19px;
 }
 
+.primary-text-market {
+  color: var(--primary-text);
+  font-size: 16px;
+  line-height: 22px;
+}
+
 .secondary-text {
   color: var(--secondary-text);
   font-size: 14px;
@@ -12860,6 +12854,10 @@ button.swiper-pagination-bullet {
   color: var(--secondary-text);
 }
 
+.tr-none-padding {
+  padding: 0 !important;
+}
+
 .tr-border {
   border-bottom: 1px solid var(--grey-button);
   border-top: 1px solid var(--grey-button);
@@ -12870,12 +12868,13 @@ td,
 table,
 th {
   border: none;
+  margin: 0 !important;
 }
 
 td {
   color: var(--secondary-text);
   font-size: 16px;
-  line-height: 19px;
+  line-height: 22px;
   vertical-align: top;
   padding: 20px 16px 20px 0 !important;
 }
@@ -12883,6 +12882,10 @@ td {
 th {
   font-family: gilroy;
   font-weight: 700;
+}
+
+.td-padding-20 {
+  padding: 20px 0 20px 60px !important;
 }
 
 .rates__about-line {
@@ -12961,6 +12964,26 @@ th {
   background-color: #ffffff;
   box-shadow: 0px 0px 16px rgba(29, 37, 44, 0.16);
   width: 100%;
+}
+
+.stockmarket__info-text {
+  position: relative;
+  color: var(--secondary-text);
+  font-size: 14px;
+  line-height: 19px;
+  padding-left: 10px;
+}
+.stockmarket__info-text:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.stock-market-title {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.rate-tite {
+  margin: 0;
 }
 
 :root {
@@ -13058,6 +13081,10 @@ button {
   transition: all 0.1s ease-in-out 0.1s;
 }
 
+.text-link {
+  color: var(--primary-green);
+}
+
 .primary-button {
   background-color: var(--primary-green);
   color: var(--white);
@@ -13131,4 +13158,25 @@ button {
   font-size: 7px;
   left: 0;
   top: -2px;
+}
+
+.letter-lowercase-end {
+  position: absolute;
+  font-size: 7px;
+  right: 0;
+  top: -5px;
+}
+
+.important__block {
+  display: flex;
+  align-items: center;
+  background-color: #E8F1FE;
+  border-radius: 5px;
+  border-left: 5px solid var(--primary-blue);
+  padding: 26px 166px 26px 35px;
+  margin: 68px 0;
+}
+.important__block-description {
+  font-size: 14px;
+  line-height: 19px;
 }

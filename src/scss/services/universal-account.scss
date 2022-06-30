@@ -145,19 +145,7 @@
   background: linear-gradient(180deg, #F4F6F8 0%, rgba(244, 246, 248, 0) 100%);
   position: relative;
   padding-bottom: 112px;
-  &-important {
-    display: flex;
-    align-items: center;
-    background-color: #E8F1FE;
-    border-radius: 5px;
-    border-left: 5px solid var(--primary-blue);
-    padding: 26px 166px 26px 35px;
-    margin-bottom: 68px; 
-    &-description {
-      font-size: 14px;
-      line-height: 19px;
-    }
-  }
+  
   &-description {
     position: relative;
     padding-left: 8px;
