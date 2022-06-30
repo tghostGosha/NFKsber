@@ -58,22 +58,22 @@
         <div class="tab-content">
           <div class="tab-pane active" id="memo" role="tabpanel" aria-labelledby="memo-tab" tabindex="0">
             <table class="table">
-              <thead>
+              <thead class="sticky-top">
                 <tr>
-                  <td class="col-3 fw-normal secondary-text-color" scope="col">Тарифы</td>
-                  <th scope="col" class="col-2">Минимальный дневной</th>
-                  <th scope="col" class="col-2">Инвестор</th>
-                  <th scope="col" class="col-2">Фиксированный</th>
-                  <th scope="col" align="right" class="col-2">Нулевая комиссия</th>
+                  <td class="col-3  weight-text" scope="col">Тарифы</td>
+                  <td scope="col" class="col-2 weight-text">Минимальный дневной</td>
+                  <td scope="col" class="col-2 weight-text">Инвестор</td>
+                  <td scope="col" class="col-2 weight-text">Фиксированный</td>
+                  <td scope="col" align="center" class="col-2 weight-text">Нулевая комиссия</td>
                 </tr>
               </thead>
               <tbody>
                 <tr class="tr-border">
                   <td class="col-2 fw-normal secondary-text-color " scope="row">Абонентская плата</td>
-                  <th>0 ₽ в месяц</th>
-                  <th>0 ₽ в месяц</th>
-                  <th>8 000 ₽ в месяц</th>
-                  <th align="right">0 ₽ в месяц</th>
+                  <td class="weight-text">0 ₽ в месяц</td>
+                  <td class="weight-text">0 ₽ в месяц</td>
+                  <td class="weight-text">8 000 ₽ в месяц</td>
+                  <td align="center" class="weight-text">0 ₽ в месяц</td>
                 </tr>
                 <tr>
                   <td class="col-2 fw-normal secondary-text-color" scope="row">Кому подходит</td>
@@ -89,115 +89,121 @@
                     предпочитающих оплачивать ежемесячное фиксированное вознаграждение брокеру.</td>
                   <td></td>
                 </tr>
+                <tr>
+                  <th colspan="12" class="tr-title">Фондовый рынок</th>
+                </tr>
+                <tr valign="top" class="tr-border">
+                  <td class="col-3 fw-normal secondary-text-color" scope="row">Абонентская плата</td>
+                  <td class="col-2 fw-normal primary-text-color">от 0.006% до 0.025%</td>
+                  <td class="col-2 fw-normal primary-text-color"> <span>0.2%</span> <br> <span
+                      class="secondary-text">включая биржевой<br>
+                      и клиринговый сборы</span> </td>
+                  <td class="col-2 fw-normal">Отсутствует</td>
+                  <td align="center" class="col-2 fw-normal  primary-text">1 ₽ <br><span class="secondary-text">в месяц1</span></td>
+                </tr>
+                <tr>
+                  <th colspan="12" class="tr-title">Валютный рынок и рынок драгоценных металлов</th>
+                </tr>
+                <tr valign="top" class="tr-border">
+                  <td class="col-3 fw-normal secondary-text-color" scope="row">Комиссия на валютной секции</td>
+                  <td class="col-2 fw-normal primary-text-color">от 0.008% до 0.032%</td>
+                  <td class="col-2 fw-normal primary-text-color"> <span>0.2%</span> <br> <span
+                      class="secondary-text">включая биржевой<br>
+                      и клиринговый сборы</span> </td>
+                  <td class="col-2 fw-normal">Отсутствует</td>
+                  <td  align="center" class="col-2 fw-normal  primary-text-color">От 0.008% до 0.032%</td>
+                </tr>
+                <tr valign="top" class="tr-border">
+                  <td class="col-3 fw-normal secondary-text-color" scope="row">Комиссия за сделки с золотом <br> и
+                    серебром</td>
+                  <td class="col-2 fw-normal  primary-text-color">0,1% <br><span class="secondary-text">от
+                      оборота</span>
+                  </td>
+                  <td class="col-2 fw-normal primary-text-color"> <span>0.2%</span> <br> <span
+                      class="secondary-text">включая биржевой<br>
+                      и клиринговый сборы</span> </td>
+                  <td class="col-2 fw-normal">Отсутствует</td>
+                  <td align="center" class="col-2 fw-normal  primary-text-color">0,1% <br><span class="secondary-text">от
+                      оборота</span>
+                  </td>
+                </tr>
+                <tr>
+                  <th colspan="12" class="tr-title">Срочный рынок</th>
+                </tr>
+                <tr valign="top" class="tr-border">
+                  <td class="col-3 fw-normal secondary-text-color" scope="row">Заключение сделок, исполнение <br>
+                    срочного контракта на Московской <br>
+                    бирже</td>
+                  <td align="center" colspan="6" class=" fw-normal primary-text-color">Комиссия равна биржевому сбору и
+                    взимается
+                    дополнительно к нему</td>
+                </tr>
+                <tr valign="top" class="tr-border">
+                  <td class="col-3 fw-normal secondary-text-color" scope="row">ГО для открытия и поддержания <br>
+                    открытой
+                    позиции по срочному <br> контракту</td>
+                  <td align="center" colspan="6" class="fw-normal primary-text-color">100 % от размера гарантийного
+                    обеспечения,
+                    установленного Московской биржей</td>
+                </tr>
+                <tr>
+                  <th colspan="12" class="tr-title">Депозитарий</th>
+                </tr> 
+                <tr valign="top" class="tr-border">
+                  <td class="col-3 fw-normal secondary-text-color" scope="row">Услуги депозитария</td>
+                  <td class="col-2 fw-normal  primary-text-color">35,40 ₽<br><span class="secondary-text">в месяц</span>
+                  </td>
+                  <td class="col-2 fw-normal primary-text-color">Отсутствует</td>
+                  <td class="col-2 fw-normal primary-text-color">Отсутствует</td>
+                  <td align="center" class="col-2 fw-normal  primary-text-color">35,40 ₽<br><span class="secondary-text">в месяц2</span>
+                  </td>
+                </tr>
+                <tr valign="top" class="tr-border">
+                  <td class="col-3 fw-normal secondary-text-color" scope="row">Плата за изменение нетто-позиции <br> по
+                    одному виду ценных бумаг при <br> условии переноса сделки на <br> след.торговый день</td>
+                  <td class="col-2 fw-normal  primary-text-color">100 ₽<br><span class="secondary-text">при совершении
+                      сделок с ценными бумагами, не включенными в перечень высоколиквидных инструментов</span></td>
+                  <td class="col-2 fw-normal primary-text-color">Отсутствует</td>
+                  <td class="col-2 fw-normal primary-text-color">Отсутствует</td>
+                  <td align="center" class="col-2 fw-normal  primary-text-color">100 ₽<br><span class="secondary-text">при совершении
+                      сделок с ценными бумагами, не включенными в перечень высоколиквидных инструментов</span></td>
+                </tr>
+                <tr valign="top" class="tr-border">
+                  <td class="col-3 fw-normal secondary-text-color" scope="row">Заключение сделки в следующих <br> режимах
+                    торгов: <br>
+                    1. МБ ФР: Первичное размещение <br> (Облигации) PSAU <br>
+                    2. МБ ФР: Первичное размещение <br> (Акции) PSSU</td>
+                  <td class="col-2 fw-normal  primary-text-color">100 ₽<br><span class="secondary-text">за каждую
+                      сделку</span></td>
+                  <td colspan="2" class="col-2 fw-normal primary-text-color">Клиент однократно для каждого выпуска
+                    освобождается от оплаты Дополнительных расходов, связанных с услугами вышестоящего депозитария, при
+                    размещении ценных бумаг в размере 100 ₽</td>
+                  <!-- <td class="col-2 fw-normal  primary-text-color"></td> -->
+                  <td align="center" class="col-2 fw-normal  primary-text-color">100 ₽<br><span class="secondary-text">за каждую
+                      сделку</span></td>
+                </tr> 
+                <tr>
+                  <th colspan="12" class="tr-title">Программное обеспечение</th>
+                </tr> 
+                <tr valign="top" class="tr-border">
+                  <td class="col-3 fw-normal secondary-text-color" scope="row">Абонентская плата за ИТС Брокер <br> и ИТС
+                    Нано</td>
+                  <td class="col-2 fw-normal  primary-text-color">Отсутствует</td>
+                  <td class="col-2 fw-normal primary-text-color">Отсутствует</td>
+                  <td class="col-2 fw-normal primary-text-color">Отсутствует</td>
+                  <td align="center" class="col-2 fw-normal  primary-text-color">Отсутствует</td>
+                </tr>
+                <tr valign="top" class="tr-border">
+                  <td class="col-3 fw-normal secondary-text-color" scope="row">Плата за ИТС QUIK, QUIK X <br> (IOS и
+                    Android) и webQUIK</td>
+                  <td class="col-2 fw-normal primary-text-color">Отсутствует</td>
+                  <td class="col-2 fw-normal primary-text-color">Отсутствует2</td>
+                  <td class="col-2 fw-normal primary-text-color">Отсутствует2</td>
+                  <td  align="center" class="col-2 fw-normal primary-text-color">Отсутствует2</td>
+                </tr>
               </tbody>
             </table>
-            <h4>Фондовый рынок</h4>
-            <table class="table">
-              <tr valign="top" class="tr-border">
-                <td class="col-3 fw-normal secondary-text-color" scope="row">Абонентская плата</td>
-                <td class="col-2 fw-normal primary-text-color">от 0.006% до 0.025%</td>
-                <td class="col-2 fw-normal primary-text-color" rowspan="2"> <span>0.2%</span> <br> <span
-                    class="secondary-text">включая биржевой<br>
-                    и клиринговый сборы</span> </td>
-                <td class="col-2 fw-normal">Отсутствует</td>
-                <td class="col-2 fw-normal  primary-text">1 ₽ <br><span class="secondary-text">в месяц1</span></td>
-              </tr>
-            </table>
-            <h4 class="tr-title">Валютный рынок и рынок драгоценных металлов</h4>
-            <table class="table">
-              <tr valign="top" class="tr-border">
-                <td class="col-3 fw-normal secondary-text-color" scope="row">Комиссия на валютной секции</td>
-                <td class="col-2 fw-normal primary-text-color">от 0.008% до 0.032%</td>
-                <td class="col-2 fw-normal primary-text-color"> <span>0.2%</span> <br> <span
-                    class="secondary-text">включая биржевой<br>
-                    и клиринговый сборы</span> </td>
-                <td class="col-2 fw-normal">Отсутствует</td>
-                <td class="col-2 fw-normal  primary-text-color">От 0.008% до 0.032%</td>
-              </tr>
-              <tr valign="top" class="tr-border">
-                <td class="col-3 fw-normal secondary-text-color" scope="row">Комиссия за сделки с золотом <br> и
-                  серебром</td>
-                <td class="col-2 fw-normal  primary-text-color">0,1% <br><span class="secondary-text">от оборота</span>
-                </td>
-                <td class="col-2 fw-normal primary-text-color"> <span>0.2%</span> <br> <span
-                    class="secondary-text">включая биржевой<br>
-                    и клиринговый сборы</span> </td>
-                <td class="col-2 fw-normal">Отсутствует</td>
-                <td class="col-2 fw-normal  primary-text-color">0,1% <br><span class="secondary-text">от оборота</span>
-                </td>
-              </tr>
-            </table>
-            <h4 class="tr-title">Срочный рынок</h4>
-            <table class="table">
-              <tr valign="top" class="tr-border">
-                <td class="col-3 fw-normal secondary-text-color" scope="row">Заключение сделок, исполнение <br>
-                  срочного контракта на Московской <br>
-                  бирже</td>
-                <td align="center" class="col-6 fw-normal primary-text-color">Комиссия равна биржевому сбору и взимается
-                  дополнительно к нему</td>
-              </tr>
-              <tr valign="top" class="tr-border">
-                <td class="col-3 fw-normal secondary-text-color" scope="row">ГО для открытия и поддержания <br> открытой
-                  позиции по срочному <br> контракту</td>
-                <td align="center" class="col-6 fw-normal primary-text-color">100 % от размера гарантийного обеспечения,
-                  установленного Московской биржей</td>
-              </tr>
-            </table>
-            <h4 class="tr-title">Депозитарий</h4>
-            <table class="table">
-              <tr valign="top" class="tr-border">
-                <td class="col-3 fw-normal secondary-text-color" scope="row">Услуги депозитария</td>
-                <td class="col-2 fw-normal  primary-text-color">35,40 ₽<br><span class="secondary-text">в месяц</span>
-                </td>
-                <td class="col-2 fw-normal primary-text-color">Отсутствует</td>
-                <td class="col-2 fw-normal primary-text-color">Отсутствует</td>
-                <td class="col-2 fw-normal  primary-text-color">35,40 ₽<br><span class="secondary-text">в месяц2</span>
-                </td>
-              </tr>
-              <tr valign="top" class="tr-border">
-                <td class="col-3 fw-normal secondary-text-color" scope="row">Плата за изменение нетто-позиции <br> по
-                  одному виду ценных бумаг при <br> условии переноса сделки на <br> след.торговый день</td>
-                <td class="col-2 fw-normal  primary-text-color">100 ₽<br><span class="secondary-text">при совершении
-                    сделок с ценными бумагами, не включенными в перечень высоколиквидных инструментов</span></td>
-                <td class="col-2 fw-normal primary-text-color">Отсутствует</td>
-                <td class="col-2 fw-normal primary-text-color">Отсутствует</td>
-                <td class="col-2 fw-normal  primary-text-color">100 ₽<br><span class="secondary-text">при совершении
-                    сделок с ценными бумагами, не включенными в перечень высоколиквидных инструментов</span></td>
-              </tr>
-              <tr valign="top" class="tr-border">
-                <td class="col-3 fw-normal secondary-text-color" scope="row">Заключение сделки в следующих <br> режимах
-                  торгов: <br>
-                  1. МБ ФР: Первичное размещение <br> (Облигации) PSAU <br>
-                  2. МБ ФР: Первичное размещение <br> (Акции) PSSU</td>
-                <td class="col-2 fw-normal  primary-text-color">100 ₽<br><span class="secondary-text">за каждую
-                    сделку</span></td>
-                <td colspan="2" class="col-2 fw-normal primary-text-color">Клиент однократно для каждого выпуска
-                  освобождается от оплаты Дополнительных расходов, связанных с услугами вышестоящего депозитария, при
-                  размещении ценных бумаг в размере 100 ₽</td>
-                <!-- <td class="col-2 fw-normal  primary-text-color"></td> -->
-                <td class="col-2 fw-normal  primary-text-color">100 ₽<br><span class="secondary-text">за каждую
-                    сделку</span></td>
-              </tr>
-            </table>
-            <h4 class="tr-title">Программное обеспечение</h4>
-            <table class="table">
-              <tr valign="top" class="tr-border">
-                <td class="col-3 fw-normal secondary-text-color" scope="row">Абонентская плата за ИТС Брокер <br> и ИТС
-                  Нано</td>
-                <td class="col-2 fw-normal  primary-text-color">Отсутствует</td>
-                <td class="col-2 fw-normal primary-text-color">Отсутствует</td>
-                <td class="col-2 fw-normal primary-text-color">Отсутствует</td>
-                <td class="col-2 fw-normal  primary-text-color">Отсутствует</td>
-              </tr>
-              <tr valign="top" class="tr-border">
-                <td class="col-3 fw-normal secondary-text-color" scope="row">Плата за ИТС QUIK, QUIK X <br> (IOS и
-                  Android) и webQUIK</td>
-                <td class="col-2 fw-normal primary-text-color">Отсутствует</td>
-                <td class="col-2 fw-normal primary-text-color">Отсутствует2</td>
-                <td class="col-2 fw-normal primary-text-color">Отсутствует2</td>
-                <td class="col-2 fw-normal primary-text-color">Отсутствует2</td>
-              </tr>
-            </table>
+
             <div class="memo__info">
               <h5 class="memo__info-title">Не является индивидуальной инвестиционной рекомендацией</h5>
               <p class="memo__info-conditions">Клиент несет иные расходы, которые могут возникнуть в связи с исполнением
@@ -223,11 +229,14 @@
                 </div>
               </a>
               <div class="memo__info-footnotes">
-                <p class="memo__info-footnotes-first"> 1 Оплата берется при наличии операций с ценными бумагами по счету клиента в отчетном месяце.
+                <p class="memo__info-footnotes-first"><span class="letter-lowercase">1</span> Оплата берется при наличии
+                  операций с ценными бумагами по счету клиента в отчетном месяце.
                 </p>
-                <p class="memo__info-footnotes-second">2 Плата 250 руб./мес. за ИТС QUIK, если совокупный размер активов на конец отчетного месяца менее 10 000
+                <p class="memo__info-footnotes-second"><span class="letter-lowercase">2</span> Плата 250 руб./мес. за
+                  ИТС QUIK, если совокупный размер активов на конец отчетного месяца менее 10 000
                   руб;
-                  плата за webQUIK и QUIK X равна 290 руб./мес., если совокупный размер активов на конец отчетного месяца
+                  плата за webQUIK и QUIK X равна 290 руб./мес., если совокупный размер активов на конец отчетного
+                  месяца
                   менее
                   100 000 руб.</p>
               </div>
@@ -267,14 +276,10 @@
           <div class="tab-pane" id="messages" role="tabpanel" aria-labelledby="messages-tab" tabindex="0">...</div>
           <div class="tab-pane" id="settings" role="tabpanel" aria-labelledby="settings-tab" tabindex="0">...</div>
         </div>
-        <div class="universal__about-consult">
-          <span class="consult-text">Заполните заявку для получения консультации</span>
-          <a type="button" class="button primary-button consult-btn" data-bs-toggle="modal"
-            data-bs-target="#exampleModal">Получить консультанцию</a>
-        </div>
-        
+
+
       </div>
-      <div class="rates__about-line"></div>
+      <!-- <div class="rates__about-line"></div> -->
     </section>
   </main>
   @@include('html/footer.html',{})

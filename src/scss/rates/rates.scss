@@ -56,8 +56,13 @@
 }
 
 .tr-title {
-  margin-top: 40px;
-  margin-bottom: 28px;
+  margin: 0;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+  font-family: gilroy;
+  color: var(--primary-text);
+  padding: 40px 0 28px 0 !important;
 }
 
 .primary-text-color {
@@ -75,7 +80,12 @@
   font-size: 14px;
   line-height: 19px;
 }
-
+.weight-text {
+  font-family: gilroy;
+  color: var(--primary-text);
+  font-weight: 700;
+  line-height: 22px;
+}
 .secondary-text-color {
   color: var(--secondary-text);
 
@@ -97,23 +107,13 @@ td {
   color: var(--secondary-text);
   font-size: 16px;
   line-height: 19px;
-
+  vertical-align: top;
+  padding: 20px 16px 20px 0 !important;
 }
 
 th {
   font-family: gilroy;
   font-weight: 700;
-}
-
-th {
-  padding: 20px 0 !important;
-}
-
-td {
-  // text-align: center;
-  vertical-align: top;
-  padding: 20px 16px 20px 0 !important;
-
 }
 
 .rates__about-line {
@@ -167,15 +167,20 @@ td {
 
   &-footnotes {
     &-first {
+      position: relative;
       color: var(--secondary-text);
       font-size: 14px;
       line-height: 19px;
       margin-bottom: 20px;
+      padding-left: 10px;
     }
+
     &-second {
+      position: relative;
       color: var(--secondary-text);
       font-size: 14px;
       line-height: 19px;
+      padding-left: 10px;
     }
   }
 }
@@ -192,4 +197,11 @@ td {
 
 .file-size {
   color: var(--secondary-text);
+}
+
+.sticky-top {
+  top: 10px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 16px rgba(29, 37, 44, 0.16);
+  width: 100%;
 }

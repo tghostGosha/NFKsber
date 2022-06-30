@@ -1,7 +1,20 @@
 .footer {
-  background-color: var(--primary-grey);
-  padding-top: 68px;
+  border-top: 1px solid var(--grey-button);
+  
+  &-consult {
+    
+    top: -80px;
+    padding-top: 22px;
+    padding-bottom: 21px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
+  }
+  &__section {
+    background-color: var(--primary-grey);
+    padding-top: 68px;
+  }
   &__nav {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -87,7 +100,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
+
     padding: 22px 0;
     position: relative;
 
@@ -150,20 +163,24 @@
 .svg-vk-dims:focus {
   color: #4C75A3;
 }
+
 .svg-fb-dims:hover,
 .svg-fb-dims:focus {
   color: #3b5998;
 }
+
 .svg-twitter-dims:hover,
 .svg-twitter-dims:focus {
   color: #00acee;
 }
+
 .svg-classmates-dims:hover,
 .svg-classmates-dims:focus {
   color: #ed812b;
 }
+
 .svg-vc-dims:hover,
 .svg-vc-dims:focus {
   color: red;
- 
+
 }
