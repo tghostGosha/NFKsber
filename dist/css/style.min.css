@@ -12758,6 +12758,113 @@ button.swiper-pagination-bullet {
   color: var(--primary-blue);
 }
 
+.metals__hero {
+  background-color: var(--primary-grey);
+  height: 480px;
+}
+.metals__hero-container {
+  background-image: url("../img/metals-market/metals-hero.png");
+  padding: 24px 52% 43px 0;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  height: 480px;
+}
+.metals__hero-title {
+  margin-bottom: 24px;
+}
+
+.metals__about {
+  padding-top: 67px;
+  padding-bottom: 136px;
+}
+.metals__about-info {
+  display: grid;
+  margin-bottom: 68px;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column: 32px;
+}
+.metals__about-first-article {
+  grid-column: 1/span 6;
+}
+.metals__about-second-article {
+  grid-column: 7/span 6;
+}
+.metals__about-img {
+  display: block;
+  margin: 0 auto;
+}
+.metals__about-service {
+  margin-bottom: 68px;
+}
+
+.metals__service-card {
+  display: grid;
+  height: 280px;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 32px;
+  background-color: var(--primary-grey);
+  border-radius: 10px;
+}
+.metals__service-card-left {
+  padding: 46px 10px 0 40px;
+  grid-column: 1/span 6;
+}
+.metals__service-card-right {
+  padding-top: 19px;
+  grid-column: 7/span 6;
+}
+
+.metals__conditions {
+  margin-bottom: 68px;
+}
+.metals__conditions-list {
+  margin: 0;
+}
+.metals__conditions-card {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 32px;
+  background-color: var(--primary-grey);
+  border-radius: 10px;
+}
+.metals__conditions-card-left {
+  padding: 32px 0 0 0;
+  grid-column: 1/span 6;
+}
+.metals__conditions-card-right {
+  padding: 40px 74px 40px 0;
+  grid-column: 7/span 6;
+}
+
+.metals__commission-title {
+  margin-bottom: 28px;
+}
+
+.metals__trade-card {
+  display: grid;
+  height: 301px;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 32px;
+  background-color: var(--primary-grey);
+  border-radius: 10px;
+}
+.metals__trade-card-left {
+  padding: 46px 86px 0 40px;
+  grid-column: 1/span 6;
+}
+.metals__trade-card-right {
+  padding-top: 19px;
+  grid-column: 7/span 6;
+}
+.metals__trade-btn {
+  padding: 18px 26px;
+  margin-top: 40px;
+}
+
+.metals__transactions {
+  background: linear-gradient(180deg, #F4F6F8 0%, rgba(244, 246, 248, 0) 100%);
+}
+
 .rates__hero {
   background-color: var(--primary-grey);
   height: 480px;
