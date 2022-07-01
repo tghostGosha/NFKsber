@@ -11,11 +11,13 @@
 @import "hero";
 @import "popular-services";
 @import "ideas";
+@import "accordion";
 @import "services/brokers-hero.scss";
 @import "services/trust-management.scss";
 @import "services/universal-account.scss";
 @import "services/metals-market.scss";
 @import "rates/rates.scss";
+@import "services/transactions-repo.scss";
 
 
 :root {
@@ -48,6 +50,9 @@ a {
   text-decoration: none;
   color: #1D252C;
   outline: none;
+}
+a:hover {
+  color: #1D252C;
 }
 
 p {
