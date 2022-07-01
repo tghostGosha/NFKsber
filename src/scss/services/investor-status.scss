@@ -1,0 +1,38 @@
+.investor__hero {
+    background-color: var(--primary-grey);
+    height: 480px;
+
+    &-container {
+        background-image: url('../img/investor-status/investor-hero.png');
+        padding: 24px 52% 43px 0;
+        background-repeat: no-repeat;
+        background-position: 92% bottom;
+        height: 480px;
+    }
+
+    &-title {
+        margin-bottom: 24px;
+    }
+
+}
+
+.investor__requirements {
+    padding-top: 67px;
+}
+
+.investor-list {
+
+    padding-left: 20px;
+    margin-bottom: 92px;
+    display: flex;
+    flex-direction: column;
+    
+    max-height: 300px;
+    max-width: 500px;
+    flex-wrap: wrap;
+
+}
+.brokers__list-item{
+    
+    flex: 1 1 0;
+}
