@@ -114,5 +114,18 @@
   }
 }
 .metals__transactions {
+  padding-bottom: 112px;
   background: linear-gradient(180deg, #F4F6F8 0%, rgba(244, 246, 248, 0) 100%);
+  &-footnote {
+    padding-left: 10px;
+    position: relative;
+    margin-top: 68px;
+  }
+}
+.large__button-grey {
+  padding: 28px;
+  margin-bottom: 68px;
+}
+.large__button-svg {
+  margin:  0 0  0 93px !important;
 }

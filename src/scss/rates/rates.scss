@@ -167,24 +167,6 @@ th {
     margin-bottom: 68px;
   }
 
-  &-link {
-    display: flex;
-    max-width: 350px;
-    align-items: center;
-    transition: all 0.1s ease-in-out 0.1s;
-    margin-bottom: 68px;
-  }
-
-  &-link:hover .svg-pdf-dims,
-  &-link:focus .svg-pdf-dims {
-    color: #3eb30f;
-  }
-
-  &-link:hover .brief-info,
-  &-link:focus .brief-info {
-    color: #3eb30f;
-  }
-
   &-footnotes {
     &-first {
       position: relative;
@@ -203,20 +185,6 @@ th {
       padding-left: 10px;
     }
   }
-}
-
-.info__link-text {
-  display: flex;
-  flex-direction: column;
-  margin-left: 18px;
-}
-
-.brief-info {
-  margin-bottom: 2px;
-}
-
-.file-size {
-  color: var(--secondary-text);
 }
 
 .sticky-top {

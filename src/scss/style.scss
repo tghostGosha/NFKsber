@@ -110,9 +110,11 @@ button {
   cursor: pointer;
   transition: all 0.1s ease-in-out 0.1s;
 }
+
 .text-link {
   color: var(--primary-green);
 }
+
 .primary-button {
   background-color: var(--primary-green);
   color: var(--white);
@@ -128,6 +130,7 @@ button {
 .grey-button {
   background-color: var(--grey-button);
   color: var(--primary-text);
+  border-radius: 10px;
 }
 
 @media (max-width: 768px) {
@@ -183,6 +186,7 @@ button {
   margin-right: 12px;
   margin-left: 12px;
 }
+
 //======сноска маленькой буквой
 .letter-lowercase {
   position: absolute;
@@ -190,23 +194,59 @@ button {
   left: 0;
   top: -2px;
 }
+
 .letter-lowercase-end {
   position: absolute;
   font-size: 7px;
   right: 0;
   top: -5px;
 }
+
 //======Синий блок информации
 .important__block {
   display: flex;
-    align-items: center;
-    background-color: #E8F1FE;
-    border-radius: 5px;
-    border-left: 5px solid var(--primary-blue);
-    padding: 26px 166px 26px 35px;
-    margin: 68px 0; 
-    &-description {
-      font-size: 14px;
-      line-height: 19px;
-    }
+  align-items: center;
+  background-color: #E8F1FE;
+  border-radius: 5px;
+  border-left: 5px solid var(--primary-blue);
+  padding: 26px 166px 26px 35px;
+  margin: 68px 0;
+
+  &-description {
+    font-size: 14px;
+    line-height: 19px;
+  }
 }
+//========Ссылка на файл
+.get__file-link {
+  display: flex;
+  max-width: 750px;
+  align-items: center;
+  transition: all 0.1s ease-in-out 0.1s;
+  margin-bottom: 68px;
+}
+
+.get__file-link:hover .svg-pdf-dims,
+.get__file-link:focus .svg-pdf-dims {
+  color: #3eb30f;
+}
+
+.get__file-link:hover .brief-info,
+.get__file-link:focus .brief-info {
+  color: #3eb30f;
+}
+
+.file__link-text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 18px;
+}
+
+.brief-info {
+  margin-bottom: 2px;
+}
+
+.file-size {
+  color: var(--secondary-text);
+}
+//========

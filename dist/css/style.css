@@ -12862,7 +12862,22 @@ button.swiper-pagination-bullet {
 }
 
 .metals__transactions {
+  padding-bottom: 112px;
   background: linear-gradient(180deg, #F4F6F8 0%, rgba(244, 246, 248, 0) 100%);
+}
+.metals__transactions-footnote {
+  padding-left: 10px;
+  position: relative;
+  margin-top: 68px;
+}
+
+.large__button-grey {
+  padding: 28px;
+  margin-bottom: 68px;
+}
+
+.large__button-svg {
+  margin: 0 0 0 93px !important;
 }
 
 .rates__hero {
@@ -13023,19 +13038,6 @@ th {
 .memo__info-description {
   margin-bottom: 68px;
 }
-.memo__info-link {
-  display: flex;
-  max-width: 350px;
-  align-items: center;
-  transition: all 0.1s ease-in-out 0.1s;
-  margin-bottom: 68px;
-}
-.memo__info-link:hover .svg-pdf-dims, .memo__info-link:focus .svg-pdf-dims {
-  color: #3eb30f;
-}
-.memo__info-link:hover .brief-info, .memo__info-link:focus .brief-info {
-  color: #3eb30f;
-}
 .memo__info-footnotes-first {
   position: relative;
   color: var(--secondary-text);
@@ -13050,20 +13052,6 @@ th {
   font-size: 14px;
   line-height: 19px;
   padding-left: 10px;
-}
-
-.info__link-text {
-  display: flex;
-  flex-direction: column;
-  margin-left: 18px;
-}
-
-.brief-info {
-  margin-bottom: 2px;
-}
-
-.file-size {
-  color: var(--secondary-text);
 }
 
 .sticky-top {
@@ -13206,6 +13194,7 @@ button {
 .grey-button {
   background-color: var(--grey-button);
   color: var(--primary-text);
+  border-radius: 10px;
 }
 
 @media (max-width: 768px) {
@@ -13286,4 +13275,36 @@ button {
 .important__block-description {
   font-size: 14px;
   line-height: 19px;
+}
+
+.get__file-link {
+  display: flex;
+  max-width: 750px;
+  align-items: center;
+  transition: all 0.1s ease-in-out 0.1s;
+  margin-bottom: 68px;
+}
+
+.get__file-link:hover .svg-pdf-dims,
+.get__file-link:focus .svg-pdf-dims {
+  color: #3eb30f;
+}
+
+.get__file-link:hover .brief-info,
+.get__file-link:focus .brief-info {
+  color: #3eb30f;
+}
+
+.file__link-text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 18px;
+}
+
+.brief-info {
+  margin-bottom: 2px;
+}
+
+.file-size {
+  color: var(--secondary-text);
 }
