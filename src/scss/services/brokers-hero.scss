@@ -109,11 +109,12 @@
 
 .conditions-container {
   display: flex;
+  justify-content: space-between;
 }
 
 .conditions__card {
   max-width: 392px;
-
+  // grid-column: 4, 1fr;
   &-header {
     width: 98px;
     height: 98px;
@@ -136,9 +137,9 @@
   }
 }
 
-.conditions__card:not(:last-child) {
-  margin-right: 32px;
-}
+// .conditions__card:not(:last-child) {
+//   margin-right: 32px;
+// }
 
 .brokers__app {
   margin-bottom: 64px;

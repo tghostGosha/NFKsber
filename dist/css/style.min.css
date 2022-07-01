@@ -12381,6 +12381,7 @@ button.swiper-pagination-bullet {
 
 .conditions-container {
   display: flex;
+  justify-content: space-between;
 }
 
 .conditions__card {
@@ -12403,10 +12404,6 @@ button.swiper-pagination-bullet {
   padding: 0 5px;
   text-align: center;
   color: var(--secondary-text);
-}
-
-.conditions__card:not(:last-child) {
-  margin-right: 32px;
 }
 
 .brokers__app {
@@ -12947,6 +12944,80 @@ button.swiper-pagination-bullet {
   margin: 0 0 0 93px !important;
 }
 
+.depositary__hero {
+  background-color: var(--primary-grey);
+  height: 480px;
+}
+.depositary__hero-container {
+  background-image: url("../img/depositary-activities/depositary-hero.png");
+  padding: 24px 52% 43px 0;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  height: 480px;
+}
+.depositary__hero-title {
+  margin-bottom: 24px;
+}
+
+.depositiry__about {
+  padding-top: 67px;
+  padding-bottom: 136px;
+}
+
+.depositiry__payments {
+  margin-bottom: 68px;
+}
+.depositiry__payments-card {
+  display: grid;
+  height: 280px;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 32px;
+  background-color: var(--primary-grey);
+  border-radius: 10px;
+}
+.depositiry__payments-card-left {
+  padding: 45px 10px 0 40px;
+  grid-column: 1/span 6;
+}
+.depositiry__payments-card-right {
+  padding-top: 40px;
+  padding-right: 10px;
+  grid-column: 7/span 6;
+}
+
+.depositiry__access-card {
+  display: grid;
+  height: 280px;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 32px;
+  background-color: var(--primary-grey);
+  border-radius: 10px;
+}
+.depositiry__access-card-left {
+  padding: 40px 10px 0 40px;
+  grid-column: 1/span 6;
+}
+.depositiry__access-card-left .card-right-description {
+  margin-bottom: 0;
+}
+.depositiry__access-card-right {
+  padding-top: 25px;
+  grid-column: 7/span 6;
+}
+.depositiry__access-btn {
+  padding: 18px 26px;
+  margin-top: 62px;
+}
+
+.depositiry__transactions {
+  background: linear-gradient(180deg, #F4F6F8 0%, rgba(244, 246, 248, 0) 100%);
+  padding-bottom: 112px;
+}
+
+.mb-0 {
+  margin: 0;
+}
+
 .rates__hero {
   background-color: var(--primary-grey);
   height: 480px;
@@ -13270,6 +13341,7 @@ th {
 }
 
 .repo__transactions {
+  background: linear-gradient(180deg, #F4F6F8 0%, rgba(244, 246, 248, 0) 100%);
   padding-bottom: 112px;
 }
 
@@ -13484,6 +13556,10 @@ button {
   max-width: 750px;
   align-items: center;
   transition: all 0.1s ease-in-out 0.1s;
+  margin-bottom: 68px;
+}
+
+.get__file-link:not(:last-child) {
   margin-bottom: 68px;
 }
 

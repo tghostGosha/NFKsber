@@ -16,6 +16,7 @@
 @import "services/trust-management.scss";
 @import "services/universal-account.scss";
 @import "services/metals-market.scss";
+@import "services/depository-activities.scss";
 @import "rates/rates.scss";
 @import "services/transactions-repo.scss";
 
@@ -230,7 +231,9 @@ button {
   transition: all 0.1s ease-in-out 0.1s;
   margin-bottom: 68px;
 }
-
+.get__file-link:not(:last-child) {
+  margin-bottom: 68px;
+}
 .get__file-link:hover .svg-pdf-dims,
 .get__file-link:focus .svg-pdf-dims {
   color: #3eb30f;
