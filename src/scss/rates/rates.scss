@@ -207,7 +207,9 @@ th {
   &-text:not(:last-child) {
     margin-bottom: 20px;
   }
-
+ &-footnotes {
+  margin-top: 68px;
+ }
 }
 .stock-market-title {
   margin-bottom: 40px;
@@ -215,4 +217,13 @@ th {
 }
 .rate-tite {
   margin: 0;
+}
+.investor-table {
+  margin-bottom: 68px !important;
+}
+.messahe-table {
+  margin-bottom: 89px !important;
+}
+.setting-table {
+  margin-bottom: 68px !important;
 }

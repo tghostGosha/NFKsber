@@ -117,7 +117,9 @@ button {
   cursor: pointer;
   transition: all 0.1s ease-in-out 0.1s;
 }
-
+.mt-79 {
+  margin-top: 79px;
+}
 .text-link {
   color: var(--primary-green);
 }
@@ -217,7 +219,7 @@ button {
   border-radius: 5px;
   border-left: 5px solid var(--primary-blue);
   padding: 26px 166px 26px 35px;
-  margin: 68px 0;
+  // margin: 68px 0;
 
   &-description {
     font-size: 14px;

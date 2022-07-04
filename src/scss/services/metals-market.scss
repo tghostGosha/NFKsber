@@ -38,6 +38,9 @@
   &-service {
     margin-bottom: 68px;
   }
+   &-trade {
+    margin: 68px;
+   }
 }
 .metals__service {
   
@@ -89,7 +92,12 @@
 .metals__commission-title {
   margin-bottom: 28px;
 }
+.metals__commission-description {
+  margin-bottom: 68px;
+  display: block;
+}
 .metals__trade {
+  
   &-card {
     display: grid;
     height: 301px;

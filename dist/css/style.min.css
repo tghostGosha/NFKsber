@@ -12817,6 +12817,9 @@ button.swiper-pagination-bullet {
 .universal__about-description:not(:last-child) {
   margin-bottom: 20px;
 }
+.universal__about-block {
+  margin-top: 68px;
+}
 
 .important__description-link {
   color: var(--primary-blue);
@@ -12860,6 +12863,9 @@ button.swiper-pagination-bullet {
 .metals__about-service {
   margin-bottom: 68px;
 }
+.metals__about-trade {
+  margin: 68px;
+}
 
 .metals__service-card {
   display: grid;
@@ -12902,6 +12908,11 @@ button.swiper-pagination-bullet {
 
 .metals__commission-title {
   margin-bottom: 28px;
+}
+
+.metals__commission-description {
+  margin-bottom: 68px;
+  display: block;
 }
 
 .metals__trade-card {
@@ -12985,6 +12996,9 @@ button.swiper-pagination-bullet {
   grid-column: 7/span 6;
 }
 
+.depositiry__access {
+  margin-bottom: 68px;
+}
 .depositiry__access-card {
   display: grid;
   height: 280px;
@@ -13035,20 +13049,149 @@ button.swiper-pagination-bullet {
 
 .investor__requirements {
   padding-top: 67px;
+  padding-bottom: 148px;
+}
+.investor__requirements-title {
+  text-align: center;
+  max-width: 578px;
+  margin: 0 auto;
+  margin-bottom: 40px;
 }
 
 .investor-list {
   padding-left: 20px;
   margin-bottom: 92px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
   max-height: 300px;
-  max-width: 500px;
   flex-wrap: wrap;
 }
 
 .brokers__list-item {
-  flex: 1 1 0;
+  flex: 0 0 50%;
+  max-width: 580px;
+}
+
+.brokers__list-item:nth-child(odd) {
+  padding-right: 26px;
+}
+
+.investor__tab-title {
+  max-width: 692px;
+  margin-bottom: 40px;
+}
+
+.investor__status {
+  padding-bottom: 148px;
+}
+.investor__status-title {
+  max-width: 692px;
+  text-align: center;
+  max-width: 578px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+.investor__status-description {
+  font-size: 14px;
+  line-height: 19px;
+  color: var(--secondary-text);
+  margin-bottom: 40px;
+}
+
+.steps__container {
+  display: flex;
+  position: relative;
+  padding-bottom: 15px;
+  margin-bottom: 102px;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+}
+.step:not(:last-child) {
+  margin-right: 32px;
+}
+.step__header {
+  width: 86px;
+  height: 86px;
+  background-color: var(--primary-grey);
+  border-radius: 10px;
+  margin: 0 auto;
+  padding: 29px 0;
+  position: relative;
+}
+.step__header-title {
+  text-align: center;
+}
+.step__body {
+  margin-top: 24px;
+  width: 286px;
+}
+.step__body-text {
+  text-align: center;
+  display: block;
+}
+.step-line {
+  position: absolute;
+  width: 152px;
+  height: 1px;
+  background-color: var(--grey-button);
+  top: 50%;
+  right: -197px;
+}
+
+.investor__authorize-btn {
+  position: absolute;
+  bottom: 0;
+  left: 60px;
+  padding: 18px 26px;
+}
+
+.status__statement-card {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 32px;
+  background-color: var(--primary-grey);
+  border-radius: 10px;
+}
+.status__statement-card-left {
+  padding: 22px 10px 0 40px;
+  grid-column: 1/span 6;
+  position: relative;
+}
+.status__statement-card-right {
+  padding-top: 40px;
+  padding-right: 38px;
+  padding-bottom: 40px;
+  grid-column: 7/span 6;
+}
+.status__statement-img {
+  display: block;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 0;
+}
+.status__statement-list {
+  margin: 0;
+  margin-top: 24px;
+}
+.status__statement-list-item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.card-right-footnote {
+  color: var(--secondary-text);
+}
+
+.investor__status-statement {
+  margin-bottom: 76px;
+}
+
+.investor__transactions {
+  background: linear-gradient(180deg, #F4F6F8 0%, rgba(244, 246, 248, 0) 100%);
+  padding-bottom: 112px;
 }
 
 .rates__hero {
@@ -13242,6 +13385,9 @@ th {
 .stockmarket__info-text:not(:last-child) {
   margin-bottom: 20px;
 }
+.stockmarket__info-footnotes {
+  margin-top: 68px;
+}
 
 .stock-market-title {
   margin-bottom: 40px;
@@ -13250,6 +13396,18 @@ th {
 
 .rate-tite {
   margin: 0;
+}
+
+.investor-table {
+  margin-bottom: 68px !important;
+}
+
+.messahe-table {
+  margin-bottom: 89px !important;
+}
+
+.setting-table {
+  margin-bottom: 68px !important;
 }
 
 .repo__hero {
@@ -13483,6 +13641,10 @@ button {
   transition: all 0.1s ease-in-out 0.1s;
 }
 
+.mt-79 {
+  margin-top: 79px;
+}
+
 .text-link {
   color: var(--primary-green);
 }
@@ -13577,7 +13739,6 @@ button {
   border-radius: 5px;
   border-left: 5px solid var(--primary-blue);
   padding: 26px 166px 26px 35px;
-  margin: 68px 0;
 }
 .important__block-description {
   font-size: 14px;
