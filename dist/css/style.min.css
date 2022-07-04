@@ -12528,6 +12528,7 @@ button.swiper-pagination-bullet {
 .brokers__info {
   background: linear-gradient(180deg, #F4F6F8 0%, rgba(244, 246, 248, 0) 100%);
   position: relative;
+  padding-bottom: 112px;
 }
 .brokers__info-consult {
   padding-top: 22px;
@@ -13032,6 +13033,10 @@ button.swiper-pagination-bullet {
   margin: 0;
 }
 
+.depositiry__transactions-item:not(:last-child) {
+  margin-bottom: 49px;
+}
+
 .investor__hero {
   background-color: var(--primary-grey);
   height: 480px;
@@ -13352,6 +13357,9 @@ th {
 .memo__info-description {
   margin-bottom: 68px;
 }
+.memo__info-footnotes {
+  margin-top: 68px;
+}
 .memo__info-footnotes-first {
   position: relative;
   color: var(--secondary-text);
@@ -13536,10 +13544,230 @@ th {
   padding-bottom: 112px;
 }
 
+.repo__footnotes {
+  margin-top: 68px;
+}
 .repo__footnotes-description {
   font-size: 14px;
   line-height: 19px;
   color: var(--secondary-text);
+}
+
+.about__hero {
+  background-color: var(--primary-grey);
+  height: 480px;
+}
+.about__hero-container {
+  background-image: url("../img/company/logo-about.png");
+  padding: 24px 52% 43px 0;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  height: 480px;
+}
+.about__hero-title {
+  margin-bottom: 24px;
+}
+
+.about__info {
+  padding-top: 67px;
+}
+.about__info-card {
+  display: grid;
+  margin-bottom: 50px;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 32px;
+  background-color: var(--primary-grey);
+  border-radius: 10px;
+}
+.about__info-card-left {
+  padding: 0 10px 0 40px;
+  grid-column: 1/span 6;
+  position: relative;
+}
+.about__info-card-right {
+  padding: 40px 46px 40px 0;
+  grid-column: 7/span 6;
+}
+.about__info-img {
+  display: block;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 0;
+}
+
+.stocks__container {
+  display: grid;
+  margin-bottom: 68px;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 32px;
+  row-gap: 68px;
+}
+.stocks__container-title {
+  grid-column: 1/span 8;
+}
+.stocks__container-description {
+  grid-column: 1/span 8;
+  grid-row: 3/span 1;
+}
+
+.moex {
+  grid-column: 1/span 6;
+  grid-row: 2/span 1;
+}
+
+.spb-stock {
+  grid-column: 7/span 6;
+  grid-row: 2/span 1;
+}
+
+.stocks-card-title {
+  margin-top: 40px;
+}
+.stocks-card-img {
+  display: block;
+  align-items: center;
+  object-fit: contain;
+}
+
+.stocks-card-header {
+  height: 143px;
+  display: flex;
+}
+
+.about__license-title {
+  margin-bottom: 40px;
+}
+.about__license-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 68px;
+}
+.about__license-card {
+  max-width: 604px;
+  padding: 40px 74px 40px 46px;
+  background-color: var(--primary-grey);
+  border-radius: 10px;
+}
+.about__license-card:nth-child(odd) {
+  margin-right: 32px;
+}
+.about__license-card:nth-child(1) {
+  margin-bottom: 28px;
+}
+.about__license-card:nth-child(2) {
+  margin-bottom: 28px;
+}
+
+.why__us {
+  padding-top: 80px;
+  padding-bottom: 68px;
+}
+.why__us-answer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  max-height: 333px;
+  max-width: 604px;
+}
+
+.answer-description-first {
+  margin-bottom: 24px;
+}
+
+.answer-description:last-child {
+  margin-left: 32px;
+}
+
+.about__director {
+  background-color: var(--primary-grey);
+}
+.about__director-card {
+  display: grid;
+  margin-bottom: 50px;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 32px;
+  background-color: var(--primary-grey);
+  border-radius: 10px;
+}
+.about__director-card-left {
+  padding: 0 10px 0 40px;
+  grid-column: 1/span 6;
+  position: relative;
+}
+.about__director-card-right {
+  padding: 68px 0;
+  grid-column: 7/span 6;
+}
+.about__director-img {
+  display: block;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 0;
+}
+.about__director-title {
+  margin-bottom: 24px;
+}
+.about__director-post {
+  font-family: gilroy;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  margin-bottom: 24px;
+}
+.about__director-bio {
+  margin-bottom: 40px;
+}
+.about__director-btn {
+  padding: 18px 26px;
+}
+
+.news__company {
+  padding-bottom: 44px;
+}
+.news__company-card {
+  grid-column: span 3;
+  transition: all 0.2s ease-in-out 0.2s;
+  padding: 10px;
+}
+.news__company-card:hover, .news__company-card:focus {
+  background-color: var(--primary-grey);
+  border-radius: 10px;
+}
+.news__company-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 32px;
+  margin-bottom: 40px;
+}
+.news__company-date {
+  font-size: 14px;
+  line-height: 19px;
+  margin-bottom: 20px;
+  color: var(--secondary-text);
+}
+
+.svg-arrow-right-dims {
+  margin-left: 20px;
+}
+
+.investor__info {
+  padding-top: 44px;
+  padding-bottom: 112px;
+}
+.investor__info-footnote {
+  color: var(--secondary-text);
+  font-size: 14px;
+  line-height: 19px;
+  margin-top: 68px;
+}
+
+.investor__info-file:not(:last-child) {
+  margin-bottom: 48px;
+}
+
+.investor__info-file:last-child {
+  margin-bottom: 40px;
 }
 
 :root {
@@ -13647,6 +13875,7 @@ button {
 
 .text-link {
   color: var(--primary-green);
+  transition: all 0.2s ease-in-out 0.2s;
 }
 
 .primary-button {
@@ -13750,11 +13979,6 @@ button {
   max-width: 750px;
   align-items: center;
   transition: all 0.1s ease-in-out 0.1s;
-  margin-bottom: 68px;
-}
-
-.get__file-link:not(:last-child) {
-  margin-bottom: 68px;
 }
 
 .get__file-link:hover .svg-pdf-dims,

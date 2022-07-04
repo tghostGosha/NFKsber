@@ -20,6 +20,7 @@
 @import "services/investor-status.scss";
 @import "rates/rates.scss";
 @import "services/transactions-repo.scss";
+@import "company/about.scss";
 
 
 :root {
@@ -122,6 +123,7 @@ button {
 }
 .text-link {
   color: var(--primary-green);
+  transition: all 0.2s ease-in-out 0.2s;
 }
 
 .primary-button {
@@ -232,11 +234,11 @@ button {
   max-width: 750px;
   align-items: center;
   transition: all 0.1s ease-in-out 0.1s;
-  margin-bottom: 68px;
+  
 }
-.get__file-link:not(:last-child) {
-  margin-bottom: 68px;
-}
+// .get__file-link:not(:last-child) {
+//   margin-bottom: 68px;
+// }
 .get__file-link:hover .svg-pdf-dims,
 .get__file-link:focus .svg-pdf-dims {
   color: #3eb30f;

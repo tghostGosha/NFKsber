@@ -1,0 +1,260 @@
+.about__hero {
+  background-color: var(--primary-grey);
+  height: 480px;
+
+  &-container {
+    background-image: url('../img/company/logo-about.png');
+    padding: 24px 52% 43px 0;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    height: 480px;
+  }
+
+  &-title {
+    margin-bottom: 24px;
+  }
+
+}
+
+.about__info {
+  padding-top: 67px;
+
+
+  &-card {
+    display: grid;
+    margin-bottom: 50px;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 32px;
+    background-color: var(--primary-grey);
+    border-radius: 10px;
+
+    &-left {
+      padding: 0 10px 0 40px;
+      grid-column: 1/span 6;
+      position: relative;
+    }
+
+    &-right {
+      padding: 40px 46px 40px 0;
+      grid-column: 7/span 6;
+    }
+  }
+
+  &-img {
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 0;
+  }
+
+}
+
+.stocks__container {
+  display: grid;
+  margin-bottom: 68px;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 32px;
+  row-gap: 68px;
+
+  &-title {
+    grid-column: 1/ span 8;
+  }
+
+  &-description {
+    grid-column: 1/ span 8;
+    grid-row: 3/ span 1;
+  }
+
+}
+
+.moex {
+  grid-column: 1/ span 6;
+  grid-row: 2/ span 1;
+}
+
+.spb-stock {
+  grid-column: 7/ span 6;
+  grid-row: 2/ span 1;
+}
+
+.stocks-card {
+  &-title {
+    margin-top: 40px;
+  }
+
+  &-img {
+    display: block;
+    align-items: center;
+    object-fit: contain;
+  }
+}
+
+.stocks-card-header {
+  height: 143px;
+  display: flex;
+}
+
+.about__license {
+  &-title {
+    margin-bottom: 40px;
+  }
+
+  &-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 68px;
+  }
+
+  &-card {
+    max-width: 604px;
+    padding: 40px 74px 40px 46px;
+    background-color: var(--primary-grey);
+    border-radius: 10px;
+
+    &-text {}
+  }
+
+  &-card:nth-child(odd) {
+    margin-right: 32px;
+  }
+
+  &-card:nth-child(1) {
+    margin-bottom: 28px;
+  }
+
+  &-card:nth-child(2) {
+    margin-bottom: 28px;
+  }
+}
+
+.why__us {
+  padding-top: 80px;
+  padding-bottom: 68px;
+
+  &-answer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    max-height: 333px;
+    max-width: 604px;
+
+  }
+}
+
+.answer-description-first {
+  margin-bottom: 24px;
+
+}
+
+.answer-description:last-child {
+  margin-left: 32px;
+}
+
+.about__director {
+  background-color: var(--primary-grey);
+
+  &-card {
+    display: grid;
+    margin-bottom: 50px;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 32px;
+    background-color: var(--primary-grey);
+    border-radius: 10px;
+
+    &-left {
+      padding: 0 10px 0 40px;
+      grid-column: 1/span 6;
+      position: relative;
+    }
+
+    &-right {
+      padding: 68px 0;
+      grid-column: 7/span 6;
+    }
+  }
+
+  &-img {
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 0;
+  }
+
+  &-title {
+    margin-bottom: 24px;
+
+  }
+
+  &-post {
+    font-family: gilroy;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 24px;
+
+  }
+
+  &-bio {
+    margin-bottom: 40px;
+  }
+
+  &-btn {
+    padding: 18px 26px;
+  }
+}
+
+.news__company {
+  padding-bottom: 44px;
+
+  &-card {
+    grid-column: span 3;
+    transition: all 0.2s ease-in-out 0.2s;
+    padding: 10px;
+  }
+
+  &-card:hover,
+  &-card:focus {
+    background-color: var(--primary-grey);
+    border-radius: 10px;
+  }
+
+  &-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 32px;
+    margin-bottom: 40px;
+  }
+
+  &-date {
+    font-size: 14px;
+    line-height: 19px;
+    margin-bottom: 20px;
+    color: var(--secondary-text);
+  }
+}
+
+.svg-arrow-right-dims {
+  margin-left: 20px;
+
+}
+
+.investor__info {
+  padding-top: 44px;
+  padding-bottom: 112px;
+  
+  &-footnote {
+    color: var(--secondary-text);
+    font-size: 14px;
+    line-height: 19px;
+    margin-top: 68px;
+  }
+}
+
+.investor__info-file:not(:last-child) {
+  margin-bottom: 48px;
+}
+
+.investor__info-file:last-child {
+  margin-bottom: 40px;
+}
