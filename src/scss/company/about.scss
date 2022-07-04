@@ -204,35 +204,38 @@
   }
 }
 
-.news__company {
-  padding-bottom: 44px;
+// .news__company {
+//   padding-bottom: 44px;
 
-  &-card {
-    grid-column: span 3;
-    transition: all 0.2s ease-in-out 0.2s;
-    padding: 10px;
-  }
+//   &-card {
+//     grid-column: span 3;
+//     transition: all 0.2s ease-in-out 0.2s;
+//     padding: 10px;
+//   }
 
-  &-card:hover,
-  &-card:focus {
-    background-color: var(--primary-grey);
-    border-radius: 10px;
-  }
+//   &-card:hover,
+//   &-card:focus {
+//     background-color: var(--primary-grey);
+//     border-radius: 10px;
+//   }
 
-  &-container {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    column-gap: 32px;
-    margin-bottom: 40px;
-  }
+//   &-container {
+//     display: grid;
+//     grid-template-columns: repeat(12, 1fr);
+//     column-gap: 32px;
+//     margin-bottom: 40px;
+//   }
 
-  &-date {
-    font-size: 14px;
-    line-height: 19px;
-    margin-bottom: 20px;
-    color: var(--secondary-text);
-  }
-}
+//   &-date {
+//     font-size: 14px;
+//     line-height: 19px;
+    
+//     color: var(--secondary-text);
+//   }
+//   &-text {
+//     margin-top: 16px;
+//   }
+// }
 
 .svg-arrow-right-dims {
   margin-left: 20px;
@@ -242,7 +245,7 @@
 .investor__info {
   padding-top: 44px;
   padding-bottom: 112px;
-  
+
   &-footnote {
     color: var(--secondary-text);
     font-size: 14px;

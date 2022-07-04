@@ -54,6 +54,7 @@ a {
   color: #1D252C;
   outline: none;
 }
+
 a:hover {
   color: #1D252C;
 }
@@ -118,9 +119,11 @@ button {
   cursor: pointer;
   transition: all 0.1s ease-in-out 0.1s;
 }
+
 .mt-79 {
   margin-top: 79px;
 }
+
 .text-link {
   color: var(--primary-green);
   transition: all 0.2s ease-in-out 0.2s;
@@ -228,14 +231,16 @@ button {
     line-height: 19px;
   }
 }
+
 //========Ссылка на файл
 .get__file-link {
   display: flex;
   max-width: 750px;
   align-items: center;
   transition: all 0.1s ease-in-out 0.1s;
-  
+
 }
+
 // .get__file-link:not(:last-child) {
 //   margin-bottom: 68px;
 // }
@@ -262,4 +267,42 @@ button {
 .file-size {
   color: var(--secondary-text);
 }
+
 //========
+.news__company {
+  // padding-bottom: 44px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 32px;
+  margin-bottom: 20px;
+  &-markets {
+    margin-bottom: 40px;
+  }
+  &-card {
+    grid-column: span 3;
+    transition: all 0.2s ease-in-out 0.2s;
+    padding: 10px;
+  }
+
+  &-card:hover,
+  &-card:focus {
+    background-color: var(--primary-grey);
+    border-radius: 10px;
+  }
+
+  &-container {
+
+    margin-bottom: 40px;
+  }
+
+  &-date {
+    font-size: 14px;
+    line-height: 19px;
+
+    color: var(--secondary-text);
+  }
+
+  &-text {
+    margin-top: 16px;
+  }
+}

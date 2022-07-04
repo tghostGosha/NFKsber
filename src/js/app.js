@@ -195,3 +195,11 @@ validation
     ev.preventDefault();
     window.showNotification();
   });
+
+  // const getStocks = async function () {
+  //   const responce = await fetch(`https://zberopolis.ru/`);
+  //   const object = await responce.json();
+  //   console.log(object);
+  //   return object;
+  // };
+  // getStocks()

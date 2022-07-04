@@ -13722,31 +13722,6 @@ th {
   padding: 18px 26px;
 }
 
-.news__company {
-  padding-bottom: 44px;
-}
-.news__company-card {
-  grid-column: span 3;
-  transition: all 0.2s ease-in-out 0.2s;
-  padding: 10px;
-}
-.news__company-card:hover, .news__company-card:focus {
-  background-color: var(--primary-grey);
-  border-radius: 10px;
-}
-.news__company-container {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  column-gap: 32px;
-  margin-bottom: 40px;
-}
-.news__company-date {
-  font-size: 14px;
-  line-height: 19px;
-  margin-bottom: 20px;
-  color: var(--secondary-text);
-}
-
 .svg-arrow-right-dims {
   margin-left: 20px;
 }
@@ -14003,4 +13978,34 @@ button {
 
 .file-size {
   color: var(--secondary-text);
+}
+
+.news__company {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 32px;
+  margin-bottom: 20px;
+}
+.news__company-markets {
+  margin-bottom: 40px;
+}
+.news__company-card {
+  grid-column: span 3;
+  transition: all 0.2s ease-in-out 0.2s;
+  padding: 10px;
+}
+.news__company-card:hover, .news__company-card:focus {
+  background-color: var(--primary-grey);
+  border-radius: 10px;
+}
+.news__company-container {
+  margin-bottom: 40px;
+}
+.news__company-date {
+  font-size: 14px;
+  line-height: 19px;
+  color: var(--secondary-text);
+}
+.news__company-text {
+  margin-top: 16px;
 }
