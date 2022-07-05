@@ -68,7 +68,11 @@
     margin: 0 auto;
     text-align: center;
   }
-
+  &-img {
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+  }
   &-card {
     display: flex;
     margin-top: 40px;
@@ -76,11 +80,9 @@
     border-radius: 10px;
 
     &-left {
-      background-image: url('../img/brokerage-services/about.png');
-      background-repeat: no-repeat;
-      background-position: center bottom;
+      position: relative;
     }
-
+    
     &-right {
       padding: 40px 48px 40px 16px;
     }
@@ -155,10 +157,10 @@
     }
 
     &-right {
-      background-image: url('../img/brokerage-services/app.png');
-      background-repeat: no-repeat;
-      background-size: 80%;
-      background-position: center bottom;
+      // background-image: url('../img/brokerage-services/app.png');
+      // background-repeat: no-repeat;
+      // background-size: 80%;
+      // background-position: center bottom;
     }
   }
 

@@ -1,0 +1,161 @@
+.ideas {
+  margin-bottom: 68px;
+  padding-bottom: 156px;
+  &__header {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__container {
+    position: relative;
+  }
+}
+
+.ideas-swiper {
+  overflow: hidden;
+  position: relative;
+
+  &-pagination {
+    position: absolute;
+    left: 0;
+    bottom: -40px;
+    text-align: start;
+    transition: 0.3s opacity;
+    transform: translate3d(0, 0, 0);
+    z-index: 10;
+
+  }
+}
+
+.swiper-pagination-clickable .ideas-swiper-pagination-bullet {
+  cursor: pointer;
+}
+
+.ideas-swiper-pagination-bullet {
+  display: inline-block;
+  border-radius: 50%;
+  width: 14px;
+  height: 14px;
+  border: 1px solid var(--secondary-text);
+  background-color: inherit;
+  opacity: 1;
+}
+.swiper-bullet-active {
+  background: var(--primary-text);
+}
+.ideas-swiper-pagination-bullet:not(:last-child) {
+  margin-right: 14px;
+}
+.swiper-button-next:after,  .swiper-button-prev:after {
+ font-size: 22px;
+}
+.swiper-button-prev {
+  left: -31px;
+}
+.swiper-button-next {
+  right: -27px;
+ 
+}
+.swiper-button-prev.swiper-button-disabled, .swiper-button-next.swiper-button-disabled {
+  // opacity: 0.35;
+  // cursor: auto;
+  // pointer-events: none;
+  display: none;
+}
+.swiper-button-prev, .swiper-button-next {
+  position: absolute;
+  width: 56px;
+  height: 56px;
+  box-shadow: 0px 0px 7px rgba(29, 37, 44, 0.11);
+  border-radius: 50%;
+  color: var(--secondary-text);  
+}
+.ideas__slide {
+  display: flex;
+
+  flex-direction: column;
+  border: 1px solid var(--grey-button);
+  border-radius: 10px;
+
+  &-card {
+    width: 390px;
+    padding: 20px 24px 24px 24px;
+  }
+
+  &-bank {
+    margin-bottom: 8px;
+  }
+
+  &-img-block {
+    margin-bottom: 24px;
+  }
+
+  &-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 32px;
+
+    &-left {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &-header-right {
+      display: flex;
+    }
+
+    .slide-like-btn {
+      margin-right: 16px;
+      transition: all 0.1s ease-in 0.1s;
+    }
+    .svg-like-dims  {
+      stroke: var(--secondary-text);
+      color: #ffffff;
+      // fill: white;
+      transition: all 0.1s ease-in 0.1s;
+    }
+    .svg-like-dims:hover{
+      // stroke: var(--primary-text);
+      color: var(--secondary-text);
+      
+    }
+   
+    .svg-close-dims {
+      color: var(--secondary-text);
+      transition: color 0.1s ease-in 0.1s;
+    }
+    .svg-close-dims:hover {
+      color: black;
+    }
+  }
+
+  &-body {
+    margin-bottom: 40px;
+  }
+
+  &-footer {
+    display: flex;
+  }
+
+  .current__profitability {
+    margin-right: 30px;
+  }
+
+  .current__possibility {
+    padding-left: 16px;
+    border-left: 1px solid var(--grey-button);
+  }
+
+  .current__profitability-title,
+  .current__possibility-title {
+    font-size: 14px;
+    line-height: 19px;
+    color: var(--secondary-text);
+
+  }
+
+  .current__profitability-value,
+  .current__possibility-value {
+    margin-top: 4px;
+  }
+
+}

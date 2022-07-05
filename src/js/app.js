@@ -15,12 +15,37 @@ const heroSwiper = new Swiper('.hero-swiper', {
   slidesPerView: 1,
   slidesPerColumn: 1,
   slidesPerGroup: 1,
-  spaceBetween: 50,
+  spaceBetween: 32,
   loop: true,
 
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
+  },
+  
+});
+
+//===========swiper ideas======
+const ideasSwiper = new Swiper ('.ideas-swiper', {
+  modules: [Navigation, Pagination],
+  slideClass: 'ideas__slide',
+  slidesPerView: 3,
+  slidesPerColumn: 3,
+  slidesPerGroup: 3,
+  spaceBetween: 50,
+  // modifierClass: 'ideas-swiper-pagination',
+  pagination: {
+    el: '.ideas-swiper-pagination',
+    clickable: true,
+    bulletClass: 'ideas-swiper-pagination-bullet',
+    horizontalClass: 'ideas-swiper-pagination-horizontal',
+    bulletActiveClass: 'swiper-bullet-active'
+  },
+  navigation: {
+    hideOnClick: true,
+    clickable: true,
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
 })
 

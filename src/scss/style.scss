@@ -275,9 +275,11 @@ button {
   grid-template-columns: repeat(12, 1fr);
   column-gap: 32px;
   margin-bottom: 20px;
+
   &-markets {
     margin-bottom: 40px;
   }
+
   &-card {
     grid-column: span 3;
     transition: all 0.2s ease-in-out 0.2s;
@@ -304,5 +306,101 @@ button {
 
   &-text {
     margin-top: 16px;
+  }
+}
+
+.mobile__app {
+  margin-bottom: 88px;
+  background-color: #2C353D;
+
+  &-card {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 32px;
+    border-radius: 10px;
+
+
+    &-left {
+      grid-column: 1/ span 6;
+      padding: 56px 18% 56px 0;
+    }
+
+    &-right {
+      grid-column: 7/ span 6;
+      position: relative;
+    }
+  }
+
+  &-title {
+    color: var(--primary-grey);
+    margin-bottom: 24px;
+  }
+
+  &-img {
+    position: absolute;
+    bottom: 0;
+  }
+
+  &-description {
+    color: var(--primary-grey);
+    margin-bottom: 48px;
+  }
+
+  &-buttons {
+    display: flex;
+  }
+}
+
+.google-button {
+  margin-right: 34px;
+
+}
+
+.svg-google-play rect,
+.svg-app-store rect {
+  fill: #ffffff;
+  transition: all 0.2s ease 0.1s;
+}
+
+.svg-google-play path,
+.svg-app-store path {
+  fill: var(--primary-text);
+  transition: all 0.2s ease 0.1s;
+}
+
+.svg-google-play:hover rect,
+.svg-app-store:hover rect {
+  fill: var(--secondary-text);
+}
+
+.svg-google-play:hover path,
+.svg-app-store:hover path {
+  fill: #ffffff;
+}
+.answer__questions  {
+  padding-top: 88px;
+  padding-bottom: 112px;
+  &-title {
+
+  }
+  &-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 32px;
+    row-gap: 28px;
+  }
+  &-btn {
+    display: flex;
+    height: 128px;
+    
+    padding: 0 28px 0 24px;
+    justify-content: space-between;
+    align-items: center;
+    grid-column: span 4;
+    margin: 0;
+  }
+  &-arrow-svg {
+    // display: block;
+    margin-left: 53px;
   }
 }

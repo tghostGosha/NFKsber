@@ -11764,9 +11764,13 @@ button.swiper-pagination-bullet {
 }
 
 .header__link-consalt {
+  background-color: inherit;
+  width: 281px;
+  padding: 0;
   color: var(--secondary-text);
   grid-column: 3/span 5;
   grid-row: 1/span 1;
+  text-align: start;
 }
 
 .header__link-demo {
@@ -12177,6 +12181,7 @@ button.swiper-pagination-bullet {
 
 .popular-services {
   padding-top: 68px;
+  margin-bottom: 68px;
 }
 
 .card {
@@ -12215,6 +12220,150 @@ button.swiper-pagination-bullet {
 .grey-button {
   display: inline-block;
   margin-top: auto;
+}
+
+.ideas {
+  margin-bottom: 68px;
+  padding-bottom: 156px;
+}
+.ideas__header {
+  display: flex;
+  justify-content: space-between;
+}
+.ideas__container {
+  position: relative;
+}
+
+.ideas-swiper {
+  overflow: hidden;
+  position: relative;
+}
+.ideas-swiper-pagination {
+  position: absolute;
+  left: 0;
+  bottom: -40px;
+  text-align: start;
+  transition: 0.3s opacity;
+  transform: translate3d(0, 0, 0);
+  z-index: 10;
+}
+
+.swiper-pagination-clickable .ideas-swiper-pagination-bullet {
+  cursor: pointer;
+}
+
+.ideas-swiper-pagination-bullet {
+  display: inline-block;
+  border-radius: 50%;
+  width: 14px;
+  height: 14px;
+  border: 1px solid var(--secondary-text);
+  background-color: inherit;
+  opacity: 1;
+}
+
+.swiper-bullet-active {
+  background: var(--primary-text);
+}
+
+.ideas-swiper-pagination-bullet:not(:last-child) {
+  margin-right: 14px;
+}
+
+.swiper-button-next:after, .swiper-button-prev:after {
+  font-size: 22px;
+}
+
+.swiper-button-prev {
+  left: -31px;
+}
+
+.swiper-button-next {
+  right: -27px;
+}
+
+.swiper-button-prev.swiper-button-disabled, .swiper-button-next.swiper-button-disabled {
+  display: none;
+}
+
+.swiper-button-prev, .swiper-button-next {
+  position: absolute;
+  width: 56px;
+  height: 56px;
+  box-shadow: 0px 0px 7px rgba(29, 37, 44, 0.11);
+  border-radius: 50%;
+  color: var(--secondary-text);
+}
+
+.ideas__slide {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--grey-button);
+  border-radius: 10px;
+}
+.ideas__slide-card {
+  width: 390px;
+  padding: 20px 24px 24px 24px;
+}
+.ideas__slide-bank {
+  margin-bottom: 8px;
+}
+.ideas__slide-img-block {
+  margin-bottom: 24px;
+}
+.ideas__slide-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+.ideas__slide-header-left {
+  display: flex;
+  flex-direction: column;
+}
+.ideas__slide-header-header-right {
+  display: flex;
+}
+.ideas__slide-header .slide-like-btn {
+  margin-right: 16px;
+  transition: all 0.1s ease-in 0.1s;
+}
+.ideas__slide-header .svg-like-dims {
+  stroke: var(--secondary-text);
+  color: #ffffff;
+  transition: all 0.1s ease-in 0.1s;
+}
+.ideas__slide-header .svg-like-dims:hover {
+  color: var(--secondary-text);
+}
+.ideas__slide-header .svg-close-dims {
+  color: var(--secondary-text);
+  transition: color 0.1s ease-in 0.1s;
+}
+.ideas__slide-header .svg-close-dims:hover {
+  color: black;
+}
+.ideas__slide-body {
+  margin-bottom: 40px;
+}
+.ideas__slide-footer {
+  display: flex;
+}
+.ideas__slide .current__profitability {
+  margin-right: 30px;
+}
+.ideas__slide .current__possibility {
+  padding-left: 16px;
+  border-left: 1px solid var(--grey-button);
+}
+.ideas__slide .current__profitability-title,
+.ideas__slide .current__possibility-title {
+  font-size: 14px;
+  line-height: 19px;
+  color: var(--secondary-text);
+}
+.ideas__slide .current__profitability-value,
+.ideas__slide .current__possibility-value {
+  margin-top: 4px;
 }
 
 .accordion-button:not(.collapsed) {
@@ -12346,6 +12495,11 @@ button.swiper-pagination-bullet {
   margin: 0 auto;
   text-align: center;
 }
+.brokers__about-img {
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+}
 .brokers__about-card {
   display: flex;
   margin-top: 40px;
@@ -12353,9 +12507,7 @@ button.swiper-pagination-bullet {
   border-radius: 10px;
 }
 .brokers__about-card-left {
-  background-image: url("../img/brokerage-services/about.png");
-  background-repeat: no-repeat;
-  background-position: center bottom;
+  position: relative;
 }
 .brokers__about-card-right {
   padding: 40px 48px 40px 16px;
@@ -12417,12 +12569,6 @@ button.swiper-pagination-bullet {
 }
 .brokers__app-card-left {
   padding: 0 0 40px 48px;
-}
-.brokers__app-card-right {
-  background-image: url("../img/brokerage-services/app.png");
-  background-repeat: no-repeat;
-  background-size: 80%;
-  background-position: center bottom;
 }
 .brokers__app-list {
   margin-bottom: 34px;
@@ -14008,4 +14154,87 @@ button {
 }
 .news__company-text {
   margin-top: 16px;
+}
+
+.mobile__app {
+  margin-bottom: 88px;
+  background-color: #2C353D;
+}
+.mobile__app-card {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 32px;
+  border-radius: 10px;
+}
+.mobile__app-card-left {
+  grid-column: 1/span 6;
+  padding: 56px 18% 56px 0;
+}
+.mobile__app-card-right {
+  grid-column: 7/span 6;
+  position: relative;
+}
+.mobile__app-title {
+  color: var(--primary-grey);
+  margin-bottom: 24px;
+}
+.mobile__app-img {
+  position: absolute;
+  bottom: 0;
+}
+.mobile__app-description {
+  color: var(--primary-grey);
+  margin-bottom: 48px;
+}
+.mobile__app-buttons {
+  display: flex;
+}
+
+.google-button {
+  margin-right: 34px;
+}
+
+.svg-google-play rect,
+.svg-app-store rect {
+  fill: #ffffff;
+  transition: all 0.2s ease 0.1s;
+}
+
+.svg-google-play path,
+.svg-app-store path {
+  fill: var(--primary-text);
+  transition: all 0.2s ease 0.1s;
+}
+
+.svg-google-play:hover rect,
+.svg-app-store:hover rect {
+  fill: var(--secondary-text);
+}
+
+.svg-google-play:hover path,
+.svg-app-store:hover path {
+  fill: #ffffff;
+}
+
+.answer__questions {
+  padding-top: 88px;
+  padding-bottom: 112px;
+}
+.answer__questions-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 32px;
+  row-gap: 28px;
+}
+.answer__questions-btn {
+  display: flex;
+  height: 128px;
+  padding: 0 28px 0 24px;
+  justify-content: space-between;
+  align-items: center;
+  grid-column: span 4;
+  margin: 0;
+}
+.answer__questions-arrow-svg {
+  margin-left: 53px;
 }

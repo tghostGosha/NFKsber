@@ -131,9 +131,13 @@
 }
 
 .header__link-consalt {
+    background-color: inherit;
+    width: 281px;
+    padding: 0;
     color: var(--secondary-text);
     grid-column: 3/ span 5;
     grid-row: 1/ span 1;
+    text-align: start;
 }
 
 .header__link-demo {
