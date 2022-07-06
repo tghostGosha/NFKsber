@@ -62,11 +62,11 @@ export const scss = () => {
         })
       )
     )
-    // .pipe(autoprefixer({
-    //   grid: true,
-    //   overrideBrowserslist: ["last 3 versions"],
-    //   cascade: true
-    // }))
+    .pipe(autoprefixer({
+      grid: true,
+      overrideBrowserslist: ["last 3 versions"],
+      cascade: true
+    }))
     //Раскоментировать если нужен не сжатый дубль файла стилей
     // .pipe(app.gulp.dest(app.path.build.css))
     // .pipe(

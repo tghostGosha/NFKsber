@@ -3,6 +3,9 @@ import $ from "jquery"
 import { Inputmask } from "inputmask";
 import Swiper, { Navigation, Pagination } from 'swiper';
 import JustValidate from 'just-validate';
+import noUiSlider from 'nouislider';
+
+
 
 Swiper.use([Navigation, Pagination])
 
@@ -22,11 +25,11 @@ const heroSwiper = new Swiper('.hero-swiper', {
     el: '.swiper-pagination',
     clickable: true,
   },
-  
+
 });
 
 //===========swiper ideas======
-const ideasSwiper = new Swiper ('.ideas-swiper', {
+const ideasSwiper = new Swiper('.ideas-swiper', {
   modules: [Navigation, Pagination],
   slideClass: 'ideas__slide',
   slidesPerView: 3,
@@ -53,23 +56,23 @@ const ideasSwiper = new Swiper ('.ideas-swiper', {
 const regex = /[A-Za-z0-0]/;
 let firstLetterToUpperCase = (className) => {
   const inputs = document.getElementsByClassName(className)
-  
-  
-    for (let i = 0; i < inputs.length; ++i) {
-      inputs[i].onblur = () => {
-        // if (regex.test(inputs[i].value)) inputs[i].value='';
-        if (inputs[i].value === '') return;
-  
-        let str = inputs[i].value
-          .trim()
-          .replace(/-+/g, '-')
-          .replace(/^-|-$/g, '')
-          .replace(/\s+/g, ' ')
-          .trim()
-        inputs[i].value = str[0].toUpperCase() + str.substr(1).toLowerCase()
-      }
+
+
+  for (let i = 0; i < inputs.length; ++i) {
+    inputs[i].onblur = () => {
+      // if (regex.test(inputs[i].value)) inputs[i].value='';
+      if (inputs[i].value === '') return;
+
+      let str = inputs[i].value
+        .trim()
+        .replace(/-+/g, '-')
+        .replace(/^-|-$/g, '')
+        .replace(/\s+/g, ' ')
+        .trim()
+      inputs[i].value = str[0].toUpperCase() + str.substr(1).toLowerCase()
     }
-  
+  }
+
 }
 firstLetterToUpperCase('form-control')
 
@@ -116,7 +119,7 @@ if (input.type === 'tel') {
 
 
 //========Валидация формы открытия счета и маска================
-      //======маска телефон
+//======маска телефон
 const accountFormTel = document.getElementById('tel');
 if (accountFormTel.type === 'tel') {
   accountFormTel.addEventListener('input', mask);
@@ -124,9 +127,9 @@ if (accountFormTel.type === 'tel') {
   accountFormTel.addEventListener('blur', mask);
   accountFormTel.addEventListener('keydown', mask);
 }
-      //======заглавная буква
+//======заглавная буква
 firstLetterToUpperCase('account__form-input');
-      //=======Валидация
+//=======Валидация
 const validation = new JustValidate('#accountform', {
   errorFieldCssClass: 'is-invalid',
   errorLabelStyle: {
@@ -221,10 +224,58 @@ validation
     window.showNotification();
   });
 
-  // const getStocks = async function () {
-  //   const responce = await fetch(`https://zberopolis.ru/`);
-  //   const object = await responce.json();
-  //   console.log(object);
-  //   return object;
-  // };
-  // getStocks()
+// const getStocks = async function () {
+//   const responce = await fetch(`https://zberopolis.ru/`);
+//   const object = await responce.json();
+//   console.log(object);
+//   return object;
+// };
+// getStocks()
+
+const slider1 = document.getElementById('slider1');
+
+noUiSlider.create(slider1, {
+  start: [10000],
+  connect: [true, false],
+  range: {
+      'min': 10000,
+      'max': 400000
+  },
+  step: 10000,
+});
+function crossUpdate(value, slider) {
+
+  // If the sliders aren't interlocked, don't
+  // cross-update.
+  if (!lockedState) return;
+
+  // Select whether to increase or decrease
+  // the other slider value.
+  var a = slider1 === slider ? 0 : 1;
+
+  // Invert a
+  var b = a ? 0 : 1;
+
+  // Offset the slider value.
+  value -= lockedValues[b] - lockedValues[a];
+
+  // Set the value
+  slider.noUiSlider.set(value);
+}
+
+var slider1Value = document.getElementById('slider1Value');
+
+function setLockedValues() {
+  lockedValues = [
+      Number(slider1.noUiSlider.get()),
+     
+  ];
+}
+
+slider1.noUiSlider.on('change', setLockedValues);
+slider1.noUiSlider.on('update', function (values, handle) {
+  slider1Value.innerHTML = values[handle];
+});
+slider1.noUiSlider.on('slide', function (values, handle) {
+  crossUpdate(values[handle], slider2);
+});

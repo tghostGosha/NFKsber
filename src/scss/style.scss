@@ -2,9 +2,11 @@
 @import "../../node_modules/swiper/swiper-bundle.min";
 @import "../../node_modules/swiper/swiper.scss";
 @import "../../node_modules/swiper/modules/navigation/navigation.scss";
-
+// @import '../../node_modules/nouislider/dist/nouislider.css';
+// @import 'nouislider/dist/nouislider.css';
 
 @import "fonts";
+@import "nouislider.min.scss";
 @import "header";
 @import "footer";
 @import "window-account";
@@ -22,6 +24,7 @@
 @import "rates/rates.scss";
 @import "services/transactions-repo.scss";
 @import "company/about.scss";
+
 
 
 :root {
@@ -205,11 +208,13 @@ button {
 //======сноска маленькой буквой
 .letter-lowercase {
   position: absolute;
-  font-size: 7px;
-  left: 0;
+  font-size: 9px;
+  left: -10px;
   top: -2px;
 }
-
+.text-indent {
+  text-indent: 12px;
+}
 .letter-lowercase-end {
   position: absolute;
   font-size: 7px;

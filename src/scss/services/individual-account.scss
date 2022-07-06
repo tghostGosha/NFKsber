@@ -288,3 +288,34 @@
     grid-column: span 2;
   }
 }
+.individual-accordion {
+  --bs-accordion-bg: inherit;
+}
+// .calc__brokers-service {
+//   display: grid;
+// }
+.calc__brokers-left-card {
+  width: 605px;
+}
+.noUi-handle:after, .noUi-handle:before {
+  display: none;
+}
+.noUi-target {
+  border: none;
+}
+.noUi-horizontal {
+  height: 2px ;
+}
+.noUi-horizontal .noUi-handle {
+  width: 18px;
+  height: 18px;
+  border: 2px solid var(--primary-green);
+  border-radius: 50%;
+  background-color: #ffffff;
+  box-shadow: none;
+  top: -8px;
+}
+.noUi-connect {
+  background-color: var(--primary-green);
+  color: var(--primary-green);;
+}
