@@ -1,0 +1,290 @@
+.individual__hero {
+  background-color: var(--primary-grey);
+  height: 480px;
+
+  &-container {
+    background-image: url('../img/individual-account/individual-hero.png');
+    padding: 24px 50% 55px 0;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+  }
+
+  &-title {
+    margin-bottom: 24px;
+  }
+
+  &-buttons {
+    display: inline-block;
+    margin-top: auto;
+
+    &-grey {
+      padding: 14px 32px;
+      margin-right: 32px;
+      border-radius: 5px;
+    }
+  }
+
+  &-button {
+    padding: 14px 32px;
+  }
+
+  &-list {
+    padding-right: 120px;
+  }
+}
+
+.individual__description {
+  padding-top: 64px;
+  padding-bottom: 128px;
+}
+
+.individual__about {
+
+
+  &-list {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 84px;
+    margin: 0;
+  }
+
+  &-card {
+    margin-bottom: 40px;
+
+    &-right {
+      padding: 40px 48px 100px 0;
+    }
+  }
+
+  &-img {
+
+    bottom: 0;
+    left: 10%;
+  }
+}
+
+.individual__about,
+.individual__options {
+
+  margin-bottom: 68px;
+
+  &-title {
+    margin: 0 auto;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  &-img {
+    position: absolute;
+  }
+
+  &-card {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 32px;
+    // row-gap: 28px;
+
+    background-color: var(--primary-grey);
+    border-radius: 10px;
+
+    &-left {
+      grid-column: 1/ span 6;
+      position: relative;
+    }
+
+    &-right {
+      grid-column: 7/ span 6;
+
+    }
+  }
+
+
+}
+
+.individual__list-item {
+  grid-column: span 6;
+}
+
+.tab-content {
+  padding: 0;
+}
+
+.individual__options {
+
+  &-card {
+    margin-bottom: 24px;
+  }
+
+  &-card-right {
+    grid-column: 7/ span 6;
+    padding: 40px 48px 84px 0;
+  }
+
+  &-title {
+    text-align: center;
+    max-width: 578px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+
+  &-list {
+    margin: 0;
+  }
+
+  &-img {
+    position: absolute;
+    bottom: -3px;
+    left: 10%;
+  }
+
+  &-question {
+    color: var(--secondary-text);
+    margin-bottom: 24px;
+  }
+
+  &-description {
+    font-size: 14px;
+    line-height: 19px;
+    color: var(--secondary-text);
+    padding-right: 86px;
+  }
+}
+
+.individual__advantages {
+  margin-bottom: 68px;
+
+  &-title {
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+}
+
+.advantages-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 32px;
+  row-gap: 40px;
+
+}
+
+.advantages__card {
+
+  grid-column: span 4;
+
+  &-header {
+    width: 98px;
+    height: 98px;
+    margin: 0 auto;
+    background-color: var(--primary-grey);
+    border-radius: 10px;
+    padding: 22px 27px;
+    margin-bottom: 24px;
+  }
+
+  &-title {
+    text-align: center;
+    margin-bottom: 16px;
+  }
+
+  &-description {
+    padding: 0 11px;
+    text-align: center;
+    color: var(--secondary-text);
+  }
+}
+
+.accounts__examples {
+  margin-bottom: 68px;
+  &-services {
+    margin-bottom: 28px;
+  }
+  &-title {
+    text-align: center;
+    margin-bottom: 17px;
+  }
+
+  &-header {
+    padding: 23px 42px 23px 46px;
+
+  }
+
+  &-body {
+    margin-bottom: 24px;
+  }
+
+  &-card {
+    border: 1px solid var(--grey-button);
+    border-radius: 10px;
+
+    .examples-card__header {
+      padding: 48px 28px 25px 46px;
+      display: grid;
+      align-items: start;
+      grid-template-columns: repeat(12, 1fr);
+      column-gap: 32px;
+    }
+    
+    .examples-card__account {
+      display: flex;
+      flex-direction: column;
+      grid-column: span 5;
+
+      .card__account-title {
+        margin-bottom: 24px;
+      }
+      .card__account-description {
+        color: var(--secondary-text);
+      }
+    }
+    
+    .examples-card__deposite {
+      grid-column: span 2;
+    }
+
+    .examples-card__get {
+      grid-column: span 3;
+    }
+
+    .examples-card__btn {
+      grid-column: span 2;
+      
+    }
+
+    .examples-card__action {
+      grid-column: span 12;
+      
+      padding: 24px 20% 47px 45px;
+    }
+    .card__action-services {
+      background-color: #EDF2F5;
+    }
+    .card__action-management {
+      background-color: #ECF3EC;
+    }
+  }
+}
+.examples-header__item {
+  color: var(--secondary-text);
+}
+.examples-btn {
+  padding: 14px 32px;
+}
+.examples-header__list {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 49px;
+
+  .first-el {
+    grid-column: span 5;
+  }
+
+  .second-el {
+
+    grid-column: span 2;
+  }
+
+  .third-el {
+    grid-column: span 2;
+  }
+}

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html',{
+"title": "Индивидуальный инвестиционный счет"
+})
+
+<body>
+
+  @@include('html/header.html',{})
+  <main>
+    <section class="individual__hero">
+      <div class="container ">
+        <div class="individual__hero-container">
+          <nav aria-label="Page navigation example">
+            <ul class="pagination">
+              <li class="page-item"><a class="page-link" href="index.html">Главная</a></li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="8" height="16" fill="currentColor"
+                  class="bi bi-chevron-right" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                </svg>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">Услуги</a></li>
+              <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="8" height="16" fill="currentColor"
+                  class="bi bi-chevron-right" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+                </svg>
+              </li>
+              <li class="page-item"><a class="page-link" href="individual-account.html">Индивидуальный инвестиционный
+                  счет</a></li>
+            </ul>
+          </nav>
+          <h2 class="individual__hero-title">ИИС</h2>
+          <ul class="individual__hero-list brokers__list">
+            <li class="brokers__list-item">Вносите до 400 000 рублей ежегодно</li>
+            <li class="brokers__list-item">Получайте 52 000 рублей – налоговый вычет
+              гарантирован государством</li>
+            <li class="brokers__list-item">19,66% годовых – общая выгода от вложений</li>
+          </ul>
+          <div class="individual__hero-buttons">
+            <button type="button" class=" grey-button brokers__hero-buttons-grey" data-bs-toggle="modal"
+              data-bs-target="#exampleModal">Получить консультанцию</button>
+            <button class="button primary-button brokers__hero-button">Открыть счет</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="individual__description">
+      <div class="container">
+        <div class="individual__about">
+          <h3 class="individual__about-title">Что такое брокерское обслуживание?</h3>
+          <div class="individual__about-card brokers-card">
+            <div class="individual__about-card-left ">
+              <img class="individual__about-img" src="img/individual-account/individual-about.png" alt="">
+            </div>
+            <div class="individual__about-card-right ">
+              <h4 class="card-right-title">Индивидуальный инвестиционный счет</h4>
+              <p class="card-right-description">Новый вид брокерского счета или счета доверительного управления, который
+                действует в России с 1 января 2015 года. При помощи ИИС каждый гражданин может приумножать свои
+                сбережения и получать
+                от государства инвестиционные налоговые вычеты
+              </p>
+            </div>
+          </div>
+          <ul class="individual__about-list brokers__list">
+            <li class="brokers__list-item individual__list-item">Открывается и ведется лицензированным брокером или УК
+            </li>
+            <li class="brokers__list-item individual__list-item">Допускается внесение денежных средств частями
+            </li>
+            <li class="brokers__list-item individual__list-item">Инвестор может одновременно иметь только один ИИС
+            </li>
+            <li class="brokers__list-item individual__list-item">Срок ведения счета не ограничен
+            </li>
+            <li class="brokers__list-item individual__list-item">Максимальная сумма внесения на ИИС – 400 000 рублей в
+              год
+            </li>
+          </ul>
+        </div>
+        <div class="individual__options">
+          <h3 class="individual__options-title">Варианты ИИС</h3>
+          <ul class="nav nav-pills rates__table-nav" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="type-a" data-bs-toggle="tab" data-bs-target="#typeA" type="button"
+                role="tab" aria-controls="typeA" aria-selected="true">Вычет 13% на взнос (тип А)</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="type-b" data-bs-toggle="tab" data-bs-target="#typeB" type="button" role="tab"
+                aria-controls="typeB" aria-selected="false">Вычет 13% на доход (тип Б)</button>
+            </li>
+          </ul>
+          <div class="tab-content">
+            <div class="tab-pane active" id="typeA" role="tabpanel" aria-labelledby="type-a" tabindex="0">
+              <div class="individual__options-card type-a brokers-card">
+                <div class="individual__options-card-left ">
+                  <img class="individual__options-img" src="img/individual-account/options-type-a.png" alt="type-a">
+                </div>
+                <div class="individual__options-card-right ">
+                  <h4 class="card-right-title">Вычет 13% на взнос (тип А)</h4>
+                  <ul class="individual__options-list brokers__list">
+                    <li class="brokers__list-item">Ежегодно возвращается налоговый вычет с внесенной на ИИС суммы
+                      в размере 13% (до 52 000 рублей)</li>
+                    <li class="brokers__list-item">Подходит для инвесторов, имеющих официальный доход, облагаемый НДФЛ
+                      (заработная плата, предпринимательская деятельность)</li>
+                  </ul>
+                </div>
+              </div>
+              <p class="individual__options-question">Как получить <a class="text-link" href="#">налоговый вычет на
+                  взнос?</a></p>
+              <p class="individual__options-description">Владелец индивидуального инвестиционного счета может выбрать
+                только один тип вычета, их совмещение не допускается. При расторжении договора на ведение ИИС ранее 3х
+                лет с момента его заключения, инвестор не будет иметь права на инвестиционные налоговые
+                вычеты.Полученные ранее вычеты на взнос нужно будет вернуть в бюджет
+                с взысканием пеней</p>
+            </div>
+            <div class="tab-pane " id="typeB" role="tabpanel" aria-labelledby="type-b" tabindex="0">
+              <div class="individual__options-card type-a brokers-card">
+                <div class="individual__options-card-left ">
+                  <img class="individual__options-img" src="img/individual-account/options-type-a.png" alt="type-a">
+                </div>
+                <div class="individual__options-card-right ">
+                  <h4 class="card-right-title">Вычет 13% на доход (тип Б)</h4>
+                  <ul class="individual__options-list brokers__list">
+                    <li class="brokers__list-item">Полученный от операций с ценными бумагами доход не облагается НДФЛ
+                    </li>
+                    <li class="brokers__list-item">Подходит для инвесторов, не получающих официальный доход или
+                      ориентированных на долгосрочные инвестиции</li>
+                  </ul>
+                </div>
+              </div>
+              <p class="individual__options-question">Как получить <a class="text-link" href="#">налоговый вычет на
+                  взнос?</a></p>
+              <p class="individual__options-description">Владелец индивидуального инвестиционного счета может выбрать
+                только один тип вычета, их совмещение не допускается. При расторжении договора на ведение ИИС ранее 3х
+                лет с момента его заключения, инвестор не будет иметь права на инвестиционные налоговые
+                вычеты.Полученные ранее вычеты на взнос нужно будет вернуть в бюджет
+                с взысканием пеней</p>
+            </div>
+          </div>
+        </div>
+        <div class="individual__advantages">
+          <h3 class="brokers__conditions-title">Преимущества открытия ИИС
+            в АО «НФК-Сбережения»</h3>
+          <div class="advantages-container">
+            <div class="brokers-card advantages__card">
+              <div class="advantages__card-header">
+                <img class="advantages__card-img" src="img/individual-account/strategy.png" alt="picture">
+              </div>
+              <h4 class="advantages__card-title">Готовые инвест-стратегии</h4>
+              <p class="advantages__card-description">Минимальная сумма для открытия счета –
+                10 000 рублей. Максимально можно внести
+                до 400 000 рублей за год.</p>
+            </div>
+            <div class="brokers-card advantages__card">
+              <div class="advantages__card-header">
+                <img class="advantages__card-img" src="img/individual-account/document.png" alt="picture">
+              </div>
+              <h4 class="advantages__card-title">Максимальное удобство</h4>
+              <p class="advantages__card-description">Вы можете отправить заявку на открытие счета не выходя из дома. Мы
+                сами свяжемся с вами.</p>
+            </div>
+            <div class="brokers-card advantages__card">
+              <div class="advantages__card-header">
+                <img class="advantages__card-img" src="img/individual-account/cash.png" alt="picture">
+              </div>
+              <h4 class="advantages__card-title">Дополнительная прибыль</h4>
+              <p class="advantages__card-description">Зарабатывайте на фондовом рынке
+                с крупнейшим профессиональным участником рынка ценных бумаг на территории Чувашии.</p>
+            </div>
+            <div class="brokers-card advantages__card">
+              <div class="advantages__card-header">
+                <img class="advantages__card-img" src="img/individual-account/strategy.png" alt="picture">
+              </div>
+              <h4 class="advantages__card-title">Прозрачность</h4>
+              <p class="advantages__card-description">Отслеживайте состояние своего счета онлайн или получайте отчет по
+                запросу.</p>
+            </div>
+            <div class="brokers-card advantages__card">
+              <div class="advantages__card-header">
+                <img class="advantages__card-img" src="img/individual-account/document.png" alt="picture">
+              </div>
+              <h4 class="advantages__card-title">Квалифицированная поддержка</h4>
+              <p class="advantages__card-description">Наши специалисты помогут вам выстроить финансовую стратегию для
+                достижения максимальной выгоды.</p>
+            </div>
+            <div class="brokers-card advantages__card">
+              <div class="advantages__card-header">
+                <img class="advantages__card-img" src="img/individual-account/cash.png" alt="picture">
+              </div>
+              <h4 class="advantages__card-title">Безопасность</h4>
+              <p class="advantages__card-description">Все операции на ИИС регулируются законодательством РФ. Возврат
+                налоговых вычетов из налогового бюджета гарантирован государством.</p>
+            </div>
+          </div>
+
+        </div>
+        <div class="accounts__examples">
+          <h3 class="accounts__examples-title">Примеры счетов</h3>
+          <div class="accounts__examples-header">
+            <ul class="examples-header__list">
+              <li class="examples-header__item first-el">Индивидиуальный инвестиционный счет</li>
+              <li class="examples-header__item second-el">Вносите</li>
+              <li class="examples-header__item third-el">Получаете</li>
+            </ul>
+          </div>
+          <div class="accounts__examples-body">
+            <div class="accounts__examples-card accounts__examples-services">
+              <div class="examples-card__header">
+                <div class="examples-card__account">
+                  <h4 class="card__account-title">Брокерского обслуживания</h4>
+                  <p class="card__account-description">Вы заключаете Брокерский договор на ведение ИИС с АО
+                    «НФК-Сбережения»</p>
+                </div>
+                <div class="examples-card__deposite">
+                  <p class="card__deposite-description">Ежегодно от 10 000
+                    до 400 000 рублей</p>
+                </div>
+                <div class="examples-card__get">
+                  <p class="card__get-description"> Налоговый вычет до 52 000 рублей </p>
+                  <p class="card__get-description"> + доход от операций
+                    с финансовыми инструментами </p>
+                </div>
+                <div class="examples-card__btn">
+                  <a href="#" class="button grey-button examples-btn"> Рассчитать</a>
+                </div>
+
+              </div>
+              <div class="examples-card__action card__action-services ">
+                <p class="card__action-decription">Совершаете торговые операции с инструментами фондового рынка:
+                  акциями, государственными и корпоративными облигациями, производными инструментами и другими
+                  доступными активами</p>
+              </div>
+            </div>
+            <div class="accounts__examples-card accounts__examples-management">
+              <div class="examples-card__header">
+                <div class="examples-card__account">
+                  <h4 class="card__account-title">Доверительного управления</h4>
+                  <p class="card__account-description">Вы заключаете договор Доверительного управления
+                    на ведение ИИС с АО «НФК-Сбережения»</p>
+                </div>
+                <div class="examples-card__deposite">
+                  <p class="card__deposite-description">Ежегодно от 10 000
+                    до 400 000 рублей</p>
+                </div>
+                <div class="examples-card__get">
+                  <p class="card__get-description"> Налоговый вычет до 52 000 рублей </p>
+                  <p class="card__get-description"> + доход от операций
+                    с финансовыми инструментами </p>
+                </div>
+                <div class="examples-card__btn">
+                  <a href="#" class="button grey-button examples-btn"> Рассчитать</a>
+                </div>
+
+              </div>
+              <div class="examples-card__action card__action-management ">
+                <p class="card__action-decription">В этом случае инвестиционные решения принимаются самим управляющим.
+                  Например, при доходности портфеля 20% годовых общий доход по счету составит 30,4% годовых</p>
+              </div>
+            </div>
+          </div>
+          <div class="accounts__examples-footer">
+            <p class="examples-footer__description">Брокерское обслуживание предполагает самостоятельное принятие
+              решений о выборе финансовых инструментов для своего портфеля. Клиент может приобретать как биржевые, так и
+              внебиржевые инструменты</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  @@include('html/footer.html',{})
+  <!-- <script src="js/app.min.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
+  <!-- <script src="https://unpkg.com/@popperjs/core@2"></script> -->
+
+
+</body>
+
+</html>

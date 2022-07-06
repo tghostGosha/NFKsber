@@ -12439,7 +12439,7 @@ button.swiper-pagination-bullet {
 }
 .brokers__hero-container {
   background-image: url("../img/brokerage-services/hero.png");
-  padding: 24px 50% 43px 0;
+  padding: 30px 50% 48px 0;
   background-repeat: no-repeat;
   background-position: right bottom;
 }
@@ -12454,6 +12454,9 @@ button.swiper-pagination-bullet {
   padding: 14px 32px;
   margin-right: 32px;
   border-radius: 5px;
+}
+.brokers__hero-button {
+  padding: 14px 32px;
 }
 
 .brokers__card-img {
@@ -12470,7 +12473,7 @@ button.swiper-pagination-bullet {
   position: relative;
 }
 .brokers__list-item:not(:last-child) {
-  margin-bottom: 18px;
+  margin-bottom: 16px;
 }
 .brokers__list-item::before {
   content: "";
@@ -12559,16 +12562,28 @@ button.swiper-pagination-bullet {
 }
 
 .brokers__app {
-  margin-bottom: 64px;
+  margin-bottom: 68px;
 }
 .brokers__app-card {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 32px;
+  row-gap: 28px;
   background-color: var(--primary-grey);
   border-radius: 10px;
   padding-top: 40px;
 }
 .brokers__app-card-left {
   padding: 0 0 40px 48px;
+  grid-column: 1/span 6;
+}
+.brokers__app-card-right {
+  grid-column: 7/span 6;
+  position: relative;
+}
+.brokers__app-img {
+  position: absolute;
+  bottom: 0;
 }
 .brokers__app-list {
   margin-bottom: 34px;
@@ -12577,32 +12592,30 @@ button.swiper-pagination-bullet {
   display: flex;
 }
 
-.google-btn {
-  margin: 0;
-  display: block;
-  width: 168px;
-  height: 46px;
-  background-color: var(--primary-text);
-  border-radius: 5px;
-  transition: all 0.1s ease-in-out 0.1s;
-  background-image: url("../img/brokerage-services/google-play.png");
-  background-repeat: no-repeat;
-  background-size: 85%;
-  background-position: center center;
+.google-button {
   margin-right: 24px;
 }
 
-.app-btn {
-  display: block;
-  width: 151px;
-  height: 46px;
-  background-color: var(--primary-text);
-  border-radius: 5px;
-  transition: all 0.1s ease-in-out 0.1s;
-  background-image: url("../img/brokerage-services/app-store.png");
-  background-repeat: no-repeat;
-  background-size: 85%;
-  background-position: center center;
+.black-google-play rect,
+.black-app-store rect {
+  fill: var(--primary-text);
+  transition: all 0.2s ease 0.1s;
+}
+
+.black-google-play path,
+.black-app-store path {
+  fill: #ffffff;
+  transition: all 0.2s ease 0.1s;
+}
+
+.black-google-play:hover rect,
+.black-app-store:hover rect {
+  fill: #ffffff;
+}
+
+.black-google-play:hover path,
+.black-app-store:hover path {
+  fill: var(--primary-text);
 }
 
 .brokers__service {
@@ -12610,17 +12623,24 @@ button.swiper-pagination-bullet {
 }
 .brokers__service-card {
   border-radius: 10px;
-  padding-top: 40px;
   background-color: var(--primary-grey);
-  display: flex;
-  height: 422px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 32px;
+  row-gap: 28px;
 }
 .brokers__service-card-left {
-  height: 382px;
-  background-image: url("../img/brokerage-services/service.png");
-  background-repeat: no-repeat;
-  background-size: 80%;
-  background-position: center bottom;
+  position: relative;
+  grid-column: 1/span 6;
+  left: 10%;
+}
+.brokers__service-card-right {
+  grid-column: 7/span 6;
+  padding: 40px 46px 78px 0;
+}
+.brokers__service-img {
+  position: absolute;
+  bottom: 0;
 }
 .brokers__service-list {
   margin: 0;
@@ -12636,17 +12656,24 @@ button.swiper-pagination-bullet {
 .brokers__education-card {
   background-color: var(--primary-text);
   border-radius: 10px;
-  padding-top: 40px;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 32px;
+  row-gap: 28px;
 }
 .brokers__education-card-right {
-  background-image: url("../img/brokerage-services/education.png");
-  background-repeat: no-repeat;
-  background-size: 80%;
-  background-position: center bottom;
+  grid-column: 7/span 6;
+  position: relative;
 }
 .brokers__education-card-left {
+  grid-column: 1/span 6;
   padding: 40px 10px 40px 40px;
+}
+.brokers__education-img {
+  position: absolute;
+  bottom: 0;
+  left: 8%;
+  object-fit: cover;
 }
 .brokers__education-buttons {
   display: flex;
@@ -13343,6 +13370,247 @@ button.swiper-pagination-bullet {
 .investor__transactions {
   background: linear-gradient(180deg, #F4F6F8 0%, rgba(244, 246, 248, 0) 100%);
   padding-bottom: 112px;
+}
+
+.individual__hero {
+  background-color: var(--primary-grey);
+  height: 480px;
+}
+.individual__hero-container {
+  background-image: url("../img/individual-account/individual-hero.png");
+  padding: 24px 50% 55px 0;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+.individual__hero-title {
+  margin-bottom: 24px;
+}
+.individual__hero-buttons {
+  display: inline-block;
+  margin-top: auto;
+}
+.individual__hero-buttons-grey {
+  padding: 14px 32px;
+  margin-right: 32px;
+  border-radius: 5px;
+}
+.individual__hero-button {
+  padding: 14px 32px;
+}
+.individual__hero-list {
+  padding-right: 120px;
+}
+
+.individual__description {
+  padding-top: 64px;
+  padding-bottom: 128px;
+}
+
+.individual__about-list {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 84px;
+  margin: 0;
+}
+.individual__about-card {
+  margin-bottom: 40px;
+}
+.individual__about-card-right {
+  padding: 40px 48px 100px 0;
+}
+.individual__about-img {
+  bottom: 0;
+  left: 10%;
+}
+
+.individual__about,
+.individual__options {
+  margin-bottom: 68px;
+}
+.individual__about-title,
+.individual__options-title {
+  margin: 0 auto;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.individual__about-img,
+.individual__options-img {
+  position: absolute;
+}
+.individual__about-card,
+.individual__options-card {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 32px;
+  background-color: var(--primary-grey);
+  border-radius: 10px;
+}
+.individual__about-card-left,
+.individual__options-card-left {
+  grid-column: 1/span 6;
+  position: relative;
+}
+.individual__about-card-right,
+.individual__options-card-right {
+  grid-column: 7/span 6;
+}
+
+.individual__list-item {
+  grid-column: span 6;
+}
+
+.tab-content {
+  padding: 0;
+}
+
+.individual__options-card {
+  margin-bottom: 24px;
+}
+.individual__options-card-right {
+  grid-column: 7/span 6;
+  padding: 40px 48px 84px 0;
+}
+.individual__options-title {
+  text-align: center;
+  max-width: 578px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+.individual__options-list {
+  margin: 0;
+}
+.individual__options-img {
+  position: absolute;
+  bottom: -3px;
+  left: 10%;
+}
+.individual__options-question {
+  color: var(--secondary-text);
+  margin-bottom: 24px;
+}
+.individual__options-description {
+  font-size: 14px;
+  line-height: 19px;
+  color: var(--secondary-text);
+  padding-right: 86px;
+}
+
+.individual__advantages {
+  margin-bottom: 68px;
+}
+.individual__advantages-title {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.advantages-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 32px;
+  row-gap: 40px;
+}
+
+.advantages__card {
+  grid-column: span 4;
+}
+.advantages__card-header {
+  width: 98px;
+  height: 98px;
+  margin: 0 auto;
+  background-color: var(--primary-grey);
+  border-radius: 10px;
+  padding: 22px 27px;
+  margin-bottom: 24px;
+}
+.advantages__card-title {
+  text-align: center;
+  margin-bottom: 16px;
+}
+.advantages__card-description {
+  padding: 0 11px;
+  text-align: center;
+  color: var(--secondary-text);
+}
+
+.accounts__examples {
+  margin-bottom: 68px;
+}
+.accounts__examples-services {
+  margin-bottom: 28px;
+}
+.accounts__examples-title {
+  text-align: center;
+  margin-bottom: 17px;
+}
+.accounts__examples-header {
+  padding: 23px 42px 23px 46px;
+}
+.accounts__examples-body {
+  margin-bottom: 24px;
+}
+.accounts__examples-card {
+  border: 1px solid var(--grey-button);
+  border-radius: 10px;
+}
+.accounts__examples-card .examples-card__header {
+  padding: 48px 28px 25px 46px;
+  display: grid;
+  align-items: start;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 32px;
+}
+.accounts__examples-card .examples-card__account {
+  display: flex;
+  flex-direction: column;
+  grid-column: span 5;
+}
+.accounts__examples-card .examples-card__account .card__account-title {
+  margin-bottom: 24px;
+}
+.accounts__examples-card .examples-card__account .card__account-description {
+  color: var(--secondary-text);
+}
+.accounts__examples-card .examples-card__deposite {
+  grid-column: span 2;
+}
+.accounts__examples-card .examples-card__get {
+  grid-column: span 3;
+}
+.accounts__examples-card .examples-card__btn {
+  grid-column: span 2;
+}
+.accounts__examples-card .examples-card__action {
+  grid-column: span 12;
+  padding: 24px 20% 47px 45px;
+}
+.accounts__examples-card .card__action-services {
+  background-color: #EDF2F5;
+}
+.accounts__examples-card .card__action-management {
+  background-color: #ECF3EC;
+}
+
+.examples-header__item {
+  color: var(--secondary-text);
+}
+
+.examples-btn {
+  padding: 14px 32px;
+}
+
+.examples-header__list {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 49px;
+}
+.examples-header__list .first-el {
+  grid-column: span 5;
+}
+.examples-header__list .second-el {
+  grid-column: span 2;
+}
+.examples-header__list .third-el {
+  grid-column: span 2;
 }
 
 .rates__hero {
@@ -14191,7 +14459,7 @@ button {
 }
 
 .google-button {
-  margin-right: 34px;
+  margin-right: 24px;
 }
 
 .svg-google-play rect,

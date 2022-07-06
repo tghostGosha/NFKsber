@@ -18,6 +18,7 @@
 @import "services/metals-market.scss";
 @import "services/depository-activities.scss";
 @import "services/investor-status.scss";
+@import "services/individual-account.scss";
 @import "rates/rates.scss";
 @import "services/transactions-repo.scss";
 @import "company/about.scss";
@@ -352,7 +353,7 @@ button {
 }
 
 .google-button {
-  margin-right: 34px;
+  margin-right: 24px;
 
 }
 

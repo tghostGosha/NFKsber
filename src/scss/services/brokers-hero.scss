@@ -4,7 +4,7 @@
 
   &-container {
     background-image: url('../img/brokerage-services/hero.png');
-    padding: 24px 50% 43px 0;
+    padding: 30px 50% 48px 0;
     background-repeat: no-repeat;
     background-position: right bottom;
   }
@@ -22,6 +22,9 @@
       margin-right: 32px;
       border-radius: 5px;
     }
+  }
+  &-button {
+    padding: 14px 32px;
   }
 }
 
@@ -41,7 +44,7 @@
   }
 
   &-item:not(:last-child) {
-    margin-bottom: 18px;
+    margin-bottom: 16px;
   }
 
   &-item::before {
@@ -144,26 +147,31 @@
 // }
 
 .brokers__app {
-  margin-bottom: 64px;
+  margin-bottom: 68px;
 
   &-card {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 32px;
+    row-gap: 28px;
     background-color: var(--primary-grey);
     border-radius: 10px;
     padding-top: 40px;
 
     &-left {
       padding: 0 0 40px 48px;
+      grid-column: 1/ span 6;
     }
 
     &-right {
-      // background-image: url('../img/brokerage-services/app.png');
-      // background-repeat: no-repeat;
-      // background-size: 80%;
-      // background-position: center bottom;
+      grid-column: 7/ span 6;
+     position: relative;
     }
   }
-
+  &-img {
+    position: absolute;
+    bottom: 0;
+  }
   &-list {
     margin-bottom: 34px;
   }
@@ -172,54 +180,60 @@
     display: flex;
   }
 }
-
-.google-btn {
-  margin: 0;
-  display: block;
-  width: 168px;
-  height: 46px;
-  background-color: var(--primary-text);
-  border-radius: 5px;
-  transition: all 0.1s ease-in-out 0.1s;
-  background-image: url('../img/brokerage-services/google-play.png');
-  background-repeat: no-repeat;
-  background-size: 85%;
-  background-position: center center;
+.google-button {
   margin-right: 24px;
+
 }
 
-.app-btn {
-  display: block;
-  width: 151px;
-  height: 46px;
-  background-color: var(--primary-text);
-  border-radius: 5px;
-  transition: all 0.1s ease-in-out 0.1s;
-  background-image: url('../img/brokerage-services/app-store.png');
-  background-repeat: no-repeat;
-  background-size: 85%;
-  background-position: center center;
+.black-google-play rect,
+.black-app-store rect {
+  fill: var(--primary-text);
+  transition: all 0.2s ease 0.1s;
 }
+
+.black-google-play path,
+.black-app-store path {
+  fill: #ffffff;
+  transition: all 0.2s ease 0.1s;
+}
+
+.black-google-play:hover rect,
+.black-app-store:hover rect {
+  fill: #ffffff;
+}
+
+.black-google-play:hover path,
+.black-app-store:hover path {
+  fill: var(--primary-text);
+}
+
 
 .brokers__service {
   margin-bottom: 64px;
 
   &-card {
     border-radius: 10px;
-    padding-top: 40px;
     background-color: var(--primary-grey);
-    display: flex;
-    height: 422px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 32px;
+    row-gap: 28px;
 
     &-left {
-      height: 382px;
-      background-image: url('../img/brokerage-services/service.png');
-      background-repeat: no-repeat;
-      background-size: 80%;
-      background-position: center bottom;
+      position: relative;
+      grid-column: 1/ span 6;
+      left: 10%;
     }
+    &-right {
+      grid-column: 7/ span 6;
+      padding: 40px 46px 78px 0;
+    }
+    
   }
-
+  &-img {
+      position: absolute;
+      bottom: 0;
+  }
   &-list {
     margin: 0;
   }
@@ -240,19 +254,26 @@
   &-card {
     background-color: var(--primary-text);
     border-radius: 10px;
-    padding-top: 40px;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 32px;
+    row-gap: 28px;
 
     &-right {
-      background-image: url('../img/brokerage-services/education.png');
-      background-repeat: no-repeat;
-      background-size: 80%;
-      background-position: center bottom;
+      grid-column: 7/ span 6;
+      position: relative;
     }
 
     &-left {
+      grid-column: 1/ span 6;
       padding: 40px 10px 40px 40px;
     }
+  }
+  &-img {
+    position: absolute;
+    bottom: 0;
+    left: 8%;
+    object-fit: cover;
   }
 
   &-buttons {
