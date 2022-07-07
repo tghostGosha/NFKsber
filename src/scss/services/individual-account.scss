@@ -196,9 +196,11 @@
 
 .accounts__examples {
   margin-bottom: 68px;
+
   &-services {
     margin-bottom: 28px;
   }
+
   &-title {
     text-align: center;
     margin-bottom: 17px;
@@ -224,7 +226,7 @@
       grid-template-columns: repeat(12, 1fr);
       column-gap: 32px;
     }
-    
+
     .examples-card__account {
       display: flex;
       flex-direction: column;
@@ -233,11 +235,12 @@
       .card__account-title {
         margin-bottom: 24px;
       }
+
       .card__account-description {
         color: var(--secondary-text);
       }
     }
-    
+
     .examples-card__deposite {
       grid-column: span 2;
     }
@@ -248,28 +251,33 @@
 
     .examples-card__btn {
       grid-column: span 2;
-      
+
     }
 
     .examples-card__action {
       grid-column: span 12;
-      
+
       padding: 24px 20% 47px 45px;
     }
+
     .card__action-services {
       background-color: #EDF2F5;
     }
+
     .card__action-management {
       background-color: #ECF3EC;
     }
   }
 }
+
 .examples-header__item {
   color: var(--secondary-text);
 }
+
 .examples-btn {
   padding: 14px 32px;
 }
+
 .examples-header__list {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -288,24 +296,32 @@
     grid-column: span 2;
   }
 }
+
 .individual-accordion {
   --bs-accordion-bg: inherit;
 }
+
 // .calc__brokers-service {
 //   display: grid;
 // }
 .calc__brokers-left-card {
   width: 605px;
 }
-.noUi-handle:after, .noUi-handle:before {
+
+.noUi-handle:after,
+.noUi-handle:before {
   display: none;
 }
+
 .noUi-target {
   border: none;
 }
+
 .noUi-horizontal {
-  height: 2px ;
+  height: 2px;
+  max-width: 591px;
 }
+
 .noUi-horizontal .noUi-handle {
   width: 18px;
   height: 18px;
@@ -315,7 +331,211 @@
   box-shadow: none;
   top: -8px;
 }
+
 .noUi-connect {
   background-color: var(--primary-green);
-  color: var(--primary-green);;
+  color: var(--primary-green);
+  ;
+}
+
+.calc__brokers-service {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 31px;
+
+}
+
+.calc__brokers-left-card {
+  display: flex;
+  flex-direction: column;
+  grid-column: 1/ span 6;
+}
+
+.total__sum,
+.total__years {
+  display: flex;
+  flex-direction: column;
+}
+
+.total__sum {
+  margin-bottom: 40px;
+}
+
+.slider-value {
+  font-family: gilroy;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 14px;
+  margin-top: 8px;
+}
+
+.total__sum-span,
+.total__years-span {
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.total__sum-scale {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+
+.total__sum-scale span {
+  display: block;
+  // width: 57px;
+  font-size: 14px;
+  line-height: 19px;
+  color: var(--secondary-text);
+}
+
+.total__sum-scale span:not(:last-child) {
+  text-align: center;
+}
+
+.whitespace-scale {
+  position: relative;
+}
+
+.value-margin {
+  margin: 0 18px;
+}
+
+.total__years-scale {
+  display: flex;
+  margin-top: 16px;
+}
+
+.total__years-scale span {
+  display: block;
+  width: 40px;
+  font-size: 14px;
+  line-height: 19px;
+  color: var(--secondary-text);
+}
+
+.total__years-scale span:nth-child(1) {
+  margin-right: 117px;
+}
+
+.total__years-scale span:nth-child(2) {
+  margin-right: 213px;
+}
+
+.total__years-scale span:nth-child(3) {
+  margin-right: 117px;
+}
+
+.whitespace-scale::before {
+  content: '';
+  position: absolute;
+  width: 4px;
+  height: 2px;
+  background-color: #ffffff;
+  top: -18px;
+  left: 25px;
+  z-index: 25;
+}
+
+.whitespace-scale-years {
+  position: relative;
+}
+
+.whitespace-scale-years::before {
+  content: '';
+  position: absolute;
+  width: 4px;
+  height: 2px;
+  background-color: #ffffff;
+  top: -18px;
+  left: 15px;
+  z-index: 25;
+}
+
+.calc-description {
+  font-size: 14px;
+  line-height: 19px;
+  color: var(--secondary-text);
+  margin-top: 24px;
+  padding-right: 90px;
+}
+
+.calc__brokers {
+  &-header {
+    background-color: var(--primary-grey);
+    padding: 28px 45px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &-right-card {
+    grid-column: 7/ span 6;
+    border: 1px solid var(--grey-button);
+    border-radius: 10px;
+  }
+}
+
+.calc__brokers-header-title {
+  margin-bottom: 12px;
+}
+
+.saving__sum {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.increment__asset {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.calc-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+// .calc-flex:not(3n) {
+//   margin-bottom: 16px;
+// }
+.vnecenie-sredstv,
+.chisty-dohod,
+.nalogovy-vichet {
+  margin-bottom: 16px;
+}
+.saving__sum {
+  margin-bottom: 16px;
+
+  &-value {
+    font-family: gilroy;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
+
+.calc-value {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+}
+.calc__brokers-body {
+  display: flex;
+  flex-direction: column;
+  padding: 28px 45px 40px 45px;
+}
+.calc-btn {
+  display: inline-block;
+  margin: 0 auto;
+  margin-top: 28px;
+}
+.calc-button {
+  display: inline-block;
+  padding: 14px 32px;
+}
+.ndfl {
+  margin: 0;
 }

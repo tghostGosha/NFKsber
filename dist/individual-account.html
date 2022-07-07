@@ -380,26 +380,89 @@
           <h3 class="individual__options-title">Калькулятор ИИС</h3>
           <ul class="nav nav-pills rates__table-nav" id="myTabCalc" role="tablist">
             <li class="nav-item" role="presentation">
-              <button class="nav-link active" id="brokers-service" data-bs-toggle="tab" data-bs-target="#brokersService" type="button"
-                role="tab" aria-controls="brokersService" aria-selected="true">Брокерского обслуживания</button>
+              <button class="nav-link active" id="brokers-service" data-bs-toggle="tab" data-bs-target="#brokersService"
+                type="button" role="tab" aria-controls="brokersService" aria-selected="true">Брокерского
+                обслуживания</button>
             </li>
             <li class="nav-item" role="presentation">
-              <button class="nav-link" id="trust-management" data-bs-toggle="tab" data-bs-target="trustManagement" type="button" role="tab"
-                aria-controls="trustManagement" aria-selected="false">Доверительного управления</button>
+              <button class="nav-link" id="trust-management" data-bs-toggle="tab" data-bs-target="trustManagement"
+                type="button" role="tab" aria-controls="trustManagement" aria-selected="false">Доверительного
+                управления</button>
             </li>
           </ul>
           <div class="tab-content">
-            <div class="tab-pane active" id="brokersService" role="tabpanel" aria-labelledby="brokers-service" tabindex="0">
+            <div class="tab-pane active" id="brokersService" role="tabpanel" aria-labelledby="brokers-service"
+              tabindex="0">
               <div class="calc__brokers-service">
-                  <div class="calc__brokers-left-card">
-                    <span>Сумма, внесенная за год</span>
-                    <span id="slider1Value"></span>
+                <div class="calc__brokers-left-card">
+                  <div class="total__sum">
+                    <span class="total__sum-span">Сумма, внесенная за год</span>
+                    <span id="slider1Value" class="slider-value"></span>
                     <div id="slider1"></div>
+                    <div class="total__sum-scale">
+                      <span>10 000₽</span>
+                      <span class="whitespace-scale">100 000₽</span>
+                      <span class="whitespace-scale value-margin">200 000₽</span>
+                      <span class="whitespace-scale">300 000₽</span>
+                      <span>400 000₽</span>
+                    </div>
                   </div>
+                  <div class="total__years">
+                    <span class="total__years-span">Срок ведения ИИС</span>
+                    <span id="slider2Value" class="slider-value"></span>
+                    <div id="slider2"></div>
+                    <div class="total__years-scale">
+                      <span>3 года</span>
+                      <span class="whitespace-scale-years">5 лет</span>
+                      <span class="whitespace-scale-years">8 лет</span>
+                      <span>10 лет</span>
+                    </div>
+                  </div>
+                  <p class="calc-description">
+                    Расчет калькулятора предварительный и не является публичной офертой.
+                    Обратите внимание, что налоговый вычет может быть получен не более чем
+                    за 3 предыдущих года.
+                  </p>
+                </div>
+                
+                <form action="#" class="calc__brokers-right-card">
+                  <div class="calc__brokers-header">
+                    <h4 class="calc__brokers-header-title" id="resultYears"></h4>
+                    <div class="saving__sum">
+                      <label for="result" class="saving__sum-title">Накопленная сумма</label>
+                      <input class="saving__sum-value" id="result">
+                    </div>
+                    <div class="increment__asset ">
+                      <label for="resultPercent" class="calc-comment">Прирост активов</label>
+                      <input type="text" class="increment__asset-value calc-value" id="resultPercent">
+                    </div>
+                  </div>
+                  <div class="calc__brokers-body">
+                    <div class="vnecenie-sredstv calc-flex">
+                      <label for="resultTotalVnesenie"  class="calc-comment">Внесенные средства</label>
+                      <input type="text" class="increment__asset-value calc-value" id="resultTotalVnesenie">
+                    </div>
+                    <div class="chisty-dohod calc-flex">
+                      <label for="percent" class="calc-comment">Чистый доход за весь срок ведения ИИС</label>
+                      <input type="text" class="increment__asset-value calc-value" id="percent">
+                    </div>
+                    <div class="nalogovy-vichet calc-flex">
+                      <label  for="vichet" class="calc-comment">Налоговый вычет 13%</label>
+                      <input type="text" class="increment__asset-value calc-value" id="vichet">
+                    </div>
+                    <div class="ndfl calc-flex">
+                      <label for="ndfl" class="calc-comment">НДФЛ, удерживаемый с дохода ДУ</label>
+                      <input type="text" class="calc-value" id="ndfl">
+                    </div>
+                    <div class="calc-btn">
+                      <a href="#" class="button primary-button calc-button">Оформить ИИС</a>
+                    </div>
+                  </div>
+                </form>
               </div>
             </div>
             <div class="tab-pane " id="trustManagement" role="tabpanel" aria-labelledby="trust-management" tabindex="0">
-              
+
             </div>
           </div>
         </div>
@@ -519,11 +582,13 @@
 
         </div>
         <div class="stockmarket__info-footnotes">
-          <p class="stockmarket__info-text text-indent"><span class="letter-lowercase">1</span>Сумма максимального налогового вычета
+          <p class="stockmarket__info-text text-indent"><span class="letter-lowercase">1</span>Сумма максимального
+            налогового вычета
             при внесении на счет 400 тысяч рублей при условии уплаченного НДФЛ на сумму не менее 52 000 рублей за год.
 
           </p>
-          <p class="stockmarket__info-text text-indent"><span class="letter-lowercase">2</span>Расчет доходности произведен в
+          <p class="stockmarket__info-text text-indent"><span class="letter-lowercase">2</span>Расчет доходности
+            произведен в
             качестве примера путем сложения доходности к погашению государственных облигаций в размере 6,65% годовых
             (выпуск: ОФЗ-ПК-29007, данные госрегистрации: №29007RMFS0 от 31.12.2014, МинФин) по состоянию на 11.08.2020
             г. и налогового вычета (возврата) по НДФЛ на инвестируемые средства в размере 13%.
@@ -541,17 +606,21 @@
             федеральным законом, условиями управления активами, информацией о доверительном управляющем вы можете
             ознакомиться, обратившись в АО «НФК - Сбережения», а также на сайте www.nfksber.ru
           </p>
-          <p class="stockmarket__info-text text-indent"><span class="letter-lowercase">4</span>По размеру собственных средств по
+          <p class="stockmarket__info-text text-indent"><span class="letter-lowercase">4</span>По размеру собственных
+            средств по
             состоянию на 31.01.2017 г. из числа некредитных организаций, зарегистрированных в Чувашской Республике.
           </p>
-          <p class="stockmarket__info-text text-indent"><span class="letter-lowercase">5</span>Доступ предоставляется программой
+          <p class="stockmarket__info-text text-indent"><span class="letter-lowercase">5</span>Доступ предоставляется
+            программой
             ИТС-Брокер при заключении брокерского договора на ведение индивидуального инвестиционного счета.
           </p>
-          <p class="stockmarket__info-text text-indent"><span class="letter-lowercase">6</span>В качестве примера используется
+          <p class="stockmarket__info-text text-indent"><span class="letter-lowercase">6</span>В качестве примера
+            используется
             инвестирование в государственные облигации, выпуск: ОФЗ-29006-ПК. Данные госрегистрации:№29006RMFS от
             31.12.2014, МинФин. Доходность к погашению 13,35% годовых по состоянию на 11.06.2015 г.
           </p>
-          <p class="stockmarket__info-text text-indent"><span class="letter-lowercase">*</span>Результаты расчета не являются
+          <p class="stockmarket__info-text text-indent"><span class="letter-lowercase">*</span>Результаты расчета не
+            являются
             публичной офертой и могут быть уточнены при заключении договора. При осуществлении расчетов использованы
             справочно-информационные и аналитические материалы, подготовленные специалистами АО «НФК-Сбережения», не
             имеющие в качестве основной цели продвижение товара на рынке и не являющиеся рекламой, в том числе
@@ -730,7 +799,11 @@
   </div>
 
 </footer>
+
   <script src="js/app.min.js"></script>
+
+  <!-- <script srce_modules/nouislider/"></script>="/nod -->
+  <!-- <script src="/nouislider/documentation/assets/wNumb.js"></script> -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
     crossorigin="anonymous"></script>

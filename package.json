@@ -20,7 +20,8 @@
     "inputmask": "^5.0.7",
     "jquery": "^3.6.0",
     "just-validate": "^3.8.1",
-    "nouislider": "^15.6.0"
+    "nouislider": "^15.6.0",
+    "wnumb": "^1.2.0"
   },
   "devDependencies": {
     "browser-sync": "latest",
