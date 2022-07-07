@@ -407,6 +407,7 @@
 .total__years-scale {
   display: flex;
   margin-top: 16px;
+  justify-content: space-between;
 }
 
 .total__years-scale span {
@@ -417,16 +418,8 @@
   color: var(--secondary-text);
 }
 
-.total__years-scale span:nth-child(1) {
-  margin-right: 117px;
-}
-
 .total__years-scale span:nth-child(2) {
-  margin-right: 213px;
-}
-
-.total__years-scale span:nth-child(3) {
-  margin-right: 117px;
+  margin-right: 15px;
 }
 
 .whitespace-scale::before {

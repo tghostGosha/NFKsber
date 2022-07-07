@@ -253,7 +253,7 @@ noUiSlider.create(slider2, {
   connect: [true, false],
   range: {
     'min': 3,
-    'max': 10
+    'max': 12
   },
   step: 1,
   format: wNumb({

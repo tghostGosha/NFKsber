@@ -1,0 +1,82 @@
+.currency__hero {
+  background-color: var(--primary-grey);
+  height: 480px;
+
+  &-container {
+    background-image: url('../img/currency-market/currency-hero.png');
+    padding: 31px 50% 48px 0;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+  }
+
+  &-title {
+    margin-bottom: 24px;
+    padding-right: 30%;
+  }
+
+  &-buttons {
+    display: inline-block;
+    margin-top: auto;
+
+    &-grey {
+      padding: 14px 32px;
+      margin-right: 32px;
+      border-radius: 5px;
+    }
+  }
+
+  &-button {
+    padding: 14px 32px;
+  }
+
+  &-list {
+    margin-bottom: 68px;
+  }
+}
+
+.currency__about {
+  padding-top: 68px;
+}
+
+.currency__benefit {
+  &-title {
+    text-align: center;
+  }
+
+  &-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 32px;
+    row-gap: 28px;
+  }
+
+  &-card {
+    background: var(--primary-grey);
+    border-radius: 10px;
+  }
+}
+
+.profitable__course {
+  grid-column: span 12;
+  padding: 40px 50% 62px 46px;
+  background-image: url('../img/currency-market/profitable-course.png');
+  background-repeat: no-repeat;
+  background-position: 88% 92%;
+  // background-size: contain;
+}
+.profitable-btn {
+  padding: 18px 26px;
+  display: inline-block;
+  margin-top: 40px;
+}
+.secure__broker,
+.terminal__online {
+  grid-column: span 6;
+}
+
+.secure__broker {
+  padding: 40px 38% 56px 46px;
+}
+.terminal__online {
+  padding: 40px 40% 28px 46px;
+}
