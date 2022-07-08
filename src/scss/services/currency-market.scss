@@ -39,6 +39,8 @@
 }
 
 .currency__benefit {
+  margin-bottom: 68px;
+
   &-title {
     text-align: center;
   }
@@ -48,11 +50,19 @@
     grid-template-columns: repeat(12, 1fr);
     column-gap: 32px;
     row-gap: 28px;
+    margin-bottom: 24px;
   }
 
   &-card {
     background: var(--primary-grey);
     border-radius: 10px;
+    background-repeat: no-repeat;
+  }
+
+  &-footnes {
+    font-size: 14px;
+    line-height: 19px;
+    color: var(--secondary-text);
   }
 }
 
@@ -64,19 +74,83 @@
   background-position: 88% 92%;
   // background-size: contain;
 }
+
 .profitable-btn {
   padding: 18px 26px;
   display: inline-block;
   margin-top: 40px;
 }
+
 .secure__broker,
-.terminal__online {
+.terminal__online,
+.own__account,
+.credit__shoulder {
   grid-column: span 6;
+  background-position: 92% 77%;
 }
 
 .secure__broker {
   padding: 40px 38% 56px 46px;
+  background-image: url('../img/currency-market/currency-broker.png');
+
 }
+
 .terminal__online {
   padding: 40px 40% 28px 46px;
+  background-image: url('../img/currency-market/currency-terminal.png');
+}
+
+.own__account {
+  padding: 40px 40% 28px 46px;
+  background-image: url('../img/currency-market/currency-score.png');
+}
+
+.credit__shoulder {
+  padding: 40px 41% 56px 46px;
+  background-image: url('../img/currency-market/currency-credit.png');
+}
+
+.currency__rates {
+  padding-top: 68px;
+  padding-bottom: 136px;
+
+  &-title {
+    text-align: center;
+  }
+
+  &-info {
+    margin-top: 40px;
+
+    &-title {
+      margin-bottom: 28px;
+    }
+
+    &-description {
+      margin-bottom: 28px;
+    }
+  }
+}
+.currency__info {
+  background: linear-gradient(180deg, #F4F6F8 0%, rgba(244, 246, 248, 0) 100%);
+  position: relative;
+  padding-bottom: 112px;
+  &-buttons {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 32px;
+    margin-bottom: 68px;
+  }
+  &-consult {
+    padding-top: 22px;
+    padding-bottom: 21px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &-btn {
+    grid-column: span 4;
+  }
+}
+.currency__info-footnotes {
+  margin-top: 68px;
 }

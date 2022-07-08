@@ -252,7 +252,7 @@ noUiSlider.create(slider2, {
   start: [0],
   connect: [true, false],
   range: {
-    'min': 3,
+    'min': 1,
     'max': 12
   },
   step: 1,
@@ -265,233 +265,80 @@ let slider1Value = document.getElementById('slider1Value');
 let slider2Value = document.getElementById('slider2Value');
 let resultYears = document.getElementById('resultYears');
 let resultTotalVnesenie = document.getElementById('resultTotalVnesenie');
-let count
+let resultPercent = document.getElementById('resultPercent');
+let vichet = document.getElementById('vichet')
+let depositAmount
 let years
 
+const calc = (depositAmount, years) => {
+  resultTotalVnesenie.value = `${depositAmount * years}₽`;
+  // resultPercent = Math.round(((result / (resultTotalVnesenie / 2)) - 1) * 1000 / years) / 10;
+
+  vichet.value = Math.round((depositAmount * 0.13) * years) + '₽';
+
+  // if (years <= 3.1) {
+  //   years = 3;
+  //   $("#years").val("3");
+  // };
+
+  // if (years >= 12) {
+  //   years = 12;
+  //   $("#years").val("10");
+  // };
+  let dohodDU = depositAmount*0.1322 
+  let dohod = dohodDU + depositAmount
+ console.log(dohod)
+  let totalDohodDU = Math.round((years*depositAmount + dohod)* 1.322)
+  
+  console.log(totalDohodDU)
+  
+  
+  // for (let i = 1; i < years + 1; i++) {
+  //   depositAmount+=(depositAmount*13.22)
+  //   console.log(depositAmount)
+  // }
+
+  
+
+}
+
 slider2.noUiSlider.on('update', function (values, handle) {
-  years = slider2.noUiSlider.get(true)
+  years = Math.round(slider2.noUiSlider.get(true))
+
   if (years <= 4) {
     slider2Value.innerHTML = `${years} года`;
     resultYears.textContent = `Мои сбережения за ${years} года`
-    
+
   } else {
     slider2Value.innerHTML = `${years} лет`;
     resultYears.textContent = `Мои сбережения за ${years} лет`
-    
+
   }
-  console.log(years)
+  calc(years, depositAmount)
   return years
 });
 
 slider1.noUiSlider.on('update', function (values, handle) {
-  count = Math.round(slider1.noUiSlider.get(true))
-  slider1Value.innerHTML = `${count}₽`;
-  console.log(count)
-  
-  return count
+  depositAmount = Math.round(slider1.noUiSlider.get(true))
+  slider1Value.innerHTML = `${depositAmount}₽`;
+
+  calc(years, depositAmount)
+  // console.log(depositAmount)
+  return depositAmount
+
 });
 
-console.log(count)
-console.log(years)
 
-// resultTotalVnesenie = new Number(0)
-// resultTotalVnesenie.textContent = Math.round(valueSlider1 * valueSlider2);
 
-// console.log(resultTotalVnesenie)
 
-// $(document).ready(function() {
-//   // Optimalisation: Store the references outside the event handler:
-//   let $window = $(window);
-//   let $pane = $('#pane1');
-
-//   function checkWidth() {
-//     let windowsize = $window.width();
-//     if (windowsize < 800) {
-//       $('.advantage .b-section-info__text').css('background','none');
-//       //$('.advantage .b-section-info__text:nth-child').css('background','none');
-//     }
-//     else{
-//       $('.advantage .b-section-info__text').eq(0).css('background','url(../img/arrow-left.png) no-repeat top center');
-//       $('.advantage .b-section-info__text').eq(1).css('background','url(../img/arrow-right.png) no-repeat top center');
-//     }
+// function addSpaces(nStr) {
+//   nStr += '';
+//   let x = nStr.split('.');
+//   let x1 = x[0];
+//   let x2 = x.length > 1 ? '.' + x[1] : '';
+//   let rgx = /(\d+)(\d{3})/;
+//   while (rgx.test(x1)) {
+//     x1 = x1.replace(rgx, '$1' + ' ' + '$2');
 //   }
-//   // Execute on load
-//   checkWidth();
-//   // Bind event listener
-//   $(window).resize(checkWidth);
-
-
-//   $(".b-pricing-info__item.f-pricing-info__item").click(function(){
-//     $(".b-pricing-info__item.f-pricing-info__item").removeClass("active");
-//     $(this).addClass("active");
-
-//     let newTitle = $(this).parent().parent().find(".title").find("h2").text();
-//     console.log ('newTitle '+newTitle);
-
-//     let newPercent = $(this).attr("percent");
-//     let newPercentText = $(this).attr("percentText");
-
-//     let newCapitalize = $(this).attr("capitalize");
-
-//     console.log ('newCapitalize '+newCapitalize);
-
-//     if(newCapitalize!=1){
-//       $("ins.capitalize").addClass("hide");
-//       $(".ndfl").addClass("hide");
-//     } else {
-//       $("ins.capitalize").removeClass("hide");
-//       $(".ndfl").removeClass("hide");
-//     }
-
-//     $("#percent").attr("val",newPercent);
-//     $("#percentText").html(newPercentText);
-//     $("#name").text(newTitle)
-//     $("span.name").text(newTitle)
-//     $("span.name").attr("name",newTitle);
-//     $(".form form textarea").text("Меня интересует ИИС "+newTitle+". Прошу связаться со мной...")
-//     calc(newCapitalize);
-//   })
-// });
-
-// function scrollToForm(){
-// window.scrollTo(0, $("#formScroll").offset().top-50);	
+//   return x1 + x2;
 // }
-
-// function calc() {
-
-//   // $(".SliderUnits.s400").html("<i></i><i></i><i></i><i></i>");
-//   // $(".SliderUnits.sYears").html("<i></i><i></i><i></i><i></i><i></i><i></i><i></i>");
-
-//   // var capitalize = new Number($(".f-pricing-info__item.active").attr("capitalize"))
-
-//   let result = new Number(0);
-
-//   var dohodDU = new Number(0);
-//   var totalDohodDU = new Number(0);
-
-//   var start = new Number($("#start").val());
-
-//   var years = new Number($("#years").val());
-
-//   if (start <= 10001) {
-//     start = 10000;
-//     $("#start").val("10000");
-//   };
-
-//   if (start >= 400001) {
-//     start = 400000;
-//     $("#start").val("400000");
-//   };
-
-//   if (years <= 3.1) {
-//     years = 3;
-//     $("#years").val("3");
-//   };
-
-//   if (years >= 10) {
-//     years = 10;
-//     $("#years").val("10");
-//   };
-
-//   let vichet = new Number($("#vichet").attr("val"));
-//   let percent = new Number($("#percent").attr("val"));
-
-
-//   percent = new Number(percent / 100 + 1);
-//   let percent2 = (percent * 10000 - 10000) / 10000;
-//   vichet = vichet / 100;
-
-//   let vichetTotal = Math.round(vichet * start * years);
-
-
-//   //var thisPercent = new Number(resultPercent/100+1);
-//   let prevResult = new Number(0);
-
-//   // 0 = Брокерский, 1 = Накопительный
-//   //if(capitalize==0){
-//   //var result = Math.round((start*(vichet+percent))*years);
-//   for (let i = 1; i < years + 1; i++) {
-
-//     let prev = new Number(i - 1);
-//     if (prev < 0) { prev = 0 };
-
-//     dohodDU = (start + prevResult) * percent2;
-//     totalDohodDU = totalDohodDU + dohodDU;
-
-//     result = Math.round((prevResult + start) + dohodDU);
-//     prevResult = result;
-
-//     console.log('start ' + start + ',prevResult ' + prevResult + ',percent2 ' + percent2 + ',result ' + result);
-
-//   }
-
-//   // if (capitalize == 1) {
-//   //   ndfl = Math.round((totalDohodDU - 0.001 * (start * years + dohodDU)) * 0.13);
-//   //   //ndfl =  (result-(start*years)-vichetTotal)*0.13
-//   //   result = result - ndfl;
-//   // }
-
-
-//   result = Math.round(result + vichetTotal);
-//   let resultPercentMoney = Math.round(result - vichetTotal - (start * years));
-
-
-//   percent = Math.round(resultPercentMoney - vichet)
-
-//   //var resultPercent = Math.round(((result/(resultTotalVnesenie/2))-1)*1000/years)/10;
-
-//   let param = result / resultTotalVnesenie;
-//   param = param.toFixed(4);
-//   console.log(param);
-//   param = (param - 1).toFixed(4);
-//   let resultPercent = param * 100;
-//   resultPercent = resultPercent.toFixed(2);
-
-//   resultTotalVnesenie = addSpaces(resultTotalVnesenie);
-//   //resultPercent = addSpaces(resultPercent);
-//   ndfl = addSpaces(ndfl);
-//   vichetTotal = addSpaces(vichetTotal);
-//   percent = addSpaces(percent);
-//   result = addSpaces(result);
-
-//   $("#vichet").html(vichetTotal + '<i class="fa fa-rub"></i>');
-//   $("#ndfl").html(ndfl + '<i class="fa fa-rub"></i>');
-//   $("#percent").html(percent + '<i class="fa fa-rub"></i>');
-//   $("#result").html(result + '<i class="fa fa-rub"></i>');
-//   $("#resultTotalVnesenie").html(resultTotalVnesenie + '<i class="fa fa-rub"></i>');
-//   $("#resultPercent").html(resultPercent + '%');
-//   $("#resultYears").html(years);
-
-
-// }
-// if(capitalize==1){
-//   for (var i = 0; i < years; i++) {
-//      result = Math.round((result+start)*percent);
-//      //alert(start*vichet)
-//   }
-//   result =  Math.round(result+vichetTotal);
-// }
-
-// меняем 3 года, 5 лет
-// if(years > 4){
-//   $("ins.years").text("лет");
-// }
-// if(years < 5){
-//   $("ins.years").text("года");
-// }
-
-
-
-
-
-function addSpaces(nStr) {
-  nStr += '';
-  let x = nStr.split('.');
-  let x1 = x[0];
-  let x2 = x.length > 1 ? '.' + x[1] : '';
-  let rgx = /(\d+)(\d{3})/;
-  while (rgx.test(x1)) {
-    x1 = x1.replace(rgx, '$1' + ' ' + '$2');
-  }
-  return x1 + x2;
-}

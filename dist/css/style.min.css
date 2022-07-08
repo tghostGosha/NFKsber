@@ -13432,15 +13432,6 @@ button.swiper-pagination-bullet {
   margin-top: 68px;
 }
 
-.large__button-grey {
-  padding: 28px;
-  margin-bottom: 68px;
-}
-
-.large__button-svg {
-  margin: 0 0 0 93px !important;
-}
-
 .depositary__hero {
   background-color: var(--primary-grey);
   height: 480px;
@@ -14130,6 +14121,10 @@ button.swiper-pagination-bullet {
 }
 
 .calc-value {
+  outline: none;
+  text-align: end;
+  background-color: inherit;
+  border: none;
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
@@ -14543,6 +14538,9 @@ th {
   padding-top: 68px;
 }
 
+.currency__benefit {
+  margin-bottom: 68px;
+}
 .currency__benefit-title {
   text-align: center;
 }
@@ -14551,10 +14549,17 @@ th {
   grid-template-columns: repeat(12, 1fr);
   column-gap: 32px;
   row-gap: 28px;
+  margin-bottom: 24px;
 }
 .currency__benefit-card {
   background: var(--primary-grey);
   border-radius: 10px;
+  background-repeat: no-repeat;
+}
+.currency__benefit-footnes {
+  font-size: 14px;
+  line-height: 19px;
+  color: var(--secondary-text);
 }
 
 .profitable__course {
@@ -14572,16 +14577,74 @@ th {
 }
 
 .secure__broker,
-.terminal__online {
+.terminal__online,
+.own__account,
+.credit__shoulder {
   grid-column: span 6;
+  background-position: 92% 77%;
 }
 
 .secure__broker {
   padding: 40px 38% 56px 46px;
+  background-image: url("../img/currency-market/currency-broker.png");
 }
 
 .terminal__online {
   padding: 40px 40% 28px 46px;
+  background-image: url("../img/currency-market/currency-terminal.png");
+}
+
+.own__account {
+  padding: 40px 40% 28px 46px;
+  background-image: url("../img/currency-market/currency-score.png");
+}
+
+.credit__shoulder {
+  padding: 40px 41% 56px 46px;
+  background-image: url("../img/currency-market/currency-credit.png");
+}
+
+.currency__rates {
+  padding-top: 68px;
+  padding-bottom: 136px;
+}
+.currency__rates-title {
+  text-align: center;
+}
+.currency__rates-info {
+  margin-top: 40px;
+}
+.currency__rates-info-title {
+  margin-bottom: 28px;
+}
+.currency__rates-info-description {
+  margin-bottom: 28px;
+}
+
+.currency__info {
+  background: linear-gradient(180deg, #F4F6F8 0%, rgba(244, 246, 248, 0) 100%);
+  position: relative;
+  padding-bottom: 112px;
+}
+.currency__info-buttons {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 32px;
+  margin-bottom: 68px;
+}
+.currency__info-consult {
+  padding-top: 22px;
+  padding-bottom: 21px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.currency__info-btn {
+  grid-column: span 4;
+}
+
+.currency__info-footnotes {
+  margin-top: 68px;
 }
 
 .about__hero {
@@ -14879,9 +14942,26 @@ button {
   margin-top: 79px;
 }
 
+.padding-large {
+  padding-top: 40px !important;
+  padding-bottom: 28px !important;
+}
+
 .text-link {
   color: var(--primary-green);
   transition: all 0.2s ease-in-out 0.2s;
+}
+
+.large__button-grey {
+  padding: 28px;
+  margin-bottom: 68px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.large__button-svg {
+  margin: 0 0 0 93px !important;
 }
 
 .primary-button {
@@ -14958,6 +15038,13 @@ button {
   font-size: 9px;
   left: -10px;
   top: -2px;
+}
+
+.right-apostrophe {
+  position: relative;
+  font-size: 8px;
+  top: -5px;
+  left: -3px;
 }
 
 .text-indent {

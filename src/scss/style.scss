@@ -128,12 +128,24 @@ button {
 .mt-79 {
   margin-top: 79px;
 }
-
+.padding-large {
+  padding-top: 40px !important;
+  padding-bottom: 28px !important;
+}
 .text-link {
   color: var(--primary-green);
   transition: all 0.2s ease-in-out 0.2s;
 }
-
+.large__button-grey {
+  padding: 28px;
+  margin-bottom: 68px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.large__button-svg {
+  margin:  0 0  0 93px !important;
+}
 .primary-button {
   background-color: var(--primary-green);
   color: var(--white);
@@ -206,12 +218,20 @@ button {
   margin-left: 12px;
 }
 
-//======сноска маленькой буквой
+//======левуый аппостроф
 .letter-lowercase {
   position: absolute;
   font-size: 9px;
   left: -10px;
   top: -2px;
+}
+//========правый аппостроф
+.right-apostrophe{
+  position: relative;
+  font-size: 8px;
+  top: -5px;
+  left: -3px;
+  
 }
 .text-indent {
   text-indent: 12px;
