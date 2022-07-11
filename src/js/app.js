@@ -10,8 +10,23 @@ import wNumb from 'wnumb';
 Swiper.use([Navigation, Pagination])
 
 flsFunctions.isWebp()
+const burger = document.querySelector('.header-burger');
+const greyBackground = document.querySelector('.grey-background-640px');
+const nav = document.querySelector('.header__nav-app-list');
 
 
+burger.addEventListener('click', () => {
+  burger.classList.toggle('is-active');
+  // greyBackground.classList.toggle('is-open');
+  nav.classList.toggle('is-open');
+})
+
+$('#accordion').on('shown.bs.collapse', function() {
+  var panel = $(this).find('.in');
+  $('html, body').animate({
+  scrollTop: panel.offset().top
+  }, 500);
+  });
 //=========swiper hero=======
 const heroSwiper = new Swiper('.hero-swiper', {
   modules: [Navigation, Pagination],
@@ -271,11 +286,12 @@ let depositAmount
 let years
 
 const calc = (depositAmount, years) => {
+  let deposit = Math.round(slider1.noUiSlider.get(true))
   resultTotalVnesenie.value = `${depositAmount * years}₽`;
   // resultPercent = Math.round(((result / (resultTotalVnesenie / 2)) - 1) * 1000 / years) / 10;
 
   vichet.value = Math.round((depositAmount * 0.13) * years) + '₽';
-
+  console.log(deposit)
   // if (years <= 3.1) {
   //   years = 3;
   //   $("#years").val("3");
@@ -285,23 +301,22 @@ const calc = (depositAmount, years) => {
   //   years = 12;
   //   $("#years").val("10");
   // };
-  let dohodDU = depositAmount*0.1322 
-  let dohod = dohodDU + depositAmount
- console.log(dohod)
-  let totalDohodDU = Math.round((years*depositAmount + dohod)* 1.322)
-  
-  console.log(totalDohodDU)
-  
-  
+  let dohodDU = Math.round(deposit * 1.322)
+  // let dohod = dohodDU + depositAmount
+  console.log(dohodDU)
+  // let totalDohodDU = Math.round((years * depositAmount + dohod) * 1.322)
+
+  // console.log(totalDohodDU)
+
+
   // for (let i = 1; i < years + 1; i++) {
   //   depositAmount+=(depositAmount*13.22)
   //   console.log(depositAmount)
   // }
 
-  
+
 
 }
-
 slider2.noUiSlider.on('update', function (values, handle) {
   years = Math.round(slider2.noUiSlider.get(true))
 
@@ -319,14 +334,15 @@ slider2.noUiSlider.on('update', function (values, handle) {
 });
 
 slider1.noUiSlider.on('update', function (values, handle) {
+  slider1Value.innerHTML = `${values[handle]}₽`;
   depositAmount = Math.round(slider1.noUiSlider.get(true))
-  slider1Value.innerHTML = `${depositAmount}₽`;
 
   calc(years, depositAmount)
-  // console.log(depositAmount)
+  console.log(depositAmount)
   return depositAmount
 
 });
+
 
 
 
