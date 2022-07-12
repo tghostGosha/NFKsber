@@ -58,10 +58,16 @@
   </div>
   <div class="container">
     <div class="header__container">
-      <a href="#" class="header__link-phone">8 800 200-84-84</a>
+      <a href="#" class="header__link-phone"><img src="img/icons/icons.svg#phone" class="svg-phone-dims" alt="phone"/>8 800 200-84-84</a>
       <button type="button" class="header__link-consalt" data-bs-toggle="modal" data-bs-target="#exampleModal">Получить
         бесплатную консультанцию</button>
+        <div class="">
+          <button type="button" class="fa fa-search" aria-hidden="true"><img src="img/icons/icons.svg#search" class="svg-search-dims" alt="search"/></button>
 
+          <form class="search-form wrap">
+          <input type="text" class="input" placeholder="Поиск">
+        </form>
+      </div>
       <a href="#" class="header__link-demo"> Демо счет</a>
       <a href="#" class="header__link-login">
         <svg width="20px" height="20px" class="svg-LogIn-dims">
@@ -603,9 +609,7 @@
           <li class="footer__contacts-list-item">
             <a href="#" class="footer__nav-link">Контакты</a>
           </li>
-          <li class="footer__contacts-list-item">
-            <a href="#" class="footer__nav-link">Меры защиты финансового рынка</a>
-          </li>
+
         </ul>
         <ul class="footer__contacts-social-list">
           <li class="social__list-item">
@@ -645,6 +649,15 @@
           </li>
         </ul>
       </div>
+      <div class="protection__measures">
+        <svg class="protection__measures-svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="10" cy="10" r="10" fill="#E4EAEE" />
+          <path d="M10 9V15.5" stroke="#333333" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M10 6V7" stroke="#333333" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+
+        <a href="#" class="protection__measures-link">Меры защиты финансового рынка</a>
+      </div>
       <div class="footer-info">
         <span class="footer-info-text">
           Опубликованная информация не является публичной офертой и/или индивидуальной инвестиционной рекомендацией
@@ -652,11 +665,11 @@
         </span>
       </div>
       <div class="footer__consult">
-        
+
         <span class="footer__consult-text">Если у вас есть какие-либо вопросы, свяжитесь с нами</span>
         <button type="button" class="button grey-button footer__consult-btn" data-bs-toggle="modal"
           data-bs-target="#exampleModal">Обратиться в компанию</button>
-        
+
       </div>
       <div class="footer__copyright">
         <span class="footer__copyright-text">© 2021 АО «НФК-Сбережения». Все права защищены</span>

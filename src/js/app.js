@@ -38,6 +38,17 @@ $( "#btnOpen" ).on( "click", function() {
 $( "#closeWindowAccountApp" ).on( "click", function() {
   $( "#window__account-app" ).slideToggle();
 });
+
+
+  
+  // $(".fa-search").on("click",function(){
+  //   $(".wrap, .input, .fa").toggleClass("active");
+  //   // $("input[type='text']").show();
+  // });
+
+  $(".fa-search").on("click",function() {
+    $( ".wrap" ).toggle("drop");
+  });
 //=========swiper hero=======
 const heroSwiper = new Swiper('.hero-swiper', {
   modules: [Navigation, Pagination],
@@ -58,9 +69,9 @@ const heroSwiper = new Swiper('.hero-swiper', {
 const ideasSwiper = new Swiper('.ideas-swiper', {
   modules: [Navigation, Pagination],
   slideClass: 'ideas__slide',
-  slidesPerView: 3,
-  slidesPerColumn: 3,
-  slidesPerGroup: 3,
+  // slidesPerView: 3,
+  // slidesPerColumn: 3,
+  // slidesPerGroup: 3,
   spaceBetween: 50,
   // modifierClass: 'ideas-swiper-pagination',
   pagination: {
@@ -76,6 +87,27 @@ const ideasSwiper = new Swiper('.ideas-swiper', {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+
+  breakpoints: {
+    1070: {
+      slidesPerView: 3,
+      slidesPerGroup: 3,
+      slidesPerColumn: 3,
+      spaceBetween: 50
+    },
+    625: {
+      slidesPerView: 2,
+      slidesPerGroup: 1,
+      slidesPerColumn: 2,
+      spaceBetween: 16
+    },
+    324: {
+      slidesPerView: 1,
+      slidesPerGroup: 1,
+      slidesPerColumn: 1,
+      spaceBetween: 16
+    }
+  }
 })
 
 //====делаем первую букву  в Верхнем регистре
