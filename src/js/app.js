@@ -15,18 +15,29 @@ const greyBackground = document.querySelector('.grey-background-640px');
 const nav = document.querySelector('.header__nav-app-list');
 
 
-burger.addEventListener('click', () => {
-  burger.classList.toggle('is-active');
-  // greyBackground.classList.toggle('is-open');
-  nav.classList.toggle('is-open');
-})
 
-$('#accordion').on('shown.bs.collapse', function() {
-  var panel = $(this).find('.in');
-  $('html, body').animate({
-  scrollTop: panel.offset().top
-  }, 500);
-  });
+
+// burger.addEventListener('click', () => {
+//   burger.classList.toggle('is-active');
+//   // greyBackground.classList.toggle('is-open');
+  
+//   nav.classList.toggle('is-open');
+  
+// })
+$( "#header-burger" ).on( "click", function() {
+  $( ".header__nav-app-list" ).slideToggle("up");
+    $( "#window__account-app" ).hide(500);
+});
+$( "#closeHeaderNavApp" ).on( "click", function() {
+  $( ".header__nav-app-list" ).slideToggle();
+});
+$( "#btnOpen" ).on( "click", function() {
+  $( "#window__account-app" ).slideToggle("down")
+  $( ".header__nav-app-list" ).hide(500);
+});
+$( "#closeWindowAccountApp" ).on( "click", function() {
+  $( "#window__account-app" ).slideToggle();
+});
 //=========swiper hero=======
 const heroSwiper = new Swiper('.hero-swiper', {
   modules: [Navigation, Pagination],

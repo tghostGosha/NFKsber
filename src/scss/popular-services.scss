@@ -4,10 +4,17 @@
     grid-template-columns: repeat(12, 1fr);
     column-gap: 32px;
     row-gap: 48px;
+    @media(max-width: 1176px) {
+        column-gap: 16px;
+        row-gap: 24px;
+    }
 }
 .services-card {
     grid-column: span 4;
     max-width: 392px;
+    @media(max-width: 1176px) {
+        display: none;
+    }
 }
 .popular-services {
     padding-top: 68px;
@@ -42,14 +49,51 @@
     align-items: flex-start;   
 }
 .card-title {
+    @media(max-width: 1176px) {
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 20px;
+    }
 }
 .card-text {
     color: var(--secondary-text);
     margin-bottom: 28px;
 }
-.btn {
+
+
+.service__card-mobile {
+    max-width: 393px;
+    grid-column: span 6;
+    display: flex;
+    justify-content: space-between;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 12px 0 12px;
+    height: 173px;
+    background-color: var(--primary-grey);
+     &-left {
+        padding-bottom: 20px;
+        padding-top: 9px;
+        max-width: 193px;
+        display: flex;
+        flex-direction: column;
+     }
+     &-right {
+        position: relative;
+        width: 200px;
+     }
+     &-btn {
+        padding: 8px 22px;
+        border-radius: 5px;
+        margin-top: auto;
+        max-width: 122px;
+     }
 }
-.grey-button {
-    display: inline-block;
-    margin-top: auto;
+.service__card-mobile-img {
+    
+    position: absolute;
+    object-fit: contain;
+    width: 99%;
+    left: 0;
+    bottom: 0;
 }

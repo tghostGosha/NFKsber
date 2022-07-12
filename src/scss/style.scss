@@ -163,9 +163,10 @@ button {
 }
 
 .grey-button {
+  display: inline-block;
   background-color: var(--grey-button);
   color: var(--primary-text);
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 @media (max-width: 768px) {

@@ -14,7 +14,11 @@
     background-image: url('/img/hero/first-slide.png');
     background-repeat: no-repeat;
     background-size: 42%;
-    background-position: 599px 60px;
+    background-position: 99% 100%;
+    @media(max-width: 1176px) {
+        background-size: 51%;
+        padding: 72px 53% 102px 0;
+      }
 }
 
 .first-slide {}
@@ -28,12 +32,19 @@
 
 .slide-description {
     margin-bottom: 89px;
+    @media(max-width: 1176px) {
+        margin-bottom: 56px;
+    }
 }
 
 .primary-button {}
 
 .slide-btn {
     padding: 16px 32px;
+    @media(max-width: 1176px)  {
+        padding: 14px 32px;
+    }
+
 }
 
 
