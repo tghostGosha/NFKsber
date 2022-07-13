@@ -43,6 +43,9 @@ line-height: 22px;
 }
 .accordion-title {
   margin-bottom: 40px;
+  @media(max-width: 585px) {
+    margin-bottom: 24px;
+  }
 }
 .accordion-body {
   padding-bottom: 28px;

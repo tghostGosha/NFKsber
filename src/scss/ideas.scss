@@ -2,29 +2,55 @@
   padding-top: 68px;
   margin-bottom: 68px;
   padding-bottom: 156px;
+
   @media(max-width: 1176px) {
     padding: 56px 0;
     margin: 0;
   }
+
+  @media(max-width: 585px) {
+    padding: 48px 0;
+  }
+
   &__header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 40px;
-    @media(max-width: 1176px){
+
+    @media(max-width: 1176px) {
       margin-bottom: 32px;
     }
+
+    @media(max-width: 585px) {
+      align-items: flex-end;
+    }
   }
+
   &__title {
     margin-bottom: 0;
+
+    @media(max-width: 585px) {
+      width: 222px;
+    }
   }
+
   &__container {
     position: relative;
   }
 }
+
+.ideas__link {
+  @media(max-width: 585px) {
+    line-height: 34px !important;
+  }
+}
+
 .stars-svg-container {
   height: 14px;
+  width: 90px;
 }
+
 .ideas-swiper {
   overflow: hidden;
   position: relative;
@@ -37,6 +63,7 @@
     transition: 0.3s opacity;
     transform: translate3d(0, 0, 0);
     z-index: 10;
+
     @media(max-width: 1176px) {
       display: none;
     }
@@ -56,36 +83,64 @@
   background-color: inherit;
   opacity: 1;
 }
+
 .swiper-bullet-active {
   background: var(--primary-text);
 }
+
 .ideas-swiper-pagination-bullet:not(:last-child) {
   margin-right: 14px;
 }
-.swiper-button-next:after,  .swiper-button-prev:after {
- font-size: 22px;
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 22px;
+
+  @media(max-width: 585px) {
+    font-size: 16px;
+  }
 }
+
 .swiper-button-prev {
   left: -31px;
+
+  @media(max-width: 585px) {
+    left: -5px;
+  }
 }
+
 .swiper-button-next {
   right: -27px;
- 
+
+  @media(max-width: 585px) {
+    right: -5px;
+  }
+
 }
-.swiper-button-prev.swiper-button-disabled, .swiper-button-next.swiper-button-disabled {
+
+.swiper-button-prev.swiper-button-disabled,
+.swiper-button-next.swiper-button-disabled {
   // opacity: 0.35;
   // cursor: auto;
   // pointer-events: none;
   display: none;
 }
-.swiper-button-prev, .swiper-button-next {
+
+.swiper-button-prev,
+.swiper-button-next {
   position: absolute;
   width: 56px;
   height: 56px;
   box-shadow: 0px 0px 7px rgba(29, 37, 44, 0.11);
   border-radius: 50%;
-  color: var(--secondary-text);  
+  color: var(--secondary-text);
+
+  @media(max-width: 585px) {
+    width: 36px;
+    height: 36px;
+  }
 }
+
 .ideas__slide {
   display: flex;
 
@@ -94,13 +149,18 @@
   border-radius: 10px;
 
   &-card {
-    width: 390px;
+    max-width: 390px;
     padding: 20px 24px 24px 24px;
+
+    @media(max-width: 585px) {
+      padding: 24px 12px;
+    }
   }
 
   &-bank {
     margin-bottom: 8px;
-    @media(max-width: 1176px)  {
+
+    @media(max-width: 1176px) {
       margin-bottom: 4px;
       font-size: 20px;
     }
@@ -108,18 +168,22 @@
 
   &-img-block {
     margin-bottom: 24px;
+
     @media(max-width: 1176px) {
       margin: 0;
     }
   }
+
   &-img {
     @media(max-width: 1176px) {
       object-fit: contain;
       height: 51px;
     }
   }
+
   &-body {
     margin-bottom: 40px;
+
     @media(max-width: 1176px) {
       display: flex;
       align-items: flex-end;
@@ -132,48 +196,77 @@
   &-footer {
     display: flex;
   }
+
   &-header {
     display: flex;
     justify-content: space-between;
     margin-bottom: 32px;
+
     @media(max-width: 1176px) {
       margin-bottom: 24px;
     }
+
     &-left {
       display: flex;
       flex-direction: column;
+      margin-right: 180px;
+      width: 120px;
+      // @media(max-width: 1176px) {
+      //   margin-right: 50px;
+      // }
+      @media(max-width: 585px) {
+        margin-right: 137px;
+        width: 103px;
+      }
     }
 
-    &-header-right {
+    &-right {
       display: flex;
     }
 
     .slide-like-btn {
       margin-right: 16px;
       transition: all 0.1s ease-in 0.1s;
+
+      @media(max-width: 585px) {
+        margin-right: 14px;
+      }
     }
-    .svg-like-dims  {
+
+    .svg-like-dims {
       stroke: var(--secondary-text);
       color: #ffffff;
       // fill: white;
       transition: all 0.1s ease-in 0.1s;
+
+      @media(max-width: 585px) {
+        width: 16px;
+        height: 14px;
+      }
     }
-    .svg-like-dims:hover{
+
+    .svg-like-dims:hover {
       // stroke: var(--primary-text);
       color: var(--secondary-text);
-      
+
     }
-   
+
     .svg-close-dims {
       color: var(--secondary-text);
       transition: color 0.1s ease-in 0.1s;
+
+      @media(max-width: 585px) {
+        width: 12px;
+        height: 12px;
+      }
     }
+
     .svg-close-dims:hover {
       color: black;
     }
   }
 
-  
+
 
   .current__profitability {
     margin-right: 30px;

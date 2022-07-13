@@ -91,6 +91,11 @@ h2 {
   font-weight: 600;
   font-size: 40px;
   line-height: 46px;
+
+  @media(max-width: 585px) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 h3 {
@@ -122,6 +127,11 @@ h5 {
   font-weight: 600;
   font-size: 16px;
   line-height: 21px;
+
+  @media(max-width: 585px) {
+    font-size: 16px;
+    line-height: 30px;
+  }
 }
 
 
@@ -158,6 +168,20 @@ button {
 .text-link {
   color: var(--primary-green);
   transition: all 0.2s ease-in-out 0.2s;
+
+  @media(max-width: 585px) {
+    font-size: 14px;
+    line-height: 19px;
+  }
+}
+
+.svg-arrow-right-dims {
+  margin-left: 20px;
+
+  @media(max-width: 585px) {
+    margin-left: 16px;
+  }
+
 }
 
 .large__button-grey {
@@ -176,6 +200,7 @@ button {
   background-color: var(--primary-green);
   color: var(--white);
   border-radius: 5px;
+
   @media(max-width: 585px) {
     font-size: 14px;
     line-height: 19px;
@@ -378,6 +403,9 @@ button {
     column-gap: 32px;
     border-radius: 10px;
 
+    @media(max-width: 585px) {
+      grid-template-rows: 1fr 1fr;
+    }
 
     &-left {
       grid-column: 1/ span 6;
@@ -386,17 +414,30 @@ button {
       @media(max-width: 1176px) {
         padding: 46px 2% 46px 0;
       }
+
+      @media(max-width: 585px) {
+        grid-column: 1/ span 12;
+        padding: 40px 0 20px 0;
+      }
     }
 
     &-right {
       grid-column: 7/ span 6;
       position: relative;
+
+      @media(max-width: 585px) {
+        grid-column: 1/ span 12;
+      }
     }
   }
 
   &-title {
     color: var(--primary-grey);
     margin-bottom: 24px;
+
+    @media(max-width: 585px) {
+      margin-bottom: 16px;
+    }
   }
 
   &-img {
@@ -407,6 +448,10 @@ button {
   &-description {
     color: var(--primary-grey);
     margin-bottom: 48px;
+
+    @media(max-width: 585px) {
+      margin-bottom: 24px;
+    }
   }
 
   &-buttons {
@@ -417,7 +462,16 @@ button {
 .google-button {
   margin-right: 24px;
 
+  @media(max-width: 585px) {
+    margin-right: 16px;
+  }
 }
+
+// .svg-app-store rect {
+//   @media(max-width: 585px) {
+//     width: 168px;
+//   }
+// }
 
 .svg-google-play rect,
 .svg-app-store rect {
