@@ -14,6 +14,7 @@
 @import "popular-services";
 @import "ideas";
 @import "accordion";
+@import "services/services.scss";
 @import "services/brokers-hero.scss";
 @import "services/trust-management.scss";
 @import "services/universal-account.scss";
@@ -24,6 +25,7 @@
 @import "rates/rates.scss";
 @import "services/transactions-repo.scss";
 @import "services/currency-market.scss";
+@import "analytics/market-news.scss";
 @import "company/about.scss";
 
 
@@ -68,6 +70,7 @@ a {
   text-decoration: none;
   color: #1D252C;
   outline: none;
+  cursor: pointer;
 }
 
 a:hover {
@@ -186,7 +189,7 @@ button {
 
 .large__button-grey {
   padding: 28px;
-  margin-bottom: 68px;
+  
   display: flex;
   justify-content: space-between;
   align-items: center;

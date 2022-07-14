@@ -12686,6 +12686,7 @@ input::placeholder {
 
 .header__nav-app-list {
   display: none;
+  cursor: default;
   align-items: flex-start;
   position: absolute;
   z-index: 35;
@@ -12700,6 +12701,7 @@ input::placeholder {
   border-radius: 10px 10px 0px 0px;
   box-shadow: -5px 4px 27px rgba(4, 23, 2, 0.07);
   opacity: 1;
+  overflow: auto;
 }
 @media (max-width: 585px) {
   .header__nav-app-list {
@@ -12735,6 +12737,11 @@ input::placeholder {
     left: 0;
     height: 601px;
   }
+}
+
+.nav-dropdown-link {
+  font-size: 14px;
+  line-height: 19px;
 }
 
 .header__nav-item {
@@ -12777,6 +12784,11 @@ input::placeholder {
 
 .header__nav-item:hover > .dropdown-menu {
   display: block;
+}
+@media only screen and (max-device-width: 1176px) {
+  .header__nav-item:hover > .dropdown-menu {
+    display: none;
+  }
 }
 
 .dropdown-item:hover {
@@ -12841,6 +12853,11 @@ input::placeholder {
 
 .nav-dropdown-item:not(:last-child) {
   margin-bottom: 20px;
+}
+@media (max-width: 585px) {
+  .nav-dropdown-item:not(:last-child) {
+    margin-bottom: 16px;
+  }
 }
 
 .accordion-button::before {
@@ -13468,6 +13485,11 @@ input::placeholder {
   }
 }
 
+.services-btn {
+  padding: 14px 32px;
+  margin-top: auto;
+}
+
 .services-card {
   grid-column: span 4;
   max-width: 392px;
@@ -13476,6 +13498,10 @@ input::placeholder {
   .services-card {
     display: none;
   }
+}
+
+.card-header:first-child {
+  border-radius: 10px;
 }
 
 .popular-services {
@@ -13950,9 +13976,34 @@ input::placeholder {
   color: var(--secondary-text);
 }
 
+@media (max-width: 585px) {
+  .accordion-header {
+    font-size: 16px;
+    line-height: 30px;
+  }
+}
+
 .accordion {
   border: none;
   --bs-accordion-border-color: none;
+}
+
+.services {
+  padding-top: 30px;
+  padding-bottom: 136px;
+}
+
+.services-pagination {
+  margin-bottom: 54px;
+}
+
+.services__title {
+  margin-bottom: 68px;
+}
+
+.service-svg-arrow {
+  width: 45px;
+  height: 20px;
 }
 
 .brokers__hero {
@@ -15849,6 +15900,58 @@ th {
   margin-top: 68px;
 }
 
+.market-news__hero {
+  padding-top: 30px;
+  padding-bottom: 68px;
+}
+
+.news__container {
+  background-color: var(--primary-grey);
+  padding-top: 68px;
+}
+
+.news__wrapper {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 32px;
+}
+.news__wrapper-cards {
+  grid-column: 1/span 8;
+}
+.news__wrapper-tab {
+  grid-column: 9/span 4;
+}
+
+.news__card {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 40px 46px;
+  transition: all 0.2s ease-in-out 0.2s;
+}
+.news__card-title {
+  margin: 24px 0;
+}
+.news__card-source {
+  font-size: 14px;
+  line-height: 19px;
+  color: var(--secondary-text);
+}
+.news__card-date {
+  font-size: 14px;
+  line-height: 19px;
+  color: var(--secondary-text);
+}
+
+.news__card:hover {
+  box-shadow: 0px 0px 16px rgba(29, 37, 44, 0.16);
+}
+
+.news__card:not(:last-child) {
+  margin-bottom: 28px;
+}
+
 .about__hero {
   background-color: var(--primary-grey);
   height: 480px;
@@ -16079,6 +16182,7 @@ a {
   text-decoration: none;
   color: #1D252C;
   outline: none;
+  cursor: pointer;
 }
 
 a:hover {
@@ -16204,7 +16308,6 @@ button {
 
 .large__button-grey {
   padding: 28px;
-  margin-bottom: 68px;
   display: flex;
   justify-content: space-between;
   align-items: center;

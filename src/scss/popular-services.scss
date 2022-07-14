@@ -10,7 +10,10 @@
     row-gap: 24px;
   }
 }
-
+.services-btn {
+  padding: 14px 32px;
+  margin-top: auto;
+}
 .services-card {
   grid-column: span 4;
   max-width: 392px;
@@ -19,7 +22,9 @@
     display: none;
   }
 }
-
+.card-header:first-child {
+  border-radius: 10px;
+}
 .popular-services {
   padding-top: 68px;
 

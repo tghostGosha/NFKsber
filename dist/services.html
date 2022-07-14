@@ -11,6 +11,7 @@
 </head>
 
 <body>
+
   <header class="header">
   <div class="header__line"></div>
   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -354,254 +355,222 @@
 
 </header>
   <main>
-    <section class="about__hero">
-      <div class="container ">
-        <div class="about__hero-container">
-          <nav aria-label="Page navigation example">
-            <ul class="pagination">
-              <li class="page-item"><a class="page-link" href="index.html">Главная</a></li>
-              <svg xmlns="http://www.w3.org/2000/svg" width="8" height="16" fill="currentColor"
-                class="bi bi-chevron-right" viewBox="0 0 16 16">
-                <path fill-rule="evenodd"
-                  d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
-              </svg>
-              <li class="page-item"><a class="page-link" href="#">Компания</a></li>
-              <svg xmlns="http://www.w3.org/2000/svg" width="8" height="16" fill="currentColor"
-                class="bi bi-chevron-right" viewBox="0 0 16 16">
-                <path fill-rule="evenodd"
-                  d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
-              </svg>
-              <li class="page-item"><a class="page-link" href="about.html">О компании</a></li>
-            </ul>
-          </nav>
-          <h2 class="about__hero-title">О компании</h2>
-          <p class="about__hero-description">Инвестиционная компания «НФК-Сбережения», организованная в 2003 году, —
-            один из крупнейших профессиональных участников рынка ценных бумаг, зарегистрированных на территории
-            Приволжского федерального округа.*</p>
-        </div>
-
-      </div>
-    </section>
-    <section class="about__info">
+    <section class="popular-services services">
       <div class="container">
-        <div class="about__info-card">
-          <div class="about__info-card-left">
-            <img class="about__info-img" src="img/company/map.png" alt="Накопления">
-          </div>
-          <div class="about__info-card-right card-right ">
-            <h4 class="card-right-title">АО «НФК-Сбережения» оказывает финансовые услуги на всей территории
-              Российской Федерации</h4>
-            <p>как физическим лицам, так и организациям посредством удаленного заключения договоров с использованием
-              электронной подписи.
-              В настоящее время любой гражданин РФ может стать клиентом компании и начать работать на финансовых
-              рынках, заключив договор через Интернет, не выходя из дома или офиса.</p>
-          </div>
-        </div>
-        <div class="stocks__container">
-          <h3 class="stocks__container-title">Компания имеет прямой доступ к двум крупнейшим российским биржевым
-            площадкам:</h3>
-          <div class="stocks-card moex">
-            <img class="stocks-card-img" src="img/company/moex.png" alt="moex">
-            <p class="stocks-card-title">Рынки Группы «Московская Биржа», включая не только фондовый рынок, но и
-              валютный рынок, а также рынок драгоценных металлов</p>
-          </div>
-          <div class="stocks-card spb-stock">
-            <div class="stocks-card-header">
-              <img class="stocks-card-img" src="img/company/spb-stock.png" alt="moex">
+        <nav aria-label="Page navigation example">
+          <ul class="pagination services-pagination">
+            <li class="page-item"><a class="page-link" href="index.html">Главная</a></li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="8" height="16" fill="currentColor"
+                class="bi bi-chevron-right" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+              </svg>
+            </li>
+            <li class="page-item"><a class="page-link" href="services.html">Услуги</a></li>
+            
+          </ul>
+        </nav>
+        
+          <h3 class="services__title">Услуги</h3>
+          
+        
+        <div class="services-container grid-container">
+          <div class="card services-card">
+            <div class="card-header">
+              <img src="img/popular-services/service.png" class="card-img-top" alt="обслуживание">
             </div>
+            <div class="card-body">
+              <h4 class="card-title">Брокерское обслуживание</h4>
+              <p class="card-text">Совершение операций купли/продажи <br>
+                на рынке ценных бумаг по вашему поручению</p>
+              <a href="#" class="btn grey-button services-btn">Открыть счет</a>
+            </div>
+          </div>
+          <div class="card services-card">
+            <div class="card-header">
+              <img src="img/popular-services/management.png" class="card-img-top" alt="обслуживание">
+            </div>
+            <div class="card-body">
+              <h4 class="card-title">Доверительное управление</h4>
+              <p class="card-text">Стратегии с фиксированной доходностью до 30% годовых*</p>
+              <a href="#" class="btn grey-button services-btn">Открыть счет</a>
+            </div>
+          </div>
+          <div class="card services-card">
+            <div class="card-header">
+              <img src="img/popular-services/iis.png" class="card-img-top" alt="обслуживание">
+            </div>
+            <div class="card-body">
+              <h4 class="card-title">Магазин финансовых продуктов</h4>
+              <p class="card-text">Простой способ начать инвестировать прямо <br> сейчас</p>
+              <a href="#" class="btn grey-button services-btn">Открыть счет</a>
+            </div>
+          </div>
+          <div class="card services-card">
+            <div class="card-header">
+              <img src="img/popular-services/iis.png" class="card-img-top" alt="обслуживание">
+            </div>
+            <div class="card-body">
+              <h4 class="card-title">УИС</h4>
+              <p class="card-text">Получите до 156 000 рублей налоговым <br> вычетом за 3 года</p>
+              <a href="#" class="btn grey-button services-btn">Открыть счет</a>
+            </div>
+          </div>
+          <div class="card services-card">
+            <div class="card-header">
+              <img src="img/popular-services/market.png" class="card-img-top" alt="обслуживание">
+            </div>
+            <div class="card-body">
+              <h4 class="card-title">ИИС</h4>
+              <p class="card-text">Получите до 156 000 рублей налоговым вычетом за 3 года</p>
+              <a href="#" class="btn grey-button services-btn">Открыть счет</a>
+            </div>
+          </div>
+          <div class="card services-card">
+            <div class="card-header">
+              <img src="img/popular-services/metalls.png" class="card-img-top" alt="обслуживание">
+            </div>
+            <div class="card-body">
+              <h4 class="card-title">Валютный рынок</h4>
+              <p class="card-text">Онлайн-торговля валютой на Московской бирже</p>
+              <a href="#" class="btn grey-button services-btn">Открыть счет</a>
+            </div>
+          </div>
+          <div class="card services-card">
+            <div class="card-header">
+              <img src="img/popular-services/metalls.png" class="card-img-top" alt="обслуживание">
+            </div>
+            <div class="card-body">
+              <h4 class="card-title">Рынок драгоценных металлов</h4>
+              <p class="card-text">Приобретайте золото и другие металлы <br>
+                не выходя из дома</p>
+              <a href="#" class="btn grey-button services-btn">Открыть счет</a>
+            </div>
+          </div>
+          <div class="card services-card">
+            <div class="card-header">
+              <img src="img/popular-services/metalls.png" class="card-img-top" alt="обслуживание">
+            </div>
+            <div class="card-body">
+              <h4 class="card-title">Сделки РЕПО</h4>
+              <p class="card-text">Приобретайте золото и другие металлы не выходя из дома
+              </p>
+              <a href="#" class="btn grey-button services-btn">Открыть счет</a>
+            </div>
+          </div>
+          <div class="card services-card">
+            <div class="card-header">
+              <img src="img/popular-services/metalls.png" class="card-img-top" alt="обслуживание">
+            </div>
+            <div class="card-body">
+              <h4 class="card-title">Депозитарная деятельность</h4>
+              <p class="card-text">Приобретайте золото и другие металлы не выходя из дома
+              </p>
+              <a href="#" class="btn grey-button services-btn">Открыть счет</a>
+            </div>
+          </div>
+          <div class="card services-card">
+            <div class="card-header">
+              <img src="img/popular-services/metalls.png" class="card-img-top" alt="обслуживание">
+            </div>
+            <div class="card-body">
+              <h4 class="card-title">Статус квалифицированного
+                инвестора</h4>
+              <p class="card-text">Приобретайте золото и другие металлы не выходя из дома
+              </p>
+              <a href="#" class="btn grey-button services-btn">Открыть счет</a>
+            </div>
+          </div>
+          <div class="service__card-mobile">
+            <div class="service__card-mobile-left">
+              <h4 class="card-title">Брокерское обслуживание</h4>
+              <a href="brokerage-services.html" class="btn grey-button service__card-mobile-btn">Подробнее</a>
+            </div>
+            <div class="service__card-mobile-right">
+              <img class="service__card-mobile-img" src="img/popular-services/service.png" alt="обслуживание">
+            </div>
+          </div>
+          <div class="service__card-mobile">
+            <div class="service__card-mobile-left">
+              <h4 class="card-title">Доверительное управление</h4>
+              <a href="brokerage-services.html" class="btn grey-button service__card-mobile-btn">Подробнее</a>
+            </div>
+            <div class="service__card-mobile-right">
+              <img class="service__card-mobile-img" src="img/popular-services/management.png" alt="обслуживание">
+            </div>
+          </div>
+          <div class="service__card-mobile">
+            <div class="service__card-mobile-left">
+              <h4 class="card-title">ИИС</h4>
+              <a href="brokerage-services.html" class="btn grey-button service__card-mobile-btn">Подробнее</a>
+            </div>
+            <div class="service__card-mobile-right">
+              <img class="service__card-mobile-img" src="img/popular-services/iis.png" alt="обслуживание">
+            </div>
+          </div>
+          <div class="service__card-mobile hide-385">
+            <div class="service__card-mobile-left">
+              <h4 class="card-title">Магазин финансовых продуктов</h4>
+              <a href="brokerage-services.html" class="btn grey-button service__card-mobile-btn">Подробнее</a>
+            </div>
+            <div class="service__card-mobile-right">
+              <img class="service__card-mobile-img" src="img/popular-services/service.png" alt="обслуживание">
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    </section>
+    <section class="brokers__info">
+      <div class="container">
+        <div class="window__account">
+          <h3 class="window__account-title">Открытие брокерского счета</h3>
+          <form action="#" class="account__form" id="accountform">
+            <div class="account__form-text">
+              <!-- <label for="firstname">Enter your name</label> -->
+              <input type="text" class="account__form-input" id="firstname" placeholder="Фамилия*">
+            </div>
+            <div class="account__form-text">
+              <!-- <label for="exampleFormControlInput1" class="form-label">Email address</label> -->
+              <input type="text" class="account__form-input" id="secondname" placeholder="Имя*">
+            </div>
+            <div class="account__form-text">
+              <!-- <label for="exampleFormControlInput1" class="form-label">Email address</label> -->
+              <input type="text" class="account__form-input" id="surname" placeholder="Отчество*">
+            </div>
+            <div class="account__form-tel">
+              <!-- <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label> -->
+              <input type="tel" class="account__form-input " id="tel" placeholder="Мобильный телефон*">
+            </div>
+            <div class="account__form-mail">
+              <!-- <label for="mail">Enter your name</label> -->
+              <input type="email" class="account__form-input " id="mail" placeholder="Электронная почта*">
+            </div>
+            <span class="account__form-transcription">* - поля, обязательные для заполнения</span>
+            <div class="form-check account__form-check">
+              <input class="form-check-input" type="checkbox" value="" id="accountCheck" checked>
+              <!-- <span class="form-check-icon"><svg width="14px" height="10px" class="svg-Check-dims">
+                <use xlink:href="img/icons/icons.svg#Check"></use>
+              </svg></span> -->
+              <label class="form-check-label" for="accountCheck">
+                <span class="check-span">Даю согласие на</span> <a href="#">обработку персональных данных</a> <br> <span
+                  class="check-span">и</span> <a href="#">подтверждаю согласие на
+                  коммуникацию</a>
+              </label>
+            </div>
+            <button type="submit" class="button primary-button account__form-btn">Отправить</button>
+          </form>
+        </div>
+        <a href="#" class="grey-button large__button-grey  services-btn">Сделки с неполным покрытием
+          <!-- <svg xmlns="http://www.w3.org/2000/svg" width="8" height="16" fill="currentColor"
+            class="bi bi-chevron-right large__button-svg" viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+              d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+          </svg> -->
+          <img src="img/icons/icons.svg#arrow-right" class="svg-arrow-right-dims service-svg-arrow" alt="arrow-right"/>
 
-            <p class="stocks-card-title">ПАО «Санкт-Петербургская Биржа»</p>
-          </div>
-          <h4 class="stocks__container-description">Клиенты компании имеют возможность приобретать как российские, так и
-            зарубежные финансовые инструменты</h4>
-        </div>
-
-      </div>
-    </section>
-    <section class="about__license">
-      <div class="container">
-        <h3 class="about__license-title">Лицензии</h3>
-        <div class="about__license-container">
-          <div class="about__license-card">
-            <p class="about__license-card-text">Лицензия профессионального участника рынка ценных бумаг Федеральной
-              службы по финансовым рынкам на осуществление брокерской деятельности № 097-10053-100000 без ограничения
-              срока действия</p>
-          </div>
-          <div class="about__license-card">
-            <p class="about__license-card-text">Лицензия профессионального участника рынка ценных бумаг Федеральной
-              службы по финансовым рынкам на осуществление дилерской деятельности на рынке ценных бумаг № 097-
-              10058-010000 без ограничения срока действия</p>
-          </div>
-          <div class="about__license-card">
-            <p class="about__license-card-text">Лицензия профессионального участника рынка ценных бумаг Федеральной
-              службы по финансовым рынкам на осуществление деятельности по управлению ценными бумагами
-              № 097-10063-001000 без ограничения срока действия</p>
-          </div>
-          <div class="about__license-card">
-            <p class="about__license-card-text">Лицензия профессионального участника рынка ценных бумаг Федеральной
-              службы по финансовым рынкам на осуществление депозитарной деятельности № 097-13231-000100 без ограничения
-              срока действия</p>
-          </div>
-        </div>
-        <div class="important__block">
-          <svg width="20px" height="20px" class="svg-important-dims">
-            <use xlink:href="img/icons/icons.svg#important"></use>
-          </svg>
-          <span class="important__block-description">Более подробную информацию о компании Вы можете получить в разделе
-            <a href="#" class="important__description-link">Раскрытие информации</a></span>
-        </div>
-      </div>
-    </section>
-    <section class="why__us">
-      <div class="container">
-        <h3 class="why__us-title">Почему мы</h3>
-        <div class="why__us-answer">
-          <p class="answer-description  answer-description-first">Мы убеждены, что в основе любой инвестиционной
-            стратегии должны лежать принципы сохранения и стабильного прироста капитала на протяжении неограниченно
-            долгого периода времени. Создавая компанию, наш коллектив ориентировался не на сиюминутное извлечение выгоды
-            для себя и своих клиентов, а на построение долгосрочных и основанных на взаимном доверии отношений с
-            клиентами.</p>
-          <p class="answer-description">За все годы работы мы доказали, что финансовые цели наших клиентов не остаются
-            всего лишь надеждами и мечтами, а превращаются в осязаемый финансовый результат. Разрабатывая и внедряя в
-            свою практику новые услуги на финансовых рынках, мы прежде всего исходим из того, что интересы клиентов и
-            компании не должны противоречить друг другу. Второй принцип, которым мы руководствуемся в нашей работе, –
-            сделать наши услуги понятными и доступными любому инвестору: от частного лица с небольшими сбережениями до
-            квалифицированного инвестора или финансового института.</p>
-          <p class="answer-description">Наша компания открыта для сотрудничества, предложения и идеи наших клиентов
-            всегда находят отклик и обратную связь. С каждым годом мы совершенствуемся в уровне и качестве
-            предоставляемых услуг, поддерживаем плодотворные и долгосрочные отношения не только с клиентами, но и с
-            другими участниками рынка, неукоснительно следуя принципу приоритета высоких этических стандартов ведения
-            бизнеса над собственными интересами компании.</p>
-        </div>
-      </div>
-    </section>
-    <section class="about__director">
-      <div class="container">
-        <div class="about__director-card">
-          <div class="about__director-card-left">
-            <img class="about__director-img" src="img/company/naumov.png" alt="Накопления">
-          </div>
-          <div class="about__director-card-right card-right ">
-            <h4 class="about__director-title">Наумов Евгений Леонидович</h4>
-            <p class="about__director-post">Один из основателей и директор АО «НФК-Сбережения»</p>
-            <p class="about__director-bio">Руководит компанией с момента ее основания в 2003-м году. Начиная работу на
-              финансовых рынках в качестве агента крупнейших российских инвестиционных холдингов, за этот период времени
-              АО «НФК-Сбережения» выросло до самостоятельной компании, имеющей прямой доступ к основным биржевым
-              площадкам страны и вошедшей в узкий круг Прайм-брокеров валютного рынка Московской биржи.</p>
-            <a href="#" class="button grey-button about__director-btn">Биография</a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="about__news">
-      <div class="container">
-        <h3 class="news__company-title">Новости компании</h3>
-        <div class="news__company-container">
-          <article class="news__company-card">
-            <a href="#" class="news__company-link">
-              <span class="news__company-date">12.04.2021</span>
-              <p class="news__company-text">О порядке работы АО «НФК-Сбережения» в период с 01.05.2021 по 10.05.2021</p>
-            </a>
-          </article>
-          <article class="news__company-card">
-            <a href="#" class="news__company-link">
-              <span class="news__company-date">12.04.2021</span>
-              <p class="news__company-text">Уведомление внесении изменений в Клиентский регламент депозитария</p>
-            </a>
-          </article>
-          <article class="news__company-card">
-            <a href="#" class="news__company-link">
-              <span class="news__company-date">12.04.2021</span>
-              <p class="news__company-text">Уведомление о внесении изменений в «Регламент АО «НФК-Сбережения» «О порядке
-                осуществления»</p>
-            </a>
-          </article>
-          <article class="news__company-card">
-            <a href="#" class="news__company-link">
-              <span class="news__company-date">12.04.2021</span>
-              <p class="news__company-text">Уведомление о внесении изменений в «Регламент АО «НФК-Сбережения» «О порядке
-                осуществления»</p>
-            </a>
-          </article>
-        </div>
-        <a href="#" class="text-link">Все новости
-          <svg width="6px" height="12px" class="svg-arrow-right-dims">
-            <use xlink:href="img/icons/icons.svg#arrow-right"></use>
-          </svg>
         </a>
-      </div>
-    </section>
-    <section class="investor__info">
-      <div class="container">
-        <h3 class="investor__info-title">Информация для инвесторов</h3>
-        <ul class="investor__info-list">
-          <li class="investor__info-file">
-            <a href="#" class="get__file-link">
-              <svg width="20px" height="20px" class="svg-pdf-dims">
-                <use xlink:href="img/icons/icons.svg#pdf"></use>
-              </svg>
-              <div class="file__link-text">
-                <span class="brief-info">О корпоративном действии с ценными бумагами эмитента Chemours Company ORD SHS
-                </span>
-                <span class="file-size">Публикация: 05.07.2019</span>
-              </div>
-            </a>
-          </li>
-          <li class="investor__info-file">
-            <a href="#" class="get__file-link">
-              <svg width="20px" height="20px" class="svg-pdf-dims">
-                <use xlink:href="img/icons/icons.svg#pdf"></use>
-              </svg>
-              <div class="file__link-text">
-                <span class="brief-info">О корпоративном действии с ценными бумагами эмитента Chemours Company ORD SHS
-                </span>
-                <span class="file-size">Публикация: 05.07.2019</span>
-              </div>
-            </a>
-          </li>
-          <li class="investor__info-file">
-            <a href="#" class="get__file-link">
-              <svg width="20px" height="20px" class="svg-pdf-dims">
-                <use xlink:href="img/icons/icons.svg#pdf"></use>
-              </svg>
-              <div class="file__link-text">
-                <span class="brief-info">О корпоративном действии с ценными бумагами эмитента Chemours Company ORD SHS
-                </span>
-                <span class="file-size">Публикация: 05.07.2019</span>
-              </div>
-            </a>
-          </li>
-          <li class="investor__info-file">
-            <a href="#" class="get__file-link">
-              <svg width="20px" height="20px" class="svg-pdf-dims">
-                <use xlink:href="img/icons/icons.svg#pdf"></use>
-              </svg>
-              <div class="file__link-text">
-                <span class="brief-info">О корпоративном действии с ценными бумагами эмитента Chemours Company ORD SHS
-                </span>
-                <span class="file-size">Публикация: 05.07.2019</span>
-              </div>
-            </a>
-          </li>
-          <li class="investor__info-file">
-            <a href="#" class="get__file-link">
-              <svg width="20px" height="20px" class="svg-pdf-dims">
-                <use xlink:href="img/icons/icons.svg#pdf"></use>
-              </svg>
-              <div class="file__link-text">
-                <span class="brief-info">О корпоративном действии с ценными бумагами эмитента Chemours Company ORD SHS
-                </span>
-                <span class="file-size">Публикация: 05.07.2019</span>
-              </div>
-            </a>
-          </li>
-        </ul>
-        <a href="#" class="text-link">Все публикации
-          <svg width="6px" height="12px" class="svg-arrow-right-dims">
-            <use xlink:href="img/icons/icons.svg#arrow-right"></use>
-          </svg>
-        </a>
-        <p class="investor__info-footnote">*По размеру собственных средств по состоянию на 31.07.2017 г. из числа некредитных организаций – профессиональных участников рынка ценных бумаг, зарегистрированных на территории Приволжского федерального округа.</p>
       </div>
     </section>
   </main>
@@ -770,6 +739,17 @@
   <div class="footer__consult-line top-line"></div>
   <div class="footer__consult-line bottom-line"></div>
 </footer>
+
+  <script src="js/app.min.js"></script>
+
+  <!-- <script srce_modules/nouislider/"></script>="/nod -->
+  <!-- <script src="/nouislider/documentation/assets/wNumb.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
+  <!-- <script src="https://unpkg.com/@popperjs/core@2"></script> -->
+
+
 </body>
 
 </html>
