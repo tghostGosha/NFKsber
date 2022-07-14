@@ -1,0 +1,36 @@
+.disclosure__information {
+  &-hero {
+    padding-top: 30px;
+  }
+
+  &-title {
+    margin-bottom: 68px;
+  }
+
+  &-header {
+    display: flex;
+    padding-bottom: 28px;
+    justify-content: space-between;
+  }
+
+  &-block {
+    // display: flex;
+    // justify-content: space-between;
+    padding: 20px 0;
+  }
+
+  &-block:nth-child(even) {
+    border-top: 1px solid var(--grey-button);
+    border-bottom: 1px solid var(--grey-button);
+  }
+
+  &-logo-first {
+    width: 53px;
+    height: 62px;
+  }
+
+  &-logo-second {
+    width: 170px;
+    height: 53px;
+  }
+}

@@ -1,0 +1,2266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/style.min.css">
+  <!-- <link rel="stylesheet" href="/node_modules/nouislider/dist/nouislider.min.css"> -->
+  <title>Главная</title>
+</head>
+
+<body>
+
+  <header class="header">
+  <div class="header__line"></div>
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        </div>
+        <div class="modal-body">
+          <span class="modal-span">Получить бесплатную консультацию</span>
+          <h3 class="modal-title">Контактные данные</h3>
+          <button type="button" class="close close-btn" data-bs-dismiss="modal" aria-label="Close">
+            <svg width="14px" height="14px" class="svg-close-dims">
+              <use xlink:href="img/icons/icons.svg#close"></use>
+            </svg>
+          </button>
+          <form class="modal__form">
+            <div class="modal__form-item">
+              <!-- <label for="exampleFormControlInput1" class="form-label">Email address</label> -->
+              <input type="text" class="form-control" id="exampleFormControlInput1"
+                placeholder="Фамилия, имя и отчество*">
+            </div>
+            <div class="modal__form-item">
+              <!-- <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label> -->
+              <input type="tel" class="form-control" id="exampleFormControlInput" placeholder="Мобильный телефон*">
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+              <!-- <span class="form-check-icon"><svg width="14px" height="10px" class="svg-Check-dims">
+                <use xlink:href="img/icons/icons.svg#Check"></use>
+              </svg></span> -->
+              <label class="form-check-label" for="flexCheckChecked">
+                Даю согласие на <a href="#">обработку персональных данных</a> <br> и <a href="#">подтверждаю согласие на
+                  коммуникацию</a>
+              </label>
+            </div>
+            <div class="col-auto">
+              <button type="submit" class="button primary-button modal__form-btn">Отправить</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="header__container">
+      <a href="#" class="header__link-phone">
+        <!-- <img src="img/icons/icons.svg#phone" class="svg-phone-dims" alt="phone" /> -->
+        <svg width="24" height="24" class="svg-phone-dims" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M23.4617 18.967L19.7554 15.2602C19.0173 14.525 17.7946 14.5475 17.0306 15.3115L15.1635 17.1786C15.0456 17.1134 14.9235 17.0455 14.795 16.9735C13.616 16.3201 12.002 15.4247 10.3036 13.725C8.60041 12.022 7.70375 10.4054 7.04864 9.22552C6.9791 9.10042 6.913 8.98006 6.84773 8.86562L8.10097 7.61404L8.71698 6.9972C9.48226 6.23192 9.50347 5.0096 8.76662 4.27239L5.06021 0.565157C4.32384 -0.17122 3.10069 -0.14883 2.33541 0.616452L1.29079 1.667L1.31957 1.69543C0.969391 2.14228 0.676427 2.65784 0.458926 3.21367C0.25801 3.74274 0.132911 4.24775 0.0756928 4.75348C-0.413566 8.81089 1.44041 12.5188 6.47208 17.551C13.4273 24.5057 19.0325 23.9804 19.2742 23.9546C19.8013 23.8918 20.3057 23.7659 20.8187 23.5666C21.3698 23.3513 21.885 23.0591 22.3314 22.7098L22.3543 22.7297L23.4125 21.6935C24.1762 20.9283 24.1982 19.706 23.4617 18.967ZM22.5892 20.8694L22.1228 21.335L21.937 21.5135C21.6446 21.7963 21.1382 22.1935 20.3989 22.4827C19.9792 22.6443 19.5654 22.748 19.1444 22.7981C19.0914 22.8032 13.8194 23.253 7.29446 16.7286C1.74652 11.1809 0.857441 7.98413 1.23013 4.88793C1.27681 4.47757 1.37975 4.0646 1.5443 3.63304C1.83596 2.88943 2.23282 2.38359 2.51346 2.09063L3.15826 1.43943C3.469 1.12786 3.95363 1.10405 4.23771 1.38813L7.944 5.09442C8.2276 5.37885 8.20521 5.86349 7.89401 6.176L5.39097 8.67655L5.62197 9.06536C5.75039 9.28203 5.88615 9.52488 6.03115 9.7887C6.71967 11.0304 7.6617 12.7302 9.48096 14.5478C11.2955 16.3633 12.9927 17.3045 14.2307 17.9912C14.4982 18.1392 14.7425 18.2753 14.9616 18.4058L15.3512 18.6368L17.8526 16.1346C18.1647 15.8239 18.651 15.8009 18.935 16.0842L22.6397 19.7896C22.9229 20.0736 22.9004 20.5582 22.5892 20.8694Z" fill="#1D252C"/>
+          </svg>
+          
+        8 800 200-84-84</a>
+      <button type="button" class="header__link-consalt" data-bs-toggle="modal" data-bs-target="#exampleModal">Получить
+        бесплатную консультанцию</button>
+      <div class="nav-search">
+        <button type="button" class="fa fa-search" aria-hidden="true"><img src="img/icons/icons.svg#search"
+            class="svg-search-dims" alt="search" /></button>
+
+        <form class="search-form wrap">
+          <input type="text" class="input" placeholder="Поиск">
+        </form>
+      </div>
+      <a href="#" class="header__link-demo"> Демо счет</a>
+      <a href="#" class="header__link-login">
+        <svg width="20px" height="20px" class="svg-LogIn-dims">
+          <use xlink:href="img/icons/icons.svg#LogIn"></use>
+        </svg>
+        <span class="login-span">Личный кабинет</span>
+      </a>
+      <div class="header__logo">
+        <a href="#" class="logo__first">
+          <img src="img/icons/icons.svg#logo-first" class="svg-logo-first-dims" alt="logo-first" />
+        </a>
+        <a href="#" class="logo__second">
+          <img src="img/icons/icons.svg#logo-second" class="svg-logo-second-dims" alt="logo-second" />
+        </a>
+      </div>
+      <nav class="header__nav">
+        <ul class="header__nav-list ">
+          <li class="header__nav-item">
+            <a href="rates.html" class="dropdown-toggle" role="button">Тарифы</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="services.html" class="dropdown-toggle" role="button" id="dropdownMenuServices" 
+              aria-expanded="false">Услуги</a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuServices" >
+              <li><a class="dropdown-item" href="brokerage-services.html">Брокеркое обслуживание</a></li>
+              <li><a class="dropdown-item" href="trust-management.html">Доверительное управление</a></li>
+              <li><a class="dropdown-item" href="universal-account.html">Универсальный инвестиционный счёт</a></li>
+              <li><a class="dropdown-item" href="individual-account.html">Индивидуальный инвестиционный счёт</a></li>
+              <li><a class="dropdown-item" href="currency-market.html">Обслуживание на валютном рынке</a></li>
+              <li><a class="dropdown-item" href="metals-market.html">Обслуживание на рынке драгоценных металлов</a></li>
+              <li><a class="dropdown-item" href="transactions-repo.html">Заключение сделок РЕПО</a></li>
+              <li><a class="dropdown-item" href="depository-activities.html">Депозитарная деятельность</a></li>
+              <li><a class="dropdown-item" href="investor-status.html">Статус квалифицированного инвестора</a></li>
+            </ul>
+
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="dropdown-toggle" role="button" id="dropdownMenuAnalitic" 
+              aria-expanded="false">Аналитика</a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuAnalitic">
+              <li><a class="dropdown-item" href="market-news.html">Новости финансового рынка</a></li>
+              <li><a class="dropdown-item" href="company-news.html">Новости компании</a></li>
+              <li><a class="dropdown-item" href="#">Аналитические статьи</a></li>
+              <li><a class="dropdown-item" href="#">Прогнозы PRO</a></li>
+              <li><a class="dropdown-item" href="#">Инвестиционные идеи</a></li>
+              <li><a class="dropdown-item" href="#">Курсы валют ЦБ</a></li>
+              <li><a class="dropdown-item" href="#">Конвертер валют</a></li>
+              <li><a class="dropdown-item" href="#">Корпоративные действия эмитентов</a></li>
+              <li><a class="dropdown-item" href="#">Сообщения о ценных бумагах</a></li>
+            </ul>
+          </li>
+          <li class="header__nav-item">Обучение</li>
+          <li class="header__nav-item">
+            <a href="#" class="dropdown-toggle" role="button" id="dropdownMenuCompany" 
+              aria-expanded="false">Компания</a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuCompany">
+              <li><a class="dropdown-item" href="about.html">О компании</a></li>
+              <li><a class="dropdown-item" href="disclosure-information.html">Раскрытие информации</a></li>
+              <li><a class="dropdown-item" href="#">Электронный документооборот</a></li>
+              <li><a class="dropdown-item" href="#">Иностранным налогоплательщикам</a></li>
+              <li><a class="dropdown-item" href="#">Форум</a></li>
+              <li><a class="dropdown-item" href="#">Вопрос-ответ</a></li>
+            </ul>
+          </li>
+          <li class="header__nav-item">Контакты</li>
+          <a href="#" class="button  header__nav-list-btn ">Открыть демо-счет</a>
+        </ul>
+
+      </nav>
+      <nav class="header__nav-app " id="scroller">
+        
+        <ul class="accordion accordion-flush header__nav-app-list" id="accordionFlushExample">
+          <h2 class="accordion-title">Меню</h2>
+          <button type="button" class="close close-btn" id="closeHeaderNavApp" data-bs-dismiss="modal"
+            aria-label="Close">
+            <svg width="14px" height="14px" class="svg-close-dims">
+              <use xlink:href="img/icons/icons.svg#close"></use>
+            </svg>
+          </button>
+          <li class="nav-accordion-item">
+            <a href="rates.html" class="dropdown-toggle" role="button">
+              <h5>Тарифы</h5>
+            </a>
+          </li>
+          <li class="nav-accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+              <button class="accordion-button collapsed nav-accordion-button " type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                <h5 class="accordion-item-title">Услуги</h5>
+                <img src="img/icons/icons.svg#arrow-right" class="svg-arrow-right-dims header__nav-list-arrow"
+                  alt="arrow-right" />
+              </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                <ul class=" nav-dropdown-menu ">
+                  <li class="nav-dropdown-item"><a class="nav-dropdown-link" href="brokerage-services.html">Брокеркое
+                      обслуживание</a></li>
+                  <li class="nav-dropdown-item"><a class="nav-dropdown-link" href="trust-management.html">Доверительное
+                      управление</a></li>
+                  <li class="nav-dropdown-item"><a class="nav-dropdown-link" href="universal-account.html">Универсальный
+                      инвестиционный счёт</a></li>
+                  <li class="nav-dropdown-item"><a class="nav-dropdown-link"
+                      href="individual-account.html">Индивидуальный инвестиционный счёт</a>
+                  </li>
+                  <li class="nav-dropdown-item"><a class="nav-dropdown-link" href="currency-market.html">Обслуживание на
+                      валютном рынке</a></li>
+                  <li class="nav-dropdown-item"><a class="nav-dropdown-link" href="metals-market.html">Обслуживание на
+                      рынке драгоценных металлов</a>
+                  </li>
+                  <li class="nav-dropdown-item"><a class="nav-dropdown-link" href="transactions-repo.html">Заключение
+                      сделок РЕПО</a></li>
+                  <li class="nav-dropdown-item"><a class="nav-dropdown-link"
+                      href="depository-activities.html">Депозитарная деятельность</a></li>
+                  <li class="nav-dropdown-item"><a class="nav-dropdown-link" href="investor-status.html">Статус
+                      квалифицированного инвестора</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="nav-accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+              <button class="accordion-button collapsed nav-accordion-button " type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                <h5>Аналитика</h5>
+                <img src="img/icons/icons.svg#arrow-right" class="svg-arrow-right-dims header__nav-list-arrow"
+                  alt="arrow-right" />
+              </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                <ul class="nav-dropdown-menu " aria-labelledby="dropdownMenuAnalitic">
+                  <li class="nav-dropdown-item"><a class="nav-dropdown-link" href="#">Новости финансового рынка</a></li>
+                  <li class="nav-dropdown-item"><a class="nav-dropdown-link" href="#">Новости компании</a></li>
+                  <li class="nav-dropdown-item"><a class="nav-dropdown-link" href="#">Аналитические статьи</a></li>
+                  <li class="nav-dropdown-item"><a class="nav-dropdown-link" href="#">Прогнозы PRO</a></li>
+                  <li class="nav-dropdown-item"><a class="nav-dropdown-link" href="#">Инвестиционные идеи</a></li>
+                  <li class="nav-dropdown-item"><a class="nav-dropdown-link" href="#">Курсы валют ЦБ</a></li>
+                  <li class="nav-dropdown-item"><a class="nav-dropdown-link" href="#">Конвертер валют</a></li>
+                  <li class="nav-dropdown-item"><a class="nav-dropdown-link" href="#">Корпоративные действия
+                      эмитентов</a></li>
+                  <li class="nav-dropdown-item"><a class="nav-dropdown-link" href="#">Сообщения о ценных бумагах</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="nav-accordion-item ">
+            <a href="#" class="dropdown-toggle" role="button">
+              <h5>Обучение</h5>
+            </a>
+          </li>
+          <li class="nav-accordion-item">
+            <h2 class="accordion-header" id="flush-headingFour">
+              <button class="accordion-button collapsed nav-accordion-button " type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                <h5>Компания</h5>
+                <img src="img/icons/icons.svg#arrow-right" class="svg-arrow-right-dims header__nav-list-arrow"
+                  alt="arrow-right" />
+              </button>
+            </h2>
+            <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
+              data-bs-parent="#accordionFlushExample">
+              <div class="nav-accordion-body">
+                <ul class="nav-dropdown-menu " aria-labelledby="dropdownMenuAnalitic">
+                  <li class="nav-dropdown-item"><a class="nav-dropdown-link" href="#">О компании</a></li>
+                  <li class="nav-dropdown-item"><a class="nav-dropdown-link" href="#">Раскрытие информации</a></li>
+                  <li class="nav-dropdown-item"><a class="nav-dropdown-link" href="#">Электронный документооборот</a>
+                  </li>
+                  <li class="nav-dropdown-item"><a class="nav-dropdown-link" href="#">Иностранным налогоплательщикам</a>
+                  </li>
+                  <li class="nav-dropdown-item"><a class="nav-dropdown-link" href="#">Форум</a></li>
+                  <li class="nav-dropdown-item"><a class="nav-dropdown-link" href="#">Вопрос-ответ</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="nav-accordion-item">
+            <a href="#" class="dropdown-toggle" role="button">
+              <h5>Контакты</h5>
+            </a>
+          </li>
+          <a href="#" class="button  header__nav-list-btn ">Открыть демо-счет</a>
+        </ul>
+        <div class="window__account-app" id="window__account-app">
+          <div class="window__account-app-header">
+            <h4 class="window__account-title">Открытие брокерского счета</h4>
+          <button type="button" class="close close-btn" id="closeWindowAccountApp" data-bs-dismiss="modal"
+            aria-label="Close">
+            <svg width="14px" height="14px" class="svg-close-dims">
+              <use xlink:href="img/icons/icons.svg#close"></use>
+            </svg>
+          </button>
+          </div>
+          
+          <form action="#" class="account__form" id="accountform">
+            <div class="account__form-text">
+              <!-- <label for="firstname">Enter your name</label> -->
+              <input type="text" class="account__form-input" id="firstname" placeholder="Фамилия*">
+            </div>
+            <div class="account__form-text">
+              <!-- <label for="exampleFormControlInput1" class="form-label">Email address</label> -->
+              <input type="text" class="account__form-input" id="secondname" placeholder="Имя*">
+            </div>
+            <div class="account__form-text">
+              <!-- <label for="exampleFormControlInput1" class="form-label">Email address</label> -->
+              <input type="text" class="account__form-input" id="surname" placeholder="Отчество*">
+            </div>
+            <div class="account__form-tel">
+              <!-- <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label> -->
+              <input type="tel" class="account__form-input " id="tel" placeholder="Мобильный телефон*">
+            </div>
+            <div class="account__form-mail">
+              <!-- <label for="mail">Enter your name</label> -->
+              <input type="email" class="account__form-input " id="mail" placeholder="Электронная почта*">
+            </div>
+            <span class="account__form-transcription">* - поля, обязательные для заполнения</span>
+            <div class="form-check account__form-check">
+              <input class="form-check-input" type="checkbox" value="" id="accountCheck" checked>
+              <!-- <span class="form-check-icon"><svg width="14px" height="10px" class="svg-Check-dims">
+                <use xlink:href="img/icons/icons.svg#Check"></use>
+              </svg></span> -->
+              <label class="form-check-label" for="accountCheck">
+                <span class="check-span">Даю согласие на</span> <a href="#">обработку персональных данных</a>&nbsp;<span
+                  class="check-span">и</span> <a href="#">подтверждаю согласие на
+                  коммуникацию</a>
+              </label>
+            </div>
+            <button type="submit" class="button primary-button account__form-btn">Отправить</button>
+          </form>
+        </div>
+        
+          <div class=" header__nav-app-btn header__nav-container">
+    
+            <button class="header-burger header-burger-320" id="header-burger">
+              <ul>
+                <li class="header-burger-marker"></li>
+                <li class="header-burger-marker"></li>
+                <li class="header-burger-marker"></li>
+              </ul>
+              <span class="app-btn-text">Меню</span>
+            </button>
+    
+            <div class="header__nav-button-open" id="btnOpen">
+              <button class="app-btn-open">
+                <svg width="56" height="56" class="svg-open-score-dims" viewBox="0 0 56 56" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="28" cy="28" r="28" fill="#44953D" />
+                  <path
+                    d="M22.996 19.2519H34.1857M22.996 19.2519V16.7435C22.996 16.0508 23.5527 15.4893 24.2393 15.4893H32.9424C33.629 15.4893 34.1857 16.0508 34.1857 16.7435V19.2519M22.996 19.2519H15.5363C14.8496 19.2519 14.293 19.8134 14.293 20.5061V26.8699M34.1857 19.2519H41.6454C42.3321 19.2519 42.8887 19.8134 42.8887 20.5061V26.777M26.7259 28.0312V29.9125C26.7259 30.2588 27.0042 30.5396 27.3475 30.5396H29.8341C30.1775 30.5396 30.4558 30.2588 30.4558 29.9125V28.0312M26.7259 28.0312V27.4041C26.7259 27.0577 27.0042 26.777 27.3475 26.777H29.8341C30.1775 26.777 30.4558 27.0577 30.4558 27.4041V28.0312M26.7259 28.0312H15.4441C14.8084 28.0312 14.293 27.5113 14.293 26.8699M30.4558 28.0312H41.6454C42.3321 28.0312 42.8887 27.4697 42.8887 26.777M42.8887 26.777V38.0648C42.8887 38.7575 42.3321 39.319 41.6454 39.319H15.5363C14.8496 39.319 14.293 38.7575 14.293 38.0648V26.8699"
+                    stroke="white" stroke-width="1.5" />
+                </svg>
+    
+              </button>
+              <span class="app-btn-text btn-open-text">Открыть счет</span>
+            </div>
+            <a href="#" class="header__app-login">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M15.77 15.4145C17.8877 15.4145 19.7212 14.655 21.2197 13.1565C22.7177 11.6582 23.4775 9.82493 23.4775 7.70702C23.4775 5.58983 22.718 3.75634 21.2195 2.25756C19.7209 0.75952 17.8874 0 15.77 0C13.6521 0 11.8188 0.75952 10.3206 2.25781C8.82226 3.7561 8.0625 5.58959 8.0625 7.70702C8.0625 9.82493 8.82226 11.6584 10.3206 13.1567C11.8193 14.6548 13.6528 15.4145 15.77 15.4145ZM11.6467 3.58373C12.7964 2.43408 14.145 1.87524 15.77 1.87524C17.3948 1.87524 18.7436 2.43408 19.8935 3.58373C21.0432 4.73363 21.6023 6.08251 21.6023 7.70702C21.6023 9.33201 21.0432 10.6806 19.8935 11.8305C18.7436 12.9804 17.3948 13.5393 15.77 13.5393C14.1455 13.5393 12.7969 12.9802 11.6467 11.8305C10.4968 10.6809 9.93774 9.33201 9.93774 7.70702C9.93774 6.08251 10.4968 4.73363 11.6467 3.58373Z"
+                  fill="#091625" />
+                <path
+                  d="M29.258 24.6062C29.2148 23.9826 29.1274 23.3025 28.9987 22.5842C28.8689 21.8606 28.7016 21.1765 28.5014 20.5513C28.2944 19.905 28.0134 19.2668 27.6655 18.6553C27.3049 18.0205 26.8811 17.4678 26.4055 17.0129C25.9082 16.5371 25.2993 16.1545 24.5952 15.8755C23.8935 15.5979 23.1159 15.4573 22.2841 15.4573C21.9575 15.4573 21.6416 15.5913 21.0315 15.9885C20.656 16.2334 20.2168 16.5166 19.7265 16.8298C19.3073 17.0969 18.7395 17.3472 18.0381 17.5737C17.3537 17.7952 16.6589 17.9075 15.9729 17.9075C15.2873 17.9075 14.5925 17.7952 13.9077 17.5737C13.207 17.3474 12.6389 17.0972 12.2204 16.8301C11.7348 16.5198 11.2954 16.2366 10.9143 15.9883C10.3047 15.5911 9.98876 15.457 9.6621 15.457C8.83007 15.457 8.05273 15.5979 7.35131 15.8757C6.6477 16.1543 6.03857 16.5369 5.54077 17.0132C5.06518 17.4683 4.64135 18.0207 4.281 18.6553C3.93359 19.2668 3.65234 19.9048 3.44531 20.5515C3.24536 21.1767 3.07812 21.8606 2.94824 22.5842C2.81934 23.3015 2.73218 23.9819 2.68896 24.6069C2.64648 25.218 2.625 25.854 2.625 26.4966C2.625 28.167 3.15601 29.5193 4.20312 30.5166C5.2373 31.5007 6.60546 31.9997 8.26977 31.9997H23.6779C25.3418 31.9997 26.7099 31.5007 27.7443 30.5166C28.7917 29.52 29.3227 28.1672 29.3227 26.4963C29.3225 25.8515 29.3007 25.2156 29.258 24.6062ZM26.4514 29.1579C25.768 29.8083 24.8608 30.1245 23.6777 30.1245H8.26977C7.08642 30.1245 6.17919 29.8083 5.49609 29.1582C4.82592 28.5202 4.50024 27.6494 4.50024 26.4966C4.50024 25.897 4.52002 25.3049 4.55957 24.7366C4.59814 24.1789 4.677 23.5664 4.79394 22.9155C4.90942 22.2727 5.05639 21.6694 5.2312 21.1233C5.39892 20.5996 5.62768 20.081 5.91137 19.5815C6.18212 19.1055 6.49365 18.697 6.8374 18.3679C7.15893 18.0601 7.5642 17.8081 8.04174 17.6191C8.48339 17.4443 8.97973 17.3486 9.51854 17.3342C9.58422 17.3691 9.70116 17.4358 9.89061 17.5593C10.2761 17.8105 10.7204 18.0972 11.2117 18.4109C11.7654 18.7639 12.4787 19.0828 13.331 19.3579C14.2024 19.6396 15.091 19.7827 15.9731 19.7827C16.8552 19.7827 17.7441 19.6396 18.615 19.3581C19.468 19.0825 20.1811 18.7639 20.7356 18.4104C21.2383 18.0891 21.6701 17.8108 22.0556 17.5593C22.2451 17.436 22.362 17.3691 22.4277 17.3342C22.9668 17.3486 23.4631 17.4443 23.905 17.6191C24.3823 17.8081 24.7876 18.0603 25.1091 18.3679C25.4528 18.6968 25.7644 19.1052 26.0351 19.5818C26.3191 20.081 26.5481 20.5998 26.7155 21.123C26.8906 21.6699 27.0378 22.2729 27.153 22.9153C27.2697 23.5674 27.3488 24.1802 27.3874 24.7368V24.7373C27.4272 25.3034 27.4472 25.8952 27.4475 26.4966C27.4472 27.6496 27.1215 28.5202 26.4514 29.1579Z"
+                  fill="#091625" />
+              </svg>
+              <span class="app-btn-text">Личный кабинет</span>
+            </a>
+          </div>
+    
+        
+      </nav>
+
+      <button class="button primary-button header__button">Открыть счет</button>
+    </div>
+  </div>
+
+</header>
+  <main>
+    <section class="disclosure__information-hero">
+      <div class="container">
+        <nav aria-label="Page navigation example">
+          <ul class="pagination">
+            <li class="page-item"><a class="page-link" href="index.html">Главная</a></li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="8" height="16" fill="currentColor"
+                class="bi bi-chevron-right" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+              </svg>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">Компания</a></li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="8" height="16" fill="currentColor"
+                class="bi bi-chevron-right" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+              </svg>
+            </li>
+            <li class="page-item"><a class="page-link" href="disclosure-information.html">Раскрытие информации
+              </a></li>
+          </ul>
+        </nav>
+        <h2 class="disclosure__information-title">Раскрытие информации</h2>
+        <div class="disclosure__information-container">
+          <!-- <div class="disclosure__information-header">
+            <span class="col-3 secondary-text-color first-col">Информация, подлежащая раскрытию</span>
+            <span class="col-4"></span>
+            <span class="col-1 secondary-text-color third-col">Первоначальная дата&nbsp;раскрытия</span>
+            <span class="col-1 secondary-text-color fourth-col">Дата&nbsp;раскрытия изменений</span>
+            <span class="col-1 secondary-text-color fifth-col">Период актуальности</span>
+          </div>
+          <div class="disclosure__information-body">
+            <div class="disclosure__information-block">
+              <span class="col-3 secondary-text-color first-col">Полное фирменное наименование</span>
+              <span class="col-4">Акционерное общество «Инвестиционная компания «НФК-Сбережения» (предыдущее
+                наименование – Общество с ограниченной ответственностью «Инвестиционная компания «НФК-Сбережения»,
+                период актуальности: с 20.05.2016 по 20.07.2017)</span>
+              <span class="col-1 third-col">20.05.2016</span>
+              <span class="col-1 fourth-col">21.07.2017</span>
+              <span class="col-1 fifth-col">с 20.07.2017 по настоящий момент</span>
+            </div>
+            <div class="disclosure__information-block">
+              <span class="col-3 secondary-text-color first-col">Сокращенное фирменное наименование</span>
+              <span class="col-4">АО «НФК-Сбережения» (предыдущее наименование – ООО «НФК-Сбережения», период
+                актуальности: с 20.05.2016 по 20.07.2017)</span>
+              <span class="col-1 third-col">20.05.2016</span>
+              <span class="col-1 fourth-col">21.07.2017</span>
+              <span class="col-1 fifth-col">с 20.07.2017 по настоящий момент</span>
+            </div>
+            <div class="disclosure__information-block">
+              <span class="col-3 secondary-text-color first-col">Полное фирменное наименование Общества
+                на английском языке</span>
+              <span class="col-4">Joint-Stock Company «NFK-Savings Investment» (предыдущее наименование – NFK-Savings
+                Investment Company Limited, период актуальности: с&nbsp;20.05.2016&nbsp;по&nbsp;20.07.2017)</span>
+              <span class="col-1 third-col">20.05.2016</span>
+              <span class="col-1 fourth-col">21.07.2017</span>
+              <span class="col-1 fifth-col">с 20.07.2017 по настоящий момент</span>
+            </div>
+            <div class="disclosure__information-block">
+              <span class="col-3 secondary-text-color first-col">Сокращенное наименование Общества на английском
+                языке</span>
+              <span class="col-4">JSC «NFK-Savings» (предыдущее наименование – NFK-Savings Co. Ltd., период
+                актуальности: с 20.05.2016 по 20.07.2017)</span>
+              <span class="col-1 third-col">20.05.2016</span>
+              <span class="col-1 fourth-col">21.07.2017</span>
+              <span class="col-1 fifth-col">с 20.07.2017 по настоящий момент</span>
+            </div>
+            <div class="disclosure__information-block">
+              <span class="col-3 secondary-text-color first-col">Изображение знака обслуживания</span>
+              <span class="col-4">
+                <img src="img/icons/icons.svg#logo-first" class="disclosure__information-logo-first" alt="logo-first" />
+                <img src="img/icons/icons.svg#logo-second" class="disclosure__information-logo-second"
+                  alt="logo-second" />
+              </span>
+              <span class="col-1 third-col">29.11.2019</span>
+              <span class="col-1 fourth-col"></span>
+              <span class="col-1 fifth-col">с 29.11.2019 по настоящий момент</span>
+            </div>
+            <div class="disclosure__information-block">
+              <span class="col-3 secondary-text-color first-col">Идентификационный номер налогоплательщика</span>
+              <span class="col-4">2130190797 (предыдущий ИНН - 2128051450, период актуальности: с 20.05.2016 по
+                20.07.2017)</span>
+              <span class="col-1 third-col">20.05.2016</span>
+              <span class="col-1 fourth-col">21.07.2017</span>
+              <span class="col-1 fifth-col">с 20.07.2017 по настоящий момент</span>
+            </div>
+            <div class="disclosure__information-block">
+              <span class="col-3 secondary-text-color first-col">Адрес Общества (адрес офиса Общества, осуществляющего
+                профессиональную деятельность на рынке ценных бумаг)</span>
+              <span class="col-4">428034, Чувашская Республика - Чувашия, город Чебоксары, проспект Максима Горького,
+                дом 5, корпус&nbsp;2</span>
+              <span class="col-1 third-col">20.05.2016</span>
+              <span class="col-1 fourth-col">19.05.2021</span>
+              <span class="col-1 fifth-col">с 24.12.2020 по настоящий момент </span>
+            </div>
+            <div class="disclosure__information-block">
+              <span class="col-3 secondary-text-color first-col">Адрес представительства АО «НФК-Сбережения» в городе
+                Москве:</span>
+              <span class="col-4">125047, город Москва, 4-й Лесной переулок, дом 4, офис 516</span>
+              <span class="col-1 third-col">24.08.2020</span>
+              <span class="col-1 fourth-col"></span>
+              <span class="col-1 fifth-col">с 24.12.2020 по настоящий момент</span>
+            </div>
+            <div class="disclosure__information-block">
+              <span class="col-3 secondary-text-color first-col">Номер телефона Общества (номер телефона офиса Общества,
+                осуществляющего профессиональную деятельность на рынке ценных бумаг):</span>
+              <span class="col-4">8 (8352) 45-77-11, 45-77-22, <a href="#" class="text-link">8 800 200-84-84</a></span>
+              <span class="col-1 third-col">20.05.2016</span>
+              <span class="col-1 fourth-col"></span>
+              <span class="col-1 fifth-col">с 20.05.2016 по настоящий момент</span>
+            </div>
+            <div class="disclosure__information-block">
+              <span class="col-3 secondary-text-color first-col">Номер телефона представительства АО «НФК-Сбережения» в
+                городе Москве:</span>
+              <span class="col-4">8 (495) 641-37-11, 641-37-71</span>
+              <span class="col-1 third-col">24.08.2020</span>
+              <span class="col-1 fourth-col"></span>
+              <span class="col-1 fifth-col">с 24.08.2020 по настоящий момент</span>
+            </div>
+            <div class="disclosure__information-block">
+              <span class="col-3 secondary-text-color first-col">Номер факса:</span>
+              <span class="col-4">8 (8352) 45-77-11, 45-77-22 (доб. 122)</span>
+              <span class="col-1 third-col">20.05.2016</span>
+              <span class="col-1 fourth-col"></span>
+              <span class="col-1 fifth-col">с 20.05.2016 по настоящий момент</span>
+            </div>
+            <div class="disclosure__information-block">
+              <span class="col-3 secondary-text-color first-col">Адрес электронной почты профессионального участника
+                рынка ценных бумаг:</span>
+              <span class="col-4"><a href="#" class="text-link">mail@nfksber.ru</a></span>
+              <span class="col-1 third-col">20.05.2016</span>
+              <span class="col-1 fourth-col"></span>
+              <span class="col-1 fifth-col">с 20.05.2016 по настоящий момент</span>
+            </div>
+            <div class="disclosure__information-block">
+              <span class="col-3 secondary-text-color first-col">Адрес официального сайта профессионального участника
+                рынка ценных бумаг в сети "Интернет":</span>
+              <span class="col-4"><a href="https://nfksber.ru" class="text-link">https://nfksber.ru</a></span>
+              <span class="col-1 third-col">29.11.2019</span>
+              <span class="col-1 fourth-col"></span>
+              <span class="col-1 fifth-col">с 29.11.2019 по настоящий момент</span>
+            </div>
+            <div class="disclosure__information-block">
+              <span class="col-3 secondary-text-color first-col">Адрес персональной страницы эмитента в системе
+                комплексного раскрытия информации об эмитентах:</span>
+              <span class="col-4"><a href="https://disclosure.skrin.ru/disclosure/2130190797"
+                  class="text-link">https://disclosure.skrin.ru/disclosure/2130190797</a></span>
+              <span class="col-1 third-col">16.06.2020</span>
+              <span class="col-1 fourth-col"></span>
+              <span class="col-1 fifth-col">25.01.2018 по настоящий момент</span>
+            </div>
+            <div class="disclosure__information-block">
+              <span class="col-3 secondary-text-color first-col">Фамилия, имя, отчество (при наличии последнего) лица,
+                осуществляющего функции единоличного исполнительного органа профессионального участника рынка ценных
+                бумаг:</span>
+              <span class="col-4">Наумов Евгений Леонидович</span>
+              <span class="col-1 third-col">20.05.2016</span>
+              <span class="col-1 fourth-col"></span>
+              <span class="col-1 fifth-col">с 20.05.2016 по настоящий момент</span>
+            </div>
+            <div class="disclosure__information-block">
+              <span class="col-3 secondary-text-color first-col">Фамилия, имя, отчество (при наличии последнего) лица,
+                временно исполняющего функции единоличного исполнительного органа профессионального участника рынка
+                ценных бумаг (далее - ВРИО):</span>
+              <span class="col-4">ВРИО не назначался</span>
+              <span class="col-1 third-col">16.06.2020</span>
+              <span class="col-1 fourth-col"></span>
+              <span class="col-1 fifth-col">с 20.05.2016 по настоящий момент</span>
+            </div>
+            <div class="disclosure__information-block">
+              <span class="col-3 secondary-text-color first-col">Информация о лицензиях на осуществление
+                профессиональной деятельности на рынке ценных бумаг:</span>
+              <span class="col-4">Лицензия профессионального участника рынка ценных бумаг № 097-10053-100000 от 27 марта
+                2007 г. на осуществление брокерской деятельности. Выдана ФСФР России. Без ограничения срока
+                действия</span>
+              <span class="col-1 third-col">29.11.2019</span>
+              <span class="col-1 fourth-col"></span>
+              <span class="col-1 fifth-col">с 29.11.2019 по настоящий момент</span>
+            </div>
+            <div class="disclosure__information-block">
+              <span class="col-3 secondary-text-color first-col"></span>
+              <span class="col-4">Лицензия профессионального участника рынка ценных бумаг № 097-10058-010000 от 27 марта
+                2007 г. на осуществление дилерской деятельности. Выдана ФСФР России. Без ограничения срока
+                действия.</span>
+              <span class="col-1 third-col">29.11.2019</span>
+              <span class="col-1 fourth-col"></span>
+              <span class="col-1 fifth-col">с 29.11.2019 по настоящий момент</span>
+            </div>
+            <div class="disclosure__information-block">
+              <span class="col-3 secondary-text-color first-col"></span>
+              <span class="col-4">Лицензия профессионального участника рынка ценных бумаг № 097-10063-001000 от 27 марта
+                2007 г. на осуществление деятельности по управлению ценными бумагами. Выдана ФСФР России. Без
+                ограничения срока действия.</span>
+              <span class="col-1 third-col">29.11.2019</span>
+              <span class="col-1 fourth-col"></span>
+              <span class="col-1 fifth-col">с 29.11.2019 по настоящий момент</span>
+            </div>
+            <div class="disclosure__information-block">
+              <span class="col-3 secondary-text-color first-col"></span>
+              <span class="col-4">Лицензия профессионального участника рынка ценных бумаг № 097-13231-000100 от 27 июля
+                2010 г. на осуществление депозитарной деятельности. Выдана ФСФР России. Без ограничения срока
+                действия.</span>
+              <span class="col-1 third-col">29.11.2019</span>
+              <span class="col-1 fourth-col"></span>
+              <span class="col-1 fifth-col">с 29.11.2019 по настоящий момент</span>
+            </div>
+            <div class="disclosure__information-block">
+              <span class="col-3 secondary-text-color first-col"></span>
+              <span class="col-4">На текущий момент ФСФР России упразднена. Орган, осуществляющий регулирование и
+                лицензирование профессиональной деятельности – Центральный банк Российской Федерации (Банк России), с
+                адресами и контактными телефонами Банка России можно ознакомиться по адресу: <a
+                  href="https://cbr.ru/contacts/" class="text-link">https://cbr.ru/contacts/</a> </span>
+              <span class="col-1 third-col">29.11.2019</span>
+              <span class="col-1 fourth-col"></span>
+              <span class="col-1 fifth-col">с 29.11.2019 по настоящий момент</span>
+            </div>
+            <div class="disclosure__information-block">
+              <span class="col-3 secondary-text-color first-col">Информация о приостановлении действия лицензий,
+                которыми обладает профессиональный участник рынка ценных бумаг, с указанием даты и причины
+                приостановления:</span>
+              <span class="col-4">действие лицензий не приостанавливалось</span>
+              <span class="col-1 third-col">20.05.2016</span>
+              <span class="col-1 fourth-col"></span>
+              <span class="col-1 fifth-col">с 20.05.2016 по настоящий момент</span>
+            </div>
+          </div> -->
+          <table class="ytable" border="1" rules="all" cellspacing="0" align="center">
+            <colgroup>
+              <col width="345">
+              <col width="445">
+              <col width="150">
+              <col width="150">
+              <col width="150">
+            </colgroup>
+            <tbody>
+              <tr align="start" valign="start" style="padding-bottom: 28px; vertical-align: top;">
+                <td scope="col" colspan="2" valign="middle">
+                  <p style="text-align: start; " class="secondary-text-color">Информация, подлежащая раскрытию</p>
+                </td>
+                <td scope="col" align="start" valign="start" class="secondary-text-color">Первоначальная дата раскрытия
+                </td>
+                <td scope="col" valign="start" class="secondary-text-color">Дата раскрытия изменений</td>
+                <td scope="col" valign="start" class="secondary-text-color">Период актуальности</td>
+              </tr>
+              <tr valign="middle" class="disclosure__information-block">
+                <td scope="col" valign="middle">Полное фирменное наименование:</td>
+                <td scope="col" valign="middle" class="primary-text-market">Акционерное общество «Инвестиционная
+                  компания «НФК-Сбережения»
+                  (предыдущее наименование Общество с ограниченной ответственностью
+                  «Инвестиционная компания «НФК-Сбережения», период&nbsp;актуальности: с 20.05.2016 по 20.07.2017)</td>
+                <td scope="col" align="start" valign="middle" class="primary-text-market">20.05.2016</td>
+                <td scope="col" align="start" valign="middle" class="primary-text-market">21.07.2017&nbsp;</td>
+                <td scope="col" valign="start" class="primary-text-market">с 20.07.2017 по настоящий момент</td>
+              </tr>
+              <tr class="disclosure__information-block">
+                <td scope="col" valign="middle">Сокращенное фирменное наименование:</td>
+                <td scope="col" valign="middle" class="primary-text-market"><span>АО
+                    «НФК-Сбережения»&nbsp;<span>&nbsp;(предыдущее
+                      наименование&nbsp;<span>–</span>&nbsp;</span></span>ООО «НФК-Сбережения»,&nbsp;<span>период
+                    актуальности: с 20.05.2016 по 20.07.2017)</span></td>
+                <td scope="col" valign="middle" class="primary-text-market">20.05.2016</td>
+                <td scope="col" valign="middle" class="primary-text-market">21.07.2017&nbsp;</td>
+                <td scope="col" valign="middle" class="primary-text-market">с 20.07.2017 по настоящий момент</td>
+              </tr>
+              <tr class="disclosure__information-block">
+                <td scope="col" valign="middle">Полное фирменное наименование Общества на английском
+                  языке:</td>
+                <td class="primary-text-market" scope="col" valign="middle">
+                  <p>Joint-Stock Company «NFK-Savings Investment» (предыдущее наименование&nbsp;<span>–</span>
+                    NFK-Savings Investment Company Limited, период актуальности: с 20.05.2016 по 20.07.2017)</p>
+                </td>
+                <td class="primary-text-market" scope="col" align="start" valign="middle">20.05.2016</td>
+                <td class="primary-text-market" scope="col" align="start" valign="middle">&nbsp;21.07.2017</td>
+                <td class="primary-text-market" scope="col" valign="middle">с 20.07.2017 по настоящий момент</td>
+              </tr>
+              <tr>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" valign="middle"><strong>Сокращенное наименование Общества на английском языке:</strong>
+                </td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" valign="middle">JSC «NFK-Savings» <span>(предыдущее
+                    наименование&nbsp;<span>–</span>&nbsp;</span>NFK-Savings Co. Ltd.,&nbsp;<span>период актуальности: с
+                    20.05.2016 по 20.07.2017)</span></td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" align="center" valign="middle">20.05.2016</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" align="center" valign="middle">21.07.2017&nbsp;</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" valign="middle">с 20.07.2017 по настоящий момент</td>
+              </tr>
+              <tr>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" valign="middle"><strong>Изображение знака обслуживания:</strong></td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" valign="middle"><img style="padding: 15px; width: 90%;"
+                    src="userfiles/logo_nfk_photo-resizer.png" alt=""></td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" align="center" valign="middle">29.11.2019</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" align="center" valign="middle">&nbsp;</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" valign="middle">с 29.11.2019 по настоящий момент</td>
+              </tr>
+              <tr>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" valign="middle"><strong>Идентификационный номер налогоплательщика:</strong></td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" valign="middle">
+                  <p>2130190797&nbsp;(предыдущий ИНН - 2128051450, период актуальности: с 20.05.2016 по 20.07.2017)</p>
+                </td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" align="center" valign="middle">20.05.2016</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" align="center" valign="middle">&nbsp;21.07.2017</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" valign="middle">с 20.07.2017 по настоящий момент</td>
+              </tr>
+              <tr>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" valign="middle"><strong>Адрес Общества (адрес офиса Общества, осуществляющего
+                    профессиональную деятельность на рынке ценных бумаг):</strong></td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" valign="middle">428034, Чувашская Республика - Чувашия, город Чебоксары, проспект Максима
+                  Горького, дом 5, корпус 2</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" align="center" valign="middle">20.05.2016</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" align="center" valign="middle">19.05.2021</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" valign="middle">с 24.12.2020 по настоящий момент&nbsp;</td>
+              </tr>
+              <tr>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" valign="middle"><strong>Адрес представительства АО «НФК-Сбережения» в городе
+                    Москве:</strong></td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" valign="middle">125047, город Москва, 4-й Лесной переулок, дом 4, офис 516</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" align="center" valign="middle">24.08.2020</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" align="center" valign="middle">&nbsp;</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" valign="middle">с&nbsp;<span>24.08.2020 по настоящий момент</span></td>
+              </tr>
+              <tr>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" valign="middle"><strong>Номер телефона&nbsp;Общества (номер телефона офиса Общества,
+                    осуществляющего профессиональную деятельность на рынке ценных бумаг):</strong></td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" valign="middle">8 (8352) 45-77-11, 45-77-22, <a href="tel:88002008484">8 800 200-84-84</a>
+                </td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" align="center" valign="middle">20.05.2016</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" align="center" valign="middle">&nbsp;</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" valign="middle">с 20.05.2016 по настоящий момент</td>
+              </tr>
+              <tr>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" valign="middle"><strong>Номер телефона представительства АО «НФК-Сбережения» в городе
+                    Москве:</strong></td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" valign="middle">8 (495) 641-37-11, 641-37-71</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" align="center" valign="middle"><span>24.08.2020</span></td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" align="center" valign="middle">&nbsp;</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" valign="middle">с&nbsp;24.08.2020 по настоящий момент</td>
+              </tr>
+              <tr>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" valign="middle"><strong>Номер факса:</strong></td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" valign="middle">8 (8352) 45-77-11, 45-77-22 (доб. 122)</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" align="center" valign="middle">20.05.2016</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" align="center" valign="middle">&nbsp;</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" valign="middle">с 20.05.2016 по настоящий момент&nbsp;</td>
+              </tr>
+              <tr>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" valign="middle"><strong>Адрес электронной почты профессионального участника рынка ценных
+                    бумаг:</strong></td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" valign="middle"><a href="mailto:mail@nfksber.ru">mail@nfksber.ru</a></td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" align="center" valign="middle">20.05.2016</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" align="center" valign="middle">&nbsp;</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" valign="middle">с 20.05.2016 по настоящий момент&nbsp;</td>
+              </tr>
+              <tr>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" valign="middle"><strong>Адрес официального сайта профессионального участника рынка ценных
+                    бумаг в сети "Интернет":</strong></td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" valign="middle">https://nfksber.ru</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" align="center" valign="middle">29.11.2019</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" align="center" valign="middle">&nbsp;</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" valign="middle">с 29.11.2019 по настоящий момент</td>
+              </tr>
+              <tr>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" valign="middle">
+                  <p><strong>Адрес персональной страницы эмитента в системе комплексного раскрытия информации об
+                      эмитентах:</strong></p>
+                </td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" valign="middle"><a
+                    href="https://disclosure.skrin.ru/disclosure/2130190797">https://disclosure.skrin.ru/disclosure/2130190797</a>
+                </td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px; text-align: center;"
+                  scope="col" align="center" valign="middle">&nbsp;<span class="bx-messenger-content-item-content"><span
+                      class="bx-messenger-content-item-text-center"><span
+                        class="bx-messenger-content-item-text-message"><span
+                          class="bx-messenger-content-item-text-wrap "><span id="im-message-387480"
+                            class="bx-messenger-message">16.06.2020</span></span></span><span
+                        class="bx-messenger-content-item-params"><span
+                          class="bx-messenger-content-item-like bx-messenger-content-like-digit-off"><span
+                            class="bx-messenger-content-like-button"
+                            data-messageid="387480"><br></span></span></span></span></span></td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" align="center" valign="middle">&nbsp;</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" valign="middle">
+                  <div class="bx-messenger-body">
+                    <div class="bx-messenger-body-bg">
+                      <div class="bx-messenger-body-wrap">
+                        <div
+                          class="bx-messenger-content-item bx-messenger-content-item-id-387535 bx-messenger-content-item-2"
+                          data-type="other" data-senderid="5"
+                          data-messagedate="Tue Jun 16 2020 10:54:02 GMT+0300 (Москва, стандартное время)"
+                          data-messageid="387535" data-blockmessageid="387535"><span
+                            class="bx-messenger-content-item-content"><span
+                              class="bx-messenger-content-item-text-center"><span
+                                class="bx-messenger-content-item-text-message"><span
+                                  class="bx-messenger-content-item-text-wrap "><span id="im-message-387535"
+                                    class="bx-messenger-message"><span class="bx-messenger-ajax bx-messenger-ajax-black"
+                                      data-entity="date" data-messageid="387535"
+                                      data-ts="1516896000">25.01.2018</span>&nbsp;по настоящий
+                                    момент</span></span></span><span class="bx-messenger-content-item-params"><span
+                                  class="bx-messenger-content-item-date"><br></span></span></span></span></div>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" valign="middle"><strong>Фамилия, имя, отчество (при наличии последнего) лица,
+                    осуществляющего функции единоличного исполнительного органа профессионального участника рынка ценных
+                    бумаг:</strong></td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" valign="middle">Наумов Евгений Леонидович</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" align="center" valign="middle">20.05.2016</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" align="center" valign="middle">&nbsp;</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" valign="middle">с 20.05.2016 по настоящий момент</td>
+              </tr>
+              <tr>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" valign="middle"><strong>Фамилия, имя, отчество (при наличии последнего) лица, временно
+                    исполняющего функции единоличного исполнительного органа профессионального участника рынка ценных
+                    бумаг (далее - ВРИО):</strong></td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" valign="middle">ВРИО не назначался</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" align="center" valign="middle">20.05.2016</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" align="center" valign="middle">&nbsp;</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" valign="middle">с 20.05.2016 по настоящий момент</td>
+              </tr>
+              <tr>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" rowspan="5" valign="middle"><strong>Информация о лицензиях на осуществление
+                    профессиональной деятельности на рынке ценных бумаг:</strong></td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" valign="middle">Лицензия профессионального участника рынка ценных бумаг № 097-10053-100000
+                  от 27 марта 2007 г. на осуществление брокерской деятельности. Выдана ФСФР России. Без ограничения
+                  срока действия</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" align="center" valign="middle">29.11.2019</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" align="center" valign="middle">&nbsp;</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" valign="middle">с 29.11.2019 по настоящий момент</td>
+              </tr>
+              <tr>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" valign="middle">Лицензия профессионального участника рынка ценных бумаг № 097-10058-010000
+                  от 27 марта 2007 г. на осуществление дилерской деятельности. Выдана ФСФР России. Без ограничения срока
+                  действия.</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" align="center" valign="middle">29.11.2019</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" align="center" valign="middle">&nbsp;</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" valign="middle">с 29.11.2019 по настоящий момент</td>
+              </tr>
+              <tr>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" valign="middle">Лицензия профессионального участника рынка ценных бумаг № 097-10063-001000
+                  от 27 марта 2007 г. на осуществление деятельности по управлению ценными бумагами. Выдана ФСФР России.
+                  Без ограничения срока действия.</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" align="center" valign="middle">29.11.2019</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" align="center" valign="middle">&nbsp;</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" valign="middle">с 29.11.2019 по настоящий момент</td>
+              </tr>
+              <tr>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" valign="middle">Лицензия профессионального участника рынка ценных бумаг № 097-13231-000100
+                  от 27 июля 2010 г. на осуществление депозитарной деятельности. Выдана ФСФР России. Без ограничения
+                  срока действия.</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" align="center" valign="middle">29.11.2019</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" align="center" valign="middle">&nbsp;</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" valign="middle">с 29.11.2019 по настоящий момент</td>
+              </tr>
+              <tr>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" valign="middle">На текущий момент ФСФР России упразднена. Орган, осуществляющий
+                  регулирование и лицензирование профессиональной деятельности&nbsp;<span>–</span> Центральный банк
+                  Российской Федерации (Банк России), с адресами и контактными телефонами Банка России можно
+                  ознакомиться по адресу: <a href="https://cbr.ru/contacts/"
+                    target="_blank">https://cbr.ru/contacts/</a></td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" align="center" valign="middle">29.11.2019</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" align="center" valign="middle">&nbsp;</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" valign="middle">с 29.11.2019 по настоящий момент</td>
+              </tr>
+              <tr>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" valign="middle"><strong>Информация о приостановлении действия лицензий, которыми обладает
+                    профессиональный участник рынка ценных бумаг, с указанием даты и причины приостановления:</strong>
+                </td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" valign="middle">действие лицензий не приостанавливалось</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" align="center" valign="middle">20.05.2016</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" align="center" valign="middle">&nbsp;</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" valign="middle">с 20.05.2016 по настоящий момент</td>
+              </tr>
+              <tr>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" valign="middle"><strong>Информация о возобновлении действия лицензий, которыми обладает
+                    профессиональный участник рынка ценных бумаг, с указанием даты возобновления действия
+                    лицензий:</strong></td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" valign="middle">действие лицензий не приостанавливалось</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" align="center" valign="middle">20.05.2016</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" align="center" valign="middle">&nbsp;</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" valign="middle">с 20.05.2016 по настоящий момент</td>
+              </tr>
+              <tr>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" valign="middle"><strong>Информация о принятии профессиональным участником рынка ценных
+                    бумаг решения о направлении в Банк России заявления об аннулировании лицензии на осуществление
+                    профессиональной деятельности на рынке ценных бумаг:</strong></td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" valign="middle">решение о направлении в Банк России заявления об аннулировании лицензии на
+                  осуществление профессиональной деятельности на рынке ценных бумаг не принималось</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" align="center" valign="middle">20.05.2016</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" align="center" valign="middle">&nbsp;</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" valign="middle">с 20.05.2016 по настоящий момент</td>
+              </tr>
+              <tr>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" valign="middle"><strong>Информация об аннулировании лицензии в связи с нарушением
+                    профессиональным участником рынка ценных бумаг законодательства Российской Федерации или в связи с
+                    принятием Банком России решения об аннулировании лицензии на основании заявления профессионального
+                    участника рынка ценных бумаг:</strong></td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" valign="middle">лицензии не аннулировались</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" align="center" valign="middle">20.05.2016</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" align="center" valign="middle">&nbsp;</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" valign="middle">с 20.05.2016 по настоящий момент</td>
+              </tr>
+              <tr>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" valign="middle"><strong>Информация о членстве в саморегулируемых организациях в сфере
+                    финансового рынка, объединяющих брокеров, дилеров, управляющих, депозитариев:</strong></td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" valign="middle"><span style="line-height: 1.5em;">Саморегулируемая&nbsp;</span><span
+                    style="line-height: 1.5em;">организация «Национальная финансовая ассоциация»</span></td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" align="center" valign="middle">20.05.2016</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" align="center" valign="middle">&nbsp;</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" valign="middle">с 20.05.2016 по настоящий момент&nbsp;</td>
+              </tr>
+              <tr>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" valign="middle"><strong>Адрес сайта саморегулируемой организации в сети
+                    "Интернет":</strong></td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" valign="middle"><a href="http://new.nfa.ru" target="_blank">http://new.nfa.ru</a></td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" align="center" valign="middle">29.11.2019</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" align="center" valign="middle">&nbsp;</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" valign="middle">с 29.11.2019 по настоящий момент</td>
+              </tr>
+              <tr>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" valign="middle"><strong>Информация о стандартах СРО, которыми руководствуется
+                    профессиональный участник рынка ценных бумаг при осуществлении своей деятельности:</strong></td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" valign="middle">
+                  <p><a href="http://new.nfa.ru/guide/index.php">http://new.nfa.ru/guide/index.php</a><br><a
+                      href="http://new.nfa.ru/guide/internal-standards/">http://new.nfa.ru/guide/internal-standards/</a>
+                  </p>
+                </td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" align="center" valign="middle">20.05.2016</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" align="center" valign="middle">&nbsp;29.01.2018</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" valign="middle">с 29.01.2018 по настоящий момент</td>
+              </tr>
+              <tr>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" rowspan="2" valign="middle"><strong>Информация о базовых стандартах по защите прав и
+                    интересов получателей финансовых услуг:</strong></td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" valign="middle">«Базовый стандарт защиты прав и интересов физических и юридических
+                  лиц&nbsp;<span>–</span> получателей финансовых услуг, оказываемых членами саморегулируемых организаций
+                  в сфере финансового рынка, объединяющих брокеров» (утв. Банком России, Протокол от 20.12.2018 N
+                  КФНП-39)</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" align="center" valign="middle">29.11.2019</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" align="center" valign="middle">&nbsp;</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" valign="middle">с 29.11.2019 по настоящий момент</td>
+              </tr>
+              <tr>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" valign="middle">«Базовый стандарт защиты прав и интересов физических и юридических
+                  лиц&nbsp;<span>–</span> получателей финансовых услуг, оказываемых членами саморегулируемых организаций
+                  в сфере финансового рынка, объединяющих управляющих» (утв. Банком России, Протокол от 20.12.2018 N
+                  КФНП-39)</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" align="center" valign="middle">29.11.2019</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" align="center" valign="middle">&nbsp;</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" valign="middle">с 29.11.2019 по настоящий момент</td>
+              </tr>
+              <tr>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" valign="middle"><strong>Информация об органе, осуществляющем полномочия по контролю и
+                    надзору за деятельностью профессионального участника рынка ценных бумаг (в том числе действующего в
+                    качестве брокера, управляющего):</strong></td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" valign="middle">Центральный банк Российской Федерации (Банк России)</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" align="center" valign="middle">29.11.2019</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" align="center" valign="middle">&nbsp;</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" valign="middle">с 29.11.2019 по настоящий момент</td>
+              </tr>
+              <tr>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" valign="middle"><strong> Финансовые услуги, оказываемые на основании договора о брокерском
+                    обслуживании, и дополнительные услуги брокера, в том числе оказываемые брокером за дополнительную
+                    плату: </strong></td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" valign="middle">Основные и дополнительные финансовые услуги описаны в заключаемом
+                  (заключенном) договоре универсального инвестиционного счета (действующий шаблон договора
+                  универсального инвестиционного счета размещен по ссылке <a
+                    href="company/raskrytie_informacii/obrazczyi_dogovorov,_predlagaemyie_klientam_pri_predostavlenii_im_uslug/"
+                    target="_blank">https://nfksber.ru/company/raskrytie_informacii/
+                    obrazczyi_dogovorov,_predlagaemyie_klientam_pri_ predostavlenii_im_uslug/</a>), а также в
+                  соответствующем регламенте (с учетов сроков действия документа), к которому присоединяется
+                  (присоединился) получатель финансовой услуги (размещен по ссылке <a
+                    href="company/raskrytie_informacii/tipovyie_reglamentyi_opredelyayushhie_poryadok_okazaniya_uslug_na_ryinke_czennyix_bumag/"
+                    target="_blank">https://nfksber.ru/company/raskrytie_informacii/
+                    tipovyie_reglamentyi_opredelyayushhie _poryadok_okazaniya_uslug _na_ryinke_czennyix_bumag/</a>)</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" align="center" valign="middle">29.11.2019</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" align="center" valign="middle">&nbsp;</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" valign="middle">с 29.11.2019 по настоящий момент</td>
+              </tr>
+              <tr>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" valign="middle"><strong> Порядок получения финансовой услуги (брокерское обслуживание), в
+                    том числе документы, которые должны быть предоставлены получателем финансовых услуг для ее
+                    получения: </strong></td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" valign="middle">Порядок получения финансовой услуги регулируется заключаемым (заключенным)
+                  договором универсального инвестиционного счета (действующий шаблон договора универсального
+                  инвестиционного счета размещен по ссылке <a
+                    href="company/raskrytie_informacii/obrazczyi_dogovorov,_predlagaemyie_klientam_pri_predostavlenii_im_uslug/"
+                    target="_blank">https://nfksber.ru/company/raskrytie_informacii/ obrazczyi_dogovorov,
+                    _predlagaemyie_klientam_pri_ predostavlenii_im_uslug/</a>), а также соответствующим регламентом (с
+                  учетов сроков действия документа), к которому присоединяется (присоединился) получатель финансовой
+                  услуги (размещен по ссылке <a
+                    href="company/raskrytie_informacii/tipovyie_reglamentyi_opredelyayushhie_poryadok_okazaniya_uslug_na_ryinke_czennyix_bumag/"
+                    target="_blank">https://nfksber.ru/company/raskrytie_informacii/
+                    tipovyie_reglamentyi_opredelyayushhie _poryadok_okazaniya_uslug_na _ryinke_czennyix_bumag/</a>)</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" align="center" valign="middle">29.11.2019</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" align="center" valign="middle">&nbsp;</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" valign="middle">с 29.11.2019 по настоящий момент</td>
+              </tr>
+              <tr>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" valign="middle"><strong> Финансовые услуги, оказываемые на основании договора
+                    доверительного управления, и дополнительные услуги управляющего, в том числе оказываемые управляющим
+                    за дополнительную плату: </strong></td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" valign="middle">Осуществление доверительного управления в отношении переданного клиентом
+                  (учредителем управления) имущества посредством совершения любых правомерных юридических и фактических
+                  действий с таким имуществом в интересах клиента (учредителя управления) в течение определенного
+                  договором срока от своего собственного имени и за вознаграждение</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" align="center" valign="middle">29.11.2019</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" align="center" valign="middle">&nbsp;</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" valign="middle">с 29.11.2019 по настоящий момент</td>
+              </tr>
+              <tr>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" valign="middle"><strong> Порядок получения финансовой услуги (доверительное управление), в
+                    том числе документы, которые должны быть предоставлены получателем финансовых услуг для ее
+                    получения: </strong></td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" valign="middle">Порядок получения финансовой услуги регулируется заключаемым (заключенным)
+                  договором доверительного управления (действующий шаблон договора доверительного управления размещен по
+                  ссылке <a
+                    href="company/raskrytie_informacii/obrazczyi_dogovorov,_predlagaemyie_klientam_pri_predostavlenii_im_uslug/"
+                    target="_blank">https://nfksber.ru/company/raskrytie_informacii/ obrazczyi_dogovorov,
+                    _predlagaemyie_klientam_pri _predostavlenii_im_uslug/</a>), а также Правилами осуществления
+                  деятельности по доверительному управлению активами клиентов АО «НФК-Сбережения» (с учетов сроков
+                  действия документа), к которому присоединяется (присоединился) получатель финансовой услуги (размещен
+                  по ссылке <a
+                    href="company/raskrytie_informacii/tipovyie_reglamentyi_opredelyayushhie_poryadok_okazaniya_uslug_na_ryinke_czennyix_bumag/"
+                    target="_blank">https://nfksber.ru/company/raskrytie_informacii/
+                    tipovyie_reglamentyi_opredelyayushhie _poryadok_okazaniya_uslug _na_ryinke_czennyix_bumag/</a>)</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" align="center" valign="middle">29.11.2019</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" align="center" valign="middle">&nbsp;</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" valign="middle">с 29.11.2019 по настоящий момент</td>
+              </tr>
+              <tr>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" valign="middle"><strong> Способы и адреса направления обращений (жалоб) профессиональному
+                    участнику рынка ценных бумаг: </strong></td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px; word-break: break-all;"
+                  scope="col" valign="middle">
+                  <p>обращение (жалоба) могут быть направлены заявителем в письменном виде на почтовый адрес: 428034,
+                    Чувашская Республика, г. Чебоксары, пр. М. Горького, д. 5, корпус 2, посредством системы
+                    электронного документооборота, в том числе через личный кабинет клиента по адресу <a
+                      href="https://lk.nfksber.ru/personal/sending/">https://lk.nfksber.ru/personal/sending/</a>,
+                    посредством заполнения формы "Обратиться в компанию", размещенной на официальном сайте компании <a
+                      href="https://nfksber.ru/">https://nfksber.ru</a></p>
+                </td>
+                <td class="justifyleft"
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding-top: 5px; padding-right: 5px; padding-bottom: 5px;"
+                  scope="col" align="center" valign="middle">29.11.2019</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" align="center" valign="middle">05.07.2021&nbsp;</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" valign="middle">с 05.07.2021 по настоящий момент</td>
+              </tr>
+              <tr>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" valign="middle"><strong> Способы и адреса направления обращений (жалоб) в саморегулируемую
+                    организацию: </strong></td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" valign="middle">обращение (жалоба) могут быть направлены заявителем в письменном виде на
+                  почтовый адрес: 107045, г. Москва, Сергиевский Б. пер., дом № 10, а также на адрес электронной почты
+                  СРО НФА info@nfa.ru</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" align="center" valign="middle">29.11.2019</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" align="center" valign="middle">&nbsp;</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" valign="middle">с 29.11.2019 по настоящий момент</td>
+              </tr>
+              <tr>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" valign="middle"><strong> Способы и адреса направления обращений (жалоб) в орган,
+                    осуществляющий полномочия по контролю и надзору за деятельностью профессионального участника рынка
+                    ценных бумаг: </strong></td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" valign="middle">Обращения в форме электронного документа могут быть направлены в
+                  Интернет-приемную по адресу <a href="https://cbr.ru/Reception/"
+                    target="_blank">https://cbr.ru/Reception/</a>. С информацией о способах направления письменных
+                  обращений, а также с информацией об Общественной приемной Банка России можно ознакомиться по следующей
+                  ссылке <a href="http://cbr.ru/contacts/" target="_blank">http://cbr.ru/contacts/</a>. В ходе личного
+                  приема граждан в Общественной приемной Банка России возможно устное обращение граждан либо вручение
+                  письменных обращений. Письменные обращения могут быть направлены в адрес территориальных учреждений
+                  Банка России по адресам, указанным по ссылке&nbsp;<a
+                    href="https://cbr.ru/about_br/tubr/">https://cbr.ru/about_br/tubr/</a></td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" align="center" valign="middle">29.11.2019</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" align="center" valign="middle">&nbsp;</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" valign="middle">с 29.11.2019 по настоящий момент</td>
+              </tr>
+              <!------->
+              <tr>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" rowspan="6" valign="middle"><strong> Способы защиты прав получателя финансовых услуг,
+                    включая информацию о наличии возможности и способах досудебного или внесудебного урегулирования
+                    спора, в том числе о претензионном порядке урегулирования спора, процедуре медиации (при их наличии)
+                    в рамках брокерской деятельности: </strong></td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" valign="middle">Предоставление информации и документов по требованию инвестора (ст. 6
+                  Федерального закона от 05.03.1999 N 46-ФЗ «О защите прав и законных интересов инвесторов на рынке
+                  ценных бумаг»)</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" align="center" valign="middle">29.11.2019</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" align="center" valign="middle">&nbsp;</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" valign="middle">с 29.11.2019 по настоящий момент</td>
+              </tr>
+              <tr>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" valign="middle">Претензионный порядок урегулирования разногласий - ст. 39 Регламента АО
+                  «НФК-Сбережения» «О порядке осуществления действий на рынке ценных бумаг», претензии рассматриваются
+                  брокером в срок не позднее тридцати дней со дня поступления, а не требующие дополнительного изучения и
+                  проверки - не позднее пятнадцати дней. Брокер вправе при рассмотрении претензии запросить
+                  дополнительные документы и сведения у обратившегося лица, при этом срок рассмотрения претензии
+                  увеличивается на срок предоставления документов, но не более чем на 10 (Десять) дней</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" align="center" valign="middle">29.11.2019</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" align="center" valign="middle">21.12.2021&nbsp;</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" valign="middle">с 29.11.2019 по настоящий момент</td>
+              </tr>
+              <tr>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" valign="middle">Применительно к получателям финансовых услуг, выступающим инвесторами в
+                  рамках онлайн-сервиса Zberopolis.ru (далее – сервис), условиями сервиса предусмотрено право инвестора
+                  подать брокеру поручение на обращение в интересах инвестора к юридическому лицу, осуществляющему
+                  возврат задолженности, на стадии досудебного урегулирования или на стадии исполнительного производства
+                  (ст. 12 ГК РФ)</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" align="center" valign="middle">20.12.2019</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" align="center" valign="middle">&nbsp;</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" valign="middle">с 20.12.2019 по настоящий момент</td>
+              </tr>
+              <tr>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" valign="middle">Направление заявления/жалобы инвестором в Банк России (ст. 7 Федерального
+                  закона от 05.03.1999 N 46-ФЗ «О защите прав и законных интересов инвесторов на рынке ценных бумаг»)
+                </td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" align="center" valign="middle">29.11.2019</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" align="center" valign="middle">&nbsp;</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" valign="middle">с 29.11.2019 по настоящий момент</td>
+              </tr>
+              <tr>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" valign="middle">Признание оспоримой сделки недействительной и применения последствий ее
+                  недействительности, применения последствий недействительности ничтожной сделки (ст. 12 ГК РФ, ст. 4
+                  Федерального закона от 05.03.1999 N 46-ФЗ «О защите прав и законных интересов инвесторов на рынке
+                  ценных бумаг»)</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" align="center" valign="middle">29.11.2019</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" align="center" valign="middle">&nbsp;</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" valign="middle">с 29.11.2019 по настоящий момент</td>
+              </tr>
+              <tr>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" valign="middle">Возмещение ущерба (ст. 12,15 ГК РФ, ст. 5 Федерального закона от
+                  05.03.1999 N 46-ФЗ «О защите прав и законных интересов инвесторов на рынке ценных бумаг»)</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" align="center" valign="middle">29.11.2019</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" align="center" valign="middle">&nbsp;</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" valign="middle">с 29.11.2019 по настоящий момент</td>
+              </tr>
+              <tr>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" valign="middle"><strong> Способы и порядок изменения условий договора о брокерском
+                    обслуживании, в том числе в результате внесения брокером изменений во внутренние документы, ссылка
+                    на которые содержится в брокерском договоре: </strong></td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" valign="middle">Внесение изменений и (или) дополнений в договор о брокерском обслуживании
+                  (регламент), в том числе изменение тарифов на услуги брокера, производится брокером в одностороннем
+                  порядке без согласования с клиентом. Все изменения и дополнения, вносимые брокером в регламент,
+                  вступают в силу и становятся обязательными для клиентов по истечении 2 (двух) рабочих дней с момента
+                  опубликования сообщения о внесении в регламент изменений и (или) дополнений на интернет-сайте брокера
+                  http://www.nfksber.ru. Вносимые в регламент изменения и дополнения с даты их вступления в силу
+                  распространяются на правоотношения между брокером и всеми клиентами по договорам, предусматривающим
+                  брокерское обслуживание, присоединившимися к соответствующему регламенту по состоянию на дату внесения
+                  соответствующих изменений (п. 1.13, 1.14 Регламента АО «НФК-Сбережения» «О порядке осуществления
+                  действий на рынке ценных бумаг».</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" align="center" valign="middle">29.11.2019</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" align="center" valign="middle">&nbsp;21.12.2021</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" valign="middle">с 29.11.2019 по настоящий момент</td>
+              </tr>
+              <tr>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" rowspan="5" valign="middle"><strong>Способы защиты прав получателя финансовых услуг,
+                    включая информацию о наличии возможности и способах досудебного или внесудебного урегулирования
+                    спора, в том числе о претензионном порядке урегулирования спора, процедуре медиации (при их наличии)
+                    в рамках доверительного управления:</strong></td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" valign="middle">Недопущение при принятии управляющим конкретного инвестиционного решения
+                  конкуренции инвестиционных портфелей Клиентов&nbsp;<span>–</span> ст. 9 Правил осуществления
+                  деятельности по доверительному управлению активами клиентов АО «НФК - Сбережения»</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" align="center" valign="middle">29.11.2019</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" align="center" valign="middle">&nbsp;</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" valign="middle">с 29.11.2019 по настоящий момент</td>
+              </tr>
+              <tr>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" valign="middle">Предоставление информации и документов по требованию инвестора (ст. 6
+                  Федерального закона от 05.03.1999 N 46-ФЗ «О защите прав и законных интересов инвесторов на рынке
+                  ценных бумаг»)</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" align="center" valign="middle">29.11.2019</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" align="center" valign="middle">&nbsp;</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" valign="middle">с 29.11.2019 по настоящий момент</td>
+              </tr>
+              <tr>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" valign="middle">Направление заявления/жалобы инвестором в Банк России (ст. 7 Федерального
+                  закона от 05.03.1999 N 46-ФЗ «О защите прав и законных интересов инвесторов на рынке ценных бумаг»)
+                </td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" align="center" valign="middle">29.11.2019</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" align="center" valign="middle">&nbsp;</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" valign="middle">с 29.11.2019 по настоящий момент</td>
+              </tr>
+              <tr>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" valign="middle">Признание оспоримой сделки недействительной и применения последствий ее
+                  недействительности, применения последствий недействительности ничтожной сделки (ст. 12 ГК РФ, ст. 4
+                  Федерального закона от 05.03.1999 N 46-ФЗ «О защите прав и законных интересов инвесторов на рынке
+                  ценных бумаг»)</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" align="center" valign="middle">29.11.2019</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" align="center" valign="middle">&nbsp;</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" valign="middle">с 29.11.2019 по настоящий момент</td>
+              </tr>
+              <tr>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" valign="middle">Возмещение ущерба (ст. 12,15 ГК РФ, ст. 5 Федерального закона от
+                  05.03.1999 N 46-ФЗ «О защите прав и законных интересов инвесторов на рынке ценных бумаг»)</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" align="center" valign="middle">29.11.2019</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" align="center" valign="middle">&nbsp;</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" valign="middle">с 29.11.2019 по настоящий момент</td>
+              </tr>
+              <tr>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" valign="middle"><strong> Способы и порядок изменения условий договора доверительного
+                    управления, в том числе в результате внесения управляющим изменений во внутренние документы, ссылка
+                    на которые содержится в договоре доверительного управления: </strong></td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" valign="middle"><span>Внесение изменений и (или) дополнений в Правила осуществления
+                    деятельности по доверительному управлению активами клиентов АО «НФК - Сбережения»
+                    (далее&nbsp;<span>–</span> Правила), в том числе в политику осуществления прав по ценным бумагам,
+                    находящимся в доверительном управлении, производится Управляющим в одностороннем порядке без
+                    согласования с клиентом (если иной способ не предусмотрен договором доверительного управления). Все
+                    изменения и дополнения, вносимые управляющим в Правила, в том числе в политику осуществления прав по
+                    ценным бумагам, находящимся в доверительном управлении, вступают в силу и становятся обязательными
+                    для клиентов по истечении 10 (Десяти) календарных дней с момента опубликования сообщения о внесении
+                    в Правила изменений и (или) дополнений на интернет-сайте управляющего&nbsp;</span><a
+                    href="http://www.nfksber.ru/" rel="nofollow" target="_blank">www.nfksber.ru</a><span>. Вносимые в
+                    Правила, в том числе в политику осуществления прав по ценным бумагам, находящимся в доверительном
+                    управлении, изменения и дополнения с даты их вступления в силу распространяются на правоотношения
+                    между управляющим и всеми клиентами по договорам доверительного управления, присоединившимися к
+                    Правилам по состоянию на дату внесения соответствующих изменений. Договор доверительного управления
+                    может быть изменен и (или) дополнен по соглашению сторон, оформленному письменно</span></td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" align="center" valign="middle"><span>29.11.2019</span></td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" align="center" valign="middle"><span>20.06.2021</span>&nbsp;</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" valign="middle">с&nbsp;<span>20.06.2021</span> по настоящий момент</td>
+              </tr>
+              <tr>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" valign="middle"><strong>Информация о технических сбоях в автоматизированных системах
+                    профессионального участника рынка ценных бумаг, которые повлекли прекращение (ограничение)
+                    работоспособности таких систем, что привело к отсутствию возможности осуществления деятельности
+                    профессионального участника рынка ценных бумаг в отношении всех клиентов профессионального участника
+                    рынка ценных бумаг на протяжении более одного часа подряд:</strong></td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" valign="middle">технические сбои не зафиксированы</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" align="center" valign="middle">20.05.2016</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" align="center" valign="middle">&nbsp;</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" valign="middle">с 20.05.2016 по настоящий момент</td>
+              </tr>
+              <tr>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" valign="middle"><strong>Информация о возобновлении работоспособности автоматизированных
+                    систем профессионального участника рынка ценных бумаг после сбоев, которые повлекли прекращение
+                    (ограничение) работоспособности таких систем, что привело к отсутствию возможности осуществления
+                    деятельности профессионального участника рынка ценных бумаг в отношении всех клиентов
+                    профессионального участника рынка ценных бумаг на протяжении одного часа подряд:</strong></td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" valign="middle">технические сбои не зафиксированы</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" align="center" valign="middle">20.05.2016</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" align="center" valign="middle">&nbsp;</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" valign="middle">с 20.05.2016 по настоящий момент</td>
+              </tr>
+              <tr>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" valign="middle"><strong>Информация о существенных судебных спорах профессионального
+                    участника рынка ценных бумаг, а также его дочерних и зависимых обществ, решения по которым могут
+                    существенным образом повлиять на финансовое положение или хозяйственную деятельность
+                    профессионального участника рынка ценных бумаг (судебный спор является существенным, когда исковые
+                    требования превышают 10 процентов от валюты баланса профессионального участника рынка ценных
+                    бумаг):</strong></td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" valign="middle">существенные судебные споры не фиксировались</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" align="center" valign="middle">20.05.2016</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" align="center" valign="middle">&nbsp;</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" valign="middle">с 20.05.2016 по настоящий момент</td>
+              </tr>
+              <tr>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" rowspan="3" valign="middle"><strong>Перечень клиринговых организаций, с которыми
+                    профессиональный участник заключил договоры об оказании ему клиринговых услуг:</strong></td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" valign="middle">Небанковская кредитная организация-центральный контрагент «Национальный
+                  Клиринговый Центр» (Акционерное общество) (предыдущее наименование: Банк "Национальный Клиринговый
+                  Центр" (Акционерное общество), период актуальности: с 20.05.2016 по 21.11.2017)</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" align="center" valign="middle">20.05.2016</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" align="center" valign="middle">30.11.2017&nbsp;&nbsp;</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" valign="middle"><span style="line-height: 1.5em;">с 22.11.2017 по настоящий момент</span>
+                </td>
+              </tr>
+              <tr>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" valign="middle"><span>Небанковская кредитная организация - центральный контрагент «СПБ
+                    Клиринг» (акционерное общество) &nbsp;(предыдущие наименования: НЕБАНКОВСКАЯ КРЕДИТНАЯ
+                    ОРГАНИЗАЦИЯ-ЦЕНТРАЛЬНЫЙ КОНТРАГЕНТ "КЛИРИНГОВЫЙ ЦЕНТР МФБ" (АКЦИОНЕРНОЕ ОБЩЕСТВО) (период
+                    актуальности: с&nbsp;</span><span class="bx-messenger-ajax bx-messenger-ajax-black"
+                    data-entity="date" data-messageid="989402" data-ts="1601308800">28.09.2020</span><span>&nbsp;по
+                    02.06.2022), Акционерное общество «Клиринговый центр МФБ» (период актуальности: с&nbsp;</span><span
+                    class="bx-messenger-ajax bx-messenger-ajax-black" data-entity="date" data-messageid="989402"
+                    data-ts="1529942400">25.06.2018</span><span>&nbsp;по 27.09.2020), &nbsp;Публичное акционерное
+                    общество «Клиринговый центр МФБ», период актуальности: с&nbsp;</span><span
+                    class="bx-messenger-ajax bx-messenger-ajax-black" data-entity="date" data-messageid="989402"
+                    data-ts="1463760000">20.05.2016</span><span>&nbsp;по 24.06.2018)</span></td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" align="center" valign="middle"><span>20.05.2016</span></td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" align="center" valign="middle">08.06.2022&nbsp;</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" valign="middle"><span style="line-height: 1.5em;">с 03.06.2022 по&nbsp;настоящий
+                    момент</span></td>
+              </tr>
+              <tr>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" valign="middle">
+                  <p>Небанковская кредитная организация акционерное общество "Национальный расчетный депозитарий"</p>
+                </td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" align="center" valign="middle">&nbsp;18.12.2020</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" align="center" valign="middle">&nbsp;</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" valign="middle">
+                  <p>с 18.12.2020&nbsp;</p>
+                  <p>по&nbsp;настоящий момент&nbsp;</p>
+                </td>
+              </tr>
+              <tr>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" rowspan="2" valign="middle"><strong>Перечень организаторов торговли, в том числе
+                    иностранных, где <strong>профессиональный участник</strong>&nbsp;является участником
+                    торговли:</strong> &nbsp;</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" valign="middle">Публичное акционерное общество «Московская Биржа ММВБ-РТС»</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" align="center" valign="middle">20.05.2016</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" align="center" valign="middle">&nbsp;</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" valign="middle">с 20.05.2016 по настоящий момент</td>
+              </tr>
+              <tr>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" valign="middle">Публичное акционерное общество «СПБ Биржа» (предыдущее наименование:
+                  Публичное акционерное общество&nbsp; "Санкт-Петербургская биржа"&nbsp;(период актуальности: с
+                  20.05.2016 по 01.07.2021)</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" align="center" valign="middle"><span>20.05.2016</span></td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" align="center" valign="middle"><span>&nbsp;05.07.2021</span></td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" valign="middle">с 02.07.2021 по настоящий момент</td>
+              </tr>
+              <tr>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" valign="middle"><strong>Информация о приостановлении допуска профессионального участника к
+                    организованным торгам:</strong></td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" valign="middle">приостановление допуска к организованным торгам не зафиксировано</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" align="center" valign="middle">20.05.2016</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" align="center" valign="middle">&nbsp;</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" valign="middle">с 20.05.2016 по настоящий момент</td>
+              </tr>
+              <tr>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" valign="middle"><strong>Информация о приостановлении допуска профессионального участника к
+                    клиринговому обслуживанию:</strong></td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" valign="middle">приостановление допуска к клиринговому обслуживанию не зафиксировано</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" align="center" valign="middle">20.05.2016</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" align="center" valign="middle">&nbsp;</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" valign="middle">с 20.05.2016 по настоящий момент</td>
+              </tr>
+              <tr>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" rowspan="5" valign="middle"><strong>Перечень кредитных организаций, в которых
+                    профессиональному участнику открыты специальные брокерские
+                    счета:</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" valign="middle">Акционерный Коммерческий банк «АВАНГАРД» — публичное акционерное общество
+                </td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" align="center" valign="middle">20.05.2016</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" align="center" valign="middle">&nbsp;</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" valign="middle">с 20.05.2016<span style="line-height: 1.5em;">&nbsp; по настоящий
+                    момент</span></td>
+              </tr>
+              <tr>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" valign="middle"><span>Небанковская кредитная организация акционерное общество
+                    "Национальный расчетный депозитарий" (предыдущее
+                    наименование&nbsp;<span>–</span>&nbsp;</span><span>Небанковская кредитная организация закрытое
+                    акционерное общество "Национальный расчетный депозитарий" , период актуальности: с 20.05.2016 по
+                    09.08.2016)</span></td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" align="center" valign="middle"><span>20.05.2</span><span>016</span>&nbsp;</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" align="center" valign="middle"><span>10.08.2016</span>&nbsp;</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" valign="middle">с 10.08.2016 по настоящий момент</td>
+              </tr>
+              <tr>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" valign="middle"><span>Публичное акционерное общество "СПБ Банк"</span></td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" align="center" valign="middle"><span>20.05.2016</span>&nbsp;</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" align="center" valign="middle">08.06.2022&nbsp;</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" valign="middle">с 02.06.2022 по настоящий момент</td>
+              </tr>
+              <tr>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" valign="middle">
+                  <p>Публичное акционерное общество "Промсвязьбанк"</p>
+                </td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" align="center" valign="middle"><span><span>08.11.2017</span></span></td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" align="center" valign="middle">&nbsp;</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" valign="middle"><span>с 03.11.2017 по настоящий момент</span></td>
+              </tr>
+              <tr>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" align="left" valign="middle">
+                  <p>АКЦИОНЕРНОЕ ОБЩЕСТВО "АЛЬФА-БАНК"</p>
+                </td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" align="center" valign="middle"><span><span>15.03.2018</span></span></td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" align="center" valign="middle">&nbsp;</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" valign="middle"><span>с 15.03.2018 по настоящий момент</span></td>
+              </tr>
+              <tr>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" valign="middle"><strong>Перечень участников торгов, которые в соответствии с договором,
+                    заключенным профессиональным участником, совершают по поручению профессионального участника сделки,
+                    связанные с управлением ценными бумагами и денежными средствами клиента:</strong></td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" valign="middle"><span>Публичное акционерное общество "СПБ Банк"</span></td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" align="center" valign="middle">20.05.2016</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" align="center" valign="middle">08.06.2022&nbsp;</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" valign="middle">с 02.06.2022 по настоящий момент&nbsp;</td>
+              </tr>
+              <tr>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" rowspan="2" valign="middle"><strong>Перечень организаций, в которых профессиональному
+                    участнику открыты лицевые счета (счета депо) доверительного управляющего:</strong></td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" valign="middle"><span>Публичное акционерное общество "СПБ Банк"</span></td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" align="center" valign="middle">20.05.2016</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" align="center" valign="middle"><span style="line-height: 1.5em;">08.06.2022&nbsp;</span>
+                </td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" valign="middle">с 02.06.2022 по настоящий момент</td>
+              </tr>
+              <tr>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" valign="middle">Небанковская кредитная организация &nbsp;акционерное общество
+                  "Национальный расчетный депозитарий"&nbsp;(предыдущее наименование&nbsp;<span>–</span> Небанковская
+                  кредитная организация закрытое акционерное общество "Национальный расчетный депозитарий" , период
+                  актуальности: с 20.05.2016 по 09.08.2016)</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" align="center" valign="middle"><span>20.05.2016</span></td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" align="center" valign="middle"><span
+                    style="line-height: 1.5em;"><span>10</span><span>.08.2016</span></span></td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" valign="middle">с 10.08.2016 по настоящий момент</td>
+              </tr>
+              <tr>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" rowspan="6" valign="middle"><strong>Перечень регистраторов и депозитариев, в том числе
+                    иностранных, в которых профессиональному участнику открыты лицевые счета (счета депо) номинального
+                    держателя:</strong></td>
+              </tr>
+              <tr>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" valign="middle"><span>Публичное акционерное общество "СПБ Банк"</span></td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" align="center" valign="middle"><span
+                    style="line-height: 1.5em;"><span>20</span><span>.05.2016</span></span></td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" align="center" valign="middle">&nbsp;08.06.2022</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" valign="middle">с 02.06.2022 по настоящий момент</td>
+              </tr>
+              <tr>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" valign="middle">Небанковская кредитная организация &nbsp;акционерное общество
+                  "Национальный расчетный депозитарий"&nbsp;(предыдущее наименование&nbsp;<span>–</span> Небанковская
+                  кредитная организация закрытое акционерное общество "Национальный расчетный депозитарий" , период
+                  актуальности: с 20.05.2016 по 09.08.2016)</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" align="center" valign="middle"><span
+                    style="line-height: 1.5em;"><span>20</span><span>.05.2016</span></span></td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" align="center" valign="middle"><span>10.08.2016</span></td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" valign="middle">с 10.08.2016 по настоящий момент</td>
+              </tr>
+              <tr>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" valign="middle">Чебоксарский филиал общества с ограниченной ответственностью «Реестр-РН»
+                </td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" align="center" valign="middle"><span
+                    style="line-height: 1.5em;"><span><span>2</span><span>0.05.2016</span></span></span></td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" align="center" valign="middle">&nbsp;</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" valign="middle">с 20.05.2016 по настоящий момент</td>
+              </tr>
+              <tr>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" valign="middle">Общество с ограниченной ответственностью ВТБ Капитал Брокер</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" align="center" valign="middle"><span
+                    style="line-height: 1.5em;"><span><span>09.02.2021</span></span></span></td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" align="center" valign="middle">&nbsp;</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" valign="middle">с 08.02.2021 по настоящий момент</td>
+              </tr>
+              <tr>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" valign="middle"><span>АКЦИОНЕРНОЕ ОБЩЕСТВО «АЛЬФА-БАНК»</span></td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; vertical-align: middle; padding: 5px;"
+                  scope="col" align="center" valign="middle"><span style="line-height: 1.5em;"><span
+                      style="line-height: 1.5em;"><span><span><span class="bx-messenger-content-item-content"><span
+                              class="bx-messenger-content-item-text-center"><span
+                                class="bx-messenger-content-item-text-message"><span
+                                  class="bx-messenger-content-item-text-wrap "><span id="im-message-637826"
+                                    class="bx-messenger-message">30.04.2021</span></span></span><span
+                                class="bx-messenger-content-item-params"><span
+                                  class="bx-messenger-content-item-like bx-messenger-content-like-digit-off"><span
+                                    class="bx-messenger-content-like-button"
+                                    data-messageid="637826"><br></span></span></span></span></span></span></span></span></span>
+                </td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" align="center" valign="middle">&nbsp;</td>
+                <td
+                  style="border-color: #c2c2c2; border-style: solid; border-width: 1px; padding: 5px; vertical-align: middle;"
+                  scope="col" valign="middle">
+                  <div class="bx-messenger-body">
+                    <div class="bx-messenger-body-bg">
+                      <div class="bx-messenger-body-wrap">
+                        <div
+                          class="bx-messenger-content-item bx-messenger-content-item-id-637831 bx-messenger-content-item-2"
+                          data-type="other" data-senderid="5"
+                          data-messagedate="Fri Apr 30 2021 10:09:33 GMT+0300 (Москва, стандартное время)"
+                          data-messageid="637831" data-blockmessageid="637831"><span
+                            class="bx-messenger-content-item-content"><span
+                              class="bx-messenger-content-item-content"><span
+                                class="bx-messenger-content-item-text-center"><span
+                                  class="bx-messenger-content-item-text-message"><span
+                                    class="bx-messenger-content-item-text-wrap "><span id="im-message-637831"
+                                      class="bx-messenger-message">с&nbsp;<span
+                                        class="bx-messenger-ajax bx-messenger-ajax-black" data-entity="date"
+                                        data-messageid="637831" data-ts="1619452800">26.04.2021</span>&nbsp;по настоящий
+                                      момент</span></span></span></span></span></span></div>
+                      </div>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+  <div class="footer__get-consult">
+    <div class="container">
+      <div class="footer-consult">
+        <span class="consult-text">Заполните заявку для получения консультации</span>
+        <button type="button" class="button primary-button consult-btn" data-bs-toggle="modal"
+          data-bs-target="#exampleModal">Получить консультанцию</button>
+      </div>
+    </div>
+  </div>
+  <div class="footer__section">
+    <div class="container">
+      <div class="footer__nav">
+        <div class="footer__nav-services">
+          <h5 class="footer__nav-title">Услуги</h5>
+          <ul class="footer__nav-list">
+            <li class="footer__nav-item">
+              <a href="brokerage-services.html" class="footer__nav-link">Брокерское обслуживание</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="trust-management.html" class="footer__nav-link">Доверительное управление</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="#" class="footer__nav-link">Магазин финансовых продуктов</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="universal-account.html" class="footer__nav-link">Универсальный инвестиционный счет</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="#" class="footer__nav-link">Индивидуальный инвестиционный счет</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="#" class="footer__nav-link">Обслуживание на валютном рынке</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="#" class="footer__nav-link">Обслуживание на рынке драгоценных металлов</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="#" class="footer__nav-link">Заключение сделок РЕПО</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="#" class="footer__nav-link">Депозитарная деятельность</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="#" class="footer__nav-link">Статус квалифицированного инвестора</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__nav-news">
+          <h5 class="footer__nav-title">Новости</h5>
+          <ul class="footer__nav-list">
+            <li class="footer__nav-item">
+              <a href="#" class="footer__nav-link">Новости рынка</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="#" class="footer__nav-link">Новости компании</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="#" class="footer__nav-link">Корпоративные действия эмитентов</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="#" class="footer__nav-link">Универсальный инвестиционный счет</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="#" class="footer__nav-link">Сообщения о ценных бумагах</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__nav-company">
+          <h5 class="footer__nav-title">АО «НФК-Сбережения»</h5>
+          <ul class="footer__nav-list">
+
+            <li class="footer__nav-item">
+              <a href="#" class="footer__nav-link">О компании</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="#" class="footer__nav-link">Раскрытие информации</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="#" class="footer__nav-link">Форум</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="#" class="footer__nav-link">Вопрос-ответ</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__contacts">
+        <ul class="footer__contacts-list">
+          <li class="footer__contacts-list-item">
+            <a href="#" class="footer__nav-link">Ограничение ответственности</a>
+          </li>
+          <li class="footer__contacts-list-item">
+            <a href="#" class="footer__nav-link">Контакты</a>
+          </li>
+
+        </ul>
+        <ul class="footer__contacts-social-list">
+          <li class="social__list-item">
+            <a href="#" class="social__list-icon">
+              <svg width="20px" height="11.5px" class="svg-vk-dims svg-social">
+                <use xlink:href="img/icons/icons.svg#vk"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__list-item">
+            <a href="#" class="social__list-icon">
+              <svg width="11px" height="20px" class="svg-fb-dims svg-social">
+                <use xlink:href="img/icons/icons.svg#fb"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__list-item">
+            <a href="#" class="social__list-icon">
+              <svg width="21px" height="16px" class="svg-twitter-dims svg-social">
+                <use xlink:href="img/icons/icons.svg#twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__list-item">
+            <a href="#" class="social__list-icon">
+              <svg width="12px" height="20px" class="svg-classmates-dims svg-social">
+                <use xlink:href="img/icons/icons.svg#classmates"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__list-item">
+            <a href="#" class="social__list-icon">
+              <svg width="20px" height="18px" class="svg-vc-dims svg-social">
+                <use xlink:href="img/icons/icons.svg#vc"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="protection__measures">
+        <svg class="protection__measures-svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="10" cy="10" r="10" fill="#E4EAEE" />
+          <path d="M10 9V15.5" stroke="#333333" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M10 6V7" stroke="#333333" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+
+        <a href="#" class="protection__measures-link">Меры защиты финансового рынка</a>
+      </div>
+      <div class="footer-info">
+        <span class="footer-info-text">
+          Опубликованная информация не является публичной офертой и/или индивидуальной инвестиционной рекомендацией
+          (подробнее с информацией можно ознакомиться в разделе "Ограничение ответственности")
+        </span>
+      </div>
+      <div class="footer__consult">
+
+        <span class="footer__consult-text">Если у вас есть какие-либо вопросы, свяжитесь с нами</span>
+        <button type="button" class="button grey-button footer__consult-btn" data-bs-toggle="modal"
+          data-bs-target="#exampleModal">Обратиться в компанию</button>
+
+      </div>
+      <div class="footer__copyright">
+        <span class="footer__copyright-text">© 2021 АО «НФК-Сбережения». Все права защищены</span>
+      </div>
+    </div>
+  </div>
+  <div class="footer__consult-line top-line"></div>
+  <div class="footer__consult-line bottom-line"></div>
+</footer>
+
+  <script src="js/app.min.js"></script>
+
+  <!-- <script srce_modules/nouislider/"></script>="/nod -->
+  <!-- <script src="/nouislider/documentation/assets/wNumb.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
+  <!-- <script src="https://unpkg.com/@popperjs/core@2"></script> -->
+
+
+</body>
+
+</html>

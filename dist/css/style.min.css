@@ -16212,6 +16212,33 @@ th {
   margin-bottom: 40px;
 }
 
+.disclosure__information-hero {
+  padding-top: 30px;
+}
+.disclosure__information-title {
+  margin-bottom: 68px;
+}
+.disclosure__information-header {
+  display: flex;
+  padding-bottom: 28px;
+  justify-content: space-between;
+}
+.disclosure__information-block {
+  padding: 20px 0;
+}
+.disclosure__information-block:nth-child(even) {
+  border-top: 1px solid var(--grey-button);
+  border-bottom: 1px solid var(--grey-button);
+}
+.disclosure__information-logo-first {
+  width: 53px;
+  height: 62px;
+}
+.disclosure__information-logo-second {
+  width: 170px;
+  height: 53px;
+}
+
 :root {
   --primary-green: #44953D;
   --secondary-green: #2D7A26;
@@ -16336,6 +16363,7 @@ li {
 }
 
 img {
+  object-fit: cover;
   max-width: 100%;
   max-height: 100%;
 }
