@@ -7,6 +7,7 @@ import noUiSlider from 'nouislider';
 import wNumb from 'wnumb';
 
 
+
 Swiper.use([Navigation, Pagination])
 
 flsFunctions.isWebp()
@@ -15,37 +16,36 @@ const greyBackground = document.querySelector('.grey-background-640px');
 const nav = document.querySelector('.header__nav-app-list');
 
 
-
+// jqueryWidgets
 
 // burger.addEventListener('click', () => {
 //   burger.classList.toggle('is-active');
 //   // greyBackground.classList.toggle('is-open');
-  
+
 //   nav.classList.toggle('is-open');
-  
+
 // })
-$( "#header-burger" ).on( "click", function() {
-  $( ".header__nav-app-list" ).slideToggle("up");
+$("#header-burger").on("click", function () {
+  $(".header__nav-app-list").slideToggle("up");
   $(" .header-burger-marker, .header-burger").toggleClass("is-active");
-    $( "#window__account-app" ).hide(500);
+  $("#window__account-app").hide(500);
 });
-$( "#closeHeaderNavApp" ).on( "click", function() {
-  $( ".header__nav-app-list" ).slideToggle();
+$("#closeHeaderNavApp").on("click", function () {
+  $(".header__nav-app-list").slideToggle();
 });
-$( "#btnOpen" ).on( "click", function() {
-  $( "#window__account-app" ).slideToggle("down")
-  $( ".header__nav-app-list" ).hide(500);
+$("#btnOpen").on("click", function () {
+  $("#window__account-app").slideToggle("down")
+  $(".header__nav-app-list").hide(500);
 });
-$( "#closeWindowAccountApp" ).on( "click", function() {
-  $( "#window__account-app" ).slideToggle();
-  
+$("#closeWindowAccountApp").on("click", function () {
+  $("#window__account-app").slideToggle();
+
 });
 
-
-  $(".fa-search").on("click",function() {
-    $( ".wrap" ).toggle("drop");
-    $(".wrap, .input, .fa").toggleClass("active");
-  });
+$(".fa-search").on("click", function () {
+  $(".wrap").toggle("drop");
+  $(".wrap, .input, .fa").toggleClass("active");
+});
 //=========swiper hero=======
 const heroSwiper = new Swiper('.hero-swiper', {
   modules: [Navigation, Pagination],
@@ -69,7 +69,7 @@ const ideasSwiper = new Swiper('.ideas-swiper', {
   // slidesPerView: 1,
   //     slidesPerGroup: 1,
   //     slidesPerColumn: 1,
-  
+
   // spaceBetween: 16,
   // modifierClass: 'ideas-swiper-pagination',
   pagination: {

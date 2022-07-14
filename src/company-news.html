@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 @@include('html/head.html',{
-"title": "Новости финансового рынка"
+"title": "Новости компании"
 })
 
 <body>
@@ -29,11 +29,11 @@
                     d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
                 </svg>
               </li>
-              <li class="page-item"><a class="page-link" href="market-news.html">Новости финансового рынка
+              <li class="page-item"><a class="page-link" href="company-news.html">Новости компании
                 </a></li>
             </ul>
           </nav>
-          <h2 class="market-news__title">Новости финансового рынка</h2>
+          <h2 class="market-news__title">Новости компании</h2>
         </div>
       </div>
     </section>
@@ -42,28 +42,27 @@
         <div class="news__wrapper">
           <div class="news__wrapper-cards">
             <a class="news__card">
-              <span class="news__card-source">Рынок</span>
-              <h4 class="news__card-title">Berkshire проведет "Вудсток для капиталистов" очно впервые с 2019 года</h4>
-              <span class="news__card-date">26.01.2022</span>
+              <span class="news__card-source">Компания</span>
+              <h4 class="news__card-title">Уведомление о внесении изменений в «Порядок идентификации клиентов АО «НФК-Сбережения»</h4>
+              <span class="news__card-date">10.01.2022</span>
             </a>
             <a class="news__card">
-              <span class="news__card-source">Рынок</span>
-              <h4 class="news__card-title">ФАС согласовала ходатайство УГМК о приобретении 100% акций золотодобытчика
-                "Высочайший"</h4>
-              <span class="news__card-date">26.01.2022</span>
+              <span class="news__card-source">Компания</span>
+              <h4 class="news__card-title">Итоги работы компании в 2021 году</h4>
+              <span class="news__card-date">10.01.2022</span>
             </a>
             <a class="news__card">
-              <span class="news__card-source">Рынок</span>
-              <h4 class="news__card-title">Рынок акций РФ открылся подъемом индекса МосБиржи на 2,8%</h4>
-              <span class="news__card-date">26.01.2022</span>
+              <span class="news__card-source">Компания</span>
+              <h4 class="news__card-title">График работы АО «НФК-Сбережения» и организаторов торгов в праздничный период (31.12.21 - 10.01.22)</h4>
+              <span class="news__card-date">10.01.2022</span>
             </a>
           </div>
-          <div class="news__wrapper-tab" >
-            <ul class="nav nav-pills news__nav" id="newsTab" role="tablist">
+          <div class="news__wrapper-tab" id="tabs">
+            <ul class="nav nav-pills news__nav" id="myTab" role="tablist">
               <li class="news__nav-item" role="presentation">
-                <button class="news__nav-link active" id="companyNews-tab" data-bs-toggle="tab"
-                  data-bs-target="#companyNews" type="button" role="tab" aria-controls="companyNews"
-                  aria-selected="true">Компания</button>
+                <button class="news__nav-link active" id="marketNews-tab" data-bs-toggle="tab"
+                  data-bs-target="#marketNews" type="button" role="tab" aria-controls="marketNews"
+                  aria-selected="true">Новости</button>
               </li>
               <li class="news__nav-item" role="presentation">
                 <button class="news__nav-link" id="analysisNews-tab" data-bs-toggle="tab" data-bs-target="#analysisNews"
@@ -71,7 +70,7 @@
               </li>
             </ul>
             <div class="news__tab-content">
-              <div class="tab-pane active" id="companyNews" role="tabpanel" tabindex="0" aria-labelledby="companyNews-tab">
+              <div class="tab-pane active" id="marketNews" role="tabpanel" tabindex="0" aria-labelledby="marketNews-tab">
                 <ul class="news__tab-pane " >
                   <li class="news__tab-item">
                     <a class="news__tab-link" href="#">
@@ -95,7 +94,7 @@
                     </a>
                   </li>
                 </ul>
-                <a href="#" class="news__text-link">Все новости компании
+                <a href="#" class="news__text-link">Все новости рынка
                   <svg width="6" height="13" viewBox="0 0 6 13" fill="none" class="news__text-link-svg"
                     xmlns="http://www.w3.org/2000/svg">
                     <path

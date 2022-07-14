@@ -15908,6 +15908,7 @@ th {
 .news__container {
   background-color: var(--primary-grey);
   padding-top: 68px;
+  padding-bottom: 68px;
 }
 
 .news__wrapper {
@@ -15950,6 +15951,77 @@ th {
 
 .news__card:not(:last-child) {
   margin-bottom: 28px;
+}
+
+.news__nav-link {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+  background-color: inherit;
+  color: var(--secondary-text);
+}
+.news__nav-link.active {
+  color: var(--primary-text);
+}
+
+.news__nav-item:nth-child(1) {
+  margin-right: 40px;
+}
+
+.news__tab-item {
+  padding: 24px 0;
+  transition: all 0.1s ease-in-out 0.1s;
+}
+.news__tab-item:hover {
+  box-shadow: 0px 0px 16px rgba(127, 127, 128, 0.16);
+}
+.news__tab-item:nth-child(even) {
+  border-top: 1px solid var(--grey-button);
+  border-bottom: 1px solid var(--grey-button);
+}
+.news__tab-content {
+  margin-top: 4px;
+}
+.news__tab-link-title {
+  margin-bottom: 8px;
+}
+.news__tab-link-date {
+  font-size: 14px;
+  line-height: 19px;
+  color: var(--secondary-text);
+}
+
+.news__text-link {
+  display: flex;
+  align-items: center;
+  transition: all 0.1s ease-in-out 0.1s;
+}
+.news__text-link:hover {
+  color: var(--primary-green);
+}
+.news__text-link-svg {
+  width: 6px;
+  height: 12px;
+  object-fit: cover;
+  margin-left: 8px !important;
+}
+
+.news__text-link-svg path {
+  transition: all 0.1s ease-in-out 0.1s;
+}
+
+.news__text-link:hover .news__text-link-svg path {
+  fill: var(--primary-green);
+}
+
+.tab-pane {
+  display: none;
+}
+
+.tab-pane.active {
+  display: block;
 }
 
 .about__hero {
@@ -16270,6 +16342,7 @@ img {
 
 button {
   outline: 0;
+  padding: 0;
   border-radius: 5px;
   text-align: center;
   border: 0;

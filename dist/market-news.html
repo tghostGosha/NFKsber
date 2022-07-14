@@ -116,7 +116,7 @@
               aria-expanded="false">Аналитика</a>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuAnalitic">
               <li><a class="dropdown-item" href="market-news.html">Новости финансового рынка</a></li>
-              <li><a class="dropdown-item" href="#">Новости компании</a></li>
+              <li><a class="dropdown-item" href="company-news.html">Новости компании</a></li>
               <li><a class="dropdown-item" href="#">Аналитические статьи</a></li>
               <li><a class="dropdown-item" href="#">Прогнозы PRO</a></li>
               <li><a class="dropdown-item" href="#">Инвестиционные идеи</a></li>
@@ -376,8 +376,8 @@
                     d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
                 </svg>
               </li>
-              <li class="page-item"><a class="page-link" href="individual-account.html">Новости финансового рынка
-                  </a></li>
+              <li class="page-item"><a class="page-link" href="market-news.html">Новости финансового рынка
+                </a></li>
             </ul>
           </nav>
           <h2 class="market-news__title">Новости финансового рынка</h2>
@@ -395,7 +395,8 @@
             </a>
             <a class="news__card">
               <span class="news__card-source">Рынок</span>
-              <h4 class="news__card-title">ФАС согласовала ходатайство УГМК о приобретении 100% акций золотодобытчика "Высочайший"</h4>
+              <h4 class="news__card-title">ФАС согласовала ходатайство УГМК о приобретении 100% акций золотодобытчика
+                "Высочайший"</h4>
               <span class="news__card-date">26.01.2022</span>
             </a>
             <a class="news__card">
@@ -404,7 +405,87 @@
               <span class="news__card-date">26.01.2022</span>
             </a>
           </div>
-          <div class="news__wrapper-tab"></div>
+          <div class="news__wrapper-tab" >
+            <ul class="nav nav-pills news__nav" id="newsTab" role="tablist">
+              <li class="news__nav-item" role="presentation">
+                <button class="news__nav-link active" id="companyNews-tab" data-bs-toggle="tab"
+                  data-bs-target="#companyNews" type="button" role="tab" aria-controls="companyNews"
+                  aria-selected="true">Компания</button>
+              </li>
+              <li class="news__nav-item" role="presentation">
+                <button class="news__nav-link" id="analysisNews-tab" data-bs-toggle="tab" data-bs-target="#analysisNews"
+                  type="button" role="tab" aria-controls="analysisNews" aria-selected="false">Анализ</button>
+              </li>
+            </ul>
+            <div class="news__tab-content">
+              <div class="tab-pane active" id="companyNews" role="tabpanel" tabindex="0" aria-labelledby="companyNews-tab">
+                <ul class="news__tab-pane " >
+                  <li class="news__tab-item">
+                    <a class="news__tab-link" href="#">
+                      <p class="news__tab-link-title">ЦБ 24 января купил валюту на 23,5 млрд рублей – меньше на 35,8%
+                      </p>
+                      <span class="news__tab-link-date">26.01.2022</span>
+                    </a>
+                  </li>
+                  <li class="news__tab-item">
+                    <a class="news__tab-link" href="#">
+                      <p class="news__tab-link-title">Berkshire проведет "Вудсток для капиталистов" очно впервые с 2019
+                        года</p>
+                      <span class="news__tab-link-date">26.01.2022</span>
+                    </a>
+                  </li>
+                  <li class="news__tab-item">
+                    <a class="news__tab-link" href="#">
+                      <p class="news__tab-link-title">ФАС согласовала ходатайство УГМК о приобретении 100% акций
+                        золотодобытчика "Высочайший"</p>
+                      <span class="news__tab-link-date">26.01.2022</span>
+                    </a>
+                  </li>
+                </ul>
+                <a href="#" class="news__text-link">Все новости компании
+                  <svg width="6" height="13" viewBox="0 0 6 13" fill="none" class="news__text-link-svg"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M5.16814 6.49969L0.0940413 1.08029C-0.0307512 0.947006 -0.0307512 0.733248 0.0940413 0.599963C0.218833 0.466679 0.418972 0.466679 0.543764 0.599963L5.84391 6.26078C5.9687 6.39406 5.9687 6.60782 5.84391 6.74111L0.543764 12.3994C0.482545 12.4648 0.400135 12.5 0.32008 12.5C0.240024 12.5 0.157614 12.4673 0.0963955 12.3994C-0.0283971 12.2661 -0.0283971 12.0524 0.0963955 11.9191L5.16814 6.49969Z"
+                      fill="#1D252C" />
+                  </svg>
+                </a>
+              </div>
+              <div class="tab-pane" id="analysisNews" role="tabpanel" tabindex="0" aria-labelledby="analysisNews-tab">
+                <ul class="news__tab-pane " >
+                  <li class="news__tab-item">
+                    <a class="news__tab-link" href="#">
+                      <p class="news__tab-link-title">ЦБ 24 января купил валюту на 23,5 млрд рублей – меньше на 35,8%
+                      </p>
+                      <span class="news__tab-link-date">26.01.2022</span>
+                    </a>
+                  </li>
+                  <li class="news__tab-item">
+                    <a class="news__tab-link" href="#">
+                      <p class="news__tab-link-title">Berkshire проведет "Вудсток для капиталистов" очно впервые с 2019
+                        года</p>
+                      <span class="news__tab-link-date">26.01.2022</span>
+                    </a>
+                  </li>
+                  <li class="news__tab-item">
+                    <a class="news__tab-link" href="#">
+                      <p class="news__tab-link-title">ФАС согласовала ходатайство УГМК о приобретении 100% акций
+                        золотодобытчика "Высочайший"</p>
+                      <span class="news__tab-link-date">26.01.2022</span>
+                    </a>
+                  </li>
+                </ul>
+                <a href="#" class="news__text-link">Все аналитические статьи
+                  <svg width="6" height="13" viewBox="0 0 6 13" fill="none" class="news__text-link-svg"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M5.16814 6.49969L0.0940413 1.08029C-0.0307512 0.947006 -0.0307512 0.733248 0.0940413 0.599963C0.218833 0.466679 0.418972 0.466679 0.543764 0.599963L5.84391 6.26078C5.9687 6.39406 5.9687 6.60782 5.84391 6.74111L0.543764 12.3994C0.482545 12.4648 0.400135 12.5 0.32008 12.5C0.240024 12.5 0.157614 12.4673 0.0963955 12.3994C-0.0283971 12.2661 -0.0283971 12.0524 0.0963955 11.9191L5.16814 6.49969Z"
+                      fill="#1D252C" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
