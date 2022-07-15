@@ -33,4 +33,25 @@
     width: 170px;
     height: 53px;
   }
+  &-container {
+    overflow-x: auto;
+  }
+  &-documents {
+    padding-top: 68px;
+    padding-bottom: 112px;
+    &-title {
+      margin-bottom: 40px;
+    }
+    
+  }
+  &-documents-wrapper {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 32px;
+    row-gap: 28px;
+  }
+}
+.ytable {
+  width:100%;
+  
 }

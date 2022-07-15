@@ -16238,6 +16238,26 @@ th {
   width: 170px;
   height: 53px;
 }
+.disclosure__information-container {
+  overflow-x: auto;
+}
+.disclosure__information-documents {
+  padding-top: 68px;
+  padding-bottom: 112px;
+}
+.disclosure__information-documents-title {
+  margin-bottom: 40px;
+}
+.disclosure__information-documents-wrapper {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 32px;
+  row-gap: 28px;
+}
+
+.ytable {
+  width: 100%;
+}
 
 :root {
   --primary-green: #44953D;
