@@ -1,0 +1,35 @@
+.electronic__document {
+  &-hero {
+    padding-top: 30px;
+    padding-bottom: 112px;
+  }
+
+  &-title {
+    margin-bottom: 68px;
+  }
+  &-wrapper {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 32px;
+    
+  }
+}
+.electronic__wrapper-files {
+  display: flex;
+  flex-direction: column;
+  grid-column: 1/ span 8;
+  &-title {
+    margin-bottom: 40px;
+  }
+   &-description {
+    margin-bottom: 68px;
+   }
+}
+.electronic-svg-arrow {
+  width: 10px;
+  height: 20px;
+  columns: var(--primary-green);
+}
+.electronic__files-item:not(:last-child) {
+  margin-bottom: 49px;
+}

@@ -50,8 +50,19 @@
     column-gap: 32px;
     row-gap: 28px;
   }
+  &-btn {
+    display: flex !important;
+    height: 128px;
+    justify-content: space-between;
+    grid-column: span 4;
+  }
 }
 .ytable {
   width:100%;
   
+}
+.disclosure-svg-arrow {
+  width: 10px;
+  height: 20px;
+  color: var(--secondary-text);
 }
