@@ -16308,6 +16308,50 @@ th {
   margin-bottom: 49px;
 }
 
+.foreign__taxpayers-hero {
+  padding-top: 30px;
+  padding-bottom: 86px;
+}
+.foreign__taxpayers-title {
+  margin-bottom: 68px;
+}
+.foreign__taxpayers-conditions {
+  display: flex;
+  flex-direction: column;
+  grid-column: 1/span 8;
+}
+.foreign__taxpayers-conditions-list {
+  margin: 24px 0;
+}
+.foreign__taxpayers-conditions-footnote {
+  color: var(--secondary-text);
+  margin-bottom: 68px;
+}
+.foreign__taxpayers-request {
+  margin-bottom: 68px;
+}
+.foreign__taxpayers-appeal {
+  margin-bottom: 68px;
+}
+
+.foreign__taxpayers-wrapper {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 32px;
+}
+
+.countries__list-item {
+  margin-bottom: 26px;
+}
+
+.countries__list {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  max-height: 1020px;
+  flex-wrap: wrap;
+}
+
 :root {
   --primary-green: #44953D;
   --secondary-green: #2D7A26;
