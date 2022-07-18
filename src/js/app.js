@@ -15,16 +15,13 @@ const burger = document.querySelector('.header-burger');
 const greyBackground = document.querySelector('.grey-background-640px');
 const nav = document.querySelector('.header__nav-app-list');
 
+//==========Меняем svg на акардионе "тарифы" мобилка
+$(".rates__accordion-button").on('click',function() {
+  $(this).find("i").toggleClass("bi bi-plus-lg bi bi-dash-lg")
+  console.log(i)
+});
 
-// jqueryWidgets
-
-// burger.addEventListener('click', () => {
-//   burger.classList.toggle('is-active');
-//   // greyBackground.classList.toggle('is-open');
-
-//   nav.classList.toggle('is-open');
-
-// })
+//==============================
 $("#header-burger").on("click", function () {
   $(".header__nav-app-list").slideToggle("up");
   $(" .header-burger-marker, .header-burger").toggleClass("is-active");

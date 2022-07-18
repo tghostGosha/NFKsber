@@ -16,6 +16,7 @@
   "dependencies": {
     "@popperjs/core": "^2.11.5",
     "bootstrap": "^5.2.0-beta1",
+    "bootstrap-icons": "^1.9.1",
     "gulp-cli": "^2.3.0",
     "inputmask": "^5.0.7",
     "jquery": "^3.6.0",

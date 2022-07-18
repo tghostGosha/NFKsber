@@ -22,13 +22,9 @@
               <li class="page-item"><a class="page-link" href="rates.html">Тарифы</a></li>
             </ul>
           </nav>
-          <h2 class="rates__hero-title">Тарифы на брокерское
-            обслуживание</h2>
-          <div class="rates__hero-buttons">
-            <a type="button" class="header__link-consalt grey-button rates__hero-buttons-grey" data-bs-toggle="modal"
-              data-bs-target="#exampleModal">
-              Подробная информация о тарифах</a>
-          </div>
+          <h2 class="rates__hero-title">Тарифы на брокерское обслуживание</h2>
+          <button type="button" class="grey-button rates__hero-button" data-bs-toggle="modal"
+            data-bs-target="#exampleModal">Подробная информация о тарифах</button>
         </div>
       </div>
     </section>
@@ -57,13 +53,13 @@
         <!-- Tab panes -->
         <div class="tab-content">
           <div class="tab-pane active " id="memo" role="tabpanel" aria-labelledby="memo-tab" tabindex="0">
-            <table class="table">
+            <table class="table table-hide">
               <thead class="sticky-top">
                 <tr>
                   <td class="col-3  weight-text" scope="col">Тарифы</td>
                   <td scope="col" class="col-2 weight-text">Минимальный дневной</td>
-                  <td scope="col"  class="col-2 weight-text">Инвестор</td>
-                  <td scope="col"  class="col-2 weight-text">Фиксированный</td>
+                  <td scope="col" class="col-2 weight-text">Инвестор</td>
+                  <td scope="col" class="col-2 weight-text">Фиксированный</td>
                   <td scope="col" align="center" class="col-2 weight-text">Нулевая комиссия</td>
                 </tr>
               </thead>
@@ -211,6 +207,351 @@
               </tbody>
             </table>
 
+            <div class="accordion rates__accordion" id="ratesAccordion">
+              <div class="rates__accordion-item">
+                <div class="rates__accordion-header" id="panelsStayOpen-headingOne">
+                  <button class="rates__accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapseOne">
+                    <span class="rates__accordion-item-title">Минимальный двойной </span>
+                    <i class="bi bi-plus-lg"></i>
+                  </button>
+                </div>
+                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse"
+                  aria-labelledby="panelsStayOpen-headingOne">
+                  <div class="rates__accordion-body">
+                    <div class="rates__accordion-row">
+                      <span class="rates__column-left secondary-text-color">Абонентская плата</span>
+                      <p class="rates__column-right weight-text">0 ₽ в месяц</p>
+                    </div>
+                    <div class="rates__accordion-row">
+                      <span class="rates__column-left secondary-text-color">Кому подходит</span>
+                      <p class="rates__column-right secondary-text">Тариф подходит для активной торговли ликвидными
+                        инструментами фондового рынка, а также при совершении достаточно крупных сделок (от 100 тыс.
+                        руб.) с менее ликвидными инструментами и инструментами в рамках IPO.</p>
+                    </div>
+                    <h4 class="rates__accordion-row-title">Фондовый рынок</h4>
+                    <div class="rates__accordion-row">
+                      <span class="rates__column-left secondary-text-color">Абонентская плата</span>
+                      <p class="rates__column-right">от 0.006% до 0.025%</p>
+                    </div>
+                    <h4 class="rates__accordion-row-title">Валютный рынок и рынок драгоценных металлов</h4>
+                    <div class="rates__accordion-row">
+                      <span class="rates__column-left secondary-text-color">Комиссия на валютной секции</span>
+                      <p class="rates__column-right">от 0.008% до 0.032%</p>
+                    </div>
+                    <div class="rates__accordion-row">
+                      <span class="rates__column-left secondary-text-color">Комиссия за сделки с золотом
+                        и серебром</span>
+                      <p class="rates__column-right">0,1% <br> <span class="secondary-text">от оборота</span></p>
+                    </div>
+                    <h4 class="rates__accordion-row-title">Срочный рынок</h4>
+                    <div class="rates__accordion-row">
+                      <span class="rates__column-left secondary-text-color">Заключение сделок, исполнение
+                        срочного контракта на Московской
+                        бирже</span>
+                      <p class="rates__column-right">Комиссия равна биржевому сбору и взимается дополнительно к нему</p>
+                    </div>
+                    <div class="rates__accordion-row">
+                      <span class="rates__column-left secondary-text-color">ГО для открытия и поддержания открытой
+                        позиции по срочному контракту</span>
+                      <p class="rates__column-right">100 % от размера гарантийного обеспечения, установленного
+                        Московской биржей</p>
+                    </div>
+                    <h4 class="rates__accordion-row-title">Депозитарий</h4>
+                    <div class="rates__accordion-row">
+                      <span class="rates__column-left secondary-text-color">Услуги депозитария</span>
+                      <p class="rates__column-right">35,40 ₽ <br> <span class="secondary-text">в месяц</span></p>
+                    </div>
+                    <div class="rates__accordion-row">
+                      <span class="rates__column-left secondary-text-color">Плата за изменение нетто-позиции
+                        по одному виду ценных бумаг
+                        при условии переноса сделки
+                        на след.торговый день</span>
+                      <p class="rates__column-right">100 ₽<br> <span class="secondary-text">при совершении сделок с
+                          ценными бумагами,
+                          не включенными в перечень высоколиквидных инструментов</span></p>
+                    </div>
+                    <div class="rates__accordion-row">
+                      <span class="rates__column-left secondary-text-color">Заключение сделки в следующих режимах
+                        торгов: <br>
+                        1. МБ ФР: Первичное размещение (Облигации) PSAU <br>
+                        2. МБ ФР: Первичное размещение (Акции) PSSU</span>
+                      <p class="rates__column-right">100 ₽<br> <span class="secondary-text">за каждую сделку</span></p>
+                    </div>
+                    <h4 class="rates__accordion-row-title">Программное обеспечение</h4>
+                    <div class="rates__accordion-row">
+                      <span class="rates__column-left secondary-text-color">Абонентская плата за ИТС Брокер
+                        и ИТС Нано</span>
+                      <p class="rates__column-right">Отсутствует</p>
+                    </div>
+                    <div class="rates__accordion-row">
+                      <span class="rates__column-left secondary-text-color">Плата за ИТС QUIK, QUIK X (IOS и Android) и
+                        webQUIK</span>
+                      <p class="rates__column-right">Отсутствует</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="rates__accordion-item">
+                <div class="rates__accordion-header" id="panelsStayOpen-headingTwo">
+                  <button class="rates__accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapseTwo">
+                    <span class="rates__accordion-item-title">Инвестор</span>
+                    <i class="bi bi-plus-lg"></i>
+                  </button>
+                </div>
+                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                  aria-labelledby="panelsStayOpen-headingTwo">
+                  <div class="rates__accordion-body">
+                    <div class="rates__accordion-row">
+                      <span class="rates__column-left secondary-text-color">Абонентская плата</span>
+                      <p class="rates__column-right weight-text">0 ₽ в месяц</p>
+                    </div>
+                    <div class="rates__accordion-row">
+                      <span class="rates__column-left secondary-text-color">Кому подходит</span>
+                      <p class="rates__column-right secondary-text">Тариф для начинающих инвесторов, а также инвесторов
+                        с относительно низкой частотой сделок или инвесторов с невысокими торговыми оборотами,
+                        совершающих сделки в т.ч. в рамках IDO</p>
+                    </div>
+                    <h4 class="rates__accordion-row-title">Фондовый рынок</h4>
+                    <div class="rates__accordion-row">
+                      <span class="rates__column-left secondary-text-color">Абонентская плата</span>
+                      <p class="rates__column-right">0.2% <br> <span class="secondary-text">включая биржевой
+                          и клиринговый сборы</span></p>
+                    </div>
+                    <h4 class="rates__accordion-row-title">Валютный рынок и рынок драгоценных металлов</h4>
+                    <div class="rates__accordion-row">
+                      <span class="rates__column-left secondary-text-color">Комиссия на валютной секции</span>
+                      <p class="rates__column-right">0.2% <br> <span class="secondary-text">включая биржевой
+                          и клиринговый сборы</span></p>
+                    </div>
+                    <div class="rates__accordion-row">
+                      <span class="rates__column-left secondary-text-color">Комиссия за сделки с золотом
+                        и серебром</span>
+                      <p class="rates__column-right">0.2% <br> <span class="secondary-text">включая биржевой
+                          и клиринговый сборы</span></p>
+                    </div>
+                    <h4 class="rates__accordion-row-title">Срочный рынок</h4>
+                    <div class="rates__accordion-row">
+                      <span class="rates__column-left secondary-text-color">Заключение сделок, исполнение
+                        срочного контракта на Московской
+                        бирже</span>
+                      <p class="rates__column-right">Комиссия равна биржевому сбору и взимается дополнительно к нему</p>
+                    </div>
+                    <div class="rates__accordion-row">
+                      <span class="rates__column-left secondary-text-color">ГО для открытия и поддержания открытой
+                        позиции по срочному контракту</span>
+                      <p class="rates__column-right">100 % от размера гарантийного обеспечения, установленного
+                        Московской биржей</p>
+                    </div>
+                    <h4 class="rates__accordion-row-title">Депозитарий</h4>
+                    <div class="rates__accordion-row">
+                      <span class="rates__column-left secondary-text-color">Услуги депозитария</span>
+                      <p class="rates__column-right">Отсутсвуют</p>
+                    </div>
+                    <div class="rates__accordion-row">
+                      <span class="rates__column-left secondary-text-color">Плата за изменение нетто-позиции
+                        по одному виду ценных бумаг
+                        при условии переноса сделки
+                        на след.торговый день</span>
+                      <p class="rates__column-right">Отсутсвуют</p>
+                    </div>
+                    <div class="rates__accordion-row">
+                      <span class="rates__column-left secondary-text-color">Заключение сделки в следующих режимах
+                        торгов: <br>
+                        1. МБ ФР: Первичное размещение (Облигации) PSAU <br>
+                        2. МБ ФР: Первичное размещение (Акции) PSSU</span>
+                      <p class="rates__column-right">Клиент однократно для каждого выпуска освобождается от оплаты
+                        Дополнительных расходов, связанных с услугами вышестоящего депозитария, при размещении ценных
+                        бумаг в размере 100 ₽</p>
+                    </div>
+                    <h4 class="rates__accordion-row-title">Программное обеспечение</h4>
+                    <div class="rates__accordion-row">
+                      <span class="rates__column-left secondary-text-color">Абонентская плата за ИТС Брокер
+                        и ИТС Нано</span>
+                      <p class="rates__column-right">Отсутствует</p>
+                    </div>
+                    <div class="rates__accordion-row">
+                      <span class="rates__column-left secondary-text-color">Плата за ИТС QUIK, QUIK X (IOS и Android) и
+                        webQUIK</span>
+                      <p class="rates__column-right">Отсутствует</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="rates__accordion-item">
+                <div class="rates__accordion-header" id="panelsStayOpen-headingThree">
+                  <button class="rates__accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapseThree">
+                    <span class="rates__accordion-item-title">Фиксированный</span>
+                    <i class="bi bi-plus-lg"></i>
+                  </button>
+                </div>
+                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                  aria-labelledby="panelsStayOpen-headingThree">
+                  <div class="rates__accordion-body">
+                    <div class="rates__accordion-row">
+                      <span class="rates__column-left secondary-text-color">Абонентская плата</span>
+                      <p class="rates__column-right weight-text">0 ₽ в месяц</p>
+                    </div>
+                    <div class="rates__accordion-row">
+                      <span class="rates__column-left secondary-text-color">Кому подходит</span>
+                      <p class="rates__column-right secondary-text">Тариф для инвесторов, заключающих значительный объем
+                        сделок в месяц (от 4 млн руб.) и предпочитающих оплачивать ежемесячное фиксированное
+                        вознаграждение брокеру.</p>
+                    </div>
+                    <h4 class="rates__accordion-row-title">Фондовый рынок</h4>
+                    <div class="rates__accordion-row">
+                      <span class="rates__column-left secondary-text-color">Абонентская плата</span>
+                      <p class="rates__column-right">0.2% <br> <span class="secondary-text">включая биржевой
+                          и клиринговый сборы</span></p>
+                    </div>
+                    <h4 class="rates__accordion-row-title">Валютный рынок и рынок драгоценных металлов</h4>
+                    <div class="rates__accordion-row">
+                      <span class="rates__column-left secondary-text-color">Комиссия на валютной секции</span>
+                      <p class="rates__column-right">0.2% <br> <span class="secondary-text">включая биржевой
+                          и клиринговый сборы</span></p>
+                    </div>
+                    <div class="rates__accordion-row">
+                      <span class="rates__column-left secondary-text-color">Комиссия за сделки с золотом
+                        и серебром</span>
+                      <p class="rates__column-right">0.2% <br> <span class="secondary-text">включая биржевой
+                          и клиринговый сборы</span></p>
+                    </div>
+                    <h4 class="rates__accordion-row-title">Срочный рынок</h4>
+                    <div class="rates__accordion-row">
+                      <span class="rates__column-left secondary-text-color">Заключение сделок, исполнение
+                        срочного контракта на Московской
+                        бирже</span>
+                      <p class="rates__column-right">Комиссия равна биржевому сбору и взимается дополнительно к нему</p>
+                    </div>
+                    <div class="rates__accordion-row">
+                      <span class="rates__column-left secondary-text-color">ГО для открытия и поддержания открытой
+                        позиции по срочному контракту</span>
+                      <p class="rates__column-right">100 % от размера гарантийного обеспечения, установленного
+                        Московской биржей</p>
+                    </div>
+                    <h4 class="rates__accordion-row-title">Депозитарий</h4>
+                    <div class="rates__accordion-row">
+                      <span class="rates__column-left secondary-text-color">Услуги депозитария</span>
+                      <p class="rates__column-right">Отсутсвуют</p>
+                    </div>
+                    <div class="rates__accordion-row">
+                      <span class="rates__column-left secondary-text-color">Плата за изменение нетто-позиции
+                        по одному виду ценных бумаг
+                        при условии переноса сделки
+                        на след.торговый день</span>
+                      <p class="rates__column-right">Отсутсвуют</p>
+                    </div>
+                    <div class="rates__accordion-row">
+                      <span class="rates__column-left secondary-text-color">Заключение сделки в следующих режимах
+                        торгов: <br>
+                        1. МБ ФР: Первичное размещение (Облигации) PSAU <br>
+                        2. МБ ФР: Первичное размещение (Акции) PSSU</span>
+                      <p class="rates__column-right">Клиент однократно для каждого выпуска освобождается от оплаты
+                        Дополнительных расходов, связанных с услугами вышестоящего депозитария, при размещении ценных
+                        бумаг в размере 100 ₽</p>
+                    </div>
+                    <h4 class="rates__accordion-row-title">Программное обеспечение</h4>
+                    <div class="rates__accordion-row">
+                      <span class="rates__column-left secondary-text-color">Абонентская плата за ИТС Брокер
+                        и ИТС Нано</span>
+                      <p class="rates__column-right">Отсутствует</p>
+                    </div>
+                    <div class="rates__accordion-row">
+                      <span class="rates__column-left secondary-text-color">Плата за ИТС QUIK, QUIK X (IOS и Android) и
+                        webQUIK</span>
+                      <p class="rates__column-right">Отсутствует</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="rates__accordion-item">
+                <div class="rates__accordion-header" id="panelsStayOpen-headingFour">
+                  <button class="rates__accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapseFour">
+                    <span class="rates__accordion-item-title">Нулевая комиссия</span>
+                    <i class="bi bi-plus-lg"></i>
+                  </button>
+                </div>
+                <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse"
+                  aria-labelledby="panelsStayOpen-headingThree">
+                  <div class="rates__accordion-body">
+                    <div class="rates__accordion-row">
+                      <span class="rates__column-left secondary-text-color">Абонентская плата</span>
+                      <p class="rates__column-right weight-text">0 ₽ в месяц</p>
+                    </div>
+                    <div class="rates__accordion-row">
+                      <span class="rates__column-left secondary-text-color">Кому подходит</span>
+                      <p class="rates__column-right secondary-text-color"></p>
+                    </div>
+                    <h4 class="rates__accordion-row-title">Фондовый рынок</h4>
+                    <div class="rates__accordion-row">
+                      <span class="rates__column-left secondary-text-color">Абонентская плата</span>
+                      <p class="rates__column-right">1 ₽<br> <span class="secondary-text">в месяц</span></p>
+                    </div>
+                    <h4 class="rates__accordion-row-title">Валютный рынок и рынок драгоценных металлов</h4>
+                    <div class="rates__accordion-row">
+                      <span class="rates__column-left secondary-text-color">Комиссия на валютной секции</span>
+                      <p class="rates__column-right">От 0.008% до 0.032%</p>
+                    </div>
+                    <div class="rates__accordion-row">
+                      <span class="rates__column-left secondary-text-color">Комиссия за сделки с золотом
+                        и серебром</span>
+                      <p class="rates__column-right">0.1% <br> <span class="secondary-text">от оборота</span></p>
+                    </div>
+                    <h4 class="rates__accordion-row-title">Срочный рынок</h4>
+                    <div class="rates__accordion-row">
+                      <span class="rates__column-left secondary-text-color">Заключение сделок, исполнение
+                        срочного контракта на Московской
+                        бирже</span>
+                      <p class="rates__column-right">Комиссия равна биржевому сбору и взимается дополнительно к нему</p>
+                    </div>
+                    <div class="rates__accordion-row">
+                      <span class="rates__column-left secondary-text-color">ГО для открытия и поддержания открытой
+                        позиции по срочному контракту</span>
+                      <p class="rates__column-right">100 % от размера гарантийного обеспечения, установленного
+                        Московской биржей</p>
+                    </div>
+                    <h4 class="rates__accordion-row-title">Депозитарий</h4>
+                    <div class="rates__accordion-row">
+                      <span class="rates__column-left secondary-text-color">Услуги депозитария</span>
+                      <p class="rates__column-right">35,40 ₽<br> <span class="secondary-text">в месяц</span></p>
+                    </div>
+                    <div class="rates__accordion-row">
+                      <span class="rates__column-left secondary-text-color">Плата за изменение нетто-позиции
+                        по одному виду ценных бумаг
+                        при условии переноса сделки
+                        на след.торговый день</span>
+                      <p class="rates__column-right">100 ₽<br> <span class="secondary-text">при совершении сделок с
+                          ценными бумагами, не включенными в перечень высоколиквидных инструментов</span></p>
+                    </div>
+                    <div class="rates__accordion-row">
+                      <span class="rates__column-left secondary-text-color">Заключение сделки в следующих режимах
+                        торгов: <br>
+                        1. МБ ФР: Первичное размещение (Облигации) PSAU <br>
+                        2. МБ ФР: Первичное размещение (Акции) PSSU</span>
+                      <p class="rates__column-right"> 100 ₽<br> <span class="secondary-text">за каждую сделку</span></p>
+                    </div>
+                    <h4 class="rates__accordion-row-title">Программное обеспечение</h4>
+                    <div class="rates__accordion-row">
+                      <span class="rates__column-left secondary-text-color">Абонентская плата за ИТС Брокер
+                        и ИТС Нано</span>
+                      <p class="rates__column-right">Отсутствует</p>
+                    </div>
+                    <div class="rates__accordion-row">
+                      <span class="rates__column-left secondary-text-color">Плата за ИТС QUIK, QUIK X (IOS и Android) и
+                        webQUIK</span>
+                      <p class="rates__column-right">Отсутствует</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
             <div class="memo__info">
               <h5 class="memo__info-title">Не является индивидуальной инвестиционной рекомендацией</h5>
               <p class="memo__info-conditions">Клиент несет иные расходы, которые могут возникнуть в связи с исполнением
@@ -218,8 +559,8 @@
               <p class="memo__info-description">В рамках тарифных планов "Минимальный дневной" и "Фиксированный платеж"
                 биржевой и клиринговый сборы
                 оплачиваются дополнительно к комиссии брокера.Полная информация о тарифах содержится в Регламенте о
-                порядке осуществления действий на рынке ценных бумаг <a href="#">ссылка.</a></p>
-              <div class="important__block">
+                порядке осуществления действий на рынке ценных бумаг <a href="#" class="text-link">ссылка.</a></p>
+              <div class="important__block hide-on-mobile">
                 <svg width="20px" height="20px" class="svg-important-dims">
                   <use xlink:href="img/icons/icons.svg#important"></use>
                 </svg>
@@ -250,9 +591,9 @@
             </div>
           </div>
           <div class="tab-pane" id="stockMarket" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
-            <h5 class="stock-market-title">Сделки на Московской и Санкт-Петербургской бирже</h5>
-            <h3 class="rate-tite">Тарифный план «Минимальный дневной»</h3>
-            <table class="table ">
+            <h5 class="stock-market-title table-hide">Сделки на Московской и Санкт-Петербургской бирже</h5>
+            <h3 class="rate-tite table-hide">Тарифный план «Минимальный дневной»</h3>
+            <table class="table table-hide">
               <thead>
                 <tr>
                   <th colspan="12" class="tr-title">Фондовый рынок (Московская Биржа, Санкт-Петербургская биржа)</th>
@@ -295,7 +636,7 @@
                 </tr>
               </tbody>
             </table>
-            <table class="table ">
+            <table class="table table-hide">
               <thead>
                 <tr>
                   <th colspan="12" class="tr-title">Валютный рынок (Московская Биржа)3</th>
@@ -338,7 +679,7 @@
                 </tr>
               </tbody>
             </table>
-            <table class="table ">
+            <table class="table table-hide">
               <thead>
                 <tr>
                   <th colspan="12" class="tr-title">Рынок драгоценных металлов (Московская Биржа)3</th>
@@ -356,7 +697,7 @@
                 </tr>
               </tbody>
             </table>
-            <table class="table ">
+            <table class="table table-hide">
               <thead>
                 <tr>
                   <th colspan="12" class="tr-title">Срочный рынок Московской Биржи</th>
@@ -384,7 +725,7 @@
                 </tr>
               </tbody>
             </table>
-            <table class="table ">
+            <table class="table table-hide">
               <thead>
                 <tr>
                   <th colspan="12" class="tr-title">Торговые системы</th>
@@ -430,7 +771,7 @@
                 </tr>
               </tbody>
             </table>
-            <table class="table ">
+            <table class="table table-hide">
               <thead>
                 <tr>
                   <th colspan="12" class="tr-title">Дополнительные расходы</th>
@@ -491,8 +832,8 @@
                 </tr>
               </tbody>
             </table>
-            <h3>Тарифный план «Фиксированный платеж»</h3>
-            <table class="table ">
+            <h3 class="table-hide">Тарифный план «Фиксированный платеж»</h3>
+            <table class="table table-hide">
               <tr class="tr-border">
                 <td colspan="5">Сделки, совершенные на организованных торгах фондового рынка <br>
                   Сделки, совершенные на срочном рынке Московской Биржи<br>
@@ -526,8 +867,8 @@
                 </td>
               </tr>
             </table>
-            <h3>Тарифный план «Инвестор»</h3>
-            <table class="table investor-table ">
+            <h3 class="table-hide">Тарифный план «Инвестор»</h3>
+            <table class="table investor-table table-hide">
               <tr class="tr-border">
                 <td colspan="5">Сделки, совершенные на организованных торгах фондового рынка <br>
                   Сделки, совершенные на срочном рынке Московской Биржи<br>
@@ -561,7 +902,7 @@
                 </td>
               </tr>
             </table>
-            <div class="stockmarket__info">
+            <div class="stockmarket__info table-hide">
               <div class="important__block">
                 <svg width="20px" height="20px" class="svg-important-dims">
                   <use xlink:href="img/icons/icons.svg#important"></use>
@@ -569,7 +910,7 @@
                 <span class="important__block-description">Все вышеперечисленные тарифы НДС не
                   облагаются</span>
               </div>
-              <div class="stockmarket__info-footnotes">
+              <div class="stockmarket__info-footnotes table-hide">
                 <p class="stockmarket__info-text"><span class="letter-lowercase">1</span> Оплата берется при наличии
                   операций с ценными бумагами по счету клиента в отчетном месяце.
                 </p>
@@ -628,28 +969,405 @@
                 </p>
               </div>
             </div>
+            <div class="accordion rates__accordion" id="transactionsOnExchangesAccordion">
+              <div class="rates__accordion-item">
+                <div class="rates__accordion-header" id="transactionsOnExchanges-headingOne">
+                  <button class="rates__accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#transactionsOnExchanges-collapseOne" aria-expanded="false"
+                    aria-controls="transactionsOnExchanges-collapseOne">
+                    <span class="rates__accordion-item-title">Тарифный план «Минимальный дневной»</span>
+                    <i class="bi bi-plus-lg"></i>
+                  </button>
+                </div>
+                <div id="transactionsOnExchanges-collapseOne" class="accordion-collapse collapse"
+                  aria-labelledby="transactionsOnExchanges-headingOne">
+                  <div class="rates__accordion-body">
+                    <h4 class="rates__accordion-row-title">Фондовый рынок (Московская Биржа, Санкт-Петербургская биржа)
+                    </h4>
+                    <div class="rates__accordion-row">
+                      <span class="rates__column-left secondary-text-color">Оборот за предыдущую торговую сессию
+                        по Брокерскому счету Клиента</span>
+                      <p class="rates__column-right weight-text">Комиссионное вознаграждение Брокера
+                        (% от оборота Клиента <span class="right-apostrophe">1</span>за предыдущую торговую сессию)
+                        <span class="right-apostrophe">2</span>
+                      </p>
+                    </div>
+                    <div class="rates__accordion-row">
+                      <span class="rates__column-left secondary-text-color">до 1 000 000</span>
+                      <p class="rates__column-right">0,025%</p>
+                    </div>
+                    <div class="rates__accordion-row">
+                      <span class="rates__column-left secondary-text-color">от 1 000 000 до 5 000 000</span>
+                      <p class="rates__column-right">0,021%</p>
+                    </div>
+                    <div class="rates__accordion-row">
+                      <span class="rates__column-left secondary-text-color">от 5 000 000 до 10 000 000</span>
+                      <p class="rates__column-right">0,016%</p>
+                    </div>
+                    <div class="rates__accordion-row">
+                      <span class="rates__column-left secondary-text-color">от 10 000 000 до 20 000 000</span>
+                      <p class="rates__column-right">0,012%</p>
+                    </div>
+                    <div class="rates__accordion-row">
+                      <span class="rates__column-left secondary-text-color">от 20 000 000 до 50 000 000
+                      </span>
+                      <p class="rates__column-right">0,010%</p>
+                    </div>
+                    <div class="rates__accordion-row">
+                      <span class="rates__column-left secondary-text-color">от 50 000 000 до 100 000 000</span>
+                      <p class="rates__column-right">0,008%</p>
+                    </div>
+                    <div class="rates__accordion-row">
+                      <span class="rates__column-left secondary-text-color">от 100 000 000 и выше</span>
+                      <p class="rates__column-right">0,006%</p>
+                    </div>
+
+                    <h4 class="rates__accordion-row-title">Валютный рынок (Московская Биржа) <span
+                        class="right-apostrophe">3</span></h4>
+                    <div class="rates__accordion-row">
+                      <span class="rates__column-left secondary-text-color">Оборот за предыдущую торговую сессию
+                        по Брокерскому счету Клиента</span>
+                      <p class="rates__column-right weight-text">Комиссионное вознаграждение Брокера
+                        (% от оборота Клиента <span class="right-apostrophe">1</span>за предыдущую торговую сессию)
+                        <span class="right-apostrophe">2</span>
+                      </p>
+                    </div>
+                    <div class="rates__accordion-row">
+                      <span class="rates__column-left secondary-text-color">до 1 000 000</span>
+                      <p class="rates__column-right">0,032%</p>
+                    </div>
+                    <div class="rates__accordion-row">
+                      <span class="rates__column-left secondary-text-color">от 1 000 000 до 5 000 000</span>
+                      <p class="rates__column-right">0,027%</p>
+                    </div>
+                    <div class="rates__accordion-row">
+                      <span class="rates__column-left secondary-text-color">от 5 000 000 до 10 000 000</span>
+                      <p class="rates__column-right">0,021%</p>
+                    </div>
+                    <div class="rates__accordion-row">
+                      <span class="rates__column-left secondary-text-color">от 10 000 000 до 20 000 000</span>
+                      <p class="rates__column-right">0,017%</p>
+                    </div>
+                    <div class="rates__accordion-row">
+                      <span class="rates__column-left secondary-text-color">от 20 000 000 до 50 000 000
+                      </span>
+                      <p class="rates__column-right">0,014%</p>
+                    </div>
+                    <div class="rates__accordion-row">
+                      <span class="rates__column-left secondary-text-color">от 50 000 000 до 100 000 000</span>
+                      <p class="rates__column-right">0,011%</p>
+                    </div>
+                    <div class="rates__accordion-row">
+                      <span class="rates__column-left secondary-text-color">от 100 000 000 и выше</span>
+                      <p class="rates__column-right">0,008%</p>
+                    </div>
+
+                    <h4 class="rates__accordion-row-title">Рынок драгоценных металлов (Московская Биржа) <span
+                        class="right-apostrophe">3</span></h4>
+                    <div class="rates__accordion-row">
+                      <span class="rates__column-left secondary-text-color">Оборот за предыдущую торговую сессию
+                        по Брокерскому счету Клиента</span>
+                      <p class="rates__column-right secondary-text-color">Комиссионное вознаграждение Брокера
+                        (% от оборота Клиента <span class="right-apostrophe">1</span>за предыдущую торговую сессию)
+                        <span class="right-apostrophe">2</span>
+                      </p>
+                    </div>
+                    <div class="rates__accordion-row">
+                      <span class="rates__column-left secondary-text-color">Оборот за предыдущую торговую сессию
+                        по Брокерскому счету Клиента</span>
+                      <p class="rates__column-right">0,1%</p>
+                    </div>
+
+                    <h4 class="rates__accordion-row-title">Срочный рынок Московской Биржи<span
+                        class="right-apostrophe">3</span></h4>
+                    <p>(сделки заключаются при наличии Гарантийного обеспечения для открытия и поддержания открытой
+                      позиции по срочному контракту в размере 100% от размера Гарантийного обеспечения, установленного
+                      Московской Биржей)</p>
+                    <div class="rates__accordion-row">
+                      <span class="rates__column-left secondary-text-color">Условие начисления и уплаты
+                        вознаграждения</span>
+                      <p class="rates__column-right secondary-text-color ">Комиссионное вознаграждение Брокера <span
+                          class="right-apostrophe">2</span></p>
+                    </div>
+                    <div class="rates__accordion-row">
+                      <span class="rates__column-left secondary-text-color">Открытие/обслуживание регистра/портфеля
+                        срочного рынка Московской Биржи</span>
+                      <p class="rates__column-right">Бесплатно</p>
+                    </div>
+                    <div class="rates__accordion-row">
+                      <span class="rates__column-left secondary-text-color">Заключение сделок/Исполнение срочного
+                        контракта, а также иные операции, совершаемые в секции срочного рынка Московской Биржи</span>
+                      <p class="rates__column-right">Комиссия брокера равна 100 % от биржевого сбора, взимаемого биржей
+                        за совершение соответствующей операции. Взимается
+                        за предыдущую торговую сессию</p>
+                    </div>
+
+                    <h4 class="rates__accordion-row-title">Торговые системы</h4>
+                    <div class="rates__accordion-row">
+                      <span class="rates__column-left secondary-text-color">Абонентская плата за использование
+                        информационно-торговой системы ИТС-Брокер (используется только для совершения сделок
+                        на фондовом рынке Московской Биржи)</span>
+                      <p class="rates__column-right">Отсутствует</p>
+                    </div>
+                    <div class="rates__accordion-row">
+                      <span class="rates__column-left secondary-text-color">Абонентская плата за использование
+                        информационно-торговой системы ИТС-Нано (используется только для совершения сделок на фондовом
+                        рынке Московской Биржи на мобильных устройствах платформы Android)</span>
+                      <p class="rates__column-right">Отсутствует</p>
+                    </div>
+                    <div class="rates__accordion-row">
+                      <span class="rates__column-left secondary-text-color">Абонентская плата за использование
+                        информационно-торговой системы QUIK4</span>
+                      <p class="rates__column-right">Отсутствует <br><br>
+
+                        если совокупная стоимость всех портфелей Клиента по брокерскому договору (договорам),
+                        заключенному (заключенным) в рамках настоящего Регламента, и/или договору (договорам) оказания
+                        услуг на валютном рынке и рынке драгоценных металлов, заключенному (заключенным) с АО
+                        «НФК-Сбережения», равна или превышает 10 000 руб. При невыполнении вышеуказанного условия плата
+                        за использование информационно-торговой системы QUIK составляет 250 руб. в месяц
+                      </p>
+                    </div>
+                    <div class="rates__accordion-row">
+                      <span class="rates__column-left secondary-text-color">Абонентская плата за использование
+                        информационно-торговых систем iQUIK/iQUIK-HD/iQUIK X и QUIK Android/QUIK Android X
+                        (пользовательские приложения системы QUIK для iPhone/iPad и устройств на базе операционной
+                        системы Android), а также
+                        webQUIK 5</span>
+                      <p class="rates__column-right">Отсутствует <br><br>
+
+                        если совокупная стоимость всех портфелей Клиента по брокерскому договору (договорам),
+                        заключенному (заключенным) в рамках настоящего Регламента, и/или договору (договорам) оказания
+                        услуг на валютном рынке и рынке драгоценных металлов, заключенному (заключенным) с АО
+                        «НФК-Сбережения», равна или превышает 100 000 руб.
+                        <br><br>
+                        При невыполнении вышеуказанного условия плата за использование указанных информационно-торговых
+                        систем составляет
+                        290 руб. в месяц
+                      </p>
+                    </div>
+
+                    <h4 class="rates__accordion-row-title">Дополнительные расходы</h4>
+                    <p>по оплате услуг вышестоящего депозитария при размещении ценных бумаг</p>
+                    <div class="rates__accordion-row">
+                      <span class="rates__column-left secondary-text-color">Заключение сделки в следующих режимах
+                        торгов:
+                        <br><br>
+                        МБ ФР: Первичное размещение (Облигации) PSAU,
+                        <br><br>
+                        МБ ФР: Первичное размещение (Акции) PSSU</span>
+                      <p class="rates__column-right">100 руб. за каждую сделку</p>
+                    </div>
+                    <div class="transactions-exchange-footness">
+                      <p class="secondary-text">
+                        Брокер вправе приостановить для Клиента доступ к торговым системам в случае, если совокупная
+                        стоимость активов Клиента, находящихся у Брокера по всем договорам, заключенным этим Клиентом с
+                        Брокером, составит менее 5 000 руб.
+                        <br><br>
+                        В случае учета и/или хранения ценных бумаг в Депозитарии АО «НФК-Сбережения» Брокер взимает
+                        депозитарную комиссию, в том числе, но не ограничиваясь следующим:
+                        <br><br>
+                        - расходы по обслуживанию депозитарного счета при наличии движений по счету для физических лиц в
+                        размере 35,40 руб. в месяц, для юридических лиц в размере 354,00 руб. в месяц. При отсутствии
+                        движений по счету плата не взимается;
+                        <br><br>
+                        - за изменение нетто-позиции (изменение остатка по виду ценных бумаг по итогам торговой сессии)
+                        по ценным бумагам, входящим в перечень ценных бумаг, иностранных валют и драгоценных металлов,
+                        по которым в соответствии с договором, предусматривающем брокерское обслуживание, допускается
+                        возникновение непокрытых позиций, и (или) по которым положительное значение плановой позиции не
+                        принимается равным 0, плата не взимается;
+                        <br><br>
+                        - за изменение нетто-позиции (изменение остатка по виду ценных бумаг) по результатам торговой
+                        сессии по ценным бумагам, не входящим в перечень ценных бумаг, иностранных валют и драгоценных
+                        металлов, по которым в соответствии с договором, предусматривающем брокерское обслуживание,
+                        допускается возникновение непокрытых позиций, и (или) по которым положительное значение плановой
+                        позиции не принимается равным 0, взимается 100 рублей за каждую торговую сессию, по результатам
+                        которой произошло изменение нетто-позиции; данная комиссия не взимается в случае, если изменение
+                        нетто-позиции произошло по ценным бумагам, эмитентом которых является аффилированное с Брокером
+                        лицо.
+                        <br><br>
+                        Перечень ценных бумаг, иностранных валют и драгоценных металлов, по которым в соответствии с
+                        договором, предусматривающем брокерское обслуживание, допускается возникновение непокрытых
+                        позиций, и (или) по которым положительное значение плановой позиции не принимается равным 0,
+                        публикуется на сайте АО «НФК-Сбережения <a href="www.nfksber.ru"
+                          class="text-link">www.nfksber.ru.</a>
+                      </p>
+                      <p class="secondary-text">
+                        <span class="right-apostrophe">1</span> Оборот считается отдельно для каждого портфеля,
+                        предназначенного для совершения сделок на
+                        организованных торгах. Если оборот по портфелю выражен в разных валютах, то оборот считается
+                        отдельно для каждой валюты.
+                        <br><br>
+                        <span class="right-apostrophe">2</span> Ставка комиссии указана без учета сбора, взимаемого
+                        биржей согласно ее тарифам.
+                        <br><br>
+                        <span class="right-apostrophe">3</span> Для целей расчета комиссионного вознаграждения по
+                        сделкам, совершенным на указанных площадках,
+                        под оборотом за предыдущую торговую сессию понимается рублевый оборот по сделкам, то есть сумма
+                        денежных средств Клиента в рублях, фактически израсходованная на покупку иностранной
+                        валюты/драгоценных металлов или фактически полученная Клиентом от продажи иностранной
+                        валюты/драгоценных металлов в течение торгового дня, за исключением денежных средств Клиента,
+                        фактически израсходованных / фактически полученных Клиентом по итогам сделок, заключенным в
+                        адресном режиме. При невозможности определения рублевого оборота, в том числе при совершении
+                        сделок с валютными инструментами без использования в расчетах рублей РФ, вознаграждение
+                        рассчитывается в процентах от суммы соответствующей сделки с иностранной валютой. Вознаграждение
+                        исчисляется в рублях по официальному курсу ЦБ РФ для любой (по усмотрению Брокера) иностранной
+                        валюты, с использованием которой была совершена сделка, на день исчисления соответствующего
+                        вознаграждения
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="rates__accordion-item">
+                <div class="rates__accordion-header" id="transactionsOnExchanges-headingTwo">
+                  <button class="rates__accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#transactionsOnExchanges-collapseTwo" aria-expanded="false"
+                    aria-controls="transactionsOnExchanges-collapseTwo">
+                    <span class="rates__accordion-item-title">Тарифный план «Фиксированный платеж»</span>
+                    <i class="bi bi-plus-lg"></i>
+                  </button>
+                </div>
+                <div id="transactionsOnExchanges-collapseTwo" class="accordion-collapse collapse"
+                  aria-labelledby="panelsStayOpen-headingTwo">
+                  <div class="rates__accordion-body">
+                    <div class="rates__accordion-row">
+                      <span class="rates__column-left secondary-text-color">Сделки, совершенные на организованных торгах
+                        фондового рынка.
+                        Сделки, совершенные на срочном рынке Московской Биржи.
+                        Плата за использование торговых систем</span>
+                      <p class="rates__column-right">Клиент ежемесячно уплачивает Брокеру фиксированное
+                        вознаграждение в размере
+                        8000 руб. за каждый истекший, в том числе неполный, календарный месяц с момента выбора данного
+                        Тарифного плана, а также все платежи, предусмотренные Тарифным планом «Минимальный дневной», за
+                        исключением следующих платежей:</p>
+                    </div>
+                    <div>
+                      <div class="transactions-exchange-footness">
+                        <p class="secondary-text">
+                          1) оплаты вознаграждения Брокера в процентах от оборота по сделкам, совершенным на
+                          организованных торгах фондового рынка (на Московской и Санкт-Петербургской биржах) за торговую
+                          сессию по счету Клиента, а также оплаты вознаграждения Брокера в процентах от оборота по
+                          сделкам, совершенным на торгах валютного рынка
+                          и рынка драгоценных металлов Московской биржи;
+                          <br><br>
+                          2) биржевого и клирингового сборов, установленных биржей по сделкам, совершенным на
+                          организованных торгах фондового рынка;
+                          <br><br>
+                          3) при заключении сделки в режимах торгов «МБ ФР Первичное размещение (Облигации) PSAU» или
+                          «МБ ФР: Первичное размещение (Акции) PSSU» Клиент однократно для каждого выпуска освобождается
+                          от оплаты Дополнительных расходов, связанных с услугами вышестоящего депозитария, при
+                          размещении ценных бумаг
+                          в размере 100 руб.;
+                          <br><br>
+                          4) в случае учета и/или хранения ценных бумаг в Депозитарии АО «НФК-Сбережения» Клиент
+                          освобождается
+                          от уплаты следующей депозитарной комиссии:
+
+                          - расходов по обслуживанию депозитарного счета;
+
+                          - за изменение нетто-позиции.
+                          <br><br>
+                          Клиент несет расходы по оплате тарифов бирж (за исключением биржевого и клирингового сборов) и
+                          иных расходов, которые могут возникнуть в связи с исполнением его Поручения
+                        </p>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="rates__accordion-item">
+                <div class="rates__accordion-header" id="transactionsOnExchanges-headingThree">
+                  <button class="rates__accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#transactionsOnExchanges-collapseThree" aria-expanded="false"
+                    aria-controls="transactionsOnExchanges-collapseThree">
+                    <span class="rates__accordion-item-title">Тарифный план «Инвестор»</span>
+                    <i class="bi bi-plus-lg"></i>
+                  </button>
+                </div>
+                <div id="transactionsOnExchanges-collapseThree" class="accordion-collapse collapse"
+                  aria-labelledby="transactionsOnExchanges-headingThree">
+                  <div class="rates__accordion-body">
+                    <div class="rates__accordion-row">
+                      <span class="rates__column-left secondary-text-color">Сделки, совершенные на организованных торгах
+                        фондового рынка.
+                        Сделки, совершенные на срочном рынке Московской Биржи.
+                        Плата за использование торговых систем</span>
+                      <p class="rates__column-right">Клиент уплачивает Брокеру вознаграждение 
+                        в размере 0,2% за каждую сделку, совершенную на организованных торгах фондового рынка, валютного рынка и рынка драгоценных металлов6, а также все платежи, предусмотренные Тарифным планом «Минимальный дневной», за исключением следующих платежей:</p>
+                    </div>
+                    <div>
+                      <div class="transactions-exchange-footness">
+                        <p class="secondary-text">
+                          1) оплаты вознаграждения Брокера в процентах от оборота по сделкам, совершенным на
+                          организованных торгах фондового рынка (на Московской и Санкт-Петербургской биржах) за торговую
+                          сессию по счету Клиента, а также оплаты вознаграждения Брокера в процентах от оборота по
+                          сделкам, совершенным на торгах валютного рынка
+                          и рынка драгоценных металлов Московской биржи;
+                          <br><br>
+                          2) биржевого и клирингового сборов, установленных биржей по сделкам, совершенным на
+                          организованных торгах фондового рынка;
+                          <br><br>
+                          3) при заключении сделки в режимах торгов «МБ ФР Первичное размещение (Облигации) PSAU» или
+                          «МБ ФР: Первичное размещение (Акции) PSSU» Клиент однократно для каждого выпуска освобождается
+                          от оплаты Дополнительных расходов, связанных с услугами вышестоящего депозитария, при
+                          размещении ценных бумаг
+                          в размере 100 руб.;
+                          <br><br>
+                          4) в случае учета и/или хранения ценных бумаг в Депозитарии АО «НФК-Сбережения» Клиент
+                          освобождается
+                          от уплаты следующей депозитарной комиссии:
+
+                          - расходов по обслуживанию депозитарного счета;
+
+                          - за изменение нетто-позиции.
+                          <br><br>
+                          Клиент несет расходы по оплате тарифов бирж (за исключением биржевого и клирингового сборов) и
+                          иных расходов, которые могут возникнуть в связи с исполнением его Поручения
+                        </p>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="important__block">
+              <svg width="20px" height="20px" class="svg-important-dims">
+                <use xlink:href="img/icons/icons.svg#important"></use>
+              </svg>
+              <span class="important__block-description">Все вышеперечисленные тарифы НДС не
+                облагаются</span>
+            </div>
           </div>
           <div class="tab-pane " id="messages" role="tabpanel" aria-labelledby="messages-tab" tabindex="0">
             <table class="table messahe-table">
               <thead class="">
                 <tr>
-                  <td scope="col" colspan="5" class="secondary-text-color" >Наименование услуг</td>
+                  <td scope="col" colspan="5" class="secondary-text-color">Наименование услуг</td>
                   <td scope="col" colspan="5" class="secondary-text-color">Тарифы АО «НФК-Сбережения»</td>
-                  
+
                 </tr>
               </thead>
               <tbody>
                 <tr class="tr-border">
-                  <td class="fw-normal col-4 secondary-text-color" colspan="5" >Исполнение Брокером Поручений Клиента на совершение маржинальных <br> сделок в денежных средствах и ценных бумагах внутри торгового дня</td>
+                  <td class="fw-normal col-4 secondary-text-color" colspan="5">Исполнение Брокером Поручений Клиента на
+                    совершение маржинальных <br> сделок в денежных средствах и ценных бумагах внутри торгового дня</td>
                   <!-- <td class="col-1" colspan="2"></td>   -->
                   <td class="weight-text col-3 " colspan="5">Бесплатно</td>
                 </tr>
                 <tr class="tr-border">
-                  <td class="fw-normal col-4 secondary-text-color" colspan="5" >Процент за пользование денежными средствами, привлеченными <br> для купли ценных бумаг</td>
+                  <td class="fw-normal col-4 secondary-text-color" colspan="5">Процент за пользование денежными
+                    средствами, привлеченными <br> для купли ценных бумаг</td>
                   <td class="weight-text col-3" colspan="5">18,5% годовых</td>
                 </tr>
                 <tr class="tr-border">
-                  <td class="fw-normal col-4 secondary-text-color" colspan="5">Плата за пользование ценными бумагами, предоставленными <br> Клиенту с целью совершения маржинальной сделки, определяемая <br> каждый календарный <span style="position: relative;">день <span class="letter-lowercase-end">7</span></span></td>
+                  <td class="fw-normal col-4 secondary-text-color" colspan="5">Плата за пользование ценными бумагами,
+                    предоставленными <br> Клиенту с целью совершения маржинальной сделки, определяемая <br> каждый
+                    календарный <span style="position: relative;">день <span
+                        class="letter-lowercase-end">7</span></span></td>
                   <td class="weight-text col-3" colspan="5">13,5% годовых</td>
                 </tr>
               </tbody>
@@ -662,7 +1380,12 @@
                 <span class="important__block-description">Комиссионное вознаграждение НДС не облагается</span>
               </div>
               <div class="stockmarket__info-footnotes">
-                <span class="stockmarket__info-text"><span class="letter-lowercase">7</span>При расчете стоимости ценных бумаг, предоставленных Клиенту с целью совершения маржинальной сделки, используется цена лучшей заявки на продажу на момент закрытия торгов той биржи, на которой совершена соответствующая маржинальная сделка. В случае отсутствия заявок на продажу ценные бумаги не переоцениваются. При наличии цен ценной бумаги в разных торговых системах Брокер для целей оценки может выбрать торговую систему по собственному усмотрению.
+                <span class="stockmarket__info-text"><span class="letter-lowercase">7</span>При расчете стоимости ценных
+                  бумаг, предоставленных Клиенту с целью совершения маржинальной сделки, используется цена лучшей заявки
+                  на продажу на момент закрытия торгов той биржи, на которой совершена соответствующая маржинальная
+                  сделка. В случае отсутствия заявок на продажу ценные бумаги не переоцениваются. При наличии цен ценной
+                  бумаги в разных торговых системах Брокер для целей оценки может выбрать торговую систему по
+                  собственному усмотрению.
                 </span>
               </div>
             </div>
@@ -671,22 +1394,32 @@
             <table class="table setting-table">
               <thead class="">
                 <tr>
-                  <td scope="col" colspan="5" class="secondary-text-color">База для начисления комиссионного вознаграждения</td>
-                  <td scope="col" colspan="5" class="secondary-text-color">Комиссионное вознаграждение Брокера в процентах годовых</td>
+                  <td scope="col" colspan="5" class="secondary-text-color">База для начисления комиссионного
+                    вознаграждения</td>
+                  <td scope="col" colspan="5" class="secondary-text-color">Комиссионное вознаграждение Брокера в
+                    процентах годовых</td>
                 </tr>
               </thead>
               <tbody>
                 <tr class="tr-border">
-                  <td class="fw-normal col-4 secondary-text-color"  colspan="5" >Сумма отрицательных плановых <span style="position: relative;">позиций <span class="letter-lowercase-end">8</span></span>, возникших в связи с недостатком у <br> Клиента денежных средств для расчетов по обязательствам, которые должны <br> быть исполнены из портфеля Клиента</td>
+                  <td class="fw-normal col-4 secondary-text-color" colspan="5">Сумма отрицательных плановых <span
+                      style="position: relative;">позиций <span class="letter-lowercase-end">8</span></span>, возникших
+                    в связи с недостатком у <br> Клиента денежных средств для расчетов по обязательствам, которые должны
+                    <br> быть исполнены из портфеля Клиента
+                  </td>
                   <td class="primary-text-market col-3 " colspan="5">18,5% годовых</td>
                 </tr>
                 <tr class="tr-border">
-                  <td class="fw-normal col-4 secondary-text-color" colspan="5" >Сумма отрицательных плановых <span style="position: relative;">позиций <span class="letter-lowercase-end">8</span></span>, возникших в связи с недостатком <br> у Клиента ценных бумаг, являющихся предметом обязательств, которые <br> должны быть исполнены из портфеля Клиента</td>
+                  <td class="fw-normal col-4 secondary-text-color" colspan="5">Сумма отрицательных плановых <span
+                      style="position: relative;">позиций <span class="letter-lowercase-end">8</span></span>, возникших
+                    в связи с недостатком <br> у Клиента ценных бумаг, являющихся предметом обязательств, которые <br>
+                    должны быть исполнены из портфеля Клиента</td>
                   <td class="primary-text-market col-3" colspan="5">13,5% годовых</td>
                 </tr>
                 <tr>
                   <td colspan="12" style="padding: 40px 0 0 0 !important;" class="primary-text-market">
-                    Вознаграждение Брокера взимается ежедневно в соответствующей части исходя из указанной ставки годовых.
+                    Вознаграждение Брокера взимается ежедневно в соответствующей части исходя из указанной ставки
+                    годовых.
                   </td>
                 </tr>
               </tbody>
@@ -699,7 +1432,12 @@
                 <span class="important__block-description">Комиссионное вознаграждение НДС не облагается</span>
               </div>
               <div class="stockmarket__info-footnotes">
-                <span class="stockmarket__info-text"><span class="letter-lowercase">8</span>При расчете стоимости ценных бумаг, предоставленных Клиенту с целью совершения маржинальной сделки, используется цена лучшей заявки на продажу на момент закрытия торгов той биржи, на которой совершена соответствующая маржинальная сделка. В случае отсутствия заявок на продажу ценные бумаги не переоцениваются. При наличии цен ценной бумаги в разных торговых системах Брокер для целей оценки может выбрать торговую систему по собственному усмотрению.
+                <span class="stockmarket__info-text"><span class="letter-lowercase">8</span>При расчете стоимости ценных
+                  бумаг, предоставленных Клиенту с целью совершения маржинальной сделки, используется цена лучшей заявки
+                  на продажу на момент закрытия торгов той биржи, на которой совершена соответствующая маржинальная
+                  сделка. В случае отсутствия заявок на продажу ценные бумаги не переоцениваются. При наличии цен ценной
+                  бумаги в разных торговых системах Брокер для целей оценки может выбрать торговую систему по
+                  собственному усмотрению.
                 </span>
               </div>
             </div>
@@ -711,17 +1449,12 @@
     </section>
   </main>
   @@include('html/footer.html',{})
-  <!-- <script src="js/app.min.js"></script> -->
+  <script src="js/app.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
     crossorigin="anonymous"></script>
   <!-- <script src="https://unpkg.com/@popperjs/core@2"></script> -->
 
-  1 Включает оборот по сделкам переноса позиций, а также сделок по полному или частичному закрытию позиций, не включается оборот по сделкам своп, совершенным в целях переноса чистой открытой позиции.
-
-2 Ставки комиссионного вознаграждения Компании указаны с учетом НДС (в случае если соответствующая операция согласно законодательству Российской Федерации признается объектом налогообложения по налогу на добавленную стоимость). Комиссионное вознаграждение за сделки своп не рассчитывается.
-
-3 Под рублевым оборотом по сделкам для целей настоящего соглашения понимается сумма денежных средств Клиента в рублях, фактически израсходованная на покупку иностранной валюты или фактически полученная Клиентом от продажи иностранной валюты в течение торгового дня, за исключением денежных средств Клиента, фактически израсходованных / фактически полученных Клиентом по итогам сделок, заключенных в адресном режиме. При невозможности определения рублевого оборота, в том числе при совершении сделок с валютными инструментами без использования в расчетах рублей РФ, вознаграждение рассчитывается в процентах от суммы соответствующей сделки с иностранной валютой. Вознаграждение исчисляется в рублях по официальному курсу ЦБ РФ для любой (по усмотрению Компании) иностранной валюты, с использованием которой была совершена сделка, на день исчисления соответствующего вознаграждения.
 </body>
 
 </html>
