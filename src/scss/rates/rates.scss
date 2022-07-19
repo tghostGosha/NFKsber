@@ -7,6 +7,10 @@
     height: 367px;
   }
 
+  @media(max-width: 585px) {
+    height: 347px;
+  }
+
   &-container {
     background-image: url('../img/rates/rates-hero.png');
     padding: 24px 50% 59px 0;
@@ -22,6 +26,11 @@
       background-position: right bottom;
       height: 367px;
     }
+
+    @media(max-width: 585px) {
+      padding: 8px 0 149px 0;
+      height: 347px;
+    }
   }
 
   &-title {
@@ -29,6 +38,12 @@
 
     @media(max-width: 1176px) {
       margin-bottom: 42px;
+    }
+
+    @media(max-width: 1176px) {
+      font-size: 31px;
+      line-height: 40px;
+      margin-bottom: 24px;
     }
   }
 
@@ -44,6 +59,21 @@
     @media(max-width: 1176px) {
       width: 49%;
     }
+
+    @media(max-width: 585px) {
+      width: 85%;
+    }
+  }
+
+}
+
+.rates__table-nav {
+  @media(max-width: 783px) {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    column-gap: 12px;
+    row-gap: 12px;
+    margin-bottom: 24px;
   }
 
 }
@@ -61,6 +91,11 @@
 
   @media(max-width: 1176px) {
     padding-bottom: 57px;
+  }
+
+  @media(max-width: 585px) {
+    padding-top: 48px;
+    padding-bottom: 48px;
   }
 
   &-nav {
@@ -85,6 +120,10 @@
     flex-direction: column;
     padding-top: 12px;
     padding-bottom: 42px;
+
+    @media(max-width: 585px) {
+      padding-bottom: 24px;
+    }
   }
 
   &-row {
@@ -92,7 +131,13 @@
     grid-template-columns: repeat(12, 1fr);
     column-gap: 16px;
     margin-bottom: 24px;
-    
+
+    @media(max-width: 783px) {
+      column-gap: 12px;
+      row-gap: 12px;
+      margin-bottom: 16px;
+    }
+
   }
 
   &-row-title {
@@ -112,9 +157,11 @@
     background-color: var(--primary-grey);
   }
 }
+
 #transactionsOnExchangesAccordion {
   margin-bottom: 56px;
 }
+
 .bi-plus-lg,
 .bi-dash-lg {
   color: var(--secondary-text);
@@ -129,6 +176,20 @@
 
 .rates__column-left {
   grid-column: 1/ span 5;
+
+  @media(max-width: 783px) {
+    grid-column: 1/ span 6;
+  }
+}
+
+.rates__column-title {
+  color: var(--secondary-text);
+
+  @media(max-width: 585px) {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
 }
 
 .rates__column-right {
@@ -138,6 +199,39 @@
 .nav-pills .nav-link.active {
   background-color: var(--primary-text);
   color: #ffffff;
+}
+
+.grid-span-12 {
+  @media(max-width: 585px) {
+    grid-column: span 12;
+  }
+}
+.grid-span-12-mobile {
+  grid-column: span 12;
+}
+.nav-link {
+  @media(max-width: 783px) {
+    font-size: 14px;
+    line-height: 19px;
+    width: 100%;
+    height: 51px;
+    padding: 5px 10px !important;
+
+  }
+}
+
+.text-right-385 {
+  @media(max-width: 783px) {
+    text-align: end;
+  }
+}
+
+.rates__nav-item {
+  @media(max-width: 783px) {
+    margin: 0 !important;
+    grid-column: span 4;
+  }
+
 }
 
 .nav-pills .nav-link {
@@ -153,6 +247,10 @@
 
 .tab-content {
   padding-top: 17px;
+
+  @media(max-width: 585px) {
+    padding: 0;
+  }
 }
 
 .tr-title {
@@ -206,6 +304,11 @@
 .tr-border {
   border-bottom: 1px solid var(--grey-button);
   border-top: 1px solid var(--grey-button);
+
+  @media(max-width: 1176px) {
+    border: none;
+  }
+
 }
 
 tr,
@@ -248,6 +351,10 @@ th {
   color: var(--primary-green);
 }
 
+.rates-conditions {
+  margin-bottom: 16px;
+}
+
 .memo__info {
   padding-top: 68px;
 
@@ -255,6 +362,10 @@ th {
   @media(max-width: 1176px) {
     padding-top: 42px;
     padding-bottom: 0;
+  }
+
+  @media(max-width: 585px) {
+    padding-top: 24px;
   }
 
   &-title {
@@ -265,10 +376,27 @@ th {
     @media(max-width: 1176px) {
       margin-bottom: 42px;
     }
+
+    @media(max-width: 585px) {
+      font-size: 12px;
+      line-height: 16px;
+      margin-bottom: 0;
+    }
+  }
+
+  &-text-link {
+    font-size: 12px !important;
+    line-height: 16px !important;
   }
 
   &-conditions {
     margin-bottom: 20px;
+
+    @media(max-width: 585px) {
+      font-size: 12px;
+      line-height: 16px;
+      margin-bottom: 16px;
+    }
   }
 
   &-description {
@@ -276,6 +404,12 @@ th {
 
     @media(max-width: 1176px) {
       margin-bottom: 56px;
+    }
+
+    @media(max-width: 585px) {
+      font-size: 12px;
+      line-height: 16px;
+      margin-bottom: 48px;
     }
   }
 
@@ -302,13 +436,41 @@ th {
       font-size: 14px;
       line-height: 19px;
       padding-left: 10px;
+
+      @media(max-width: 1176px) {
+
+        padding: 0;
+      }
+
+      @media(max-width: 585px) {
+        font-size: 12px;
+        line-height: 19px;
+      }
     }
+  }
+}
+
+.rates__important-block {
+  @media(max-width: 1176px) {
+    margin-bottom: 42px;
+
+  }
+
+  @media(max-width: 585px) {
+    margin-top: 8px;
+    margin-bottom: 24px;
   }
 }
 
 .hide-on-mobile {
   @media(max-width: 1176px) {
     display: none !important;
+  }
+}
+
+.show-on-mobile {
+  @media(max-width: 1176px) {
+    display: block;
   }
 }
 
@@ -335,6 +497,12 @@ th {
 
   &-footnotes {
     margin-top: 68px;
+    @media(max-width: 1176px) {
+      margin-top: 42px;
+    }
+    @media(max-width: 585px) {
+      margin-top: 24px;
+    }
   }
 }
 
