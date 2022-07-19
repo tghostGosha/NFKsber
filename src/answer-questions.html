@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html',{
+"title": "Вопрос-ответ"
+})
+
+<body>
+
+  @@include('html/header.html',{})
+  <main>
+    <section class="answer__question-section">
+      <div class="container">
+        <nav aria-label="Page navigation example">
+          <ul class="pagination">
+            <li class="page-item"><a class="page-link" href="index.html">Главная</a></li>
+            <li>
+              <svg width="20px" height="20px" class="svg-arrow-right-dims">
+                <use xlink:href="img/icons/icons.svg#arrow-right"></use>
+              </svg>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">Компания</a></li>
+            <li>
+              <svg width="20px" height="20px" class="svg-arrow-right-dims">
+                <use xlink:href="img/icons/icons.svg#arrow-right"></use>
+              </svg>
+            </li>
+            <li class="page-item"><a class="page-link" href="forum.html">Вопрос-ответ
+              </a></li>
+          </ul>
+        </nav>
+        <h2 class="answer__question-title">Вопрос-ответ</h2>
+        <p class="answer__question-description">Здесь вы найдете ответы на частые вопросы</p>
+        <div class="accordion answer__question-wrapper" id="accordionFlushExample">
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="accordionAnswerQuestion-headingOne">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#accordionAnswerQuestion-collapseOne" aria-expanded="true"
+                aria-controls="accordionAnswerQuestion-collapseOne">
+                <svg width="8px" height="16px" class="svg-arrow-accordion-dims">
+                  <use xlink:href="img/icons/icons.svg#arrow-right"></use>
+                </svg>
+                <h5 class="accordion-item-title">В каком объеме предоставляется кредитное плечо на валютном рынке?</h5>
+              </button>
+            </h2>
+            <div id="accordionAnswerQuestion-collapseOne" class="accordion-collapse collapse"
+              aria-labelledby="accordionAnswerQuestion-headingOne">
+              <div class="answer__accordion-body">
+                <p class="accordion-body-description">Кредитное плечо составляет 1 к 11, оно позволит вам увеличить
+                  размер сделки в 12 раз по сравнению с вложенными вами средствами</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="accordionAnswerQuestion-headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#accordionAnswerQuestion-collapseTwo" aria-expanded="true"
+                aria-controls="accordionAnswerQuestion-collapseTwo">
+                <svg width="8px" height="16px" class="svg-arrow-accordion-dims">
+                  <use xlink:href="img/icons/icons.svg#arrow-right"></use>
+                </svg>
+                <h5 class="accordion-item-title">Можно ли вывести с торгового счета приобретенную мной иностранную валюту?</h5>
+              </button>
+            </h2>
+            <div id="accordionAnswerQuestion-collapseTwo" class="accordion-collapse collapse"
+              aria-labelledby="accordionAnswerQuestion-headingTwo">
+              <div class="answer__accordion-body">
+                <p class="accordion-body-description">После приобретения иностранной валюты на Московской бирже физическое лицо или организация может вывести ее безо всяких ограничений на свою банковскую карту или расчетный счет. Впоследствии полученную валюту можно снять наличными в своем банке.</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="accordionAnswerQuestion-headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#accordionAnswerQuestion-collapseThree" aria-expanded="true"
+                aria-controls="accordionAnswerQuestion-collapseThree">
+                <svg width="8px" height="16px" class="svg-arrow-accordion-dims">
+                  <use xlink:href="img/icons/icons.svg#arrow-right"></use>
+                </svg>
+                <h5 class="accordion-item-title">Если я не собираюсь играть на бирже, есть ли смысл заключать договор на обслуживание на валютном рынке?</h5>
+              </button>
+            </h2>
+            <div id="accordionAnswerQuestion-collapseThree" class="accordion-collapse collapse"
+              aria-labelledby="accordionAnswerQuestion-headingThree">
+              <div class="answer__accordion-body">
+                <p class="accordion-body-description">Даже если вы приобретаете иностранную валюту только время от времени для расчетов в зарубежных поездках или хранения сбережений, приобретение иностранной валюты на бирже может быть существенно более выгодной, чем покупка наличной валюты в обменном пункте.
+                  <br><br>
+                  К примеру, вы хотите купить 10 000 долларов США. Средний курс продажи доллара в чебоксарских банках на 11 мая 2016 г. – 67,06 рублей.В результате затраты на покупку валюты в обменном пункте составят 670 634 рублей. Курс продажи доллара на биржевом рынке 11 мая 2016 г. в 16:00 по Московскому времени составлял 65,61 рублей. Таким образом, затраты на покупку 10 000 долларов на биржевом рынке без учета комиссии брокеру составили бы 656 140 рублей, то есть разница составляет 14 494 рублей. За вычетом всех затрат (комиссии биржи, комиссии брокера и т.п.) выгода составит 12 279,92 рублей.</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="accordionAnswerQuestion-headingFour">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#accordionAnswerQuestion-collapseFour" aria-expanded="true"
+                aria-controls="accordionAnswerQuestion-collapseFour">
+                <svg width="8px" height="16px" class="svg-arrow-accordion-dims">
+                  <use xlink:href="img/icons/icons.svg#arrow-right"></use>
+                </svg>
+                <h5 class="accordion-item-title">Кому могут быть интересны услуги на валютном рынке?</h5>
+              </button>
+            </h2>
+            <div id="accordionAnswerQuestion-collapseFour" class="accordion-collapse collapse"
+              aria-labelledby="accordionAnswerQuestion-headingFour">
+              <div class="answer__accordion-body">
+                <p class="accordion-body-description">
+                  <ul class="answer__accordion-list ">
+                  <li class="answer__list-item accordion-body-description">Вы являетесь физическим лицом и хотите покупать и продавать валюту с минимальными издержками с целью хранения личных сбережений или расчетов в зарубежных поездках.</li>
+                  <li class="answer__list-item accordion-body-description">Вы являетесь юридическим лицом и проводите конверсионные операции в рамках совершения экспортно-импортных операций (например, продаете туристические путевки, переводите денежные средства за рубеж с целью покупки импортных товаров и оборудования или продаете валютную выручку от экспорта товаров и услуг).</li>
+                  <li class="answer__list-item accordion-body-description">Вы хотите зарабатывать на курсовых колебаниях валют с минимальными комиссиями и плечом до 1:11, которое позволит вам увеличить размер сделки в 12 раз по сравнению с вложенными вами средствами. Соответственно в 12 раз возрастет и потенциал вашего дохода.</li>
+                </ul>
+              </p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="accordionAnswerQuestion-headingFive">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#accordionAnswerQuestion-collapseFive" aria-expanded="true"
+                aria-controls="accordionAnswerQuestion-collapseFive">
+                <svg width="8px" height="16px" class="svg-arrow-accordion-dims">
+                  <use xlink:href="img/icons/icons.svg#arrow-right"></use>
+                </svg>
+                <h5 class="accordion-item-title">Какие непредвиденные издержки могут возникнуть?</h5>
+              </button>
+            </h2>
+            <div id="accordionAnswerQuestion-collapseFive" class="accordion-collapse collapse"
+              aria-labelledby="accordionAnswerQuestion-headingFive">
+              <div class="answer__accordion-body">
+                <p class="accordion-body-description">Вы заранее знаете издержки, так как они установлены заключенным с Инвестиционной компанией договором. Инвестиционная компания может изменить условия договора только с вашего согласия, если вы подпишете соответствующее дополнительное соглашение, и никаким другим способом.</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="accordionAnswerQuestion-headingSix">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#accordionAnswerQuestion-collapseSix" aria-expanded="true"
+                aria-controls="accordionAnswerQuestion-collapseSix">
+                <svg width="8px" height="16px" class="svg-arrow-accordion-dims">
+                  <use xlink:href="img/icons/icons.svg#arrow-right"></use>
+                </svg>
+                <h5 class="accordion-item-title">Могут ли украсть деньги?</h5>
+              </button>
+            </h2>
+            <div id="accordionAnswerQuestion-collapseSix" class="accordion-collapse collapse "
+              aria-labelledby="accordionAnswerQuestion-headingSix">
+              <div class="answer__accordion-body">
+                <p class="accordion-body-description">Средства клиентов вкладываются в финансовые инструменты, украсть которые либо невозможно, либо просто бессмысленно, так как права по ним восстанавливаются в соответствии с законодательством Российской Федерации.</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="accordionAnswerQuestion-headingSeven">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#accordionAnswerQuestion-collapseSeven" aria-expanded="true"
+                aria-controls="accordionAnswerQuestion-collapseSeven">
+                <svg width="8px" height="16px" class="svg-arrow-accordion-dims">
+                  <use xlink:href="img/icons/icons.svg#arrow-right"></use>
+                </svg>
+                <h5 class="accordion-item-title">Какие налоги уплачиваются с дохода?</h5>
+              </button>
+            </h2>
+            <div id="accordionAnswerQuestion-collapseSeven" class="accordion-collapse collapse "
+              aria-labelledby="accordionAnswerQuestion-headingSeven">
+              <div class="answer__accordion-body">
+                <p class="accordion-body-description">Доходы облагаются по единой ставке 13% от полученного дохода.</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="accordionAnswerQuestion-headingeight">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#accordionAnswerQuestion-collapseeight" aria-expanded="true"
+                aria-controls="accordionAnswerQuestion-collapseeight">
+                <svg width="8px" height="16px" class="svg-arrow-accordion-dims">
+                  <use xlink:href="img/icons/icons.svg#arrow-right"></use>
+                </svg>
+                <h5 class="accordion-item-title">Лицензируется ли деятельность инвестиционных компаний?</h5>
+              </button>
+            </h2>
+            <div id="accordionAnswerQuestion-collapseeight" class="accordion-collapse collapse "
+              aria-labelledby="accordionAnswerQuestion-headingeight">
+              <div class="answer__accordion-body">
+                <p class="accordion-body-description">В соответствии с законодательством РФ деятельность по управлению средствами клиентов лицензируется и регулируется Центральным Банком Российской Федерации (ранее Федеральной службой по финансовым рынкам).</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="accordionAnswerQuestion-headingNine">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#accordionAnswerQuestion-collapseNine" aria-expanded="true"
+                aria-controls="accordionAnswerQuestion-collapseNine">
+                <svg width="8px" height="16px" class="svg-arrow-accordion-dims">
+                  <use xlink:href="img/icons/icons.svg#arrow-right"></use>
+                </svg>
+                <h5 class="accordion-item-title">За счет чего обеспечивается сохранность вложенных мною средств?</h5>
+              </button>
+            </h2>
+            <div id="accordionAnswerQuestion-collapseNine" class="accordion-collapse collapse "
+              aria-labelledby="accordionAnswerQuestion-headingNine">
+              <div class="answer__accordion-body">
+                <p class="accordion-body-description">Доверительный управляющий инвестирует средства в обязательства, исполнение которых обеспечено устойчивым финансовым положением обязавшегося лица. Например, безопасность вложения денежных средств в финансовые инструменты лизинговой компании гарантирована тем, что имущество, передаваемое в лизинг, застраховано на полную стоимость от любого ущерба или утраты.
+                  <br><br>
+                  Такое страхование направлено в первую очередь на то, чтобы избежать сколько-нибудь существенных убытков, которые могут быть причинены повреждением или утратой лизингового имущества. Следовательно, вложение денежных средств в обязательства лизинговой компании представляется выгодным и достаточно безопасным с позиции соблюдения интересов инвесторов.</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="accordionAnswerQuestion-headingTen">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#accordionAnswerQuestion-collapseTen" aria-expanded="true"
+                aria-controls="accordionAnswerQuestion-collapseTen">
+                <svg width="8px" height="16px" class="svg-arrow-accordion-dims">
+                  <use xlink:href="img/icons/icons.svg#arrow-right"></use>
+                </svg>
+                <h5 class="accordion-item-title">Куда вкладываются мои средства?</h5>
+              </button>
+            </h2>
+            <div id="accordionAnswerQuestion-collapseTen" class="accordion-collapse collapse "
+              aria-labelledby="accordionAnswerQuestion-headingTen">
+              <div class="answer__accordion-body">
+                <p class="accordion-body-description">Вы получаете отчет о вложениях не реже одного раза в квартал в соответствии с законодательством Российской Федерации. При этом Инвестиционная компания по вашему заявлению обязана представить вам отчет и за более короткий период времени. Вы всегда знаете, куда инвестированы ваши деньги. Например, в данный момент предпочтение отдается финансированию лизинговых проектов в форме покупки финансовых инструментов.</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="accordionAnswerQuestion-headingEleven">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#accordionAnswerQuestion-collapseEleven" aria-expanded="true"
+                aria-controls="accordionAnswerQuestion-collapseEleven">
+                <svg width="8px" height="16px" class="svg-arrow-accordion-dims">
+                  <use xlink:href="img/icons/icons.svg#arrow-right"></use>
+                </svg>
+                <h5 class="accordion-item-title">А если банкротство?</h5>
+              </button>
+            </h2>
+            <div id="accordionAnswerQuestion-collapseEleven" class="accordion-collapse collapse "
+              aria-labelledby="accordionAnswerQuestion-headingEleven">
+              <div class="answer__accordion-body">
+                <p class="accordion-body-description">Все средства клиентов Инвестиционная компания хранит на специальном счете, обособленном от собственных средств компании. В соответствии с законодательством Российской Федерации в случае банкротства инвестиционной компании на средства клиентов, находящиеся в управлении, не может быть обращено взыскание кредиторов ни при каких обстоятельствах.</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="accordionAnswerQuestion-headingTwelve">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#accordionAnswerQuestion-collapseTwelve" aria-expanded="true"
+                aria-controls="accordionAnswerQuestion-collapseTwelve">
+                <svg width="8px" height="16px" class="svg-arrow-accordion-dims">
+                  <use xlink:href="img/icons/icons.svg#arrow-right"></use>
+                </svg>
+                <h5 class="accordion-item-title">Как инвестируют деньги клиентов?</h5>
+              </button>
+            </h2>
+            <div id="accordionAnswerQuestion-collapseTwelve" class="accordion-collapse collapse "
+              aria-labelledby="accordionAnswerQuestion-headingTwelve">
+              <div class="answer__accordion-body">
+                <p class="accordion-body-description">Вы получаете отчет о вложениях не реже одного раза в квартал в соответствии с законодательством Российской Федерации. При этом Инвестиционная компания по вашему заявлению обязана предоставить Вам отчет и за более короткий период времени. Вы всегда знаете, куда и с какой эффективностью инвестированы ваши деньги.</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="accordionAnswerQuestion-headingThirteen">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#accordionAnswerQuestion-collapseThirteen" aria-expanded="true"
+                aria-controls="accordionAnswerQuestion-collapseThirteen">
+                <svg width="8px" height="16px" class="svg-arrow-accordion-dims">
+                  <use xlink:href="img/icons/icons.svg#arrow-right"></use>
+                </svg>
+                <h5 class="accordion-item-title">Как сильно уменьшают прибыль от использования ваших денег издержки управляющего?</h5>
+              </button>
+            </h2>
+            <div id="accordionAnswerQuestion-collapseThirteen" class="accordion-collapse collapse "
+              aria-labelledby="accordionAnswerQuestion-headingThirteen">
+              <div class="answer__accordion-body">
+                <p class="accordion-body-description">Вы заранее знаете максимально возможную величину издержек - она указана в Договоре доверительного управления Вашими средствами.</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item no-bottom-border">
+            <h2 class="accordion-header" id="accordionAnswerQuestion-headingFourteen">
+              <button class="accordion-button collapsed " type="button" data-bs-toggle="collapse"
+                data-bs-target="#accordionAnswerQuestion-collapseFourteen" aria-expanded="true"
+                aria-controls="accordionAnswerQuestion-collapseFourteen">
+                <svg width="8px" height="16px" class="svg-arrow-accordion-dims">
+                  <use xlink:href="img/icons/icons.svg#arrow-right"></use>
+                </svg>
+                <h5 class="accordion-item-title">Какова Ваша доля в прибыли от использования ваших денег?</h5>
+              </button>
+            </h2>
+            <div id="accordionAnswerQuestion-collapseFourteen" class="accordion-collapse collapse"
+              aria-labelledby="accordionAnswerQuestion-headingFourteen">
+              <div class="answer__accordion-body">
+                <p class="accordion-body-description">Вы можете каждый день получать сведения о стоимости ваших вложений, находящихся в управлении у Инвестиционной компании, а также информацию о накопленной прибыли. Вы в любой момент можете забрать всю прибыль.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+  @@include('html/footer.html',{})
+
+  <script src="js/app.min.js"></script>
+
+  <!-- <script srce_modules/nouislider/"></script>="/nod -->
+  <!-- <script src="/nouislider/documentation/assets/wNumb.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
+  <!-- <script src="https://unpkg.com/@popperjs/core@2"></script> -->
+
+
+</body>
+
+</html>

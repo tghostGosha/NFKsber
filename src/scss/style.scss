@@ -33,6 +33,7 @@
 @import "company/electronic__document.scss";
 @import "company/foreign-taxpayers.scss";
 @import "company/forum.scss";
+@import "company/answer-questions.scss";
 
 
 
@@ -190,17 +191,21 @@ button {
 }
 
 .svg-arrow-right-dims {
-  margin-left: 20px;
-
+  margin-left: 12px;
+  margin-right: 12px;
+  width: 4px;
+    height: 8px;
   @media(max-width: 585px) {
     margin-left: 12px;
   }
 
 }
 .svg-arrow-left-dims {
+  width: 4px;
+    height: 8px;
   color: var(--secondary-text);
   margin: 0;
-  margin-right: 20px;
+  margin-right: 12px;
   @media(max-width: 585px) {
     margin-right: 12px;
     width: 4px;

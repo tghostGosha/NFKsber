@@ -13926,22 +13926,6 @@ input::placeholder {
   display: none;
 }
 
-.accordion-button::before {
-  flex-shrink: 0;
-  width: var(--bs-accordion-btn-icon-width);
-  height: var(--bs-accordion-btn-icon-width);
-  margin-right: 40px;
-  content: "";
-  background-image: var(--bs-accordion-btn-icon);
-  background-repeat: no-repeat;
-  background-size: var(--bs-accordion-btn-icon-width);
-  transition: var(--bs-accordion-btn-icon-transition);
-}
-
-.accordion-button:not(.collapsed)::before {
-  transform: var(--bs-accordion-btn-icon-transform);
-}
-
 .accordion-item {
   border: 0;
   border-bottom: 1px solid var(--grey-button);
@@ -16715,6 +16699,59 @@ th {
   padding: 18px 26px;
 }
 
+.answer__question-section {
+  padding-bottom: 112px;
+}
+
+.answer__question-title {
+  margin-bottom: 28px;
+}
+
+.answer__question-description {
+  margin-bottom: 28px;
+}
+
+.svg-arrow-accordion-dims {
+  transition: all 0.1s ease-in-out 0.1s;
+  transform: rotate(90deg);
+  color: var(--secondary-text);
+  margin-right: 40px;
+}
+
+.accordion-button:not(.collapsed) .svg-arrow-accordion-dims {
+  transform: rotate(270deg);
+}
+
+.answer__accordion-body {
+  padding: 0 0 28px 93px;
+}
+
+.answer__accordion-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.answer__list-item {
+  position: relative;
+}
+.answer__list-item:not(:last-child) {
+  margin-bottom: 16px;
+}
+.answer__list-item::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  position: absolute;
+  background-color: var(--primary-green);
+  top: 10px;
+  left: -20px;
+}
+
+.no-bottom-border {
+  border-bottom: none;
+}
+
 :root {
   --primary-green: #44953D;
   --secondary-green: #2D7A26;
@@ -16880,7 +16917,10 @@ button {
 }
 
 .svg-arrow-right-dims {
-  margin-left: 20px;
+  margin-left: 12px;
+  margin-right: 12px;
+  width: 4px;
+  height: 8px;
 }
 @media (max-width: 585px) {
   .svg-arrow-right-dims {
@@ -16889,9 +16929,11 @@ button {
 }
 
 .svg-arrow-left-dims {
+  width: 4px;
+  height: 8px;
   color: var(--secondary-text);
   margin: 0;
-  margin-right: 20px;
+  margin-right: 12px;
 }
 @media (max-width: 585px) {
   .svg-arrow-left-dims {
