@@ -16752,6 +16752,67 @@ th {
   border-bottom: none;
 }
 
+.cheb-map {
+  width: 100%;
+  height: 400px;
+}
+
+.contacts__section {
+  padding-top: 30px;
+  padding-bottom: 112px;
+}
+.contacts__company-title {
+  margin-bottom: 68px;
+}
+.contacts__company-subtitle {
+  margin-bottom: 28px;
+}
+.contacts__cheb-map {
+  margin-bottom: 68px;
+}
+.contacts__cheb-title, .contacts__msk-title {
+  margin-bottom: 16px;
+}
+.contacts__img-wrapper {
+  position: relative;
+  margin-bottom: 32px;
+  margin-top: 32px;
+}
+.contacts__company-wrapper {
+  display: flex;
+}
+.contacts__company-tel {
+  margin-right: 138px;
+  display: flex;
+  flex-direction: column;
+}
+.contacts__company-schedule {
+  margin-right: 138px;
+}
+.contacts__title {
+  margin-bottom: 12px;
+}
+
+.company__requisites {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 68px;
+}
+
+.cheb-marker {
+  color: #DD270F;
+  position: absolute;
+  left: 48%;
+  top: 52%;
+}
+
+.msk-marker {
+  color: #DD270F;
+  position: absolute;
+  left: 53%;
+  top: 37%;
+}
+
 :root {
   --primary-green: #44953D;
   --secondary-green: #2D7A26;
