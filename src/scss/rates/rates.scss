@@ -462,11 +462,7 @@ th {
   }
 }
 
-.hide-on-mobile {
-  @media(max-width: 1176px) {
-    display: none !important;
-  }
-}
+
 
 .show-on-mobile {
   @media(max-width: 1176px) {

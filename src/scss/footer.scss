@@ -1,6 +1,10 @@
 .footer {
   border-top: 1px solid var(--grey-button);
   position: relative;
+  @media(max-width: 1176px) {
+    border: none;
+  }
+
 
   &-consult {
 

@@ -13,23 +13,24 @@
         <div class="brokers__hero-container">
           <nav aria-label="Page navigation example">
             <ul class="pagination">
-              <li class="page-item"><a class="page-link" href="index.html">Главная</a></li>
-              <li>
-                <svg xmlns="http://www.w3.org/2000/svg" width="8" height="16" fill="currentColor"
-                  class="bi bi-chevron-right" viewBox="0 0 16 16">
-                  <path fill-rule="evenodd"
-                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+              <li class="page-item-mobile">
+                <svg width="20px" height="20px" class="svg-arrow-right-dims">
+                  <use xlink:href="img/icons/icons.svg#arrow-left"></use>
                 </svg>
               </li>
-              <li class="page-item"><a class="page-link" href="#">Услуги</a></li>
-              <li>
-                <svg xmlns="http://www.w3.org/2000/svg" width="8" height="16" fill="currentColor"
-                  class="bi bi-chevron-right" viewBox="0 0 16 16">
-                  <path fill-rule="evenodd"
-                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+              <li class="page-item "><a class="page-link" href="index.html">Главная</a></li>
+              <li class="page-item hide-on-mobile">
+                <svg width="20px" height="20px" class="svg-arrow-right-dims ">
+                  <use xlink:href="img/icons/icons.svg#arrow-right"></use>
                 </svg>
               </li>
-              <li class="page-item"><a class="page-link" href="brokerage-services.html">Брокерское Обслуживание</a></li>
+              <li class="page-item hide-on-mobile"><a class="page-link" href="#">Услуги</a></li>
+              <li class="page-item hide-on-mobile">
+                <svg width="20px" height="20px" class="svg-arrow-right-dims">
+                  <use xlink:href="img/icons/icons.svg#arrow-right"></use>
+                </svg>
+              </li>
+              <li class="page-item hide-on-mobile"><a class="page-link" href="brokerage-services.html">Брокерское Обслуживание</a></li>
             </ul>
           </nav>
           <h2 class="brokers__hero-title">Брокерское обслуживание</h2>
@@ -56,7 +57,7 @@
               <img class="brokers__about-img" src="img/brokerage-services/about.png" alt="">
             </div>
             <div class="brokers__about-card-right card-right">
-              <h4 class="card-right-title">Брокерское обслуживание</h4>
+              <h4 class="card-right-title brokers__about-card-title">Брокерское обслуживание</h4>
               <p class="card-right-description">Это наиболее действенный механизм приумножения капитала, позволяющий при
                 грамотном подходе получить доход, многократно превышающий проценты по банковским вкладам или доходы
                 от вложений в недвижимость.
@@ -99,7 +100,7 @@
         <div class="brokers__app">
           <div class="brokers__app-card brokers-card">
             <div class="brokers__app-card-left card-left">
-              <h4 class="brokers__app-title">Мобильное приложение</h4>
+              <h3 class="brokers__app-title">Мобильное приложение</h3>
               <ul class="brokers__app-list brokers__list">
                 <li class="brokers__list-item">Полный каталог ценных бумаг</li>
                 <li class="brokers__list-item">Удобное пополнение и вывод денег со счёта</li>
@@ -259,14 +260,14 @@
               <img class="brokers__service-img" src="img/brokerage-services/service.png" alt="services">
             </div>
             <div class="brokers__service-card-right card-right">
-              <h4 class="card-right-title">Условия обслуживания:</h4>
+              <h3 class="card-right-title">Условия обслуживания:</h3>
               <ul class="brokers__service-list brokers__list">
-                <li class="brokers__list-item">Прием брокером заявок на совершение операций купли-продажи ценных бумаг
+                <li class="service__list-item">Прием брокером заявок на совершение операций купли-продажи ценных бумаг
                   осуществляется как классическим способом (по телефону), так и через компьютер или телефон.</li>
-                <li class="brokers__list-item">Установка бесплатной программы интернет-торговли «ИТС-брокер»
+                <li class="service__list-item">Установка бесплатной программы интернет-торговли «ИТС-брокер»
                   и получение у брокера персональных файлов для работы в программе. Мы оказываем помощь в освоении
                   торговой программы и консультируем при возникновении любых вопросов.</li>
-                <li class="brokers__list-item">Возможность самостоятельного подключения к торгам, отслеживания
+                <li class="service__list-item">Возможность самостоятельного подключения к торгам, отслеживания
                   и выставления заявок в режиме онлайн. Получение полной информации о совершаемых на бирже сделках.
                 </li>
               </ul>
@@ -276,7 +277,7 @@
         <div class="brokers__education">
           <div class="brokers__education-card brokers-card">
             <div class="brokers__education-card-left card-left">
-              <h4 class="brokers__education-title">Бесплатное обучение</h4>
+              <h3 class="brokers__education-title">Бесплатное обучение</h3>
               <p class="brokers__education-description">Вы можете записаться на обучающий семинар для новичков,
                 желающих постичь азы торговли на фондовом и валютном рынках.</p>
               <div class="brokers__education-buttons">
