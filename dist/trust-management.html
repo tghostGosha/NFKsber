@@ -363,26 +363,31 @@
         <div class="trust__hero-container">
           <nav aria-label="Page navigation example">
             <ul class="pagination">
-              <li class="page-item"><a class="page-link" href="index.html">Главная</a></li>
-              <svg xmlns="http://www.w3.org/2000/svg" width="8" height="16" fill="currentColor"
-                class="bi bi-chevron-right" viewBox="0 0 16 16">
-                <path fill-rule="evenodd"
-                  d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
-              </svg>
-              <li class="page-item"><a class="page-link" href="#">Услуги</a></li>
-              <svg xmlns="http://www.w3.org/2000/svg" width="8" height="16" fill="currentColor"
-                class="bi bi-chevron-right" viewBox="0 0 16 16">
-                <path fill-rule="evenodd"
-                  d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
-              </svg>
-              <li class="page-item"><a class="page-link" href="trust-management.html">Доверительное управление</a></li>
+              <li class="page-item-mobile">
+                <svg width="20px" height="20px" class="svg-arrow-right-dims">
+                  <use xlink:href="img/icons/icons.svg#arrow-left"></use>
+                </svg>
+              </li>
+              <li class="page-item "><a class="page-link" href="index.html">Главная</a></li>
+              <li class="page-item hide-on-mobile">
+                <svg width="20px" height="20px" class="svg-arrow-right-dims ">
+                  <use xlink:href="img/icons/icons.svg#arrow-right"></use>
+                </svg>
+              </li>
+              <li class="page-item hide-on-mobile"><a class="page-link" href="services.html">Услуги</a></li>
+              <li class="page-item hide-on-mobile">
+                <svg width="20px" height="20px" class="svg-arrow-right-dims">
+                  <use xlink:href="img/icons/icons.svg#arrow-right"></use>
+                </svg>
+              </li>
+              <li class="page-item hide-on-mobile"><a class="page-link" href="trust-management.html">Доверительное управление</a></li>
             </ul>
           </nav>
           <h2 class="trust__hero-title">Доверительное управление</h2>
           <p class="trust__hero-description">Новые стратегии доверительного управления, разработанные
-            АО «НФК-Сбережения» в связи с изменением рыночных условий, призваны защитить инвесторов от инфляции.
+            АО&nbsp;«НФК&nbsp;-&nbsp;Сбережения» в связи с изменением рыночных условий, призваны защитить инвесторов от инфляции.
             Выберите подходящую именно Вам стратегию в зависимости от ваших финансовых целей</p>
-          <a type="button" class="button trust__hero-button primary-button header__button" data-bs-toggle="modal"
+          <a type="button" class="button trust__hero-button primary-button " data-bs-toggle="modal"
             data-bs-target="#exampleModal">Подробнее</a>
         </div>
       </div>
@@ -390,13 +395,16 @@
     <section class="trust__strategy ">
       <div class="container">
         <div class="strategy__about">
-          <div class="strategy__about-card">
-            <div class="strategy__about-card-left card-left strategy__card-img"></div>
-            <div class="strategy__about-card-right card-right ">
-              <h4 class="card-right-title">Представленные Стандартные стратегии доверительного управления предполагают
+         
+          <div class="strategy__about-card brokers-card">
+            <div class="strategy__about-card-left card-left ">
+              <img class="strategy__about-img" src="img/trust-management/strategy-about.png" alt="">
+            </div>
+            <div class="strategy__about-card-right card-right">
+              <h4 class="card-right-title strategy__about-card-title">Представленные Стандартные стратегии доверительного управления предполагают
                 прямые инвестиции в лизинговые активы посредством внебиржевых финансовых инструментов</h4>
-              <p class="card-right-description">Это простой и понятный способ вложения денег, не требующий от <br>
-                инвестора специальных знаний и затрат времени, а также не зависящий <br> от колебаний биржевых
+              <p class="strategy__about-card-description">Это простой и понятный способ вложения денег,&nbsp;не&nbsp;требующий от 
+                инвестора специальных&nbsp;знаний и затрат времени, а также не зависящий  от колебаний биржевых
                 котировок.
               </p>
             </div>
@@ -405,16 +413,18 @@
         <h3 class="trust__strategy-title">Стратегии доверительного управления</h3>
         <div class="trust__strategy-cards-container">
           <div class="trust__strategy-card">
+            <div class="strategy-card__header">
+              <h3 class="card__right-title">Накопление</h3>
+              <p class="card__right-description">Стратегия «Накопление» совмещает высокую ожидаемую доходность 
+                с возможностью
+                досрочного вывода капитала без потери накопленного дохода</p>
+            </div>
             <div class="strategy-card__left">
               <div class="card__left-img-container">
                 <img src="img/trust-management/savings.png" alt="Накопления">
               </div>
             </div>
             <div class="strategy-card__right">
-              <h3 class="card__right-title">Накопление</h3>
-              <p class="card__right-description">Стратегия «Накопление» совмещает высокую ожидаемую доходность <br>
-                с возможностью
-                досрочного вывода капитала без потери накопленного дохода</p>
               <div class="card__right-conditions">
                 <div class="conditions-bet conditions-element">
                   <h4 class="conditions-bet-title">25%
@@ -433,20 +443,25 @@
 
                 </div>
               </div>
+            </div>
+            <div class="strategy-card__footer">
               <a href="#" class="card__right-button button primary-button">Подробнее о стратегии</a>
             </div>
           </div>
           <div class="trust__strategy-card">
+            <div class="strategy-card__header">
+              <h3 class="card__right-title">Регулярный доход</h3>
+              <p class="card__right-description">Стратегия «Регулярный доход» позволяет инвестору получать
+                стабильный  ежемесячный доход с переводом на его собственный
+                банковский счет</p>
+            </div>
             <div class="strategy-card__left">
               <div class="card__left-img-container">
                 <img src="img/trust-management/income.png" alt="Накопления">
               </div>
             </div>
             <div class="strategy-card__right">
-              <h3 class="card__right-title">Регулярный доход</h3>
-              <p class="card__right-description">Стратегия «Регулярный доход» позволяет инвестору получать
-                стабильный <br> ежемесячный доход с переводом на его собственный
-                банковский счет</p>
+              
               <div class="card__right-conditions">
                 <div class="conditions-bet conditions-element">
                   <h4 class="conditions-bet-title">26%
@@ -465,20 +480,25 @@
 
                 </div>
               </div>
+            </div>
+            <div class="strategy-card__footer">
               <a href="#" class="card__right-button button primary-button">Подробнее о стратегии</a>
             </div>
           </div>
           <div class="trust__strategy-card">
+            <div class="strategy-card__header">
+              <h3 class="card__right-title">Максимум</h3>
+              <p class="card__right-description">Стратегия «Максимум» подходит инвесторам, стремящимся получить
+                максимальный 
+                возможный доход на инвестиционном горизонте не менее одного года</p>
+            </div>
             <div class="strategy-card__left">
               <div class="card__left-img-container">
                 <img src="img/trust-management/maximum.png" alt="Накопления">
               </div>
             </div>
             <div class="strategy-card__right">
-              <h3 class="card__right-title">Максимум</h3>
-              <p class="card__right-description">Стратегия «Максимум» подходит инвесторам, стремящимся получить
-                максимальный <br>
-                возможный доход на инвестиционном горизонте не менее одного года</p>
+              
               <div class="card__right-conditions">
                 <div class="conditions-bet conditions-element">
                   <h4 class="conditions-bet-title">30%
@@ -497,6 +517,8 @@
 
                 </div>
               </div>
+            </div>
+            <div class="strategy-card__footer">
               <a href="#" class="card__right-button button primary-button">Подробнее о стратегии</a>
             </div>
           </div>

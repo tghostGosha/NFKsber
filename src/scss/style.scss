@@ -104,8 +104,8 @@ h2 {
   line-height: 46px;
 
   @media(max-width: 585px) {
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 32px;
+    line-height: 40px;
   }
 }
 
@@ -354,7 +354,7 @@ button {
   position: relative;
   font-size: 7px;
   right: 0;
-  top: -5px;
+  top: -7px;
   @media(max-width: 585px) {
     font-size: 7px;
   }
@@ -369,6 +369,9 @@ button {
   border-left: 5px solid var(--primary-blue);
   padding: 26px 166px 26px 35px;
   // margin: 68px 0;
+  @media(max-width: 1176px) {
+    padding: 26px 118px 26px 35px;
+  }
   @media(max-width: 585px) {
     padding: 16px 46px 16px 8px;
   }
@@ -381,7 +384,15 @@ button {
     }
   }
 }
-
+.svg-important-dims {
+  width: 46px;
+    height: 46px;
+  margin-right: 28px;
+  @media(max-width: 1176px) {
+    width: 46px;
+    height: 46px;
+  }
+}
 //========Ссылка на файл
 .get__file-link {
   display: flex;

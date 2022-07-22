@@ -363,20 +363,24 @@
         <div class="universal__hero-container">
           <nav aria-label="Page navigation example">
             <ul class="pagination">
-              <li class="page-item"><a class="page-link" href="index.html">Главная</a></li>
-              <svg xmlns="http://www.w3.org/2000/svg" width="8" height="16" fill="currentColor"
-                class="bi bi-chevron-right" viewBox="0 0 16 16">
-                <path fill-rule="evenodd"
-                  d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
-              </svg>
-              <li class="page-item"><a class="page-link" href="#">Услуги</a></li>
-              <svg xmlns="http://www.w3.org/2000/svg" width="8" height="16" fill="currentColor"
-                class="bi bi-chevron-right" viewBox="0 0 16 16">
-                <path fill-rule="evenodd"
-                  d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
-              </svg>
-              <li class="page-item"><a class="page-link" href="universal-account.html">Универсальный
-                  инвестиционный счет</a></li>
+              <li class="page-item-mobile">
+                <svg width="20px" height="20px" class="svg-arrow-right-dims">
+                  <use xlink:href="img/icons/icons.svg#arrow-left"></use>
+                </svg>
+              </li>
+              <li class="page-item "><a class="page-link" href="index.html">Главная</a></li>
+              <li class="page-item hide-on-mobile">
+                <svg width="20px" height="20px" class="svg-arrow-right-dims ">
+                  <use xlink:href="img/icons/icons.svg#arrow-right"></use>
+                </svg>
+              </li>
+              <li class="page-item hide-on-mobile"><a class="page-link" href="services.html">Услуги</a></li>
+              <li class="page-item hide-on-mobile">
+                <svg width="20px" height="20px" class="svg-arrow-right-dims">
+                  <use xlink:href="img/icons/icons.svg#arrow-right"></use>
+                </svg>
+              </li>
+              <li class="page-item hide-on-mobile"><a class="page-link" href="universal-account.html">Универсальный инвестиционный счет</a></li>
             </ul>
           </nav>
           <h2 class="universal__hero-title">Универсальный
@@ -388,8 +392,8 @@
               с подходящей доходностью и нужным сроком обращения</li>
           </ul>
           <div class="brokers__hero-buttons">
-            <a type="button" class="header__link-consalt grey-button brokers__hero-buttons-grey" data-bs-toggle="modal"
-              data-bs-target="#exampleModal">Получить бесплатную консультанцию</a>
+            <a type="button" class=" grey-button brokers__hero-buttons-grey" data-bs-toggle="modal"
+              data-bs-target="#exampleModal">Получить консультанцию</a>
             <button class="button primary-button header__button">Открыть счет</button>
           </div>
         </div>
@@ -403,48 +407,52 @@
               <img class="universal__about-img" src="img/universal-account/alternative.png" alt="Накопления">
             </div>
             <div class="universal__info-card-right card-right ">
-              <h4 class="card-right-title">Альтернатива банковским вкладам</h4>
-              <p class="card-right-description">В настоящее время, когда ставки по банковским вкладам не превышают
-                отметку 7 - 9% годовых1, выбор надежного, эффективного и выгодного способа вложения денежных средств
+              <h4 class="universal__card-right-title">Альтернатива банковским вкладам</h4>
+              <p class="universal__card-right-description">В настоящее время, когда ставки по банковским вкладам не превышают
+                отметку 7 - 9% годовых<span class="letter-lowercase-end">1</span>, выбор надежного, эффективного и выгодного способа вложения денежных средств
                 является главным вопросом для большинства частных инвесторов.
               </p>
             </div>
           </div>
-          <p class="universal__info-description-first">Акционерное общество «Инвестиционная компания «НФК-Сбережения»
-            успешно работает на рынке финансовых услуг с 2003 года. Мы являемся лицензированным профессиональным
-            участником рынка ценных бумаг с правом осуществления широкого спектра операций на финансовых рынках:
-            брокерской деятельности, дилерской деятельности, деятельности по управлению ценными бумагами и депозитарной
-            деятельности. Наша компания является одним из крупнейших операторов на рынке ценных бумаг на территории
-            Приволжского федерального округа2</p>
-          <p class="universal__info-description-second">Для удовлетворения растущих запросов инвесторов специалисты АО
-            «НФК-Сбережения» разработали новый финансовый продукт – Универсальный инвестиционный счет (УИС), который
-            предназначен для тех, кто стремится к получению стабильного и регулярного дохода, но при этом не обязательно
-            планирует «играть на бирже». Универсальный инвестиционный счет позволяет вкладывать средства через брокера
-            не только на биржевом рынке, но и на внебиржевом рынке в различные финансовые инструменты, в том числе в
-            инструменты с фиксированным доходом (такие как векселя или облигации) на различные сроки и с разным уровнем
-            дохода в рамках одного договора</p>
+          <div class="universal__info-description" >
+            <p class="universal__info-description-first">Акционерное общество «Инвестиционная компания «НФК-Сбережения»
+              успешно работает на рынке финансовых услуг с 2003 года. Мы являемся лицензированным профессиональным
+              участником рынка ценных бумаг с правом осуществления широкого спектра операций на финансовых рынках:
+              брокерской деятельности, дилерской деятельности, деятельности по управлению ценными бумагами и депозитарной
+              деятельности. Наша компания является одним из крупнейших операторов на рынке ценных бумаг на территории
+              Приволжского федерального округа<span class="letter-lowercase-end">2</span>
+            </p>
+            <p class="universal__info-description-second">Для удовлетворения растущих запросов инвесторов специалисты АО
+              «НФК-Сбережения» разработали новый финансовый продукт – Универсальный инвестиционный счет (УИС), который
+              предназначен для тех, кто стремится к получению стабильного и регулярного дохода, но при этом не обязательно
+              планирует «играть на бирже». Универсальный инвестиционный счет позволяет вкладывать средства через брокера
+              не только на биржевом рынке, но и на внебиржевом рынке в различные финансовые инструменты, в том числе в
+              инструменты с фиксированным доходом (такие как векселя или облигации) на различные сроки и с разным уровнем
+              дохода в рамках одного договора</p>
+          </div>
+          
           <p class="universal__info-description-third">Кроме того, Универсальный инвестиционный счет можно использовать
             в режиме индивидуального инвестиционного счета, предусмотренного федеральным законом «О рынке ценных бумаг»
             и Налоговым кодексом РФ. Это позволит воспользоваться налоговым вычетом на сумму инвестиций и вернуть из
             бюджета НДФЛ, если он ранее был удержан из любых ваших доходов (заработной платы, доходов от продажи любого
-            имущества или сдачи его в аренду, доходов от предпринимательской деятельности и т.п.)4</p>
+            имущества или сдачи его в аренду, доходов от предпринимательской деятельности и т.п.)<span class="letter-lowercase-end">4</span></p>
           <div class="universal__conditions">
             <div class="universal__conditions-card">
               <div class="universal__conditions-card-left ">
                 <h4 class="card-right-title">Минимальная сумма для инвестирования
-                  составляет 10 000 рублей</h4>
-                <p>На счет можно дополнительно вносить денежные средства, при этом минимальный уровень дополнительного
+                  составляет 10&nbsp;000&nbsp;рублей</h4>
+                <p class="universal__conditions-card-description">На счет можно дополнительно вносить денежные средства, при этом минимальный уровень дополнительного
                   взноса не установлен</p>
               </div>
               <div class="universal__conditions-card-right">
-                <img class="universal__about-img" src="img/universal-account/minimal.png" alt="Накопления">
+                <img class="universal__conditions-img" src="img/universal-account/minimal.png" alt="Накопления">
               </div>
             </div>
           </div>
           <div class="universal__possibility">
             <div class="universal__possibility-card">
               <div class="universal__possibility-card-left">
-                <img class="universal__about-img" src="img/universal-account/possibility.png" alt="Накопления">
+                <img class="universal__possibility-img" src="img/universal-account/possibility.png" alt="Накопления">
               </div>
               <div class="universal__possibility-card-right card-right ">
                 <h4 class="card-right-title">Возможности, которые предоставляет
@@ -504,22 +512,25 @@
           </form>
         </div>
         <div class="important__block">
-          <svg width="20px" height="20px" class="svg-important-dims">
-            <use xlink:href="img/icons/icons.svg#important"></use>
-          </svg>
+          <div>
+            <svg width="20px" height="20px" class="svg-important-dims">
+              <use xlink:href="img/icons/icons.svg#important"></use>
+            </svg>
+          </div>
+          
           <span class="important__block-description">Информацию о доступных на текущий момент финансовых инструментах и уровнях доходности по ним клиенты Компании могут получить в офисе
             АО «НФК-Сбережения» или по телефону <a href="#" class="important__description-link">8 800 200-84-84</a></span>
         </div>
         <div class="universal__about-block">
-          <p class="universal__about-description"><span class="letter-lowercase">1</span>По информации с сайта Банка России <a class="universal__about-description-link"
+          <p class="universal__about-description text-indent"><span class="letter-lowercase">1</span>По информации с сайта Банка России <a class="universal__about-description-link"
               href="http://www.cbr.ru/vfs/statistics/pdko/int_rat/deposits.xlsx">(http://www.cbr.ru/vfs/statistics/pdko/int_rat/deposits.xlsx)
             </a>о базовом уровне доходности вкладов по состоянию на 10 августа 2020 года.
           </p>
-          <p class="universal__about-description"><span class="letter-lowercase">2</span> По размеру собственных средств по состоянию на 31.07.2017 г. из
+          <p class="universal__about-description text-indent"><span class="letter-lowercase">2</span> По размеру собственных средств по состоянию на 31.07.2017 г. из
             числа некредитных организаций - профессиональных участников рынка ценных бумаг, зарегистрированных на
             территории Приволжского федерального округа.
           </p>
-          <p class="universal__about-description"><span class="letter-lowercase">3</span> Проценты начисляются на денежные средства, внесенные на счет клиента
+          <p class="universal__about-description text-indent"><span class="letter-lowercase">3</span> Проценты начисляются на денежные средства, внесенные на счет клиента
             у брокера, свободные от обязательств по сделкам клиента, а также от обязательств Клиента перед Брокером, в
             течение первых 30 дней после подписания договора универсального инвестиционного счета при одновременном
             выполнении следующих условий: отсутствие сделок по счету Клиента в течение первых 30 (Тридцати) дней после
@@ -529,7 +540,7 @@
             Регламентом Акционерного общества «Инвестиционная компания «НФК-Сбережения» «О порядке осуществления
             действий на рынке ценных бумаг», опубликованным по следующей ссылке.
           </p>
-          <p class="universal__about-description"><span class="letter-lowercase">4</span> Ежегодно клиенту может возвращаться в форме налогового вычета до 13%
+          <p class="universal__about-description text-indent"><span class="letter-lowercase">4</span> Ежегодно клиенту может возвращаться в форме налогового вычета до 13%
             от внесенной на счет суммы, но не более 52 000 рублей в год.
           </p>
           

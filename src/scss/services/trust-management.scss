@@ -1,64 +1,196 @@
 .trust__strategy {
   padding-bottom: 133px;
+
+  @media(max-width: 1176px) {
+    padding-bottom: 56px;
+  }
 }
 
 .trust__hero {
   background-color: var(--primary-grey);
-  height: 480px;
+  max-height: 480px;
+
+  @media(max-width: 1176px) {
+    max-height: 398px;
+  }
+
+  @media(max-width: 585px) {
+    max-height: 517px;
+  }
 
   &-container {
     background-image: url('../img/trust-management/hero.png');
     padding: 24px 50% 64px 0;
     background-repeat: no-repeat;
     background-position: right bottom;
-    height: 100%;
+
+    // height: 100%;
+    @media(max-width: 1176px) {
+      padding: 24px 6% 46px 0;
+      background-size: 50%;
+    }
+
+    @media(max-width: 585px) {
+      padding: 8px 6% 118px 0;
+      background-size: 71%;
+    }
+
   }
 
   &-title {
     margin-bottom: 24px;
+
+    @media(max-width: 585px) {
+      margin-bottom: 16px;
+    }
   }
 
   &-description {
     margin-bottom: 115px;
+
+    @media(max-width: 1176px) {
+      padding-right: 43%;
+      margin-bottom: 30px;
+    }
+
+    @media(max-width: 689px) {
+      padding-right: 23%;
+    }
+
+    @media(max-width: 585px) {
+      padding-right: 0;
+    }
   }
 
   &-button {
     display: inline-block;
     margin-top: auto;
     border-radius: 5px;
+    text-align: center;
+
+    @media(max-width: 585px) {
+      padding: 12px 22px;
+    }
   }
 }
 
 
 .strategy__about {
-  margin-bottom: 64px;
+  margin-bottom: 68px;
+
+  @media(max-width: 1176px) {
+    margin-bottom: 56px;
+  }
+
+  @media(max-width: 585px) {
+    margin-bottom: 48px;
+  }
+
+  &-img {
+    position: absolute;
+    bottom: 0;
+    left: 1%;
+
+    @media(max-width: 1176px) {}
+
+    @media(max-width: 585px) {
+      left: auto;
+      right: 0;
+
+    }
+  }
 
   &-card {
-    display: flex;
-    margin-top: 40px;
+
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 32px;
     background-color: var(--primary-grey);
     border-radius: 10px;
 
+    @media(max-width: 1176px) {
+      column-gap: 16px;
+    }
+
+    @media(max-width: 585px) {
+      column-gap: 12px;
+      row-gap: 24px;
+      grid-template-rows: 1fr 148px;
+      
+    }
+
+    &-title {
+      @media(max-width: 1176px) {
+        line-height: 26px;
+      }
+
+      @media(max-width: 585px) {
+        line-height: 28px;
+      }
+    }
+
+    &-description {
+      @media(max-width: 1176px) {
+        padding-right: 35px;
+      }
+
+      @media(max-width: 585px) {
+        font-size: 14px;
+        line-height: 20px;
+
+      }
+    }
+
     &-left {
-      background-image: url('../img/trust-management/strategy-about.png');
-      background-repeat: no-repeat;
-      background-position: center bottom;
-      display: block;
-      width: 620px;
-      height: 298px;
+      position: relative;
+      grid-column: 1/span 6;
+
+      @media(max-width: 585px) {
+        grid-column: 2/span 11;
+        grid-row: 2/span 1;
+
+      }
     }
 
     &-right {
-      padding: 40px 8px 40px 16px;
-      max-width: 620px;
+      padding: 40px 48px 100px 16px;
+      grid-column: 7/span 6;
+
+      @media(max-width: 1176px) {
+        padding: 40px 12px 32px 0;
+      }
+
+      @media(max-width: 585px) {
+        grid-column: 1/span 12;
+        grid-row: 1/span 1;
+        padding: 24px 10px 0 12px;
+      }
     }
   }
 }
 
+
 .trust__strategy {
+  padding-top: 40px;
+  padding-bottom: 136px;
+
+  @media(max-width: 1176px) {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+
+  @media(max-width: 585px) {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+
   &-title {
 
     margin-bottom: 40px;
+
+    @media(max-width: 585px) {
+      margin-bottom: 24px;
+    }
   }
 
   &-cards-container {
@@ -67,10 +199,17 @@
   }
 
   &-card {
-    display: flex;
+
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 32px;
     border-radius: 10px;
     border: 1px solid var(--grey-button);
     border-radius: 10px;
+
+    @media(max-width: 1176px) {
+      column-gap: 16px;
+    }
   }
 
   &-card:not(:last-child) {
@@ -79,28 +218,83 @@
 }
 
 .strategy-card__left {
-  width: 423px;
-  height: 339px;
+  // width: 423px;
+  // height: 339px;
   display: flex;
   justify-content: center;
   align-items: flex-end;
   background-color: var(--primary-grey);
+  grid-column: 1/span 4;
+  grid-row: 1/span 3;
 
-  &-img-container {}
+  @media(max-width: 1176px) {
+    grid-column: 7/span 6;
+    grid-row: 2/span 2;
+  }
+  @media(max-width: 585px) {
+    grid-row: 2/span 1;
+  }
+
+}
+
+.strategy-card__header {
+  grid-column: 5/span 8;
+  grid-row: 1/span 1;
+  padding: 40px 12px 20px 0;
+
+  @media(max-width: 1176px) {
+    padding: 24px 12px 23px 24px;
+    grid-column: 1/span 12;
+    grid-row: 1/span 1;
+    border-bottom: 1px solid var(--grey-button);
+  }
+  @media(max-width: 585px) {
+    padding: 24px 12px 12px 12px;
+  }
 }
 
 .strategy-card__right {
-  padding: 40px 46px;
+  
+  padding-right: 32px;
+  grid-column: 5/span 8;
 
+  @media(max-width: 1176px) {
+    grid-row: 2/span 1;
+    grid-column: 1/span 6;
+    padding: 21px 0 0 24px;
+  }
+  @media(max-width: 585px) {
+    padding: 12px 0 0 12px;
+  }
 }
-
+ .strategy-card__footer {
+  grid-column: 5/span 8;
+  padding-bottom: 40px;
+  @media(max-width: 1176px) {
+    grid-column: 1/span 6;
+    grid-row: 3/ span 1;
+    padding: 0 0 29px 24px;
+  }
+  @media(max-width: 585px) {
+    grid-column: 1/span 12;
+    grid-row: 3/ span 1;
+    padding: 30px 0 24px 0;
+    text-align: center;
+  }
+ } 
 .card__right {
   &-title {
     margin-bottom: 16px;
   }
 
   &-description {
-    margin-bottom: 16px;
+    padding-right: 30px;
+
+    @media(max-width: 585px) {
+      padding: 0;
+      font-size: 14px;
+      line-height: 20px;
+    }
   }
 
   &-conditions {
@@ -108,16 +302,40 @@
     display: flex;
     padding-top: 16px;
     padding-bottom: 1px;
-    margin-bottom: 30px;
+    margin-bottom: 24px;
+
+    @media(max-width: 1176px) {
+      flex-direction: column;
+      border: none;
+      padding: 0;
+      margin-bottom: 32px;
+    }
+    @media(max-width: 585px) {
+      margin-bottom: 0;
+    }
   }
 
   &-button {
+    text-align: center;
     padding: 14px 32px;
+    display: inline-block;
+
+    @media(max-width: 1176px) {
+      padding: 14px 30px;
+    }
+    @media(max-width: 585px) {
+      padding: 8px 49px;
+      margin: 0 auto;
+    }
   }
+   
 }
 
 .conditions-bet {
-
+  width: 139px;
+  @media(max-width: 585px) {
+    width: 124px;
+  }
   &-title {
     font-family: gilroy;
     position: relative;
@@ -134,16 +352,52 @@
 
   &-description {
     color: var(--secondary-text);
+    @media(max-width: 585px) {
+      font-size: 12px;
+      line-height: 16px;
+    }
   }
+}
+
+.conditions-horizont {
+  width: 197px;
+  @media(max-width: 585px) {
+    width: 124px;
+  }
+}
+
+.conditions-amount {
+  width: 276px;
+  @media(max-width: 585px) {
+    width: 124px;
+  }
+}
+
+.conditions-element {
+  display: flex;
+  flex-direction: column;
+
 }
 
 .conditions-element:not(:last-child) {
   margin-right: 48px;
+
+  @media(max-width: 1176px) {
+    margin-right: 0;
+    margin-bottom: 32px;
+  }
+  @media(max-width: 585px) {
+    margin-bottom: 12px;
+  }
 }
 
 .trust__about {
   background: linear-gradient(180deg, #F4F6F8 0%, rgba(244, 246, 248, 0) 100%);
   position: relative;
+
+  @media(max-width: 1176px) {
+    background: #ffffff;
+  }
 
   &-description {
     color: var(--secondary-text);
@@ -158,11 +412,11 @@
 
   &-block {
     margin-bottom: 64px;
+
+    @media(max-width: 1176px) {
+      margin: 0;
+    }
   }
 
-  
+
 }
-
-
-
-
