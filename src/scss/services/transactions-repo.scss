@@ -150,6 +150,10 @@
 .repo__transactions {
   background: linear-gradient(180deg, #F4F6F8 0%, rgba(244, 246, 248, 0) 100%);
   padding-bottom: 112px;
+  @media(max-width: 1176px) {
+    background: #ffffff;
+    padding-bottom: 0;
+  }
 }
 
 .repo__footnotes {

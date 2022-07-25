@@ -67,16 +67,7 @@
 
 }
 
-.rates__table-nav {
-  @media(max-width: 783px) {
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    column-gap: 12px;
-    row-gap: 12px;
-    margin-bottom: 24px;
-  }
 
-}
 
 .table-hide {
   @media(max-width: 1176px) {
@@ -101,6 +92,16 @@
   &-nav {
     justify-content: center;
     margin-bottom: 36px;
+    @media(max-width: 1176px) {
+      margin-bottom: 32px;
+    }
+    @media(max-width: 783px) {
+      display: grid;
+      grid-template-columns: repeat(8, 1fr);
+      column-gap: 12px;
+      row-gap: 12px;
+      margin-bottom: 24px;
+    }
   }
 }
 
