@@ -1,9 +1,9 @@
 .universal__hero {
   background-color: var(--primary-grey);
-  max-height: 480px;
+  // max-height: 480px;
 
   @media(max-width: 1176px) {
-    max-height: 438px;
+    // max-height: 438px;
   }
 
   &-container {
@@ -16,6 +16,11 @@
       padding: 24px 8% 38px 0;
       background-size: 41%;
     }
+
+    @media(max-width: 585px) {
+      padding: 8px 12px 118px 0;
+      background-size: 64%;
+    }
   }
 
   &-title {
@@ -23,6 +28,10 @@
 
     @media(max-width: 1176px) {
       margin-bottom: 42px;
+    }
+
+    @media(max-width: 585px) {
+      margin-bottom: 16px;
     }
   }
 
@@ -34,6 +43,10 @@
       padding-right: 36%;
     }
 
+    @media(max-width: 585px) {
+      padding-right: 19px;
+      margin-bottom: 26px;
+    }
   }
 
   &-buttons {
@@ -46,6 +59,27 @@
       border-radius: 5px;
     }
   }
+
+  &-btn-open {
+    padding: 14px 32px;
+
+    @media(max-width: 1176px) {
+      padding: 10px 45px;
+    }
+
+    @media(max-width: 585px) {
+      padding: 12px 14px;
+      font-size: 14px;
+      line-height: 19px;
+    }
+  }
+}
+
+.universal__list-item {
+  @media(max-width: 585px) {
+    font-size: 16px;
+    line-height: 22px;
+  }
 }
 
 .universal__about {
@@ -57,6 +91,11 @@
 
     @media(max-width: 1176px) {
       left: 3%;
+    }
+
+    @media(max-width: 585px) {
+      left: auto;
+      right: 0;
     }
   }
 }
@@ -71,6 +110,14 @@
 
   @media(max-width: 1176px) {
     row-gap: 56px;
+    margin-bottom: 56px;
+    padding-bottom: 0;
+  }
+
+  @media(max-width: 585px) {
+    padding-top: 48px;
+    row-gap: 48px;
+    margin-bottom: 48px;
   }
 
   &-description {
@@ -85,23 +132,41 @@
     grid-column: 1/span 12;
     column-gap: 32px;
 
-
     background-color: var(--primary-grey);
     border-radius: 10px;
+
+    @media(max-width: 1176px) {
+      column-gap: 16px;
+    }
+
+    @media(max-width: 585px) {
+      grid-template-rows: 1fr 153px;
+    }
 
     &-left {
       grid-column: 1/span 6;
       position: relative;
 
+      @media(max-width: 585px) {
+        grid-column: 1/span 12;
+        grid-row: 2 /span 1;
+      }
     }
 
     &-right {
       grid-column: 7/span 6;
-      padding: 40px 8px 40px 0;
+      padding: 40px 45px 97px 0;
 
       @media(max-width: 1176px) {
         padding: 27px 8px 32px 0;
       }
+
+      @media(max-width: 585px) {
+        grid-column: 1/span 12;
+        padding: 24px 12px 22px 12px;
+      }
+
+
     }
   }
 
@@ -112,6 +177,13 @@
     @media(max-width: 1176px) {
       grid-column: 1/span 12;
     }
+
+    @media(max-width: 585px) {
+      font-size: 14px;
+      line-height: 20px;
+      margin-bottom: 24px;
+    }
+
   }
 
   &-description-second {
@@ -119,6 +191,11 @@
 
     @media(max-width: 1176px) {
       grid-column: 1/span 12;
+    }
+
+    @media(max-width: 585px) {
+      font-size: 14px;
+      line-height: 20px;
     }
   }
 
@@ -129,12 +206,30 @@
     @media(max-width: 1176px) {
       grid-column: 1/span 12;
     }
+
+    @media(max-width: 585px) {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+}
+
+.universal__card-right-description {
+  @media(max-width: 585px) {
+    font-size: 14px;
+    line-height: 20px;
   }
 }
 
 .universal__card-right-title {
   @media(max-width: 1176px) {
     margin-bottom: 21px;
+  }
+
+  @media(max-width: 585px) {
+    margin-bottom: 16px;
+    font-size: 24px;
+    line-height: 28px;
   }
 }
 
@@ -144,7 +239,7 @@
 
   &-card {
     display: grid;
-    max-height: 280px;
+    // max-height: 280px;
     grid-template-columns: repeat(12, 1fr);
     column-gap: 32px;
     background-color: var(--primary-grey);
@@ -154,7 +249,18 @@
       column-gap: 16px;
     }
 
+    @media(max-width: 585px) {
+      grid-template-rows: 1fr 182px;
+    }
 
+  }
+
+  &-title {
+    @media(max-width: 585px) {
+
+      font-size: 24px;
+      line-height: 28px;
+    }
   }
 
   &-card-description {
@@ -167,48 +273,111 @@
   &-img {
     position: absolute;
     bottom: 0;
+    left: 12%;
+    @media(max-width: 1176px) {
+      left: 4%;
+    }
+    @media(max-width: 585px) {
+      right: 0;
+      left: auto;
+    }
   }
 
   &-card-left {
-    padding: 46px 10px 0 40px;
+    padding: 46px 0 110px 46px;
     grid-column: 1/span 6;
 
     @media(max-width: 1176px) {
       padding: 27px 25px 76px 12px;
+    }
+
+    @media(max-width: 585px) {
+      grid-column: 1/span 12;
+      padding: 24px 28px 24px 12px;
     }
   }
 
   &-card-right {
     position: relative;
     grid-column: 7/span 6;
+
+    @media(max-width: 585px) {
+      grid-column: 1/span 12;
+      grid-row: 2/span 1;
+    }
   }
 }
 
 .universal__possibility {
   grid-column: 1/span 12;
-  height: 308px;
+  // height: 308px;
 
   &-list {
     margin: 0;
   }
 
+  &-img {
+    position: absolute;
+    bottom: 0;
+    @media(max-width: 585px) {
+      right: 0;
+    }
+  }
+  &-title {
+    @media(max-width: 585px) {
+
+      font-size: 24px;
+      line-height: 28px;
+    }
+  }
   &-card {
     display: grid;
-    height: 308px;
+    // height: 308px;
     grid-template-columns: repeat(12, 1fr);
     column-gap: 32px;
     background-color: var(--primary-grey);
     border-radius: 10px;
+
+    @media(max-width: 1176px) {
+      column-gap: 16px;
+    }
+    @media(max-width: 585px) {
+      grid-template-rows: 1fr 184px;
+    }
   }
 
   &-card-left {
     padding: 32px 0 0 0;
     grid-column: 1/span 6;
+    position: relative;
+
+    @media(max-width: 1176px) {
+      padding: 0;
+    }
+    @media(max-width: 585px) {
+      grid-column: 1/span 12;
+      grid-row: 2/ span 1;
+    }
   }
 
   &-card-right {
     padding: 40px 74px 40px 0;
     grid-column: 7/span 6;
+
+    @media(max-width: 1176px) {
+      padding: 24px 23px 32px 0;
+    }
+    @media(max-width: 585px) {
+      grid-column: 1/span 12;
+      padding: 24px 15px 24px 12px;
+    }
+  }
+}
+
+.possibility-list-item {
+  @media(max-width: 1176px) {
+    font-size: 14px;
+    line-height: 20px;
   }
 }
 
@@ -224,6 +393,7 @@
 
   @media(max-width: 1176px) {
     background: #ffffff;
+    padding-bottom: 0;
   }
 
   &-description {
@@ -246,6 +416,13 @@
 
   &-block {
     margin-top: 68px;
+
+    @media(max-width: 1176px) {
+      margin-top: 56px;
+    }
+    @media(max-width: 585px) {
+      margin-top: 24px;
+    }
   }
 
   // &-consult {
