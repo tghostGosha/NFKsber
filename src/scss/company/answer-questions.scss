@@ -12,6 +12,9 @@
   transform: rotate(90deg);
   color: var(--secondary-text);
   margin-right: 40px;
+  @media(max-width: 585px) {
+    margin-right: 16px;
+  }
 }
 .accordion-button:not(.collapsed) .svg-arrow-accordion-dims {
   transform: rotate(270deg)

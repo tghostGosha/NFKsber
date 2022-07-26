@@ -669,7 +669,7 @@
       grid-column: span 12;
       padding: 24px 20% 47px 45px;
 
-     
+
     }
 
     .card__action-decription {
@@ -685,6 +685,7 @@
       @media(max-width: 1176px) {
         padding: 24px 68px 24px 12px;
       }
+
       @media(max-width: 585px) {
         padding: 16px 2px 16px 12px;
       }
@@ -696,6 +697,7 @@
       @media(max-width: 1176px) {
         padding: 24px 16px 24px 12px;
       }
+
       @media(max-width: 585px) {
         padding: 16px 2px 16px 12px;
       }
@@ -775,18 +777,48 @@
   --bs-accordion-bg: inherit;
 }
 
-// .calc__brokers-service {
-//   display: grid;
-// }
+.calculator__table-nav {
+  margin-left: 30%;
+  display: flex;
+    
+  align-items: center;
+  @media(max-width: 1176px) {
+    margin-left: 16%;
+  }
+  @media(max-width: 585px) {
+    margin-left: 14%;
+  }
+
+  
+}
+
 .calc__brokers-service-btn {
   @media(max-width: 1176px) {
     padding: 16px 20px;
+  }
+
+  @media(max-width: 585px) {
+    width: 120px !important;
+    display: block;
+  }
+}
+
+.calc-comment {
+  @media(max-width: 585px) {
+    font-size: 14px;
+    line-height: 22px;
+    margin-right: 48px;
   }
 }
 
 .calc__trust-management-btn {
   @media(max-width: 1176px) {
     padding: 16px 14px;
+  }
+
+  @media(max-width: 585px) {
+    width: 120px !important;
+    display: block;
   }
 }
 
@@ -894,7 +926,7 @@
   flex-direction: column;
 
   @media(max-width: 1176px) {
-
+    align-items: center;
     flex-direction: row;
     justify-content: space-between;
   }
@@ -913,6 +945,10 @@
   font-size: 14px;
   line-height: 19px;
   color: var(--secondary-text);
+
+  @media(max-width: 585px) {
+    font-size: 12px;
+  }
 }
 
 .total__sum-scale span:not(:last-child) {
@@ -977,6 +1013,10 @@
   color: var(--secondary-text);
   margin-top: 24px;
   padding-right: 90px;
+
+  @media(max-width: 585px) {
+    padding-right: 0;
+  }
 }
 
 .calc__brokers {
@@ -985,6 +1025,7 @@
     padding: 28px 45px;
     display: flex;
     flex-direction: column;
+
     @media(max-width: 585px) {
       padding: 24px 12px 16px 12px;
     }
@@ -1034,13 +1075,14 @@
 
 .saving__sum {
   margin-bottom: 16px;
-  
+
   &-value {
     font-family: gilroy;
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
     line-height: 28px;
+
     @media(max-width: 585px) {
       width: 35%;
     }
@@ -1055,12 +1097,20 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
+
+  @media(max-width: 585px) {
+    font-size: 16px;
+    line-height: 22px;
+    text-align: start;
+    width: 40%;
+  }
 }
 
 .calc__brokers-body {
   display: flex;
   flex-direction: column;
   padding: 28px 45px 40px 45px;
+
   @media(max-width: 585px) {
     padding: 24px 12px 16px 12px;
   }
@@ -1075,6 +1125,9 @@
 .calc-button {
   display: inline-block;
   padding: 14px 32px;
+  @media(max-width: 585px) {
+    padding: 14px 72px;
+  }
 }
 
 .ndfl {

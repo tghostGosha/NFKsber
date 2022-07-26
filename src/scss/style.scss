@@ -334,7 +334,7 @@ button {
   top: -2px;
   @media(max-width: 585px) {
     font-size: 7px;
-    left: -2px;
+    left: -6px;
   }
 }
 
@@ -349,6 +349,9 @@ button {
 
 .text-indent {
   text-indent: 10px;
+  @media(max-width: 585px) {
+    text-indent: 8px;
+  }
 }
 
 .letter-lowercase-end {

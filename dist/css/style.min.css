@@ -13499,7 +13499,15 @@ input::placeholder {
 
 .services-card {
   grid-column: span 4;
-  max-width: 392px;
+  position: relative;
+  height: 446px;
+  width: 392px;
+  padding: 40px 40px 0 40px;
+  background-color: var(--primary-grey);
+  border-radius: 10px;
+  transition: all 0.2s ease-out 0.2s;
+  cursor: pointer;
+  overflow: hidden;
 }
 @media (max-width: 1176px) {
   .services-card {
@@ -13543,25 +13551,32 @@ input::placeholder {
   margin-bottom: 0;
 }
 
-.card {
-  border: none;
-  border-radius: 10px;
-  padding: 0;
+.services-card-btn {
+  position: absolute;
+  bottom: 30px;
+  left: 10%;
+  opacity: 0;
+  background-color: #ffffff;
+  transition: all 0.3s ease-out 0.3s;
+  padding: 18px 104px;
 }
 
-.card-header {
-  margin-bottom: 40px;
-  background-color: var(--primary-grey);
-  display: flex;
-  align-items: flex-end;
-  border: none;
-  height: 260px;
-  justify-content: center;
-  padding: 0;
+.services-card-img {
+  position: absolute;
+  bottom: 0;
+  width: 82%;
+  left: 10%;
+  transition: all 0.4s ease-out 0.3s;
 }
 
-.card-img-top {
-  width: auto;
+.services-card:hover .services-card-img {
+  transform: scale(1.24);
+  left: 10%;
+  bottom: -24px;
+}
+
+.services-card:hover .services-card-btn {
+  opacity: 1;
 }
 
 .card-body {
@@ -13939,6 +13954,11 @@ input::placeholder {
 .accordion-button {
   padding: 28px 16px 28px 46px;
 }
+@media (max-width: 585px) {
+  .accordion-button {
+    padding: 12px 0 12px 0;
+  }
+}
 
 .accordion-collapse {
   padding-left: 86px;
@@ -13963,14 +13983,32 @@ input::placeholder {
   padding-bottom: 28px;
   padding-top: 0;
 }
+@media (max-width: 585px) {
+  .accordion-body {
+    padding: 0 0 12px 0 !important;
+  }
+}
 .accordion-body-description {
   color: var(--secondary-text);
+}
+@media (max-width: 585px) {
+  .accordion-body-description {
+    font-size: 14px;
+    line-height: 22px;
+  }
 }
 
 @media (max-width: 585px) {
   .accordion-header {
     font-size: 16px;
     line-height: 30px;
+  }
+}
+
+@media (max-width: 585px) {
+  .accordion-header-title {
+    font-size: 14px;
+    line-height: 20px;
   }
 }
 
@@ -16697,15 +16735,51 @@ input::placeholder {
   --bs-accordion-bg: inherit;
 }
 
+.calculator__table-nav {
+  margin-left: 30%;
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 1176px) {
+  .calculator__table-nav {
+    margin-left: 16%;
+  }
+}
+@media (max-width: 585px) {
+  .calculator__table-nav {
+    margin-left: 14%;
+  }
+}
+
 @media (max-width: 1176px) {
   .calc__brokers-service-btn {
     padding: 16px 20px;
+  }
+}
+@media (max-width: 585px) {
+  .calc__brokers-service-btn {
+    width: 120px !important;
+    display: block;
+  }
+}
+
+@media (max-width: 585px) {
+  .calc-comment {
+    font-size: 14px;
+    line-height: 22px;
+    margin-right: 48px;
   }
 }
 
 @media (max-width: 1176px) {
   .calc__trust-management-btn {
     padding: 16px 14px;
+  }
+}
+@media (max-width: 585px) {
+  .calc__trust-management-btn {
+    width: 120px !important;
+    display: block;
   }
 }
 
@@ -16819,6 +16893,7 @@ input::placeholder {
 @media (max-width: 1176px) {
   .total__years-header,
 .total__sum-header {
+    align-items: center;
     flex-direction: row;
     justify-content: space-between;
   }
@@ -16836,6 +16911,11 @@ input::placeholder {
   font-size: 14px;
   line-height: 19px;
   color: var(--secondary-text);
+}
+@media (max-width: 585px) {
+  .total__sum-scale span {
+    font-size: 12px;
+  }
 }
 
 .total__sum-scale span:not(:last-child) {
@@ -16900,6 +16980,11 @@ input::placeholder {
   color: var(--secondary-text);
   margin-top: 24px;
   padding-right: 90px;
+}
+@media (max-width: 585px) {
+  .calc-description {
+    padding-right: 0;
+  }
 }
 
 .calc__brokers-header {
@@ -16977,6 +17062,14 @@ input::placeholder {
   font-size: 18px;
   line-height: 22px;
 }
+@media (max-width: 585px) {
+  .calc-value {
+    font-size: 16px;
+    line-height: 22px;
+    text-align: start;
+    width: 40%;
+  }
+}
 
 .calc__brokers-body {
   display: flex;
@@ -16998,6 +17091,11 @@ input::placeholder {
 .calc-button {
   display: inline-block;
   padding: 14px 32px;
+}
+@media (max-width: 585px) {
+  .calc-button {
+    padding: 14px 72px;
+  }
 }
 
 .ndfl {
@@ -18335,6 +18433,11 @@ th {
   color: var(--secondary-text);
   margin-right: 40px;
 }
+@media (max-width: 585px) {
+  .svg-arrow-accordion-dims {
+    margin-right: 16px;
+  }
+}
 
 .accordion-button:not(.collapsed) .svg-arrow-accordion-dims {
   transform: rotate(270deg);
@@ -18749,7 +18852,7 @@ button {
 @media (max-width: 585px) {
   .letter-lowercase {
     font-size: 7px;
-    left: -2px;
+    left: -6px;
   }
 }
 
@@ -18762,6 +18865,11 @@ button {
 
 .text-indent {
   text-indent: 10px;
+}
+@media (max-width: 585px) {
+  .text-indent {
+    text-indent: 8px;
+  }
 }
 
 .letter-lowercase-end {

@@ -21,6 +21,10 @@
 
 .accordion-button {
   padding: 28px 16px 28px 46px;
+
+  @media(max-width: 585px) {
+    padding: 12px 0 12px 0;
+  }
 }
 
 .accordion-collapse {
@@ -46,8 +50,17 @@
   padding-bottom: 28px;
   padding-top: 0;
 
+  @media(max-width: 585px) {
+    padding: 0 0 12px 0 !important;
+  }
+
   &-description {
     color: var(--secondary-text);
+
+    @media(max-width: 585px) {
+      font-size: 14px;
+      line-height: 22px;
+    }
   }
 }
 
@@ -55,10 +68,17 @@
   @media(max-width: 585px) {
     font-size: 16px;
     line-height: 30px;
-    
+
   }
 }
 
+.accordion-header-title {
+  @media(max-width: 585px) {
+    font-size: 14px;
+    line-height: 20px;
+
+  }
+}
 .accordion {
   border: none;
   --bs-accordion-border-color: none;
