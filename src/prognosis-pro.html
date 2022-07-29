@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html',{
+"title": "Прогнозы Pro"
+})
+
+<body>
+
+  @@include('html/header.html',{})
+  <main>
+    <section class="prognosis__hero">
+      <div class="container ">
+        <div class="prognosis__hero-container">
+          <nav aria-label="Page navigation example">
+            <ul class="pagination">
+              <li class="page-item-mobile">
+                <svg width="20px" height="20px" class="svg-arrow-right-dims">
+                  <use xlink:href="img/icons/icons.svg#arrow-left"></use>
+                </svg>
+              </li>
+              <li class="page-item "><a class="page-link" href="index.html">Главная</a></li>
+              <li class="page-item hide-on-mobile">
+                <svg width="20px" height="20px" class="svg-arrow-right-dims ">
+                  <use xlink:href="img/icons/icons.svg#arrow-right"></use>
+                </svg>
+              </li>
+              <li class="page-item hide-on-mobile"><a class="page-link" href="#">Аналитика</a></li>
+              <li class="page-item hide-on-mobile">
+                <svg width="20px" height="20px" class="svg-arrow-right-dims">
+                  <use xlink:href="img/icons/icons.svg#arrow-right"></use>
+                </svg>
+              </li>
+              <li class="page-item hide-on-mobile"><a class="page-link" href="prognosis-pro.html">Прогнозы PRO</a></li>
+            </ul>
+          </nav>
+          <h2 class="prognosis__hero-title">Прогнозы PRO - это</h2>
+          <ul class="prognosis__hero-list brokers__list">
+            <li class="brokers__list-item">Сервис, доступный бесплатно для клиентов АО «НФК-Сбережения»</li>
+            <li class="brokers__list-item">Прогнозы, не доступные публично. Вы всегда будете одним из первых, кто
+              получает доступ к ценной информации о рынке</li>
+            <li class="brokers__list-item">Готовые рекомендации от ведущих инвестдомов страны</li>
+            <li class="brokers__list-item">Консенсус прогнозы стоимости ценных бумаг, собранные в одном месте</li>
+
+          </ul>
+          <div class="prognosis__hero-buttons">
+            <button type="button" class=" grey-button prognosis__hero-buttons-grey" data-bs-toggle="modal"
+              data-bs-target="#exampleModal">Получить консультанцию</button>
+            <button class="button primary-button prognosis__hero-button">Получить доступ</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="prognosis__about">
+      <div class="container">
+        <div class="prognosis__about-container">
+
+          <div class="unlimite__access prognosis__about-card">
+            <h4 class="profitable-title">Безлимитный доступ</h4>
+            <p class="profitable-description">АО «НФК-Сбережения» предоставляет клиентам безлимитный доступ к наиболее
+              важным инвестиционным идеям
+              и аналитическим прогнозам
+              от ведущих экспертов страны</p>
+
+          </div>
+          <div class="free-fro-clients prognosis__about-card">
+            <h4 class="profitable-title">Для клиентов - бесплатно</h4>
+            <p class="profitable-description">Важная особенность «Прогнозы PRO» заключается в том, что для клиентов АО
+              «НФК-Сбережения» данная услуга абсолютно бесплатна – мы берем расходы на платную аналитику на себя</p>
+
+          </div>
+          <div class="comfortable-interface prognosis__about-card">
+            <h4 class="profitable-title">Удобный интерфейс</h4>
+            <p class="profitable-description">Благодаря удобному интерфейсу, Вы можете выбрать наиболее подходящий Вам
+              финансовый инструмент, не затрачивая своё время на детальное исследование рынка.</p>
+
+          </div>
+          <div class="analis-card prognosis__about-card">
+            <h4 class="profitable-title">Анализ</h4>
+            <p class="profitable-description">Лучшие эксперты-аналитики обеспечат Вас исчерпывающей информацией о
+              доходных финансовых инструментах
+              с различными способами инвестирования</p>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="prognosis__conditions">
+          <h3 class="prognosis__conditions-title">Чтобы воспользоваться сервисом «Прогнозы PRO», нужно стать нашим
+            клиентом, для этого</h3>
+          <div class="prognosis__conditions-container">
+            <div class="brokers-card prognosis__conditions-card">
+              <div class="prognosis__conditions-card-header">
+                <img class="prognosis__conditions-card-img" src="img/brokerage-services/document.png" alt="picture">
+              </div>
+              <h4 class="prognosis__conditions-card-title">Заключите договор
+                на брокерское обслуживание</h4>
+              <p class="prognosis__conditions-card-description">онлайн или в офисе нашей компании</p>
+            </div>
+            <div class="brokers-card prognosis__conditions-card">
+              <div class="prognosis__conditions-card-header">
+                <img class="prognosis__conditions-card-img" src="img/brokerage-services/contract.png" alt="picture">
+              </div>
+              <h4 class="prognosis__conditions-card-title">Дождитесь
+                открытия счета</h4>
+              <p class="prognosis__conditions-card-description">вносить деньги на него необязательно</p>
+            </div>
+            <div class="brokers-card prognosis__conditions-card">
+              <div class="prognosis__conditions-card-header">
+                <img class="prognosis__conditions-card-img" src="img/brokerage-services/money.png" alt="picture">
+              </div>
+              <h4 class="prognosis__conditions-card-title">Получите доступ</h4>
+              <p class="prognosis__conditions-card-description">к разделу Прогнозы PRO в личном кабинете</p>
+            </div>
+          </div>
+
+        </div>
+        <div class="important__block">
+          <div>
+            <svg width="20px" height="20px" class="svg-important-dims">
+              <use xlink:href="img/icons/icons.svg#important"></use>
+            </svg>
+          </div>
+        
+          <span class="important__block-description">Если Вы хотите регулярно получать Прогнозы PRO от наших
+            специалистов, то, пожалуйста, свяжитесь с нами по телефону <a href="#" class="important__description-link">8
+              800 200-84-84</a> или <a href="#" class="important__description-link">закажите консультацию онлайн</a></span>
+        </div>
+      </div>
+    </section>
+  </main>
+  @@include('html/footer.html',{})
+  <script src="js/app.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
+  <!-- <script src="https://unpkg.com/@popperjs/core@2"></script> -->
+
+
+</body>
+
+</html>

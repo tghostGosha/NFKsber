@@ -18041,6 +18041,211 @@ th {
   display: block;
 }
 
+.prognosis__hero {
+  background-color: var(--primary-grey);
+}
+.prognosis__hero-container {
+  background-image: url("../img/prognosis/prognosis.png");
+  padding: 30px 50% 48px 0;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+@media (max-width: 1176px) {
+  .prognosis__hero-container {
+    padding: 24px 33% 38px 0;
+    background-size: 38%;
+  }
+}
+@media (max-width: 585px) {
+  .prognosis__hero-container {
+    padding: 8px 3% 141px 0;
+    background-size: 58%;
+  }
+}
+.prognosis__hero-title {
+  margin-bottom: 24px;
+}
+@media (max-width: 585px) {
+  .prognosis__hero-title {
+    margin-bottom: 16px;
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
+.prognosis__hero-buttons {
+  display: inline-block;
+  margin-top: auto;
+}
+.prognosis__hero-buttons-grey {
+  padding: 14px 32px;
+  margin-right: 32px;
+  border-radius: 5px;
+}
+@media (max-width: 1176px) {
+  .prognosis__hero-buttons-grey {
+    margin-right: 16px;
+  }
+}
+@media (max-width: 585px) {
+  .prognosis__hero-buttons-grey {
+    display: none;
+  }
+}
+.prognosis__hero-button {
+  padding: 14px 32px;
+}
+@media (max-width: 585px) {
+  .prognosis__hero-button {
+    padding: 12px 30px;
+  }
+}
+
+.prognosis__about {
+  margin-bottom: 68px;
+  margin-top: 68px;
+}
+.prognosis__about-title {
+  text-align: center;
+}
+.prognosis__about-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 32px;
+  row-gap: 28px;
+  margin-bottom: 24px;
+}
+.prognosis__about-card {
+  background: var(--primary-grey);
+  border-radius: 10px;
+  background-repeat: no-repeat;
+}
+
+.unlimite__access,
+.free-fro-clients,
+.comfortable-interface,
+.analis-card {
+  grid-column: span 6;
+  background-position: 92% 77%;
+}
+
+.unlimite__access {
+  padding: 40px 38% 56px 46px;
+  background-image: url("../img/prognosis/unlimit.png");
+}
+
+.free-fro-clients {
+  padding: 40px 38% 56px 46px;
+  background-image: url("../img/prognosis/free.png");
+}
+
+.comfortable-interface {
+  padding: 40px 38% 56px 46px;
+  background-image: url("../img/prognosis/interface.png");
+}
+
+.analis-card {
+  padding: 40px 38% 56px 46px;
+  background-image: url("../img/prognosis/analis.png");
+}
+
+.prognosis__conditions {
+  margin-bottom: 64px;
+}
+@media (max-width: 1176px) {
+  .prognosis__conditions {
+    margin-bottom: 56px;
+  }
+}
+@media (max-width: 585px) {
+  .prognosis__conditions {
+    margin-bottom: 48px;
+  }
+}
+.prognosis__conditions-title {
+  margin-bottom: 40px;
+  text-align: center;
+}
+@media (max-width: 1176px) {
+  .prognosis__conditions-title {
+    margin-bottom: 32px;
+  }
+}
+@media (max-width: 585px) {
+  .prognosis__conditions-title {
+    text-align: start;
+    margin-bottom: 24px;
+  }
+}
+
+.prognosis__conditions-container {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 585px) {
+  .prognosis__conditions-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.prognosis__conditions-card {
+  max-width: 392px;
+}
+@media (max-width: 1176px) {
+  .prognosis__conditions-card {
+    max-width: 257px;
+  }
+}
+@media (max-width: 585px) {
+  .prognosis__conditions-card {
+    max-width: 352px;
+  }
+}
+.prognosis__conditions-card-header {
+  width: 98px;
+  height: 98px;
+  margin: 0 auto;
+  background-color: var(--primary-grey);
+  border-radius: 10px;
+  padding: 22px 27px;
+  margin-bottom: 24px;
+}
+@media (max-width: 1176px) {
+  .prognosis__conditions-card-header {
+    width: 80px;
+    height: 80px;
+    padding: 18px 22px;
+  }
+}
+@media (max-width: 585px) {
+  .prognosis__conditions-card-header {
+    width: 72px;
+    height: 72px;
+    padding: 16px 20px;
+  }
+}
+.prognosis__conditions-card-title {
+  text-align: center;
+  margin-bottom: 16px;
+}
+.prognosis__conditions-card-description {
+  padding: 0 5px;
+  text-align: center;
+  color: var(--secondary-text);
+}
+@media (max-width: 585px) {
+  .prognosis__conditions-card-description {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+@media (max-width: 585px) {
+  .conditions__card:not(:last-child) {
+    margin-bottom: 48px;
+  }
+}
+
 .about__hero {
   background-color: var(--primary-grey);
   height: 480px;
