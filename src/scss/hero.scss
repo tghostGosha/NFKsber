@@ -7,14 +7,12 @@
   position: relative;
 }
 
-.swiper-wrapper {}
-
 .swiper-slide {
   padding: 88px 70% 122px 0;
-  background-image: url('/img/hero/first-slide.png');
+  background-image: var(--desktop-image-banner-top);
   background-repeat: no-repeat;
   background-size: 42%;
-  background-position: 99% 100%;
+  background-position: right bottom;
 
   @media(max-width: 1176px) {
     background-size: 51%;

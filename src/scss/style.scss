@@ -8,6 +8,7 @@
 // @import 'nouislider/dist/nouislider.css';
 
 @import "fonts";
+@import "breadcrumb.scss";
 @import "nouislider.min.scss";
 @import "header";
 @import "footer";
@@ -268,58 +269,6 @@ button {
   }
 }
 
-.pagination {
-  --bs-pagination-bg: inherit;
-  --bs-pagination-border-width: none;
-  display: flex;
-  align-items: center;
-  margin-bottom: 47px;
-  @media(max-width: 1176px) {
-    margin-bottom: 32px;
-  }
-  @media(max-width: 585px) {
-    margin-bottom: 24px;
-  }
-}
-
-.page-link {
-  padding: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 19px;
-  color: var(--secondary-text);
-  transition: all 0.1s ease-in-out 0.1s;
-}
-
-.page-link:focus,
-.page-link:hover {
-  color: var(--primary-text);
-  background-color: inherit;
-  outline: none;
-  box-shadow: none;
-}
-
-.page-item {
-  outline: none;
-  border: none;
-}
-.page-item:not(:last-child){
-  margin-right: 12px;
-}
-.page-item-mobile {
-  display: none;
-  @media(max-width: 1176px) {
-    display: block;
-    margin-right: 12px;
-  }
-}
-.page-item:hover .page-link,
-.page-item:focus .page-link {
-  color: var(--primary-text);
-  background-color: inherit;
-  outline: none;
-  box-shadow: none;
-}
 
 // .bi-chevron-right {
 //   color: var(--secondary-text);
@@ -582,7 +531,7 @@ button {
 }
 
 .answer__questions {
-  padding-top: 88px;
+  
   padding-bottom: 112px;
 
   @media(max-width: 1176px) {

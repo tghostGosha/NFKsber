@@ -13,24 +13,24 @@
         <div class="currency__hero-container">
           <nav aria-label="Page navigation example">
             <ul class="pagination">
-              <li class="page-item"><a class="page-link" href="index.html">Главная</a></li>
-              <li>
-                <svg xmlns="http://www.w3.org/2000/svg" width="8" height="16" fill="currentColor"
-                  class="bi bi-chevron-right" viewBox="0 0 16 16">
-                  <path fill-rule="evenodd"
-                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+              <li class="page-item-mobile">
+                <svg width="20px" height="20px" class="svg-arrow-right-dims">
+                  <use xlink:href="img/icons/icons.svg#arrow-left"></use>
                 </svg>
               </li>
-              <li class="page-item"><a class="page-link" href="#">Услуги</a></li>
-              <li>
-                <svg xmlns="http://www.w3.org/2000/svg" width="8" height="16" fill="currentColor"
-                  class="bi bi-chevron-right" viewBox="0 0 16 16">
-                  <path fill-rule="evenodd"
-                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+              <li class="page-item "><a class="page-link" href="index.html">Главная</a></li>
+              <li class="page-item hide-on-mobile">
+                <svg width="20px" height="20px" class="svg-arrow-right-dims ">
+                  <use xlink:href="img/icons/icons.svg#arrow-right"></use>
                 </svg>
               </li>
-              <li class="page-item"><a class="page-link" href="currency-market.html">Обслуживание на валютном рынке</a>
+              <li class="page-item hide-on-mobile"><a class="page-link" href="services.html">Услуги</a></li>
+              <li class="page-item hide-on-mobile">
+                <svg width="20px" height="20px" class="svg-arrow-right-dims ">
+                  <use xlink:href="img/icons/icons.svg#arrow-right"></use>
+                </svg>
               </li>
+              <li class="page-item hide-on-mobile"><a class="page-link" >Обслуживание на валютном рынке</a></li>
             </ul>
           </nav>
           <h2 class="currency__hero-title">Обслуживание на&nbsp;валютном рынке</h2>
@@ -114,19 +114,19 @@
     <section class="currency__rates">
       <div class="container">
         <h3 class="currency__rates-title">Тарифы на обслуживание</h3>
-        <ul class="nav nav-pills rates__table-nav" id="myTab" role="tablist">
-          <li class="nav-item" role="presentation">
+        <ul class="nav nav-pills currency-rates__table-nav" id="myTab" role="tablist">
+          <li class="nav-item rates__item-deal" role="presentation">
             <button class="nav-link active" id="transactions-tab" data-bs-toggle="tab" data-bs-target="#transactions"
               type="button" role="tab" aria-controls="transactions" aria-selected="true">Сделки на Единой торговой
               сессии ПАО Московская
               Биржа</button>
           </li>
-          <li class="nav-item" role="presentation">
+          <li class="nav-item rates__item-service" role="presentation">
             <button class="nav-link" id="award-tab" data-bs-toggle="tab" data-bs-target="#award" type="button"
               role="tab" aria-controls="award" aria-selected="false">Дополнительное вознаграждение
               Компании</button>
           </li>
-          <li class="nav-item" role="presentation">
+          <li class="nav-item rates__item-award" role="presentation">
             <button class="nav-link" id="other-services-tab" data-bs-toggle="tab" data-bs-target="#otherServices"
               type="button" role="tab" aria-controls="other-services" aria-selected="false">Иные услуги
             </button>
