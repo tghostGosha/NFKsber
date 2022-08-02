@@ -6,12 +6,13 @@
     --bs-pagination-border-width: none;
     display: flex;
     align-items: center;
+    margin: 0;
     padding-top: 24px;
     @media(max-width: 1176px) {
       
     }
     @media(max-width: 585px) {
-      
+      padding-top: 8px;
     }
   }
   

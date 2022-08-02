@@ -1,13 +1,7 @@
 .brokers__hero {
-  background-color: var(--primary-grey);
-  // height: 480px;
-
-  @media(max-width: 1176px) {
-    // height: 398px;
-  }
-
+  
   &-container {
-    background-image: url('../img/brokerage-services/hero.png');
+    background-image: var(--desktop-image-banner-top);
     padding: 30px 50% 48px 0;
     background-repeat: no-repeat;
     background-position: right bottom;
@@ -46,8 +40,8 @@
         margin-right: 16px;
       }
 
-      @media(max-width: 585px) {
-        display: none;
+      @media(max-width: 791px) {
+        display: none !important;
       }
     }
   }
@@ -59,13 +53,6 @@
       padding: 12px 30px;
     }
   }
-}
-
-.brokers__card-img {
-  display: block;
-  width: 620px;
-  height: 280px;
-
 }
 
 .brokers__list {
@@ -166,84 +153,8 @@
       margin-bottom: 24px;
     }
   }
-
-  &-img {
-    position: absolute;
-    bottom: 0;
-    left: 10%;
-
-    @media(max-width: 1176px) {
-      left: 5%;
-    }
-
-    @media(max-width: 585px) {
-      left: 2%;
-    }
-  }
-
-  &-card {
-    
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    column-gap: 32px;
-    margin-top: 40px;
-    background-color: var(--primary-grey);
-    border-radius: 10px;
-
-    @media(max-width: 1176px) {
-      column-gap: 16px;
-    }
-
-    @media(max-width: 585px) {
-      column-gap: 12px;
-      // row-gap: 24px;
-      grid-template-rows: 1fr 0.8fr;
-      margin-top: 24px;
-    }
-
-    &-left {
-      position: relative;
-      grid-column: 1/span 6;
-
-      @media(max-width: 585px) {
-        grid-column: 2/span 11;
-        grid-row: 2/span 1;
-
-      }
-    }
-
-    &-right {
-      padding: 40px 48px 100px 16px;
-      grid-column: 7/span 6;
-
-      @media(max-width: 1176px) {
-        padding: 24px 24px 72px 16px;
-      }
-
-      @media(max-width: 585px) {
-        grid-column: 1/span 12;
-        grid-row: 1/span 1;
-        padding: 24px 12px 9px 12px;
-      }
-    }
-  }
 }
 
-.card-right-title {
-  @media(max-width: 585px) {
-    margin-bottom: 16px;
-  }
-}
-
-// .card-left {
-//   display: block;
-//   width: 620px;
-//   height: 280px;
-// }
-
-// .card-right {
-//   max-width: 620px;
-// }
 
 .brokers__conditions {
   margin-bottom: 64px;
@@ -272,73 +183,7 @@
 
 }
 
-.conditions-container {
-  display: flex;
-  justify-content: space-between;
 
-  @media(max-width: 585px) {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
-.conditions__card {
-  max-width: 392px;
-
-  // grid-column: 4, 1fr;
-  @media(max-width: 1176px) {
-    max-width: 257px;
-  }
-
-  @media(max-width: 585px) {
-    max-width: 352px;
-  }
-
-  &-header {
-    width: 98px;
-    height: 98px;
-    margin: 0 auto;
-    background-color: var(--primary-grey);
-    border-radius: 10px;
-    padding: 22px 27px;
-    margin-bottom: 24px;
-
-    @media(max-width: 1176px) {
-      width: 80px;
-      height: 80px;
-      padding: 18px 22px;
-    }
-
-    @media(max-width: 585px) {
-      width: 72px;
-      height: 72px;
-      padding: 16px 20px;
-    }
-  }
-
-  &-title {
-    text-align: center;
-    margin-bottom: 16px;
-  }
-
-  &-description {
-    padding: 0 5px;
-    text-align: center;
-    color: var(--secondary-text);
-
-    @media(max-width: 585px) {
-      font-size: 14px;
-      line-height: 20px;
-    }
-  }
-}
-
-.conditions__card:not(:last-child) {
-
-  @media(max-width: 585px) {
-    margin-bottom: 48px;
-  }
-}
 
 .brokers__app {
   margin-bottom: 68px;
@@ -372,29 +217,7 @@
       padding-top: 0;
     }
 
-    &-left {
-      padding: 0 0 40px 48px;
-      grid-column: 1/ span 6;
 
-      @media(max-width: 1176px) {
-        padding: 0 0 32px 24px;
-      }
-
-      @media(max-width: 585px) {
-        grid-column: 1/ span 12;
-        padding: 40px 10px 8px 12px;
-      }
-    }
-
-    &-right {
-      grid-column: 7/ span 6;
-      position: relative;
-
-      @media(max-width: 585px) {
-        grid-column: 1/ span 12;
-        grid-row: 2/ span 2;
-      }
-    }
   }
 
   &-title {
@@ -409,15 +232,7 @@
     }
   }
 
-  &-img {
-    position: absolute;
-    bottom: 0;
 
-    @media(max-width: 585px) {
-      max-width: 306px;
-      right: 0;
-    }
-  }
 
   &-list {
     margin-bottom: 34px;
@@ -476,58 +291,7 @@
     margin-bottom: 48px;
   }
 
-  &-card {
-    border-radius: 10px;
-    background-color: var(--primary-grey);
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    column-gap: 32px;
-    // row-gap: 28px;
 
-    @media(max-width: 1176px) {
-      column-gap: 16px;
-    }
-
-    @media(max-width: 585px) {
-      grid-template-rows: 1fr 204px;
-      row-gap: 24px;
-    }
-
-    &-left {
-      position: relative;
-      grid-column: 1/ span 6;
-      left: 10%;
-
-      @media(max-width: 1176px) {
-        left: 1%;
-      }
-
-      @media(max-width: 585px) {
-        grid-column: 1/ span 12;
-        grid-row: 2/ span 1;
-      }
-    }
-
-    &-right {
-      grid-column: 7/ span 6;
-      padding: 40px 46px 78px 0;
-
-      @media(max-width: 1176px) {
-        padding: 24px 8px 32px 18px;
-      }
-
-      @media(max-width: 585px) {
-        grid-column: 1/ span 12;
-        padding: 24px 10px 6px 12px
-      }
-    }
-
-  }
-
-  &-img {
-    position: absolute;
-    bottom: 0;
-  }
 
   &-list {
     margin: 0;
@@ -579,6 +343,9 @@
     &-right {
       grid-column: 7/ span 6;
       position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
 
       @media(max-width: 1176px) {
         grid-column: 8/ span 5;
@@ -607,14 +374,15 @@
   }
 
   &-img {
-    position: absolute;
-    bottom: 0;
-    left: 8%;
-    object-fit: cover;
+    display: block;
+    // position: absolute;
+    // bottom: 0;
+    // left: 8%;
+    // object-fit: cover;
 
-    @media(max-width: 1176px) {
-      left: 0;
-    }
+    // @media(max-width: 1176px) {
+    //   left: 0;
+    // }
   }
 
   &-buttons {
@@ -634,6 +402,7 @@
   @media(max-width: 1176px) {
     padding: 18px 21px;
     margin-right: 16px;
+    height: 57px;
   }
 
   @media(max-width: 585px) {
@@ -641,6 +410,7 @@
     line-height: 19px;
     padding: 13px 3px;
     margin-right: 20px;
+    height: 46px;
   }
 }
 
@@ -654,11 +424,15 @@
 
   @media(max-width: 1176px) {
     padding: 18px 21px;
+    
+    height: 57px;
   }
+
   @media(max-width: 585px) {
     padding: 13px 6px;
     font-size: 14px;
     line-height: 19px;
+    height: 46px;
   }
 }
 
@@ -671,9 +445,11 @@
     background: #ffffff;
     padding-bottom: 0;
   }
+
   @media(max-width: 585px) {
     display: none;
   }
+
   &-consult {
     padding-top: 22px;
     padding-bottom: 21px;

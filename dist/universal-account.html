@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="data:;base64,MQoa">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
@@ -358,33 +359,34 @@
 
 </header>
   <main>
-    <section class="universal__hero">
+    <section class="big__banner universal__hero">
       <div class="container ">
-        <div class="universal__hero-container">
-          <nav aria-label="Page navigation example">
-            <ul class="pagination">
-              <li class="page-item-mobile">
-                <svg width="20px" height="20px" class="svg-arrow-right-dims">
-                  <use xlink:href="img/icons/icons.svg#arrow-left"></use>
-                </svg>
-              </li>
-              <li class="page-item "><a class="page-link" href="index.html">Главная</a></li>
-              <li class="page-item hide-on-mobile">
-                <svg width="20px" height="20px" class="svg-arrow-right-dims ">
-                  <use xlink:href="img/icons/icons.svg#arrow-right"></use>
-                </svg>
-              </li>
-              <li class="page-item hide-on-mobile"><a class="page-link" href="services.html">Услуги</a></li>
-              <li class="page-item hide-on-mobile">
-                <svg width="20px" height="20px" class="svg-arrow-right-dims">
-                  <use xlink:href="img/icons/icons.svg#arrow-right"></use>
-                </svg>
-              </li>
-              <li class="page-item hide-on-mobile"><a class="page-link" href="universal-account.html">Универсальный инвестиционный счет</a></li>
-            </ul>
-          </nav>
-          <h2 class="universal__hero-title">Универсальный
-            инвестиционный счет</h2>
+        <nav aria-label="breadcrumb">
+          <ul class="breadcrumb">
+            <li class="page-item-mobile">
+              <svg width="20px" height="20px" class="svg-arrow-right-dims">
+                <use xlink:href="img/icons/icons.svg#arrow-left"></use>
+              </svg>
+            </li>
+            <li class="breadcrumb-item "><a class="breadcrumb-link" href="index.html">Главная</a></li>
+            <li class="breadcrumb-item hide-on-mobile">
+              <svg width="20px" height="20px" class="svg-arrow-right-dims breadcrumb-svg">
+                <use xlink:href="img/icons/icons.svg#arrow-right"></use>
+              </svg>
+            </li>
+            <li class="breadcrumb-item hide-on-mobile"><a class="breadcrumb-link" href="services.html">Услуги</a></li>
+            <li class="breadcrumb-item hide-on-mobile">
+              <svg width="20px" height="20px" class="svg-arrow-right-dims breadcrumb-svg">
+                <use xlink:href="img/icons/icons.svg#arrow-right"></use>
+              </svg>
+            </li>
+            <li class="breadcrumb-item hide-on-mobile"><a class="breadcrumb-link" href="universal-account.html">Универсальный инвестиционный счет</a></li>
+          </ul>
+        </nav>
+        <div class="universal__hero-container" style="--desktop-image-banner-top: url('/img/universal-account/hero.png');">
+          
+          <h1 class="universal__hero-title">Универсальный
+            инвестиционный счет</h1>
           <ul class="universal__hero-list brokers__list">
             <li class="brokers__list-item universal__list-item">Доступ к биржевым и внебиржевым инструментам</li>
             <li class="brokers__list-item universal__list-item">Стабильный и регулярный доход</li>
@@ -402,13 +404,13 @@
     <section class="universal__account">
       <div class="container">
         <div class="universal__info">
-          <div class="universal__info-card">
-            <div class="universal__info-card-left">
-              <img class="universal__about-img" src="img/universal-account/alternative.png" alt="Накопления">
+          <div class="small__banner universal__info-small-banner">
+            <div class="small__banner-left-img">
+              <img class="small__banner-img" src="img/universal-account/alternative.png" alt="Накопления">
             </div>
-            <div class="universal__info-card-right card-right ">
-              <h4 class="universal__card-right-title">Альтернатива банковским вкладам</h4>
-              <p class="universal__card-right-description">В настоящее время, когда ставки по банковским&nbsp;вкладам не превышают
+            <div class="small__banner-right-text ">
+              <h3 class="small__banner-title">Альтернатива банковским вкладам</h3>
+              <p class="small__banner-description">В настоящее время, когда ставки по банковским&nbsp;вкладам не превышают
                 отметку 7&nbsp;-&nbsp;9%&nbsp;годовых<span class="letter-lowercase-end">1</span>, выбор надежного, эффективного и выгодного способа вложения денежных средств
                 является главным вопросом для большинства частных инвесторов.
               </p>
@@ -437,26 +439,26 @@
             бюджета НДФЛ, если он ранее был удержан из любых ваших доходов (заработной платы, доходов от продажи любого
             имущества или сдачи его в аренду, доходов от предпринимательской деятельности и т.п.)<span class="letter-lowercase-end">4</span></p>
           <div class="universal__conditions">
-            <div class="universal__conditions-card">
-              <div class="universal__conditions-card-left ">
-                <h4 class="card-right-title universal__conditions-title">Минимальная сумма для инвестирования
-                  составляет 10&nbsp;000&nbsp;рублей</h4>
-                <p class="universal__conditions-card-description">На счет можно дополнительно вносить денежные средства, при этом минимальный уровень дополнительного
+            <div class="small__banner universal__conditions-card">
+              <div class="small__banner-left-text universal__conditions-card-left">
+                <h3 class="small__banner-title universal__conditions-title">Минимальная сумма для инвестирования
+                  составляет 10&nbsp;000&nbsp;рублей</h3>
+                <p class="small__banner-description">На счет можно дополнительно вносить денежные средства, при этом минимальный уровень дополнительного
                   взноса не&nbsp;установлен</p>
               </div>
-              <div class="universal__conditions-card-right">
-                <img class="universal__conditions-img" src="img/universal-account/minimal.png" alt="Накопления">
+              <div class="small__banner-right-img">
+                <img class="small__banner-img" src="img/universal-account/minimal.png" alt="Накопления">
               </div>
             </div>
           </div>
           <div class="universal__possibility">
-            <div class="universal__possibility-card">
-              <div class="universal__possibility-card-left">
-                <img class="universal__possibility-img" src="img/universal-account/possibility.png" alt="Накопления">
+            <div class="small__banner universal__possibility-card">
+              <div class="small__banner-left-img">
+                <img class="small__banner-img" src="img/universal-account/possibility.png" alt="Накопления">
               </div>
-              <div class="universal__possibility-card-right card-right ">
-                <h4 class="card-right-title universal__possibility-title">Возможности, которые предоставляет
-                  вам открытие УИС:</h4>
+              <div class="small__banner-right-text universal__possibility-small-banner">
+                <h3 class="small__banner-title ">Возможности, которые предоставляет
+                  вам открытие УИС:</h3>
                 <ul class="universal__possibility-list brokers__list">
                   <li class="brokers__list-item possibility-list-item">Постоянный и точный контроль над вложениями в
                     виде получения детальных
@@ -474,7 +476,7 @@
     <section class="universal__about">
       <div class="container">
         <div class="window__account">
-          <h3 class="window__account-title">Открытие брокерского счета</h3>
+          <h2 class="window__account-title">Открытие брокерского счета</h2>
           <form action="#" class="account__form" id="accountform">
             <div class="account__form-text">
               <!-- <label for="firstname">Enter your name</label> -->
@@ -563,7 +565,7 @@
     <div class="container">
       <div class="footer__nav">
         <div class="footer__nav-services">
-          <h5 class="footer__nav-title">Услуги</h5>
+          <h4 class="footer__nav-title">Услуги</h4>
           <ul class="footer__nav-list">
             <li class="footer__nav-item">
               <a href="brokerage-services.html" class="footer__nav-link">Брокерское обслуживание</a>
@@ -598,7 +600,7 @@
           </ul>
         </div>
         <div class="footer__nav-news">
-          <h5 class="footer__nav-title">Новости</h5>
+          <h4 class="footer__nav-title">Новости</h4>
           <ul class="footer__nav-list">
             <li class="footer__nav-item">
               <a href="#" class="footer__nav-link">Новости рынка</a>
@@ -618,7 +620,7 @@
           </ul>
         </div>
         <div class="footer__nav-company">
-          <h5 class="footer__nav-title">АО «НФК-Сбережения»</h5>
+          <h4 class="footer__nav-title">АО «НФК-Сбережения»</h4>
           <ul class="footer__nav-list">
 
             <li class="footer__nav-item">

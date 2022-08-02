@@ -17,6 +17,8 @@
 @import "popular-services";
 @import "ideas";
 @import "accordion";
+@import "small__banner";
+@import "explain-card";
 @import "services/services.scss";
 @import "services/brokers-hero.scss";
 @import "services/trust-management.scss";
@@ -100,7 +102,7 @@ h5 {
   margin: 0;
 }
 
-h2 {
+h1 {
   font-weight: 600;
   font-size: 40px;
   line-height: 46px;
@@ -111,7 +113,7 @@ h2 {
   }
 }
 
-h3 {
+h2 {
   font-weight: 600;
   font-size: 32px;
   line-height: 38px;
@@ -123,7 +125,7 @@ h3 {
   }
 }
 
-h4 {
+h3 {
   font-weight: 600;
   font-size: 24px;
   line-height: 28px;
@@ -139,7 +141,7 @@ h4 {
 
 }
 
-h5 {
+h4 {
   font-weight: 600;
   font-size: 16px;
   line-height: 21px;
@@ -207,7 +209,7 @@ button {
   width: 4px;
     height: 8px;
   @media(max-width: 585px) {
-    margin-left: 12px;
+    // margin-left: 12px;
   }
 
 }
@@ -258,7 +260,7 @@ button {
 }
 
 .grey-button {
-  
+  display: inline-block;
   background-color: var(--grey-button);
   color: var(--primary-text);
   border-radius: 5px;
@@ -269,12 +271,9 @@ button {
   }
 }
 
-
-// .bi-chevron-right {
-//   color: var(--secondary-text);
-//   margin-right: 12px;
-//   margin-left: 12px;
-// }
+.big__banner {
+  background-color: var(--primary-grey);
+}
 
 //======левуый аппостроф
 .letter-lowercase {
@@ -306,8 +305,8 @@ button {
 
 .letter-lowercase-end {
   position: relative;
-  font-size: 7px;
-  right: 0;
+  font-size: 9px;
+  right: -2px;
   top: -7px;
   @media(max-width: 585px) {
     font-size: 7px;

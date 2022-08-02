@@ -9,31 +9,33 @@
   @@include('html/header.html',{})
   <main>
     <section class="trust__hero">
+      
       <div class="container ">
-        <div class="trust__hero-container">
-          <nav aria-label="Page navigation example">
-            <ul class="pagination">
-              <li class="page-item-mobile">
-                <svg width="20px" height="20px" class="svg-arrow-right-dims">
-                  <use xlink:href="img/icons/icons.svg#arrow-left"></use>
-                </svg>
-              </li>
-              <li class="page-item "><a class="page-link" href="index.html">Главная</a></li>
-              <li class="page-item hide-on-mobile">
-                <svg width="20px" height="20px" class="svg-arrow-right-dims ">
-                  <use xlink:href="img/icons/icons.svg#arrow-right"></use>
-                </svg>
-              </li>
-              <li class="page-item hide-on-mobile"><a class="page-link" href="services.html">Услуги</a></li>
-              <li class="page-item hide-on-mobile">
-                <svg width="20px" height="20px" class="svg-arrow-right-dims">
-                  <use xlink:href="img/icons/icons.svg#arrow-right"></use>
-                </svg>
-              </li>
-              <li class="page-item hide-on-mobile"><a class="page-link" href="trust-management.html">Доверительное управление</a></li>
-            </ul>
-          </nav>
-          <h2 class="trust__hero-title">Доверительное управление</h2>
+        <nav aria-label="breadcrumb">
+          <ul class="breadcrumb">
+            <li class="page-item-mobile">
+              <svg width="20px" height="20px" class="svg-arrow-right-dims">
+                <use xlink:href="img/icons/icons.svg#arrow-left"></use>
+              </svg>
+            </li>
+            <li class="breadcrumb-item "><a class="breadcrumb-link" href="index.html">Главная</a></li>
+            <li class="breadcrumb-item hide-on-mobile">
+              <svg width="20px" height="20px" class="svg-arrow-right-dims breadcrumb-svg">
+                <use xlink:href="img/icons/icons.svg#arrow-right"></use>
+              </svg>
+            </li>
+            <li class="breadcrumb-item hide-on-mobile"><a class="breadcrumb-link" href="services.html">Услуги</a></li>
+            <li class="breadcrumb-item hide-on-mobile">
+              <svg width="20px" height="20px" class="svg-arrow-right-dims breadcrumb-svg">
+                <use xlink:href="img/icons/icons.svg#arrow-right"></use>
+              </svg>
+            </li>
+            <li class="breadcrumb-item hide-on-mobile"><a class="breadcrumb-link" href="trust-management.html">Доверительное управление</a></li>
+          </ul>
+        </nav>
+        <div class="trust__hero-container" style="--desktop-image-banner-top: url('/img/trust-management/hero.png');">
+          
+          <h1 class="trust__hero-title">Доверительное управление</h1>
           <p class="trust__hero-description">Новые стратегии доверительного управления, разработанные
             АО&nbsp;«НФК&nbsp;-&nbsp;Сбережения» в связи с изменением рыночных условий, призваны защитить инвесторов от инфляции.
             Выберите подходящую именно Вам стратегию в зависимости от ваших финансовых целей</p>
@@ -46,25 +48,25 @@
       <div class="container">
         <div class="strategy__about">
          
-          <div class="strategy__about-card brokers-card">
-            <div class="strategy__about-card-left card-left ">
-              <img class="strategy__about-img" src="img/trust-management/strategy-about.png" alt="">
+          <div class="small__banner small__banner-strategy">
+            <div class="small__banner-left-img ">
+              <img class="small__banner-img" src="img/trust-management/strategy-about.png" alt="станадтные стратегии">
             </div>
-            <div class="strategy__about-card-right card-right">
-              <h4 class="card-right-title strategy__about-card-title">Представленные Стандартные стратегии доверительного управления предполагают
-                прямые инвестиции в лизинговые активы посредством внебиржевых финансовых инструментов</h4>
-              <p class="strategy__about-card-description">Это простой и понятный способ вложения денег,&nbsp;не&nbsp;требующий от 
+            <div class="small__banner-right-text">
+              <h3 class="small__banner-title">Представленные Стандартные стратегии доверительного управления предполагают
+                прямые инвестиции в лизинговые активы посредством внебиржевых финансовых инструментов</h3>
+              <p class="small__banner-description">Это простой и понятный способ вложения денег,&nbsp;не&nbsp;требующий от 
                 инвестора специальных&nbsp;знаний и затрат времени, а также не зависящий  от колебаний биржевых
                 котировок.
               </p>
             </div>
           </div>
         </div>
-        <h3 class="trust__strategy-title">Стратегии доверительного управления</h3>
+        <h2 class="trust__strategy-title">Стратегии доверительного управления</h2>
         <div class="trust__strategy-cards-container">
           <div class="trust__strategy-card">
             <div class="strategy-card__header">
-              <h3 class="card__right-title">Накопление</h3>
+              <h2 class="card__right-title">Накопление</h2>
               <p class="card__right-description">Стратегия «Накопление» совмещает высокую ожидаемую доходность 
                 с возможностью
                 досрочного вывода капитала без потери накопленного дохода</p>
@@ -77,18 +79,18 @@
             <div class="strategy-card__right">
               <div class="card__right-conditions">
                 <div class="conditions-bet conditions-element">
-                  <h4 class="conditions-bet-title">25%
+                  <h3 class="conditions-bet-title">25%
                     <span>1</span>
-                  </h4>
+                  </h3>
                   <span class="conditions-bet-description">процентная ставка</span>
                 </div>
                 <div class="conditions-horizont conditions-element">
-                  <h4 class="conditions-bet-title">1 год</h4>
+                  <h3 class="conditions-bet-title">1 год</h3>
                   <span class="conditions-bet-description">инвестиционный горизонт</span>
 
                 </div>
                 <div class="conditions-amount conditions-element">
-                  <h4 class="conditions-bet-title">10 000 р</h4>
+                  <h3 class="conditions-bet-title">10 000 р</h3>
                   <span class="conditions-bet-description">минимальная сумма инвестирования</span>
 
                 </div>
@@ -100,7 +102,7 @@
           </div>
           <div class="trust__strategy-card">
             <div class="strategy-card__header">
-              <h3 class="card__right-title">Регулярный доход</h3>
+              <h2 class="card__right-title">Регулярный доход</h2>
               <p class="card__right-description">Стратегия «Регулярный доход» позволяет инвестору получать
                 стабильный  ежемесячный доход с переводом на его собственный
                 банковский счет</p>
@@ -114,18 +116,18 @@
               
               <div class="card__right-conditions">
                 <div class="conditions-bet conditions-element">
-                  <h4 class="conditions-bet-title">26%
+                  <h3 class="conditions-bet-title">26%
                     <span>1</span>
-                  </h4>
+                  </h3>
                   <span class="conditions-bet-description">процентная ставка</span>
                 </div>
                 <div class="conditions-horizont conditions-element">
-                  <h4 class="conditions-bet-title">1 год</h4>
+                  <h3 class="conditions-bet-title">1 год</h3>
                   <span class="conditions-bet-description">инвестиционный горизонт</span>
 
                 </div>
                 <div class="conditions-amount conditions-element">
-                  <h4 class="conditions-bet-title">100 000 р</h4>
+                  <h3 class="conditions-bet-title">100 000 р</h3>
                   <span class="conditions-bet-description">минимальная сумма инвестирования</span>
 
                 </div>
@@ -137,7 +139,7 @@
           </div>
           <div class="trust__strategy-card">
             <div class="strategy-card__header">
-              <h3 class="card__right-title">Максимум</h3>
+              <h2 class="card__right-title">Максимум</h2>
               <p class="card__right-description">Стратегия «Максимум» подходит инвесторам, стремящимся получить
                 максимальный 
                 возможный доход на инвестиционном горизонте не менее одного года</p>
@@ -151,18 +153,18 @@
               
               <div class="card__right-conditions">
                 <div class="conditions-bet conditions-element">
-                  <h4 class="conditions-bet-title">30%
+                  <h3 class="conditions-bet-title">30%
                     <span>1</span>
-                  </h4>
+                  </h3>
                   <span class="conditions-bet-description">процентная ставка</span>
                 </div>
                 <div class="conditions-horizont conditions-element">
-                  <h4 class="conditions-bet-title">1 год</h4>
+                  <h3 class="conditions-bet-title">1 год</h3>
                   <span class="conditions-bet-description">инвестиционный горизонт</span>
 
                 </div>
                 <div class="conditions-amount conditions-element">
-                  <h4 class="conditions-bet-title">10 000 р</h4>
+                  <h3 class="conditions-bet-title">10 000 р</h3>
                   <span class="conditions-bet-description">минимальная сумма инвестирования</span>
 
                 </div>
@@ -178,7 +180,7 @@
     <section class="trust__about">
       <div class="container">
         <div class="window__account">
-          <h3 class="window__account-title">Открытие брокерского счета</h3>
+          <h2 class="window__account-title">Открытие брокерского счета</h2>
           <form action="#" class="account__form" id="accountform">
             <div class="account__form-text">
               <!-- <label for="firstname">Enter your name</label> -->
@@ -243,7 +245,7 @@
           <p class="trust__about-description">С информацией о стандартных стратегиях управления можно ознакомиться по
             следующей ссылке.
           </p>
-          <p class="trust__about-description">1 Ожидаемая доходность в % годовых на инвестиционном горизонте 1 год. Не
+          <p class="trust__about-description text-indent"><span class="letter-lowercase">1</span>Ожидаемая доходность в % годовых на инвестиционном горизонте 1 год. Не
             является гарантией или обещанием эффективности деятельности (доходности вложений) Информация подлежит
             раскрытию на основании п. 5.2 Положения Банка России от 03.08.2015 N 482-П.
           </p>

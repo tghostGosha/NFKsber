@@ -8,7 +8,7 @@
 
   @@include('html/header.html',{})
   <main>
-    <section class="brokers__hero">
+    <section class=" big__banner brokers__hero">
       <div class="container ">
         <nav aria-label="breadcrumb">
           <ul class="breadcrumb">
@@ -29,12 +29,12 @@
                 <use xlink:href="img/icons/icons.svg#arrow-right"></use>
               </svg>
             </li>
-            <li class="breadcrumb-item hide-on-mobile"><a class="breadcrumb-link" >Брокерское Обслуживание</a></li>
+            <li class="breadcrumb-item hide-on-mobile"><a class="breadcrumb-link">Брокерское Обслуживание</a></li>
           </ul>
         </nav>
-        <div class="brokers__hero-container">
-          
-          <h2 class="brokers__hero-title">Брокерское обслуживание</h2>
+        <div class="brokers__hero-container" style="--desktop-image-banner-top: url('/img/brokerage-services/hero.png');">
+
+          <h1 class="brokers__hero-title">Брокерское обслуживание</h1>
           <ul class="brokers__hero-list brokers__list">
             <li class="brokers__list-item">Совершайте операции купли-продажи на рынке ценных бумаг</li>
             <li class="brokers__list-item">Торгуйте удобным способом: по телефону или онлайн <br>
@@ -52,14 +52,15 @@
     <section class="brokers__description">
       <div class="container">
         <div class="brokers__about">
-          <h3 class="brokers__about-title">Что такое брокерское обслуживание?</h3>
-          <div class="brokers__about-card brokers-card">
-            <div class="brokers__about-card-left card-left ">
-              <img class="brokers__about-img" src="img/brokerage-services/about.png" alt="">
+          <h2 class="brokers__about-title">Что такое брокерское обслуживание?</h2>
+          <div class="small__banner">
+            <div class="small__banner-left-img ">
+              <img class="small__banner-img" src="img/brokerage-services/about.png" alt="">
             </div>
-            <div class="brokers__about-card-right card-right">
-              <h4 class="card-right-title brokers__about-card-title">Брокерское обслуживание</h4>
-              <p class="card-right-description">Это наиболее действенный механизм приумножения капитала, позволяющий при
+            <div class="small__banner-right-text">
+              <h3 class="small__banner-title">Брокерское обслуживание</h3>
+              <p class="small__banner-description">Это наиболее действенный механизм приумножения капитала, позволяющий
+                при
                 грамотном подходе получить доход, многократно превышающий проценты по банковским вкладам или доходы
                 от вложений в недвижимость.
               </p>
@@ -67,41 +68,47 @@
           </div>
         </div>
         <div class="brokers__conditions">
-          <h3 class="brokers__conditions-title">Как стать клиентом</h3>
-          <div class="conditions-container">
-            <div class="brokers-card conditions__card">
-              <div class="conditions__card-header">
-                <img class="conditions__card-img" src="img/brokerage-services/document.png" alt="picture">
+          <h2 class="brokers__conditions-title">Как стать клиентом</h2>
+          <div class="explain-container">
+            <div class="explain__card ">
+              <div class="explain__card-header">
+                <svg width="54px" height="54px" class="svg-document-dims">
+                  <use xlink:href="img/icons/icons.svg#document"></use>
+                </svg>
               </div>
-              <h4 class="conditions__card-title">Договор обслуживания</h4>
-              <p class="conditions__card-description">Заключите договор, предусматривающий совершение на бирже сделок
+              <h3 class="explain__card-title">Договор обслуживания</h3>
+              <p class="explain__card-description">Заключите договор, предусматривающий совершение на бирже сделок
                 купли-продажи.</p>
             </div>
-            <div class="brokers-card conditions__card">
-              <div class="conditions__card-header">
-                <img class="conditions__card-img" src="img/brokerage-services/contract.png" alt="picture">
+            <div class="explain__card">
+              <div class="explain__card-header">
+                <svg width="54px" height="54px" class="svg-contract-dims">
+                  <use xlink:href="img/icons/icons.svg#contract"></use>
+                </svg>
               </div>
-              <h4 class="conditions__card-title">Депозитарный договор</h4>
-              <p class="conditions__card-description">Заключите договор, предусматривающий открытие на имя инвестора
+              <h3 class="explain__card-title">Депозитарный договор</h3>
+              <p class="explain__card-description">Заключите договор, предусматривающий открытие на имя инвестора
                 специального счета ДЕПО
                 в депозитарии, который предназначен
                 для хранения ценных бумаг, принадлежащих инвестору.</p>
             </div>
-            <div class="brokers-card conditions__card">
-              <div class="conditions__card-header">
-                <img class="conditions__card-img" src="img/brokerage-services/money.png" alt="picture">
+            <div class="explain__card">
+              <div class="explain__card-header">
+                <svg width="54px" height="54px" class="svg-coins-dims">
+                  <use xlink:href="img/icons/icons.svg#coins"></use>
+                </svg>
               </div>
-              <h4 class="conditions__card-title">Внесение денег на счет</h4>
-              <p class="conditions__card-description">Минимальная сумма для начала совершения сделок составляет 10 000
+              <h3 class="explain__card-title">Внесение денег на счет</h3>
+              <p class="explain__card-description">Минимальная сумма для начала совершения сделок составляет 10 000
                 рублей.</p>
             </div>
           </div>
 
         </div>
         <div class="brokers__app">
-          <div class="brokers__app-card brokers-card">
-            <div class="brokers__app-card-left card-left">
-              <h3 class="brokers__app-title">Мобильное приложение</h3>
+          <div class="small__banner">
+            <div class="small__banner-left-text">
+              <h2 class="small__banner-title">Мобильное приложение</h2>
               <ul class="brokers__app-list brokers__list">
                 <li class="brokers__list-item">Полный каталог ценных бумаг</li>
                 <li class="brokers__list-item">Удобное пополнение и вывод денег со счёта</li>
@@ -170,6 +177,7 @@
                         d="M20.9828 10.3313C20.313 9.92814 19.5147 9.89209 18.8185 10.2278L30.4917 21.9258L34.3085 18.0913L20.9828 10.3313ZM17.746 11.3104C17.5988 11.6222 17.5195 11.9691 17.5195 12.3261V33.7245C17.5195 34.083 17.5993 34.4247 17.748 34.7299L29.4167 23.006L17.746 11.3104ZM30.4933 24.0846L18.8389 35.7943C19.1482 35.9375 19.4772 36 19.8058 36C20.2115 36 20.6163 35.903 20.9829 35.6826L34.3111 27.911L30.4933 24.0846ZM39.3837 21.0468C39.3791 21.0438 39.374 21.0407 39.3694 21.0382L35.6695 18.8835L31.5678 23.0044L35.672 27.1173C35.672 27.1173 39.3791 24.956 39.3837 24.9534C40.0718 24.5355 40.4826 23.8053 40.4826 22.9999C40.4826 22.1945 40.0718 21.4642 39.3837 21.0468Z"
                         fill="#2C353D" />
                     </svg>
+
                   </a>
                   <a href="#" class="app-button">
                     <svg width="152" height="46" viewBox="0 0 152 46" fill="none" class="black-app-store"
@@ -250,18 +258,18 @@
                 </div>
               </div>
             </div>
-            <div class="brokers__app-card-right ">
-              <img class="brokers__app-img" src="img/brokerage-services/app.png" alt="app">
+            <div class="small__banner-right-img ">
+              <img class="small__banner-img" src="img/brokerage-services/app.png" alt="app">
             </div>
           </div>
         </div>
         <div class="brokers__service">
-          <div class="brokers__service-card brokers-card">
-            <div class="brokers__service-card-left">
+          <div class="small__banner brokers__service-small-banner">
+            <div class="small__banner-left-img">
               <img class="brokers__service-img" src="img/brokerage-services/service.png" alt="services">
             </div>
-            <div class="brokers__service-card-right card-right">
-              <h3 class="card-right-title">Условия обслуживания:</h3>
+            <div class="small__banner-right-text">
+              <h3 class="small__banner-title">Условия обслуживания:</h3>
               <ul class="brokers__service-list brokers__list">
                 <li class="service__list-item">Прием брокером заявок на совершение операций купли-продажи ценных бумаг
                   осуществляется как классическим способом (по телефону), так и через компьютер или телефон.</li>
@@ -278,9 +286,9 @@
         <div class="brokers__education">
           <div class="brokers__education-card brokers-card">
             <div class="brokers__education-card-left card-left">
-              <h3 class="brokers__education-title">Бесплатное обучение</h3>
+              <h2 class="brokers__education-title">Бесплатное обучение</h2>
               <p class="brokers__education-description">Вы можете записаться на обучающий семинар для новичков,
-                желающих постичь азы торговли на фондовом и валютном рынках.</p>
+                желающих постичь азы торговли  на фондовом и валютном рынках.</p>
               <div class="brokers__education-buttons">
                 <a href="#" class="education-btn">Обучающие семинары</a>
                 <a href="#" class="demo-btn">Открыть демо-счет</a>
@@ -296,7 +304,7 @@
     <section class="brokers__info">
       <div class="container">
         <div class="window__account">
-          <h3 class="window__account-title">Открытие брокерского счета</h3>
+          <h2 class="window__account-title">Открытие брокерского счета</h2>
           <form action="#" class="account__form" id="accountform">
             <div class="account__form-text">
               <!-- <label for="firstname">Enter your name</label> -->
@@ -348,8 +356,6 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
     crossorigin="anonymous"></script>
-  <!-- <script src="https://unpkg.com/@popperjs/core@2"></script> -->
-
 
 </body>
 
