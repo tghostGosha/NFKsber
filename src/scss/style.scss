@@ -227,11 +227,22 @@ button {
 }
 
 .large__button-grey {
+  background-color: var(--grey-button);
+  color: var(--primary-text);
+  border-radius: 5px;
   padding: 28px;
-  
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 392px;
+  grid-column: span 4;
+  @media(max-width: 1176px) {
+    grid-column: span 6;
+  }
+  @media(max-width: 585px) {
+    grid-column: span 12;
+    padding: 16px 12px;
+  }
 }
 
 .large__button-svg {

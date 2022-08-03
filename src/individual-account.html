@@ -10,31 +10,30 @@
   <main>
     <section class="individual__hero">
       <div class="container ">
-        <div class="individual__hero-container">
-          <nav aria-label="Page navigation example">
-            <ul class="pagination">
-              <li class="page-item-mobile">
-                <svg width="20px" height="20px" class="svg-arrow-right-dims">
-                  <use xlink:href="img/icons/icons.svg#arrow-left"></use>
-                </svg>
-              </li>
-              <li class="page-item "><a class="page-link" href="index.html">Главная</a></li>
-              <li class="page-item hide-on-mobile">
-                <svg width="20px" height="20px" class="svg-arrow-right-dims ">
-                  <use xlink:href="img/icons/icons.svg#arrow-right"></use>
-                </svg>
-              </li>
-              <li class="page-item hide-on-mobile"><a class="page-link" href="services.html">Услуги</a></li>
-              <li class="page-item hide-on-mobile">
-                <svg width="20px" height="20px" class="svg-arrow-right-dims">
-                  <use xlink:href="img/icons/icons.svg#arrow-right"></use>
-                </svg>
-              </li>
-              <li class="page-item hide-on-mobile"><a class="page-link" href="individual-account.html">Индивидуальный
-                  инвестиционный счет</a></li>
-            </ul>
-          </nav>
-          <h2 class="individual__hero-title">ИИС</h2>
+        <nav aria-label="breadcrumb">
+          <ul class="breadcrumb">
+            <li class="page-item-mobile">
+              <svg width="20px" height="20px" class="svg-arrow-right-dims">
+                <use xlink:href="img/icons/icons.svg#arrow-left"></use>
+              </svg>
+            </li>
+            <li class="breadcrumb-item "><a class="breadcrumb-link" href="index.html">Главная</a></li>
+            <li class="breadcrumb-item hide-on-mobile">
+              <svg width="20px" height="20px" class="svg-arrow-right-dims breadcrumb-svg">
+                <use xlink:href="img/icons/icons.svg#arrow-right"></use>
+              </svg>
+            </li>
+            <li class="breadcrumb-item hide-on-mobile"><a class="breadcrumb-link" href="services.html">Услуги</a></li>
+            <li class="breadcrumb-item hide-on-mobile">
+              <svg width="20px" height="20px" class="svg-arrow-right-dims breadcrumb-svg">
+                <use xlink:href="img/icons/icons.svg#arrow-right"></use>
+              </svg>
+            </li>
+            <li class="breadcrumb-item hide-on-mobile"><a class="breadcrumb-link" href="individual-account.html">Индивидуальный инвестиционный счет</a></li>
+          </ul>
+        </nav>
+        <div class="individual__hero-container" style="--desktop-image-banner-top: url('/img/individual-account/individual-hero.png');">
+          <h1 class="individual__hero-title">ИИС</h1>
           <ul class="individual__hero-list brokers__list">
             <li class="individual__list-item">Вносите до 400 000 рублей ежегодно</li>
             <li class="individual__list-item">Получайте 52 000 рублей – налоговый вычет
@@ -52,14 +51,14 @@
     <section class="individual__description">
       <div class="container">
         <div class="individual__about">
-          <h3 class="individual__about-title">Что такое ИИС?</h3>
-          <div class="individual__about-card brokers-card">
-            <div class="individual__about-card-left ">
-              <img class="individual__about-img" src="img/individual-account/individual-about.png" alt="">
+          <h2 class="individual__about-title">Что такое ИИС?</h2>
+          <div class="small__banner individual__about-card ">
+            <div class="small__banner-left-img ">
+              <img class="small__banner-img" src="img/individual-account/individual-about.png" alt="">
             </div>
-            <div class="individual__about-card-right ">
-              <h4 class="individual__about-card-title">Индивидуальный инвестиционный счет</h4>
-              <p class="individual__about-description">Новый вид брокерского счета или счета доверительного управления,
+            <div class="small__banner-right-text">
+              <h3 class="small__banner-title">Индивидуальный инвестиционный счет</h3>
+              <p class="small__banner-description">Новый вид брокерского счета или счета доверительного управления,
                 который
                 действует в России с 1 января 2015 года. При помощи ИИС каждый гражданин может приумножать свои
                 сбережения и получать
@@ -82,12 +81,12 @@
           </ul>
         </div>
         <h3 class="individual__about-title">Варианты ИИС</h3>
-        <div class="individual__options-card type-a-card ">
-          <div class="type-a-card-left ">
-            <img class="type-a-card-img" src="img/individual-account/options-type-a.png" alt="type-a">
+        <div class="small__banner type-a-card ">
+          <div class="small__banner-left-img type-a-card-img">
+            <img class="small__banner-img" src="img/individual-account/options-type-a.png" alt="type-a">
           </div>
-          <div class="type-a-card-right ">
-            <h4 class="type-a-title">Вычет 13% на взнос (тип А)</h4>
+          <div class="small__banner-right-text type-a-card-right">
+            <h3 class="small__banner-title">Вычет 13% на взнос (тип А)</h3>
             <ul class="individual__options-list brokers__list">
               <li class="individual__list-item">Ежегодно возвращается налоговый вычет с внесенной на ИИС суммы
                 в размере 13% (до 52 000 рублей)</li>
@@ -97,9 +96,9 @@
           </div>
         </div>
 
-        <div class="individual__options-card type-b-card ">
-          <div class="type-b-card-left ">
-            <h4 class="type-b-title">Вычет 13% на доход (тип Б)</h4>
+        <div class="small__banner type-b-card ">
+          <div class="small__banner-left-text ">
+            <h3 class="small__banner-title">Вычет 13% на доход (тип Б)</h3>
             <ul class="individual__options-list brokers__list">
               <li class="brokers__list-item">Полученный от операций с ценными бумагами доход не облагается НДФЛ
               </li>
@@ -107,8 +106,8 @@
                 ориентированных на долгосрочные инвестиции</li>
             </ul>
           </div>
-          <div class="type-b-card-right">
-            <img class="type-b-card-img" src="img/individual-account/options-type-a.png" alt="type-a">
+          <div class="small__banner-right-img type-a-card-img">
+            <img class="small__banner-img" src="img/individual-account/options-type-a.png" alt="type-a">
           </div>
 
         </div>
@@ -121,63 +120,75 @@
           с взысканием пеней</p>
         
         <div class="individual__advantages">
-          <h3 class="individual__advantages-title">Преимущества открытия ИИС
-            в&nbsp;АО&nbsp;«НФК&nbsp;-&nbsp;Сбережения»</h3>
-          <div class="advantages-container">
-            <div class="brokers-card advantages__card">
-              <div class="advantages__card-header">
-                <img class="advantages__card-img" src="img/individual-account/strategy.png" alt="picture">
-              </div>
-              <h4 class="advantages__card-title">Готовые инвест-стратегии</h4>
-              <p class="advantages__card-description">Минимальная сумма для открытия счета –
+          <h2 class="individual__advantages-title">Преимущества открытия ИИС
+            в&nbsp;АО&nbsp;«НФК&nbsp;-&nbsp;Сбережения»</h2>
+          <div class="explain-container advantages-container">
+            <div class="explain__card">
+              <div class="explain__card-header">
+                <svg width="54px" height="54px" class="svg-contract-dims">
+                  <use xlink:href="img/icons/icons.svg#contract"></use>
+                </svg>             
+               </div>
+              <h3 class="explain__card-title">Готовые инвест-стратегии</h3>
+              <p class="explain__card-description">Минимальная сумма для открытия счета –
                 10 000 рублей. Максимально можно внести
                 до 400 000 рублей за год.</p>
             </div>
-            <div class="brokers-card advantages__card">
-              <div class="advantages__card-header">
-                <img class="advantages__card-img" src="img/individual-account/document.png" alt="picture">
-              </div>
-              <h4 class="advantages__card-title">Максимальное удобство</h4>
-              <p class="advantages__card-description">Вы можете отправить заявку на открытие счета не выходя из дома. Мы
+            <div class="explain__card">
+              <div class="explain__card-header">
+                <svg width="54px" height="54px" class="svg-document-dims">
+                  <use xlink:href="img/icons/icons.svg#document"></use>
+                </svg>             
+               </div>
+              <h3 class="explain__card-title">Максимальное удобство</h3>
+              <p class="explain__card-description">Вы можете отправить заявку на открытие счета не выходя из дома. Мы
                 сами свяжемся с вами.</p>
             </div>
-            <div class="brokers-card advantages__card">
-              <div class="advantages__card-header">
-                <img class="advantages__card-img" src="img/individual-account/cash.png" alt="picture">
+            <div class="explain__card">
+              <div class="explain__card-header">
+                <svg width="54px" height="54px" class="svg-money-dims">
+                  <use xlink:href="img/icons/icons.svg#money"></use>
+                </svg>              
               </div>
-              <h4 class="advantages__card-title">Дополнительная прибыль</h4>
-              <p class="advantages__card-description">Зарабатывайте на фондовом рынке
+              <h3 class="explain__card-title">Дополнительная прибыль</h3>
+              <p class="explain__card-description">Зарабатывайте на фондовом рынке
                 с крупнейшим профессиональным участником рынка ценных бумаг на территории Чувашии.</p>
             </div>
-            <div class="brokers-card advantages__card">
-              <div class="advantages__card-header">
-                <img class="advantages__card-img" src="img/individual-account/strategy.png" alt="picture">
+            <div class="explain__card">
+              <div class="explain__card-header">
+                <svg width="54px" height="54px" class="svg-contract-2-dims">
+                  <use xlink:href="img/icons/icons.svg#contract-2"></use>
+                </svg>               
               </div>
-              <h4 class="advantages__card-title">Прозрачность</h4>
-              <p class="advantages__card-description">Отслеживайте состояние своего счета онлайн или получайте отчет по
+              <h3 class="explain__card-title">Прозрачность</h3>
+              <p class="explain__card-description">Отслеживайте состояние своего счета онлайн или получайте отчет по
                 запросу.</p>
             </div>
-            <div class="brokers-card advantages__card">
-              <div class="advantages__card-header">
-                <img class="advantages__card-img" src="img/individual-account/document.png" alt="picture">
+            <div class="explain__card">
+              <div class="explain__card-header">
+                <svg width="54px" height="54px" class="svg-official-documents-dims">
+                  <use xlink:href="img/icons/icons.svg#official-documents"></use>
+                </svg>              
               </div>
-              <h4 class="advantages__card-title">Квалифицированная поддержка</h4>
-              <p class="advantages__card-description">Наши специалисты помогут вам выстроить финансовую стратегию для
+              <h3 class="explain__card-title">Квалифицированная поддержка</h3>
+              <p class="explain__card-description">Наши специалисты помогут вам выстроить финансовую стратегию для
                 достижения максимальной выгоды.</p>
             </div>
-            <div class="brokers-card advantages__card">
-              <div class="advantages__card-header">
-                <img class="advantages__card-img" src="img/individual-account/cash.png" alt="picture">
+            <div class="explain__card">
+              <div class="explain__card-header">
+                <svg width="54px" height="54px" class="svg-money-dims">
+                  <use xlink:href="img/icons/icons.svg#money"></use>
+                </svg>              
               </div>
-              <h4 class="advantages__card-title">Безопасность</h4>
-              <p class="advantages__card-description">Все операции на ИИС регулируются законодательством РФ. Возврат
+              <h3 class="explain__card-title">Безопасность</h3>
+              <p class="explain__card-description">Все операции на ИИС регулируются законодательством РФ. Возврат
                 налоговых вычетов из налогового бюджета гарантирован государством.</p>
             </div>
           </div>
 
         </div>
         <div class="accounts__examples">
-          <h3 class="accounts__examples-title">Примеры счетов</h3>
+          <h2 class="accounts__examples-title">Примеры счетов</h2>
           <div class="accounts__examples-header">
             <ul class="examples-header__list">
               <li class="examples-header__item first-el">Индивидиуальный инвестиционный счет</li>
@@ -189,7 +200,7 @@
             <div class="accounts__examples-card accounts__examples-services">
               <div class="examples-card__header">
                 <div class="examples-card__account">
-                  <h4 class="card__account-title">Брокерского обслуживания</h4>
+                  <h3 class="card__account-title">Брокерского обслуживания</h3>
                   <p class="card__account-description">Вы заключаете Брокерский договор на ведение ИИС
                     с&nbsp;АО&nbsp;«НФК&nbsp;-&nbsp;Сбережения»</p>
                 </div>
@@ -218,7 +229,7 @@
             <div class="accounts__examples-card accounts__examples-management">
               <div class="examples-card__header">
                 <div class="examples-card__account">
-                  <h4 class="card__account-title">Доверительного управления</h4>
+                  <h3 class="card__account-title">Доверительного управления</h3>
                   <p class="card__account-description">Вы заключаете договор Доверительного управления
                     на ведение ИИС с&nbsp;АО&nbsp;«НФК&nbsp;-&nbsp;Сбережения»</p>
                 </div>
@@ -251,7 +262,7 @@
           </div>
         </div>
         <div class="individual__calculator">
-          <h3 class="individual__options-title">Калькулятор ИИС</h3>
+          <h2 class="individual__options-title">Калькулятор ИИС</h2>
           <ul class="nav nav-pills calculator__table-nav" id="myTabCalc" role="tablist">
             <li class="nav-item" role="presentation">
               <button class="nav-link active calc__brokers-service-btn" id="brokers-service" data-bs-toggle="tab"
@@ -309,7 +320,7 @@
 
                 <form action="#" class="calc__brokers-right-card">
                   <div class="calc__brokers-header">
-                    <h4 class="calc__brokers-header-title" id="resultYears"></h4>
+                    <h3 class="calc__brokers-header-title" id="resultYears"></h3>
                     <div class="saving__sum">
                       <label for="result" class="saving__sum-title">Накопленная сумма</label>
                       <input class="saving__sum-value" id="result">
@@ -353,7 +364,7 @@
     <section class="repo__transactions">
       <div class="container">
         <div class="window__account">
-          <h3 class="window__account-title">Открытие брокерского счета</h3>
+          <h2 class="window__account-title">Открытие брокерского счета</h2>
           <form action="#" class="account__form" id="accountform">
             <div class="account__form-text">
               <!-- <label for="firstname">Enter your name</label> -->
@@ -403,7 +414,7 @@
                   </svg>
                 </div>
                 
-                <h5 class="accordion-item-title">Для чего нужен индивидуальный инвестиционный счет? </h5>
+                <h4 class="accordion-item-title">Для чего нужен индивидуальный инвестиционный счет? </h4>
               </button>
             </h2>
             <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse"
@@ -429,8 +440,8 @@
                     <use xlink:href="img/icons/icons.svg#arrow-right"></use>
                   </svg>
                 </div>
-                <h5 class="accordion-header-title">Какие преимущества имеет индивидуальный инвестиционный счет по сравнению с обычным брокерским
-                  счетом?</h5>
+                <h4 class="accordion-header-title">Какие преимущества имеет индивидуальный инвестиционный счет по сравнению с обычным брокерским
+                  счетом?</h4>
               </button>
             </h2>
             <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
@@ -460,7 +471,7 @@
                     <use xlink:href="img/icons/icons.svg#arrow-right"></use>
                   </svg>
                 </div>
-                <h5 class="accordion-header-title">Что выгоднее: ИИС или депозит в банке?</h5>
+                <h4 class="accordion-header-title">Что выгоднее: ИИС или депозит в банке?</h4>
               </button>
             </h2>
             <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"

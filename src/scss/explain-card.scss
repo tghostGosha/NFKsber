@@ -1,23 +1,31 @@
 .explain-container {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 32px;
+  row-gap: 40px;
+
+  @media(max-width: 1176px) {
+    column-gap: 16px;
+    row-gap: 32px;
+  }
 
   @media(max-width: 585px) {
-    flex-direction: column;
-    align-items: center;
+    column-gap: 0;
+    row-gap: 48px;
   }
 }
 
 .explain__card {
-  max-width: 392px;
+  grid-column: span 4;
 
-  // grid-column: 4, 1fr;
   @media(max-width: 1176px) {
-    max-width: 257px;
+    
+    
   }
 
   @media(max-width: 585px) {
-    max-width: 352px;
+    
+    grid-column: span 12;
   }
 
   &-header {

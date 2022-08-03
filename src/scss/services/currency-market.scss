@@ -3,14 +3,19 @@
   // height: 480px;
 
   &-container {
-    background-image: url('../img/currency-market/currency-hero.png');
+    background-image: var(--desktop-image-banner-top);
     padding: 31px 50% 48px 0;
     background-repeat: no-repeat;
     background-position: right bottom;
+    background-size: 47%;
 
     @media(max-width: 1176px) {
       background-size: 41%;
       padding: 24px 3% 32px 0;
+    }
+    @media(max-width: 585px) {
+      padding: 24px 3% 115px 0;
+      background-size: 64%;
     }
 
   }
@@ -45,6 +50,9 @@
     @media(max-width: 1176px) {
       margin-bottom: 42px;
     }
+    @media(max-width: 585px) {
+      margin-bottom: 32px;
+    }
   }
 }
 
@@ -54,6 +62,9 @@
   @media(max-width: 1176px) {
     padding-top: 56px;
   }
+  @media(max-width: 585px) {
+    padding-top: 48px;
+  }
 }
 
 .currency__benefit {
@@ -62,13 +73,18 @@
   @media(max-width: 1176px) {
     margin-bottom: 56px;
   }
-
+  @media(max-width: 585px) {
+    margin-bottom: 48px;
+  }
 
   &-title {
     text-align: center;
 
     @media(max-width: 1176px) {
       margin-bottom: 32px;
+    }
+    @media(max-width: 585px) {
+      margin-bottom: 24px;
     }
   }
 
@@ -82,6 +98,9 @@
     @media(max-width: 1176px) {
       column-gap: 16px;
       row-gap: 24px;
+    }
+    @media(max-width: 585px) {
+      margin-bottom: 16px;
     }
   }
 
@@ -98,19 +117,34 @@
   }
 }
 
+.profitable-title {
+  @media(max-width: 1176px) {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  @media(max-width: 585px) {
+    text-align: center;
+    margin-bottom: 16px;
+  }
+}
+
 .profitable__course {
   grid-column: span 12;
   padding: 40px 50% 62px 46px;
-  background-image: url('../img/currency-market/profitable-course.png');
+  background-image: var(--profitable__course-image);
   background-repeat: no-repeat;
   background-position: 88% 92%;
 
   @media(max-width: 1176px) {
-    padding: 21px 46% 27px 24px;
+    padding: 24px 46% 20px 24px;
     background-position: 96% 94%;
-    ;
+    
   }
-
+  @media(max-width: 585px) {
+    padding: 24px 1% 192px 12px;
+    background-size: 63%;
+    background-position: right bottom;
+  }
   // background-size: contain;
 }
 
@@ -129,66 +163,101 @@
   @media(max-width: 1176px) {
     margin-top: 32px;
   }
+  @media(max-width: 585px) {
+    padding: 12px 14px;
+    margin-top: 16px;
+  }
+}
+.secure__broker {
+  padding: 40px 38% 56px 46px;
+  background-image: var(--secure__broker-image);
 }
 
+
+
+.own__account {
+  padding: 40px 40% 28px 46px;
+  background-image: var(--own__account-image);
+
+  @media(max-width: 1176px) {
+
+    padding: 24px 2% 194px 32px;
+  }
+}
+
+.credit__shoulder {
+  padding: 40px 41% 56px 46px;
+  background-image: var(--credit__shoulder-image);
+
+}
 .secure__broker,
 .terminal__online,
 .own__account,
 .credit__shoulder {
   grid-column: span 6;
   background-position: 92% 77%;
-}
 
-.secure__broker {
-  padding: 40px 38% 56px 46px;
-  background-image: url('../img/currency-market/currency-broker.png');
   @media(max-width: 1176px) {
-    background-image: none;
-    padding: 24px 5% 24px 32px;
+    background-position: 93% 96%;
+    padding: 24px 2% 174px 32px;
+    background-size: 40%;
   }
-
+  @media(max-width: 585px) {
+    grid-column: span 12;
+    padding: 24px 2% 188px 12px;
+  }
 }
 
 .terminal__online {
   padding: 40px 40% 28px 46px;
-  background-image: url('../img/currency-market/currency-terminal.png');
+  background-image: var(--terminal__online-image);
   @media(max-width: 1176px) {
-    background-image: none;
-    padding: 24px 5% 24px 32px;
+    background-image: var(--terminal__online-mobile-image);
+    background-size: 20%;
+    padding: 24px 2% 174px 32px;
+  }
+  @media(max-width: 585px) {
+    background-position: 89% 96%;
+    background-size: 23%;
+    padding: 24px 2% 188px 12px;
   }
 }
 
-.own__account {
-  padding: 40px 40% 28px 46px;
-  background-image: url('../img/currency-market/currency-score.png');
-  @media(max-width: 1176px) {
-    background-image: none;
-    padding: 24px 5% 24px 32px;
-  }
-}
-
-.credit__shoulder {
-  padding: 40px 41% 56px 46px;
-  background-image: url('../img/currency-market/currency-credit.png');
-  @media(max-width: 1176px) {
-    background-image: none;
-    padding: 24px 5% 24px 32px;
-  }
-}
 .currency-rates__table-nav {
   margin-bottom: 32px;
+
   @media(max-width: 1176px) {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     column-gap: 16px;
     row-gap: 16px;
   }
+  @media(max-width: 585px) {
+    row-gap: 12px;
+  }
 
+}
+.rates__nav-item:not(:last-child) {
+  @media(max-width: 1176px) {
+    margin: 0;
+  }
 }
 .rates__item-deal {
   @media(max-width: 1176px) {
     grid-column: 1 / span 8;
   }
+  
+}
+.rate-title {
+  @media(max-width: 585px) {
+    margin-bottom: 12px;
+  }
+}
+.td-aligh-end-on375 {
+  @media(max-width: 585px) {
+    text-align: end;
+  }
+  
 }
 .rates__item-service {
   @media(max-width: 1176px) {
@@ -196,19 +265,30 @@
     grid-column: 1 / span 7;
   }
 }
+
 .rates__item-award {
   @media(max-width: 1176px) {
     grid-column: 9 / span 4;
+    width: 100%;
   }
-} 
+}
+.rates__nav-item {
+  @media(max-width: 585px) {
+    grid-column: 1 / span 12;
+  }
+}
 .currency__rates {
   padding-top: 68px;
   padding-bottom: 136px;
+
   @media(max-width: 1176px) {
     padding-top: 56px;
     padding-bottom: 0;
+    margin-bottom: 56px;
   }
-
+  @media(max-width: 585px) {
+    margin-bottom: 48px;
+  }
   &-title {
     text-align: center;
   }
@@ -218,10 +298,16 @@
 
     &-title {
       margin-bottom: 28px;
+      @media(max-width: 1176px) {
+        margin-bottom: 16px;
+      }
     }
 
     &-description {
       margin-bottom: 28px;
+      @media(max-width: 1176px) {
+        margin-bottom: 24px;
+      } 
     }
   }
 }
@@ -230,12 +316,24 @@
   background: linear-gradient(180deg, #F4F6F8 0%, rgba(244, 246, 248, 0) 100%);
   position: relative;
   padding-bottom: 112px;
+  @media(max-width: 1176px) {
+    background: #ffffff;
+    padding-bottom: 0;
+  }
 
   &-buttons {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     column-gap: 32px;
     margin-bottom: 68px;
+    @media(max-width: 1176px) {
+      column-gap: 16px;
+      row-gap: 16px;
+      margin-bottom: 56px;
+    }
+    @media(max-width: 585px) {
+      margin-bottom: 48px;
+    }
   }
 
   &-consult {
@@ -253,4 +351,10 @@
 
 .currency__info-footnotes {
   margin-top: 68px;
+  @media(max-width: 1176px) {
+    margin-top: 56px;
+  }
+  @media(max-width: 585px) {
+    margin-top: 48px;
+  }
 }
