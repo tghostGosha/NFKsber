@@ -2,7 +2,6 @@
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   column-gap: 32px;
-  margin-top: 40px;
   background-color: var(--primary-grey);
   border-radius: 10px;
 
@@ -14,7 +13,6 @@
     column-gap: 12px;
     row-gap: 24px;
     grid-template-rows: 1fr 0.9fr;
-    margin-top: 24px;
   }
 
   &-left-img {
