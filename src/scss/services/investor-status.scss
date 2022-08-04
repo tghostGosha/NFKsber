@@ -1,13 +1,20 @@
 .investor__hero {
   background-color: var(--primary-grey);
-  height: 480px;
 
   &-container {
-    background-image: url('../img/investor-status/investor-hero.png');
-    padding: 24px 52% 43px 0;
+    background-image: var(--desktop-image-banner-top);
+    padding: 24px 52% 117px 0;
     background-repeat: no-repeat;
-    background-position: 92% bottom;
-    height: 480px;
+    background-position: right bottom;
+    @media(max-width: 1176px) {
+      padding: 24px 33% 38px 0;
+      background-size: 38%;
+    }
+
+    @media(max-width: 585px) {
+      padding: 8px 3% 141px 0;
+      background-size: 58%;
+    }
   }
 
   &-title {
@@ -17,9 +24,14 @@
 }
 
 .investor__requirements {
-  padding-top: 67px;
+  padding-top: 66px;
   padding-bottom: 148px;
-
+  @media(max-width: 1176px) {
+    padding-top: 56px;
+  }
+  @media(max-width: 585px) {
+    padding-top: 48px;
+  }
   &-title {
     text-align: center;
     max-width: 578px;
@@ -60,7 +72,7 @@
   padding-bottom: 148px;
 
   &-title {
-    max-width: 692px;
+    
     text-align: center;
     max-width: 578px;
     margin: 0 auto;
@@ -76,21 +88,16 @@
 }
 
 .steps__container {
-  display: flex;
   position: relative;
   padding-bottom: 15px;
-  margin-bottom: 102px;
   // align-items: center;
 }
 
 .step {
   display: flex;
   flex-direction: column;
-
-  &:not(:last-child) {
-    margin-right: 32px;
-  }
-
+  grid-column: span 3;
+ 
   &__header {
     width: 86px;
     height: 86px;
@@ -108,7 +115,6 @@
 
   &__body {
     margin-top: 24px;
-    width: 286px;
 
     &-text {
       text-align: center;
@@ -116,13 +122,6 @@
 
     }
   }
-
-  // &::after: {
-  //   content: '';
-  //   width: 152px;
-  //   height: 1px;
-  //   background-color: var(--grey-button);
-  // }
 
   &-line {
     position: absolute;
@@ -144,34 +143,16 @@
 .status__statement {
 
   &-card {
-    display: grid;
-    // height: 280px;
-    grid-template-columns: repeat(12, 1fr);
-    column-gap: 32px;
-    background-color: var(--primary-grey);
-    border-radius: 10px;
+   
 
     &-left {
-      padding: 22px 10px 0 40px;
-      grid-column: 1/span 6;
-      position: relative;
+     
     }
 
     &-right {
-      padding-top: 40px;
-      padding-right: 38px;
-      padding-bottom: 40px;
-      grid-column: 7/span 6;
+      padding: 40px 20px 40px 20px;
     }
   }
-
-  &-img {
-    display: block;
-    margin: 0 auto;
-    position: absolute;
-    bottom: 0;
-  }
-
   &-list {
     margin: 0;
     margin-top: 24px;
@@ -189,9 +170,4 @@
 
 .investor__status-statement {
   margin-bottom: 76px;
-}
-
-.investor__transactions {
-  background: linear-gradient(180deg, #F4F6F8 0%, rgba(244, 246, 248, 0) 100%);
-  padding-bottom: 112px;
 }

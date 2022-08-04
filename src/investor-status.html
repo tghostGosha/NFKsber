@@ -10,29 +10,30 @@
   <main>
     <section class="investor__hero">
       <div class="container ">
-        <div class="investor__hero-container">
-          <nav aria-label="breadcrumb">
-            <ul class="breadcrumb">
-              <li class="page-item-mobile">
-                <svg width="20px" height="20px" class="svg-arrow-right-dims">
-                  <use xlink:href="img/icons/icons.svg#arrow-left"></use>
-                </svg>
-              </li>
-              <li class="breadcrumb-item "><a class="breadcrumb-link" href="index.html">Главная</a></li>
-              <li class="breadcrumb-item hide-on-mobile">
-                <svg width="20px" height="20px" class="svg-arrow-right-dims breadcrumb-svg">
-                  <use xlink:href="img/icons/icons.svg#arrow-right"></use>
-                </svg>
-              </li>
-              <li class="breadcrumb-item hide-on-mobile"><a class="breadcrumb-link" href="services.html">Услуги</a></li>
-              <li class="breadcrumb-item hide-on-mobile">
-                <svg width="20px" height="20px" class="svg-arrow-right-dims breadcrumb-svg">
-                  <use xlink:href="img/icons/icons.svg#arrow-right"></use>
-                </svg>
-              </li>
-              <li class="breadcrumb-item hide-on-mobile"><a class="breadcrumb-link" href="investor-status.html">Статус квалифицированного инвестора</a></li>
-            </ul>
-          </nav>
+        <nav aria-label="breadcrumb">
+          <ul class="breadcrumb">
+            <li class="page-item-mobile">
+              <svg width="20px" height="20px" class="svg-arrow-right-dims">
+                <use xlink:href="img/icons/icons.svg#arrow-left"></use>
+              </svg>
+            </li>
+            <li class="breadcrumb-item "><a class="breadcrumb-link" href="index.html">Главная</a></li>
+            <li class="breadcrumb-item hide-on-mobile">
+              <svg width="20px" height="20px" class="svg-arrow-right-dims breadcrumb-svg">
+                <use xlink:href="img/icons/icons.svg#arrow-right"></use>
+              </svg>
+            </li>
+            <li class="breadcrumb-item hide-on-mobile"><a class="breadcrumb-link" href="services.html">Услуги</a></li>
+            <li class="breadcrumb-item hide-on-mobile">
+              <svg width="20px" height="20px" class="svg-arrow-right-dims breadcrumb-svg">
+                <use xlink:href="img/icons/icons.svg#arrow-right"></use>
+              </svg>
+            </li>
+            <li class="breadcrumb-item hide-on-mobile"><a class="breadcrumb-link" href="investor-status.html">Статус квалифицированного инвестора</a></li>
+          </ul>
+        </nav>
+        <div class="investor__hero-container" style="--desktop-image-banner-top: url('../img/investor-status/investor-hero.png');">
+          
           <h1 class="investor__hero-title">Станьте квалифицированным инвестором, чтобы использовать все возможности
             финансового рынка</h1>
           <p class="investor__hero-description">Статус квалифицированного инвестора позволяет осуществлять весь спектр
@@ -42,7 +43,7 @@
     </section>
     <section class="investor__requirements">
       <div class="container">
-        <h3 class="investor__requirements-title">Требования для получения статуса квалифицированного инвестора</h3>
+        <h2 class="investor__requirements-title">Требования для получения статуса квалифицированного инвестора</h2>
         <ul class="nav nav-pills rates__table-nav" id="myTab" role="tablist">
           <li class="nav-item" role="presentation">
             <button class="nav-link active" id="privat-tab" data-bs-toggle="tab" data-bs-target="#privatPerson"
@@ -55,8 +56,8 @@
         </ul>
         <div class="tab-content">
           <div class="tab-pane active" id="privatPerson" role="tabpanel" aria-labelledby="privat-tab" tabindex="0">
-            <h4 class="investor__tab-title">Может быть признано квалифицированным инвестором, если оно отвечает хотя бы
-              одному из указанных требований:</h4>
+            <h3 class="investor__tab-title">Может быть признано квалифицированным инвестором, если оно отвечает хотя бы
+              одному из указанных требований:</h3>
             <ul class="brokers__app-list brokers__list investor-list">
               <li class="brokers__list-item">Общая стоимость ценных бумаг и производных финансовых инструментов во
                 владении превышает 6 млн рублей</li>
@@ -70,12 +71,12 @@
                 инструментами в среднем не реже 10 раз в квартал за последние 4 квартала, но не реже одного раза в
                 месяц. Совокупная цена таких сделок (договоров) должна превышать 6 млн рублей</li>
             </ul>
-            <h3 class="investor__status-title">Как получить статус квалифицированного инвестора</h3>
+            <h2 class="investor__status-title">Как получить статус квалифицированного инвестора</h2>
             <p class="investor__status-description">Если Вы как Физическое лицо соответствуете вышеописанным критериям и
               хотите получить статус квалифицированного инвестора, то Вам необходимо подать заявление при личном
               посещении офиса АО «НФК-Сбережения» по адресу г. Чебоксары ул. Максима Горького д. 5 к. 2 либо
               дистанционно через Интернет</p>
-            <div class="steps__container">
+            <div class="steps__container block__margin-bottom grid-container">
               <div class="step">
                 <div class="step__header">
                   <h4 class="step__header-title">1</h4>
@@ -118,14 +119,14 @@
               <a href="#" class="button primary-button investor__authorize-btn">Авторизоваться</a>
             </div>
             <div class="investor__status-statement">
-              <div class="status__statement-card">
-                <div class="status__statement-card-left">
-                  <img class="status__statement-img" src="img/investor-status/investor-statement.png" alt="Накопления">
+              <div class="small__banner status__statement-card">
+                <div class="small__banner-left-img status__statement-card-left">
+                  <img class="small__banner-img" src="../img/investor-status/investor-statement.png" alt="Накопления">
                 </div>
-                <div class="status__statement-card-right card-right ">
-                  <h4 class="card-right-title">К Заявлению прикладывается один
+                <div class="small__banner-right-text status__statement-card-right">
+                  <h3 class="small__banner-title">К Заявлению прикладывается один
                     из следующих документов в зависимости
-                    от основания получения желаемого Статуса</h4>
+                    от основания получения желаемого Статуса</h3>
                   <span class="card-right-footnote">(в соответствии с пунктами Требований для физических лиц):</span>
                   <ul class="brokers__app-list brokers__list status__statement-list">
                     <li class="brokers__list-item">Сведения о владении ценными бумагами и производными финансовыми
@@ -142,16 +143,18 @@
               </div>
             </div>
             <div class="important__block">
-              <svg width="20px" height="20px" class="svg-important-dims">
-                <use xlink:href="img/icons/icons.svg#important"></use>
-              </svg>
+              <div>
+                <svg width="20px" height="20px" class="svg-important-dims">
+                  <use xlink:href="img/icons/icons.svg#important"></use>
+                </svg>
+              </div>
               <span class="important__block-description">С документами, связанными с депозитарной деятельностью, можно
                 ознакомиться по <a href="#" class="important__description-link">ссылке</a></span>
             </div>
           </div>
           <div class="tab-pane " id="legalEntity" role="tabpanel" aria-labelledby="legal-entity-tab" tabindex="0">
-            <h4 class="investor__tab-title">Может быть признано квалифицированным инвестором, если оно отвечает хотя бы
-              одному из указанных требований:</h4>
+            <h3 class="investor__tab-title">Может быть признано квалифицированным инвестором, если оно отвечает хотя бы
+              одному из указанных требований:</h3>
             <ul class="brokers__app-list brokers__list investor-list">
               <li class="brokers__list-item">Оборот (выручка) от реализации товаров (работ, услуг) по данным
                 бухгалтерской отчётности за последний завершённый отчётный год должна превышать 2 млрд рублей</li>
@@ -164,18 +167,18 @@
                 превышать 50 млн рублей</li>
               <li class="brokers__list-item">Лицо имеет собственный капитал более 200 млн рублей</li>
             </ul>
-            <h3 class="investor__status-title">Как получить статус квалифицированного инвестора</h3>
+            <h2 class="investor__status-title">Как получить статус квалифицированного инвестора</h2>
 
             <div class="investor__status-statement">
-              <div class="status__statement-card">
-                <div class="status__statement-card-left">
-                  <img class="status__statement-img" src="img/investor-status/investor-statement.png" alt="Накопления">
+              <div class="small__banner status__statement-card">
+                <div class="small__banner-left-img">
+                  <img class="small__banner-img" src="../img/investor-status/investor-statement.png" alt="Накопления">
                 </div>
-                <div class="status__statement-card-right card-right ">
-                  <h4 class="card-right-title">Если Ваше Юридическое лицо соответствует вышеописанным критериям и претендует
+                <div class="small__banner-right-text ">
+                  <h3 class="small__banner-title">Если Ваше Юридическое лицо соответствует вышеописанным критериям и претендует
                     на получение статуса квалифицированного инвестора, то для получения Статуса необходимо отправить Заявление
                     о признании квалифицированным инвестором
-                    от юридического лица</h4>
+                    от юридического лица</h3>
                   <span class="card-right-footnote">(в соответствии с пунктами Требований для юридических лиц):</span>
                   <ul class="brokers__app-list brokers__list status__statement-list">
                     <li class="brokers__list-item status__statement-list-item">Сведения о наличии собственного капитала не менее 200 млн рублей</li>
@@ -192,7 +195,7 @@
       </div>
     </section>
     
-    <section class="investor__transactions">
+    <section class="investor__transactions section-with-gradient">
       <div class="container">
         <div class="window__account">
           <h3 class="window__account-title">Открытие брокерского счета</h3>

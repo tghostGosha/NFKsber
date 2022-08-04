@@ -1,13 +1,11 @@
 .depositary__hero {
   background-color: var(--primary-grey);
-  height: 480px;
 
   &-container {
-    background-image: url('../img/depositary-activities/depositary-hero.png');
-    padding: 24px 52% 43px 0;
+    background-image: var(--desktop-image-banner-top);
+    padding: 24px 52% 27.4% 0;
     background-repeat: no-repeat;
     background-position: right bottom;
-    height: 480px;
   }
 
   &-title {

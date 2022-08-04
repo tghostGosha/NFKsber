@@ -15380,14 +15380,12 @@ input::placeholder {
 
 .depositary__hero {
   background-color: var(--primary-grey);
-  height: 480px;
 }
 .depositary__hero-container {
-  background-image: url("../img/depositary-activities/depositary-hero.png");
-  padding: 24px 52% 43px 0;
+  background-image: var(--desktop-image-banner-top);
+  padding: 24px 52% 27.4% 0;
   background-repeat: no-repeat;
   background-position: right bottom;
-  height: 480px;
 }
 .depositary__hero-title {
   margin-bottom: 24px;
@@ -15461,22 +15459,42 @@ input::placeholder {
 
 .investor__hero {
   background-color: var(--primary-grey);
-  height: 480px;
 }
 .investor__hero-container {
-  background-image: url("../img/investor-status/investor-hero.png");
-  padding: 24px 52% 43px 0;
+  background-image: var(--desktop-image-banner-top);
+  padding: 24px 52% 117px 0;
   background-repeat: no-repeat;
-  background-position: 92% bottom;
-  height: 480px;
+  background-position: right bottom;
+}
+@media (max-width: 1176px) {
+  .investor__hero-container {
+    padding: 24px 33% 38px 0;
+    background-size: 38%;
+  }
+}
+@media (max-width: 585px) {
+  .investor__hero-container {
+    padding: 8px 3% 141px 0;
+    background-size: 58%;
+  }
 }
 .investor__hero-title {
   margin-bottom: 24px;
 }
 
 .investor__requirements {
-  padding-top: 67px;
+  padding-top: 66px;
   padding-bottom: 148px;
+}
+@media (max-width: 1176px) {
+  .investor__requirements {
+    padding-top: 56px;
+  }
+}
+@media (max-width: 585px) {
+  .investor__requirements {
+    padding-top: 48px;
+  }
 }
 .investor__requirements-title {
   text-align: center;
@@ -15513,7 +15531,6 @@ input::placeholder {
   padding-bottom: 148px;
 }
 .investor__status-title {
-  max-width: 692px;
   text-align: center;
   max-width: 578px;
   margin: 0 auto;
@@ -15527,18 +15544,14 @@ input::placeholder {
 }
 
 .steps__container {
-  display: flex;
   position: relative;
   padding-bottom: 15px;
-  margin-bottom: 102px;
 }
 
 .step {
   display: flex;
   flex-direction: column;
-}
-.step:not(:last-child) {
-  margin-right: 32px;
+  grid-column: span 3;
 }
 .step__header {
   width: 86px;
@@ -15554,7 +15567,6 @@ input::placeholder {
 }
 .step__body {
   margin-top: 24px;
-  width: 286px;
 }
 .step__body-text {
   text-align: center;
@@ -15576,29 +15588,8 @@ input::placeholder {
   padding: 18px 26px;
 }
 
-.status__statement-card {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  column-gap: 32px;
-  background-color: var(--primary-grey);
-  border-radius: 10px;
-}
-.status__statement-card-left {
-  padding: 22px 10px 0 40px;
-  grid-column: 1/span 6;
-  position: relative;
-}
 .status__statement-card-right {
-  padding-top: 40px;
-  padding-right: 38px;
-  padding-bottom: 40px;
-  grid-column: 7/span 6;
-}
-.status__statement-img {
-  display: block;
-  margin: 0 auto;
-  position: absolute;
-  bottom: 0;
+  padding: 40px 20px 40px 20px;
 }
 .status__statement-list {
   margin: 0;
@@ -15614,11 +15605,6 @@ input::placeholder {
 
 .investor__status-statement {
   margin-bottom: 76px;
-}
-
-.investor__transactions {
-  background: linear-gradient(180deg, #F4F6F8 0%, rgba(244, 246, 248, 0) 100%);
-  padding-bottom: 112px;
 }
 
 .individual__hero {
