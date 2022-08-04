@@ -14095,6 +14095,7 @@ input::placeholder {
 @media (max-width: 585px) {
   .small__banner {
     column-gap: 12px;
+    row-gap: 24px;
     grid-template-rows: 1fr 0.9fr;
     margin-top: 24px;
   }
@@ -14112,7 +14113,7 @@ input::placeholder {
   }
 }
 .small__banner-left-text {
-  padding: 40px 10px 40px 48px;
+  padding: 40px 10px 40px 46px;
   grid-column: 1/span 6;
 }
 @media (max-width: 1176px) {
@@ -14123,7 +14124,7 @@ input::placeholder {
 @media (max-width: 585px) {
   .small__banner-left-text {
     grid-column: 1/span 12;
-    padding: 40px 10px 8px 12px;
+    padding: 24px 10px 8px 12px;
   }
 }
 .small__banner-right-img {
@@ -14258,12 +14259,6 @@ input::placeholder {
   .svg-coins-dims {
     width: 44px;
     height: 36px;
-  }
-}
-
-@media (max-width: 585px) {
-  .explain__card:not(:last-child) {
-    margin-bottom: 48px;
   }
 }
 
@@ -14417,19 +14412,6 @@ input::placeholder {
   }
 }
 
-.brokers__about {
-  margin-bottom: 64px;
-}
-@media (max-width: 1176px) {
-  .brokers__about {
-    margin-bottom: 56px;
-  }
-}
-@media (max-width: 585px) {
-  .brokers__about {
-    margin-bottom: 48px;
-  }
-}
 .brokers__about-title {
   margin: 0 auto;
   text-align: center;
@@ -14441,19 +14423,6 @@ input::placeholder {
   }
 }
 
-.brokers__conditions {
-  margin-bottom: 64px;
-}
-@media (max-width: 1176px) {
-  .brokers__conditions {
-    margin-bottom: 56px;
-  }
-}
-@media (max-width: 585px) {
-  .brokers__conditions {
-    margin-bottom: 48px;
-  }
-}
 .brokers__conditions-title {
   margin-bottom: 40px;
   text-align: center;
@@ -14470,31 +14439,12 @@ input::placeholder {
   }
 }
 
-.brokers__app {
-  margin-bottom: 68px;
-}
-@media (max-width: 1176px) {
-  .brokers__app {
-    margin-bottom: 56px;
-  }
-}
-@media (max-width: 585px) {
-  .brokers__app {
-    margin-bottom: 48px;
-  }
-}
 .brokers__app-card {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  column-gap: 32px;
-  background-color: var(--primary-grey);
-  border-radius: 10px;
   padding-top: 40px;
 }
 @media (max-width: 1176px) {
   .brokers__app-card {
     padding-top: 24px;
-    column-gap: 16px;
   }
 }
 @media (max-width: 585px) {
@@ -14562,19 +14512,6 @@ input::placeholder {
   fill: var(--primary-text);
 }
 
-.brokers__service {
-  margin-bottom: 64px;
-}
-@media (max-width: 1176px) {
-  .brokers__service {
-    margin-bottom: 56px;
-  }
-}
-@media (max-width: 585px) {
-  .brokers__service {
-    margin-bottom: 48px;
-  }
-}
 .brokers__service-list {
   margin: 0;
 }
@@ -14609,24 +14546,12 @@ input::placeholder {
 }
 .brokers__education-card {
   background-color: var(--primary-text);
-  border-radius: 10px;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  column-gap: 32px;
-  row-gap: 28px;
 }
 @media (max-width: 585px) {
   .brokers__education-card {
     grid-template-rows: 1fr 172px;
     row-gap: 24px;
   }
-}
-.brokers__education-card-right {
-  grid-column: 7/span 6;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
 }
 @media (max-width: 1176px) {
   .brokers__education-card-right {
@@ -14639,24 +14564,15 @@ input::placeholder {
     grid-row: 2/span 1;
   }
 }
-.brokers__education-card-left {
-  grid-column: 1/span 6;
-  padding: 40px 10px 40px 40px;
-}
 @media (max-width: 1176px) {
   .brokers__education-card-left {
-    padding: 24px 10px 32px 24px;
     grid-column: 1/span 7;
   }
 }
 @media (max-width: 585px) {
   .brokers__education-card-left {
     grid-column: 1/span 12;
-    padding: 40px 1px 0 12px;
   }
-}
-.brokers__education-img {
-  display: block;
 }
 .brokers__education-buttons {
   display: flex;
@@ -14711,17 +14627,6 @@ input::placeholder {
   }
 }
 
-.brokers__info {
-  background: linear-gradient(180deg, #F4F6F8 0%, rgba(244, 246, 248, 0) 100%);
-  position: relative;
-  padding-bottom: 112px;
-}
-@media (max-width: 1176px) {
-  .brokers__info {
-    background: #ffffff;
-    padding-bottom: 0;
-  }
-}
 @media (max-width: 585px) {
   .brokers__info {
     display: none;
@@ -14805,20 +14710,6 @@ input::placeholder {
   }
 }
 
-.strategy__about {
-  margin-bottom: 68px;
-}
-@media (max-width: 1176px) {
-  .strategy__about {
-    margin-bottom: 56px;
-  }
-}
-@media (max-width: 585px) {
-  .strategy__about {
-    margin-bottom: 48px;
-  }
-}
-
 @media (max-width: 585px) {
   .small__banner-strategy {
     row-gap: 24px;
@@ -14855,17 +14746,9 @@ input::placeholder {
   flex-direction: column;
 }
 .trust__strategy-card {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  column-gap: 32px;
   border-radius: 10px;
   border: 1px solid var(--grey-button);
   border-radius: 10px;
-}
-@media (max-width: 1176px) {
-  .trust__strategy-card {
-    column-gap: 16px;
-  }
 }
 .trust__strategy-card:not(:last-child) {
   margin-bottom: 24px;
@@ -15066,13 +14949,7 @@ input::placeholder {
 }
 
 .trust__about {
-  background: linear-gradient(180deg, #F4F6F8 0%, rgba(244, 246, 248, 0) 100%);
   position: relative;
-}
-@media (max-width: 1176px) {
-  .trust__about {
-    background: #ffffff;
-  }
 }
 .trust__about-description {
   color: var(--secondary-text);
@@ -15200,10 +15077,7 @@ input::placeholder {
 .universal__info {
   padding-top: 40px;
   padding-bottom: 203px;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
   row-gap: 68px;
-  column-gap: 32px;
 }
 @media (max-width: 1176px) {
   .universal__info {
@@ -15353,15 +15227,7 @@ input::placeholder {
 
 .universal__about {
   width: 100%;
-  background: linear-gradient(180deg, #F4F6F8 0%, rgba(244, 246, 248, 0) 100%);
   position: relative;
-  padding-bottom: 112px;
-}
-@media (max-width: 1176px) {
-  .universal__about {
-    background: #ffffff;
-    padding-bottom: 0;
-  }
 }
 .universal__about-description {
   position: relative;
@@ -15375,19 +15241,6 @@ input::placeholder {
 .universal__about-description:not(:last-child) {
   margin-bottom: 20px;
 }
-.universal__about-block {
-  margin-top: 68px;
-}
-@media (max-width: 1176px) {
-  .universal__about-block {
-    margin-top: 56px;
-  }
-}
-@media (max-width: 585px) {
-  .universal__about-block {
-    margin-top: 24px;
-  }
-}
 
 .important__description-link {
   color: var(--primary-blue);
@@ -15395,123 +15248,134 @@ input::placeholder {
 
 .metals__hero {
   background-color: var(--primary-grey);
-  height: 480px;
 }
 .metals__hero-container {
-  background-image: url("../img/metals-market/metals-hero.png");
-  padding: 24px 52% 43px 0;
+  background-image: var(--desktop-image-banner-top);
+  padding: 46px 52% 295px 0;
   background-repeat: no-repeat;
   background-position: right bottom;
-  height: 480px;
 }
-.metals__hero-title {
-  margin-bottom: 24px;
+@media (max-width: 1176px) {
+  .metals__hero-container {
+    padding: 32px 39% 199px 0;
+    background-size: 40%;
+  }
 }
-
+@media (max-width: 585px) {
+  .metals__hero-container {
+    padding: 32px 39% 246px 0;
+    background-size: 92%;
+  }
+}
 .metals__about {
-  padding-top: 67px;
-  padding-bottom: 136px;
-}
-.metals__about-info {
-  display: grid;
-  margin-bottom: 68px;
-  grid-template-columns: repeat(12, 1fr);
-  grid-column: 32px;
+  padding-top: 68px;
 }
 .metals__about-first-article {
   grid-column: 1/span 6;
 }
+@media (max-width: 1176px) {
+  .metals__about-first-article {
+    grid-column: span 12;
+  }
+}
 .metals__about-second-article {
   grid-column: 7/span 6;
 }
-.metals__about-img {
-  display: block;
-  margin: 0 auto;
-}
-.metals__about-service {
-  margin-bottom: 68px;
-}
-.metals__about-trade {
-  margin: 68px;
+@media (max-width: 1176px) {
+  .metals__about-second-article {
+    grid-column: span 12;
+  }
 }
 
 .metals__service-card {
-  display: grid;
-  height: 280px;
-  grid-template-columns: repeat(12, 1fr);
-  column-gap: 32px;
-  background-color: var(--primary-grey);
-  border-radius: 10px;
+  margin: 0;
 }
-.metals__service-card-left {
-  padding: 46px 10px 0 40px;
-  grid-column: 1/span 6;
+@media (max-width: 585px) {
+  .metals__service-card {
+    grid-template-rows: 1fr 140px;
+  }
 }
-.metals__service-card-right {
-  padding-top: 19px;
-  grid-column: 7/span 6;
+@media (max-width: 1176px) {
+  .metals__service-card-left {
+    grid-column: 1/span 7;
+  }
+}
+@media (max-width: 585px) {
+  .metals__service-card-left {
+    grid-column: 1/span 12;
+  }
+}
+@media (max-width: 1176px) {
+  .metals__service-card-right {
+    grid-column: 8/span 5;
+  }
+}
+@media (max-width: 585px) {
+  .metals__service-card-right {
+    grid-column: 1/span 12;
+  }
+}
+@media (max-width: 1176px) {
+  .metals__service-card-description {
+    font-size: 14px;
+    line-height: 20px;
+  }
 }
 
-.metals__conditions {
-  margin-bottom: 68px;
+@media (max-width: 585px) {
+  .metals__conditions-card {
+    grid-template-rows: 1fr 274px;
+  }
 }
 .metals__conditions-list {
   margin: 0;
-}
-.metals__conditions-card {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  column-gap: 32px;
-  background-color: var(--primary-grey);
-  border-radius: 10px;
-}
-.metals__conditions-card-left {
-  padding: 32px 0 0 0;
-  grid-column: 1/span 6;
-}
-.metals__conditions-card-right {
-  padding: 40px 74px 40px 0;
-  grid-column: 7/span 6;
 }
 
 .metals__commission-title {
   margin-bottom: 28px;
 }
 
-.metals__commission-description {
-  margin-bottom: 68px;
-  display: block;
+@media (max-width: 585px) {
+  .metals__trade-card {
+    grid-template-rows: 1fr 168px;
+    row-gap: 16px;
+  }
 }
-
-.metals__trade-card {
-  display: grid;
-  height: 301px;
-  grid-template-columns: repeat(12, 1fr);
-  column-gap: 32px;
-  background-color: var(--primary-grey);
-  border-radius: 10px;
-}
-.metals__trade-card-left {
-  padding: 46px 86px 0 40px;
-  grid-column: 1/span 6;
-}
-.metals__trade-card-right {
-  padding-top: 19px;
-  grid-column: 7/span 6;
+@media (max-width: 1176px) {
+  .metals__trade-card-description {
+    font-size: 14px;
+    line-height: 20px;
+  }
 }
 .metals__trade-btn {
   padding: 18px 26px;
   margin-top: 40px;
 }
-
-.metals__transactions {
-  padding-bottom: 112px;
-  background: linear-gradient(180deg, #F4F6F8 0%, rgba(244, 246, 248, 0) 100%);
+@media (max-width: 1176px) {
+  .metals__trade-btn {
+    margin-top: 24px;
+  }
 }
+@media (max-width: 585px) {
+  .metals__trade-btn {
+    display: none !important;
+  }
+}
+
 .metals__transactions-footnote {
   padding-left: 10px;
   position: relative;
   margin-top: 68px;
+}
+@media (max-width: 1176px) {
+  .metals__transactions-footnote {
+    margin-top: 56px;
+  }
+}
+@media (max-width: 585px) {
+  .metals__transactions-footnote {
+    margin-top: 48px;
+  }
 }
 
 .depositary__hero {
@@ -15865,19 +15729,6 @@ input::placeholder {
   }
 }
 
-.individual__about {
-  margin-bottom: 68px;
-}
-@media (max-width: 1176px) {
-  .individual__about {
-    margin-bottom: 56px;
-  }
-}
-@media (max-width: 585px) {
-  .individual__about {
-    margin-bottom: 48px;
-  }
-}
 .individual__about-card {
   margin-bottom: 40px;
 }
@@ -15990,33 +15841,13 @@ input::placeholder {
   line-height: 19px;
   color: var(--secondary-text);
   padding-right: 86px;
-  margin-bottom: 68px;
-}
-@media (max-width: 1176px) {
-  .individual__options-description {
-    margin-bottom: 56px;
-  }
 }
 @media (max-width: 585px) {
   .individual__options-description {
-    margin-bottom: 48px;
     padding: 0;
   }
 }
 
-.individual__advantages {
-  margin-bottom: 68px;
-}
-@media (max-width: 1176px) {
-  .individual__advantages {
-    margin-bottom: 56px;
-  }
-}
-@media (max-width: 585px) {
-  .individual__advantages {
-    margin-bottom: 48px;
-  }
-}
 .individual__advantages-title {
   margin-bottom: 40px;
   text-align: center;
@@ -16032,19 +15863,6 @@ input::placeholder {
   }
 }
 
-.accounts__examples {
-  margin-bottom: 68px;
-}
-@media (max-width: 1176px) {
-  .accounts__examples {
-    margin-bottom: 56px;
-  }
-}
-@media (max-width: 585px) {
-  .accounts__examples {
-    margin-bottom: 48px;
-  }
-}
 .accounts__examples-services {
   margin-bottom: 28px;
 }
@@ -16076,22 +15894,17 @@ input::placeholder {
 }
 .accounts__examples-card .examples-card__header {
   padding: 48px 28px 25px 46px;
-  display: grid;
   align-items: start;
-  grid-template-columns: repeat(12, 1fr);
-  column-gap: 32px;
 }
 @media (max-width: 1176px) {
   .accounts__examples-card .examples-card__header {
     padding: 24px 26px 30px 12px;
-    column-gap: 16px;
     grid-template-rows: 1fr 49px;
     row-gap: 1px;
   }
 }
 @media (max-width: 585px) {
   .accounts__examples-card .examples-card__header {
-    column-gap: 12px;
     row-gap: 24px;
     padding: 24px 8px 24px 12px;
   }
@@ -16398,8 +16211,6 @@ input::placeholder {
 }
 
 .calc__brokers-service {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
   column-gap: 31px;
 }
 @media (max-width: 1176px) {
@@ -17203,107 +17014,171 @@ th {
 
 .repo__hero {
   background-color: var(--primary-grey);
-  height: 480px;
 }
 .repo__hero-container {
-  background-image: url("../img/transactions-repo/repo-hero.png");
-  padding: 24px 52% 43px 0;
+  background-image: var(--desktop-image-banner-top);
+  padding: 24px 52% 209px 0;
   background-repeat: no-repeat;
   background-position: right bottom;
-  height: 480px;
+}
+@media (max-width: 1176px) {
+  .repo__hero-container {
+    padding: 24px 24% 119px 0;
+    background-size: 48%;
+  }
+}
+@media (max-width: 585px) {
+  .repo__hero-container {
+    padding: 24px 1% 119px 0;
+    background-size: 59%;
+  }
 }
 .repo__hero-title {
   margin-bottom: 24px;
 }
+@media (max-width: 1176px) {
+  .repo__hero-description {
+    padding-right: 29%;
+  }
+}
+@media (max-width: 585px) {
+  .repo__hero-description {
+    padding-right: 0;
+  }
+}
 
 .repo__about {
-  padding-top: 67px;
+  padding-top: 68px;
   padding-bottom: 136px;
 }
-.repo__about-info {
-  margin-bottom: 68px;
+@media (max-width: 1176px) {
+  .repo__about {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+}
+@media (max-width: 585px) {
+  .repo__about {
+    padding-top: 48px;
+  }
 }
 .repo__about-card {
-  display: grid;
-  height: 280px;
-  grid-template-columns: repeat(12, 1fr);
-  column-gap: 32px;
-  background-color: var(--primary-grey);
-  border-radius: 10px;
+  margin-top: 0;
 }
-.repo__about-card-left {
-  padding: 28px 10px 0 40px;
-  grid-column: 1/span 6;
+@media (max-width: 585px) {
+  .repo__about-card {
+    row-gap: 16px;
+    grid-template-rows: 1fr 156px;
+  }
 }
-.repo__about-card-right {
-  padding-top: 40px;
-  padding-right: 10px;
-  grid-column: 7/span 6;
+@media (max-width: 1176px) {
+  .repo__about-card-left {
+    grid-column: 1/span 5;
+  }
 }
-.repo__about-img {
-  display: block;
-  margin: 0 auto;
+@media (max-width: 585px) {
+  .repo__about-card-left {
+    grid-column: 3/span 10;
+  }
 }
-.repo__about-repayment {
-  margin-bottom: 68px;
+@media (max-width: 1176px) {
+  .repo__about-card-right {
+    grid-column: 6/span 7;
+  }
 }
-.repo__about-taxes {
-  margin-bottom: 68px;
+@media (max-width: 585px) {
+  .repo__about-card-right {
+    grid-column: 1/span 12;
+  }
 }
 
 .repayment__service-card {
-  display: grid;
-  height: 280px;
-  grid-template-columns: repeat(12, 1fr);
-  column-gap: 32px;
-  background-color: var(--primary-grey);
-  border-radius: 10px;
+  margin-top: 0;
+}
+@media (max-width: 585px) {
+  .repayment__service-card {
+    row-gap: 16px;
+    grid-template-rows: 1fr 154px;
+  }
 }
 .repayment__service-card-left {
-  padding: 46px 10px 0 40px;
-  grid-column: 1/span 6;
+  padding: 40px 10px 100px 46px;
 }
-.repayment__service-card-left .card-right-description {
+@media (max-width: 1176px) {
+  .repayment__service-card-left {
+    padding: 24px 0 24px 24px;
+    grid-column: 1/span 7;
+  }
+}
+@media (max-width: 585px) {
+  .repayment__service-card-left {
+    grid-column: 1/span 12;
+    padding: 24px 10px 0 12px;
+  }
+}
+@media (max-width: 1176px) {
+  .repayment__service-card-right {
+    grid-column: 8/span 6;
+  }
+}
+@media (max-width: 585px) {
+  .repayment__service-card-right {
+    grid-column: 2/span 11;
+  }
+}
+.repayment__service-description {
   margin-bottom: 24px;
 }
-.repayment__service-card-right {
-  padding-top: 19px;
-  grid-column: 7/span 6;
+@media (max-width: 585px) {
+  .repayment__service-description {
+    margin-bottom: 16px;
+  }
 }
 
 .taxes__about-card {
-  display: grid;
-  height: 280px;
-  grid-template-columns: repeat(12, 1fr);
-  column-gap: 32px;
-  background-color: var(--primary-grey);
-  border-radius: 10px;
+  margin-top: 0;
 }
-.taxes__about-card-left {
-  padding: 24px 10px 0 40px;
-  grid-column: 1/span 6;
+@media (max-width: 585px) {
+  .taxes__about-card {
+    row-gap: 16px;
+    grid-template-rows: 1fr 154px;
+  }
+}
+@media (max-width: 585px) {
+  .taxes__about-card-left {
+    grid-row: 2/span 1;
+    grid-column: 3/span 10;
+  }
 }
 .taxes__about-card-right {
-  padding-top: 40px;
-  padding-right: 92px;
-  grid-column: 7/span 6;
+  padding: 40px 20px 34px 20px;
 }
-.taxes__about-img {
-  display: block;
-  margin: 0 auto;
+@media (max-width: 585px) {
+  .taxes__about-card-right {
+    grid-row: 1/span 1;
+    grid-column: 1/span 12;
+    padding: 24px 10px 0 12px;
+  }
+}
+
+.nfk__direction-title {
+  margin: 0;
+  text-align: center;
+  grid-column: 4/span 6;
 }
 
 .nfk__direction {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
   row-gap: 40px;
-  column-gap: 32px;
-  margin-bottom: 68px;
 }
 .nfk__direction-title {
   margin: 0;
   text-align: center;
   grid-column: 4/span 6;
+}
+@media (max-width: 1176px) {
+  .nfk__direction-title {
+    grid-column: 1/span 12;
+  }
 }
 .nfk__direction-card {
   display: flex;
@@ -17312,30 +17187,42 @@ th {
   background-color: var(--primary-grey);
   padding: 40px 10% 40px 46px;
 }
+@media (max-width: 1176px) {
+  .nfk__direction-card {
+    padding: 30px 10% 30px 24px;
+    justify-content: space-between;
+    max-height: 204px;
+  }
+}
+.nfk__direction-card-body {
+  display: flex;
+  flex-direction: column;
+}
 .nfk__direction-card-title {
   margin-bottom: 24px;
+}
+@media (max-width: 1176px) {
+  .nfk__direction-card-title {
+    margin-bottom: 16px;
+  }
 }
 .nfk__direction .first-adress {
   grid-column: 1/span 6;
 }
+@media (max-width: 585px) {
+  .nfk__direction .first-adress {
+    grid-column: 1/span 12;
+  }
+}
 .nfk__direction .second-adress {
   grid-column: 7/span 6;
 }
-
-.repo__transactions {
-  background: linear-gradient(180deg, #F4F6F8 0%, rgba(244, 246, 248, 0) 100%);
-  padding-bottom: 112px;
-}
-@media (max-width: 1176px) {
-  .repo__transactions {
-    background: #ffffff;
-    padding-bottom: 0;
+@media (max-width: 585px) {
+  .nfk__direction .second-adress {
+    grid-column: 1/span 12;
   }
 }
 
-.repo__footnotes {
-  margin-top: 68px;
-}
 .repo__footnotes-description {
   font-size: 14px;
   line-height: 19px;
@@ -17413,19 +17300,6 @@ th {
   }
 }
 
-.currency__benefit {
-  margin-bottom: 68px;
-}
-@media (max-width: 1176px) {
-  .currency__benefit {
-    margin-bottom: 56px;
-  }
-}
-@media (max-width: 585px) {
-  .currency__benefit {
-    margin-bottom: 48px;
-  }
-}
 .currency__benefit-title {
   text-align: center;
 }
@@ -17440,17 +17314,7 @@ th {
   }
 }
 .currency__benefit-container {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  column-gap: 32px;
-  row-gap: 28px;
   margin-bottom: 24px;
-}
-@media (max-width: 1176px) {
-  .currency__benefit-container {
-    column-gap: 16px;
-    row-gap: 24px;
-  }
 }
 @media (max-width: 585px) {
   .currency__benefit-container {
@@ -17693,33 +17557,7 @@ th {
 }
 
 .currency__info {
-  background: linear-gradient(180deg, #F4F6F8 0%, rgba(244, 246, 248, 0) 100%);
   position: relative;
-  padding-bottom: 112px;
-}
-@media (max-width: 1176px) {
-  .currency__info {
-    background: #ffffff;
-    padding-bottom: 0;
-  }
-}
-.currency__info-buttons {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  column-gap: 32px;
-  margin-bottom: 68px;
-}
-@media (max-width: 1176px) {
-  .currency__info-buttons {
-    column-gap: 16px;
-    row-gap: 16px;
-    margin-bottom: 56px;
-  }
-}
-@media (max-width: 585px) {
-  .currency__info-buttons {
-    margin-bottom: 48px;
-  }
 }
 .currency__info-consult {
   padding-top: 22px;
@@ -18622,6 +18460,12 @@ a:hover {
 p {
   margin: 0;
 }
+@media (max-width: 585px) {
+  p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
 
 h1, .h1,
 h2,
@@ -18721,6 +18565,49 @@ button {
 @media (max-width: 585px) {
   .mt-79 {
     margin-top: 48px;
+  }
+}
+
+.block__margin-bottom {
+  margin-bottom: 68px;
+}
+@media (max-width: 1176px) {
+  .block__margin-bottom {
+    margin-bottom: 56px;
+  }
+}
+@media (max-width: 585px) {
+  .block__margin-bottom {
+    margin-bottom: 48px;
+  }
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 32px;
+}
+@media (max-width: 1176px) {
+  .grid-container {
+    column-gap: 16px;
+    row-gap: 32px;
+  }
+}
+@media (max-width: 585px) {
+  .grid-container {
+    column-gap: 12px;
+    row-gap: 24px;
+  }
+}
+
+.section-with-gradient {
+  padding-bottom: 112px;
+  background: linear-gradient(180deg, #F4F6F8 0%, rgba(244, 246, 248, 0) 100%);
+}
+@media (max-width: 1176px) {
+  .section-with-gradient {
+    background: #ffffff;
+    padding: 0;
   }
 }
 

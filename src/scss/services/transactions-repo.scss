@@ -1,129 +1,165 @@
 .repo__hero {
   background-color: var(--primary-grey);
-  height: 480px;
+
 
   &-container {
-    background-image: url('../img/transactions-repo/repo-hero.png');
-    padding: 24px 52% 43px 0;
+    background-image: var(--desktop-image-banner-top);
+    padding: 24px 52% 209px 0;
     background-repeat: no-repeat;
     background-position: right bottom;
-    height: 480px;
+
+    @media(max-width: 1176px) {
+      padding: 24px 24% 119px 0;
+      background-size: 48%;
+    }
+
+    @media(max-width: 585px) {
+      padding: 24px 1% 119px 0;
+      background-size: 59%;
+    }
   }
 
   &-title {
     margin-bottom: 24px;
   }
 
+  &-description {
+    @media(max-width: 1176px) {
+      padding-right: 29%;
+    }
+
+    @media(max-width: 585px) {
+      padding-right: 0;
+    }
+  }
 }
 
 .repo__about {
-  padding-top: 67px;
+  padding-top: 68px;
   padding-bottom: 136px;
 
-  &-info {
-    margin-bottom: 68px;
+  @media(max-width: 1176px) {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+
+  @media(max-width: 585px) {
+    padding-top: 48px;
+
   }
 
   &-card {
-    display: grid;
-    height: 280px;
-    grid-template-columns: repeat(12, 1fr);
-    column-gap: 32px;
-    background-color: var(--primary-grey);
-    border-radius: 10px;
-
+    margin-top: 0;
+    @media(max-width: 585px) {
+      row-gap: 16px;
+      grid-template-rows: 1fr 156px;
+    }
     &-left {
-      padding: 28px 10px 0 40px;
-      grid-column: 1/span 6;
+      @media(max-width: 1176px) {
+        grid-column: 1/span 5;
+      }
+      @media(max-width: 585px) {
+        grid-column: 3 / span 10;
+        // justify-content: flex-end;
+      }
     }
 
     &-right {
-      padding-top: 40px;
-      padding-right: 10px;
-      grid-column: 7/span 6;
+      @media(max-width: 1176px) {
+        grid-column: 6/span 7;
+      }
+      @media(max-width: 585px) {
+        grid-column: 1 / span 12;
+      }
     }
-  }
-
-  &-img {
-    display: block;
-    margin: 0 auto;
-  }
-
-  &-repayment {
-    margin-bottom: 68px;
-  }
-
-  &-taxes {
-    margin-bottom: 68px;
   }
 }
 
 .repayment__service {
-
   &-card {
-    display: grid;
-    height: 280px;
-    grid-template-columns: repeat(12, 1fr);
-    column-gap: 32px;
-    background-color: var(--primary-grey);
-    border-radius: 10px;
-  }
-
-  &-card-left {
-    padding: 46px 10px 0 40px;
-    grid-column: 1/span 6;
-  }
-
-  &-card-left .card-right-description {
-    margin-bottom: 24px;
-  }
-
-  &-card-right {
-    padding-top: 19px;
-    grid-column: 7/span 6;
-  }
-}
-
-.taxes__about {
-  &-card {
-    display: grid;
-    height: 280px;
-    grid-template-columns: repeat(12, 1fr);
-    column-gap: 32px;
-    background-color: var(--primary-grey);
-    border-radius: 10px;
-
+    margin-top: 0;
+    @media(max-width: 585px) {
+      row-gap: 16px;
+      grid-template-rows: 1fr 154px;
+    }
     &-left {
-      padding: 24px 10px 0 40px;
-      grid-column: 1/span 6;
+      padding: 40px 10px 100px 46px;
+
+      @media(max-width: 1176px) {
+        padding: 24px 0 24px 24px;
+        grid-column: 1/span 7;
+      }
+      @media(max-width: 585px) {
+        grid-column: 1 / span 12;
+        padding: 24px 10px 0 12px;
+      }
     }
 
     &-right {
-      padding-top: 40px;
-      padding-right: 92px;
-      grid-column: 7/span 6;
+      @media(max-width: 1176px) {
+        grid-column: 8/span 6;
+      }
+      @media(max-width: 585px) {
+        grid-column: 2 / span 11;
+      }
+    }
+
+  }
+
+  &-description {
+    margin-bottom: 24px;
+    @media(max-width: 585px) {
+      margin-bottom: 16px;
     }
   }
 
-  &-img {
-    display: block;
-    margin: 0 auto;
+
+}
+
+.taxes__about {
+
+  &-card {
+    margin-top: 0;
+    @media(max-width: 585px) {
+      row-gap: 16px;
+      grid-template-rows: 1fr 154px;
+    }
+    &-left {
+      @media(max-width: 585px) {
+        grid-row: 2/span 1;
+        grid-column: 3 / span 10;
+      }
+      
+    }
+    &-right {
+      padding: 40px 20px 34px 20px;
+      @media(max-width: 585px) {
+        grid-row: 1/span 1;
+        grid-column: 1 / span 12;
+        padding: 24px 10px 0 12px;
+      }
+    }
   }
+
+}
+
+.nfk__direction-title {
+  margin: 0;
+  text-align: center;
+  grid-column: 4/span 6;
 }
 
 .nfk__direction {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
   row-gap: 40px;
-  column-gap: 32px;
-  margin-bottom: 68px;
 
   &-title {
     margin: 0;
     text-align: center;
     grid-column: 4/span 6;
 
-
+    @media(max-width: 1176px) {
+      grid-column: 1/span 12;
+    }
   }
 
   &-card {
@@ -133,31 +169,42 @@
     background-color: var(--primary-grey);
     padding: 40px 10% 40px 46px;
 
+    @media(max-width: 1176px) {
+      padding: 30px 10% 30px 24px;
+      justify-content: space-between;
+      max-height: 204px;
+    }
+
+    &-body {
+      display: flex;
+      flex-direction: column;
+    }
+
     &-title {
       margin-bottom: 24px;
+
+      @media(max-width: 1176px) {
+        margin-bottom: 16px;
+      }
     }
   }
 
   .first-adress {
     grid-column: 1/ span 6;
+    @media(max-width: 585px) {
+      grid-column: 1/ span 12;
+    }
   }
 
   .second-adress {
     grid-column: 7/ span 6;
-  }
-}
-
-.repo__transactions {
-  background: linear-gradient(180deg, #F4F6F8 0%, rgba(244, 246, 248, 0) 100%);
-  padding-bottom: 112px;
-  @media(max-width: 1176px) {
-    background: #ffffff;
-    padding-bottom: 0;
+    @media(max-width: 585px) {
+      grid-column: 1/ span 12;
+    }
   }
 }
 
 .repo__footnotes {
-  margin-top: 68px;
 
   &-description {
     font-size: 14px;
@@ -165,4 +212,3 @@
     color: var(--secondary-text);
   }
 }
-

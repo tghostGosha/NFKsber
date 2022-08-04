@@ -361,33 +361,38 @@
   <main>
     <section class="metals__hero">
       <div class="container ">
-        <div class="metals__hero-container">
-          <nav aria-label="Page navigation example">
-            <ul class="pagination">
-              <li class="page-item"><a class="page-link" href="index.html">Главная</a></li>
-              <svg xmlns="http://www.w3.org/2000/svg" width="8" height="16" fill="currentColor"
-                class="bi bi-chevron-right" viewBox="0 0 16 16">
-                <path fill-rule="evenodd"
-                  d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+        <nav aria-label="breadcrumb">
+          <ul class="breadcrumb">
+            <li class="page-item-mobile">
+              <svg width="20px" height="20px" class="svg-arrow-right-dims">
+                <use xlink:href="img/icons/icons.svg#arrow-left"></use>
               </svg>
-              <li class="page-item"><a class="page-link" href="#">Услуги</a></li>
-              <svg xmlns="http://www.w3.org/2000/svg" width="8" height="16" fill="currentColor"
-                class="bi bi-chevron-right" viewBox="0 0 16 16">
-                <path fill-rule="evenodd"
-                  d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+            </li>
+            <li class="breadcrumb-item "><a class="breadcrumb-link" href="index.html">Главная</a></li>
+            <li class="breadcrumb-item hide-on-mobile">
+              <svg width="20px" height="20px" class="svg-arrow-right-dims breadcrumb-svg">
+                <use xlink:href="img/icons/icons.svg#arrow-right"></use>
               </svg>
-              <li class="page-item"><a class="page-link" href="metals-market.html">Обслуживание на рынке
-                  драгоценных металлов</a></li>
-            </ul>
-          </nav>
-          <h2 class="metals__hero-title">Обслуживание на рынке
-            драгоценных металлов</h2>
+            </li>
+            <li class="breadcrumb-item hide-on-mobile"><a class="breadcrumb-link" href="services.html">Услуги</a></li>
+            <li class="breadcrumb-item hide-on-mobile">
+              <svg width="20px" height="20px" class="svg-arrow-right-dims breadcrumb-svg">
+                <use xlink:href="img/icons/icons.svg#arrow-right"></use>
+              </svg>
+            </li>
+            <li class="breadcrumb-item hide-on-mobile"><a class="breadcrumb-link" href="metals-market.html">Обслуживание на рынке драгоценных металлов</a></li>
+          </ul>
+        </nav>
+        <div class="metals__hero-container" style="--desktop-image-banner-top: url('/img/metals-market/metals-hero.png'); ">
+          
+          <h1 class="metals__hero-title">Обслуживание на рынке
+            драгоценных металлов</h1>
         </div>
       </div>
     </section>
     <section class="metals__about">
       <div class="container">
-        <div class="metals__about-info">
+        <div class="metals__about-info block__margin-bottom grid-container">
           <p class="metals__about-first-article">
             АО «НФК-Сбережения» входит в число 7 некредитных организаций, предоставляющих своим клиентам услуги по
             совершению операций на рынке драгоценных металлов Московской Биржи, и является единственной инвестиционной
@@ -400,26 +405,27 @@
             серебро – прекрасный способ диверсификации инвестиционного портфеля, рекомендуемый абсолютным большинством
             финансовых аналитиков в качестве долгосрочного вложения. </p>
         </div>
-        <div class="metals__about-service">
-          <div class="metals__service-card">
-            <div class="metals__service-card-left ">
-              <h4 class="card-right-title">Минимальная сумма для инвестирования
-                составляет 10 000 рублей</h4>
-              <p>На счет можно дополнительно вносить денежные средства, при этом минимальный уровень дополнительного
-                взноса не установлен</p>
+        <div class="metals__about-service block__margin-bottom">
+          <div class="small__banner metals__service-card">
+            <div class="small__banner-left-text metals__service-card-left">
+              <h3 class="small__banner-title">АО «НФК-Сбережения» предлагает услугу по приобретению золота и серебра
+                за безналичный расчет</h3>
+              <p class="small__banner-description metals__service-card-description">Вам не придется платить комиссию банкам, выстаивать очередь
+                для заключения договора и оформления множества бумаг, переживать
+                о безопасности и сохранности Ваших инвестиций. Вам не придется нести издержки по перевозке и хранению слитков, а также возмещать расходы на их изготовление, которые обычно включены в банковский спред</p>
             </div>
-            <div class="metals__service-card-right">
-              <img class="metals__about-img" src="img/metals-market/metals-service.png" alt="Услуга">
+            <div class="small__banner-right-img metals__service-card-right">
+              <img class="small__banner-img" src="img/metals-market/metals-service.png" alt="Услуга">
             </div>
           </div>
         </div>
-        <div class="metals__conditions">
-          <div class="metals__conditions-card">
-            <div class="metals__conditions-card-left">
-              <img class="metals__about-img" src="img/metals-market/metals-conditions.png" alt="Накопления">
+        <div class="metals__conditions block__margin-bottom">
+          <div class="small__banner metals__conditions-card">
+            <div class="small__banner-left-img">
+              <img class="small__banner-img" src="img/metals-market/metals-conditions.png" alt="Накопления">
             </div>
-            <div class="metals__conditions-card-right card-right ">
-              <h4 class="card-right-title">Условия обслуживания:</h4>
+            <div class="small__banner-right-text">
+              <h3 class="card-right-title">Условия обслуживания:</h3>
               <ul class="metals__conditions-list brokers__list">
                 <li class="brokers__list-item possibility-list-item">Торги проходят на платформе валютного рынка
                   Московской Биржи в режиме TOM (с расчетами – завтра) с 10:00 до 23:50 по МСК в рабочие дни</li>
@@ -430,15 +436,17 @@
                   Клиринговом Центре – небанковской кредитной организации с высочайшим уровнем надежности</li>
                 <li class="brokers__list-item possibility-list-item">Вы можете покупать золото и серебро онлайн через
                   торговый терминал QUIK или «по звонку» брокеру</li>
-
               </ul>
             </div>
           </div>
         </div>
-        <h4 class="metals__commission-title">Комиссионнное вознаграждение за совершение сделок на рынке драгоценных
-          металлов:</h4>
-        <span class="metals__commission-description">0,1% от суммы рублевого оборота по сделкам, заключенным в течение
-          торгового дня во исполнение Поручений Клиента</span>
+        <div class="metals__commission block__margin-bottom">
+
+          <h3 class="metals__commission-title">Комиссионнное вознаграждение за совершение сделок на рынке драгоценных
+            металлов:</h3>
+          <span class="metals__commission-description">0,1% от суммы рублевого оборота по сделкам, заключенным в течение
+            торгового дня во исполнение Поручений Клиента</span>
+        </div>
         <div class="important__block">
           <svg width="20px" height="20px" class="svg-important-dims">
             <use xlink:href="img/icons/icons.svg#important"></use>
@@ -448,27 +456,26 @@
             АО «НФК-Сбережения» или по телефону <a href="#" class="important__description-link">8 800
               200-84-84</a></span>
         </div>
-        <div class="metals__about-trade">
-          <div class="metals__trade-card">
-            <div class="metals__trade-card-left ">
-              <h4 class="card-right-title">Торгуйте драгоценными металлами <br>
-                с АО «НФК-Сбережения»</h4>
+        <div class="metals__about-trade block__margin-bottom">
+          <div class="small__banner metals__trade-card">
+            <div class="small__banner-left-text ">
+              <h3 class="small__banner-title">Торгуйте драгоценными металлами с АО «НФК-Сбережения»</h3>
 
-              <p class="card-right-description">Вы можете заключить договор оказания услуг на валютном рынке и рынке
+              <p class="small__banner-description metals__trade-card-description">Вы можете заключить договор оказания услуг на валютном рынке и рынке
                 драгоценных металлов прямо сейчас</p>
               <a href="#" class="grey-button metals__trade-btn ">Открыть счет</a>
             </div>
-            <div class="metals__trade-card-right">
-              <img class="metals__about-img" src="img/metals-market/metals-trade.png" alt="Услуга">
+            <div class="small__banner-right-img">
+              <img class="small__banner-img" src="img/metals-market/metals-trade.png" alt="Услуга">
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="metals__transactions">
+    <section class="metals__transactions section-with-gradient">
       <div class="container">
         <div class="window__account">
-          <h3 class="window__account-title">Открытие брокерского счета</h3>
+          <h2 class="window__account-title">Открытие брокерского счета</h2>
           <form action="#" class="account__form" id="accountform">
             <div class="account__form-text">
               <!-- <label for="firstname">Enter your name</label> -->
@@ -506,17 +513,20 @@
           </form>
         </div>
         <div class="metals__transactions-buttons">
-          <a href="#" class="grey-button large__button-grey ">Сделки с неполным покрытием
-            <svg xmlns="http://www.w3.org/2000/svg" width="8" height="16" fill="currentColor"
-              class="bi bi-chevron-right large__button-svg" viewBox="0 0 16 16">
-              <path fill-rule="evenodd"
-                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
-            </svg>
+          <a href="#" class="large__button-grey block__margin-bottom">
+            <span>Сделки с неполным покрытием</span>
+            <div>
+              <svg width="10px" height="20px" class="grey__button-svg">
+                <use xlink:href="img/icons/icons.svg#arrow-right"></use>
+              </svg>
+            </div>
           </a>
           <a href="#" class="get__file-link">
-            <svg width="20px" height="20px" class="svg-pdf-dims">
-              <use xlink:href="img/icons/icons.svg#pdf"></use>
-            </svg>
+            <div>
+              <svg width="20px" height="20px" class="svg-pdf-dims">
+                <use xlink:href="img/icons/icons.svg#pdf"></use>
+              </svg>
+            </div>
             <div class="file__link-text">
               <span class="brief-info">Подробная информация о тарифах по обслуживанию на рынке драгоценных
                 металлов</span>

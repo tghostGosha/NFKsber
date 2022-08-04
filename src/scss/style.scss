@@ -91,6 +91,11 @@ a:hover {
 
 p {
   margin: 0;
+
+  @media(max-width: 585px) {
+    font-size: 14px;
+    line-height: 20px;
+  }
 }
 
 h1,
@@ -130,10 +135,12 @@ h3 {
   font-size: 24px;
   line-height: 28px;
   margin-bottom: 24px;
+
   @media(max-width: 1176px) {
     font-size: 20px;
     line-height: 28px;
   }
+
   @media(max-width: 585px) {
     font-size: 20px;
     line-height: 24px;
@@ -151,6 +158,7 @@ h4 {
     line-height: 30px;
   }
 }
+
 
 
 ul,
@@ -178,11 +186,46 @@ button {
 
 .mt-79 {
   margin-top: 79px;
-  @media(max-width: 585px)  {
+
+  @media(max-width: 585px) {
     margin-top: 48px;
   }
 }
 
+.block__margin-bottom {
+  margin-bottom: 68px;
+
+  @media(max-width: 1176px) {
+    margin-bottom: 56px;
+  }
+
+  @media(max-width: 585px) {
+    margin-bottom: 48px;
+  }
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 32px;
+
+  @media(max-width: 1176px) {
+    column-gap: 16px;
+    row-gap: 32px;
+  }
+
+  @media(max-width: 585px) {
+    column-gap: 12px;
+    row-gap: 24px;
+  }
+}
+.section-with-gradient {
+  padding-bottom: 112px;
+  background: linear-gradient(180deg, #F4F6F8 0%, rgba(244, 246, 248, 0) 100%);
+  @media(max-width: 1176px) {
+    background: #ffffff;
+    padding: 0;
+  }
+}
 .padding-large {
   padding-top: 40px !important;
   padding-bottom: 28px !important;
@@ -197,6 +240,7 @@ button {
     line-height: 19px;
   }
 }
+
 .hide-on-mobile {
   @media(max-width: 1176px) {
     display: none !important;
@@ -207,18 +251,21 @@ button {
   // margin-left: 12px;
   // margin-right: 12px;
   width: 4px;
-    height: 8px;
+  height: 8px;
+
   @media(max-width: 585px) {
     // margin-left: 12px;
   }
 
 }
+
 .svg-arrow-left-dims {
   width: 4px;
-    height: 8px;
+  height: 8px;
   color: var(--secondary-text);
   margin: 0;
   margin-right: 12px;
+
   @media(max-width: 585px) {
     margin-right: 12px;
     width: 4px;
@@ -236,9 +283,11 @@ button {
   align-items: center;
   max-width: 392px;
   grid-column: span 4;
+
   @media(max-width: 1176px) {
     grid-column: span 6;
   }
+
   @media(max-width: 585px) {
     grid-column: span 12;
     padding: 16px 12px;
@@ -261,10 +310,11 @@ button {
 }
 
 .hide-on-385 {
-  @media(max-width: 585px)  {
+  @media(max-width: 585px) {
     display: none;
   }
 }
+
 .primary-button:hover {
   background-color: var(--secondary-green);
   color: #ffffff;
@@ -292,6 +342,7 @@ button {
   font-size: 9px;
   left: -10px;
   top: -2px;
+
   @media(max-width: 585px) {
     font-size: 7px;
     left: -6px;
@@ -309,6 +360,7 @@ button {
 
 .text-indent {
   text-indent: 10px;
+
   @media(max-width: 585px) {
     text-indent: 8px;
   }
@@ -319,6 +371,7 @@ button {
   font-size: 9px;
   right: -2px;
   top: -7px;
+
   @media(max-width: 585px) {
     font-size: 7px;
   }
@@ -332,31 +385,38 @@ button {
   border-radius: 5px;
   border-left: 5px solid var(--primary-blue);
   padding: 26px 166px 26px 35px;
+
   // margin: 68px 0;
   @media(max-width: 1176px) {
     padding: 26px 118px 26px 35px;
   }
+
   @media(max-width: 585px) {
     padding: 16px 46px 16px 8px;
   }
+
   &-description {
     font-size: 14px;
     line-height: 19px;
+
     @media(max-width: 585px) {
       font-size: 12px;
-    line-height: 16px;
+      line-height: 16px;
     }
   }
 }
+
 .svg-important-dims {
   width: 46px;
-    height: 46px;
+  height: 46px;
   margin-right: 28px;
+
   @media(max-width: 1176px) {
     width: 46px;
     height: 46px;
   }
 }
+
 //========Ссылка на файл
 .get__file-link {
   display: flex;
@@ -541,7 +601,7 @@ button {
 }
 
 .answer__questions {
-  
+
   padding-bottom: 112px;
 
   @media(max-width: 1176px) {

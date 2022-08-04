@@ -361,104 +361,117 @@
   <main>
     <section class="repo__hero">
       <div class="container ">
-        <div class="metals__hero-container">
-          <nav aria-label="Page navigation example">
-            <ul class="pagination">
-              <li class="page-item"><a class="page-link" href="index.html">Главная</a></li>
-              <svg xmlns="http://www.w3.org/2000/svg" width="8" height="16" fill="currentColor"
-                class="bi bi-chevron-right" viewBox="0 0 16 16">
-                <path fill-rule="evenodd"
-                  d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+        <nav aria-label="breadcrumb">
+          <ul class="breadcrumb">
+            <li class="page-item-mobile">
+              <svg width="20px" height="20px" class="svg-arrow-right-dims">
+                <use xlink:href="img/icons/icons.svg#arrow-left"></use>
               </svg>
-              <li class="page-item"><a class="page-link" href="#">Услуги</a></li>
-              <svg xmlns="http://www.w3.org/2000/svg" width="8" height="16" fill="currentColor"
-                class="bi bi-chevron-right" viewBox="0 0 16 16">
-                <path fill-rule="evenodd"
-                  d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+            </li>
+            <li class="breadcrumb-item "><a class="breadcrumb-link" href="index.html">Главная</a></li>
+            <li class="breadcrumb-item hide-on-mobile">
+              <svg width="20px" height="20px" class="svg-arrow-right-dims breadcrumb-svg">
+                <use xlink:href="img/icons/icons.svg#arrow-right"></use>
               </svg>
-              <li class="page-item"><a class="page-link" href="transactions-repo.html">Заключение сделок
-                  РЕПО</a></li>
-            </ul>
-          </nav>
-          <h2 class="repo__hero-title">Финансирование без справок
-            и поручителей на любые цели!</h2>
-          <p class="repo__hero-description">Новые стратегии доверительного управления, разработанные
-            АО «НФК-Сбережения» в связи с изменением рыночных условий, призваны защитить инвесторов от
-            инфляции.
-            Выберите подходящую именно Вам стратегию в зависимости от ваших финансовых целей</p>
+            </li>
+            <li class="breadcrumb-item hide-on-mobile"><a class="breadcrumb-link" href="services.html">Услуги</a></li>
+            <li class="breadcrumb-item hide-on-mobile">
+              <svg width="20px" height="20px" class="svg-arrow-right-dims breadcrumb-svg">
+                <use xlink:href="img/icons/icons.svg#arrow-right"></use>
+              </svg>
+            </li>
+            <li class="breadcrumb-item hide-on-mobile"><a class="breadcrumb-link"
+                href="trust-management.html">Заключение сделок РЕПО</a></li>
+          </ul>
+        </nav>
+        <div class="repo__hero-container"
+          style="--desktop-image-banner-top: url('../img/transactions-repo/repo-hero.png'); ">
+          <h1 class="repo__hero-title">Финансирование без&nbsp;справок
+            и поручителей на любые цели!</h1>
+          <p class="repo__hero-description">АО «НФК-Сбережения» предлагает продукт, который позволяет получить
+            финансирование под обеспечение имеющимися у вас акциями российских предприятий* без дополнительных комиссий
+            или скрытых процентов</p>
         </div>
       </div>
     </section>
-    <section class="repo__about">
+    <section class="repo__about ">
       <div class="container">
-        <div class="repo__about-info">
-          <div class="repo__about-card">
-            <div class="repo__about-card-left">
-              <img class="repo__about-img" src="img/transactions-repo/repo-about.png" alt="Накопления">
+        <div class="repo__about-info block__margin-bottom">
+          <div class="small__banner repo__about-card">
+            <div class="small__banner-left-img repo__about-card-left">
+              <img class="small__banner-img" src="../img/transactions-repo/repo-about.png" alt="Накопления">
             </div>
-            <div class="repo__about-card-right card-right ">
-              <h4 class="card-right-title">Вы можете получить 70% от текущей биржевой стоимости вашего пакета ценных
+            <div class="small__banner-right-text repo__about-card-right">
+              <h3 class="small__banner-title">Вы можете получить 70% от текущей биржевой стоимости вашего пакета ценных
                 бумаг
-                и использовать средства по своему усмотрению</h4>
-              <p>Наша компания не ограничивает вас каким-либо целевым назначением. <br> При этом за вами, согласно
-                действующему законодательству, остается <br> право на получение дивидендов по переданным в обеспечение
+                и использовать средства по своему усмотрению</h3>
+              <p class="small__banner-description">Наша компания не ограничивает вас каким-либо целевым назначением. При
+                этом за вами, согласно
+                действующему законодательству, остается право на получение дивидендов по переданным в обеспечение
                 бумагам </p>
             </div>
           </div>
         </div>
-        <div class="brokers__conditions">
-          <h3 class="brokers__conditions-title">Сделки РЕПО с АО «НФК-Сбережения»</h3>
-          <div class="conditions-container">
-            <div class="brokers-card conditions__card">
-              <div class="conditions__card-header">
-                <img class="conditions__card-img" src="img/brokerage-services/document.png" alt="picture">
+        <div class="brokers__conditions block__margin-bottom">
+          <h2 class="brokers__conditions-title">Сделки РЕПО с АО «НФК&nbsp;-&nbsp;Сбережения»</h2>
+          <div class="explain-container">
+            <div class="explain__card ">
+              <div class="explain__card-header">
+                <svg width="54px" height="54px" class="svg-document-dims">
+                  <use xlink:href="img/icons/icons.svg#document"></use>
+                </svg>
               </div>
-              <h4 class="conditions__card-title">Суммы финансирования</h4>
-              <p class="conditions__card-description">от 100 000 до 10 000 000 рублей
+              <h3 class="explain__card-title">Суммы финансирования</h3>
+              <p class="explain__card-description">от 100 000 до 10 000 000 рублей
                 (решения о предоставлении более крупных сумм рассматриваются индивидуально)</p>
             </div>
-            <div class="brokers-card conditions__card">
-              <div class="conditions__card-header">
-                <img class="conditions__card-img" src="img/brokerage-services/contract.png" alt="picture">
+            <div class="explain__card">
+              <div class="explain__card-header">
+                <svg width="54px" height="54px" class="svg-contract-dims">
+                  <use xlink:href="img/icons/icons.svg#contract"></use>
+                </svg>
               </div>
-              <h4 class="conditions__card-title">Срок финансирования </h4>
-              <p class="conditions__card-description">Вы можете получить деньги как на короткий срок (от трех месяцев до
+              <h3 class="explain__card-title">Срок финансирования</h3>
+              <p class="explain__card-description">Вы можете получить деньги как на короткий срок (от трех месяцев до
                 года), так и на более длительный, за счет продления финансирования</p>
             </div>
-            <div class="brokers-card conditions__card">
-              <div class="conditions__card-header">
-                <img class="conditions__card-img" src="img/brokerage-services/money.png" alt="picture">
+            <div class="explain__card">
+              <div class="explain__card-header">
+                <svg width="54px" height="54px" class="svg-coins-dims">
+                  <use xlink:href="img/icons/icons.svg#coins"></use>
+                </svg>
               </div>
-              <h4 class="conditions__card-title">На любые цели </h4>
-              <p class="conditions__card-description">Используйте привлеченные средства как для финансирования текущих
-                нужд, так и для требующих привлечения средств на несколько лет
-              </p>
+              <h3 class="explain__card-title">На любые цели</h3>
+              <p class="explain__card-description">Используйте привлеченные средства как для финансирования текущих
+                нужд, так и для требующих привлечения средств на несколько лет</p>
             </div>
           </div>
 
         </div>
-        <div class="repo__about-repayment">
-          <div class="repayment__service-card">
-            <div class="repayment__service-card-left ">
-              <h4 class="card-right-title">Досрочное погашение</h4>
-              <p class="card-right-description">Возможно досрочное погашение задолженности без каких-либо дополнительных
+        <div class="repo__about-repayment block__margin-bottom">
+          <div class="small__banner repayment__service-card">
+            <div class="small__banner-left-text repayment__service-card-left">
+              <h3 class="small__banner-title">Досрочное погашение</h3>
+              <p class="small__banner-description repayment__service-description">Возможно досрочное погашение
+                задолженности без каких-либо дополнительных
                 комиссий или штрафных санкций.</p>
               <p>Размер процентной ставки оговаривается индивидуально</p>
             </div>
 
-            <div class="repayment__service-card-right">
-              <img class="repayment__about-img" src="img/metals-market/metals-service.png" alt="Услуга">
+            <div class="small__banner-right-img repayment__service-card-right">
+              <img class="small__banner-img" src="../img/transactions-repo/repo-repayment.png" alt="Услуга">
             </div>
           </div>
         </div>
-        <div class="repo__about-taxes">
-          <div class="taxes__about-card">
-            <div class="taxes__about-card-left">
-              <img class="taxes__about-img" src="img/transactions-repo/repo-taxes.png" alt="Накопления">
+        <div class="repo__about-taxes block__margin-bottom">
+          <div class="small__banner taxes__about-card">
+            <div class="small__banner-left-img taxes__about-card-left">
+              <img class="small__banner-img" src="../img/transactions-repo/repo-taxes.png" alt="Накопления">
             </div>
-            <div class="taxes__about-card-right card-right ">
-              <h4 class="card-right-title">Налоги по сделкам РЕПО</h4>
-              <p>С точки зрения налогового законодательства как для физических, так и для юридических лиц, передача
+            <div class="small__banner-right-text taxes__about-card-right">
+              <h3 class="small__banner-title">Налоги по сделкам РЕПО</h3>
+              <p class="small__banner-description">С точки зрения налогового законодательства как для физических, так и
+                для юридических лиц, передача
                 акций на условиях РЕПО с целью получения финансирования и последующий их возврат после погашения
                 задолженности не влекут за собой возникновение доходов и, соответственно, налогов – точно так же, как и
                 при получении средств на основе обычного кредитного договора или займа. Это четко прописано в Налоговом
@@ -470,16 +483,22 @@
           <h2 class="accordion-title">Вопрос-ответ</h2>
           <div class="accordion-item">
             <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-              <button class="accordion-button" type="button" data-bs-toggle="collapse"
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                 data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
                 aria-controls="panelsStayOpen-collapseOne">
-                <h5 class="accordion-item-title">Каким образом осуществляется финансирование? </h5>
+                <div>
+                  <svg width="8px" height="16px" class="svg-arrow-accordion-dims">
+                    <use xlink:href="img/icons/icons.svg#arrow-right"></use>
+                  </svg>
+                </div>
+                <h4 class="accordion-item-title">Каким образом осуществляется финансирование? </h4>
               </button>
             </h2>
-            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse"
               aria-labelledby="panelsStayOpen-headingOne">
               <div class="accordion-body">
-                <p class="accordion-body-description" >Наличие соответствующих лицензий** позволяет нашей компании осуществлять особый вид сделок по
+                <p class="accordion-body-description">Наличие соответствующих лицензий** позволяет нашей компании
+                  осуществлять особый вид сделок по
                   финансированию физических и юридических лиц – сделок РЕПО с ценными бумагами. Этот инструмент доступен
                   любому физическому лицу, индивидуальному предпринимателю или коммерческой организации.<br>
                   <br>
@@ -490,7 +509,8 @@
                   сделка проводится, когда наступает срок возврата денежных средств: по ней уже Инвестиционная компания
                   возвращает владельцу ценные бумаги, а Владелец ценных бумаг возвращает ранее полученные деньги плюс
                   проценты за период пользования денежными средствами. Важно, что все условия сделки оговариваются
-                  заранее и понятны обеим сторонам.</p>
+                  заранее и понятны обеим сторонам.
+                </p>
               </div>
             </div>
           </div>
@@ -499,7 +519,13 @@
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                 data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
                 aria-controls="panelsStayOpen-collapseTwo">
-                <h5>Как осуществляются сделки РЕПО?</h5>
+                <div>
+
+                  <svg width="8px" height="16px" class="svg-arrow-accordion-dims">
+                    <use xlink:href="img/icons/icons.svg#arrow-right"></use>
+                  </svg>
+                </div>
+                <h4>Как осуществляются сделки РЕПО?</h4>
               </button>
             </h2>
             <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
@@ -508,17 +534,17 @@
                 <p class="accordion-body-description">
                   У меня нет ответа
                 </p>
-                </div>
+              </div>
             </div>
           </div>
-          
+
         </div>
       </div>
     </section>
-    <section class="repo__transactions">
+    <section class="repo__transactions section-with-gradient">
       <div class="container">
         <div class="window__account">
-          <h3 class="window__account-title">Открытие брокерского счета</h3>
+          <h2 class="window__account-title">Открытие брокерского счета</h2>
           <form action="#" class="account__form" id="accountform">
             <div class="account__form-text">
               <!-- <label for="firstname">Enter your name</label> -->
@@ -555,43 +581,55 @@
             <button type="submit" class="button primary-button account__form-btn">Отправить</button>
           </form>
         </div>
-        <div class="nfk__direction">
-        
-            <h4 class="nfk__direction-title">Для того, чтобы воспользоваться данным финансовым продуктом, нужно обратиться в офис Инвестиционной компании «НФК-Сбережения» по адресу:</h4>
-          
+        <div class="nfk__direction block__margin-bottom grid-container">
+
+          <h3 class="nfk__direction-title">Для того, чтобы воспользоваться данным&nbsp;финансовым продуктом, нужно
+            обратиться в офис Инвестиционной компании «НФК-Сбережения» по адресу:</h3>
+
           <div class="nfk__direction-card first-adress">
-            <h4 class="nfk__direction-card-title">г. Чебоксары,<br>
-              пр. М.Горького д. 5, корп. 2. </h4>
-              <span>Тел. 8 800 200-84-84</span>
-              <span>ПН-ПТ 9:00 – 19:00</span>
+            <h3 class="nfk__direction-card-title">г. Чебоксары,<br>
+              пр. М.Горького д. 5, корп. 2. </h3>
+              <div class="nfk__direction-card-body">
+                <span>Тел. 8 800 200-84-84</span>
+                <span>ПН-ПТ 9:00 – 19:00</span>
+              </div>
           </div>
           <div class="nfk__direction-card second-adress">
-            <h4 class="nfk__direction-card-title">г. Москва,<br>
-              4-й Лесной переулок, дом 4, офис 516  </h4>
+            <h3 class="nfk__direction-card-title">г. Москва,<br>
+              4-й Лесной переулок, дом 4, офис&nbsp;516 </h3>
+            <div class="nfk__direction-card-body">
               <span>Тел. 8 800 200-84-84</span>
               <span>ПН-ПТ 9:00 – 18:00</span>
+            </div>
+
           </div>
         </div>
-        <div class="repo__transactions-buttons">
-          
+        <div class="repo__transactions-buttons block__margin-bottom">
           <a href="#" class="get__file-link">
-            <svg width="20px" height="20px" class="svg-pdf-dims">
-              <use xlink:href="img/icons/icons.svg#pdf"></use>
-            </svg>
+            <div>
+              <svg width="20px" height="20px" class="svg-pdf-dims">
+                <use xlink:href="img/icons/icons.svg#pdf"></use>
+              </svg>
+            </div>
             <div class="file__link-text">
               <span class="brief-info">Cписок бумаг, с которыми доступны сделки РЕПО</span>
               <span class="file-size"> 200,7 кб</span>
             </div>
-            </a>
-           
+          </a>
+
         </div>
         <div class="repo__footnotes">
           <p class="repo__footnotes-description">Информация действительна на момент публикации. <br><br>
-            Договор заключается по усмотрению Инвестиционной компании. Данное предложение не является публичной офертой. Размер процентной ставки по сделкам РЕПО оговаривается индивидуально<br><br>
-            * С полным перечнем бумаг, принимаемых в обеспечение под операции РЕПО, вы можете ознакомиться по ссылке<br><br>
-            **Лицензии профессионального участника рынка ценных бумаг на осуществление брокерской деятельности № 021-10053-100000, на осуществление дилерской 
-деятельности № 021-10058-010000 от 27 марта 2007 года, выданные Федеральной службой по финансовым рынкам без ограничения срока действия <br><br>
-*** Ст. 51.3 Федерального закона «О рынке ценных бумаг», ст. ст. 212, 214.3, 282, 333 Налогового кодекса Российской Федерации 
+            Договор заключается по усмотрению Инвестиционной компании. Данное предложение не является публичной офертой.
+            Размер процентной ставки по сделкам РЕПО оговаривается индивидуально<br><br>
+            * С полным перечнем бумаг, принимаемых в обеспечение под операции РЕПО, вы можете ознакомиться по
+            ссылке<br><br>
+            **Лицензии профессионального участника рынка ценных бумаг на осуществление брокерской деятельности №
+            021-10053-100000, на осуществление дилерской
+            деятельности № 021-10058-010000 от 27 марта 2007 года, выданные Федеральной службой по финансовым рынкам без
+            ограничения срока действия <br><br>
+            *** Ст. 51.3 Федерального закона «О рынке ценных бумаг», ст. ст. 212, 214.3, 282, 333 Налогового кодекса
+            Российской Федерации
           </p>
         </div>
       </div>

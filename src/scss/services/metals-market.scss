@@ -1,132 +1,157 @@
 .metals__hero {
   background-color: var(--primary-grey);
-  height: 480px;
+
 
   &-container {
-    background-image: url('../img/metals-market/metals-hero.png');
-    padding: 24px 52% 43px 0;
+    background-image: var(--desktop-image-banner-top);
+    padding: 46px 52% 295px 0;
     background-repeat: no-repeat;
     background-position: right bottom;
-    height: 480px;
+
+    @media(max-width: 1176px) {
+      padding: 32px 39% 199px 0;
+      background-size: 40%;
+    }
+
+    @media(max-width: 585px) {
+      padding: 32px 39% 246px 0;
+      background-size: 92%;
+    }
+
   }
 
-  &-title {
-    margin-bottom: 24px;
-  }
+  &-title {}
 
 }
-.metals__about {
-  padding-top: 67px;
-  padding-bottom: 136px;
-  &-info {
-    display: grid;
-    margin-bottom: 68px;
-    grid-template-columns: repeat(12, 1fr);
-    grid-column: 32px;
 
-  }
+.metals__about {
+  padding-top: 68px;
+  // padding-bottom: 136px;
+
+  // @media(max-width: 1176px) {
+  //   padding-top: 56px;
+  // }
+
+  // @media(max-width: 585px) {
+  //   padding-bottom: 48px;
+  // }
+
+
   &-first-article {
     grid-column: 1/span 6;
+
+    @media(max-width: 1176px) {
+      grid-column: span 12;
+    }
   }
+
   &-second-article {
     grid-column: 7/span 6;
+
+    @media(max-width: 1176px) {
+      grid-column: span 12;
+    }
+
+    // @media(max-width: 585px) {
+    //   font-size: 14px;
+    //   line-height: 20px;
+    // }
   }
-  &-img {
-    display: block;
-    margin: 0 auto;
-  }
-  &-service {
-    margin-bottom: 68px;
-  }
-   &-trade {
-    margin: 68px;
-   }
+
 }
-.metals__service {
-  
-  
 
-  &-card {
-    display: grid;
-    height: 280px;
-    grid-template-columns: repeat(12, 1fr);
-    column-gap: 32px;
-    background-color: var(--primary-grey);
-    border-radius: 10px;
+.metals__service-card {
+  margin: 0;
+
+  @media(max-width: 585px) {
+    grid-template-rows: 1fr 140px;
+
   }
 
-  &-card-left {
-    padding: 46px 10px 0 40px;
-    grid-column: 1/span 6;
+  &-left {
+    @media(max-width: 1176px) {
+      grid-column: 1/ span 7;
+    }
+
+    @media(max-width: 585px) {
+      grid-column: 1/ span 12;
+    }
   }
 
-  &-card-right {
-    padding-top: 19px;
-    grid-column: 7/span 6;
+  &-right {
+    @media(max-width: 1176px) {
+      grid-column: 8/ span 5;
+    }
+
+    @media(max-width: 585px) {
+      grid-column: 1/ span 12;
+    }
+  }
+
+  &-description {
+    @media(max-width: 1176px) {
+      font-size: 14px;
+      line-height: 20px;
+    }
   }
 }
+
 .metals__conditions {
-  margin-bottom: 68px;
-  // height: 308px;
+  &-card {
+    @media(max-width: 585px) {
+      grid-template-rows: 1fr 274px;
+
+    }
+  }
+
   &-list {
     margin: 0;
   }
-  &-card {
-    display: grid;
-    // height: 308px;
-    grid-template-columns: repeat(12, 1fr);
-    column-gap: 32px;
-    background-color: var(--primary-grey);
-    border-radius: 10px;
-  }
-  &-card-left {
-    padding: 32px 0 0 0;
-    grid-column: 1/span 6;
-  }
 
-  &-card-right {
-    padding: 40px 74px 40px 0;
-    grid-column: 7/span 6;
-  }
 }
+
 .metals__commission-title {
   margin-bottom: 28px;
 }
-.metals__commission-description {
-  margin-bottom: 68px;
-  display: block;
-}
+
+
 .metals__trade {
-  
   &-card {
-    display: grid;
-    height: 301px;
-    grid-template-columns: repeat(12, 1fr);
-    column-gap: 32px;
-    background-color: var(--primary-grey);
-    border-radius: 10px;
+    @media(max-width: 585px) {
+      grid-template-rows: 1fr 168px;
+      row-gap: 16px;
+    }
   }
-
-  &-card-left {
-    padding: 46px 86px 0 40px;
-    grid-column: 1/span 6;
-  }
-
-  &-card-right {
-    padding-top: 19px;
-    grid-column: 7/span 6;
+  &-card-description {
+    @media(max-width: 1176px) {
+      font-size: 14px;
+      line-height: 20px;
+    }
   }
   &-btn {
     padding: 18px 26px;
     margin-top: 40px;
+    @media(max-width: 1176px) {
+      margin-top: 24px;
+    }
+    @media(max-width: 585px) {
+      display: none !important;
+    }
   }
 }
+
 .metals__transactions {
-  padding-bottom: 112px;
-  background: linear-gradient(180deg, #F4F6F8 0%, rgba(244, 246, 248, 0) 100%);
+
   &-footnote {
     padding-left: 10px;
     position: relative;
     margin-top: 68px;
+    @media(max-width: 1176px) {
+      margin-top: 56px;
+    }
+  
+    @media(max-width: 585px) {
+      margin-top: 48px;
+    }
   }
 }

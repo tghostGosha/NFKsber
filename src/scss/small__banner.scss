@@ -12,7 +12,7 @@
 
   @media(max-width: 585px) {
     column-gap: 12px;
-    // row-gap: 24px;
+    row-gap: 24px;
     grid-template-rows: 1fr 0.9fr;
     margin-top: 24px;
   }
@@ -29,7 +29,7 @@
     }
   }
   &-left-text {
-    padding: 40px 10px 40px 48px;
+    padding: 40px 10px 40px 46px;
     grid-column: 1/ span 6;
 
     @media(max-width: 1176px) {
@@ -38,7 +38,7 @@
 
     @media(max-width: 585px) {
       grid-column: 1/ span 12;
-      padding: 40px 10px 8px 12px;
+      padding: 24px 10px 8px 12px;
     }
   }
   &-right-img {

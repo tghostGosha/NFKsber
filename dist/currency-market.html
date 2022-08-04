@@ -402,9 +402,9 @@
     </section>
     <section class="currency__about">
       <div class="container">
-        <div class="currency__benefit">
+        <div class="currency__benefit block__margin-bottom">
           <h2 class="currency__benefit-title">Совершайте валютные сделки с выгодой!</h2>
-          <div class="currency__benefit-container">
+          <div class="currency__benefit-container grid-container">
             <div class="profitable__course currency__benefit-card"
               style="--profitable__course-image: url('../img/currency-market/profitable-course.png');">
               <h3 class="profitable-title">Выгодный курс</h3>
@@ -472,7 +472,7 @@
     <section class="currency__rates">
       <div class="container">
         <h2 class="currency__rates-title">Тарифы на обслуживание</h2>
-        <ul class="nav nav-pills currency-rates__table-nav" id="myTab" role="tablist">
+        <ul class="nav nav-pills currency-rates__table-nav " id="myTab" role="tablist">
           <li class="nav-item rates__nav-item rates__item-deal" role="presentation">
             <button class="nav-link active" id="transactions-tab" data-bs-toggle="tab" data-bs-target="#transactions"
               type="button" role="tab" aria-controls="transactions" aria-selected="true">Сделки на Единой торговой
@@ -560,7 +560,7 @@
         </div>
       </div>
     </section>
-    <section class="currency__info">
+    <section class="currency__info section-with-gradient">
       <div class="container">
         <div class="window__account">
           <h2 class="window__account-title">Открытие брокерского счета</h2>
@@ -600,7 +600,7 @@
             <button type="submit" class="button primary-button account__form-btn">Отправить</button>
           </form>
         </div>
-        <div class="currency__info-buttons">
+        <div class="currency__info-buttons block__margin-bottom grid-container ">
           <a href="#" class="large__button-grey ">
             <span>Сделки с неполным покрытием</span>
             <div>
@@ -627,9 +627,11 @@
           </a>
         </div>
         <a href="#" class="get__file-link">
-          <svg width="20px" height="20px" class="svg-pdf-dims">
-            <use xlink:href="img/icons/icons.svg#pdf"></use>
-          </svg>
+          <div>
+            <svg width="20px" height="20px" class="svg-pdf-dims">
+              <use xlink:href="img/icons/icons.svg#pdf"></use>
+            </svg>
+          </div>
           <div class="file__link-text">
             <span class="brief-info">Подробная информация о тарифах</span>
             <span class="file-size"> 200,7 кб</span>

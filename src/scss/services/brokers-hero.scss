@@ -134,16 +134,7 @@
 }
 
 .brokers__about {
-  margin-bottom: 64px;
-
-  @media(max-width: 1176px) {
-    margin-bottom: 56px;
-  }
-
-  @media(max-width: 585px) {
-    margin-bottom: 48px;
-  }
-
+ 
   &-title {
     margin: 0 auto;
     text-align: center;
@@ -157,16 +148,7 @@
 
 
 .brokers__conditions {
-  margin-bottom: 64px;
-
-  @media(max-width: 1176px) {
-    margin-bottom: 56px;
-  }
-
-  @media(max-width: 585px) {
-    margin-bottom: 48px;
-  }
-
+ 
   &-title {
     margin-bottom: 40px;
     text-align: center;
@@ -186,28 +168,14 @@
 
 
 .brokers__app {
-  margin-bottom: 68px;
-
-  @media(max-width: 1176px) {
-    margin-bottom: 56px;
-  }
-
-  @media(max-width: 585px) {
-    margin-bottom: 48px;
-  }
-
+  
   &-card {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    column-gap: 32px;
-    // row-gap: 28px;
-    background-color: var(--primary-grey);
-    border-radius: 10px;
+    
     padding-top: 40px;
 
     @media(max-width: 1176px) {
       padding-top: 24px;
-      column-gap: 16px;
+      
     }
 
     @media(max-width: 585px) {
@@ -281,17 +249,6 @@
 
 
 .brokers__service {
-  margin-bottom: 64px;
-
-  @media(max-width: 1176px) {
-    margin-bottom: 56px;
-  }
-
-  @media(max-width: 585px) {
-    margin-bottom: 48px;
-  }
-
-
 
   &-list {
     margin: 0;
@@ -329,24 +286,14 @@
 
   &-card {
     background-color: var(--primary-text);
-    border-radius: 10px;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    column-gap: 32px;
-    row-gap: 28px;
-
+ 
     @media(max-width: 585px) {
       grid-template-rows: 1fr 172px;
       row-gap: 24px;
     }
 
     &-right {
-      grid-column: 7/ span 6;
-      position: relative;
-      display: flex;
-      justify-content: center;
-      align-items: flex-end;
-
+     
       @media(max-width: 1176px) {
         grid-column: 8/ span 5;
       }
@@ -358,31 +305,15 @@
     }
 
     &-left {
-      grid-column: 1/ span 6;
-      padding: 40px 10px 40px 40px;
-
+    
       @media(max-width: 1176px) {
-        padding: 24px 10px 32px 24px;
         grid-column: 1/ span 7;
       }
 
       @media(max-width: 585px) {
         grid-column: 1/ span 12;
-        padding: 40px 1px 0 12px;
       }
     }
-  }
-
-  &-img {
-    display: block;
-    // position: absolute;
-    // bottom: 0;
-    // left: 8%;
-    // object-fit: cover;
-
-    // @media(max-width: 1176px) {
-    //   left: 0;
-    // }
   }
 
   &-buttons {
@@ -437,15 +368,7 @@
 }
 
 .brokers__info {
-  background: linear-gradient(180deg, #F4F6F8 0%, rgba(244, 246, 248, 0) 100%);
-  position: relative;
-  padding-bottom: 112px;
-
-  @media(max-width: 1176px) {
-    background: #ffffff;
-    padding-bottom: 0;
-  }
-
+  
   @media(max-width: 585px) {
     display: none;
   }
