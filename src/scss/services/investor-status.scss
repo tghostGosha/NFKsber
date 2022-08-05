@@ -6,8 +6,9 @@
     padding: 46px 52% 117px 0;
     background-repeat: no-repeat;
     background-position: right bottom;
+
     @media(max-width: 1176px) {
-      padding: 32px 33% 38px 0;
+      padding: 32px 9% 85px 0;
       background-size: 38%;
     }
 
@@ -19,6 +20,28 @@
 
   &-title {
     margin-bottom: 24px;
+
+    @media(max-width: 1176px) {
+      font-size: 36px;
+      line-height: 42px;
+    }
+
+    @media(max-width: 585px) {
+      font-size: 28px;
+      line-height: 32px;
+    }
+  }
+
+  &-description {
+    @media(max-width: 1176px) {
+      padding-right: 46%;
+    }
+
+    @media(max-width: 585px) {
+      font-size: 16px;
+      line-height: 22px;
+      padding-right: 8%;
+    }
   }
 
 }
@@ -26,17 +49,59 @@
 .investor__requirements {
   padding-top: 66px;
   padding-bottom: 148px;
+
   @media(max-width: 1176px) {
     padding-top: 56px;
+    padding-bottom: 0;
   }
+
   @media(max-width: 585px) {
     padding-top: 48px;
   }
+
   &-title {
     text-align: center;
     max-width: 578px;
     margin: 0 auto;
     margin-bottom: 40px;
+
+    @media(max-width: 585px) {
+      text-align: start;
+      margin-bottom: 24px;
+    }
+  }
+
+  &-nav {
+    @media(max-width: 1176px) {
+
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      column-gap: 16px;
+    }
+
+    @media(max-width: 585px) {
+      column-gap: 12px;
+    }
+  }
+
+  &-item-first {
+    @media(max-width: 1176px) {
+      grid-column: 3/ span 4;
+    }
+
+    @media(max-width: 783px) {
+      grid-column: 1/ span 4;
+    }
+  }
+
+  &-item-second {
+    @media(max-width: 1176px) {
+      grid-column: 7/ span 4;
+    }
+
+    @media(max-width: 783px) {
+      grid-column: 5/ span 4;
+    }
   }
 }
 
@@ -51,32 +116,67 @@
   // max-width: 500px;
   flex-wrap: wrap;
 
-}
+  @media(max-width: 1176px) {
+    flex-direction: column;
+    max-height: 100%;
+    margin-bottom: 56px;
+  }
 
-.brokers__list-item {
-  // margin-right: ;
-  flex: 0 0 50%;
-  max-width: 580px;
+  @media(max-width: 585px) {
+    margin-bottom: 48px;
+  }
+
+  &-item {
+    flex: 0 0 50%;
+    max-width: 580px;
+
+    @media(max-width: 1176px) {
+
+      max-width: 100%;
+    }
+  }
 }
 
 .brokers__list-item:nth-child(odd) {
   padding-right: 26px;
+
+  @media(max-width: 1176px) {
+
+    padding-right: 0;
+  }
 }
 
 .investor__tab-title {
   max-width: 692px;
   margin-bottom: 40px;
+
+  @media(max-width: 1176px) {
+    margin-bottom: 32px;
+  }
+
+  @media(max-width: 585px) {
+    margin-bottom: 24px;
+  }
 }
 
 .investor__status {
   padding-bottom: 148px;
 
   &-title {
-    
+
     text-align: center;
     max-width: 578px;
     margin: 0 auto;
     margin-bottom: 40px;
+
+    @media(max-width: 1176px) {
+      margin-bottom: 32px;
+    }
+
+    @media(max-width: 585px) {
+      margin-bottom: 24px;
+      text-align: start;
+    }
   }
 
   &-description {
@@ -84,42 +184,99 @@
     line-height: 19px;
     color: var(--secondary-text);
     margin-bottom: 40px;
+
+    @media(max-width: 1176px) {
+      margin-bottom: 32px;
+    }
+
+    @media(max-width: 585px) {
+      margin-bottom: 24px;
+
+    }
   }
 }
 
 .steps__container {
   position: relative;
   padding-bottom: 15px;
+
   // align-items: center;
+  @media(max-width: 1176px) {
+    row-gap: 88px !important;
+    padding-bottom: 0;
+  }
+  @media(max-width: 585px) {
+    row-gap: 72px !important;
+  }
 }
 
 .step {
   display: flex;
   flex-direction: column;
   grid-column: span 3;
- 
+
+  @media(max-width: 1176px) {
+    grid-column: 1 /span 12;
+    flex-direction: row;
+    align-items: center;
+
+  }
+
   &__header {
     width: 86px;
     height: 86px;
     background-color: var(--primary-grey);
     border-radius: 10px;
     margin: 0 auto;
-    padding: 29px 0;
+    padding: 29px 39px;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media(max-width: 1176px) {
+      margin: 0;
+
+    }
+
+    @media(max-width: 585px) {
+      width: 72px;
+      height: 72px;
+      padding: 24px 32px;
+    }
 
     &-title {
       text-align: center;
-
+      // @media(max-width: 1176px) {
+      //   text-align: start;
+      // }
     }
   }
 
   &__body {
     margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media(max-width: 1176px) {
+      margin: 0;
+      margin-left: 16px;
+      align-items: flex-start;
+      max-width: 663px;
+    }
 
     &-text {
       text-align: center;
       display: block;
 
+      @media(max-width: 1176px) {
+        text-align: start;
+      }
+
+      @media(max-width: 585px) {
+        font-size: 14px;
+        line-height: 22px;
+      }
     }
   }
 
@@ -130,33 +287,73 @@
     background-color: var(--grey-button);
     top: 50%;
     right: -197px;
+
+    @media(max-width: 1176px) {
+      width: 1px;
+      height: 56px;
+      top: 117%;
+      right: 43px;
+    }
+    @media(max-width: 585px) {
+      height: 48px;
+      right: 36px;
+    }
   }
 }
 
 .investor__authorize-btn {
-  position: absolute;
-  bottom: 0;
-  left: 60px;
+  display: inline-block;
+  margin-top: 24px;
   padding: 18px 26px;
+  max-width: 169px;
+
+  @media(max-width: 1176px) {
+    margin-top: 7px;
+  }
+  @media(max-width: 585px)  {
+    padding: 10px 25px;
+  }
 }
 
 .status__statement {
 
   &-card {
-   
+    @media(max-width: 585px) {
+      grid-template-rows: 1fr 182px;
+      row-gap: 24px;
+    }
 
     &-left {
-     
+      @media(max-width: 1176px) {
+        grid-column: 1/ span 5;
+      }
+      @media(max-width: 585px) {
+        grid-column: 3/ span 10;
+        grid-row: 2/ span 1;
+      }
     }
 
     &-right {
       padding: 40px 20px 40px 20px;
+
+      @media(max-width: 1176px) {
+        grid-column: 6/ span 7;
+      }
+      @media(max-width: 585px) {
+        grid-column: 1/ span 12;
+        grid-row: 1/ span 1;
+        padding: 24px 12px 0 12px;
+      }
     }
   }
+
   &-list {
     margin: 0;
     margin-top: 24px;
 
+    @media(max-width: 1176px) {
+      margin-top: 16px;
+    }
   }
 
   &-list-item:not(:last-child) {
@@ -166,8 +363,4 @@
 
 .card-right-footnote {
   color: var(--secondary-text);
-}
-
-.investor__status-statement {
-  margin-bottom: 76px;
 }

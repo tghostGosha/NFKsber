@@ -44,12 +44,12 @@
     <section class="investor__requirements">
       <div class="container">
         <h2 class="investor__requirements-title">Требования для получения статуса квалифицированного инвестора</h2>
-        <ul class="nav nav-pills rates__table-nav" id="myTab" role="tablist">
-          <li class="nav-item" role="presentation">
+        <ul class="nav nav-pills rates__table-nav investor__requirements-nav" id="myTab" role="tablist">
+          <li class="nav-item investor__requirements-item-first" role="presentation">
             <button class="nav-link active" id="privat-tab" data-bs-toggle="tab" data-bs-target="#privatPerson"
               type="button" role="tab" aria-controls="privat-person" aria-selected="true">Физическое лицо</button>
           </li>
-          <li class="nav-item" role="presentation">
+          <li class="nav-item investor__requirements-item-second" role="presentation">
             <button class="nav-link" id="legal-entity-tab" data-bs-toggle="tab" data-bs-target="#legalEntity"
               type="button" role="tab" aria-controls="legalEntity" aria-selected="false">Юридическое лицо</button>
           </li>
@@ -59,15 +59,15 @@
             <h3 class="investor__tab-title">Может быть признано квалифицированным инвестором, если оно отвечает хотя бы
               одному из указанных требований:</h3>
             <ul class="brokers__app-list brokers__list investor-list">
-              <li class="brokers__list-item">Общая стоимость ценных бумаг и производных финансовых инструментов во
-                владении превышает 6 млн рублей</li>
-              <li class="brokers__list-item">Сумма финансовых средств, принадлежащих лицу, превышает 6 млн рублей</li>
-              <li class="brokers__list-item">Лицо имеет опыт работы более 2-х лет в компании-профессиональном участнике
+              <li class="brokers__list-item investor-list-item">Общая стоимость ценных бумаг и производных финансовых инструментов во
+                владении превышает 6&nbsp;млн&nbsp;рублей</li>
+              <li class="brokers__list-item investor-list-item">Сумма финансовых средств, принадлежащих лицу, превышает 6 млн рублей</li>
+              <li class="brokers__list-item investor-list-item">Лицо имеет опыт работы более 2-х лет в компании-профессиональном участнике
                 рынка ценных бумаг либо более 3-х лет в компании, совершавшей сделки с ценными бумагами</li>
-              <li class="brokers__list-item">Лицо имеет высшее экономическое образование в организации, уполномоченной
+              <li class="brokers__list-item investor-list-item">Лицо имеет высшее экономическое образование в организации, уполномоченной
                 осуществлять аттестацию граждан в сфере профессиональной деятельности на рынке ценных бумаг, либо имеет
                 один из финансовых аттестатов и сертификатов</li>
-              <li class="brokers__list-item">Лицо совершало сделки с ценными бумагами и (или) производными финансовыми
+              <li class="brokers__list-item investor-list-item">Лицо совершало сделки с ценными бумагами и (или) производными финансовыми
                 инструментами в среднем не реже 10 раз в квартал за последние 4 квартала, но не реже одного раза в
                 месяц. Совокупная цена таких сделок (договоров) должна превышать 6 млн рублей</li>
             </ul>
@@ -76,14 +76,15 @@
               хотите получить статус квалифицированного инвестора, то Вам необходимо подать заявление при личном
               посещении офиса АО «НФК-Сбережения» по адресу г. Чебоксары ул. Максима Горького д. 5 к. 2 либо
               дистанционно через Интернет</p>
-            <div class="steps__container block__margin-bottom grid-container">
+            <div class="grid-container steps__container block__margin-bottom ">
               <div class="step">
                 <div class="step__header">
                   <h4 class="step__header-title">1</h4>
                   <div class="step-line"></div>
                 </div>
-                <div class="step__body">
+                <div class="step__body step__body-enter">
                   <span class="step__body-text">Войдите в личный кабинет на сайте</span>
+                  <a href="#" class="button primary-button investor__authorize-btn">Авторизоваться</a>
                 </div>
               </div>
               <div class="step">
@@ -92,7 +93,7 @@
                   <div class="step-line"></div>
                 </div>
                 <div class="step__body">
-                  <span class="step__body-text">Перейдите в раздел <br>
+                  <span class="step__body-text">Перейдите в раздел
                     «Документы»</span>
                 </div>
               </div>
@@ -102,7 +103,7 @@
                   <div class="step-line"></div>
                 </div>
                 <div class="step__body">
-                  <span class="step__body-text">Выберите пункт <br>
+                  <span class="step__body-text">Выберите пункт 
                     «Передать другие документы»</span>
                 </div>
               </div>
@@ -111,14 +112,12 @@
                   <h4 class="step__header-title">4</h4>
                 </div>
                 <div class="step__body">
-                  <span class="step__body-text">Добавьте Заявление <br>
-                    и подтверждающий документ, нажмите на кнопку «Загрузить»
-                    и подтвердите отправку SMS-кодом</span>
+                  <span class="step__body-text">Добавьте Заявление и подтверждающий документ, нажмите на кнопку «Загрузить» и подтвердите отправку SMS-кодом</span>
                 </div>
               </div>
-              <a href="#" class="button primary-button investor__authorize-btn">Авторизоваться</a>
+              
             </div>
-            <div class="investor__status-statement">
+            <div class="investor__status-statement block__margin-bottom">
               <div class="small__banner status__statement-card">
                 <div class="small__banner-left-img status__statement-card-left">
                   <img class="small__banner-img" src="../img/investor-status/investor-statement.png" alt="Накопления">

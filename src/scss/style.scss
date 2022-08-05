@@ -207,6 +207,7 @@ button {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   column-gap: 32px;
+  row-gap: 28px;
 
   @media(max-width: 1176px) {
     column-gap: 16px;
