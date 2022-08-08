@@ -64,7 +64,7 @@ let tabPaneShadow = document.querySelector(".tab-pane-shadow")
 window.onscroll = function() {myFunction()};
 
 function myFunction() {
-  if (document.documentElement.scrollTop > 710 && document.documentElement.scrollTop <= 2670 && tabPaneShadow.classList.contains('active') ) {
+  if (document.documentElement.scrollTop > 710 && document.documentElement.scrollTop <= 2670 && window.innerWidth > 1176 && tabPaneShadow.classList.contains('active') ) {
     
     elementShadow.classList.remove('shadow-on-scroll-hide');
     elementShadow.classList.add('shadow-on-scroll');

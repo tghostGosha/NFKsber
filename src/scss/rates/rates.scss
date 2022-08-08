@@ -482,6 +482,9 @@ th {
   width: 100%;
 }
 //=============Добавление плашки в таблице при скролле
+.shadow-on-scroll-hide {
+  display: none;
+}
 .shadow-on-scroll {
   display: block;
   box-shadow: 4px 14px 31px rgb(29 37 44 / 8%);
@@ -495,9 +498,7 @@ th {
   padding: 28px 0;
   column-gap: 23px;
 }
-.shadow-on-scroll-hide {
-  display: none;
-}
+
 //====================================================
 .stockmarket__info {
 
