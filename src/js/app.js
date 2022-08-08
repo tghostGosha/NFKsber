@@ -58,7 +58,21 @@ const heroSwiper = new Swiper('.hero-swiper', {
   },
 
 });
+//=============Добавление плашки в таблице при скролле
+let elementShadow = document.querySelector(".shadow-on-scroll-hide")
+let tabPaneShadow = document.querySelector(".tab-pane-shadow")
+window.onscroll = function() {myFunction()};
 
+function myFunction() {
+  if (document.documentElement.scrollTop > 710 && document.documentElement.scrollTop <= 2670 && tabPaneShadow.classList.contains('active') ) {
+    
+    elementShadow.classList.remove('shadow-on-scroll-hide');
+    elementShadow.classList.add('shadow-on-scroll');
+  } else {
+    elementShadow.classList.add('shadow-on-scroll-hide');
+    elementShadow.classList.remove('shadow-on-scroll');
+  }
+}
 //===========swiper ideas======
 const ideasSwiper = new Swiper('.ideas-swiper', {
   modules: [Navigation, Pagination],

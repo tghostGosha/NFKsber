@@ -1,35 +1,21 @@
 .rates__hero {
   background-color: var(--primary-grey);
-  height: 480px;
-
-  @media(max-width: 1176px) {
-
-    height: 367px;
-  }
-
-  @media(max-width: 585px) {
-    height: 347px;
-  }
 
   &-container {
-    background-image: url('../img/rates/rates-hero.png');
-    padding: 24px 50% 59px 0;
+    background-image: var(--desktop-image-banner-top);
+    padding: 24px 54% 59px 0;
     background-repeat: no-repeat;
     background-position: 94% bottom;
-    max-height: 480px;
-    display: flex;
-    flex-direction: column;
 
     @media(max-width: 1176px) {
       padding: 24px 17% 59px 0;
       background-size: 48%;
       background-position: right bottom;
-      height: 367px;
     }
 
     @media(max-width: 585px) {
       padding: 8px 0 149px 0;
-      height: 347px;
+      
     }
   }
 
@@ -54,15 +40,7 @@
     margin: 0;
     display: inline-block;
     text-align: center;
-    width: 53%;
-
-    @media(max-width: 1176px) {
-      width: 49%;
-    }
-
-    @media(max-width: 585px) {
-      width: 85%;
-    }
+    
   }
 
 }
@@ -501,10 +479,26 @@ th {
 .sticky-top {
   top: 10px;
   background-color: #ffffff;
-  box-shadow: 0px 0px 16px rgba(29, 37, 44, 0.16);
   width: 100%;
 }
-
+//=============Добавление плашки в таблице при скролле
+.shadow-on-scroll {
+  display: block;
+  box-shadow: 4px 14px 31px rgb(29 37 44 / 8%);
+  position: sticky;
+  top: 0;
+  background-color: #ffffff;
+}
+.shadow-on-scroll-list {
+  display: flex;
+  grid-template-columns: repeat(12, 1fr);
+  padding: 28px 0;
+  column-gap: 23px;
+}
+.shadow-on-scroll-hide {
+  display: none;
+}
+//====================================================
 .stockmarket__info {
 
   &-text {

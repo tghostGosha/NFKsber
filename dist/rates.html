@@ -361,24 +361,25 @@
   <main>
     <section class="rates__hero">
       <div class="container">
-        <div class="rates__hero-container">
-          <nav aria-label="breadcrumb">
-            <ul class="breadcrumb">
-              <li class="page-item-mobile">
-                <svg width="20px" height="20px" class="svg-arrow-right-dims">
-                  <use xlink:href="img/icons/icons.svg#arrow-left"></use>
-                </svg>
-              </li>
-              <li class="breadcrumb-item "><a class="breadcrumb-link" href="index.html">Главная</a></li>
-              <li class="breadcrumb-item hide-on-mobile">
-                <svg width="20px" height="20px" class="svg-arrow-right-dims breadcrumb-svg">
-                  <use xlink:href="img/icons/icons.svg#arrow-right"></use>
-                </svg>
-              </li>
-              <li class="breadcrumb-item hide-on-mobile"><a class="breadcrumb-link" href="rates.html">Тарифы</a></li>
-              
-            </ul>
-          </nav>
+        <nav aria-label="breadcrumb">
+          <ul class="breadcrumb">
+            <li class="page-item-mobile">
+              <svg width="20px" height="20px" class="svg-arrow-right-dims">
+                <use xlink:href="img/icons/icons.svg#arrow-left"></use>
+              </svg>
+            </li>
+            <li class="breadcrumb-item "><a class="breadcrumb-link" href="index.html">Главная</a></li>
+            <li class="breadcrumb-item hide-on-mobile">
+              <svg width="20px" height="20px" class="svg-arrow-right-dims breadcrumb-svg">
+                <use xlink:href="img/icons/icons.svg#arrow-right"></use>
+              </svg>
+            </li>
+            <li class="breadcrumb-item hide-on-mobile"><a class="breadcrumb-link" href="rates.html">Тарифы</a></li>
+            
+          </ul>
+        </nav>
+        <div class="rates__hero-container" style="--desktop-image-banner-top: url('../img/rates/rates-hero.png');">
+          
           <h2 class="rates__hero-title">Тарифы на брокерское обслуживание</h2>
           <button type="button" class="grey-button rates__hero-button" data-bs-toggle="modal"
             data-bs-target="#exampleModal">Подробная информация о тарифах</button>
@@ -386,6 +387,19 @@
       </div>
     </section>
     <section class="rates__table">
+      <div class="shadow-on-scroll-hide" id="wer"  aria-labelledby="memo-tab">
+        <div class="container"> 
+          <ul class="shadow-on-scroll-list">
+            <li class="col-3 secondary-text-color">Тарифы</li>
+            <li class="col-2 weight-text ">Минимальный дневной</li>
+            <li class="col-1 weight-text">Инвестор</li>
+            <li class="col-3 weight-text text-center">Фиксированный</li>
+            <li class="col-2 weight-text text-center">Нулевая комиссия</li>
+          </ul>
+        </div>
+      </div>
+      
+      
       <div class="container">
         <!-- Nav tabs -->
         <ul class="nav nav-pills rates__table-nav" id="myTab" role="tablist">
@@ -409,9 +423,9 @@
 
         <!-- Tab panes -->
         <div class="tab-content">
-          <div class="tab-pane active " id="memo" role="tabpanel" aria-labelledby="memo-tab" tabindex="0">
+          <div class="tab-pane tab-pane-shadow active " id="memo" role="tabpanel" aria-labelledby="memo-tab" tabindex="0">
             <table class="table table-hide">
-              <thead class="sticky-top">
+              <thead class="">
                 <tr>
                   <td class="col-3  weight-text" scope="col">Тарифы</td>
                   <td scope="col" class="col-2 weight-text">Минимальный дневной</td>

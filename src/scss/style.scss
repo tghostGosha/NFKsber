@@ -241,7 +241,9 @@ button {
     line-height: 19px;
   }
 }
-
+.text-center {
+  text-align: center;
+}
 .hide-on-mobile {
   @media(max-width: 1176px) {
     display: none !important;
