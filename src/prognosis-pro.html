@@ -10,29 +10,30 @@
   <main>
     <section class="prognosis__hero">
       <div class="container ">
+        <nav aria-label="breadcrumb">
+          <ul class="breadcrumb">
+            <li class="page-item-mobile">
+              <svg width="20px" height="20px" class="svg-arrow-right-dims">
+                <use xlink:href="img/icons/icons.svg#arrow-left"></use>
+              </svg>
+            </li>
+            <li class="breadcrumb-item "><a class="breadcrumb-link" href="index.html">Главная</a></li>
+            <li class="breadcrumb-item hide-on-mobile">
+              <svg width="20px" height="20px" class="svg-arrow-right-dims breadcrumb-svg">
+                <use xlink:href="img/icons/icons.svg#arrow-right"></use>
+              </svg>
+            </li>
+            <li class="breadcrumb-item hide-on-mobile"><a class="breadcrumb-link" href="#">Аналитика</a></li>
+            <li class="breadcrumb-item hide-on-mobile">
+              <svg width="20px" height="20px" class="svg-arrow-right-dims breadcrumb-svg">
+                <use xlink:href="img/icons/icons.svg#arrow-right"></use>
+              </svg>
+            </li>
+            <li class="breadcrumb-item hide-on-mobile"><a class="breadcrumb-link">Прогнозы Pro</a></li>
+          </ul>
+        </nav>
         <div class="prognosis__hero-container">
-          <nav aria-label="Page navigation example">
-            <ul class="pagination">
-              <li class="page-item-mobile">
-                <svg width="20px" height="20px" class="svg-arrow-right-dims">
-                  <use xlink:href="img/icons/icons.svg#arrow-left"></use>
-                </svg>
-              </li>
-              <li class="page-item "><a class="page-link" href="index.html">Главная</a></li>
-              <li class="page-item hide-on-mobile">
-                <svg width="20px" height="20px" class="svg-arrow-right-dims ">
-                  <use xlink:href="img/icons/icons.svg#arrow-right"></use>
-                </svg>
-              </li>
-              <li class="page-item hide-on-mobile"><a class="page-link" href="#">Аналитика</a></li>
-              <li class="page-item hide-on-mobile">
-                <svg width="20px" height="20px" class="svg-arrow-right-dims">
-                  <use xlink:href="img/icons/icons.svg#arrow-right"></use>
-                </svg>
-              </li>
-              <li class="page-item hide-on-mobile"><a class="page-link" href="prognosis-pro.html">Прогнозы PRO</a></li>
-            </ul>
-          </nav>
+          
           <h2 class="prognosis__hero-title">Прогнозы PRO - это</h2>
           <ul class="prognosis__hero-list brokers__list">
             <li class="brokers__list-item">Сервис, доступный бесплатно для клиентов АО «НФК-Сбережения»</li>
@@ -85,7 +86,7 @@
         </div>
       </div>
     </section>
-    <section>
+    <section class="prognosis__conditions-section">
       <div class="container">
         <div class="prognosis__conditions">
           <h3 class="prognosis__conditions-title">Чтобы воспользоваться сервисом «Прогнозы PRO», нужно стать нашим
@@ -117,7 +118,7 @@
           </div>
 
         </div>
-        <div class="important__block">
+        <div class="important__block ">
           <div>
             <svg width="20px" height="20px" class="svg-important-dims">
               <use xlink:href="img/icons/icons.svg#important"></use>
@@ -128,6 +129,49 @@
             специалистов, то, пожалуйста, свяжитесь с нами по телефону <a href="#" class="important__description-link">8
               800 200-84-84</a> или <a href="#" class="important__description-link">закажите консультацию онлайн</a></span>
         </div>
+      </div>
+    </section>
+    <section class="brokers__info section-with-gradient">
+      <div class="container">
+        <div class="window__account">
+          <h2 class="window__account-title">Открытие брокерского счета</h2>
+          <form action="#" class="account__form" id="accountform">
+            <div class="account__form-text">
+              <!-- <label for="firstname">Enter your name</label> -->
+              <input type="text" class="account__form-input" id="firstname" placeholder="Фамилия*">
+            </div>
+            <div class="account__form-text">
+              <!-- <label for="exampleFormControlInput1" class="form-label">Email address</label> -->
+              <input type="text" class="account__form-input" id="secondname" placeholder="Имя*">
+            </div>
+            <div class="account__form-text">
+              <!-- <label for="exampleFormControlInput1" class="form-label">Email address</label> -->
+              <input type="text" class="account__form-input" id="surname" placeholder="Отчество*">
+            </div>
+            <div class="account__form-tel">
+              <!-- <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label> -->
+              <input type="tel" class="account__form-input " id="tel" placeholder="Мобильный телефон*">
+            </div>
+            <div class="account__form-mail">
+              <!-- <label for="mail">Enter your name</label> -->
+              <input type="email" class="account__form-input " id="mail" placeholder="Электронная почта*">
+            </div>
+            <span class="account__form-transcription">* - поля, обязательные для заполнения</span>
+            <div class="form-check account__form-check">
+              <input class="form-check-input" type="checkbox" value="" id="accountCheck" checked>
+              <!-- <span class="form-check-icon"><svg width="14px" height="10px" class="svg-Check-dims">
+                <use xlink:href="img/icons/icons.svg#Check"></use>
+              </svg></span> -->
+              <label class="form-check-label" for="accountCheck">
+                <span class="check-span">Даю согласие на</span> <a href="#">обработку персональных данных</a> <br> <span
+                  class="check-span">и</span> <a href="#">подтверждаю согласие на
+                  коммуникацию</a>
+              </label>
+            </div>
+            <button type="submit" class="button primary-button account__form-btn">Отправить</button>
+          </form>
+        </div>
+       
       </div>
     </section>
   </main>

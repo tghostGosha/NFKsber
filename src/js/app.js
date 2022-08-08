@@ -16,7 +16,7 @@ const greyBackground = document.querySelector('.grey-background-640px');
 const nav = document.querySelector('.header__nav-app-list');
 
 //==========Меняем svg на акардионе "тарифы" мобилка
-$(".rates__accordion-button").on('click',function() {
+$(".rates__accordion-button").on('click', function () {
   $(this).find("i").toggleClass("bi bi-plus-lg bi bi-dash-lg")
   console.log(i)
 });
@@ -61,17 +61,23 @@ const heroSwiper = new Swiper('.hero-swiper', {
 //=============Добавление плашки в таблице при скролле
 let elementShadow = document.querySelector(".shadow-on-scroll-hide")
 let tabPaneShadow = document.querySelector(".tab-pane-shadow")
-window.onscroll = function() {myFunction()};
+
+window.onscroll = function () { myFunction() };
 
 function myFunction() {
-  if (document.documentElement.scrollTop > 710 && document.documentElement.scrollTop <= 2670 && window.innerWidth > 1176 && tabPaneShadow.classList.contains('active') ) {
-    
-    elementShadow.classList.remove('shadow-on-scroll-hide');
-    elementShadow.classList.add('shadow-on-scroll');
-  } else {
-    elementShadow.classList.add('shadow-on-scroll-hide');
-    elementShadow.classList.remove('shadow-on-scroll');
+  try {
+    if (document.documentElement.scrollTop > 710 && document.documentElement.scrollTop <= 2670 && window.innerWidth > 1176 && tabPaneShadow.classList.contains('active')) {
+
+      elementShadow.classList.remove('shadow-on-scroll-hide');
+      elementShadow.classList.add('shadow-on-scroll');
+    } else {
+      elementShadow.classList.add('shadow-on-scroll-hide');
+      elementShadow.classList.remove('shadow-on-scroll');
+    }
+  } catch (error) {
+    console.log('тут не нужна функция')
   }
+  
 }
 //===========swiper ideas======
 const ideasSwiper = new Swiper('.ideas-swiper', {

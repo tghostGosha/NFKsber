@@ -19,6 +19,7 @@
 @import "accordion";
 @import "small__banner";
 @import "explain-card";
+@import "demo";
 @import "services/services.scss";
 @import "services/brokers-hero.scss";
 @import "services/trust-management.scss";
@@ -202,6 +203,9 @@ button {
   @media(max-width: 585px) {
     margin-bottom: 48px;
   }
+}
+.breadcrumb-margin-bottom {
+  margin-bottom: 56px;
 }
 .grid-container {
   display: grid;
@@ -610,8 +614,6 @@ button {
   @media(max-width: 1176px) {
     display: none;
   }
-
-  &-title {}
 
   &-container {
     display: grid;

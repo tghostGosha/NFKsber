@@ -12138,6 +12138,11 @@ button.swiper-pagination-bullet {
   line-height: 19px;
   color: var(--secondary-text);
 }
+@media (max-width: 1176px) {
+  .form-check-label {
+    max-width: 384px;
+  }
+}
 @media (max-width: 585px) {
   .form-check-label {
     position: absolute;
@@ -12765,7 +12770,7 @@ input::placeholder {
   border-radius: 10px 10px 0px 0px;
   box-shadow: -5px 4px 27px rgba(4, 23, 2, 0.07);
   opacity: 1;
-  overflow: auto;
+  overflow: hidden;
 }
 @media (max-width: 585px) {
   .header__nav-app-list {
@@ -12777,9 +12782,9 @@ input::placeholder {
 .window__account-app {
   display: none;
   position: absolute;
-  top: -673px;
+  top: -624px;
   width: 100%;
-  height: 673px;
+  left: 0;
   background: #FFFFFF;
   border: 1px solid var(--grey-button);
   box-shadow: 0px 0px 16px rgba(29, 37, 44, 0.16);
@@ -12787,7 +12792,7 @@ input::placeholder {
   border-top: 12px solid var(--primary-text);
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
-  padding: 52px 106px;
+  padding: 56px 84px 33px 84px;
 }
 .window__account-app-header {
   display: flex;
@@ -13325,6 +13330,12 @@ input::placeholder {
   grid-template-columns: repeat(6, 1fr);
   row-gap: 24px;
   column-gap: 32px;
+}
+@media (max-width: 1176px) {
+  .account__form {
+    column-gap: 16px;
+    row-gap: 28px;
+  }
 }
 @media (max-width: 585px) {
   .account__form {
@@ -14027,9 +14038,9 @@ input::placeholder {
 }
 
 .accordion-item-title {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 22px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
 }
 
 .accordion-title {
@@ -14260,6 +14271,50 @@ input::placeholder {
   }
 }
 
+.demo__hero-container {
+  background-image: var(--desktop-image-banner-top);
+  padding: 46px 50% 60px 0;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+@media (max-width: 1176px) {
+  .demo__hero-container {
+    padding: 32px 33% 38px 0;
+    background-size: 38%;
+  }
+}
+@media (max-width: 585px) {
+  .demo__hero-container {
+    padding: 24px 3% 141px 0;
+    background-size: 58%;
+  }
+}
+.demo__hero-title {
+  margin-bottom: 24px;
+}
+@media (max-width: 585px) {
+  .demo__hero-title {
+    margin-bottom: 16px;
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
+.demo__hero-description {
+  margin-bottom: 138px;
+}
+.demo__hero-button {
+  padding: 14px 32px;
+}
+@media (max-width: 585px) {
+  .demo__hero-button {
+    padding: 12px 30px;
+  }
+}
+
+.demo__description {
+  padding-top: 68px;
+  padding-bottom: 136px;
+}
 .services {
   padding-bottom: 136px;
 }
@@ -16751,20 +16806,20 @@ input::placeholder {
 }
 .rates__hero-container {
   background-image: var(--desktop-image-banner-top);
-  padding: 24px 54% 59px 0;
+  padding: 46px 54% 59px 0;
   background-repeat: no-repeat;
   background-position: 94% bottom;
 }
 @media (max-width: 1176px) {
   .rates__hero-container {
-    padding: 24px 17% 59px 0;
+    padding: 32px 33% 112px 0;
     background-size: 48%;
     background-position: right bottom;
   }
 }
 @media (max-width: 585px) {
   .rates__hero-container {
-    padding: 8px 0 149px 0;
+    padding: 24px 0 149px 0;
   }
 }
 .rates__hero-title {
@@ -16775,7 +16830,7 @@ input::placeholder {
     margin-bottom: 42px;
   }
 }
-@media (max-width: 1176px) {
+@media (max-width: 585px) {
   .rates__hero-title {
     font-size: 31px;
     line-height: 40px;
@@ -16820,6 +16875,7 @@ input::placeholder {
 @media (max-width: 1176px) {
   .rates__table-nav {
     margin-bottom: 32px;
+    justify-content: space-between;
   }
 }
 @media (max-width: 783px) {
@@ -17144,19 +17200,10 @@ th {
     margin-bottom: 16px;
   }
 }
-.memo__info-description {
-  margin-bottom: 68px;
-}
-@media (max-width: 1176px) {
-  .memo__info-description {
-    margin-bottom: 56px;
-  }
-}
 @media (max-width: 585px) {
   .memo__info-description {
     font-size: 12px;
     line-height: 16px;
-    margin-bottom: 48px;
   }
 }
 .memo__info-footnotes {
@@ -18105,6 +18152,9 @@ th {
     margin-bottom: 24px;
   }
 }
+.prognosis__conditions-section {
+  padding-bottom: 148px;
+}
 
 .prognosis__conditions-container {
   display: flex;
@@ -18838,6 +18888,10 @@ button {
   .block__margin-bottom {
     margin-bottom: 48px;
   }
+}
+
+.breadcrumb-margin-bottom {
+  margin-bottom: 56px;
 }
 
 .grid-container {

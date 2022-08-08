@@ -25,7 +25,10 @@
   grid-template-columns: repeat(6, 1fr);
   row-gap: 24px;
   column-gap: 32px;
-
+  @media(max-width: 1176px) {
+    column-gap: 16px;
+    row-gap: 28px; 
+  }
   @media(max-width: 585px) {
     row-gap: 12px;
     column-gap: 12px;

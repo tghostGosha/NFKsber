@@ -3,18 +3,18 @@
 
   &-container {
     background-image: var(--desktop-image-banner-top);
-    padding: 24px 54% 59px 0;
+    padding: 46px 54% 59px 0;
     background-repeat: no-repeat;
     background-position: 94% bottom;
 
     @media(max-width: 1176px) {
-      padding: 24px 17% 59px 0;
+      padding: 32px 33% 112px 0;
       background-size: 48%;
       background-position: right bottom;
     }
 
     @media(max-width: 585px) {
-      padding: 8px 0 149px 0;
+      padding: 24px 0 149px 0;
       
     }
   }
@@ -26,7 +26,7 @@
       margin-bottom: 42px;
     }
 
-    @media(max-width: 1176px) {
+    @media(max-width: 585px) {
       font-size: 31px;
       line-height: 40px;
       margin-bottom: 24px;
@@ -73,6 +73,7 @@
 
     @media(max-width: 1176px) {
       margin-bottom: 32px;
+      justify-content: space-between;
     }
 
     @media(max-width: 783px) {
@@ -406,16 +407,11 @@ th {
   }
 
   &-description {
-    margin-bottom: 68px;
-
-    @media(max-width: 1176px) {
-      margin-bottom: 56px;
-    }
-
+    
     @media(max-width: 585px) {
       font-size: 12px;
       line-height: 16px;
-      margin-bottom: 48px;
+      
     }
   }
 
