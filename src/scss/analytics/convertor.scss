@@ -1,0 +1,46 @@
+.converter__hero {
+
+  &-container {
+    background-image: var(--desktop-image-banner-top);
+    padding: 46px 50% 245px 0;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+
+    @media(max-width: 1176px) {
+      padding: 32px 33% 38px 0;
+      background-size: 38%;
+    }
+
+    @media(max-width: 585px) {
+      padding: 24px 3% 141px 0;
+      background-size: 58%;
+    }
+  }
+
+  &-title {
+    margin-bottom: 24px;
+
+    @media(max-width: 585px) {
+      margin-bottom: 16px;
+      font-size: 32px;
+      line-height: 40px;
+    }
+  }
+
+}
+.converter__section {
+  padding-top: 68px;
+  padding-bottom: 112px;
+}
+.converter__banner {
+  &-left {
+    padding: 40px 3% 47px 46px;
+  }
+  &-description {
+    margin-bottom: 40px;
+    padding-right: 10%;
+  }
+  &-btn {
+    padding: 18px 26px;
+  }
+}
