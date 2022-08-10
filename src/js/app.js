@@ -8,6 +8,15 @@ import wNumb from 'wnumb';
 
 
 
+//========Choices селект
+// $(".dropdown-filter").on("click", function () {
+//   // $(".dropdown-filter-menu").toggleClass("show")
+//   $(".svg-arrow-filter-dims").toggleClass('rotate')
+// });
+$('.filter-menu__item').on('click', function(event){
+	event.stopPropagation();
+});
+
 Swiper.use([Navigation, Pagination])
 
 flsFunctions.isWebp()
@@ -79,6 +88,22 @@ function myFunction() {
   }
   
 }
+//=======Запрос на сервер с инвистиционными идеями
+// let url = 'https://invest-idei.ru/'
+// const ideas = async () => {
+//   const response = await fetch(url, {
+//     method: 'GET',
+//     headers: {
+//     'Content-Type': 'application/json',
+//     'API-Key': 'secret',
+//     'Access-Control-Allow-Origin': 'https://invest-idei.ru/'
+//   }
+//   })
+  
+//   const data =  await response.json()
+//   console.log(data)
+// }
+
 //===========swiper ideas======
 const ideasSwiper = new Swiper('.ideas-swiper', {
   modules: [Navigation, Pagination],
