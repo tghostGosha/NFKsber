@@ -5,6 +5,7 @@ import Swiper, { Navigation, Pagination } from 'swiper';
 import JustValidate from 'just-validate';
 import noUiSlider from 'nouislider';
 import wNumb from 'wnumb';
+import Choices from 'choices.js'
 
 
 //========== Инвестиционные идеи
@@ -32,6 +33,21 @@ $('#listSort').on('click', function(event){
 });
 
 //===================================
+///===========Choices конвертор валют======
+const defaultSelect = (classNameEl) => {
+  const element = document.getElementById(classNameEl);
+  const choices = new Choices(element, {
+    searchEnabled: false,
+    position: 'bottom',
+  });
+
+} 
+
+defaultSelect('currency')
+
+
+
+//=====================
 Swiper.use([Navigation, Pagination])
 
 flsFunctions.isWebp()

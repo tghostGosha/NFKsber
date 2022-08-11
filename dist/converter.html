@@ -398,7 +398,64 @@
     <section class="converter__section">
       <div class="container">
         <div class="converter block__margin-bottom">
-          <h2>тут будет Конвертер</h2>
+          <div class="choices-container">
+            <div class="choices-container__left">
+              <select name="currency" id="currency">
+                <option value="AUD">AUD</option>
+                <option value="AZN">AZN</option>
+                <option value="GBP">GBP</option>
+                <option value="AMD">AMD</option>
+                <option value="BYN">BYN</option>
+                <option value="BGN">BGN</option>
+                <option value="BRL">BRL</option>
+                <option value="HUF">HUF</option>
+                <option value="HKD">HKD</option>
+                <option value="DKK">DKK</option>
+                <option value="USD" selected >USD</option>
+                <option value="EUR">EUR</option>
+                <option value="INR">INR</option>
+                <option value="KZT">KZT</option>
+                <option value="CAD">CAD</option>
+                <option value="KGS">KGS</option>
+                <option value="CNY">CNY</option>
+                <option value="MDL">MDL</option>
+                <option value="NOK">NOK</option>
+                <option value="PLN">PLN</option>
+                <option value="RON">RON</option>
+                <option value="XDR">XDR</option>
+                <option value="SGD">SGD</option>
+                <option value="TJS">TJS</option>
+                <option value="TRY">TRY</option>
+                <option value="TMT">TMT</option>
+                <option value="UZS">UZS</option>
+                <option value="UAH">UAH</option>
+                <option value="CZK">CZK</option>
+                <option value="SEK">SEK</option>
+                <option value="CHF">CHF</option>
+                <option value="ZAR">ZAR</option>
+                <option value="KRW">KRW</option>
+                <option value="JPY">JPY</option>
+                
+              </select>
+              <div class="currency__value">
+                <input type="text" class="sum-of-change" id="sumOfChange" value="1000,00" >
+                <label for="sumOfChange" class="form-label">1 USD = 77,91 RUB</label>
+              </div>
+            </div>
+            <button class="currency__change-btn">
+              <svg width="24px" height="40px" class="svg-change-btn-dims">
+                <use xlink:href="img/icons/icons.svg#change-btn"></use>
+              </svg>
+            </button>
+            <div class="choices-container__right">
+              
+              <div class="currency__value">
+                <input type="text" class="sum-of-change" id="sumOfChangeRub" value="1000,00" >
+                <label for="sumOfChange" class="form-label">1 USD = 77,91 RUB</label>
+              </div>
+            </div>
+          </div>
+          
         </div>
         <div class="small__banner block__margin-bottom converter__banner">
           <div class="small__banner-left-text converter__banner-left">
