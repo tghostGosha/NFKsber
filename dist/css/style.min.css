@@ -13875,12 +13875,14 @@ input::placeholder {
 .ideas__slide {
   display: flex;
   flex-direction: column;
-  border: 1px solid var(--grey-button);
-  border-radius: 10px;
 }
 .ideas__slide-card {
   max-width: 390px;
   padding: 20px 24px 24px 24px;
+  border: 1px solid var(--grey-button);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
 }
 @media (max-width: 585px) {
   .ideas__slide-card {
@@ -13924,6 +13926,7 @@ input::placeholder {
 }
 .ideas__slide-footer {
   display: flex;
+  margin-top: auto;
 }
 .ideas__slide-header {
   display: flex;
@@ -13950,57 +13953,66 @@ input::placeholder {
 .ideas__slide-header-right {
   display: flex;
 }
-.ideas__slide-header .slide-like-btn {
+
+.slide-like-btn {
   margin-right: 16px;
   transition: all 0.1s ease-in 0.1s;
 }
 @media (max-width: 585px) {
-  .ideas__slide-header .slide-like-btn {
+  .slide-like-btn {
     margin-right: 14px;
   }
 }
-.ideas__slide-header .svg-like-dims {
+
+.svg-like-dims {
   stroke: var(--secondary-text);
   color: #ffffff;
   transition: all 0.1s ease-in 0.1s;
 }
 @media (max-width: 585px) {
-  .ideas__slide-header .svg-like-dims {
+  .svg-like-dims {
     width: 16px;
     height: 14px;
   }
 }
-.ideas__slide-header .svg-like-dims:hover {
+
+.svg-like-dims:hover {
   color: var(--secondary-text);
 }
-.ideas__slide-header .svg-close-dims {
+
+.svg-close-dims {
   color: var(--secondary-text);
   transition: color 0.1s ease-in 0.1s;
 }
 @media (max-width: 585px) {
-  .ideas__slide-header .svg-close-dims {
+  .svg-close-dims {
     width: 12px;
     height: 12px;
   }
 }
-.ideas__slide-header .svg-close-dims:hover {
+
+.svg-close-dims:hover {
   color: black;
 }
-.ideas__slide .current__profitability {
+
+.current__profitability {
   margin-right: 30px;
 }
-.ideas__slide .current__possibility {
+
+.current__possibility {
   padding-left: 16px;
   border-left: 1px solid var(--grey-button);
 }
-.ideas__slide .current__profitability-title,
-.ideas__slide .current__possibility-title {
+
+.current__profitability-title,
+.current__possibility-title {
   font-size: 14px;
   line-height: 19px;
   color: var(--secondary-text);
 }
-.ideas__slide .current__profitability-value,
-.ideas__slide .current__possibility-value {
+
+.current__profitability-value,
+.current__possibility-value {
   margin-top: 4px;
 }
 
@@ -18299,6 +18311,9 @@ th {
   }
 }
 
+.investment__ideas {
+  padding-bottom: 112px;
+}
 .investment__ideas-header {
   align-items: center;
 }
@@ -18310,6 +18325,61 @@ th {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.investment__ideas-list {
+  display: flex;
+  flex-direction: column;
+}
+.investment__ideas-body {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+.ideas__card-list {
+  padding: 26px 0;
+}
+.ideas__card-list-logo {
+  grid-column: 1/span 1;
+}
+.ideas__card-list-header {
+  grid-column: 2/span 3;
+}
+.ideas__card-list-stars {
+  grid-column: 5/span 2;
+}
+.ideas__card-list-possbility {
+  grid-column: 7/span 2;
+}
+.ideas__card-list-profitability {
+  grid-column: 9/span 1;
+}
+.ideas__card-list-date {
+  grid-column: 11/span 2;
+}
+
+.ideas__list-title {
+  grid-column: 1/span 1;
+}
+.ideas__list-possbility {
+  grid-column: 7/span 2;
+}
+.ideas__list-profitability {
+  grid-column: 9/span 2;
+}
+.ideas__list-date {
+  grid-column: 11/span 2;
+}
+
+.ideas__card-list:nth-child(odd) {
+  border-top: 1px solid var(--grey-button);
+  border-bottom: 1px solid var(--grey-button);
 }
 
 .dropdown-filter {
@@ -18413,7 +18483,89 @@ th {
 }
 
 .filter-check:checked + label::before {
-  background-image: url("/img/icons/icons.svg#Check");
+  background-image: url("../img/icons/icons.svg#Check");
+}
+
+.btn-sort {
+  width: 49px;
+  height: 49px;
+  background-color: var(--primary-grey);
+}
+
+.btn-sort.choisen {
+  background-color: var(--primary-text);
+}
+
+.btn-sort.choisen > .svg-list-dims,
+.btn-sort.choisen > .svg-medium-icons-dims {
+  color: #fff;
+}
+
+.btn-sort:hover .svg-medium-icons-dims,
+.btn-sort:hover .svg-list-dims {
+  color: var(--primary-text);
+}
+
+.svg-medium-icons-dims,
+.svg-list-dims {
+  color: var(--secondary-text);
+  transition: all 0.1s ease-in-out 0.1s;
+}
+
+.ideas__card {
+  grid-column: span 4;
+}
+
+.nav__pagination {
+  margin-top: 48px;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+}
+
+.page-link {
+  color: var(--secondary-text);
+  border: none;
+  border-radius: 10px;
+  outline: none;
+}
+
+.page-link:focus {
+  box-shadow: none;
+  color: var(--secondary-text);
+}
+
+.page-link.active,
+.active > .page-link {
+  z-index: 3;
+  color: var(--secondary-text);
+  background-color: var(--primary-grey);
+  border-color: none;
+}
+
+.page-link:hover {
+  z-index: 2;
+  color: var(--secondary-text);
+  background-color: var(--bs-pagination-hover-bg);
+  border-color: none;
+}
+
+.page-item {
+  margin: 0 3px;
+}
+
+.previous {
+  margin-right: 17px;
+}
+
+.next {
+  margin-left: 17px;
+}
+
+#tradingview_1158d {
+  height: 652px;
 }
 
 .about__hero {

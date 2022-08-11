@@ -7,16 +7,31 @@ import noUiSlider from 'nouislider';
 import wNumb from 'wnumb';
 
 
+//========== Инвестиционные идеи
 
 //========Choices селект
-// $(".dropdown-filter").on("click", function () {
-//   // $(".dropdown-filter-menu").toggleClass("show")
-//   $(".svg-arrow-filter-dims").toggleClass('rotate')
-// });
 $('.filter-menu__item').on('click', function(event){
 	event.stopPropagation();
 });
 
+//============Сортировка списка идей
+$('#mediumIconsSort').on('click', function(event){
+	event.preventDefault();
+  $('#mediumIconsSort').addClass('choisen')
+  $('#listSort').removeClass('choisen')
+  $('.investment__ideas-body').addClass('show');
+  $('.investment__ideas-list').addClass('hide');
+});
+
+$('#listSort').on('click', function(event){
+	event.preventDefault();
+  $('#listSort').addClass('choisen')
+  $('#mediumIconsSort').removeClass('choisen')
+  $('.investment__ideas-body').removeClass('show');
+  $('.investment__ideas-list').removeClass('hide');
+});
+
+//===================================
 Swiper.use([Navigation, Pagination])
 
 flsFunctions.isWebp()

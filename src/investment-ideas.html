@@ -6,128 +6,607 @@
 
 <body>
 
-	@@include('html/header.html',{})
-	<main>
-		<section class="investment__ideas">
-			<div class="container">
-				<nav aria-label="breadcrumb" class="breadcrumb-margin-bottom">
-					<ul class="breadcrumb">
-						<li class="page-item-mobile">
-							<svg width="20px" height="20px" class="svg-arrow-right-dims">
-								<use xlink:href="img/icons/icons.svg#arrow-left"></use>
-							</svg>
-						</li>
-						<li class="breadcrumb-item "><a class="breadcrumb-link" href="index.html">Главная</a></li>
-						<li class="breadcrumb-item hide-on-mobile">
-							<svg width="20px" height="20px" class="svg-arrow-right-dims breadcrumb-svg">
-								<use xlink:href="img/icons/icons.svg#arrow-right"></use>
-							</svg>
-						</li>
-						<li class="breadcrumb-item hide-on-mobile"><a class="breadcrumb-link" href="#">Аналитика</a></li>
-						<li class="breadcrumb-item hide-on-mobile">
-							<svg width="20px" height="20px" class="svg-arrow-right-dims breadcrumb-svg">
-								<use xlink:href="img/icons/icons.svg#arrow-right"></use>
-							</svg>
-						</li>
-						<li class="breadcrumb-item hide-on-mobile"><a class="breadcrumb-link"
-								href="investment-ideas.html">Инвестиционные идеи</a></li>
-					</ul>
-				</nav>
-				<div class="investment__ideas-container">
-					<div class="investment__ideas-header grid-container block__margin-bottom">
-						<h1 class="investment__ideas-header-title">Инвестиционные идеи</h1>
-						<div class="investment__ideas-filtres">
-							<div class="dropdown">
-								<button class="dropdown-filter" type="button" data-bs-toggle="dropdown" data-placeholder="false"
-									aria-expanded="false">
-									Аналитика
-									<svg width="5px" height="10px" class="svg-arrow-filter-dims">
-										<use xlink:href="img/icons/icons.svg#arrow-right"></use>
-									</svg>
-								</button>
-								<ul class="dropdown-menu dropdown-filter-menu">
-									<li class="filter-menu__item">
-										<input class="form-check-input filter-check" checked type="checkbox" id="allAnalitics" name="NAME"
-											value="VALUE">
-										<label for="allAnalitics">Все Аналитики</label>
-									</li>
-									<li class="filter-menu__item">
-										<input class="form-check-input filter-check" type="checkbox" id="finam" name="NAME" value="VALUE">
-										<label for="finam">Финам</label>
-									</li>
-									<li class="filter-menu__item"><input class="form-check-input filter-check" type="checkbox" id="amadey"
-											name="NAME" value="VALUE"><label for="amadey">Amadey</label></li>
-									<li class="filter-menu__item"><input class="form-check-input filter-check" type="checkbox"
-											id="bCSGlobalMarket" name="NAME" value="VALUE"><label for="bCSGlobalMarket">BCS Global
-											Markets</label></li>
-									<li class="filter-menu__item"><input class="form-check-input filter-check" type="checkbox"
-											id="citronResearch" name="NAME" value="VALUE"><label for="citronResearch">Citron Research</label>
-									</li>
-								</ul>
-							</div>
-							<div class="dropdown">
-								<button class="dropdown-filter" type="button" data-bs-toggle="dropdown" data-placeholder="false"
-									aria-expanded="false">
-									Страны
-									<svg width="5px" height="10px" class="svg-arrow-filter-dims">
-										<use xlink:href="img/icons/icons.svg#arrow-right"></use>
-									</svg>
-								</button>
-								<ul class="dropdown-menu dropdown-filter-menu">
-									<li class="filter-menu__item">
-										<input class="form-check-input filter-check" checked type="checkbox" id="allCountries" name="NAME"
-											value="VALUE">
-										<label for="allCountries">Все Страны</label>
-									</li>
-									<li class="filter-menu__item">
-										<input class="form-check-input filter-check" type="checkbox" id="inRussia" name="NAME"
-											value="VALUE">
-										<label for="inRussia">В России</label>
-									</li>
-									<li class="filter-menu__item"><input class="form-check-input filter-check" type="checkbox"
-											id="inWorld" name="NAME" value="VALUE"><label for="inWorld">В мире</label></li>
+  @@include('html/header.html',{})
+  <main>
+    <section class="investment__ideas">
+      <div class="container">
+        <nav aria-label="breadcrumb" class="breadcrumb-margin-bottom">
+          <ul class="breadcrumb">
+            <li class="page-item-mobile">
+              <svg width="20px" height="20px" class="svg-arrow-right-dims">
+                <use xlink:href="img/icons/icons.svg#arrow-left"></use>
+              </svg>
+            </li>
+            <li class="breadcrumb-item "><a class="breadcrumb-link" href="index.html">Главная</a></li>
+            <li class="breadcrumb-item hide-on-mobile">
+              <svg width="20px" height="20px" class="svg-arrow-right-dims breadcrumb-svg">
+                <use xlink:href="img/icons/icons.svg#arrow-right"></use>
+              </svg>
+            </li>
+            <li class="breadcrumb-item hide-on-mobile"><a class="breadcrumb-link" href="#">Аналитика</a></li>
+            <li class="breadcrumb-item hide-on-mobile">
+              <svg width="20px" height="20px" class="svg-arrow-right-dims breadcrumb-svg">
+                <use xlink:href="img/icons/icons.svg#arrow-right"></use>
+              </svg>
+            </li>
+            <li class="breadcrumb-item hide-on-mobile"><a class="breadcrumb-link"
+                href="investment-ideas.html">Инвестиционные идеи</a></li>
+          </ul>
+        </nav>
+        <div class="investment__ideas-container">
+          <div class="investment__ideas-header grid-container block__margin-bottom">
+            <h1 class="investment__ideas-header-title">Инвестиционные идеи</h1>
+            <div class="investment__ideas-filtres">
+              <div class="dropdown">
+                <button class="dropdown-filter" type="button" data-bs-toggle="dropdown" data-placeholder="false"
+                  aria-expanded="false">
+                  Аналитика
+                  <svg width="5px" height="10px" class="svg-arrow-filter-dims">
+                    <use xlink:href="img/icons/icons.svg#arrow-right"></use>
+                  </svg>
+                </button>
+                <ul class="dropdown-menu dropdown-filter-menu">
+                  <li class="filter-menu__item">
+                    <input class="form-check-input filter-check" checked type="checkbox" id="allAnalitics" name="NAME"
+                      value="VALUE">
+                    <label for="allAnalitics">Все Аналитики</label>
+                  </li>
+                  <li class="filter-menu__item">
+                    <input class="form-check-input filter-check" type="checkbox" id="finam" name="NAME" value="VALUE">
+                    <label for="finam">Финам</label>
+                  </li>
+                  <li class="filter-menu__item"><input class="form-check-input filter-check" type="checkbox" id="amadey"
+                      name="NAME" value="VALUE"><label for="amadey">Amadey</label></li>
+                  <li class="filter-menu__item"><input class="form-check-input filter-check" type="checkbox"
+                      id="bCSGlobalMarket" name="NAME" value="VALUE"><label for="bCSGlobalMarket">BCS Global
+                      Markets</label></li>
+                  <li class="filter-menu__item"><input class="form-check-input filter-check" type="checkbox"
+                      id="citronResearch" name="NAME" value="VALUE"><label for="citronResearch">Citron Research</label>
+                  </li>
+                </ul>
+              </div>
+              <div class="dropdown">
+                <button class="dropdown-filter" type="button" data-bs-toggle="dropdown" data-placeholder="false"
+                  aria-expanded="false">
+                  Страны
+                  <svg width="5px" height="10px" class="svg-arrow-filter-dims">
+                    <use xlink:href="img/icons/icons.svg#arrow-right"></use>
+                  </svg>
+                </button>
+                <ul class="dropdown-menu dropdown-filter-menu">
+                  <li class="filter-menu__item">
+                    <input class="form-check-input filter-check" checked type="checkbox" id="allCountries" name="NAME"
+                      value="VALUE">
+                    <label for="allCountries">Все Страны</label>
+                  </li>
+                  <li class="filter-menu__item">
+                    <input class="form-check-input filter-check" type="checkbox" id="inRussia" name="NAME"
+                      value="VALUE">
+                    <label for="inRussia">В России</label>
+                  </li>
+                  <li class="filter-menu__item"><input class="form-check-input filter-check" type="checkbox"
+                      id="inWorld" name="NAME" value="VALUE"><label for="inWorld">В мире</label></li>
 
-								</ul>
-							</div>
-							<div class="dropdown">
-								<button class="dropdown-filter" type="button" data-bs-toggle="dropdown" data-placeholder="false"
-									aria-expanded="false">
-									Инструменты
-									<svg width="5px" height="10px" class="svg-arrow-filter-dims">
-										<use xlink:href="img/icons/icons.svg#arrow-right"></use>
-									</svg>
-								</button>
-								<ul class="dropdown-menu dropdown-filter-menu">
-									<li class="filter-menu__item">
-										<input class="form-check-input filter-check" checked type="checkbox" id="allTools" name="NAME"
-											value="VALUE">
-										<label for="allTools">Все Инструменты</label>
-									</li>
-									<li class="filter-menu__item">
-										<input class="form-check-input filter-check" type="checkbox" id="Stocks" name="NAME" value="VALUE">
-										<label for="Stocks">Акции</label>
-									</li>
-									<li class="filter-menu__item"><input class="form-check-input filter-check" type="checkbox" id="eTF"
-											name="NAME" value="VALUE"><label for="eTF">ETF</label></li>
-									<li class="filter-menu__item"><input class="form-check-input filter-check" type="checkbox"
-											id="products" name="NAME" value="VALUE"><label for="products">Товары</label></li>
-									<li class="filter-menu__item"><input class="form-check-input filter-check" type="checkbox"
-											id="currencies" name="NAME" value="VALUE"><label for="currencies">Валюты</label></li>
-									<li class="filter-menu__item"><input class="form-check-input filter-check" type="checkbox"
-											id="obligations" name="NAME" value="VALUE"><label for="obligations">Облигации</label></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-	</main>
-	@@include('html/footer.html',{})
-	<script src="js/app.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-		integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
-		crossorigin="anonymous"></script>
+                </ul>
+              </div>
+              <div class="dropdown">
+                <button class="dropdown-filter" type="button" data-bs-toggle="dropdown" data-placeholder="false"
+                  aria-expanded="false">
+                  Инструменты
+                  <svg width="5px" height="10px" class="svg-arrow-filter-dims">
+                    <use xlink:href="img/icons/icons.svg#arrow-right"></use>
+                  </svg>
+                </button>
+                <ul class="dropdown-menu dropdown-filter-menu">
+                  <li class="filter-menu__item">
+                    <input class="form-check-input filter-check" checked type="checkbox" id="allTools" name="NAME"
+                      value="VALUE">
+                    <label for="allTools">Все Инструменты</label>
+                  </li>
+                  <li class="filter-menu__item">
+                    <input class="form-check-input filter-check" type="checkbox" id="Stocks" name="NAME" value="VALUE">
+                    <label for="Stocks">Акции</label>
+                  </li>
+                  <li class="filter-menu__item"><input class="form-check-input filter-check" type="checkbox" id="eTF"
+                      name="NAME" value="VALUE"><label for="eTF">ETF</label></li>
+                  <li class="filter-menu__item"><input class="form-check-input filter-check" type="checkbox"
+                      id="products" name="NAME" value="VALUE"><label for="products">Товары</label></li>
+                  <li class="filter-menu__item"><input class="form-check-input filter-check" type="checkbox"
+                      id="currencies" name="NAME" value="VALUE"><label for="currencies">Валюты</label></li>
+                  <li class="filter-menu__item"><input class="form-check-input filter-check" type="checkbox"
+                      id="obligations" name="NAME" value="VALUE"><label for="obligations">Облигации</label></li>
+                </ul>
+              </div>
+              <button id="mediumIconsSort" class="medium-icons-sort btn-sort ">
+                <svg width="20px" height="20px" class="svg-medium-icons-dims">
+                  <use xlink:href="img/icons/icons.svg#medium-icons"></use>
+                </svg>
+              </button>
+              <button id="listSort" class="list-sort btn-sort choisen">
+                <svg width="20px" height="20px" class="svg-list-dims">
+                  <use xlink:href="img/icons/icons.svg#list"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="investment__ideas-body">
+            <div class="grid-container ">
+              <div class="ideas__slide-card ideas__card">
+                <div class="ideas__slide-header">
+                  <div class="ideas__slide-header-left">
+                    <h4 class="ideas__slide-bank">Финам</h4>
+                    <div class="stars-svg-container">
+                      <svg width="14px" height="14px" class="svg-star-dims">
+                        <use xlink:href="img/icons/icons.svg#star"></use>
+                      </svg>
+                      <svg width="14px" height="14px" class="svg-star-dims">
+                        <use xlink:href="img/icons/icons.svg#star"></use>
+                      </svg>
+                      <svg width="14px" height="14px" class="svg-star-dims">
+                        <use xlink:href="img/icons/icons.svg#star"></use>
+                      </svg>
+                      <svg width="14px" height="14px" class="svg-star-dims">
+                        <use xlink:href="img/icons/icons.svg#star"></use>
+                      </svg>
+                      <svg width="14px" height="14px" class="svg-star-dims">
+                        <use xlink:href="img/icons/icons.svg#star"></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="ideas__slide-header-right">
+                    <a href="#" class="slide-like-btn">
+                      <svg width="14px" height="14px" class="svg-like-dims">
+                        <use xlink:href="img/icons/icons.svg#like"></use>
+                      </svg>
+                    </a>
+                    <a href="#" class="slide-close-btn">
+                      <svg width="10px" height="10px" class="svg-close-dims">
+                        <use xlink:href="img/icons/icons.svg#close"></use>
+                      </svg>
+                    </a>
+
+                  </div>
+                </div>
+                <div class="ideas__slide-body">
+                  <div class="ideas__slide-img-block">
+                    <img src="@img/hero/nornikel.png" class="ideas__slide-img" alt="Норникель">
+                  </div>
+                  <p class="ideas__slide-body-title">Норникель - лампа Палладина </p>
+                </div>
+                <div class="ideas__slide-footer">
+                  <div class="current__profitability">
+                    <span class="current__profitability-title">Текущая доходность</span>
+                    <p class="current__profitability-value">2.34 %</p>
+                  </div>
+                  <div class="current__possibility">
+                    <span class="current__possibility-title">Можно заработать</span>
+                    <p class="current__possibility-value">до 15.2 %</p>
+                  </div>
+                </div>
+              </div>
+              <div class="ideas__slide-card ideas__card">
+                <div class="ideas__slide-header">
+                  <div class="ideas__slide-header-left">
+                    <h4 class="ideas__slide-bank">Финам</h4>
+                    <div class="stars-svg-container">
+                      <svg width="14px" height="14px" class="svg-star-dims">
+                        <use xlink:href="img/icons/icons.svg#star"></use>
+                      </svg>
+                      <svg width="14px" height="14px" class="svg-star-dims">
+                        <use xlink:href="img/icons/icons.svg#star"></use>
+                      </svg>
+                      <svg width="14px" height="14px" class="svg-star-dims">
+                        <use xlink:href="img/icons/icons.svg#star"></use>
+                      </svg>
+                      <svg width="14px" height="14px" class="svg-star-dims">
+                        <use xlink:href="img/icons/icons.svg#star"></use>
+                      </svg>
+                      <svg width="14px" height="14px" class="svg-star-dims">
+                        <use xlink:href="img/icons/icons.svg#star"></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="ideas__slide-header-right">
+                    <a href="#" class="slide-like-btn">
+                      <svg width="14px" height="14px" class="svg-like-dims">
+                        <use xlink:href="img/icons/icons.svg#like"></use>
+                      </svg>
+                    </a>
+                    <a href="#" class="slide-close-btn">
+                      <svg width="10px" height="10px" class="svg-close-dims">
+                        <use xlink:href="img/icons/icons.svg#close"></use>
+                      </svg>
+                    </a>
+
+                  </div>
+                </div>
+                <div class="ideas__slide-body">
+                  <div class="ideas__slide-img-block">
+                    <img src="@img/hero/enphase.png" class="ideas__slide-img" alt="Норникель">
+                  </div>
+                  <p class="ideas__slide-body-title">Enphase Energy: даже солнце
+                    не светит бесплатно</p>
+                </div>
+                <div class="ideas__slide-footer">
+                  <div class="current__profitability">
+                    <span class="current__profitability-title">Текущая доходность</span>
+                    <p class="current__profitability-value">-13.95 %</p>
+                  </div>
+                  <div class="current__possibility">
+                    <span class="current__possibility-title">Можно заработать</span>
+                    <p class="current__possibility-value">до 67.01 %</p>
+                  </div>
+                </div>
+              </div>
+              <div class="ideas__slide-card ideas__card">
+                <div class="ideas__slide-header">
+                  <div class="ideas__slide-header-left">
+                    <h4 class="ideas__slide-bank">ВТБ</h4>
+                    <div class="stars-svg-container">
+                      <svg width="14px" height="14px" class="svg-star-dims">
+                        <use xlink:href="img/icons/icons.svg#star"></use>
+                      </svg>
+                      <svg width="14px" height="14px" class="svg-star-dims">
+                        <use xlink:href="img/icons/icons.svg#star"></use>
+                      </svg>
+                      <svg width="14px" height="14px" class="svg-star-dims">
+                        <use xlink:href="img/icons/icons.svg#star"></use>
+                      </svg>
+                      <svg width="14px" height="14px" class="svg-star-dims">
+                        <use xlink:href="img/icons/icons.svg#star"></use>
+                      </svg>
+                      <svg width="14px" height="14px" class="svg-star-dims">
+                        <use xlink:href="img/icons/icons.svg#star"></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="ideas__slide-header-right">
+                    <a href="#" class="slide-like-btn">
+                      <svg width="14px" height="14px" class="svg-like-dims">
+                        <use xlink:href="img/icons/icons.svg#like"></use>
+                      </svg>
+                    </a>
+                    <a href="#" class="slide-close-btn">
+                      <svg width="10px" height="10px" class="svg-close-dims">
+                        <use xlink:href="img/icons/icons.svg#close"></use>
+                      </svg>
+                    </a>
+
+                  </div>
+                </div>
+                <div class="ideas__slide-body">
+                  <div class="ideas__slide-img-block">
+                    <img src="@img/hero/gazprom.png" class="ideas__slide-img" alt="Газпром">
+                  </div>
+                  <p class="ideas__slide-body-title">Газпром<br>
+                    Цена на газ радует глаз</p>
+                </div>
+                <div class="ideas__slide-footer">
+                  <div class="current__profitability">
+                    <span class="current__profitability-title">Текущая доходность</span>
+                    <p class="current__profitability-value">-0.21 %</p>
+                  </div>
+                  <div class="current__possibility">
+                    <span class="current__possibility-title">Можно заработать</span>
+                    <p class="current__possibility-value">до 11.5 %</p>
+                  </div>
+                </div>
+              </div>
+              <div class="ideas__slide-card ideas__card">
+                <div class="ideas__slide-header">
+                  <div class="ideas__slide-header-left">
+                    <h4 class="ideas__slide-bank">Финам</h4>
+                    <div class="stars-svg-container">
+                      <svg width="14px" height="14px" class="svg-star-dims">
+                        <use xlink:href="img/icons/icons.svg#star"></use>
+                      </svg>
+                      <svg width="14px" height="14px" class="svg-star-dims">
+                        <use xlink:href="img/icons/icons.svg#star"></use>
+                      </svg>
+                      <svg width="14px" height="14px" class="svg-star-dims">
+                        <use xlink:href="img/icons/icons.svg#star"></use>
+                      </svg>
+                      <svg width="14px" height="14px" class="svg-star-dims">
+                        <use xlink:href="img/icons/icons.svg#star"></use>
+                      </svg>
+                      <svg width="14px" height="14px" class="svg-star-dims">
+                        <use xlink:href="img/icons/icons.svg#star"></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="ideas__slide-header-right">
+                    <a href="#" class="slide-like-btn">
+                      <svg width="14px" height="14px" class="svg-like-dims">
+                        <use xlink:href="img/icons/icons.svg#like"></use>
+                      </svg>
+                    </a>
+                    <a href="#" class="slide-close-btn">
+                      <svg width="10px" height="10px" class="svg-close-dims">
+                        <use xlink:href="../img/icons/icons.svg#close"></use>
+                      </svg>
+                    </a>
+
+                  </div>
+                </div>
+                <div class="ideas__slide-body">
+                  <div class="ideas__slide-img-block">
+                    <img src="@img/hero/nornikel.png" class="ideas__slide-img" alt="Норникель">
+                  </div>
+                  <p class="ideas__slide-body-title">Норникель - лампа Палладина </p>
+                </div>
+                <div class="ideas__slide-footer">
+                  <div class="current__profitability">
+                    <span class="current__profitability-title">Текущая доходность</span>
+                    <p class="current__profitability-value">2.34 %</p>
+                  </div>
+                  <div class="current__possibility">
+                    <span class="current__possibility-title">Можно заработать</span>
+                    <p class="current__possibility-value">до 15.2 %</p>
+                  </div>
+                </div>
+              </div>
+              <div class="ideas__slide-card ideas__card">
+                <div class="ideas__slide-header">
+                  <div class="ideas__slide-header-left">
+                    <h4 class="ideas__slide-bank">Финам</h4>
+                    <div class="stars-svg-container">
+                      <svg width="14px" height="14px" class="svg-star-dims">
+                        <use xlink:href="img/icons/icons.svg#star"></use>
+                      </svg>
+                      <svg width="14px" height="14px" class="svg-star-dims">
+                        <use xlink:href="img/icons/icons.svg#star"></use>
+                      </svg>
+                      <svg width="14px" height="14px" class="svg-star-dims">
+                        <use xlink:href="img/icons/icons.svg#star"></use>
+                      </svg>
+                      <svg width="14px" height="14px" class="svg-star-dims">
+                        <use xlink:href="img/icons/icons.svg#star"></use>
+                      </svg>
+                      <svg width="14px" height="14px" class="svg-star-dims">
+                        <use xlink:href="img/icons/icons.svg#star"></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="ideas__slide-header-right">
+                    <a href="#" class="slide-like-btn">
+                      <svg width="14px" height="14px" class="svg-like-dims">
+                        <use xlink:href="img/icons/icons.svg#like"></use>
+                      </svg>
+                    </a>
+                    <a href="#" class="slide-close-btn">
+                      <svg width="10px" height="10px" class="svg-close-dims">
+                        <use xlink:href="img/icons/icons.svg#close"></use>
+                      </svg>
+                    </a>
+
+                  </div>
+                </div>
+                <div class="ideas__slide-body">
+                  <div class="ideas__slide-img-block">
+                    <img src="@img/hero/enphase.png" class="ideas__slide-img" alt="Норникель">
+                  </div>
+                  <p class="ideas__slide-body-title">Enphase Energy: даже солнце
+                    не светит бесплатно</p>
+                </div>
+                <div class="ideas__slide-footer">
+                  <div class="current__profitability">
+                    <span class="current__profitability-title">Текущая доходность</span>
+                    <p class="current__profitability-value">-13.95 %</p>
+                  </div>
+                  <div class="current__possibility">
+                    <span class="current__possibility-title">Можно заработать</span>
+                    <p class="current__possibility-value">до 67.01 %</p>
+                  </div>
+                </div>
+              </div>
+              <div class="ideas__slide-card ideas__card">
+                <div class="ideas__slide-header">
+                  <div class="ideas__slide-header-left">
+                    <h4 class="ideas__slide-bank">ВТБ</h4>
+                    <div class="stars-svg-container">
+                      <svg width="14px" height="14px" class="svg-star-dims">
+                        <use xlink:href="img/icons/icons.svg#star"></use>
+                      </svg>
+                      <svg width="14px" height="14px" class="svg-star-dims">
+                        <use xlink:href="img/icons/icons.svg#star"></use>
+                      </svg>
+                      <svg width="14px" height="14px" class="svg-star-dims">
+                        <use xlink:href="img/icons/icons.svg#star"></use>
+                      </svg>
+                      <svg width="14px" height="14px" class="svg-star-dims">
+                        <use xlink:href="img/icons/icons.svg#star"></use>
+                      </svg>
+                      <svg width="14px" height="14px" class="svg-star-dims">
+                        <use xlink:href="img/icons/icons.svg#star"></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="ideas__slide-header-right">
+                    <a href="#" class="slide-like-btn">
+                      <svg width="14px" height="14px" class="svg-like-dims">
+                        <use xlink:href="img/icons/icons.svg#like"></use>
+                      </svg>
+                    </a>
+                    <a href="#" class="slide-close-btn">
+                      <svg width="10px" height="10px" class="svg-close-dims">
+                        <use xlink:href="img/icons/icons.svg#close"></use>
+                      </svg>
+                    </a>
+
+                  </div>
+                </div>
+                <div class="ideas__slide-body">
+                  <div class="ideas__slide-img-block">
+                    <img src="@img/hero/gazprom.png" class="ideas__slide-img" alt="Газпром">
+                  </div>
+                  <p class="ideas__slide-body-title">Газпром<br>
+                    Цена на газ радует глаз</p>
+                </div>
+                <div class="ideas__slide-footer">
+                  <div class="current__profitability">
+                    <span class="current__profitability-title">Текущая доходность</span>
+                    <p class="current__profitability-value">-0.21 %</p>
+                  </div>
+                  <div class="current__possibility">
+                    <span class="current__possibility-title">Можно заработать</span>
+                    <p class="current__possibility-value">до 11.5 %</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="investment__ideas-list">
+            <div class="ideas__list-header grid-container">
+              <span class="ideas__list-title secondary-text-color">Идеи</span>
+              <span class="ideas__list-possbility secondary-text-color">Можно заработать</span>
+              <span class="ideas__list-profitability secondary-text-color">Текущая доходность</span>
+              <span class="ideas__list-date secondary-text-color">Дата публикации</span>
+            </div>
+            <div class="ideas__card-list grid-container">
+              <img class="ideas__card-list-logo" src="@img/ideas-logo.png" alt="logo">
+              <div class="ideas__card-list-header">
+                <p class="">У Halliburton растет все</p>
+                <span class="secondary-text-color">Тинькофф</span>
+              </div>
+              <div class="stars-svg-container ideas__card-list-stars">
+                <svg width="14px" height="14px" class="svg-star-dims">
+                  <use xlink:href="img/icons/icons.svg#star"></use>
+                </svg>
+                <svg width="14px" height="14px" class="svg-star-dims">
+                  <use xlink:href="img/icons/icons.svg#star"></use>
+                </svg>
+                <svg width="14px" height="14px" class="svg-star-dims">
+                  <use xlink:href="img/icons/icons.svg#star"></use>
+                </svg>
+                <svg width="14px" height="14px" class="svg-star-dims">
+                  <use xlink:href="img/icons/icons.svg#star"></use>
+                </svg>
+                <svg width="14px" height="14px" class="svg-star-dims">
+                  <use xlink:href="img/icons/icons.svg#star"></use>
+                </svg>
+              </div>
+              <p class="ideas__card-list-possbility">до 22,42%</p>
+              <p class="ideas__card-list-profitability">7.73 %</p>
+              <p class="ideas__card-list-date">25.01.2022</p>
+            </div>
+            <div class="ideas__card-list grid-container">
+              <img class="ideas__card-list-logo" src="@img/ideas-logo.png" alt="logo">
+              <div class="ideas__card-list-header">
+                <p class="">У Halliburton растет все</p>
+                <span class="secondary-text-color">Тинькофф</span>
+              </div>
+              <div class="stars-svg-container ideas__card-list-stars">
+                <svg width="14px" height="14px" class="svg-star-dims">
+                  <use xlink:href="img/icons/icons.svg#star"></use>
+                </svg>
+                <svg width="14px" height="14px" class="svg-star-dims">
+                  <use xlink:href="img/icons/icons.svg#star"></use>
+                </svg>
+                <svg width="14px" height="14px" class="svg-star-dims">
+                  <use xlink:href="img/icons/icons.svg#star"></use>
+                </svg>
+                <svg width="14px" height="14px" class="svg-star-dims">
+                  <use xlink:href="img/icons/icons.svg#star"></use>
+                </svg>
+                <svg width="14px" height="14px" class="svg-star-dims">
+                  <use xlink:href="img/icons/icons.svg#star"></use>
+                </svg>
+              </div>
+              <p class="ideas__card-list-possbility">до 22,42%</p>
+              <p class="ideas__card-list-profitability">7.73 %</p>
+              <p class="ideas__card-list-date">25.01.2022</p>
+            </div>
+            <div class="ideas__card-list grid-container">
+              <img class="ideas__card-list-logo" src="@img/ideas-logo.png" alt="logo">
+              <div class="ideas__card-list-header">
+                <p class="">У Halliburton растет все</p>
+                <span class="secondary-text-color">Тинькофф</span>
+              </div>
+              <div class="stars-svg-container ideas__card-list-stars">
+                <svg width="14px" height="14px" class="svg-star-dims">
+                  <use xlink:href="img/icons/icons.svg#star"></use>
+                </svg>
+                <svg width="14px" height="14px" class="svg-star-dims">
+                  <use xlink:href="img/icons/icons.svg#star"></use>
+                </svg>
+                <svg width="14px" height="14px" class="svg-star-dims">
+                  <use xlink:href="img/icons/icons.svg#star"></use>
+                </svg>
+                <svg width="14px" height="14px" class="svg-star-dims">
+                  <use xlink:href="img/icons/icons.svg#star"></use>
+                </svg>
+                <svg width="14px" height="14px" class="svg-star-dims">
+                  <use xlink:href="img/icons/icons.svg#star"></use>
+                </svg>
+              </div>
+              <p class="ideas__card-list-possbility">до 22,42%</p>
+              <p class="ideas__card-list-profitability">7.73 %</p>
+              <p class="ideas__card-list-date">25.01.2022</p>
+            </div>
+          </div>
+          <nav aria-label="Page navigation example" class="block__margin-bottom nav__pagination">
+            <ul class="pagination justify-content-center">
+              <li class="page-item previous">
+                <a class="page-link-svg" href="#" aria-label="Previous">
+                  <svg width="7px" height="12px" class="svg-arrow-link">
+                    <use xlink:href="img/icons/icons.svg#arrow-left"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="page-item"><a class="page-link active" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item"><a class="page-link" href="#">4</a></li>
+              <li class="page-item"><a class="page-link" href="#">5</a></li>
+              <li class="page-item"><a class="page-link" href="#">6</a></li>
+              <li class="page-item"><a class="page-link" href="#">7</a></li>
+              <li class="page-item next">
+                <a class="page-link-svg " href="#" aria-label="Next">
+                  <svg width="7px" height="12px" class="svg-arrow-link ">
+                    <use xlink:href="img/icons/icons.svg#arrow-right"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="tradingview-widget-container">
+            <div id="tradingview_1158d"></div>
+            <div class="tradingview-widget-copyright"><a
+                href="https://ru.tradingview.com/symbols/USDRUB_TOM/?exchange=MOEX" rel="noopener" target="_blank"><span
+                  class="blue-text">График USDRUB_TOM</span></a> от TradingView</div>
+            <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+            <script type="text/javascript">
+              new TradingView.widget(
+                {
+                  "autosize": true,
+                  "symbol": "NASDAQ:AAPL",
+                  "interval": "D",
+                  "timezone": "Etc/UTC",
+                  "theme": "light",
+                  "style": "1",
+                  "locale": "ru",
+                  "toolbar_bg": "#f1f3f6",
+                  "enable_publishing": false,
+                  "withdateranges": true,
+                  "allow_symbol_change": true,
+                  "container_id": "tradingview_1158d",
+                  
+                  "studies": [
+                    "studyADR@tv-basicstudies"
+                  ],
+                }
+              );
+            </script>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  @@include('html/footer.html',{})
+  <script src="js/app.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
 
 </body>
 
