@@ -35,15 +35,11 @@
       margin-bottom: 16px;
     }
   }
-
-  &-description {
-    margin-bottom: 115px;
-
+  &-text-container {
     @media(max-width: 1176px) {
-      padding-right: 43%;
-      margin-bottom: 30px;
-    }
 
+      padding-right: 43%;
+    }
     @media(max-width: 689px) {
       padding-right: 23%;
     }
@@ -51,6 +47,14 @@
     @media(max-width: 585px) {
       padding-right: 0;
     }
+  }
+  &-description {
+    margin-bottom: 115px;
+
+    @media(max-width: 1176px) {
+      margin-bottom: 30px;
+    }
+
   }
 
   &-button {

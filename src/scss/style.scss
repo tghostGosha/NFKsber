@@ -36,6 +36,7 @@
 @import "analytics/convertor.scss";
 @import "analytics/central-bank-exchange-rates.scss";
 @import "analytics/investment-ideas.scss";
+@import "analytics/invest-idea-detail-card.scss";
 @import "company/about.scss";
 @import "company/disclosure-information.scss";
 @import "company/electronic__document.scss";
@@ -65,7 +66,15 @@ body {
   background-color: #ffffff;
   color: var(--primary-text)
 }
-
+::-webkit-scrollbar {
+  width: 7px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--primary-text);
+  height: 10px;
+  border-radius: 5px;
+  width: 4px;
+}
 .container {
   max-width: 1280px;
   padding: 0 20px;
@@ -490,6 +499,9 @@ button {
   &-container {
 
     margin-bottom: 40px;
+    @media(max-width: 1176px) {
+      display: none;
+    }
   }
 
   &-date {

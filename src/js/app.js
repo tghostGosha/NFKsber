@@ -42,8 +42,12 @@ const defaultSelect = (classNameEl) => {
   });
 
 } 
+try {
+  defaultSelect('currency')
+} catch(error) {
+  console.log(error)
+}
 
-defaultSelect('currency')
 
 
 
@@ -160,19 +164,19 @@ const ideasSwiper = new Swiper('.ideas-swiper', {
   },
 
   breakpoints: {
-    1070: {
+    1176: {
       slidesPerView: 3,
       slidesPerGroup: 3,
       centeredSlides: false,
-      slidesPerColumn: 3,
-      spaceBetween: 50
+      // slidesPerColumn: 3,
+      spaceBetween: 32,
     },
-    625: {
+   715: {
       slidesPerView: 2,
-      slidesPerGroup: 1,
+      slidesPerGroup: 2,
       centeredSlides: false,
-      slidesPerColumn: 2,
-      spaceBetween: 16
+      // slidesPerColumn: 2,
+      spaceBetween: 16,
     },
     324: {
       slidesPerView: "auto",

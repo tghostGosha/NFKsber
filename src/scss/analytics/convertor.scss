@@ -95,19 +95,8 @@
   
 }
 
-::-webkit-scrollbar {
-  width: 7px;
-}
-::-webkit-scrollbar-thumb {
-  background: var(--primary-text);
-  height: 10px;
-  border-radius: 5px;
-  width: 4px;
-}
-// ::-webkit-scrollbar-button {
-//   background: var(--primary-grey);
-  
-// }
+
+
 .choices[data-type*=select-one]::after {
   background-image: url('../img/icons/icons.svg#arrow-bottom');
   background-size: 100%;

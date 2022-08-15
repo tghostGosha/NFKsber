@@ -13878,15 +13878,23 @@ input::placeholder {
 }
 .ideas__slide-card {
   max-width: 390px;
+  height: 352px;
   padding: 20px 24px 24px 24px;
   border: 1px solid var(--grey-button);
   border-radius: 10px;
   display: flex;
   flex-direction: column;
 }
+@media (max-width: 1176px) {
+  .ideas__slide-card {
+    padding: 24px 16px;
+    height: 238px;
+  }
+}
 @media (max-width: 585px) {
   .ideas__slide-card {
     padding: 24px 12px;
+    height: 241px;
   }
 }
 .ideas__slide-bank {
@@ -13904,6 +13912,7 @@ input::placeholder {
 @media (max-width: 1176px) {
   .ideas__slide-img-block {
     margin: 0;
+    margin-right: 19px;
   }
 }
 @media (max-width: 1176px) {
@@ -13912,15 +13921,11 @@ input::placeholder {
     height: 51px;
   }
 }
-.ideas__slide-body {
-  margin-bottom: 40px;
-}
 @media (max-width: 1176px) {
   .ideas__slide-body {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
-    margin-bottom: 24px;
     height: 51px;
   }
 }
@@ -13941,8 +13946,17 @@ input::placeholder {
 .ideas__slide-header-left {
   display: flex;
   flex-direction: column;
-  margin-right: 180px;
-  width: 120px;
+  margin-right: 208px;
+}
+@media (max-width: 1176px) {
+  .ideas__slide-header-left {
+    margin-right: 224px;
+  }
+}
+@media (max-width: 817px) {
+  .ideas__slide-header-left {
+    margin-right: 178px;
+  }
 }
 @media (max-width: 585px) {
   .ideas__slide-header-left {
@@ -14009,6 +14023,12 @@ input::placeholder {
   font-size: 14px;
   line-height: 19px;
   color: var(--secondary-text);
+}
+@media (max-width: 585px) {
+  .current__profitability-title,
+.current__possibility-title {
+    font-size: 12px;
+  }
 }
 
 .current__profitability-value,
@@ -14215,6 +14235,7 @@ input::placeholder {
 
 .explain__card {
   grid-column: span 4;
+  padding: 0 5px;
 }
 @media (max-width: 585px) {
   .explain__card {
@@ -14251,7 +14272,6 @@ input::placeholder {
   margin-bottom: 24px;
 }
 .explain__card-description {
-  padding: 0 5px;
   text-align: center;
   color: var(--secondary-text);
 }
@@ -14744,23 +14764,27 @@ input::placeholder {
     margin-bottom: 16px;
   }
 }
+@media (max-width: 1176px) {
+  .trust__hero-text-container {
+    padding-right: 43%;
+  }
+}
+@media (max-width: 689px) {
+  .trust__hero-text-container {
+    padding-right: 23%;
+  }
+}
+@media (max-width: 585px) {
+  .trust__hero-text-container {
+    padding-right: 0;
+  }
+}
 .trust__hero-description {
   margin-bottom: 115px;
 }
 @media (max-width: 1176px) {
   .trust__hero-description {
-    padding-right: 43%;
     margin-bottom: 30px;
-  }
-}
-@media (max-width: 689px) {
-  .trust__hero-description {
-    padding-right: 23%;
-  }
-}
-@media (max-width: 585px) {
-  .trust__hero-description {
-    padding-right: 0;
   }
 }
 .trust__hero-button {
@@ -15719,15 +15743,6 @@ input::placeholder {
 @media (max-width: 1176px) {
   .investor-list-item {
     max-width: 100%;
-  }
-}
-
-.brokers__list-item:nth-child(odd) {
-  padding-right: 26px;
-}
-@media (max-width: 1176px) {
-  .brokers__list-item:nth-child(odd) {
-    padding-right: 0;
   }
 }
 
@@ -18321,17 +18336,6 @@ th {
   box-shadow: 0px 0px 16px rgba(29, 37, 44, 0.16);
 }
 
-::-webkit-scrollbar {
-  width: 7px;
-}
-
-::-webkit-scrollbar-thumb {
-  background: var(--primary-text);
-  height: 10px;
-  border-radius: 5px;
-  width: 4px;
-}
-
 .choices[data-type*=select-one]::after {
   background-image: url("../img/icons/icons.svg#arrow-bottom");
   background-size: 100%;
@@ -19192,6 +19196,17 @@ body {
   color: var(--primary-text);
 }
 
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-text);
+  height: 10px;
+  border-radius: 5px;
+  width: 4px;
+}
+
 .container {
   max-width: 1280px;
   padding: 0 20px;
@@ -19625,6 +19640,11 @@ button {
 }
 .news__company-container {
   margin-bottom: 40px;
+}
+@media (max-width: 1176px) {
+  .news__company-container {
+    display: none;
+  }
 }
 .news__company-date {
   font-size: 14px;
