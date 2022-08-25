@@ -358,9 +358,9 @@ button {
 //======левуый аппостроф
 .letter-lowercase {
   position: absolute;
-  font-size: 9px;
-  left: -10px;
-  top: -2px;
+  font-size: 8px;
+  left: -7px;
+  top: 4px;
 
   @media(max-width: 585px) {
     font-size: 7px;
@@ -387,8 +387,8 @@ button {
 
 .letter-lowercase-end {
   position: relative;
-  font-size: 9px;
-  right: -2px;
+  font-size: 8px;
+  right: 1px;
   top: -7px;
 
   @media(max-width: 585px) {

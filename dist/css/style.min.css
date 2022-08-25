@@ -16886,7 +16886,7 @@ input::placeholder {
 }
 @media (max-width: 1176px) {
   .rates__table {
-    padding-bottom: 57px;
+    padding-bottom: 0;
   }
 }
 @media (max-width: 585px) {
@@ -16915,14 +16915,6 @@ input::placeholder {
   }
 }
 
-.rates__accordion {
-  display: none;
-}
-@media (max-width: 1176px) {
-  .rates__accordion {
-    display: block;
-  }
-}
 .rates__accordion-header {
   margin-bottom: 12px;
 }
@@ -16938,10 +16930,15 @@ input::placeholder {
   }
 }
 .rates__accordion-row {
-  display: grid;
+  display: none;
   grid-template-columns: repeat(12, 1fr);
   column-gap: 16px;
   margin-bottom: 24px;
+}
+@media (max-width: 1176px) {
+  .rates__accordion-row {
+    display: grid;
+  }
 }
 @media (max-width: 783px) {
   .rates__accordion-row {
@@ -16951,9 +16948,10 @@ input::placeholder {
   }
 }
 .rates__accordion-row-title {
-  margin-top: 16px;
+  margin-bottom: 40px;
   font-size: 20px;
   line-height: 28px;
+  text-align: center;
 }
 .rates__accordion-button {
   width: 100%;
@@ -17247,14 +17245,12 @@ th {
   font-size: 14px;
   line-height: 19px;
   margin-bottom: 20px;
-  padding-left: 10px;
 }
 .memo__info-footnotes-second {
   position: relative;
   color: var(--secondary-text);
   font-size: 14px;
   line-height: 19px;
-  padding-left: 10px;
 }
 @media (max-width: 1176px) {
   .memo__info-footnotes-second {
@@ -19509,9 +19505,9 @@ button {
 
 .letter-lowercase {
   position: absolute;
-  font-size: 9px;
-  left: -10px;
-  top: -2px;
+  font-size: 8px;
+  left: -7px;
+  top: 4px;
 }
 @media (max-width: 585px) {
   .letter-lowercase {
@@ -19538,8 +19534,8 @@ button {
 
 .letter-lowercase-end {
   position: relative;
-  font-size: 9px;
-  right: -2px;
+  font-size: 8px;
+  right: 1px;
   top: -7px;
 }
 @media (max-width: 585px) {

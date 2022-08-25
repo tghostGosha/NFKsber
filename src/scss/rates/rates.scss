@@ -59,7 +59,7 @@
   padding-bottom: 112px;
 
   @media(max-width: 1176px) {
-    padding-bottom: 57px;
+    padding-bottom: 0;
   }
 
   @media(max-width: 585px) {
@@ -87,11 +87,11 @@
 }
 
 .rates__accordion {
-  display: none;
+  // display: none;
 
-  @media(max-width: 1176px) {
-    display: block;
-  }
+  // @media(max-width: 1176px) {
+  //   display: block;
+  // }
 
   &-header {
     margin-bottom: 12px;
@@ -109,11 +109,13 @@
   }
 
   &-row {
-    display: grid;
+    display: none;
     grid-template-columns: repeat(12, 1fr);
     column-gap: 16px;
     margin-bottom: 24px;
-
+    @media(max-width: 1176px) {
+      display: grid;
+    }
     @media(max-width: 783px) {
       column-gap: 12px;
       row-gap: 12px;
@@ -123,9 +125,10 @@
   }
 
   &-row-title {
-    margin-top: 16px;
+    margin-bottom: 40px;
     font-size: 20px;
-    line-height: 28px
+    line-height: 28px;
+    text-align: center;
   }
 
   &-button {
@@ -429,15 +432,15 @@ th {
       font-size: 14px;
       line-height: 19px;
       margin-bottom: 20px;
-      padding-left: 10px;
+      
     }
-
+   
     &-second {
       position: relative;
       color: var(--secondary-text);
       font-size: 14px;
       line-height: 19px;
-      padding-left: 10px;
+      
 
       @media(max-width: 1176px) {
 
