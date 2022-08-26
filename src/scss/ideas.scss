@@ -1,7 +1,7 @@
 .ideas {
   padding-top: 68px;
   margin-bottom: 68px;
-  padding-bottom: 156px;
+  padding-bottom: 136px;
 
   @media(max-width: 1176px) {
     padding: 56px 0;
@@ -120,9 +120,6 @@
 
 .swiper-button-prev.swiper-button-disabled,
 .swiper-button-next.swiper-button-disabled {
-  // opacity: 0.35;
-  // cursor: auto;
-  // pointer-events: none;
   display: none;
 }
 

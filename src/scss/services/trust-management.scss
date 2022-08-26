@@ -1,21 +1,9 @@
-.trust__strategy {
-  padding-bottom: 133px;
-
-  @media(max-width: 1176px) {
-    padding-bottom: 56px;
-  }
-}
-
 .trust__hero {
-  background-color: var(--primary-grey);
-  
+
   &-container {
     background-image: var(--desktop-image-banner-top);
     padding: 46px 50% 64px 0;
-    background-repeat: no-repeat;
-    background-position: right bottom;
 
-    // height: 100%;
     @media(max-width: 1176px) {
       padding: 32px 6% 46px 0;
       background-size: 50%;
@@ -23,23 +11,16 @@
 
     @media(max-width: 585px) {
       padding: 24px 6% 118px 0;
-      background-size: 71%;
+      background-size: 67%;
     }
 
   }
 
-  &-title {
-    margin-bottom: 24px;
-
-    @media(max-width: 585px) {
-      margin-bottom: 16px;
-    }
-  }
   &-text-container {
     @media(max-width: 1176px) {
-
       padding-right: 43%;
     }
+
     @media(max-width: 689px) {
       padding-right: 23%;
     }
@@ -48,6 +29,7 @@
       padding-right: 0;
     }
   }
+
   &-description {
     margin-bottom: 115px;
 
@@ -76,28 +58,8 @@
     grid-template-rows: 1fr 0.5fr;
   }
 }
+
 .trust__strategy {
-  padding-top: 40px;
-  padding-bottom: 136px;
-
-  @media(max-width: 1176px) {
-    padding-top: 56px;
-    padding-bottom: 56px;
-  }
-
-  @media(max-width: 585px) {
-    padding-top: 48px;
-    padding-bottom: 48px;
-  }
-
-  &-title {
-
-    margin-bottom: 40px;
-
-    @media(max-width: 585px) {
-      margin-bottom: 24px;
-    }
-  }
 
   &-cards-container {
     display: flex;
@@ -127,6 +89,7 @@
     grid-column: 7/span 6;
     grid-row: 2/span 2;
   }
+
   @media(max-width: 585px) {
     grid-row: 2/span 1;
   }
@@ -144,13 +107,14 @@
     grid-row: 1/span 1;
     border-bottom: 1px solid var(--grey-button);
   }
+
   @media(max-width: 585px) {
     padding: 24px 12px 12px 12px;
   }
 }
 
 .strategy-card__right {
-  
+
   padding-right: 32px;
   grid-column: 5/span 8;
 
@@ -159,25 +123,30 @@
     grid-column: 1/span 6;
     padding: 21px 0 0 24px;
   }
+
   @media(max-width: 585px) {
     padding: 12px 0 0 12px;
   }
 }
- .strategy-card__footer {
+
+.strategy-card__footer {
   grid-column: 5/span 8;
   padding-bottom: 40px;
+
   @media(max-width: 1176px) {
     grid-column: 1/span 6;
     grid-row: 3/ span 1;
     padding: 0 0 29px 24px;
   }
+
   @media(max-width: 585px) {
     grid-column: 1/span 12;
     grid-row: 3/ span 1;
     padding: 30px 0 24px 0;
     text-align: center;
   }
- } 
+}
+
 .card__right {
   &-title {
     margin-bottom: 16px;
@@ -206,6 +175,7 @@
       padding: 0;
       margin-bottom: 32px;
     }
+
     @media(max-width: 585px) {
       margin-bottom: 0;
     }
@@ -219,19 +189,22 @@
     @media(max-width: 1176px) {
       padding: 14px 30px;
     }
+
     @media(max-width: 585px) {
       padding: 8px 49px;
       margin: 0 auto;
     }
   }
-   
+
 }
 
 .conditions-bet {
   width: 139px;
+
   @media(max-width: 585px) {
     width: 124px;
   }
+
   &-title {
     font-family: gilroy;
     position: relative;
@@ -248,6 +221,7 @@
 
   &-description {
     color: var(--secondary-text);
+
     @media(max-width: 585px) {
       font-size: 12px;
       line-height: 16px;
@@ -257,6 +231,7 @@
 
 .conditions-horizont {
   width: 197px;
+
   @media(max-width: 585px) {
     width: 124px;
   }
@@ -264,6 +239,7 @@
 
 .conditions-amount {
   width: 276px;
+
   @media(max-width: 585px) {
     width: 124px;
   }
@@ -282,6 +258,7 @@
     margin-right: 0;
     margin-bottom: 32px;
   }
+
   @media(max-width: 585px) {
     margin-bottom: 12px;
   }
@@ -289,7 +266,9 @@
 
 .trust__about {
   position: relative;
-
+  // @media(max-width: 585px) {
+  //   padding-bottom: 48px !important;
+  // }
   &-description {
     color: var(--secondary-text);
     font-size: 14px;
@@ -300,14 +279,5 @@
   &-description:not(:last-child) {
     margin-bottom: 20px;
   }
-
-  &-block {
-    margin-bottom: 64px;
-
-    @media(max-width: 1176px) {
-      margin: 0;
-    }
-  }
-
 
 }

@@ -2,12 +2,10 @@
 @import "../../node_modules/swiper/swiper-bundle.min";
 @import "../../node_modules/swiper/swiper.scss";
 @import "../../node_modules/swiper/modules/navigation/navigation.scss";
-// @import "../../node_modules/bootstrap-icons/font/bootstrap-icons.scss";
 
-// @import '../../node_modules/nouislider/dist/nouislider.css';
-// @import 'nouislider/dist/nouislider.css';
 
 @import "fonts";
+@import "mixin";
 @import "breadcrumb.scss";
 @import "nouislider.min.scss";
 @import "header";
@@ -32,6 +30,7 @@
 @import "services/transactions-repo.scss";
 @import "services/currency-market.scss";
 @import "analytics/market-news.scss";
+@import "analytics/detail-news.scss";
 @import "analytics/prognosis-pro.scss";
 @import "analytics/convertor.scss";
 @import "analytics/central-bank-exchange-rates.scss";
@@ -57,6 +56,15 @@
   --secondary-text: #6D7889;
   --primary-blue: #428BF9;
   --black: #091625;
+
+  --mb-40: 40px;
+  --mb-24: 24px;
+  @media(max-width: 1176px) {
+    --mb-40: 32px;
+  }
+  @media(max-width: 585px) {
+    --mb-40: 24px;
+  }
 }
 
 body {
@@ -121,41 +129,41 @@ h5 {
 }
 
 h1 {
+  @include adaptiv-font(40, 31);
   font-weight: 600;
-  font-size: 40px;
   line-height: 46px;
-
+  margin-bottom: 24px;
   @media(max-width: 585px) {
-    font-size: 32px;
     line-height: 40px;
+    margin-bottom: 16px;
   }
 }
 
 h2 {
+  @include adaptiv-font(32, 24);
   font-weight: 600;
-  font-size: 32px;
   line-height: 38px;
   margin-bottom: 40px;
-
+  @media(max-width: 1176px) {
+    margin-bottom: 32px;
+  }
   @media(max-width: 585px) {
-    font-size: 24px;
     line-height: 34px;
+    margin-bottom: 24px;
   }
 }
 
 h3 {
+  @include adaptiv-font(24, 20);
   font-weight: 600;
-  font-size: 24px;
   line-height: 28px;
   margin-bottom: 24px;
 
   @media(max-width: 1176px) {
-    font-size: 20px;
     line-height: 28px;
   }
 
   @media(max-width: 585px) {
-    font-size: 20px;
     line-height: 24px;
   }
 
@@ -216,6 +224,10 @@ button {
     margin-bottom: 48px;
   }
 }
+.background-style-global {
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
 .breadcrumb-margin-bottom {
   margin-bottom: 56px;
 }
@@ -240,14 +252,30 @@ button {
   background: linear-gradient(180deg, #F4F6F8 0%, rgba(244, 246, 248, 0) 100%);
   @media(max-width: 1176px) {
     background: #ffffff;
-    padding: 0;
+    padding-bottom: 56px;
+  }
+  @media(max-width: 585px) {
+    padding-bottom: 48px;
   }
 }
 .padding-large {
   padding-top: 40px !important;
   padding-bottom: 28px !important;
 }
+.section-padding {
+  padding-top: 68px;
+  padding-bottom: 136px;
 
+  @media(max-width: 1176px) {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+
+  @media(max-width: 585px) {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+}
 .text-link {
   color: var(--primary-green);
   transition: all 0.2s ease-in-out 0.2s;
@@ -256,6 +284,34 @@ button {
     font-size: 14px;
     line-height: 19px;
   }
+}
+.primary-text-color {
+  color: var(--primary-text);
+}
+
+.primary-text {
+  color: var(--primary-text);
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.primary-text-market {
+  color: var(--primary-text);
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.secondary-text {
+  color: var(--secondary-text);
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.weight-text {
+  font-family: gilroy;
+  color: var(--primary-text);
+  font-weight: 700;
+  line-height: 22px;
 }
 .text-center {
   text-align: center;

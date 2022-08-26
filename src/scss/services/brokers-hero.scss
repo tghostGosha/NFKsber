@@ -1,5 +1,5 @@
 .brokers__hero {
-  
+
   &-container {
     background-image: var(--desktop-image-banner-top);
     padding: 46px 50% 48px 0;
@@ -118,96 +118,43 @@
   }
 }
 
-.brokers__description {
-  padding-top: 64px;
-  padding-bottom: 128px;
-
-  @media(max-width: 1176px) {
-    padding-top: 56px;
-    padding-bottom: 56px;
-  }
+.brokers__about-title,
+.brokers__conditions-title {
+  text-align: center;
 
   @media(max-width: 585px) {
-    padding-top: 48px;
-    padding-bottom: 0;
+    text-align: start;
   }
 }
-
-.brokers__about {
- 
-  &-title {
-    margin: 0 auto;
-    text-align: center;
-
-    @media(max-width: 585px) {
-      text-align: start;
-      margin-bottom: 24px;
-    }
-  }
-}
-
-
-.brokers__conditions {
- 
-  &-title {
-    margin-bottom: 40px;
-    text-align: center;
-
-    @media(max-width: 1176px) {
-      margin-bottom: 32px;
-    }
-
-    @media(max-width: 585px) {
-      text-align: start;
-      margin-bottom: 24px;
-    }
-  }
-
-}
-
 
 
 .brokers__app {
-  
+
   &-card {
-    
+
     padding-top: 40px;
 
     @media(max-width: 1176px) {
       padding-top: 24px;
-      
     }
 
     @media(max-width: 585px) {
       column-gap: 12px;
-      // row-gap: 24px;
       grid-template-rows: 1fr 0.7fr;
       padding-top: 0;
     }
-
-
   }
 
   &-title {
     margin-bottom: 24px;
-
-    @media(max-width: 1176px) {
-      margin-bottom: 24px;
-    }
 
     @media(max-width: 585px) {
       margin-bottom: 16px;
     }
   }
 
-
-
   &-list {
-    margin-bottom: 34px;
-
-    @media(max-width: 1176px) {
-      margin-bottom: 24px;
-    }
+    margin-bottom: 24px;
   }
 
   &-buttons {
@@ -233,13 +180,13 @@
 
 .black-google-play path,
 .black-app-store path {
-  fill: #ffffff;
+  fill: var(--white);
   transition: all 0.2s ease 0.1s;
 }
 
 .black-google-play:hover rect,
 .black-app-store:hover rect {
-  fill: #ffffff;
+  fill: var(--white);
 }
 
 .black-google-play:hover path,
@@ -256,22 +203,12 @@
 }
 
 .brokers__education {
-
-
   &-title {
-    color: #ffffff;
-
-    @media(max-width: 1176px) {
-      margin-bottom: 24px;
-    }
-
-    @media(max-width: 585px) {
-      margin-bottom: 16px;
-    }
+    color: var(--white);
   }
 
   &-description {
-    color: #ffffff;
+    color: var(--white);
     margin-bottom: 40px;
 
     @media(max-width: 1176px) {
@@ -286,14 +223,14 @@
 
   &-card {
     background-color: var(--primary-text);
- 
+
     @media(max-width: 585px) {
       grid-template-rows: 1fr 172px;
       row-gap: 24px;
     }
 
     &-right {
-     
+
       @media(max-width: 1176px) {
         grid-column: 8/ span 5;
       }
@@ -305,7 +242,7 @@
     }
 
     &-left {
-    
+
       @media(max-width: 1176px) {
         grid-column: 1/ span 7;
       }
@@ -331,14 +268,14 @@
   margin-right: 28px;
 
   @media(max-width: 1176px) {
-    padding: 18px 21px;
+    padding: 18px 4px;
     margin-right: 16px;
     height: 57px;
+    font-size: 13px;
+    line-height: 19px;
   }
 
   @media(max-width: 585px) {
-    font-size: 14px;
-    line-height: 19px;
     padding: 13px 3px;
     margin-right: 20px;
     height: 46px;
@@ -346,7 +283,7 @@
 }
 
 .demo-btn {
-  background-color: #ffffff;
+  background-color: var(--white);
   border: none;
   border-radius: 5px;
   color: var(--primary-text);
@@ -354,21 +291,20 @@
   padding: 18px 26px;
 
   @media(max-width: 1176px) {
-    padding: 18px 21px;
-    
+    padding: 18px 4px;
+    font-size: 13px;
+    line-height: 19px;
     height: 57px;
   }
 
   @media(max-width: 585px) {
     padding: 13px 6px;
-    font-size: 14px;
-    line-height: 19px;
     height: 46px;
   }
 }
 
 .brokers__info {
-  
+
   @media(max-width: 585px) {
     display: none;
   }

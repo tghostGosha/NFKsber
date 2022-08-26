@@ -4,24 +4,26 @@
   @media(max-width: 1176px) {
     border: none;
   }
-
-
-  &-consult {
-
-    top: -80px;
+  &__get-consult {
     padding-top: 22px;
     padding-bottom: 21px;
+    @media(max-width: 1176px) {
+      padding: 0 0 56px 0;
+    }
+    @media(max-width: 585px) {
+      
+      padding: 0 0 48px 0;
+    }
+  }
+  &-consult {
+    top: -80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    @media(max-width: 1176px) {
-      padding: 56px 0;
-    }
-
     @media(max-width: 585px) {
       flex-direction: column;
-      padding: 48px 0;
+      
     }
   }
 

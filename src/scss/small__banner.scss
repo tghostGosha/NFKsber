@@ -20,6 +20,7 @@
     justify-content: center;
     grid-column: 1/span 6;
     align-items: flex-end;
+    padding-left: 10px;
     @media(max-width: 585px) {
       grid-column: 2/span 11;
       grid-row: 2/span 1;
@@ -44,7 +45,7 @@
     display: flex;
     justify-content: center;
     align-items: flex-end;
-
+    padding-right: 10px;
     @media(max-width: 585px) {
       grid-column: 1/ span 12;
       grid-row: 2/ span 1;
