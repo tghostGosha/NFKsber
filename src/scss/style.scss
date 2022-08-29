@@ -74,7 +74,7 @@ body {
   font-family: Segoe UI;
   font-size: 16px;
   line-height: 22px;
-  background-color: #ffffff;
+  background-color: var(--white);
   color: var(--primary-text)
 }
 
@@ -138,11 +138,10 @@ h1 {
   @include adaptiv-font(40, 31);
   font-weight: 600;
   line-height: 46px;
-  margin-bottom: 24px;
+  margin-bottom: var(--mb-24);
 
   @media(max-width: 585px) {
     line-height: 40px;
-    margin-bottom: 16px;
   }
 }
 
@@ -150,23 +149,18 @@ h2 {
   @include adaptiv-font(32, 24);
   font-weight: 600;
   line-height: 38px;
-  margin-bottom: 40px;
-
-  @media(max-width: 1176px) {
-    margin-bottom: 32px;
-  }
+  margin-bottom: var(--mb-40);
 
   @media(max-width: 585px) {
     line-height: 34px;
-    margin-bottom: 24px;
   }
 }
 
 h3 {
-  @include adaptiv-font(24, 20);
+  font-size: 24;
   font-weight: 600;
   line-height: 28px;
-  margin-bottom: 24px;
+  margin-bottom: var(--mb-24);
 
   @media(max-width: 1176px) {
     line-height: 28px;
@@ -174,6 +168,7 @@ h3 {
 
   @media(max-width: 585px) {
     line-height: 24px;
+    font-size: 20px;
   }
 
 }
@@ -262,10 +257,10 @@ button {
 
 .section-with-gradient {
   padding-bottom: 112px;
-  background: linear-gradient(180deg, #F4F6F8 0%, rgba(244, 246, 248, 0) 100%);
+  background: linear-gradient(180deg, var(--primary-grey) 0%, rgba(244, 246, 248, 0) 100%);
 
   @media(max-width: 1176px) {
-    background: #ffffff;
+    background: var(--white);
     padding-bottom: 56px;
   }
 
@@ -275,7 +270,7 @@ button {
 }
 
 .padding-large {
-  padding-top: 40px !important;
+  padding-top: 28px !important;
   padding-bottom: 28px !important;
 }
 
@@ -406,7 +401,7 @@ button {
 
 .primary-button:hover {
   background-color: var(--secondary-green);
-  color: #ffffff;
+  color: var(--white);
 }
 
 .grey-button {
@@ -427,24 +422,15 @@ button {
 
 //======левуый аппостроф
 .letter-lowercase {
-  position: absolute;
-  font-size: 8px;
-  left: -7px;
-  top: 4px;
+  position: relative;
+  font-size: 9px;
+  left: -3px;
+  top: -8px;
 
   @media(max-width: 585px) {
     font-size: 7px;
     left: -6px;
   }
-}
-
-//========правый аппостроф
-.right-apostrophe {
-  position: relative;
-  font-size: 8px;
-  top: -5px;
-  left: 1px;
-
 }
 
 .text-indent {
@@ -475,7 +461,7 @@ button {
   border-left: 5px solid var(--primary-blue);
   padding: 26px 166px 26px 35px;
 
-  // margin: 68px 0;
+
   @media(max-width: 1176px) {
     padding: 26px 118px 26px 35px;
   }
@@ -515,9 +501,6 @@ button {
 
 }
 
-// .get__file-link:not(:last-child) {
-//   margin-bottom: 68px;
-// }
 .get__file-link:hover .svg-pdf-dims,
 .get__file-link:focus .svg-pdf-dims {
   color: #3eb30f;
@@ -544,7 +527,6 @@ button {
 
 //========
 .news__company {
-  // padding-bottom: 44px;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   column-gap: 32px;
@@ -567,8 +549,7 @@ button {
   }
 
   &-container {
-
-    margin-bottom: 40px;
+    margin-bottom: var(--mb-40);
 
     @media(max-width: 1176px) {
       display: none;
@@ -578,7 +559,6 @@ button {
   &-date {
     font-size: 14px;
     line-height: 19px;
-
     color: var(--secondary-text);
   }
 
@@ -690,7 +670,7 @@ button {
 
 .svg-google-play:hover path,
 .svg-app-store:hover path {
-  fill: #ffffff;
+  fill: var(--white);
 }
 
 .answer__questions {
@@ -720,13 +700,7 @@ button {
   }
 
   &-arrow-svg {
-    // display: block;
     margin-left: 53px;
   }
 }
 
-// .depositiry__transactions {
-//   @media(max-width: 1176px) {
-//     display: none;
-//   }
-// }

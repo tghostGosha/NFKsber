@@ -468,33 +468,22 @@ th {
 //====================================================
 .stockmarket__info {
 
-  &-text {
-    position: relative;
-    color: var(--secondary-text);
-    font-size: 14px;
-    line-height: 19px;
+  // &-text {
+  //   position: relative;
+  //   color: var(--secondary-text);
+  //   font-size: 14px;
+  //   line-height: 19px;
 
-  }
+  // }
 
   &-text:not(:last-child) {
-    margin-bottom: 20px;
+    margin-bottom: var(--mb-24);
   }
 
-  &-footnotes {
-    margin-top: 68px;
-
-    @media(max-width: 1176px) {
-      margin-top: 42px;
-    }
-
-    @media(max-width: 585px) {
-      margin-top: 24px;
-    }
-  }
 }
 
 .stock-market-title {
-  margin-bottom: 40px;
+  margin-bottom: var(--mb-40);
   text-align: center;
 }
 

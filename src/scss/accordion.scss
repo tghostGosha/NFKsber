@@ -1,7 +1,7 @@
 .accordion-button:not(.collapsed) {
   color: var(--primary-text);
   background-color: inherit;
-  padding-right: 46px;
+  padding-right: 23px;
 }
 
 .accordion-button:focus {
@@ -28,7 +28,6 @@
 }
 
 .accordion-collapse {
-  // border-bottom: 1px solid var(--grey-button);
   padding-left: 86px;
 }
 
@@ -39,11 +38,7 @@
 }
 
 .accordion-title {
-  margin-bottom: 40px;
-
-  @media(max-width: 585px) {
-    margin-bottom: 24px;
-  }
+  margin-bottom: var(--mb-40);
 }
 
 .accordion-body {
@@ -68,7 +63,6 @@
   @media(max-width: 585px) {
     font-size: 16px;
     line-height: 30px;
-
   }
 }
 
@@ -76,7 +70,6 @@
   @media(max-width: 585px) {
     font-size: 14px;
     line-height: 20px;
-
   }
 }
 

@@ -1,12 +1,8 @@
 .metals__hero {
-  background-color: var(--primary-grey);
-
 
   &-container {
     background-image: var(--desktop-image-banner-top);
     padding: 46px 52% 295px 0;
-    background-repeat: no-repeat;
-    background-position: right bottom;
 
     @media(max-width: 1176px) {
       padding: 32px 39% 199px 0;
@@ -17,15 +13,11 @@
       padding: 24px 39% 246px 0;
       background-size: 92%;
     }
-
   }
-
-  
 
 }
 
 .metals__about {
-  padding-top: 68px;
   
   &-first-article {
     grid-column: 1/span 6;
@@ -41,11 +33,6 @@
     @media(max-width: 1176px) {
       grid-column: span 12;
     }
-
-    // @media(max-width: 585px) {
-    //   font-size: 14px;
-    //   line-height: 20px;
-    // }
   }
 
 }
@@ -55,7 +42,6 @@
 
   @media(max-width: 585px) {
     grid-template-rows: 1fr 140px;
-
   }
 
   &-left {
@@ -90,7 +76,6 @@
   &-card {
     @media(max-width: 585px) {
       grid-template-rows: 1fr 274px;
-
     }
   }
 
@@ -101,7 +86,7 @@
 }
 
 .metals__commission-title {
-  margin-bottom: 28px;
+  margin-bottom: var(--mb-24);
 }
 
 
@@ -113,6 +98,7 @@
     }
   }
   &-card-description {
+    margin-bottom: var(--mb-40);
     @media(max-width: 1176px) {
       font-size: 14px;
       line-height: 20px;
@@ -120,10 +106,6 @@
   }
   &-btn {
     padding: 18px 26px;
-    margin-top: 40px;
-    @media(max-width: 1176px) {
-      margin-top: 24px;
-    }
     @media(max-width: 585px) {
       display: none !important;
     }
@@ -131,17 +113,8 @@
 }
 
 .metals__transactions {
-
   &-footnote {
     padding-left: 10px;
     position: relative;
-    margin-top: 68px;
-    @media(max-width: 1176px) {
-      margin-top: 56px;
-    }
-  
-    @media(max-width: 585px) {
-      margin-top: 48px;
-    }
   }
 }

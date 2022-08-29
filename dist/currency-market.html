@@ -388,10 +388,10 @@
                 href="currency-market.html">Обслуживание на валютном рынке</a></li>
           </ul>
         </nav>
-        <div class="currency__hero-container"
+        <div class="currency__hero-container background-style-global"
           style="--desktop-image-banner-top: url('../img/currency-market/currency-hero.png');">
           <h1 class="currency__hero-title">Обслуживание на&nbsp;валютном рынке</h1>
-          <ul class="currency__hero-list brokers__list">
+          <ul class="currency__hero-list block__margin-bottom brokers__list">
             <li class="brokers__list-item">Низкие тарифы и минимальные издержки при покупке</li>
             <li class="brokers__list-item">Торгуйте валютой онлайн</li>
             <li class="brokers__list-item">Оперативный вывод средств</li>
@@ -404,12 +404,12 @@
         </div>
       </div>
     </section>
-    <section class="currency__about">
+    <section class="currency__about section-padding">
       <div class="container">
         <div class="currency__benefit block__margin-bottom">
           <h2 class="currency__benefit-title">Совершайте валютные сделки с выгодой!</h2>
           <div class="currency__benefit-container grid-container">
-            <div class="profitable__course currency__benefit-card"
+            <div class="profitable__course currency__benefit-card big__banner"
               style="--profitable__course-image: url('../img/currency-market/profitable-course.png');">
               <h3 class="profitable-title">Выгодный курс</h3>
               <p class="profitable-description">Торговля валютой проходит по рыночным ценам в реальном времени и с
@@ -417,7 +417,7 @@
                 в виде наценок обменных пунктов и кредитных организаций</p>
               <a href="#" class="button grey-button profitable-btn">Курс валют</a>
             </div>
-            <div class="secure__broker currency__benefit-card"
+            <div class="secure__broker currency__benefit-card big__banner"
               style="--secure__broker-image: url('../img/currency-market/currency-broker.png');">
               <h3 class="profitable-title">Надежный брокер</h3>
               <p class="profitable-description">АО «НФК-Сбережения» входит в ТОП-30 Прайм-брокеров из числа российских
@@ -425,7 +425,7 @@
                 валютном рынке Московской Биржи*</p>
 
             </div>
-            <div class="terminal__online currency__benefit-card"
+            <div class="terminal__online currency__benefit-card big__banner"
               style="--terminal__online-image: url('../img/currency-market/currency-terminal.png'); --terminal__online-mobile-image: url('../img/currency-market/currency-terminal.png');">
               <h3 class="profitable-title">Терминал QUIK
                 для&nbsp;онлайн-торговли</h3>
@@ -434,7 +434,7 @@
                 совершение сделок брокеру по телефону</p>
 
             </div>
-            <div class="own__account currency__benefit-card"
+            <div class="own__account currency__benefit-card big__banner"
               style="--own__account-image: url('../img/currency-market/currency-score.png');">
               <h3 class="profitable-title">Вывод валюты
                 на&nbsp;собственный счет</h3>
@@ -443,7 +443,7 @@
                 с целью ее конвертации или продажи</p>
 
             </div>
-            <div class="credit__shoulder currency__benefit-card"
+            <div class="credit__shoulder currency__benefit-card big__banner"
               style="--credit__shoulder-image: url('../img/currency-market/currency-credit.png');">
               <h3 class="profitable-title">Кредитное плечо до 1:11</h3>
               <p class="profitable-description">Вы можете зарабатывать на курсовых колебаниях валют с минимальными
@@ -453,9 +453,9 @@
             </div>
 
           </div>
-          <span class="currency__benefit-footnes">* По данным сайта Московской биржи по состоянию на 25.01.22</span>
+          <span class="currency__benefit-footnes secondary-text">* По данным сайта Московской биржи по состоянию на 25.01.22</span>
         </div>
-        <div class="brokers__education">
+        <div class="brokers__education block__margin-bottom">
           <div class="brokers__education-card small__banner">
             <div class="small__banner-left-text">
               <h3 class="brokers__education-title">Бесплатное обучение</h3>
@@ -471,12 +471,8 @@
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section class="currency__rates">
-      <div class="container">
         <h2 class="currency__rates-title">Тарифы на обслуживание</h2>
-        <ul class="nav nav-pills currency-rates__table-nav " id="myTab" role="tablist">
+        <ul class="nav nav-pills currency-rates__table-nav" id="myTab" role="tablist">
           <li class="nav-item rates__nav-item rates__item-deal" role="presentation">
             <button class="nav-link active" id="transactions-tab" data-bs-toggle="tab" data-bs-target="#transactions"
               type="button" role="tab" aria-controls="transactions" aria-selected="true">Сделки на Единой торговой
@@ -494,19 +490,19 @@
             </button>
           </li>
         </ul>
-        <div class="tab-content">
+        <div class="currency__market-tab-content">
           <div class="tab-pane active" id="transactions" role="tabpanel" aria-labelledby="transactions-tab"
             tabindex="0">
             <h3 class="rate-title">Тарифный план «Минимальный дневной»</h3>
-            <table class="table ">
+            <table class="transactions-tab-table">
               <thead>
                 <tr>
-                  <td class="col-6" scope="col">Оборот за Торговый день по Клиентскому счету, руб. <span
-                      class="right-apostrophe">1</span></td>
-                  <td class="col-4" scope="col">Ставка комиссионного вознаграждения Компании (от суммы рублевого <span
-                      class="right-apostrophe">3</span>
-                    оборота по сделкам, заключенным в течение торгового дня во исполнение Поручений Клиента), % <span
-                      class="right-apostrophe">2</span></td>
+                  <td class="col-6" scope="col">Оборот за Торговый день по Клиентскому счету, руб. <sup
+                      class="letter-lowercase-end">1</sup></td>
+                  <td class="col-4" scope="col">Ставка комиссионного вознаграждения Компании (от суммы рублевого <sup
+                      class="letter-lowercase-end">3</sup>
+                    оборота по сделкам, заключенным в течение торгового дня во исполнение Поручений Клиента), % <sup
+                      class="letter-lowercase-end">2</sup></td>
                 </tr>
               </thead>
               <tbody class="tr-border">
@@ -550,31 +546,31 @@
             <div class="currency__rates-info  block__margin-bottom">
               <h3 class="currency__rates-info-title">Комиссионнное вознаграждение за совершение сделок на рынке
                 драгоценных металлов:</h3>
-              <p class="currency__rates-info-description">0,1% от суммы рублевого <span
-                  class="right-apostrophe primary-text-market">3</span> оборота по сделкам, заключенным в
+              <p class="currency__rates-info-description">0,1% от суммы рублевого <sup
+                  class="letter-lowercase primary-text-market">3</sup> оборота по сделкам, заключенным в
                 течение
                 торгового дня во исполнение Поручений Клиента.
               </p>
-              <p class="stockmarket__info-text">В случае частичного исполнения Поручения Клиента комиссионное
+              <p class="stockmarket__info-text secondary-text">В случае частичного исполнения Поручения Клиента комиссионное
                 вознаграждение Компании рассчитывается от исполненной части.
                 Комиссия удерживается Компанией ежедневно, при достижении в течение дня оборота по Клиентскому счету
                 соответствующего уровня ставка комиссии соответственно изменяется, комиссия корректируется.</p>
             </div>
-            <div class="currency__info-footnotes">
-              <p class="stockmarket__info-text text-indent"><span class="letter-lowercase">1</span>Включает оборот по
+            <div class="currency__info-footnotes ">
+              <p class="stockmarket__info-text secondary-text text-indent"><sup class="letter-lowercase">1</sup>Включает оборот по
                 сделкам переноса
                 позиций, а также сделок по полному или частичному закрытию позиций, не включается оборот по сделкам
                 своп,
                 совершенным в целях переноса чистой открытой позиции.
               </p>
-              <p class="stockmarket__info-text text-indent"><span class="letter-lowercase">2</span>Ставки комиссионного
+              <p class="stockmarket__info-text secondary-text text-indent"><sup class="letter-lowercase">2</sup>Ставки комиссионного
                 вознаграждения
                 Компании указаны с учетом НДС (в случае если соответствующая операция согласно законодательству
                 Российской
                 Федерации признается объектом налогообложения по налогу на добавленную стоимость). Комиссионное
                 вознаграждение за сделки своп не рассчитывается.
               </p>
-              <p class="stockmarket__info-text text-indent"><span class="letter-lowercase">3</span>Под рублевым оборотом
+              <p class="stockmarket__info-text secondary-text text-indent"><sup class="letter-lowercase">3</sup>Под рублевым оборотом
                 по
                 сделкам для
                 целей настоящего соглашения понимается сумма денежных средств Клиента в рублях, фактически
@@ -593,14 +589,14 @@
             </div>
           </div>
           <div class="tab-pane " id="award" role="tabpanel" aria-labelledby="award-tab" tabindex="0">
-            <table class="table ">
+            <table class="transactions-tab-table">
               <thead>
                 <tr>
                   <td class="col-2" scope="col">Уровень покрытия</td>
-                  <td class="col-4" scope="col">Ставка дополнительного вознаграждения, % годовых<span
-                      class="right-apostrophe">4</span></td>
-                  <td class="col-4" scope="col">Сумма для начисления дополнительного вознаграждения<span
-                      class="right-apostrophe">5</span></td>
+                  <td class="col-4" scope="col">Ставка дополнительного вознаграждения, % годовых <sup
+                      class="letter-lowercase">4</sup></td>
+                  <td class="col-4" scope="col">Сумма для начисления дополнительного вознаграждения <sup
+                      class="letter-lowercase">5</sup></td>
                 </tr>
               </thead>
               <tbody class="tr-border">
@@ -623,19 +619,19 @@
                 рабочий день после выходного/праздничного дня.</p>
             </div>
             <div class="currency__info-footnotes">
-              <p class="stockmarket__info-text text-indent"><span class="letter-lowercase">4</span>Расчет вознаграждения
+              <p class="stockmarket__info-text secondary-text text-indent"><sup class="letter-lowercase">4</sup>Расчет вознаграждения
                 производится от размера отрицательной плановой позиции на конец торгового дня. Ставки дополнительного
                 комиссионного вознаграждения Компании указаны с учетом НДС (в случае если соответствующая операция
                 согласно законодательству Российской Федерации признается объектом налогообложения по налогу на
                 добавленную стоимость).
               </p>
-              <p class="stockmarket__info-text text-indent"><span class="letter-lowercase">5</span>Для целей расчета
+              <p class="stockmarket__info-text secondary-text text-indent"><sup class="letter-lowercase">5</sup>Для целей расчета
                 дополнительного вознаграждения Компании рассчитывается в 23:50 каждого торгового дня.
               </p>
             </div>
           </div>
           <div class="tab-pane " id="otherServices" role="tabpanel" aria-labelledby="other-services-tab" tabindex="0">
-            <table class="table  other-services-table">
+            <table class="transactions-tab-table">
               <thead>
                 <tr>
                   <td class="col-3" scope="col">Наименование услуги</td>
@@ -679,7 +675,7 @@
                 </tr>
                 <tr class="tr-border">
                   <td scope="col" colspan="2" valign="middle" class="disclosure__information-block">Абонентская плата за
-                    использование информационно-торговой системы QUIK<span class="right-apostrophe">6</span></td>
+                    использование информационно-торговой системы QUIK <sup class="letter-lowercase">6</sup></td>
                   <td scope="col" align="start" valign="middle" class="primary-text-market">Отсутствует, если совокупная
                     стоимость всех активов Клиента по одному договору, заключенному в рамках настоящего Регламента,
                     и/или одному договору, заключенному в рамках Регламента АО «НФК-Сбережения» «О порядке осуществления
@@ -691,7 +687,7 @@
                   <td scope="col" colspan="2" valign="middle" class="disclosure__information-block">Абонентская плата за
                     использование информационно-торговых систем iQUIK/iQUIK-HD/iQUIK&nbsp;X&nbsp;и QUIK Android/QUIK
                     Android X (пользовательские приложения системы QUIK для&nbsp;iPhone/iPad и устройств на базе
-                    операционной системы Android), а также webQUIK<span class="right-apostrophe">7</span></td>
+                    операционной системы Android), а также webQUIK <sup class="letter-lowercase">7</sup></td>
                   <td scope="col" align="start" valign="middle" class="primary-text-market">Отсутствует, если совокупная
                     стоимость всех портфелей Клиента по договору (договорам) оказания услуг на валютном рынке и рынке
                     драгоценных металлов, заключенному (заключенным) в рамках настоящего Регламента, и/или
@@ -702,7 +698,7 @@
               </tbody>
             </table>
             <div class="currency__info-footnotes other-services-footness">
-              <p class="stockmarket__info-text text-indent"><span class="letter-lowercase">6</span>Абонентская плата за
+              <p class="stockmarket__info-text secondary-text text-indent"><sup class="letter-lowercase">6</sup> Абонентская плата за
                 QUIK начинает взиматься со дня передачи Клиентом открытого ключа шифрования программы QUIK Компании, при
                 этом плата за пользование QUIK взимается в полном объеме, равном ежемесячному платежу, независимо от
                 количества дней фактического использования информационно-торговой системы в течение месяца. Клиент
@@ -711,7 +707,7 @@
                 рамках Регламента АО «НФК-Сбережения» «О порядке осуществления действий на рынке ценных бумаг» или в
                 рамках Регламента АО «НФК-Сбережения» «О порядке осуществления действий на финансовом рынке».
               </p>
-              <p class="stockmarket__info-text text-indent"><span class="letter-lowercase">7</span>Абонентская плата за
+              <p class="stockmarket__info-text secondary-text text-indent"><sup class="letter-lowercase">7</sup> Абонентская плата за
                 iQUIK/iQUIK-HD/ iQUIK X и QUIK Android/ QIUK Android X, webQUIK взимается после подачи соответствующей
                 заявки на их использование через Личный кабинет Клиента либо иными допустимыми способами,
                 предусмотренными настоящим Регламентом. Плата взимается в полном объеме, равном ежемесячному платежу,
@@ -724,11 +720,12 @@
               </p>
             </div>
             <div class="currency__info-footnotes">
-              <p class="stockmarket__info-text">
+              <p class="stockmarket__info-text secondary-text">
                 Суммы и ставки вознаграждения Компании указаны с учетом НДС (в случае если соответствующая операция
                 согласно законодательству Российской Федерации признается объектом налогообложения по налогу на
                 добавленную стоимость), если по отдельным услугам не предусмотрено иное.
-                <br><br>
+              </p>
+              <p class="stockmarket__info-text secondary-text">
                 Клиент обязуется возместить Компании суммы биржевых, а также суммы иных сборов и необходимых расходов,
                 помимо вышеуказанных, связанных с исполнением поручений Клиента в рамках Регламента, если иное не
                 зафиксировано в дополнительном соглашении Сторон или прямо не предусмотрено настоящим Регламентом. Под
@@ -736,15 +733,18 @@
                 Компании третьими лицами в связи с совершением операций за счет
                 и в интересах Клиента в рамках Регламента, расходы, связанные с переводом денежных средств в интересах
                 Клиента, но не ограничиваясь перечисленным.
-                <br><br>
+              </p>
+              <p class="stockmarket__info-text secondary-text">
                 Компания вправе взимать вознаграждение в иностранной валюте с учетом ограничений, предусмотренных
                 валютным законодательством.
-                <br><br>
+              </p>
+              <p class="stockmarket__info-text secondary-text">
                 При получении наличных денежных средств Клиентом в кассе Компания вправе удержать из суммы выдаваемых
                 денежных средств сумму своих расходов, понесенных в связи
                 с оплатой комиссии кредитной организации за снятие наличных денежных средств с расчетных счетов Компании
                 с целью выдачи Клиенту.
-                <br><br>
+              </p>
+              <p class="stockmarket__info-text secondary-text">
                 Дополнительным соглашением сторон могут быть предусмотрены индивидуальные размеры вознаграждения.
               </p>
             </div>
@@ -829,7 +829,6 @@
             <span class="file-size"> 200,7 кб</span>
           </div>
         </a>
-
       </div>
     </section>
   </main>

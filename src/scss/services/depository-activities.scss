@@ -1,11 +1,8 @@
 .depositary__hero {
-  background-color: var(--primary-grey);
 
   &-container {
     background-image: var(--desktop-image-banner-top);
     padding: 46px 52% 27.4% 0;
-    background-repeat: no-repeat;
-    background-position: right bottom;
 
     @media(max-width: 1176px) {
       padding: 32px 32% 27.2% 0;
@@ -21,39 +18,24 @@
 }
 
 .depositiry__about {
-  padding-top: 68px;
-  padding-bottom: 136px;
-
-  @media(max-width: 1176px) {
-    padding-top: 56px;
-    padding-bottom: 0;
-  }
-
-  @media(max-width: 585px) {
-    padding-top: 48px;
-    padding-bottom: 0;
-  }
 
   &-title {
     margin: 0 auto;
-    margin-bottom: 40px;
+    margin-bottom: var(--mb-40);
     text-align: center;
     max-width: 568px;
 
     @media(max-width: 1176px) {
       text-align: start;
-      margin-bottom: 32px;
     }
 
     @media(max-width: 585px) {
       text-align: start;
-      margin-bottom: 24px;
     }
   }
 }
 
 .depositiry__payments {
-
   &-card {
     @media(max-width: 585px) {
       grid-template-rows: 1fr 156px;
@@ -82,7 +64,6 @@
 }
 
 .depositiry__access {
-
   &-card {
     @media(max-width: 585px) {
       grid-template-rows: 1fr 134px;
@@ -109,7 +90,6 @@
     }
   }
 
-
   &-btn {
     padding: 18px 26px;
     margin-top: 62px;
@@ -123,11 +103,4 @@
 .depositiry__transactions-item:not(:last-child) {
   margin-bottom: 49px;
 }
-.depositiry__transactions-buttons {
-  @media(max-width: 1176px) {
-    margin-top: 56px;
-  }
-  @media(max-width: 585px) {
-    margin-top: 48px;
-  }
-}
+
