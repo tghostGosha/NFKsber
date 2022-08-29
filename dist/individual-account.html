@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="data:;base64,MQoa">
@@ -14,6 +14,7 @@
 
   <title>Главная</title>
 </head>
+
 
 <body>
 
@@ -362,7 +363,7 @@
 
 </header>
   <main>
-    <section class="individual__hero">
+    <section class="big__banner individual__hero">
       <div class="container ">
         <nav aria-label="breadcrumb">
           <ul class="breadcrumb">
@@ -386,7 +387,7 @@
             <li class="breadcrumb-item hide-on-mobile"><a class="breadcrumb-link" href="individual-account.html">Индивидуальный инвестиционный счет</a></li>
           </ul>
         </nav>
-        <div class="individual__hero-container" style="--desktop-image-banner-top: url('../img/individual-account/individual-hero.png');">
+        <div class="individual__hero-container background-style-global" style="--desktop-image-banner-top: url('../img/individual-account/individual-hero.png');">
           <h1 class="individual__hero-title">ИИС</h1>
           <ul class="individual__hero-list brokers__list">
             <li class="individual__list-item">Вносите до 400 000 рублей ежегодно</li>
@@ -402,7 +403,7 @@
         </div>
       </div>
     </section>
-    <section class="individual__description">
+    <section class="individual__description section-padding">
       <div class="container">
         <div class="individual__about block__margin-bottom ">
           <h2 class="individual__about-title">Что такое ИИС?</h2>
@@ -420,7 +421,7 @@
               </p>
             </div>
           </div>
-          <ul class="individual__about-list brokers__list">
+          <ul class="individual__about-list grid-container brokers__list">
             <li class="individual__about-list-item">Открывается и ведется лицензированным брокером или УК
             </li>
             <li class="individual__about-list-item">Допускается внесение денежных средств частями
@@ -467,7 +468,7 @@
         </div>
         <p class="individual__options-question">Как получить <a class="text-link" href="#">налоговый вычет на
             взнос?</a></p>
-        <p class="individual__options-description block__margin-bottom ">Владелец индивидуального инвестиционного счета может выбрать
+        <p class="individual__options-description secondary-text block__margin-bottom ">Владелец индивидуального инвестиционного счета может выбрать
           только один тип вычета, их совмещение не допускается. При расторжении договора на ведение ИИС ранее 3х
           лет с момента его заключения, инвестор не будет иметь права на инвестиционные налоговые
           вычеты.Полученные ранее вычеты на взнос нужно будет вернуть в бюджет
@@ -544,7 +545,7 @@
         <div class="accounts__examples block__margin-bottom ">
           <h2 class="accounts__examples-title">Примеры счетов</h2>
           <div class="accounts__examples-header">
-            <ul class="examples-header__list">
+            <ul class="examples-header__list grid-container">
               <li class="examples-header__item first-el">Индивидиуальный инвестиционный счет</li>
               <li class="examples-header__item second-el">Вносите</li>
               <li class="examples-header__item third-el">Получаете</li>
@@ -618,14 +619,14 @@
         <div class="individual__calculator">
           <h2 class="individual__options-title">Калькулятор ИИС</h2>
           <ul class="nav nav-pills calculator__table-nav" id="myTabCalc" role="tablist">
-            <li class="nav-item" role="presentation">
-              <button class="nav-link active calc__brokers-service-btn" id="brokers-service" data-bs-toggle="tab"
+            <li class="nav-item calculator__nav-item" role="presentation">
+              <button class="nav-link active  calculator__nav-link calc__brokers-service-btn" id="brokers-service" data-bs-toggle="tab"
                 data-bs-target="#brokersService" type="button" role="tab" aria-controls="brokersService"
                 aria-selected="true">Брокерского
                 обслуживания</button>
             </li>
-            <li class="nav-item" role="presentation">
-              <button class="nav-link calc__trust-management-btn" id="trust-management" data-bs-toggle="tab"
+            <li class="nav-item calculator__nav-item" role="presentation">
+              <button class="nav-link calc__trust-management-btn calculator__nav-link" id="trust-management" data-bs-toggle="tab"
                 data-bs-target="trustManagement" type="button" role="tab" aria-controls="trustManagement"
                 aria-selected="false">Доверительного
                 управления</button>
@@ -638,34 +639,32 @@
                 <div class="calc__brokers-left-card">
                   <div class="total__sum">
                     <div class="total__sum-header">
-
                       <span class="total__sum-span">Сумма, внесенная за год</span>
                       <span id="slider1Value" class="slider-value"></span>
                     </div>
                     <div id="slider1"></div>
                     <div class="total__sum-scale">
-                      <span>10 000₽</span>
-                      <span class="whitespace-scale">100 000₽</span>
-                      <span class="whitespace-scale value-margin">200 000₽</span>
-                      <span class="whitespace-scale">300 000₽</span>
-                      <span>400 000₽</span>
+                      <span class="secondary-text">10 000₽</span>
+                      <span class="secondary-text whitespace-scale">100 000₽</span>
+                      <span class="secondary-text whitespace-scale value-margin">200 000₽</span>
+                      <span class="secondary-text whitespace-scale">300 000₽</span>
+                      <span class="secondary-text">400 000₽</span>
                     </div>
                   </div>
                   <div class="total__years">
                     <div class="total__years-header">
-
                       <span class="total__years-span">Срок ведения ИИС</span>
                       <span id="slider2Value" class="slider-value"></span>
                     </div>
                     <div id="slider2"></div>
                     <div class="total__years-scale">
-                      <span>3 года</span>
-                      <span class="whitespace-scale-years">6 лет</span>
-                      <span class="whitespace-scale-years">9 лет</span>
-                      <span>12 лет</span>
+                      <span class="secondary-text">3 года</span>
+                      <span class="secondary-text whitespace-scale-years">6 лет</span>
+                      <span class="secondary-text whitespace-scale-years">9 лет</span>
+                      <span class="secondary-text">12 лет</span>
                     </div>
                   </div>
-                  <p class="calc-description">
+                  <p class="calc-description secondary-text">
                     Расчет калькулятора предварительный и не является публичной офертой.
                     Обратите внимание, что налоговый вычет может быть получен не более чем
                     за 3 предыдущих года.
@@ -715,7 +714,7 @@
         </div>
       </div>
     </section>
-    <section class="repo__transactions">
+    <section class="repo__transactions section-with-gradient">
       <div class="container">
         <div class="window__account">
           <h2 class="window__account-title">Открытие брокерского счета</h2>
@@ -794,7 +793,7 @@
                     <use xlink:href="img/icons/icons.svg#arrow-right"></use>
                   </svg>
                 </div>
-                <h4 class="accordion-header-title">Какие преимущества имеет индивидуальный инвестиционный счет по сравнению с обычным брокерским
+                <h4 class="accordion-item-title">Какие преимущества имеет индивидуальный инвестиционный счет по сравнению с обычным брокерским
                   счетом?</h4>
               </button>
             </h2>
@@ -825,7 +824,7 @@
                     <use xlink:href="img/icons/icons.svg#arrow-right"></use>
                   </svg>
                 </div>
-                <h4 class="accordion-header-title">Что выгоднее: ИИС или депозит в банке?</h4>
+                <h4 class="accordion-item-title">Что выгоднее: ИИС или депозит в банке?</h4>
               </button>
             </h2>
             <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
@@ -845,18 +844,18 @@
 
         </div>
         <div class="stockmarket__info-footnotes">
-          <p class="stockmarket__info-text text-indent"><span class="letter-lowercase">1</span>Сумма максимального
+          <p class="stockmarket__info-text text-indent"><sup class="letter-lowercase">1</sup>Сумма максимального
             налогового вычета
             при внесении на счет 400 тысяч рублей при условии уплаченного НДФЛ на сумму не менее 52 000 рублей за год.
 
           </p>
-          <p class="stockmarket__info-text text-indent"><span class="letter-lowercase">2</span>Расчет доходности
+          <p class="stockmarket__info-text text-indent"><sup class="letter-lowercase">2</sup>Расчет доходности
             произведен в
             качестве примера путем сложения доходности к погашению государственных облигаций в размере 6,65% годовых
             (выпуск: ОФЗ-ПК-29007, данные госрегистрации: №29007RMFS0 от 31.12.2014, МинФин) по состоянию на 11.08.2020
             г. и налогового вычета (возврата) по НДФЛ на инвестируемые средства в размере 13%.
           </p>
-          <p class="stockmarket__info-text text-indent"><span class="letter-lowercase">3</span>Фактические результаты
+          <p class="stockmarket__info-text text-indent"><sup class="letter-lowercase">3</sup>Фактические результаты
             доверительного управления определяются инвестиционной стратегией, которая вырабатывается управляющим на
             основе данных об инвестиционном профиле клиента. Инвестиционный профиль представляет собой сведения об
             ожидаемой доходности, на которую рассчитывает клиент, уровне риска, который способен нести клиент, а также о
@@ -869,20 +868,20 @@
             федеральным законом, условиями управления активами, информацией о доверительном управляющем вы можете
             ознакомиться, обратившись в АО «НФК - Сбережения», а также на сайте www.nfksber.ru
           </p>
-          <p class="stockmarket__info-text text-indent"><span class="letter-lowercase">4</span>По размеру собственных
+          <p class="stockmarket__info-text text-indent"><sup class="letter-lowercase">4</sup>По размеру собственных
             средств по
             состоянию на 31.01.2017 г. из числа некредитных организаций, зарегистрированных в Чувашской Республике.
           </p>
-          <p class="stockmarket__info-text text-indent"><span class="letter-lowercase">5</span>Доступ предоставляется
+          <p class="stockmarket__info-text text-indent"><sup class="letter-lowercase">5</sup>Доступ предоставляется
             программой
             ИТС-Брокер при заключении брокерского договора на ведение индивидуального инвестиционного счета.
           </p>
-          <p class="stockmarket__info-text text-indent"><span class="letter-lowercase">6</span>В качестве примера
+          <p class="stockmarket__info-text text-indent"><sup class="letter-lowercase">6</sup>В качестве примера
             используется
             инвестирование в государственные облигации, выпуск: ОФЗ-29006-ПК. Данные госрегистрации:№29006RMFS от
             31.12.2014, МинФин. Доходность к погашению 13,35% годовых по состоянию на 11.06.2015 г.
           </p>
-          <p class="stockmarket__info-text text-indent"><span class="letter-lowercase">*</span>Результаты расчета не
+          <p class="stockmarket__info-text text-indent"><sup class="letter-lowercase">*</sup>Результаты расчета не
             являются
             публичной офертой и могут быть уточнены при заключении договора. При осуществлении расчетов использованы
             справочно-информационные и аналитические материалы, подготовленные специалистами АО «НФК-Сбережения», не

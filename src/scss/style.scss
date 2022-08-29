@@ -59,11 +59,14 @@
 
   --mb-40: 40px;
   --mb-24: 24px;
+
   @media(max-width: 1176px) {
     --mb-40: 32px;
   }
+
   @media(max-width: 585px) {
     --mb-40: 24px;
+    --mb-24: 16px;
   }
 }
 
@@ -74,15 +77,18 @@ body {
   background-color: #ffffff;
   color: var(--primary-text)
 }
+
 ::-webkit-scrollbar {
   width: 7px;
 }
+
 ::-webkit-scrollbar-thumb {
   background: var(--primary-text);
   height: 10px;
   border-radius: 5px;
   width: 4px;
 }
+
 .container {
   max-width: 1280px;
   padding: 0 20px;
@@ -133,6 +139,7 @@ h1 {
   font-weight: 600;
   line-height: 46px;
   margin-bottom: 24px;
+
   @media(max-width: 585px) {
     line-height: 40px;
     margin-bottom: 16px;
@@ -144,9 +151,11 @@ h2 {
   font-weight: 600;
   line-height: 38px;
   margin-bottom: 40px;
+
   @media(max-width: 1176px) {
     margin-bottom: 32px;
   }
+
   @media(max-width: 585px) {
     line-height: 34px;
     margin-bottom: 24px;
@@ -224,13 +233,16 @@ button {
     margin-bottom: 48px;
   }
 }
+
 .background-style-global {
   background-repeat: no-repeat;
   background-position: right bottom;
 }
+
 .breadcrumb-margin-bottom {
   margin-bottom: 56px;
 }
+
 .grid-container {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -247,21 +259,26 @@ button {
     row-gap: 24px;
   }
 }
+
 .section-with-gradient {
   padding-bottom: 112px;
   background: linear-gradient(180deg, #F4F6F8 0%, rgba(244, 246, 248, 0) 100%);
+
   @media(max-width: 1176px) {
     background: #ffffff;
     padding-bottom: 56px;
   }
+
   @media(max-width: 585px) {
     padding-bottom: 48px;
   }
 }
+
 .padding-large {
   padding-top: 40px !important;
   padding-bottom: 28px !important;
 }
+
 .section-padding {
   padding-top: 68px;
   padding-bottom: 136px;
@@ -276,6 +293,7 @@ button {
     padding-bottom: 48px;
   }
 }
+
 .text-link {
   color: var(--primary-green);
   transition: all 0.2s ease-in-out 0.2s;
@@ -285,6 +303,7 @@ button {
     line-height: 19px;
   }
 }
+
 .primary-text-color {
   color: var(--primary-text);
 }
@@ -313,9 +332,11 @@ button {
   font-weight: 700;
   line-height: 22px;
 }
+
 .text-center {
   text-align: center;
 }
+
 .hide-on-mobile {
   @media(max-width: 1176px) {
     display: none !important;
@@ -323,15 +344,8 @@ button {
 }
 
 .svg-arrow-right-dims {
-  // margin-left: 12px;
-  // margin-right: 12px;
   width: 4px;
   height: 8px;
-
-  @media(max-width: 585px) {
-    // margin-left: 12px;
-  }
-
 }
 
 .svg-arrow-left-dims {
@@ -555,6 +569,7 @@ button {
   &-container {
 
     margin-bottom: 40px;
+
     @media(max-width: 1176px) {
       display: none;
     }

@@ -15849,14 +15849,9 @@ input::placeholder {
   color: var(--secondary-text);
 }
 
-.individual__hero {
-  background-color: var(--primary-grey);
-}
 .individual__hero-container {
   background-image: var(--desktop-image-banner-top);
   padding: 46px 50% 55px 0;
-  background-repeat: no-repeat;
-  background-position: right bottom;
 }
 @media (max-width: 1176px) {
   .individual__hero-container {
@@ -15871,12 +15866,7 @@ input::placeholder {
   }
 }
 .individual__hero-title {
-  margin-bottom: 24px;
-}
-@media (max-width: 1176px) {
-  .individual__hero-title {
-    margin-bottom: 16px;
-  }
+  margin-bottom: var(--mb-24);
 }
 .individual__hero-buttons {
   display: inline-block;
@@ -15939,24 +15929,6 @@ input::placeholder {
   left: -20px;
 }
 
-.individual__description {
-  padding-top: 64px;
-  padding-bottom: 128px;
-}
-@media (max-width: 1176px) {
-  .individual__description {
-    padding-top: 56px;
-    margin-bottom: 56px;
-    padding-bottom: 0;
-  }
-}
-@media (max-width: 585px) {
-  .individual__description {
-    padding-top: 48px;
-    margin-bottom: 48px;
-  }
-}
-
 .individual__about-card {
   margin-bottom: 40px;
 }
@@ -15967,8 +15939,6 @@ input::placeholder {
   }
 }
 .individual__about-list {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
   column-gap: 84px;
   margin: 0;
 }
@@ -15980,12 +15950,7 @@ input::placeholder {
 }
 
 .type-a-card {
-  margin-bottom: 40px;
-}
-@media (max-width: 1176px) {
-  .type-a-card {
-    margin-bottom: 24px;
-  }
+  margin-bottom: var(--mb-40);
 }
 @media (max-width: 585px) {
   .type-a-card {
@@ -16008,11 +15973,10 @@ input::placeholder {
 }
 
 .type-b-card {
-  margin-bottom: 24px;
+  margin-bottom: var(--mb-24);
 }
 @media (max-width: 585px) {
   .type-b-card {
-    margin-bottom: 16px;
     row-gap: 24px;
     grid-template-rows: 1fr 133px;
   }
@@ -16045,12 +16009,7 @@ input::placeholder {
   text-align: center;
   max-width: 578px;
   margin: 0 auto;
-  margin-bottom: 40px;
-}
-@media (max-width: 1176px) {
-  .individual__options-title {
-    margin-bottom: 32px;
-  }
+  margin-bottom: var(--mb-40);
 }
 .individual__options-list {
   margin: 0;
@@ -16062,12 +16021,9 @@ input::placeholder {
 }
 .individual__options-question {
   color: var(--secondary-text);
-  margin-bottom: 24px;
+  margin-bottom: var(--mb-24);
 }
 .individual__options-description {
-  font-size: 14px;
-  line-height: 19px;
-  color: var(--secondary-text);
   padding-right: 86px;
 }
 @media (max-width: 585px) {
@@ -16077,36 +16033,16 @@ input::placeholder {
 }
 
 .individual__advantages-title {
-  margin-bottom: 40px;
+  margin-bottom: var(--mb-40);
   text-align: center;
-}
-@media (max-width: 1176px) {
-  .individual__advantages-title {
-    margin-bottom: 32px;
-  }
-}
-@media (max-width: 585px) {
-  .individual__advantages-title {
-    margin-bottom: 24px;
-  }
 }
 
 .accounts__examples-services {
-  margin-bottom: 28px;
-}
-@media (max-width: 1176px) {
-  .accounts__examples-services {
-    margin-bottom: 24px;
-  }
+  margin-bottom: var(--mb-24);
 }
 .accounts__examples-title {
   text-align: center;
-  margin-bottom: 17px;
-}
-@media (max-width: 1176px) {
-  .accounts__examples-title {
-    margin-bottom: 24px;
-  }
+  margin-bottom: var(--mb-40);
 }
 @media (max-width: 585px) {
   .accounts__examples-header {
@@ -16114,7 +16050,7 @@ input::placeholder {
   }
 }
 .accounts__examples-body {
-  margin-bottom: 24px;
+  margin-bottom: var(--mb-24);
 }
 .accounts__examples-card {
   border: 1px solid var(--grey-button);
@@ -16148,12 +16084,7 @@ input::placeholder {
   }
 }
 .accounts__examples-card .examples-card__account .card__account-title {
-  margin-bottom: 24px;
-}
-@media (max-width: 585px) {
-  .accounts__examples-card .examples-card__account .card__account-title {
-    margin-bottom: 16px;
-  }
+  margin-bottom: var(--mb-24);
 }
 .accounts__examples-card .examples-card__account .card__account-description {
   color: var(--secondary-text);
@@ -16298,8 +16229,6 @@ input::placeholder {
 }
 
 .examples-header__list {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
   column-gap: 49px;
 }
 @media (max-width: 1176px) {
@@ -16345,6 +16274,7 @@ input::placeholder {
   margin-left: 30%;
   display: flex;
   align-items: center;
+  margin-bottom: var(--mb-40);
 }
 @media (max-width: 1176px) {
   .calculator__table-nav {
@@ -16353,19 +16283,21 @@ input::placeholder {
 }
 @media (max-width: 585px) {
   .calculator__table-nav {
-    margin-left: 14%;
+    justify-content: space-between;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 585px) {
+  .calculator__nav-item {
+    width: 45%;
   }
 }
 
 @media (max-width: 1176px) {
-  .calc__brokers-service-btn {
+  .calculator__nav-link {
+    width: 100%;
     padding: 16px 20px;
-  }
-}
-@media (max-width: 585px) {
-  .calc__brokers-service-btn {
-    width: 120px !important;
-    display: block;
   }
 }
 
@@ -16374,18 +16306,6 @@ input::placeholder {
     font-size: 14px;
     line-height: 22px;
     margin-right: 48px;
-  }
-}
-
-@media (max-width: 1176px) {
-  .calc__trust-management-btn {
-    padding: 16px 14px;
-  }
-}
-@media (max-width: 585px) {
-  .calc__trust-management-btn {
-    width: 120px !important;
-    display: block;
   }
 }
 
@@ -16428,7 +16348,7 @@ input::placeholder {
   height: 18px;
   border: 2px solid var(--primary-green);
   border-radius: 50%;
-  background-color: #ffffff;
+  background-color: var(--white);
   box-shadow: none;
   top: -8px;
 }
@@ -16465,12 +16385,7 @@ input::placeholder {
 }
 
 .total__sum {
-  margin-bottom: 40px;
-}
-@media (max-width: 1176px) {
-  .total__sum {
-    margin-bottom: 32px;
-  }
+  margin-bottom: var(--mb-40);
 }
 
 .slider-value {
@@ -16512,9 +16427,6 @@ input::placeholder {
 
 .total__sum-scale span {
   display: block;
-  font-size: 14px;
-  line-height: 19px;
-  color: var(--secondary-text);
 }
 @media (max-width: 585px) {
   .total__sum-scale span {
@@ -16543,9 +16455,6 @@ input::placeholder {
 .total__years-scale span {
   display: block;
   width: 40px;
-  font-size: 14px;
-  line-height: 19px;
-  color: var(--secondary-text);
 }
 
 .total__years-scale span:nth-child(2) {
@@ -16557,7 +16466,7 @@ input::placeholder {
   position: absolute;
   width: 4px;
   height: 2px;
-  background-color: #ffffff;
+  background-color: var(--white);
   top: -18px;
   left: 25px;
   z-index: 25;
@@ -16572,16 +16481,13 @@ input::placeholder {
   position: absolute;
   width: 4px;
   height: 2px;
-  background-color: #ffffff;
+  background-color: var(--white);
   top: -18px;
   left: 15px;
   z-index: 25;
 }
 
 .calc-description {
-  font-size: 14px;
-  line-height: 19px;
-  color: var(--secondary-text);
   margin-top: 24px;
   padding-right: 90px;
 }
@@ -16906,9 +16812,9 @@ input::placeholder {
     font-size: 14px;
     line-height: 19px;
     width: 100%;
-    padding: 5px 10px !important;
   }
 }
+
 @media (max-width: 783px) {
   .text-right-385 {
     text-align: end;
@@ -17417,9 +17323,6 @@ th {
   color: var(--secondary-text);
 }
 
-.currency__hero {
-  background-color: var(--primary-grey);
-}
 .currency__hero-container {
   background-image: var(--desktop-image-banner-top);
   padding: 46px 50% 48px 0;
@@ -19095,6 +18998,7 @@ th {
 @media (max-width: 585px) {
   :root {
     --mb-40: 24px;
+    --mb-24: 16px;
   }
 }
 
@@ -19422,6 +19326,7 @@ button {
   width: 4px;
   height: 8px;
 }
+
 .svg-arrow-left-dims {
   width: 4px;
   height: 8px;
