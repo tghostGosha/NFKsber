@@ -16,20 +16,20 @@ $('.filter-menu__item').on('click', function(event){
 });
 
 //============Сортировка списка идей
+$('#listSort ').on('click', function(event){
+	event.preventDefault();
+  $(' #listSort').addClass('choisen')
+  $('#mediumIconsSort').removeClass('choisen')
+  $('.investment__ideas-body').addClass('hide');
+  $('.investment__ideas-list').addClass('show');
+});
+
 $('#mediumIconsSort').on('click', function(event){
 	event.preventDefault();
   $('#mediumIconsSort').addClass('choisen')
   $('#listSort').removeClass('choisen')
-  $('.investment__ideas-body').addClass('show');
-  $('.investment__ideas-list').addClass('hide');
-});
-
-$('#listSort').on('click', function(event){
-	event.preventDefault();
-  $('#listSort').addClass('choisen')
-  $('#mediumIconsSort').removeClass('choisen')
-  $('.investment__ideas-body').removeClass('show');
-  $('.investment__ideas-list').removeClass('hide');
+  $('.investment__ideas-body').removeClass('hide');
+  $('.investment__ideas-list').removeClass('show');
 });
 
 //===================================

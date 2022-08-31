@@ -140,10 +140,7 @@
 
 .ideas__slide {
   display: flex;
-
   flex-direction: column;
-  // border: 1px solid var(--grey-button);
-  // border-radius: 10px;
 
   &-card {
     max-width: 390px;
@@ -156,6 +153,7 @@
     @media(max-width: 1176px) {
       padding: 24px 16px;
       height: 238px;
+      
     }
     @media(max-width: 585px) {
       padding: 24px 12px;
@@ -217,14 +215,14 @@
     &-left {
       display: flex;
       flex-direction: column;
-      margin-right: 208px;
+      margin-right: 58%;
       // width: 120px;
 
       @media(max-width: 1176px) {
         margin-right: 224px;
       }
       @media(max-width: 817px) {
-        margin-right: 178px;
+        margin-right: 48%;
       }
       @media(max-width: 585px) {
         margin-right: 137px;

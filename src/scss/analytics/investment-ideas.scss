@@ -1,13 +1,33 @@
 .investment__ideas {
   padding-bottom: 112px;
 
-  &-header {
+  @media(max-width: 1176px) {
+    padding-bottom: 56px;
+  }
 
+  @media(max-width: 585px) {
+    padding-bottom: 48px;
+  }
+
+  &-header {
     align-items: center;
+
+    @media(max-width: 585px) {
+      margin-bottom: 24px;
+    }
   }
 
   &-header-title {
     grid-column: 1/ span 6;
+
+    @media(max-width: 1176px) {
+      grid-column: 1/ span 12;
+      margin-bottom: 56px;
+    }
+
+    @media(max-width: 585px) {
+      margin-bottom: 48px;
+    }
   }
 
   &-filtres {
@@ -15,20 +35,38 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @media(max-width: 1176px) {
+      grid-row: 2/span 1;
+      grid-column: 1/ span 12;
+      justify-content: flex-start;
+    }
+
+    @media(max-width: 585px) {
+      flex-wrap: wrap;
+    }
   }
 
   &-list {
-    display: flex;
+    display: none;
     flex-direction: column;
   }
 
-  &-body {
-    display: none;
+}
+
+.investment__ideas-filtres-item:not(:last-child) {
+  @media(max-width: 1176px) {
+    margin-right: 16px;
+  }
+
+  @media(max-width: 585px) {
+    margin: 0;
   }
 }
 
 .show {
-  display: block;
+  display: flex;
+  // flex-direction: column;
 }
 
 .hide {
@@ -81,15 +119,52 @@
   }
 }
 
+.ideas__card {
+  grid-column: span 4;
+
+  @media(max-width: 1176px) {
+    grid-column: span 6;
+  }
+
+  @media(max-width: 585px) {
+    grid-column: span 12;
+  }
+
+}
+
 .ideas__card-list:nth-child(odd) {
   border-top: 1px solid var(--grey-button);
   border-bottom: 1px solid var(--grey-button);
 }
 
+.dropdown {
+  @media(max-width: 585px) {
+    margin: 0;
+  }
+}
+
+.dropdown:nth-child(1) {
+  @media(max-width: 585px) {
+    margin-right: 16px;
+    margin-bottom: 12px;
+  }
+}
+
+.dropdown:nth-child(2) {
+  @media(max-width: 585px) {
+    margin-bottom: 12px;
+  }
+}
+
 .dropdown-filter {
-  padding: 14px 26px;
+  display: flex;
+  align-items: center;
+  padding: 14px 1.5rem;
   background-color: var(--primary-grey);
-  ;
+
+  @media(max-width: 585px) {
+    padding: 14px 2.5rem;
+  }
 }
 
 .svg-arrow-filter-dims {
@@ -105,7 +180,8 @@
 }
 
 .dropdown-filter.show .svg-arrow-filter-dims {
-  color: #fff;
+  color: var(--white);
+
 }
 
 .dropdown-filter-menu {
@@ -116,20 +192,33 @@
   position: absolute;
   inset: 0px auto auto 0px;
   margin: 0px;
-
   transform: translate(0px, 66px) !important;
+
+  @media(max-width: 1176px) {
+    width: 210px;
+  }
+
+  @media(max-width: 585px) {
+    width: 200px;
+  }
+}
+
+.dropdown-menu-country {
+  @media(max-width: 585px) {
+    width: 150px;
+  }
 }
 
 .dropdown-filter.show {
   background-color: var(--primary-text);
-  color: #fff;
+  color: var(--white);
 }
 
 .dropdown-filter-menu.show {
+  // display: flex;
   position: absolute;
   inset: 0px auto auto 0px;
   margin: 0px;
-
   transform: translate(0px, 66px);
 }
 
@@ -139,12 +228,21 @@
   padding: 10px 10px 10px 12px;
   cursor: pointer;
   transition: all 0.1s ease-in-out 0.1s;
+
+  @media(max-width: 585px) {
+    padding: 10px 2px 10px 2px;
+  }
 }
 
 .filter-menu__item label {
   font-size: 16px;
   line-height: 21px;
   cursor: pointer;
+
+  @media(max-width: 585px) {
+    font-size: 14px;
+    line-height: 19px;
+  }
 }
 
 .filter-check {
@@ -153,6 +251,7 @@
   opacity: 0;
   background-color: inherit;
   border: 0;
+  margin: 0;
 }
 
 .filter-menu__item:hover {
@@ -187,7 +286,10 @@
   flex-grow: 0;
   background-repeat: no-repeat;
   background-position: center center;
-  // background-size: 50% 50%;
+
+  @media(max-width: 1176px) {
+    margin-right: 5px;
+  }
 }
 
 .filter-check:checked+label::before {
@@ -198,6 +300,10 @@
   width: 49px;
   height: 49px;
   background-color: var(--primary-grey);
+
+  @media(max-width: 585px) {
+    display: none;
+  }
 }
 
 .btn-sort.choisen {
@@ -206,7 +312,7 @@
 
 .btn-sort.choisen>.svg-list-dims,
 .btn-sort.choisen>.svg-medium-icons-dims {
-  color: #fff;
+  color: var(--white);
 }
 
 .btn-sort:hover .svg-medium-icons-dims,
@@ -220,9 +326,7 @@
   transition: all 0.1s ease-in-out 0.1s;
 }
 
-.ideas__card {
-  grid-column: span 4;
-}
+
 
 ///==================Пагинация=================
 .nav__pagination {
@@ -276,5 +380,8 @@
 
 #tradingview_1158d {
   height: 652px;
-}
 
+  @media(max-width: 585px) {
+    height: 541px;
+  }
+}

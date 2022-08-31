@@ -135,7 +135,7 @@ h5 {
 }
 
 h1 {
-  @include adaptiv-font(40, 31);
+  @include adaptiv-font(40, 24);
   font-weight: 600;
   line-height: 46px;
   margin-bottom: var(--mb-24);

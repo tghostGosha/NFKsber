@@ -392,7 +392,7 @@
           <div class="investment__ideas-header grid-container block__margin-bottom">
             <h1 class="investment__ideas-header-title">Инвестиционные идеи</h1>
             <div class="investment__ideas-filtres">
-              <div class="dropdown">
+              <div class="dropdown investment__ideas-filtres-item">
                 <button class="dropdown-filter" type="button" data-bs-toggle="dropdown" data-placeholder="false"
                   aria-expanded="false">
                   Аналитика
@@ -420,7 +420,7 @@
                   </li>
                 </ul>
               </div>
-              <div class="dropdown">
+              <div class="dropdown investment__ideas-filtres-item">
                 <button class="dropdown-filter" type="button" data-bs-toggle="dropdown" data-placeholder="false"
                   aria-expanded="false">
                   Страны
@@ -428,7 +428,7 @@
                     <use xlink:href="img/icons/icons.svg#arrow-right"></use>
                   </svg>
                 </button>
-                <ul class="dropdown-menu dropdown-filter-menu">
+                <ul class="dropdown-menu dropdown-menu-country dropdown-filter-menu">
                   <li class="filter-menu__item">
                     <input class="form-check-input filter-check" checked type="checkbox" id="allCountries" name="NAME"
                       value="VALUE">
@@ -444,7 +444,7 @@
 
                 </ul>
               </div>
-              <div class="dropdown">
+              <div class="dropdown investment__ideas-filtres-item">
                 <button class="dropdown-filter" type="button" data-bs-toggle="dropdown" data-placeholder="false"
                   aria-expanded="false">
                   Инструменты
@@ -472,12 +472,12 @@
                       id="obligations" name="NAME" value="VALUE"><label for="obligations">Облигации</label></li>
                 </ul>
               </div>
-              <button id="mediumIconsSort" class="medium-icons-sort btn-sort ">
+              <button id="mediumIconsSort" class="medium-icons-sort choisen btn-sort investment__ideas-filtres-item">
                 <svg width="20px" height="20px" class="svg-medium-icons-dims">
                   <use xlink:href="img/icons/icons.svg#medium-icons"></use>
                 </svg>
               </button>
-              <button id="listSort" class="list-sort btn-sort choisen">
+              <button id="listSort" class="list-sort btn-sort investment__ideas-filtres-item">
                 <svg width="20px" height="20px" class="svg-list-dims">
                   <use xlink:href="img/icons/icons.svg#list"></use>
                 </svg>
