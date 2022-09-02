@@ -7,13 +7,13 @@ import noUiSlider from 'nouislider';
 import wNumb from 'wnumb';
 import Choices from 'choices.js'
 
-
 //========== Инвестиционные идеи
 
 //========Choices селект
 $('.filter-menu__item').on('click', function(event){
 	event.stopPropagation();
 });
+
 
 //============Сортировка списка идей
 $('#listSort ').on('click', function(event){
@@ -143,9 +143,9 @@ function myFunction() {
 const ideasSwiper = new Swiper('.ideas-swiper', {
   modules: [Navigation, Pagination],
   slideClass: 'ideas__slide',
-  // slidesPerView: 1,
-  //     slidesPerGroup: 1,
-  //     slidesPerColumn: 1,
+  slidesPerView: 1,
+      slidesPerGroup: 1,
+      slidesPerColumn: 1,
 
   // spaceBetween: 16,
   // modifierClass: 'ideas-swiper-pagination',
@@ -168,16 +168,17 @@ const ideasSwiper = new Swiper('.ideas-swiper', {
       slidesPerView: 3,
       slidesPerGroup: 3,
       centeredSlides: false,
-      // slidesPerColumn: 3,
+      slidesPerColumn: 3,
       spaceBetween: 32,
     },
-   715: {
+   595: {
       slidesPerView: 2,
-      slidesPerGroup: 2,
+      slidesPerGroup: 1,
       centeredSlides: false,
-      // slidesPerColumn: 2,
+      slidesPerColumn: 2,
       spaceBetween: 16,
     },
+   
     324: {
       slidesPerView: "auto",
       centeredSlides: true,

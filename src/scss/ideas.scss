@@ -1,6 +1,6 @@
 .ideas {
   padding-top: 68px;
-  margin-bottom: 68px;
+  // margin-bottom: 68px;
   padding-bottom: 136px;
 
   @media(max-width: 1176px) {
@@ -49,11 +49,22 @@
 .stars-svg-container {
   height: 14px;
   width: 90px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .ideas-swiper {
   overflow: hidden;
   position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
 
   &-pagination {
     position: absolute;
@@ -141,23 +152,26 @@
 .ideas__slide {
   display: flex;
   flex-direction: column;
-
+  flex-shrink: 0;
+  // height: 100%;
+  position: relative;
+  transition-property: transform;
+  @media(max-width: 585px) {
+    max-width: 306px;
+  }
   &-card {
-    max-width: 390px;
-    height: 352px;
     padding: 20px 24px 24px 24px;
     border: 1px solid var(--grey-button);
     border-radius: 10px;
     display: flex;
     flex-direction: column;
+    cursor: pointer;
     @media(max-width: 1176px) {
       padding: 24px 16px;
-      height: 238px;
-      
     }
+
     @media(max-width: 585px) {
       padding: 24px 12px;
-      height: 241px;
     }
   }
 
@@ -215,18 +229,18 @@
     &-left {
       display: flex;
       flex-direction: column;
-      margin-right: 58%;
-      // width: 120px;
+      // margin-right: 13rem;
 
-      @media(max-width: 1176px) {
-        margin-right: 224px;
-      }
-      @media(max-width: 817px) {
-        margin-right: 48%;
-      }
+      // @media(max-width: 1176px) {
+      //   margin-right: 15rem;
+      // }
+      // @media(max-width: 791px) {
+      //   margin-right: 13rem;
+      // }
+
       @media(max-width: 585px) {
-        margin-right: 137px;
-        width: 103px;
+        // margin-right: 137px;
+        // width: 103px;
       }
     }
 
@@ -293,6 +307,7 @@
   font-size: 14px;
   line-height: 19px;
   color: var(--secondary-text);
+
   @media(max-width: 585px) {
     font-size: 12px;
   }

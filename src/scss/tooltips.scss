@@ -1,0 +1,63 @@
+/////=============Tooltips======================//////
+.tooltip-1 {
+  display: inline-block;
+  position: absolute;
+  right: -23px;
+  top: 0;
+  width: 18px;
+  height: 18px;
+}
+
+.tooltip-btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 1px solid var(--secondary-text);
+  color: var(--secondary-text);
+  background-color: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tooltip-content {
+  position: absolute;
+  text-align: center;
+    left: -61px;
+  bottom: 150%;
+  background-color: var(--white);
+  padding: 10px;
+  border-radius: 10px;
+  color: var(--primary-text);
+  visibility: hidden;
+  font-size: 12px;
+  line-height: 18px;
+  opacity: 0;
+  width: 10rem;
+  box-shadow: 0px 0px 16px rgba(29, 37, 44, 0.16);
+  transition: all 0.2s ease-in-out 0.1s;
+}
+
+.tooltip-content::after {
+  content: '';
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 8px 8px 0 8px;
+  border-color: #ffffff transparent transparent transparent;
+  bottom: -8px;
+  left: 43%;
+  position: absolute;
+  transition: all 0.2s ease-in-out 0.1s;
+}
+
+.tooltip-1:hover .tooltip-content,
+.tooltip-1:hover .tooltip-content::after {
+  visibility: visible;
+  opacity: 1;
+}
+
+//========================================//

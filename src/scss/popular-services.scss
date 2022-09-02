@@ -18,7 +18,7 @@
   grid-column: span 4;
   position: relative;
   height: 446px;
-  width: 392px;
+  max-width: 392px;
   padding: 40px 40px 0 40px;
   background-color: var(--primary-grey);
   border-radius: 10px;
@@ -67,19 +67,6 @@
 }
 
 
-// .card-header {
-//   margin-bottom: 40px;
-//   background-color: var(--primary-grey);
-//   display: flex;
-//   align-items: flex-end;
-//   border: none;
-//   height: 260px;
-//   justify-content: center;
-//   padding: 0;
-// }
-
-
-
 .services-card-btn {
   position: absolute;
   bottom: 30px;
@@ -105,11 +92,6 @@
 .services-card:hover .services-card-btn {
   opacity: 1;
 }
-
-
-
-
-
 
 
 .card-body {
