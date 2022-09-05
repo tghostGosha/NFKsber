@@ -8,6 +8,7 @@
 
   @@include('html/header.html',{})
   <main>
+
     <section class="investment-idea-section">
       <div class="container">
         <nav aria-label="breadcrumb" class="breadcrumb-margin-bottom">
@@ -40,6 +41,75 @@
           </ul>
         </nav>
         <h1 style="display: none;"></h1>
+        <!-- modal windows-->
+        <div class="modal-block">
+          <div class="modal-bg">
+            <div class="modal-window">
+              <div class="modal-window-content">
+                <div class="modal-window-wrapper consult-modal">
+                  <div class="modal-window-header">
+                    <h3 class="modal-title">Посоветоваться со специалистами</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <p class="modal-link-descr">Вы можете получать дивиденды и доходы от роста курсовой стоимости,
+                      воспользовавшись
+                      брокерским счетом в нашей компании</p>
+                  </div>
+                  <form action="#" class="account__form modal__account-form">
+                    <div class="account__form-text">
+                      <input type="text" class="account__form-input" id="secondname" placeholder="Имя*">
+                    </div>
+                    <div class="account__form-tel consult-form-tel">
+                      <input type="tel" class="account__form-input " id="tel" placeholder="Мобильный телефон*">
+                    </div>
+                    <div class="form-check account__form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="accountCheck" checked>
+
+                      <label class="form-check-label" for="accountCheck">
+                        <span class="check-span">Даю согласие на</span> <a href="#">обработку персональных данных</a>
+                        <br>
+                        <span class="check-span">и</span> <a href="#">подтверждаю согласие на
+                          коммуникацию</a>
+                      </label>
+                    </div>
+                    <button type="submit" class="button primary-button account__form-btn">Открыть счет</button>
+                  </form>
+
+                </div>
+                <div class="modal-window-wrapper consult-earn">
+                  <div class="modal-window-header">
+                    <h3 class="modal-title">Заработать на идее</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <p class="modal-link-descr">Вы можете получать дивиденды и доходы от роста курсовой стоимости,
+                      воспользовавшись брокерским счетом в нашей компании</p>
+                  </div>
+                  <div class="modal-window-body">
+                    <a href="#" class="modal-window-link grid-container">
+                      <div class="modal-link-icon">
+                        <svg width="24px" height="25px" class="svg-modal-user-dims">
+                          <use xlink:href="@img/icons/icons.svg#user"></use>
+                        </svg>
+                      </div>
+                      <h3 class="modal-link-title">Уже есть счет в НФК-Сбережения</h3>
+                      <p class="modal-link-descr">Просто купите перспективный финансовый инструмент в своем торговом
+                        терминале или зайдите в личный кабинет, чтобы подать поручение на покупку</p>
+                    </a>
+                    <a href="#" class="modal-window-link grid-container">
+                      <div class="modal-link-icon">
+                        <svg width="24px" height="25px" class="svg-login-modal-dims">
+                          <use xlink:href="@img/icons/icons.svg#LogIn"></use>
+                        </svg>
+                      </div>
+                      <h3 class="modal-link-title">Открыть счет</h3>
+                      <p class="modal-link-descr">Это не займет более 10 минут</p>
+                    </a>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ================================-->
         <div class="investment__card-wrapper">
           <div class="detail-investment__card block__margin-bottom">
             <div class="investment__card">
@@ -80,8 +150,10 @@
                   </div>
                 </div>
                 <div class="investment__card-buttoms">
-                  <button type="button" class="grey-button investment__card-btn">Посоветоваться</button>
-                  <button type="button" class="primary-button investment__card-btn">Заработать на идее</button>
+                  <button type="button" id="consultModalBtn"
+                    class="grey-button investment__card-btn">Посоветоваться</button>
+                  <button type="button" id="consultEarnBtn" class="primary-button investment__card-btn">Заработать на
+                    идее</button>
                 </div>
               </div>
               <div class="investment__card-img-container">
@@ -197,7 +269,8 @@
             </div>
           </div>
           <ul class="investment__card-list block__margin-bottom">
-            <li class="brokers__list-item">Роснефть опубликовала очередные сильные результаты: EBITDA за 4К21 составила
+            <li class="brokers__list-item">Роснефть опубликовала очередные сильные результаты: EBITDA за 4К21
+              составила
               676 млрд руб., оказавшись на 6% выше кв/кв за счет благоприятной макроэкономической конъюнктуры.
               Результаты в целом совпали с ожиданиями рынка, оказавшись всего на 2% выше консенсуса.</li>
             <li class="brokers__list-item">Снижение FCF на 56% связано с ростом капзатрат на фоне реализации проекта
@@ -209,23 +282,30 @@
           <div class="investment__card-descr-block block__margin-bottom">
             <h2>Краткая оценка финансовых показателей</h2>
             <p class="investment__card-descr">
-              Роснефть отчиталась о росте прибыли кв/кв: выручка в 4К21 составила 2 537 млрд руб. (+9 кв/кв), показатель
-              EBITDA достиг 676 млрд руб. (+6 кв/кв) на фоне дорожающей нефти (Urals +9% кв/кв в рублевом выражении).
-              Свободный денежный поток (FCF) снизился до 164 млрд руб. (- 56% кв/кв) на фоне роста капзатрат, а общий
+              Роснефть отчиталась о росте прибыли кв/кв: выручка в 4К21 составила 2 537 млрд руб. (+9 кв/кв),
+              показатель
+              EBITDA достиг 676 млрд руб. (+6 кв/кв) на фоне дорожающей нефти (Urals +9% кв/кв в рублевом
+              выражении).
+              Свободный денежный поток (FCF) снизился до 164 млрд руб. (- 56% кв/кв) на фоне роста капзатрат, а
+              общий
               результат за 2021 составил 1 044 млрд руб. (+146% г/г); соотношение чистый долг / EBITDA (включая
               предоплаты) снизилось до 1.9x в долларовом выражении (с 2.1x на конец 9М21). Фактические показатели в
               целом совпали с консенсус-прогнозами, кроме чистой прибыли, которая оказалась ниже консенсуса на 7%;
-              чистая прибыль за 2П21 в размере 501 млрд руб. предполагает промежуточный уровень дивидендной доходности
+              чистая прибыль за 2П21 в размере 501 млрд руб. предполагает промежуточный уровень дивидендной
+              доходности
               4.1%.
             </p>
           </div>
           <div class="investment__card-descr-block block__margin-bottom">
             <h2>Наши прогнозы по прибыли</h2>
             <p class="investment__card-descr">
-              Наш базовый прогноз по EBITDA на 2022 год составляет 2 620 млрд руб. (+13% г/г), что предполагает чистую
+              Наш базовый прогноз по EBITDA на 2022 год составляет 2 620 млрд руб. (+13% г/г), что предполагает
+              чистую
               прибыль 1 188 млрд руб. и дивидендную доходность 10%. Наши оценки исходят из прогноза по Brent в
-              $80/барр., что выглядит несколько консервативно, т.к. по спотовым ценам Brent сейчас торгуется на уровне
-              $91/барр. Тем не менее мы считаем, что цены на нефть скорее всего будут снижаться в ожидании разрешения
+              $80/барр., что выглядит несколько консервативно, т.к. по спотовым ценам Brent сейчас торгуется на
+              уровне
+              $91/барр. Тем не менее мы считаем, что цены на нефть скорее всего будут снижаться в ожидании
+              разрешения
               геополитического конфликта вокруг Украины и на фоне роста добычи в США и в мире.
             </p>
           </div>
@@ -235,7 +315,8 @@
               Роснефть – высококачественная нефтяная госкомпания, которая предлагает инвесторам уникальное сочетание
               роста (проект Восток Ойл может обеспечить рост добычи в течение этого десятилетия, при условии, что
               ограничения ОПЕК+ будут ослаблены или полностью сняты) и дивидендов. Роснефть обладает сильным
-              административным ресурсом, что видно по тому, как компания оспаривает монополию Газпрома на экспорт газа
+              административным ресурсом, что видно по тому, как компания оспаривает монополию Газпрома на экспорт
+              газа
               через газопроводы. В настоящий момент она ждет решения правительства по возможности поставлять 10 млрд
               куб. м. газа через Северный поток-2 в Европу.
             </p>
@@ -243,7 +324,11 @@
           <div class="investment__card-descr-block block__margin-bottom">
             <h2>Консенсус-оценка</h2>
             <p class="investment__card-descr">
-              Роснефть торгуется с консенсус-мультипликатором EV/EBITDA 2022П 3.7x, что соответствует дисконту 16% к ее 5-летнему среднему  4.4х и премию 8% к среднему показателю российских нефтяных компаний, которая, на наш взгляд, обоснована ее профилем роста/дивидендов.
+              Роснефть торгуется с консенсус-мультипликатором EV/EBITDA 2022П 3.7x, что соответствует дисконту 16% к
+              ее
+              5-летнему среднему 4.4х и премию 8% к среднему показателю российских нефтяных компаний, которая, на
+              наш
+              взгляд, обоснована ее профилем роста/дивидендов.
             </p>
           </div>
           <p class="block__margin-bottom">Оригиниал и полная версия <a href="#" class="text-link">идеи</a></p>
@@ -253,327 +338,327 @@
               <div class="swiper-wrapper">
                 <!-- Slides -->
                 <div class="ideas__slide ideas__slide-card">
-                    <div class="ideas__slide-header">
-                      <div class="ideas__slide-header-left">
-                        <h3 class="ideas__slide-bank">ВТБ</h3>
-                        <div class="stars-svg-container">
-                          <svg width="14px" height="14px" class="svg-star-dims">
-                            <use xlink:href="img/icons/icons.svg#star"></use>
-                          </svg>
-                          <svg width="14px" height="14px" class="svg-star-dims">
-                            <use xlink:href="img/icons/icons.svg#star"></use>
-                          </svg>
-                          <svg width="14px" height="14px" class="svg-star-dims">
-                            <use xlink:href="img/icons/icons.svg#star"></use>
-                          </svg>
-                          <svg width="14px" height="14px" class="svg-star-dims">
-                            <use xlink:href="img/icons/icons.svg#star"></use>
-                          </svg>
-                          <svg width="14px" height="14px" class="svg-star-dims">
-                            <use xlink:href="img/icons/icons.svg#star"></use>
-                          </svg>
-                        </div>
-                      </div>
-                      <div class="ideas__slide-header-right">
-                        <a href="#" class="slide-like-btn">
-                          <svg width="16" height="16" class="svg-like-dims">
-                            <use xlink:href="img/icons/icons.svg#like"></use>
-                          </svg>
-                        </a>
-                        <a href="#" class="slide-close-btn">
-                          <svg width="10px" height="10px" class="svg-close-dims">
-                            <use xlink:href="img/icons/icons.svg#close"></use>
-                          </svg>
-                        </a>
-      
+                  <div class="ideas__slide-header">
+                    <div class="ideas__slide-header-left">
+                      <h3 class="ideas__slide-bank">ВТБ</h3>
+                      <div class="stars-svg-container">
+                        <svg width="14px" height="14px" class="svg-star-dims">
+                          <use xlink:href="img/icons/icons.svg#star"></use>
+                        </svg>
+                        <svg width="14px" height="14px" class="svg-star-dims">
+                          <use xlink:href="img/icons/icons.svg#star"></use>
+                        </svg>
+                        <svg width="14px" height="14px" class="svg-star-dims">
+                          <use xlink:href="img/icons/icons.svg#star"></use>
+                        </svg>
+                        <svg width="14px" height="14px" class="svg-star-dims">
+                          <use xlink:href="img/icons/icons.svg#star"></use>
+                        </svg>
+                        <svg width="14px" height="14px" class="svg-star-dims">
+                          <use xlink:href="img/icons/icons.svg#star"></use>
+                        </svg>
                       </div>
                     </div>
-                    <div class="ideas__slide-body">
-                      <div class="ideas__slide-img-block">
-                        <img src="@img/hero/gazprom.png" class="ideas__slide-img" alt="Газпром">
-                      </div>
-                      <p class="ideas__slide-body-title">Газпром
-                        Цена на газ радует глаз</p>
+                    <div class="ideas__slide-header-right">
+                      <a href="#" class="slide-like-btn">
+                        <svg width="16" height="16" class="svg-like-dims">
+                          <use xlink:href="img/icons/icons.svg#like"></use>
+                        </svg>
+                      </a>
+                      <a href="#" class="slide-close-btn">
+                        <svg width="10px" height="10px" class="svg-close-dims">
+                          <use xlink:href="img/icons/icons.svg#close"></use>
+                        </svg>
+                      </a>
+
                     </div>
-                    <div class="ideas__slide-footer">
-                      <div class="current__profitability">
-                        <span class="current__profitability-title">Текущая доходность</span>
-                        <p class="current__profitability-value">-0.21 %</p>
-                      </div>
-                      <div class="current__possibility">
-                        <span class="current__possibility-title">Можно заработать</span>
-                        <p class="current__possibility-value">до 11.5 %</p>
-                      </div>
+                  </div>
+                  <div class="ideas__slide-body">
+                    <div class="ideas__slide-img-block">
+                      <img src="@img/hero/gazprom.png" class="ideas__slide-img" alt="Газпром">
                     </div>
+                    <p class="ideas__slide-body-title">Газпром
+                      Цена на газ радует глаз</p>
+                  </div>
+                  <div class="ideas__slide-footer">
+                    <div class="current__profitability">
+                      <span class="current__profitability-title">Текущая доходность</span>
+                      <p class="current__profitability-value">-0.21 %</p>
+                    </div>
+                    <div class="current__possibility">
+                      <span class="current__possibility-title">Можно заработать</span>
+                      <p class="current__possibility-value">до 11.5 %</p>
+                    </div>
+                  </div>
                 </div>
                 <div class="ideas__slide ideas__slide-card">
-                    <div class="ideas__slide-header">
-                      <div class="ideas__slide-header-left">
-                        <h3 class="ideas__slide-bank">Финам</h3>
-                        <div class="stars-svg-container">
-                          <svg width="14px" height="14px" class="svg-star-dims">
-                            <use xlink:href="img/icons/icons.svg#star"></use>
-                          </svg>
-                          <svg width="14px" height="14px" class="svg-star-dims">
-                            <use xlink:href="img/icons/icons.svg#star"></use>
-                          </svg>
-                          <svg width="14px" height="14px" class="svg-star-dims">
-                            <use xlink:href="img/icons/icons.svg#star"></use>
-                          </svg>
-                          <svg width="14px" height="14px" class="svg-star-dims">
-                            <use xlink:href="img/icons/icons.svg#star"></use>
-                          </svg>
-                          <svg width="14px" height="14px" class="svg-star-dims">
-                            <use xlink:href="img/icons/icons.svg#star"></use>
-                          </svg>
-                        </div>
-                      </div>
-                      <div class="ideas__slide-header-right">
-                        <a href="#" class="slide-like-btn">
-                          <svg width="14px" height="14px" class="svg-like-dims">
-                            <use xlink:href="img/icons/icons.svg#like"></use>
-                          </svg>
-                        </a>
-                        <a href="#" class="slide-close-btn">
-                          <svg width="10px" height="10px" class="svg-close-dims">
-                            <use xlink:href="img/icons/icons.svg#close"></use>
-                          </svg>
-                        </a>
-      
+                  <div class="ideas__slide-header">
+                    <div class="ideas__slide-header-left">
+                      <h3 class="ideas__slide-bank">Финам</h3>
+                      <div class="stars-svg-container">
+                        <svg width="14px" height="14px" class="svg-star-dims">
+                          <use xlink:href="img/icons/icons.svg#star"></use>
+                        </svg>
+                        <svg width="14px" height="14px" class="svg-star-dims">
+                          <use xlink:href="img/icons/icons.svg#star"></use>
+                        </svg>
+                        <svg width="14px" height="14px" class="svg-star-dims">
+                          <use xlink:href="img/icons/icons.svg#star"></use>
+                        </svg>
+                        <svg width="14px" height="14px" class="svg-star-dims">
+                          <use xlink:href="img/icons/icons.svg#star"></use>
+                        </svg>
+                        <svg width="14px" height="14px" class="svg-star-dims">
+                          <use xlink:href="img/icons/icons.svg#star"></use>
+                        </svg>
                       </div>
                     </div>
-                    <div class="ideas__slide-body">
-                      <div class="ideas__slide-img-block">
-                        <img src="@img/hero/nornikel.png" class="ideas__slide-img" alt="Норникель">
-                      </div>
-                      <p class="ideas__slide-body-title">Норникель - лампа Палладина </p>
+                    <div class="ideas__slide-header-right">
+                      <a href="#" class="slide-like-btn">
+                        <svg width="14px" height="14px" class="svg-like-dims">
+                          <use xlink:href="img/icons/icons.svg#like"></use>
+                        </svg>
+                      </a>
+                      <a href="#" class="slide-close-btn">
+                        <svg width="10px" height="10px" class="svg-close-dims">
+                          <use xlink:href="img/icons/icons.svg#close"></use>
+                        </svg>
+                      </a>
+
                     </div>
-                    <div class="ideas__slide-footer">
-                      <div class="current__profitability">
-                        <span class="current__profitability-title">Текущая доходность</span>
-                        <p class="current__profitability-value">2.34 %</p>
-                      </div>
-                      <div class="current__possibility">
-                        <span class="current__possibility-title">Можно заработать</span>
-                        <p class="current__possibility-value">до 15.2 %</p>
-                      </div>
+                  </div>
+                  <div class="ideas__slide-body">
+                    <div class="ideas__slide-img-block">
+                      <img src="@img/hero/nornikel.png" class="ideas__slide-img" alt="Норникель">
                     </div>
+                    <p class="ideas__slide-body-title">Норникель - лампа Палладина </p>
+                  </div>
+                  <div class="ideas__slide-footer">
+                    <div class="current__profitability">
+                      <span class="current__profitability-title">Текущая доходность</span>
+                      <p class="current__profitability-value">2.34 %</p>
+                    </div>
+                    <div class="current__possibility">
+                      <span class="current__possibility-title">Можно заработать</span>
+                      <p class="current__possibility-value">до 15.2 %</p>
+                    </div>
+                  </div>
                 </div>
                 <div class="ideas__slide ideas__slide-card">
-                    <div class="ideas__slide-header">
-                      <div class="ideas__slide-header-left">
-                        <h3 class="ideas__slide-bank">Финам</h3>
-                        <div class="stars-svg-container">
-                          <svg width="14px" height="14px" class="svg-star-dims">
-                            <use xlink:href="img/icons/icons.svg#star"></use>
-                          </svg>
-                          <svg width="14px" height="14px" class="svg-star-dims">
-                            <use xlink:href="img/icons/icons.svg#star"></use>
-                          </svg>
-                          <svg width="14px" height="14px" class="svg-star-dims">
-                            <use xlink:href="img/icons/icons.svg#star"></use>
-                          </svg>
-                          <svg width="14px" height="14px" class="svg-star-dims">
-                            <use xlink:href="img/icons/icons.svg#star"></use>
-                          </svg>
-                          <svg width="14px" height="14px" class="svg-star-dims">
-                            <use xlink:href="img/icons/icons.svg#star"></use>
-                          </svg>
-                        </div>
-                      </div>
-                      <div class="ideas__slide-header-right">
-                        <a href="#" class="slide-like-btn">
-                          <svg width="14px" height="14px" class="svg-like-dims">
-                            <use xlink:href="img/icons/icons.svg#like"></use>
-                          </svg>
-                        </a>
-                        <a href="#" class="slide-close-btn">
-                          <svg width="10px" height="10px" class="svg-close-dims">
-                            <use xlink:href="img/icons/icons.svg#close"></use>
-                          </svg>
-                        </a>
-      
+                  <div class="ideas__slide-header">
+                    <div class="ideas__slide-header-left">
+                      <h3 class="ideas__slide-bank">Финам</h3>
+                      <div class="stars-svg-container">
+                        <svg width="14px" height="14px" class="svg-star-dims">
+                          <use xlink:href="img/icons/icons.svg#star"></use>
+                        </svg>
+                        <svg width="14px" height="14px" class="svg-star-dims">
+                          <use xlink:href="img/icons/icons.svg#star"></use>
+                        </svg>
+                        <svg width="14px" height="14px" class="svg-star-dims">
+                          <use xlink:href="img/icons/icons.svg#star"></use>
+                        </svg>
+                        <svg width="14px" height="14px" class="svg-star-dims">
+                          <use xlink:href="img/icons/icons.svg#star"></use>
+                        </svg>
+                        <svg width="14px" height="14px" class="svg-star-dims">
+                          <use xlink:href="img/icons/icons.svg#star"></use>
+                        </svg>
                       </div>
                     </div>
-                    <div class="ideas__slide-body">
-                      <div class="ideas__slide-img-block">
-                        <img src="@img/hero/enphase.png" class="ideas__slide-img" alt="Норникель">
-                      </div>
-                      <p class="ideas__slide-body-title">Enphase Energy: даже солнце
-                        не светит бесплатно</p>
+                    <div class="ideas__slide-header-right">
+                      <a href="#" class="slide-like-btn">
+                        <svg width="14px" height="14px" class="svg-like-dims">
+                          <use xlink:href="img/icons/icons.svg#like"></use>
+                        </svg>
+                      </a>
+                      <a href="#" class="slide-close-btn">
+                        <svg width="10px" height="10px" class="svg-close-dims">
+                          <use xlink:href="img/icons/icons.svg#close"></use>
+                        </svg>
+                      </a>
+
                     </div>
-                    <div class="ideas__slide-footer">
-                      <div class="current__profitability">
-                        <span class="current__profitability-title">Текущая доходность</span>
-                        <p class="current__profitability-value">-13.95 %</p>
-                      </div>
-                      <div class="current__possibility">
-                        <span class="current__possibility-title">Можно заработать</span>
-                        <p class="current__possibility-value">до 67.01 %</p>
-                      </div>
+                  </div>
+                  <div class="ideas__slide-body">
+                    <div class="ideas__slide-img-block">
+                      <img src="@img/hero/enphase.png" class="ideas__slide-img" alt="Норникель">
                     </div>
+                    <p class="ideas__slide-body-title">Enphase Energy: даже солнце
+                      не светит бесплатно</p>
+                  </div>
+                  <div class="ideas__slide-footer">
+                    <div class="current__profitability">
+                      <span class="current__profitability-title">Текущая доходность</span>
+                      <p class="current__profitability-value">-13.95 %</p>
+                    </div>
+                    <div class="current__possibility">
+                      <span class="current__possibility-title">Можно заработать</span>
+                      <p class="current__possibility-value">до 67.01 %</p>
+                    </div>
+                  </div>
                 </div>
                 <div class="ideas__slide ideas__slide-card">
-                    <div class="ideas__slide-header">
-                      <div class="ideas__slide-header-left">
-                        <h3 class="ideas__slide-bank">ВТБ</h3>
-                        <div class="stars-svg-container">
-                          <svg width="14px" height="14px" class="svg-star-dims">
-                            <use xlink:href="img/icons/icons.svg#star"></use>
-                          </svg>
-                          <svg width="14px" height="14px" class="svg-star-dims">
-                            <use xlink:href="img/icons/icons.svg#star"></use>
-                          </svg>
-                          <svg width="14px" height="14px" class="svg-star-dims">
-                            <use xlink:href="img/icons/icons.svg#star"></use>
-                          </svg>
-                          <svg width="14px" height="14px" class="svg-star-dims">
-                            <use xlink:href="img/icons/icons.svg#star"></use>
-                          </svg>
-                          <svg width="14px" height="14px" class="svg-star-dims">
-                            <use xlink:href="img/icons/icons.svg#star"></use>
-                          </svg>
-                        </div>
-                      </div>
-                      <div class="ideas__slide-header-right">
-                        <a href="#" class="slide-like-btn">
-                          <svg width="14px" height="14px" class="svg-like-dims">
-                            <use xlink:href="img/icons/icons.svg#like"></use>
-                          </svg>
-                        </a>
-                        <a href="#" class="slide-close-btn">
-                          <svg width="10px" height="10px" class="svg-close-dims">
-                            <use xlink:href="img/icons/icons.svg#close"></use>
-                          </svg>
-                        </a>
+                  <div class="ideas__slide-header">
+                    <div class="ideas__slide-header-left">
+                      <h3 class="ideas__slide-bank">ВТБ</h3>
+                      <div class="stars-svg-container">
+                        <svg width="14px" height="14px" class="svg-star-dims">
+                          <use xlink:href="img/icons/icons.svg#star"></use>
+                        </svg>
+                        <svg width="14px" height="14px" class="svg-star-dims">
+                          <use xlink:href="img/icons/icons.svg#star"></use>
+                        </svg>
+                        <svg width="14px" height="14px" class="svg-star-dims">
+                          <use xlink:href="img/icons/icons.svg#star"></use>
+                        </svg>
+                        <svg width="14px" height="14px" class="svg-star-dims">
+                          <use xlink:href="img/icons/icons.svg#star"></use>
+                        </svg>
+                        <svg width="14px" height="14px" class="svg-star-dims">
+                          <use xlink:href="img/icons/icons.svg#star"></use>
+                        </svg>
                       </div>
                     </div>
-                    <div class="ideas__slide-body">
-                      <div class="ideas__slide-img-block">
-                        <img src="@img/hero/gazprom.png" class="ideas__slide-img" alt="Газпром">
-                      </div>
-                      <p class="ideas__slide-body-title">Газпром<br>
-                        Цена на газ радует глаз</p>
+                    <div class="ideas__slide-header-right">
+                      <a href="#" class="slide-like-btn">
+                        <svg width="14px" height="14px" class="svg-like-dims">
+                          <use xlink:href="img/icons/icons.svg#like"></use>
+                        </svg>
+                      </a>
+                      <a href="#" class="slide-close-btn">
+                        <svg width="10px" height="10px" class="svg-close-dims">
+                          <use xlink:href="img/icons/icons.svg#close"></use>
+                        </svg>
+                      </a>
                     </div>
-                    <div class="ideas__slide-footer">
-                      <div class="current__profitability">
-                        <span class="current__profitability-title">Текущая доходность</span>
-                        <p class="current__profitability-value">-0.21 %</p>
-                      </div>
-                      <div class="current__possibility">
-                        <span class="current__possibility-title">Можно заработать</span>
-                        <p class="current__possibility-value">до 11.5 %</p>
-                      </div>
+                  </div>
+                  <div class="ideas__slide-body">
+                    <div class="ideas__slide-img-block">
+                      <img src="@img/hero/gazprom.png" class="ideas__slide-img" alt="Газпром">
                     </div>
-                  
+                    <p class="ideas__slide-body-title">Газпром<br>
+                      Цена на газ радует глаз</p>
+                  </div>
+                  <div class="ideas__slide-footer">
+                    <div class="current__profitability">
+                      <span class="current__profitability-title">Текущая доходность</span>
+                      <p class="current__profitability-value">-0.21 %</p>
+                    </div>
+                    <div class="current__possibility">
+                      <span class="current__possibility-title">Можно заработать</span>
+                      <p class="current__possibility-value">до 11.5 %</p>
+                    </div>
+                  </div>
+
                 </div>
                 <div class="ideas__slide ideas__slide-card">
-                    <div class="ideas__slide-header">
-                      <div class="ideas__slide-header-left">
-                        <h3 class="ideas__slide-bank">ВТБ</h3>
-                        <div class="stars-svg-container">
-                          <svg width="14px" height="14px" class="svg-star-dims">
-                            <use xlink:href="img/icons/icons.svg#star"></use>
-                          </svg>
-                          <svg width="14px" height="14px" class="svg-star-dims">
-                            <use xlink:href="img/icons/icons.svg#star"></use>
-                          </svg>
-                          <svg width="14px" height="14px" class="svg-star-dims">
-                            <use xlink:href="img/icons/icons.svg#star"></use>
-                          </svg>
-                          <svg width="14px" height="14px" class="svg-star-dims">
-                            <use xlink:href="img/icons/icons.svg#star"></use>
-                          </svg>
-                          <svg width="14px" height="14px" class="svg-star-dims">
-                            <use xlink:href="img/icons/icons.svg#star"></use>
-                          </svg>
-                        </div>
-                      </div>
-                      <div class="ideas__slide-header-right">
-                        <a href="#" class="slide-like-btn">
-                          <svg width="14px" height="14px" class="svg-like-dims">
-                            <use xlink:href="img/icons/icons.svg#like"></use>
-                          </svg>
-                        </a>
-                        <a href="#" class="slide-close-btn">
-                          <svg width="10px" height="10px" class="svg-close-dims">
-                            <use xlink:href="img/icons/icons.svg#close"></use>
-                          </svg>
-                        </a>
-      
+                  <div class="ideas__slide-header">
+                    <div class="ideas__slide-header-left">
+                      <h3 class="ideas__slide-bank">ВТБ</h3>
+                      <div class="stars-svg-container">
+                        <svg width="14px" height="14px" class="svg-star-dims">
+                          <use xlink:href="img/icons/icons.svg#star"></use>
+                        </svg>
+                        <svg width="14px" height="14px" class="svg-star-dims">
+                          <use xlink:href="img/icons/icons.svg#star"></use>
+                        </svg>
+                        <svg width="14px" height="14px" class="svg-star-dims">
+                          <use xlink:href="img/icons/icons.svg#star"></use>
+                        </svg>
+                        <svg width="14px" height="14px" class="svg-star-dims">
+                          <use xlink:href="img/icons/icons.svg#star"></use>
+                        </svg>
+                        <svg width="14px" height="14px" class="svg-star-dims">
+                          <use xlink:href="img/icons/icons.svg#star"></use>
+                        </svg>
                       </div>
                     </div>
-                    <div class="ideas__slide-body">
-                      <div class="ideas__slide-img-block">
-                        <img src="@img/hero/gazprom.png" class="ideas__slide-img" alt="Газпром">
-                      </div>
-                      <p class="ideas__slide-body-title">Газпром<br>
-                        Цена на газ радует глаз</p>
+                    <div class="ideas__slide-header-right">
+                      <a href="#" class="slide-like-btn">
+                        <svg width="14px" height="14px" class="svg-like-dims">
+                          <use xlink:href="img/icons/icons.svg#like"></use>
+                        </svg>
+                      </a>
+                      <a href="#" class="slide-close-btn">
+                        <svg width="10px" height="10px" class="svg-close-dims">
+                          <use xlink:href="img/icons/icons.svg#close"></use>
+                        </svg>
+                      </a>
+
                     </div>
-                    <div class="ideas__slide-footer">
-                      <div class="current__profitability">
-                        <span class="current__profitability-title">Текущая доходность</span>
-                        <p class="current__profitability-value">-0.21 %</p>
-                      </div>
-                      <div class="current__possibility">
-                        <span class="current__possibility-title">Можно заработать</span>
-                        <p class="current__possibility-value">до 11.5 %</p>
-                      </div>
+                  </div>
+                  <div class="ideas__slide-body">
+                    <div class="ideas__slide-img-block">
+                      <img src="@img/hero/gazprom.png" class="ideas__slide-img" alt="Газпром">
                     </div>
+                    <p class="ideas__slide-body-title">Газпром<br>
+                      Цена на газ радует глаз</p>
+                  </div>
+                  <div class="ideas__slide-footer">
+                    <div class="current__profitability">
+                      <span class="current__profitability-title">Текущая доходность</span>
+                      <p class="current__profitability-value">-0.21 %</p>
+                    </div>
+                    <div class="current__possibility">
+                      <span class="current__possibility-title">Можно заработать</span>
+                      <p class="current__possibility-value">до 11.5 %</p>
+                    </div>
+                  </div>
                 </div>
                 <div class="ideas__slide ideas__slide-card">
-                    <div class="ideas__slide-header">
-                      <div class="ideas__slide-header-left">
-                        <h3 class="ideas__slide-bank">ВТБ</h3>
-                        <div class="stars-svg-container">
-                          <svg width="14px" height="14px" class="svg-star-dims">
-                            <use xlink:href="img/icons/icons.svg#star"></use>
-                          </svg>
-                          <svg width="14px" height="14px" class="svg-star-dims">
-                            <use xlink:href="img/icons/icons.svg#star"></use>
-                          </svg>
-                          <svg width="14px" height="14px" class="svg-star-dims">
-                            <use xlink:href="img/icons/icons.svg#star"></use>
-                          </svg>
-                          <svg width="14px" height="14px" class="svg-star-dims">
-                            <use xlink:href="img/icons/icons.svg#star"></use>
-                          </svg>
-                          <svg width="14px" height="14px" class="svg-star-dims">
-                            <use xlink:href="img/icons/icons.svg#star"></use>
-                          </svg>
-                        </div>
-                      </div>
-                      <div class="ideas__slide-header-right">
-                        <a href="#" class="slide-like-btn">
-                          <svg width="14px" height="14px" class="svg-like-dims">
-                            <use xlink:href="img/icons/icons.svg#like"></use>
-                          </svg>
-                        </a>
-                        <a href="#" class="slide-close-btn">
-                          <svg width="10px" height="10px" class="svg-close-dims">
-                            <use xlink:href="img/icons/icons.svg#close"></use>
-                          </svg>
-                        </a>
-      
+                  <div class="ideas__slide-header">
+                    <div class="ideas__slide-header-left">
+                      <h3 class="ideas__slide-bank">ВТБ</h3>
+                      <div class="stars-svg-container">
+                        <svg width="14px" height="14px" class="svg-star-dims">
+                          <use xlink:href="img/icons/icons.svg#star"></use>
+                        </svg>
+                        <svg width="14px" height="14px" class="svg-star-dims">
+                          <use xlink:href="img/icons/icons.svg#star"></use>
+                        </svg>
+                        <svg width="14px" height="14px" class="svg-star-dims">
+                          <use xlink:href="img/icons/icons.svg#star"></use>
+                        </svg>
+                        <svg width="14px" height="14px" class="svg-star-dims">
+                          <use xlink:href="img/icons/icons.svg#star"></use>
+                        </svg>
+                        <svg width="14px" height="14px" class="svg-star-dims">
+                          <use xlink:href="img/icons/icons.svg#star"></use>
+                        </svg>
                       </div>
                     </div>
-                    <div class="ideas__slide-body">
-                      <div class="ideas__slide-img-block">
-                        <img src="@img/hero/gazprom.png" class="ideas__slide-img" alt="Газпром">
-                      </div>
-                      <p class="ideas__slide-body-title">Газпром<br>
-                        Цена на газ радует глаз</p>
+                    <div class="ideas__slide-header-right">
+                      <a href="#" class="slide-like-btn">
+                        <svg width="14px" height="14px" class="svg-like-dims">
+                          <use xlink:href="img/icons/icons.svg#like"></use>
+                        </svg>
+                      </a>
+                      <a href="#" class="slide-close-btn">
+                        <svg width="10px" height="10px" class="svg-close-dims">
+                          <use xlink:href="img/icons/icons.svg#close"></use>
+                        </svg>
+                      </a>
+
                     </div>
-                    <div class="ideas__slide-footer">
-                      <div class="current__profitability">
-                        <span class="current__profitability-title">Текущая доходность</span>
-                        <p class="current__profitability-value">-0.21 %</p>
-                      </div>
-                      <div class="current__possibility">
-                        <span class="current__possibility-title">Можно заработать</span>
-                        <p class="current__possibility-value">до 11.5 %</p>
-                      </div>
+                  </div>
+                  <div class="ideas__slide-body">
+                    <div class="ideas__slide-img-block">
+                      <img src="@img/hero/gazprom.png" class="ideas__slide-img" alt="Газпром">
                     </div>
+                    <p class="ideas__slide-body-title">Газпром<br>
+                      Цена на газ радует глаз</p>
+                  </div>
+                  <div class="ideas__slide-footer">
+                    <div class="current__profitability">
+                      <span class="current__profitability-title">Текущая доходность</span>
+                      <p class="current__profitability-value">-0.21 %</p>
+                    </div>
+                    <div class="current__possibility">
+                      <span class="current__possibility-title">Можно заработать</span>
+                      <p class="current__possibility-value">до 11.5 %</p>
+                    </div>
+                  </div>
                 </div>
               </div>
               <!-- If we need scrollbar

@@ -25,44 +25,44 @@
 
   <header class="header">
   <div class="header__line"></div>
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        </div>
-        <div class="modal-body">
-          <span class="modal-span">Получить бесплатную консультацию</span>
-          <h3 class="modal-title">Контактные данные</h3>
-          <button type="button" class="close close-btn" data-bs-dismiss="modal" aria-label="Close">
-            <svg width="14px" height="14px" class="svg-close-dims">
-              <use xlink:href="img/icons/icons.svg#close"></use>
-            </svg>
-          </button>
-          <form class="modal__form">
-            <div class="modal__form-item">
-              <!-- <label for="exampleFormControlInput1" class="form-label">Email address</label> -->
-              <input type="text" class="form-control" id="exampleFormControlInput1"
-                placeholder="Фамилия, имя и отчество*">
+  
+  <div class="modal-block">
+    <div class="modal-bg">
+      <div class="modal-window">
+        <div class="modal-window-content">
+          <div class="modal-window-wrapper  main-consult-modal">
+            <div class="modal-window-consalt-header">
+              <h3 class="modal-title">Modal title</h3>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal__form-item">
-              <!-- <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label> -->
-              <input type="tel" class="form-control" id="exampleFormControlInput" placeholder="Мобильный телефон*">
+            <div class="modal-body">
+              <span class="modal-span">Получить бесплатную консультацию</span>
+              <h3 class="modal-title">Контактные данные</h3>
+              
+              <form class="modal__form">
+                <div class="modal__form-item">
+                  <input type="text" class="form-control" id="exampleFormControlInput1"
+                    placeholder="Фамилия, имя и отчество*">
+                </div>
+                <div class="modal__form-item">
+                  <input type="tel" class="form-control" id="exampleFormControlInput" placeholder="Мобильный телефон*">
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                  <!-- <span class="form-check-icon"><svg width="14px" height="10px" class="svg-Check-dims">
+                    <use xlink:href="img/icons/icons.svg#Check"></use>
+                  </svg></span> -->
+                  <label class="form-check-label" for="flexCheckChecked">
+                    Даю согласие на <a href="#">обработку персональных данных</a> <br> и <a href="#">подтверждаю согласие на
+                      коммуникацию</a>
+                  </label>
+                </div>
+                <div class="col-auto">
+                  <button type="submit" class="button primary-button modal__form-btn">Отправить</button>
+                </div>
+              </form>
             </div>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-              <!-- <span class="form-check-icon"><svg width="14px" height="10px" class="svg-Check-dims">
-                <use xlink:href="img/icons/icons.svg#Check"></use>
-              </svg></span> -->
-              <label class="form-check-label" for="flexCheckChecked">
-                Даю согласие на <a href="#">обработку персональных данных</a> <br> и <a href="#">подтверждаю согласие на
-                  коммуникацию</a>
-              </label>
-            </div>
-            <div class="col-auto">
-              <button type="submit" class="button primary-button modal__form-btn">Отправить</button>
-            </div>
-          </form>
+          </div>
         </div>
       </div>
     </div>
@@ -70,13 +70,11 @@
   <div class="container">
     <div class="header__container">
       <a href="#" class="header__link-phone">
-        <!-- <img src="img/icons/icons.svg#phone" class="svg-phone-dims" alt="phone" /> -->
-        <svg width="24" height="24" class="svg-phone-dims" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M23.4617 18.967L19.7554 15.2602C19.0173 14.525 17.7946 14.5475 17.0306 15.3115L15.1635 17.1786C15.0456 17.1134 14.9235 17.0455 14.795 16.9735C13.616 16.3201 12.002 15.4247 10.3036 13.725C8.60041 12.022 7.70375 10.4054 7.04864 9.22552C6.9791 9.10042 6.913 8.98006 6.84773 8.86562L8.10097 7.61404L8.71698 6.9972C9.48226 6.23192 9.50347 5.0096 8.76662 4.27239L5.06021 0.565157C4.32384 -0.17122 3.10069 -0.14883 2.33541 0.616452L1.29079 1.667L1.31957 1.69543C0.969391 2.14228 0.676427 2.65784 0.458926 3.21367C0.25801 3.74274 0.132911 4.24775 0.0756928 4.75348C-0.413566 8.81089 1.44041 12.5188 6.47208 17.551C13.4273 24.5057 19.0325 23.9804 19.2742 23.9546C19.8013 23.8918 20.3057 23.7659 20.8187 23.5666C21.3698 23.3513 21.885 23.0591 22.3314 22.7098L22.3543 22.7297L23.4125 21.6935C24.1762 20.9283 24.1982 19.706 23.4617 18.967ZM22.5892 20.8694L22.1228 21.335L21.937 21.5135C21.6446 21.7963 21.1382 22.1935 20.3989 22.4827C19.9792 22.6443 19.5654 22.748 19.1444 22.7981C19.0914 22.8032 13.8194 23.253 7.29446 16.7286C1.74652 11.1809 0.857441 7.98413 1.23013 4.88793C1.27681 4.47757 1.37975 4.0646 1.5443 3.63304C1.83596 2.88943 2.23282 2.38359 2.51346 2.09063L3.15826 1.43943C3.469 1.12786 3.95363 1.10405 4.23771 1.38813L7.944 5.09442C8.2276 5.37885 8.20521 5.86349 7.89401 6.176L5.39097 8.67655L5.62197 9.06536C5.75039 9.28203 5.88615 9.52488 6.03115 9.7887C6.71967 11.0304 7.6617 12.7302 9.48096 14.5478C11.2955 16.3633 12.9927 17.3045 14.2307 17.9912C14.4982 18.1392 14.7425 18.2753 14.9616 18.4058L15.3512 18.6368L17.8526 16.1346C18.1647 15.8239 18.651 15.8009 18.935 16.0842L22.6397 19.7896C22.9229 20.0736 22.9004 20.5582 22.5892 20.8694Z" fill="#1D252C"/>
-          </svg>
-          
+        <svg width="14px" height="14px" class="svg-phone-dims">
+          <use xlink:href="img/icons/icons.svg#phone"></use>
+        </svg>
         8 800 200-84-84</a>
-      <button type="button" class="header__link-consalt" data-bs-toggle="modal" data-bs-target="#exampleModal">Получить
+      <button type="button" class="header__link-consalt" id="mainConsultModalBtn" data-bs-toggle="modal" data-bs-target="#exampleModal">Получить
         бесплатную консультанцию</button>
       <div class="nav-search">
         <button type="button" class="fa fa-search" aria-hidden="true"><img src="img/icons/icons.svg#search"
@@ -367,6 +365,7 @@
   </div>
 
 </header>
+
   <main>
     <section class="rates__hero">
       <div class="container">

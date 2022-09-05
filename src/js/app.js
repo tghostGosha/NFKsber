@@ -6,6 +6,7 @@ import JustValidate from 'just-validate';
 import noUiSlider from 'nouislider';
 import wNumb from 'wnumb';
 import Choices from 'choices.js'
+// import { EnvironmentPlugin, EvalDevToolModulePlugin } from "webpack";
 
 //========== Инвестиционные идеи
 
@@ -14,6 +15,61 @@ $('.filter-menu__item').on('click', function(event){
 	event.stopPropagation();
 });
 
+function OpenModalWindow(el){
+	CloseModalWindow();
+	let modal = $('.modal-block');
+	modal.addClass('open');
+	el.show();
+}
+
+function CloseModalWindow(){
+	let modal = $('.modal-block');
+	let forms = $('form', modal);
+	let formsBlocks = $('.modal-window-content > div', modal)
+	modal.removeClass('open');
+	forms.each(function(){this.reset()});
+	formsBlocks.each(function(){$(this).hide()});
+}
+$('#consultModalBtn').on('click', function(event) {
+  event.preventDefault();
+  OpenModalWindow($('.consult-modal'));
+})
+$('#consultEarnBtn').on('click', function(event) {
+  event.preventDefault();
+  OpenModalWindow($('.consult-earn'));
+})
+$('#mainConsultModalBtn').on('click', function(event) {
+  event.preventDefault();
+  OpenModalWindow($('.main-consult-modal'));
+})
+
+// $( document ).on('ready', function (){
+// 	$('#consultModalBtn').on('click', function (){
+// 		OpenModalWindow($('.test6'));
+// 	});
+	// $(document).on('click', '.open-test2', function (){
+	// 	OpenModalWindow($('.test2'));
+	// });
+  //     $(document).on('click', '.open-test3', function (){
+	// 	OpenModalWindow($('.test3'));
+	// });
+  //     $(document).on('click', '.open-test4', function (){
+	// 	OpenModalWindow($('.test4'));
+	// });
+  //     $(document).on('click', '.open-test5', function (){
+	// 	OpenModalWindow($('.test5'));
+	// });
+	// $(document).on('click', '.open-test6', function (){
+	// 	OpenModalWindow($('.test6'));
+	// });
+
+	$(document).on('click', '.btn-close, .modal-bg', function (){
+		CloseModalWindow();
+	});
+	$(document).on('click', '.modal-window', function (e){
+		e.stopPropagation();
+	});
+// });
 
 //============Сортировка списка идей
 $('#listSort ').on('click', function(event){
