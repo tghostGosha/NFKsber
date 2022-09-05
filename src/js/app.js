@@ -11,77 +11,60 @@ import Choices from 'choices.js'
 //========== Инвестиционные идеи
 
 //========Choices селект
-$('.filter-menu__item').on('click', function(event){
-	event.stopPropagation();
+$('.filter-menu__item').on('click', function (event) {
+  event.stopPropagation();
 });
 
-function OpenModalWindow(el){
-	CloseModalWindow();
-	let modal = $('.modal-block');
-	modal.addClass('open');
-	el.show();
+
+
+
+function OpenModalWindow(el) {
+  CloseModalWindow();
+  let modal = $('.modal-block');
+  modal.addClass('open');
+  el.show();
 }
 
-function CloseModalWindow(){
-	let modal = $('.modal-block');
-	let forms = $('form', modal);
-	let formsBlocks = $('.modal-window-content > div', modal)
-	modal.removeClass('open');
-	forms.each(function(){this.reset()});
-	formsBlocks.each(function(){$(this).hide()});
+function CloseModalWindow() {
+  let modal = $('.modal-block');
+  let forms = $('form', modal);
+  let formsBlocks = $('.modal-window-content > div', modal)
+  modal.removeClass('open');
+  forms.each(function () { this.reset() });
+  formsBlocks.each(function () { $(this).hide() });
 }
-$('#consultModalBtn').on('click', function(event) {
+$('#consultModalBtn').on('click', function (event) {
   event.preventDefault();
   OpenModalWindow($('.consult-modal'));
 })
-$('#consultEarnBtn').on('click', function(event) {
+$('#consultEarnBtn').on('click', function (event) {
   event.preventDefault();
   OpenModalWindow($('.consult-earn'));
 })
-$('#mainConsultModalBtn').on('click', function(event) {
+$('#mainConsultModalBtn').on('click', function (event) {
   event.preventDefault();
   OpenModalWindow($('.main-consult-modal'));
 })
 
-// $( document ).on('ready', function (){
-// 	$('#consultModalBtn').on('click', function (){
-// 		OpenModalWindow($('.test6'));
-// 	});
-	// $(document).on('click', '.open-test2', function (){
-	// 	OpenModalWindow($('.test2'));
-	// });
-  //     $(document).on('click', '.open-test3', function (){
-	// 	OpenModalWindow($('.test3'));
-	// });
-  //     $(document).on('click', '.open-test4', function (){
-	// 	OpenModalWindow($('.test4'));
-	// });
-  //     $(document).on('click', '.open-test5', function (){
-	// 	OpenModalWindow($('.test5'));
-	// });
-	// $(document).on('click', '.open-test6', function (){
-	// 	OpenModalWindow($('.test6'));
-	// });
+$(document).on('click', '.btn-close, .modal-bg', function () {
+  CloseModalWindow();
+});
+$(document).on('click', '.modal-window', function (e) {
+  e.stopPropagation();
+});
 
-	$(document).on('click', '.btn-close, .modal-bg', function (){
-		CloseModalWindow();
-	});
-	$(document).on('click', '.modal-window', function (e){
-		e.stopPropagation();
-	});
-// });
 
 //============Сортировка списка идей
-$('#listSort ').on('click', function(event){
-	event.preventDefault();
+$('#listSort ').on('click', function (event) {
+  event.preventDefault();
   $(' #listSort').addClass('choisen')
   $('#mediumIconsSort').removeClass('choisen')
   $('.investment__ideas-body').addClass('hide');
   $('.investment__ideas-list').addClass('show');
 });
 
-$('#mediumIconsSort').on('click', function(event){
-	event.preventDefault();
+$('#mediumIconsSort').on('click', function (event) {
+  event.preventDefault();
   $('#mediumIconsSort').addClass('choisen')
   $('#listSort').removeClass('choisen')
   $('.investment__ideas-body').removeClass('hide');
@@ -95,17 +78,35 @@ const defaultSelect = (classNameEl) => {
   const choices = new Choices(element, {
     searchEnabled: false,
     position: 'bottom',
+
   });
 
-} 
+}
 try {
   defaultSelect('currency')
-} catch(error) {
+} catch (error) {
   console.log(error)
 }
 
+const countrySelect = document.querySelector('#currency-detail');
+const countryChoices = new Choices(countrySelect, {
+  searchEnabled: false,
+  position: 'bottom',
+  placeholder: true,
 
+  classNames: {
+    containerOuter: 'country-choices',
+    containerInner: "countries-wrapper",
+    list: "currency__list",
+    listDropdown: "countries-list-dropdown",
+    item: 'currency__item',
+    itemSelectable: 'currency__item--selectable',
+  }
+});
 
+const values = countryChoices.getValue(true)
+console.log(values)
+window.document.querySelector('.currency__item--selectable').textContent = values
 
 //=====================
 Swiper.use([Navigation, Pagination])
@@ -177,7 +178,7 @@ function myFunction() {
   } catch (error) {
     console.log('тут не нужна функция')
   }
-  
+
 }
 //=======Запрос на сервер с инвистиционными идеями
 // let url = 'https://invest-idei.ru/'
@@ -190,7 +191,7 @@ function myFunction() {
 //     'Access-Control-Allow-Origin': 'https://invest-idei.ru/'
 //   }
 //   })
-  
+
 //   const data =  await response.json()
 //   console.log(data)
 // }
@@ -200,8 +201,8 @@ const ideasSwiper = new Swiper('.ideas-swiper', {
   modules: [Navigation, Pagination],
   slideClass: 'ideas__slide',
   slidesPerView: 1,
-      slidesPerGroup: 1,
-      slidesPerColumn: 1,
+  slidesPerGroup: 1,
+  slidesPerColumn: 1,
 
   // spaceBetween: 16,
   // modifierClass: 'ideas-swiper-pagination',
@@ -227,14 +228,14 @@ const ideasSwiper = new Swiper('.ideas-swiper', {
       slidesPerColumn: 3,
       spaceBetween: 32,
     },
-   595: {
+    595: {
       slidesPerView: 2,
       slidesPerGroup: 1,
       centeredSlides: false,
       slidesPerColumn: 2,
       spaceBetween: 16,
     },
-   
+
     324: {
       slidesPerView: "auto",
       centeredSlides: true,

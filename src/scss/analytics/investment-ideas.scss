@@ -184,17 +184,19 @@
   color: var(--white);
 
 }
-
-.dropdown-filter-menu {
+.dropdown-menu {
   box-shadow: 0px 0px 16px rgba(29, 37, 44, 0.16);
   border-radius: 5px;
   padding: 6px;
-  width: 248px;
   position: absolute;
   inset: 0px auto auto 0px;
   margin: 0px;
-  transform: translate(0px, 66px) !important;
-
+  transform: translate(0px, 53px) !important;
+  // inset: 10px auto auto 0 !important;
+}
+.dropdown-filter-menu {
+  width: 248px;
+  
   @media(max-width: 1176px) {
     width: 210px;
   }

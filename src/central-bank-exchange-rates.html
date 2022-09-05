@@ -43,7 +43,53 @@
         </div>
       </div>
     </section>
-
+    <section class="section-padding">
+      <div class="container">
+        
+        <div class="choices-container__left">
+          <select name="currency" id="currency-detail">
+            <option value="AUD"><span>AUD</span> Австралийский доллар</option>
+            <option value="AZN"><span>AZN</span> Азербайджанский манат</option>
+            <option value="AMD"><span>AMD</span> Армянских драмов</option>
+            <option value="GBP"><span>GBP</span> Фунт стерлингов Соединенного королевства</option>
+            <option value="BYN"><span>BYN</span> Белорусский рубль</option>
+            <option value="BGN"><span>BGN</span> Болгарский лев</option>
+            <option value="BRL"><span>BRL</span> Бразильский реал</option>
+            <option value="HUF"><span>HUF</span> Венгерских форинтов</option>
+            <option value="HKD"><span>HKD</span> Гонконгских долларов</option>
+            <option value="DKK"><span>DKK</span> Датских крон</option>
+            <option value="USD" selected ><span>USD</span> Доллар США</option>
+            <option value="EUR"><span>EUR</span> Евро</option>
+            <option value="INR"><span>INR</span> Индийских рупий</option>
+            <option value="KZT"><span>KZT</span> Казахстанских тенге</option>
+            <option value="CAD"><span>CAD</span> Канадский доллар</option>
+            <option value="KGS"><span>KGS</span> Киргизских сомов</option>
+            <option value="CNY"><span>CNY</span> Китайских юаней</option>
+            <option value="MDL"><span>MDL</span> Молдавских леев</option>
+            <option value="NOK"><span>NOK</span> Норвежских крон</option>
+            <option value="PLN"><span>PLN</span> Польский злотый</option>
+            <option value="RON"><span>RON</span> Румынский лей</option>
+            <option value="XDR"><span>XDR</span> СДР (специальные права заимствования)</option>
+            <option value="SGD"><span>SGD</span> Сингапурский доллар</option>
+            <option value="TJS"><span>TJS</span> Таджикских сомони</option>
+            <option value="TRY"><span>TRY</span> Турецких лир</option>
+            <option value="TMT"><span>TMT</span> Новый туркменский манат</option>
+            <option value="UZS"><span>UZS</span> Узбекских сумов</option>
+            <option value="UAH"><span>UAH</span> Украинских гривен</option>
+            <option value="CZK"><span>CZK</span> Чешских крон</option>
+            <option value="SEK"><span>SEK</span> Шведских крон</option>
+            <option value="CHF"><span>CHF</span> Швейцарский франк</option>
+            <option value="ZAR"><span>ZAR</span> Южноафриканских рэндов</option>
+            <option value="KRW"><span>KRW</span> Вон Республики Корея</option>
+            <option value="JPY"><span>JPY</span> Японских иен</option>
+          </select>
+          <div class="currency__value">
+            <input type="text" class="sum-of-change" id="sumOfChange" value="1000,00" >
+            <label for="sumOfChange" class="form-label">1 USD = 77,91 RUB</label>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
   @@include('html/footer.html',{})
   <script src="js/app.min.js"></script>

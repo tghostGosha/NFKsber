@@ -28,9 +28,7 @@
 .news__card {
   display: flex;
   flex-direction: column;
-  // height: 240px;
-  // justify-content: space-between;
-  background-color: #ffffff;
+  background-color: var(--white);
   border-radius: 10px;
   padding: 40px 46px;
   transition: all 0.2s ease-in-out 0.2s;
@@ -57,7 +55,7 @@
 }
 
 .news__card:not(:last-child) {
-  margin-bottom: 28px;
+  margin-bottom: var(--mb-24);
 }
 
 .news__nav {

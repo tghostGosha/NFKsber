@@ -17,13 +17,133 @@
 
 
   &-title {
-    margin-bottom: 24px;
+    margin-bottom: var(--mb-24);
 
     @media(max-width: 585px) {
-      margin-bottom: 16px;
       font-size: 32px;
       line-height: 40px;
     }
   }
 
 }
+
+.dropdown-currency-filter {
+  width: 100%;
+  max-width: 816px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.dropdown-menu-currency {
+  width: 100%;
+  max-width: 816px;
+  // inset: 10px auto auto 0 !important;
+}
+.country-choices {
+  outline: none;
+  width: 100%;
+  max-width: 816px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.is-focused .countries-wrapper, .is-open .countries-wrapper {
+  background-color: var(--primary-text);
+  color: var(--white);
+}
+.country-choices[data-type*=select-one] .countries-wrapper {
+  padding: 18px 26px;
+}
+.countries-wrapper {
+  border: 0;
+  border-radius: 10px;
+  background-color: var(--primary-grey);
+}
+.is-active.countries-list-dropdown, .is-active.currency__list[aria-expanded] {
+  visibility: visible;
+}
+.country-choices[data-type*=select-one]::after {
+  content: '';
+  position: absolute;
+  background-image: url('../img/icons/icons.svg#arrow-bottom');
+  background-size: 100%;
+  width: 20px;
+  height: 10px;
+  background-repeat: no-repeat;
+  border: none;
+  right: 25.5px;
+  top: 50%;
+  transition: all 0.1s ease-in-out 0.1s;
+}
+
+.country-choices[data-type*=select-one].is-open::after {
+  transform: rotate(-180deg);
+  background-image: url('../img/icons/icons.svg#white-arrow-bottom');
+  top: 40%;
+}
+
+.country-choices.is-focused::after {
+  background-image: url('../img/icons/icons.svg#white-arrow-bottom');
+  transform: rotate(0);
+  
+}
+.currency__list {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+.countries-list-dropdown .currency__list, .currency__list[aria-expanded] .currency__list {
+  position: relative;
+  max-height: 300px;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  will-change: scroll-position;
+}
+.countries-list-dropdown, .currency__list[aria-expanded] {
+  visibility: hidden;
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  padding: 10px 10px 10px 10px;
+  background-color: var(--white);
+  border: 1px solid #ddd;
+  margin-top: -1px;
+  border-bottom-left-radius: 2.5px;
+  border-bottom-right-radius: 2.5px;
+  overflow: hidden;
+  word-break: break-all;
+  will-change: visibility;
+  transition: all 0.1s ease-in-out 0.1s;
+  border: none;
+  height: 170px;
+  top: 120%;
+  border-radius: 5px;
+  box-shadow: 0px 0px 16px rgb(29 37 44 / 16%)
+}
+
+
+.countries-list-dropdown .currency__item--selectable.is-highlighted, .currency__list[aria-expanded] .currency__item--selectable.is-highlighted {
+  background-color: var(--primary-grey);
+}
+
+.countries-list-dropdown .currency__item--selectable.is-highlighted, .currency__list[aria-expanded] .currency__item--selectable.is-highlighted {
+  background-color: var(--primary-grey);
+}
+
+.countries-list-dropdown .currency__item--selectable, .currency__list[aria-expanded] .currency__item--selectable {
+  padding-right: 100px;
+}
+.countries-list-dropdown .currency__item, .currency__list[aria-expanded] .currency__item {
+  position: relative;
+  padding: 10px;
+  font-size: 14px;
+}
+.currency__item--selectable {
+  cursor: pointer;
+}
+
+.currency__list span {
+  color: var(--secondary-text);
+}
+
+

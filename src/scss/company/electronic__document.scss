@@ -19,7 +19,7 @@
   flex-direction: column;
   grid-column: 1/ span 8;
   &-title {
-    margin-bottom: 40px;
+    margin-bottom: var(--mb-40);
   }
    &-description {
     margin-bottom: 68px;
@@ -31,5 +31,5 @@
   columns: var(--primary-green);
 }
 .electronic__files-item:not(:last-child) {
-  margin-bottom: 49px;
+  margin-bottom: var(--mb-40);
 }
