@@ -15313,10 +15313,6 @@ input::placeholder {
   margin-bottom: 20px;
 }
 
-.important__description-link {
-  color: var(--primary-blue);
-}
-
 .metals__hero-container {
   background-image: var(--desktop-image-banner-top);
   padding: 46px 52% 295px 0;
@@ -19870,6 +19866,7 @@ th {
   --secondary-green: #2D7A26;
   --primary-grey: #F4F6F8;
   --grey-button: #E4EAEE;
+  --grey-button-hover: #D8E1E8;
   --white: #ffffff;
   --primary-text: #1D252C;
   --secondary-text: #6D7889;
@@ -20105,6 +20102,10 @@ button {
   }
 }
 
+.grey-button:hover {
+  background-color: var(--grey-button-hover);
+}
+
 .black-button {
   display: inline-block;
   background-color: var(--primary-text);
@@ -20205,7 +20206,7 @@ button {
 
 .text-link {
   color: var(--primary-green);
-  transition: all 0.2s ease-in-out 0.2s;
+  transition: all 0.1s ease-in-out 0.1s;
   background-color: inherit;
 }
 @media (max-width: 585px) {
@@ -20213,6 +20214,11 @@ button {
     font-size: 14px;
     line-height: 19px;
   }
+}
+
+.important__description-link {
+  color: var(--primary-blue);
+  transition: all 0.1s ease-in-out 0.1s;
 }
 
 .primary-text-color {
