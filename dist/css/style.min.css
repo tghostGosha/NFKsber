@@ -18406,6 +18406,7 @@ th {
 
 .date-picker {
   position: relative;
+  z-index: 76;
 }
 
 .ui-datepicker {
