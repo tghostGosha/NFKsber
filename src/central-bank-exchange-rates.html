@@ -45,58 +45,307 @@
     </section>
     <section class="section-padding">
       <div class="container">
-        
-        <div class="choices-container__left">
-          <select name="currency" id="currency-detail">
-            <option value="AUD"><span>AUD</span> Австралийский доллар</option>
-            <option value="AZN"><span>AZN</span> Азербайджанский манат</option>
-            <option value="AMD"><span>AMD</span> Армянских драмов</option>
-            <option value="GBP"><span>GBP</span> Фунт стерлингов Соединенного королевства</option>
-            <option value="BYN"><span>BYN</span> Белорусский рубль</option>
-            <option value="BGN"><span>BGN</span> Болгарский лев</option>
-            <option value="BRL"><span>BRL</span> Бразильский реал</option>
-            <option value="HUF"><span>HUF</span> Венгерских форинтов</option>
-            <option value="HKD"><span>HKD</span> Гонконгских долларов</option>
-            <option value="DKK"><span>DKK</span> Датских крон</option>
-            <option value="USD" selected ><span>USD</span> Доллар США</option>
-            <option value="EUR"><span>EUR</span> Евро</option>
-            <option value="INR"><span>INR</span> Индийских рупий</option>
-            <option value="KZT"><span>KZT</span> Казахстанских тенге</option>
-            <option value="CAD"><span>CAD</span> Канадский доллар</option>
-            <option value="KGS"><span>KGS</span> Киргизских сомов</option>
-            <option value="CNY"><span>CNY</span> Китайских юаней</option>
-            <option value="MDL"><span>MDL</span> Молдавских леев</option>
-            <option value="NOK"><span>NOK</span> Норвежских крон</option>
-            <option value="PLN"><span>PLN</span> Польский злотый</option>
-            <option value="RON"><span>RON</span> Румынский лей</option>
-            <option value="XDR"><span>XDR</span> СДР (специальные права заимствования)</option>
-            <option value="SGD"><span>SGD</span> Сингапурский доллар</option>
-            <option value="TJS"><span>TJS</span> Таджикских сомони</option>
-            <option value="TRY"><span>TRY</span> Турецких лир</option>
-            <option value="TMT"><span>TMT</span> Новый туркменский манат</option>
-            <option value="UZS"><span>UZS</span> Узбекских сумов</option>
-            <option value="UAH"><span>UAH</span> Украинских гривен</option>
-            <option value="CZK"><span>CZK</span> Чешских крон</option>
-            <option value="SEK"><span>SEK</span> Шведских крон</option>
-            <option value="CHF"><span>CHF</span> Швейцарский франк</option>
-            <option value="ZAR"><span>ZAR</span> Южноафриканских рэндов</option>
-            <option value="KRW"><span>KRW</span> Вон Республики Корея</option>
-            <option value="JPY"><span>JPY</span> Японских иен</option>
-          </select>
-          <div class="currency__value">
-            <input type="text" class="sum-of-change" id="sumOfChange" value="1000,00" >
-            <label for="sumOfChange" class="form-label">1 USD = 77,91 RUB</label>
+        <div class="center-container block__margin-bottom">
+          <p class="secondary-text choices-title">Выбрать валюту</p>
+          <div class="currency__choices-container">
+            <select name="currency" id="currency-detail">
+              <option value="AUD"><span>AUD</span> Австралийский доллар</option>
+              <option value="AZN"><span>AZN</span> Азербайджанский манат</option>
+              <option value="AMD"><span>AMD</span> Армянских драмов</option>
+              <option value="GBP"><span>GBP</span> Фунт стерлингов Соединенного королевства</option>
+              <option value="BYN"><span>BYN</span> Белорусский рубль</option>
+              <option value="BGN"><span>BGN</span> Болгарский лев</option>
+              <option value="BRL"><span>BRL</span> Бразильский реал</option>
+              <option value="HUF"><span>HUF</span> Венгерских форинтов</option>
+              <option value="HKD"><span>HKD</span> Гонконгских долларов</option>
+              <option value="DKK"><span>DKK</span> Датских крон</option>
+              <option value="USD" selected><span>USD</span> Доллар США</option>
+              <option value="EUR"><span>EUR</span> Евро</option>
+              <option value="INR"><span>INR</span> Индийских рупий</option>
+              <option value="KZT"><span>KZT</span> Казахстанских тенге</option>
+              <option value="CAD"><span>CAD</span> Канадский доллар</option>
+              <option value="KGS"><span>KGS</span> Киргизских сомов</option>
+              <option value="CNY"><span>CNY</span> Китайских юаней</option>
+              <option value="MDL"><span>MDL</span> Молдавских леев</option>
+              <option value="NOK"><span>NOK</span> Норвежских крон</option>
+              <option value="PLN"><span>PLN</span> Польский злотый</option>
+              <option value="RON"><span>RON</span> Румынский лей</option>
+              <option value="XDR"><span>XDR</span> СДР (специальные права заимствования)</option>
+              <option value="SGD"><span>SGD</span> Сингапурский доллар</option>
+              <option value="TJS"><span>TJS</span> Таджикских сомони</option>
+              <option value="TRY"><span>TRY</span> Турецких лир</option>
+              <option value="TMT"><span>TMT</span> Новый туркменский манат</option>
+              <option value="UZS"><span>UZS</span> Узбекских сумов</option>
+              <option value="UAH"><span>UAH</span> Украинских гривен</option>
+              <option value="CZK"><span>CZK</span> Чешских крон</option>
+              <option value="SEK"><span>SEK</span> Шведских крон</option>
+              <option value="CHF"><span>CHF</span> Швейцарский франк</option>
+              <option value="ZAR"><span>ZAR</span> Южноафриканских рэндов</option>
+              <option value="KRW"><span>KRW</span> Вон Республики Корея</option>
+              <option value="JPY"><span>JPY</span> Японских иен</option>
+            </select>
+          </div>
+          <table class="current-currency__table table">
+            <thead>
+              <tr  style="border-bottom: 1px solid #E4EAEE">
+                <td class="secondary-text td-padding-default"   align="left" scope="col">Цифр. код / Букв. код</td>
+                <td class="secondary-text td-padding-default" align="left" scope="col">Единиц</td>
+                <td class="secondary-text td-padding-default"  align="left" scope="col">Валюта</td>
+                <td class="secondary-text td-padding-default" align="right" scope="col">Курс</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr >
+                <td class="weight-text td-padding-default">840 / USD</td>
+                <td class="weight-text td-padding-default">840 / USD</td>
+                <td class="weight-text td-padding-default" >Доллар США</td>
+                <td class="weight-text td-padding-default" align="right">78.6422</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <button class="text-link currency-history" id="modalCurrencyHistory">История курсов</button>
+        </div>
+        <!-- Модальное окно с таблицей курсов -->
+        <div class="modal-block">
+          <div class="modal-bg">
+            <div class="modal-window currency-modal-window">
+              <div class="modal-background-header">
+
+              </div>
+              <div class="modal-window-content currency-history-modal-content">
+                <div class="modal-window-wrapper currency-history-modal">
+                  <div class="currency-history-header-modal">
+                    <h3 class="currency-history-modal-title">История курсов валют</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <p class="date-picker"><input type="text" id="datepicker"></p>
+
+                  </div>
+                  <div class="currency-history-body-modal">
+                    <table class="current-currency__table table">
+                      <thead>
+                        <tr  style="border-bottom: 1px solid #E4EAEE">
+                          <td class="secondary-text td-padding-default"  align="left" scope="col">Цифр. код / Букв. код</td>
+                          <td class="secondary-text td-padding-default"  align="left" scope="col">Единиц</td>
+                          <td class="secondary-text td-padding-default"  align="left" scope="col">Валюта</td>
+                          <td class="secondary-text td-padding-default"  align="right" scope="col">Курс</td>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr style="border-bottom: 1px solid #E4EAEE">
+                          <td class="weight-text td-padding-default">840 / USD</td>
+                          <td class="weight-text td-padding-default">1</td>
+                          <td class="weight-text td-padding-default">Доллар США</td>
+                          <td class="weight-text td-padding-default" align="right">78.6422</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid #E4EAEE">
+                          <td class="weight-text td-padding-default">978 / EUR</td>
+                          <td class="weight-text td-padding-default">1</td>
+                          <td class="weight-text td-padding-default">Евро</td>
+                          <td class="weight-text td-padding-default" align="right">90.882</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid #E4EAEE">
+                          <td class="weight-text td-padding-default">398 / KZT</td>
+                          <td class="weight-text td-padding-default">100</td>
+                          <td class="weight-text td-padding-default">Казахстанских тенге</td>
+                          <td class="weight-text td-padding-default" align="right">18.4681</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid #E4EAEE">
+                          <td class="weight-text td-padding-default">356 / INR</td>
+                          <td class="weight-text td-padding-default">1</td>
+                          <td class="weight-text td-padding-default">Индийских рупий</td>
+                          <td class="weight-text td-padding-default" align="right">10.738</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid #E4EAEE">
+                          <td class="weight-text td-padding-default">124 / CAD</td>
+                          <td class="weight-text td-padding-default">1</td>
+                          <td class="weight-text td-padding-default">Канадский доллар</td>
+                          <td class="weight-text td-padding-default" align="right">63.0938</td>
+                        </tr>
+                        <tr >
+                          <td class="weight-text td-padding-default">417 / KGS</td>
+                          <td class="weight-text td-padding-default">100</td>
+                          <td class="weight-text td-padding-default">Киргизских сомов</td>
+                          <td class="weight-text td-padding-default" align="right">94.8038</td>
+                        </tr>
+                        <tr >
+                          <td class="weight-text td-padding-default">417 / KGS</td>
+                          <td class="weight-text td-padding-default">100</td>
+                          <td class="weight-text td-padding-default">Киргизских сомов</td>
+                          <td class="weight-text td-padding-default" align="right">94.8038</td>
+                        </tr>
+                        <tr >
+                          <td class="weight-text td-padding-default">417 / KGS</td>
+                          <td class="weight-text td-padding-default">100</td>
+                          <td class="weight-text td-padding-default">Киргизских сомов</td>
+                          <td class="weight-text td-padding-default" align="right">94.8038</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
+        <div class="converter-container block__margin-bottom">
+          <div class="center-container">
+            <h2 class="converter-container-title">Конвертер валют по курсу Банка России</h2>
+            <div class="choices-container">
+              <div class="choices-container__left">
+                <select name="currency" id="currency">
+                  <option value="AUD">AUD</option>
+                  <option value="AZN">AZN</option>
+                  <option value="GBP">GBP</option>
+                  <option value="AMD">AMD</option>
+                  <option value="BYN">BYN</option>
+                  <option value="BGN">BGN</option>
+                  <option value="BRL">BRL</option>
+                  <option value="HUF">HUF</option>
+                  <option value="HKD">HKD</option>
+                  <option value="DKK">DKK</option>
+                  <option value="USD" selected>USD</option>
+                  <option value="EUR">EUR</option>
+                  <option value="INR">INR</option>
+                  <option value="KZT">KZT</option>
+                  <option value="CAD">CAD</option>
+                  <option value="KGS">KGS</option>
+                  <option value="CNY">CNY</option>
+                  <option value="MDL">MDL</option>
+                  <option value="NOK">NOK</option>
+                  <option value="PLN">PLN</option>
+                  <option value="RON">RON</option>
+                  <option value="XDR">XDR</option>
+                  <option value="SGD">SGD</option>
+                  <option value="TJS">TJS</option>
+                  <option value="TRY">TRY</option>
+                  <option value="TMT">TMT</option>
+                  <option value="UZS">UZS</option>
+                  <option value="UAH">UAH</option>
+                  <option value="CZK">CZK</option>
+                  <option value="SEK">SEK</option>
+                  <option value="CHF">CHF</option>
+                  <option value="ZAR">ZAR</option>
+                  <option value="KRW">KRW</option>
+                  <option value="JPY">JPY</option>
+  
+                </select>
+                <div class="currency__value currency__value-left">
+                  <input type="text" class="sum-of-change left-sum-change" id="sumOfChange" value="1000,00">
+                  <label for="sumOfChange" class="left-sum-label">1 USD = 77,91 RUB</label>
+                </div>
+              </div>
+              <button class="currency__change-btn">
+                <svg width="24px" height="40px" class="svg-change-btn-dims">
+                  <use xlink:href="img/icons/icons.svg#change-btn"></use>
+                </svg>
+              </button>
+              <div class="choices-container__right">
+                <select name="currency" id="currency-2">
+                  <option value="AUD">AUD</option>
+                  <option value="AZN">AZN</option>
+                  <option value="GBP">GBP</option>
+                  <option value="AMD">AMD</option>
+                  <option value="BYN">BYN</option>
+                  <option value="BGN">BGN</option>
+                  <option value="BRL">BRL</option>
+                  <option value="HUF">HUF</option>
+                  <option value="HKD">HKD</option>
+                  <option value="DKK">DKK</option>
+                  <option value="USD" >USD</option>
+                  <option value="EUR">EUR</option>
+                  <option value="INR">INR</option>
+                  <option value="KZT">KZT</option>
+                  <option value="CAD">CAD</option>
+                  <option value="KGS">KGS</option>
+                  <option value="CNY">CNY</option>
+                  <option value="MDL">MDL</option>
+                  <option value="NOK">NOK</option>
+                  <option value="PLN">PLN</option>
+                  <option value="RON">RON</option>
+                  <option value="XDR">XDR</option>
+                  <option value="SGD">SGD</option>
+                  <option value="TJS">TJS</option>
+                  <option value="TRY">TRY</option>
+                  <option value="TMT">TMT</option>
+                  <option value="UZS">UZS</option>
+                  <option value="UAH">UAH</option>
+                  <option value="CZK">CZK</option>
+                  <option value="SEK">SEK</option>
+                  <option value="CHF">CHF</option>
+                  <option value="ZAR">ZAR</option>
+                  <option value="KRW">KRW</option>
+                  <option value="JPY">JPY</option>
+                  <option value="RUB" selected >RUB</option>
+                </select>
+                <div class="currency__value currency__value-right">
+                  <input type="text" class="sum-of-change right-sum-change" id="sumOfChangeRub" value="1000,00">
+                  <label for="sumOfChange" class="right-sum-label">1 USD = 77,91 RUB</label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="primary-text">Информация в данном разделе подготовлена на основе материалов, содержащихся на сайте Банка России</p>
       </div>
     </section>
   </main>
   @@include('html/footer.html',{})
+
   <script src="js/app.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
     crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script>
+    $(function () {
+      $("#datepicker").datepicker({
+        showOn: "button",
+        buttonImage: "../img/icons/icons.svg#Calendar",
+        buttonImageOnly: true,
+        showOtherMonths: true,
+      selectOtherMonths: true,
+        // maxDate: "+0d",
+        yearRange: "2010:+0",
+        onSelect: function (dateText, inst) {
+          var date = $(this).datepicker('getDate')
+          date = jQuery.datepicker.formatDate('dd.mm.yy', date);
+          data = 'date=' + date + ',';
+          $.ajax({
+            type: "POST",
+            url: "ajax_calendar",
+            data: { "date": date, "id": 1795 },
+            success: function (content) {
+              var obj = jQuery.parseJSON(content);
+              $.each(obj, function (i, item) {
+                $('table#currency_rate_table [data-charcode="' + item.charcode + '"]').text(item.currency)
+              });
+            }
+          });
+        },
+      }).datepicker("setDate", new Date())
 
+      });
+      $.datepicker.regional['ru'] = {
+        closeText: 'Закрыть',
+        prevText: 'Предыдущий',
+        nextText: 'Следующий',
+        currentText: 'Сегодня',
+        monthNames: ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'],
+        monthNamesShort: ['Янв', 'Фев', 'Мар', 'Апр', 'Май', 'Июн', 'Июл', 'Авг', 'Сен', 'Окт', 'Ноя', 'Дек'],
+        dayNames: ['воскресенье', 'понедельник', 'вторник', 'среда', 'четверг', 'пятница', 'суббота'],
+        dayNamesShort: ['вск', 'пнд', 'втр', 'срд', 'чтв', 'птн', 'сбт'],
+        dayNamesMin: ['Вс', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'],
+        weekHeader: 'Не',
+        dateFormat: 'dd.mm.yy',
+        firstDay: 1,
+        isRTL: false,
+        showMonthAfterYear: false,
+        yearSuffix: ''
+      };
+      $.datepicker.setDefaults($.datepicker.regional['ru']);
+  </script>
 </body>
 
 </html>

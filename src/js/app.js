@@ -1,12 +1,13 @@
 import * as flsFunctions from "./modules/functions.js";
-import $, { type } from "jquery"
+import $ from "jquery"
+import  { datepicker}  from "jquery-widget"
 import { Inputmask } from "inputmask";
 import Swiper, { Navigation, Pagination } from 'swiper';
 import JustValidate from 'just-validate';
 import noUiSlider from 'nouislider';
 import wNumb from 'wnumb';
 import Choices from 'choices.js'
-// import { EnvironmentPlugin, EvalDevToolModulePlugin } from "webpack";
+
 
 //========== Инвестиционные идеи
 
@@ -16,7 +17,7 @@ $('.filter-menu__item').on('click', function (event) {
 });
 
 
-
+//==============Модальные окна
 
 function OpenModalWindow(el) {
   CloseModalWindow();
@@ -45,6 +46,10 @@ $('#mainConsultModalBtn').on('click', function (event) {
   event.preventDefault();
   OpenModalWindow($('.main-consult-modal'));
 })
+$('#modalCurrencyHistory').on('click', function (event) {
+  event.preventDefault();
+  OpenModalWindow($('.currency-history-modal'));
+})
 
 $(document).on('click', '.btn-close, .modal-bg', function () {
   CloseModalWindow();
@@ -52,7 +57,7 @@ $(document).on('click', '.btn-close, .modal-bg', function () {
 $(document).on('click', '.modal-window', function (e) {
   e.stopPropagation();
 });
-
+//================================================
 
 //============Сортировка списка идей
 $('#listSort ').on('click', function (event) {
@@ -82,31 +87,39 @@ const defaultSelect = (classNameEl) => {
   });
 
 }
+
 try {
   defaultSelect('currency')
 } catch (error) {
   console.log(error)
 }
 
-const countrySelect = document.querySelector('#currency-detail');
-const countryChoices = new Choices(countrySelect, {
-  searchEnabled: false,
-  position: 'bottom',
-  placeholder: true,
+try {
+  defaultSelect('currency-2')
+} catch (error) {
+  console.log(error)
+}
 
-  classNames: {
-    containerOuter: 'country-choices',
-    containerInner: "countries-wrapper",
-    list: "currency__list",
-    listDropdown: "countries-list-dropdown",
-    item: 'currency__item',
-    itemSelectable: 'currency__item--selectable',
-  }
-});
+try {
+  const countrySelect = document.querySelector('#currency-detail');
+  const countryChoices = new Choices(countrySelect, {
+    searchEnabled: false,
+    position: 'bottom',
+    placeholder: true,
+  
+    classNames: {
+      containerOuter: 'country-choices',
+      containerInner: "countries-wrapper",
+      list: "currency__list",
+      listDropdown: "countries-list-dropdown",
+      item: 'currency__item',
+      itemSelectable: 'currency__item--selectable',
+    }
+  });
+} catch (error) {
+  console.log(error)
+}
 
-const values = countryChoices.getValue(true)
-console.log(values)
-window.document.querySelector('.currency__item--selectable').textContent = values
 
 //=====================
 Swiper.use([Navigation, Pagination])

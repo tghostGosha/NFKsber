@@ -56,18 +56,33 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @media(max-width: 585px) {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .currency__value {
   display: flex;
   flex-direction: column;
+  margin-top: 40px;
+  @media(max-width: 1176px)  {
+    margin-top: 32px;
+  }
+  @media(max-width: 585px) {
+    margin: 0;
+  }
 }
 
 
 
 .choices {
+  width: 100%;
   max-width: 286px;
-  margin-bottom: 48px;
+  margin: 0;
+  @media(max-width: 1176px) {
+    max-width: 237px;
+  }
 }
 
 .choices[data-type*=select-one] .choices__inner {
@@ -77,9 +92,13 @@
 .choices__inner {
   border: 0;
   border-radius: 40px;
-  width: 286px;
-  background-color: var(--primary-grey);
+  width: 100%;
+  max-width: 286px;
+  background-color: var(--white);
   // padding: 18px 26px;
+  @media(max-width: 1176px) {
+    max-width: 237px;
+  }
 }
 
 .choices__list--dropdown,
@@ -114,7 +133,30 @@
   // right: 25.5px;
   // top: 27%;
 }
-
+.choices-container__right,
+.choices-container__left {
+  @media(max-width: 585px)  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.currency__value-left {
+  @media(max-width: 585px) {
+    margin-top: 16px;
+  }
+}
+.choices-container__right {
+  @media(max-width: 585px)  {
+    flex-direction: column-reverse;
+   
+  }
+}
+.currency__value-right {
+  @media(max-width: 585px) {
+    margin-bottom: 16px;
+  }
+}
 .choices__list--single {
   padding: 0;
 }
@@ -138,22 +180,48 @@
   font-weight: 600;
   font-size: 40px;
   line-height: 46px;
+  background-color: inherit;
+  margin-bottom: 8px;
+  @media(max-width: 585px) {
+    font-size: 28px;
+
+  }
 }
-.sum-of-change,
-.form-label {
+.left-sum-change,
+.left-sum-label {
   text-align: end;
   width: 100%;
   border: none;
   outline: none;
+  @media(max-width: 585px) {
+    text-align: center;
+  }
+}
+.right-sum-change,
+.right-sum-label {
+  text-align: start;
+  width: 100%;
+  border: none;
+  outline: none;
+  @media(max-width: 585px) {
+    text-align: center;
+  }
 }
 .currency__change-btn {
   margin: 0 15%;
-}
-.currency__change-btn {
   width: 24px;
   height: 40px;
   background-color: inherit;
+  @media(max-width: 1176px) {
+    margin: 0 10%;
+  }
+  @media(max-width: 585px) {
+    align-self: flex-end;
+    transform: rotate(90deg);
+    margin: 0 5%;
+  }
 }
+
 .currency__change-btn:hover .svg-change-btn-dims{
   color: var(--secondary-text);
 }

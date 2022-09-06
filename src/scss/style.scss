@@ -355,7 +355,7 @@ button {
 .text-link {
   color: var(--primary-green);
   transition: all 0.2s ease-in-out 0.2s;
-
+  background-color: inherit;
   @media(max-width: 585px) {
     font-size: 14px;
     line-height: 19px;
