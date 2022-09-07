@@ -4,10 +4,7 @@
 @import "../../node_modules/swiper/modules/navigation/navigation.scss";
 
 
-@import "fonts";
-@import "root";
-@import "buttons";
-@import "tooltips";
+
 @import "modal-window";
 @import "mixin";
 @import "breadcrumb.scss";
@@ -46,6 +43,10 @@
 @import "company/answer-questions.scss";
 @import "contacts/contacts.scss";
 @import "main";
+@import "fonts";
+@import "root";
+@import "buttons";
+@import "tooltips";
 
 
 
@@ -198,7 +199,7 @@ button {
   border: 0;
   cursor: pointer;
   transition: var(--animation-transition);
-  
+
 }
 
 .hide-on-385 {
@@ -262,7 +263,7 @@ button {
 
 .section-padding {
   padding-top: 68px;
-
+  padding-bottom: 136px;
   @media(max-width: 1176px) {
     padding-top: 56px;
     padding-bottom: 56px;
