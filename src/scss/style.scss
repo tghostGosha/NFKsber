@@ -5,6 +5,8 @@
 
 
 @import "fonts";
+@import "root";
+@import "buttons";
 @import "tooltips";
 @import "modal-window";
 @import "mixin";
@@ -13,8 +15,6 @@
 @import "header";
 @import "footer";
 @import "window-account";
-@import "hero";
-@import "popular-services";
 @import "ideas";
 @import "accordion";
 @import "small__banner";
@@ -45,34 +45,11 @@
 @import "company/forum.scss";
 @import "company/answer-questions.scss";
 @import "contacts/contacts.scss";
+@import "main";
 
 
 
-:root {
-  --primary-green: #44953D;
-  --secondary-green: #2D7A26;
-  --primary-grey: #F4F6F8;
-  --grey-button: #E4EAEE;
-  --grey-button-hover: #D8E1E8;
-  --white: #ffffff;
-  --primary-text: #1D252C;
-  --secondary-text: #6D7889;
-  --primary-blue: #428BF9;
-  --black: #091625; 
-  --app-button-black-color: #2C353D;
 
-  --mb-40: 40px;
-  --mb-24: 24px;
-  
-  @media(max-width: 1176px) {
-    --mb-40: 32px;
-  }
-
-  @media(max-width: 585px) {
-    --mb-40: 24px;
-    --mb-24: 16px;
-  }
-}
 
 body {
   font-family: Segoe UI;
@@ -116,6 +93,7 @@ a {
   color: #1D252C;
   outline: none;
   cursor: pointer;
+  transition: var(--animation-transition);
 }
 
 a:hover {
@@ -138,38 +116,47 @@ h4,
 h5 {
   font-family: Gilroy;
   margin: 0;
+  font-weight: 600;
 }
 
 h1 {
-  @include adaptiv-font(40, 24);
-  font-weight: 600;
-  line-height: 46px;
   margin-bottom: var(--mb-24);
 
+  @media(min-width: 1200px) {
+    line-height: 46px;
+    font-size: 40px;
+  }
+ 
   @media(max-width: 585px) {
     line-height: 40px;
+    font-size: 32px;
   }
 }
 
 h2 {
-  @include adaptiv-font(32, 24);
-  font-weight: 600;
-  line-height: 38px;
+  
   margin-bottom: var(--mb-40);
-
+  @media(min-width: 1200px) {
+    line-height: 46px;
+    font-size: 32px;
+    line-height: 38px;
+  }
   @media(max-width: 585px) {
     line-height: 34px;
+    font-size: 24px;
   }
 }
 
 h3 {
-  font-size: 24;
-  font-weight: 600;
-  line-height: 28px;
+  @media(min-width: 1200px) {
+    font-size: 24;
+    line-height: 28px;
+  }
   margin-bottom: var(--mb-24);
 
   @media(max-width: 1176px) {
     line-height: 28px;
+    font-size: 20px;
   }
 
   @media(max-width: 585px) {
@@ -189,8 +176,6 @@ h4 {
     line-height: 30px;
   }
 }
-
-
 
 ul,
 li {
@@ -212,66 +197,8 @@ button {
   text-align: center;
   border: 0;
   cursor: pointer;
-  transition: all 0.1s ease-in-out 0.1s;
-}
-.large__button-grey {
-  background-color: var(--grey-button);
-  color: var(--primary-text);
-  border-radius: 5px;
-  padding: 28px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 392px;
-  grid-column: span 4;
-
-  @media(max-width: 1176px) {
-    grid-column: span 6;
-  }
-
-  @media(max-width: 585px) {
-    grid-column: span 12;
-    padding: 16px 12px;
-  }
-}
-
-.large__button-svg {
-  margin: 0 0 0 93px !important;
-}
-
-.primary-button {
-  background-color: var(--primary-green);
-  color: var(--white);
-
-  @media(max-width: 585px) {
-    font-size: 14px;
-    line-height: 19px;
-  }
-}
-
-.primary-button:hover {
-  background-color: var(--secondary-green);
-  color: var(--white);
-}
-
-.grey-button {
-  display: inline-block;
-  background-color: var(--grey-button);
-  color: var(--primary-text);
-
-  @media(max-width: 585px) {
-    font-size: 14px;
-    line-height: 19px;
-  }
-}
-.grey-button:hover {
-  background-color: var(--grey-button-hover);
-}
-.black-button {
-  display: inline-block;
-  background-color: var(--primary-text);
-  color: var(--white);
-  border-radius: 5px;
+  transition: var(--animation-transition);
+  
 }
 
 .hide-on-385 {
@@ -300,9 +227,6 @@ button {
   background-position: right bottom;
 }
 
-.breadcrumb-margin-bottom {
-  margin-bottom: 56px;
-}
 
 .grid-container {
   display: grid;
@@ -327,6 +251,7 @@ button {
 
   @media(max-width: 1176px) {
     background: var(--white);
+    padding: 0;
   }
 }
 
@@ -349,25 +274,16 @@ button {
   }
 }
 
-.text-link {
-  color: var(--primary-green);
-  transition: all 0.1s ease-in-out 0.1s;
-  background-color: inherit;
-  @media(max-width: 585px) {
-    font-size: 14px;
-    line-height: 19px;
-  }
-}
-.important__description-link {
-  color: var(--primary-blue);
-  transition: all 0.1s ease-in-out 0.1s;
-}
+
+
 .primary-text-color {
   color: var(--primary-text);
 }
+
 .secondary-text-color {
   color: var(--secondary-text);
 }
+
 .primary-text {
   color: var(--primary-text);
   font-size: 14px;
@@ -421,7 +337,6 @@ button {
     height: 8px;
   }
 }
-
 
 .big__banner {
   background-color: var(--primary-grey);
@@ -504,8 +419,7 @@ button {
   display: flex;
   max-width: 750px;
   align-items: center;
-  transition: all 0.1s ease-in-out 0.1s;
-
+  transition: var(--animation-transition);
 }
 
 .get__file-link:hover .svg-pdf-dims,
@@ -533,89 +447,11 @@ button {
 }
 
 //========
-.news__company {
-  margin-bottom: var(--mb-40);
 
-  &-markets {
-    margin-bottom: var(--mb-40);
-  }
-
-  &-card {
-    grid-column: span 3;
-    transition: all 0.2s ease-in-out 0.2s;
-    padding: 10px;
-  }
-
-  &-card:hover,
-  &-card:focus {
-    background-color: var(--primary-grey);
-    border-radius: 10px;
-  }
-
-  &-container {
-    margin-bottom: var(--mb-40);
-
-    @media(max-width: 1176px) {
-      display: none;
-    }
-  }
-
-  &-text {
-    margin-top: 16px;
-  }
-}
-
-.mobile__app {
-  background-color: var(--primary-text);
-
-  @media(max-width: 1176px) {
-    margin-bottom: 0;
-  }
-
-  &-card {
-    background-color: inherit;
-
-    @media(max-width: 585px) {
-      grid-template-rows: 1fr 1fr;
-    }
-
-    &-left {
-      padding: 56px 18% 56px 0;
-
-      @media(max-width: 1176px) {
-        padding: 46px 2% 46px 0;
-      }
-
-      @media(max-width: 585px) {
-        padding: 40px 0 20px 0;
-      }
-    }
-
-    &-right {
-      padding-top: 25px;
-    }
-  }
-
-  &-title {
-    color: var(--primary-grey);
-    margin-bottom: var(--mb-24);
-
-  }
-
-  &-description {
-    color: var(--primary-grey);
-    margin-bottom: var(--mb-40);
-  }
-
-  &-buttons {
-    display: flex;
-  }
-}
 .svg-google-play,
 .svg-app-store {
   width: 100%;
   max-width: 168px;
-  // height: 100%;
   max-height: 46px;
   @media(max-width: 585px) {
     max-width: 156px;
@@ -625,13 +461,13 @@ button {
 .svg-google-play rect,
 .svg-app-store rect {
   fill: var(--white);
-  transition: all 0.2s ease 0.1s;
+  transition: var(--animation-transition);
 }
 
 .svg-google-play path,
 .svg-app-store path {
   fill: var(--primary-text);
-  transition: all 0.2s ease 0.1s;
+  transition: var(--animation-transition);
 }
 
 .svg-google-play:hover rect,
@@ -643,29 +479,6 @@ button {
 .svg-app-store:hover path {
   fill: var(--white);
 }
-.depositiry__transactions {
-  @media(max-width: 1176px) {
-    display: none;
-  }
-}
-.answer__questions {
-  padding-bottom: 112px;
 
-  @media(max-width: 1176px) {
-    display: none;
-  }
 
-  &-btn {
-    display: flex;
-    height: 128px;
-    padding: 0 28px 0 24px;
-    justify-content: space-between;
-    align-items: center;
-    grid-column: span 4;
-  }
-
-  &-arrow-svg {
-    margin-left: 53px;
-  }
-}
 

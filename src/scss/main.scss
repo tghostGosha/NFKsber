@@ -1,0 +1,178 @@
+.hero-swiper {
+  overflow: hidden;
+  position: relative;
+}
+
+.swiper-slide {
+  padding: 88px 70% 122px 0;
+  background-image: var(--desktop-image-banner-top);
+  background-size: 42%;
+
+  @media(max-width: 1176px) {
+    background-size: 51%;
+    padding: 50px 53% 76px 0;
+  }
+
+  @media(max-width: 585px) {
+    padding: 40px 12% 76px 0;
+    background-size: 58%;
+    background-position: 110% 100%;
+  }
+
+}
+
+.slide-title {
+  margin-bottom: var(--mb-24);
+
+}
+
+.slide-description {
+  margin-bottom: 89px;
+
+  @media(max-width: 1176px) {
+    margin-bottom: 56px;
+  }
+
+  @media(max-width: 585px) {
+    padding-right: 43px;
+    margin-bottom: 48px;
+  }
+}
+
+.slide-btn {
+  padding: 16px 32px;
+
+  @media(max-width: 1176px) {
+    padding: 14px 32px;
+  }
+
+  @media(max-width: 585px) {
+    padding: 12px 28px;
+  }
+}
+
+
+.swiper-pagination {
+  position: absolute;
+  text-align: start;
+  left: 17px !important;
+  bottom: 20px !important;
+  transition: 0.3s opacity;
+  transform: translate3d(0, 0, 0);
+  z-index: 10;
+}
+
+.swiper-pagination-bullet {
+  width: 14px;
+  height: 14px;
+  border: 1px solid var(--secondary-text);
+  background-color: inherit;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--primary-text);
+}
+
+.news__company {
+  margin-bottom: var(--mb-40);
+
+  &-markets {
+    margin-bottom: var(--mb-40);
+  }
+
+  &-card {
+    grid-column: span 3;
+    transition: var(--animation-transition);
+    padding: 10px;
+  }
+
+  &-card:hover,
+  &-card:focus {
+    background-color: var(--primary-grey);
+    border-radius: 10px;
+  }
+
+  &-container {
+    margin-bottom: var(--mb-40);
+
+    @media(max-width: 1176px) {
+      display: none;
+    }
+  }
+
+  &-text {
+    margin-top: 16px;
+  }
+}
+
+.mobile__app {
+  background-color: var(--primary-text);
+
+  @media(max-width: 1176px) {
+    margin-bottom: 0 !important;
+  }
+  
+  &-card {
+    background-color: inherit;
+
+    @media(max-width: 585px) {
+      grid-template-rows: 1fr 1fr;
+    }
+
+    &-left {
+      padding: 56px 18% 56px 0;
+
+      @media(max-width: 1176px) {
+        padding: 46px 2% 46px 0;
+      }
+
+      @media(max-width: 585px) {
+        padding: 40px 0 20px 0;
+      }
+    }
+
+    &-right {
+      padding-top: 25px;
+    }
+  }
+
+  &-title {
+    color: var(--primary-grey);
+    margin-bottom: var(--mb-24);
+  }
+
+  &-description {
+    color: var(--primary-grey);
+    margin-bottom: var(--mb-40);
+  }
+
+  &-buttons {
+    display: flex;
+  }
+}
+.depositiry__transactions {
+  @media(max-width: 1176px) {
+    display: none;
+  }
+}
+.answer__questions {
+  padding-bottom: 112px;
+
+  @media(max-width: 1176px) {
+    display: none;
+  }
+
+  &-btn {
+    display: flex;
+    height: 128px;
+    padding: 0 28px 0 24px;
+    justify-content: space-between;
+    align-items: center;
+    grid-column: span 4;
+  }
+
+  &-arrow-svg {
+    margin-left: 53px;
+  }
+}

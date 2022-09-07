@@ -22,7 +22,7 @@
   padding: 40px 40px 0 40px;
   background-color: var(--primary-grey);
   border-radius: 10px;
-  transition: all 0.2s ease-out 0.2s;
+  transition: var(--animation-transition);
   cursor: pointer;
   overflow: hidden;
 

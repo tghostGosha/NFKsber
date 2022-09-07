@@ -1,0 +1,27 @@
+:root {
+  --primary-green: #44953D;
+  --secondary-green: #2D7A26;
+  --primary-grey: #F4F6F8;
+  --grey-button: #E4EAEE;
+  --grey-button-hover: #D8E1E8;
+  --white: #ffffff;
+  --primary-text: #1D252C;
+  --secondary-text: #6D7889;
+  --primary-blue: #428BF9;
+  --black: #091625; 
+  --app-button-black-color: #2C353D;
+
+  --mb-40: 40px;
+  --mb-24: 24px;
+  
+  --animation-transition: all 0.2s ease-in-out 0.1s;
+
+  @media(max-width: 1176px) {
+    --mb-40: 32px;
+  }
+
+  @media(max-width: 585px) {
+    --mb-40: 24px;
+    --mb-24: 16px;
+  }
+}
