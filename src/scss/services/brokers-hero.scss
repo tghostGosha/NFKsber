@@ -166,8 +166,9 @@
   margin-right: 24px;
 
   @media(max-width: 585px) {
-    width: 156px;
-    height: 46px;
+    // width: 100%;
+    // max-width: 156px;
+    // height: 46px;
     margin-right: 16px;
   }
 }
