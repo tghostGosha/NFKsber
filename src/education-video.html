@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html',{
+"title": "Главная"
+})
+
+<body>
+
+  @@include('html/header.html',{})
+  <main>
+    <section class="education__hero">
+      <div class="container">
+        <nav aria-label="breadcrumb" class="breadcrumb-margin-bottom">
+          <ul class="breadcrumb">
+            <li class="page-item-mobile">
+              <svg width="20px" height="20px" class="svg-arrow-right-dims">
+                <use xlink:href="img/icons/icons.svg#arrow-left"></use>
+              </svg>
+            </li>
+            <li class="breadcrumb-item "><a class="breadcrumb-link" href="index.html">Главная</a></li>
+            <li class="breadcrumb-item hide-on-mobile">
+              <svg width="20px" height="20px" class="svg-arrow-right-dims breadcrumb-svg">
+                <use xlink:href="img/icons/icons.svg#arrow-right"></use>
+              </svg>
+            </li>
+            <li class="breadcrumb-item hide-on-mobile"><a class="breadcrumb-link" href="#">Обучение</a></li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+    <section class="education__video-section">
+      <div class="container">
+        <h1 style="display: none;"></h1>
+
+        <div class="education__video-wrapper grid-container">
+          <div class="education__video-container">
+            <h3>Как не попасть в руки мошенников и не потерять свои сбережения?</h3>
+            <div class="video-container">
+              <iframe class="video" src="https://www.youtube.com/embed/ZC6MPG5wxxk" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="news__wrapper-tab" id="tabs">
+            <ul class="nav nav-pills news__nav" id="myTab" role="tablist">
+              <li class="news__nav-item" role="presentation">
+                <button class="news__nav-link active" id="marketNews-tab" data-bs-toggle="tab"
+                  data-bs-target="#marketNews" type="button" role="tab" aria-controls="marketNews"
+                  aria-selected="true">Новости</button>
+              </li>
+              <li class="news__nav-item" role="presentation">
+                <button class="news__nav-link" id="companyNews-tab" data-bs-toggle="tab" data-bs-target="#companyNews"
+                  type="button" role="tab" aria-controls="companyNews" aria-selected="false">Компания</button>
+              </li>
+              <li class="news__nav-item" role="presentation">
+                <button class="news__nav-link" id="analysisNews-tab" data-bs-toggle="tab" data-bs-target="#analysisNews"
+                  type="button" role="tab" aria-controls="analysisNews" aria-selected="false">Анализ</button>
+              </li>
+
+            </ul>
+            <div class="news__tab-content">
+              <div class="tab-pane active" id="marketNews" role="tabpanel" tabindex="0"
+                aria-labelledby="marketNews-tab">
+                <ul class="news__tab-pane ">
+                  <li class="news__tab-item">
+                    <a class="news__tab-link" href="#">
+                      <p class="news__tab-link-title">ЦБ 24 января купил валюту на 23,5 млрд рублей – меньше на 35,8%
+                      </p>
+                      <span class="news__tab-link-date">26.01.2022</span>
+                    </a>
+                  </li>
+                  <li class="news__tab-item">
+                    <a class="news__tab-link" href="#">
+                      <p class="news__tab-link-title">Berkshire проведет "Вудсток для капиталистов" очно впервые с 2019
+                        года</p>
+                      <span class="news__tab-link-date">26.01.2022</span>
+                    </a>
+                  </li>
+                  <li class="news__tab-item">
+                    <a class="news__tab-link" href="#">
+                      <p class="news__tab-link-title">ФАС согласовала ходатайство УГМК о приобретении 100% акций
+                        золотодобытчика "Высочайший"</p>
+                      <span class="news__tab-link-date">26.01.2022</span>
+                    </a>
+                  </li>
+                </ul>
+                <a href="#" class="news__text-link">
+                  <span>Все новости рынка</span>
+                  <svg class="news__text-link-svg" xmlns="http://www.w3.org/2000/svg">
+                    <use xlink:href="img/icons/icons.svg#arrow-right"></use>
+                  </svg>
+                </a>
+              </div>
+              <div class="tab-pane" id="companyNews" role="tabpanel" tabindex="0" aria-labelledby="companyNews-tab">
+                <ul class="news__tab-pane ">
+                  <li class="news__tab-item">
+                    <a class="news__tab-link" href="#">
+                      <p class="news__tab-link-title">ЦБ 24 января купил валюту на 23,5 млрд рублей – меньше на 35,8%
+                      </p>
+                      <span class="news__tab-link-date">26.01.2022</span>
+                    </a>
+                  </li>
+                  <li class="news__tab-item">
+                    <a class="news__tab-link" href="#">
+                      <p class="news__tab-link-title">Berkshire проведет "Вудсток для капиталистов" очно впервые с 2019
+                        года</p>
+                      <span class="news__tab-link-date">26.01.2022</span>
+                    </a>
+                  </li>
+                  <li class="news__tab-item">
+                    <a class="news__tab-link" href="#">
+                      <p class="news__tab-link-title">ФАС согласовала ходатайство УГМК о приобретении 100% акций
+                        золотодобытчика "Высочайший"</p>
+                      <span class="news__tab-link-date">26.01.2022</span>
+                    </a>
+                  </li>
+                </ul>
+                <a href="#" class="news__text-link">Все новости компании
+                  <svg class="news__text-link-svg" xmlns="http://www.w3.org/2000/svg">
+                    <use xlink:href="img/icons/icons.svg#arrow-right"></use>
+                  </svg>
+                </a>
+              </div>
+              <div class="tab-pane" id="analysisNews" role="tabpanel" tabindex="0" aria-labelledby="analysisNews-tab">
+                <ul class="news__tab-pane ">
+                  <li class="news__tab-item">
+                    <a class="news__tab-link" href="#">
+                      <p class="news__tab-link-title">ЦБ 24 января купил валюту на 23,5 млрд рублей – меньше на 35,8%
+                      </p>
+                      <span class="news__tab-link-date">26.01.2022</span>
+                    </a>
+                  </li>
+                  <li class="news__tab-item">
+                    <a class="news__tab-link" href="#">
+                      <p class="news__tab-link-title">Berkshire проведет "Вудсток для капиталистов" очно впервые с 2019
+                        года</p>
+                      <span class="news__tab-link-date">26.01.2022</span>
+                    </a>
+                  </li>
+                  <li class="news__tab-item">
+                    <a class="news__tab-link" href="#">
+                      <p class="news__tab-link-title">ФАС согласовала ходатайство УГМК о приобретении 100% акций
+                        золотодобытчика "Высочайший"</p>
+                      <span class="news__tab-link-date">26.01.2022</span>
+                    </a>
+                  </li>
+                </ul>
+                <a href="#" class="news__text-link">Все аналитические статьи
+                  <svg class="news__text-link-svg" xmlns="http://www.w3.org/2000/svg">
+                    <use xlink:href="img/icons/icons.svg#arrow-right"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="video-description block__margin-bottom">
+          <h3>Ошибки инвесторов</h3>
+          <p>В данном видео рассматриваются самые распространенные ошибки, которые совершают начинающие инвесторы при
+            торговле на фондовом рынке. Посмотрите и узнайте, в чем именно они заключаются, и как не допускать
+            подобных ошибок в процессе своей инвестиционной деятельности.
+          </p>
+          <p>Помните, инвестиции на фондовом рынке сопряжены с высоким уровнем риска. Ваш инвестиционный портфель
+            должен быть сформирован на принципах доходности, ликвидности и хорошо диверсифицирован. Поэтому Вам
+            необходимо владеть соответствующими знаниями и навыками.
+          </p>
+          <p>Если Вы не обладаете достаточным опытом, воспользуйтесь профессиональными услугами АО «НФК-Сбережения».
+            Мы поможем Вам определиться со стратегией инвестирования, подберем максимально соответствующие Вашим целям
+            финансовые инструменты и предоставим необходимую аналитическую информацию!
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+  @@include('html/footer.html',{})
+  <script defer src="//code.jquery.com/jquery-1.12.4.js"></script>
+  <script defer src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
+  <script defer src="js/app.min.js"></script>
+</body>
+
+</html>

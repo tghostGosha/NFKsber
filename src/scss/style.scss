@@ -26,6 +26,7 @@
 @import "services/investor-status.scss";
 @import "services/individual-account.scss";
 @import "rates/rates.scss";
+@import "education/education.scss";
 @import "services/transactions-repo.scss";
 @import "services/currency-market.scss";
 @import "analytics/market-news.scss";
@@ -150,7 +151,7 @@ h2 {
 
 h3 {
   @media(min-width: 1200px) {
-    font-size: 24;
+    font-size: 24px;
     line-height: 28px;
   }
   margin-bottom: var(--mb-24);

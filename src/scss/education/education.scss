@@ -1,0 +1,133 @@
+.education__hero {
+  &-container {
+    background-image: var(--desktop-image-banner-top);
+    padding: 0 62% 79px 0;
+
+    @media(max-width: 1176px) {
+      padding: 0 9% 85px 0;
+      background-size: 53%;
+    }
+
+    @media(max-width: 585px) {
+      padding: 0 1% 157px 0;
+      background-size: 58%;
+    }
+  }
+
+  &-title {
+    margin-bottom: var(--mb-24);
+    // @media(max-width: 1176px) {
+    //   font-size: 36px;
+    //   line-height: 42px;
+    // }
+
+    // @media(max-width: 585px) {
+    //   font-size: 28px;
+    //   line-height: 32px;
+    // }
+  }
+
+  &-description {
+    margin-bottom: 94px;
+
+    @media(max-width: 1176px) {
+      margin-bottom: 42px;
+      padding-right: 46%;
+    }
+
+    @media(max-width: 585px) {
+      padding: 0;
+      margin-bottom: 32px;
+      line-height: 22px;
+    }
+  }
+
+}
+
+.education__banner {
+  @media(max-width: 585px) {
+    grid-template-rows: 1fr 0.8fr;
+  }
+
+  &-description {
+    margin-bottom: var(--mb-40);
+  }
+
+  &-btn {
+    padding: 18px 26px;
+
+    @media(max-width: 585px) {
+      padding: 12px 14px;
+    }
+  }
+}
+
+.education__materials {
+
+  &-item {
+    grid-column: span 4;
+
+    @media(max-width: 1176px) {
+      grid-column: span 6;
+    }
+
+    @media(max-width: 585px) {
+      grid-column: span 12;
+    }
+  }
+}
+
+.education__videos {
+  &-item {
+    grid-column: span 4;
+
+    @media(max-width: 1176px) {
+      grid-column: span 6;
+    }
+
+    @media(max-width: 585px) {
+      grid-column: span 12;
+    }
+  }
+}
+
+.video {
+  border-radius: 10px;
+  width: 100%;
+  height: 460px;
+}
+
+.video-item-container {
+  border-radius: 10px;
+  margin-bottom: var(--mb-24);
+}
+
+//============Страница  обучением видео=====
+.education__video-container {
+  grid-column: 1/ span 8;
+
+  @media(max-width: 1176px) {
+    grid-column: 1/ span 12;
+  }
+}
+
+.education__video-section {
+  padding-bottom: 112px;
+}
+
+.education__video-wrapper {
+  margin-bottom: var(--mb-40);
+}
+
+.video-container {
+  border-radius: 10px;
+}
+
+.video-description p:not(:last-child) {
+  margin-bottom: var(--mb-24);
+}
+
+.video-description {
+  width: 100%;
+  max-width: 816px;
+}
