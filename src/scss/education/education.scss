@@ -113,6 +113,9 @@
 
 .education__video-section {
   padding-bottom: 112px;
+  @media(max-width: 1176px) {
+    padding-bottom: 0;
+  }
 }
 
 .education__video-wrapper {
@@ -131,3 +134,42 @@
   width: 100%;
   max-width: 816px;
 }
+
+
+.useful__materials {
+  padding-top: 68px;
+  border-top: 1px solid var(--primary-grey);
+  @media(max-width: 1176px) {
+    padding-top: 56px;
+  }
+  @media(max-width: 585px) {
+    padding-top: 48px;
+  }
+   &-title {
+    margin-bottom: var(--mb-40);
+   }
+}
+ 
+.navigation__buttons-container {
+  width: 100%;
+  max-width: 816px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.svg-navigation__buttons-dims{
+  color: var(--primary-text);
+ }
+
+ .svg-navigation-left {
+  margin-right: 14px;
+  @media(max-width: 585px) {
+    margin-right: 8px;
+  }
+ }
+ .svg-navigation-right {
+  margin-left: 14px;
+  @media(max-width: 585px) {
+    margin-left: 8px;
+  }
+ }

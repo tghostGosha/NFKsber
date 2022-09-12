@@ -85,6 +85,13 @@
     grid-column: span 3;
     transition: var(--animation-transition);
     padding: 10px;
+    @media(max-width: 1176px)  {
+      grid-column: span 4;
+    }
+    @media(max-width: 585px) {
+      grid-column: span 12;
+      padding: 5px 0;
+    }
   }
 
   &-card:hover,

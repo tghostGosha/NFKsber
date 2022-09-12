@@ -1,85 +1,103 @@
 .about__hero {
-  background-color: var(--primary-grey);
-  
 
   &-container {
-    background-image: url('../img/company/logo-about.png');
-    padding: 46px 52% 247px 0;
-    background-repeat: no-repeat;
-    background-position: right bottom;
-    
+    background-image:  var(--desktop-image-banner-top);
+    padding: 46px 56% 181px 0;
+    @media(max-width: 1176px) {
+      padding: 32px 56% 154px 0;
+    }
+    @media(max-width: 585px)  {
+      padding: 24px 2% 228px 0;
+      background-size: 67%;
+    }
   }
 
   &-title {
-    margin-bottom: 24px;
+    margin-bottom: var(--mb-24);
   }
-
 }
 
 .about__info {
-  padding-top: 67px;
-
-
+  padding-top: 68px;
+  padding-bottom: 68px;
+  @media(max-width: 585px)  {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
   &-card {
-    display: grid;
-    margin-bottom: 50px;
-    grid-template-columns: repeat(12, 1fr);
-    column-gap: 32px;
-    background-color: var(--primary-grey);
-    border-radius: 10px;
-
+    @media(max-width: 585px) {
+      row-gap: 0;
+      grid-template-rows: 1fr 0.6fr;
+    }
     &-left {
-      padding: 0 10px 0 40px;
-      grid-column: 1/span 6;
-      position: relative;
+      padding: 34px 10px 0 40px;
+      @media(max-width: 585px) {
+        grid-row: 2/ span 1;
+        grid-column: 3/ span 9;
+        padding: 0;
+      }
     }
 
     &-right {
       padding: 40px 46px 40px 0;
-      grid-column: 7/span 6;
+      @media(max-width: 585px) {
+        grid-row: 1/ span 1;
+        grid-column: 1/ span 12;
+        padding: 24px 12px 0 12px;
+      }
     }
   }
-
-  &-img {
-    display: block;
-    margin: 0 auto;
-    position: absolute;
-    bottom: 0;
-  }
-
 }
 
 .stocks__container {
-  display: grid;
-  margin-bottom: 68px;
-  grid-template-columns: repeat(12, 1fr);
-  column-gap: 32px;
-  row-gap: 68px;
-
+  row-gap: 68px ;
+  @media(max-width: 1176px) {
+    row-gap: 56px ;
+  }
+  @media(max-width: 585px) {
+    row-gap: 24px ;
+  }
   &-title {
     grid-column: 1/ span 8;
+    margin: 0;
+    @media(max-width: 1176px) {
+      grid-column: 1/ span 12;
+    }
   }
 
   &-description {
     grid-column: 1/ span 8;
     grid-row: 3/ span 1;
+    margin: 0;
+    @media(max-width: 1176px) {
+      grid-column: 1/ span 12;
+    }
+    @media(max-width: 585px)  {
+      grid-row: 4/ span 1;
+    }
   }
-
 }
 
 .moex {
   grid-column: 1/ span 6;
   grid-row: 2/ span 1;
+  @media(max-width: 585px)  {
+    grid-column: 1/ span 12;
+  }
 }
 
 .spb-stock {
   grid-column: 7/ span 6;
   grid-row: 2/ span 1;
+  @media(max-width: 585px)  {
+    grid-column: 1/ span 12;
+    grid-row: 3/ span 1;
+  }
 }
 
 .stocks-card {
   &-title {
-    margin-top: 40px;
+   padding-right: 7%;
   }
 
   &-img {
@@ -92,98 +110,88 @@
 .stocks-card-header {
   height: 143px;
   display: flex;
+  margin-bottom: var(--mb-40);
 }
 
 .about__license {
   &-title {
-    margin-bottom: 40px;
+    margin-bottom: var(--mb-40);
   }
 
   &-container {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    margin-bottom: 68px;
+    column-gap: 32px;
+    row-gap: 24px;
   }
 
   &-card {
+    width: 100%;
     max-width: 604px;
     padding: 40px 74px 40px 46px;
     background-color: var(--primary-grey);
     border-radius: 10px;
-
-    &-text {}
+    @media(max-width: 1176px) {
+      max-width: 100%;
+      padding: 24px;
+    }
+    @media(max-width: 585px) {
+      padding: 24px 16px;
+    }
   }
 
-  &-card:nth-child(odd) {
-    margin-right: 32px;
-  }
-
-  &-card:nth-child(1) {
-    margin-bottom: 28px;
-  }
-
-  &-card:nth-child(2) {
-    margin-bottom: 28px;
-  }
 }
 
 .why__us {
-  padding-top: 80px;
-  padding-bottom: 68px;
-
   &-answer {
     display: flex;
+    width: 100%;
     flex-wrap: wrap;
     flex-direction: column;
     max-height: 333px;
     max-width: 604px;
-
+    column-gap: 32px;
+    row-gap: 24px;
+    @media(max-width: 1176px) {
+      max-height: 100%;
+      flex-wrap: nowrap;
+      max-width: 100%;
+    }
   }
-}
-
-.answer-description-first {
-  margin-bottom: 24px;
-
-}
-
-.answer-description:last-child {
-  margin-left: 32px;
 }
 
 .about__director {
   background-color: var(--primary-grey);
-
   &-card {
-    display: grid;
-    margin-bottom: 50px;
-    grid-template-columns: repeat(12, 1fr);
-    column-gap: 32px;
-    background-color: var(--primary-grey);
-    border-radius: 10px;
-
+    @media(max-width: 585px) {
+      grid-template-rows: 1fr 0.6fr;
+      row-gap: 0;
+    }
     &-left {
       padding: 0 10px 0 40px;
-      grid-column: 1/span 6;
-      position: relative;
+      @media(max-width: 1176px) {
+        grid-column: 1/ span 5;
+        padding: 0;
+      }
+      @media(max-width: 585px) {
+        grid-column: 3/ span 9;
+        grid-row: 2/span 1;
+      }
     }
 
     &-right {
       padding: 68px 0;
-      grid-column: 7/span 6;
+      @media(max-width: 1176px) {
+        padding: 24px 22px 24px 0;
+        grid-column: 6/ span 7;
+      }
+      @media(max-width: 585px) {
+        padding: 24px 12px 0 12px;
+        grid-column: 1/ span 12;
+        grid-row: 1/span 1;
+      }
     }
-  }
-
-  &-img {
-    display: block;
-    margin: 0 auto;
-    position: absolute;
-    bottom: 0;
-  }
-
-  &-title {
-    margin-bottom: 24px;
-
   }
 
   &-post {
@@ -191,38 +199,37 @@
     font-weight: 700;
     font-size: 16px;
     line-height: 22px;
-    margin-bottom: 24px;
-
+    margin-bottom: var(--mb-24);
   }
 
   &-bio {
-    margin-bottom: 40px;
+    margin-bottom: var(--mb-40);
   }
 
   &-btn {
     padding: 18px 26px;
+    @media(max-width: 1176px) {
+      padding: 18px 51px;
+    }
+    @media(max-width: 585px) {
+      padding: 12px 14px;
+    }
   }
 }
-
-
-
-
+.news__company-wrapper {
+  margin-bottom: var(--mb-40);
+}
 .investor__info {
-  padding-top: 44px;
   padding-bottom: 112px;
-
-  &-footnote {
-    color: var(--secondary-text);
-    font-size: 14px;
-    line-height: 19px;
-    margin-top: 68px;
+  @media(max-width: 1176px) {
+    padding-bottom: 0;
+  }
+  &-list {
+    margin-bottom: var(--mb-40);
   }
 }
 
 .investor__info-file:not(:last-child) {
-  margin-bottom: 48px;
+  margin-bottom: var(--mb-40);
 }
 
-.investor__info-file:last-child {
-  margin-bottom: 40px;
-}

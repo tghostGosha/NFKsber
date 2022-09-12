@@ -11,11 +11,14 @@
   transition: var(--animation-transition);
   @media(max-width: 1176px) {
     grid-column: span 6;
+    padding: 16px 12px;
+    font-size: 14px;
+        line-height: 19px;
   }
 
   @media(max-width: 585px) {
     grid-column: span 12;
-    padding: 16px 12px;
+    // padding: 16px 12px;
   }
 }
 .large__button-grey:hover {
@@ -44,6 +47,7 @@
   display: inline-block;
   background-color: var(--grey-button);
   color: var(--primary-text);
+  border-radius: 5px;
 
   @media(max-width: 585px) {
     font-size: 14px;
@@ -61,6 +65,7 @@
 }
 
 .text-link {
+  display: inline-block;
   color: var(--primary-green);
   background-color: inherit;
   @media(max-width: 585px) {
@@ -71,3 +76,12 @@
 .important__description-link {
   color: var(--primary-blue);
 }
+
+.black-color-link:hover,
+.black-color-link:hover svg{
+  color: var(--secondary-text);
+}
+// .black-color-link {
+//   align-items: center;
+//   display: flex;
+// }

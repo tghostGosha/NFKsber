@@ -2,29 +2,25 @@
   &-hero {
     padding-top: 30px;
     padding-bottom: 112px;
-  }
-
-  &-title {
-    margin-bottom: 68px;
-  }
-  &-wrapper {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    column-gap: 32px;
-    
+    @media(max-width: 1176px) {
+      padding-bottom: 0;
+    }
   }
 }
+
 .electronic__wrapper-files {
   display: flex;
   flex-direction: column;
   grid-column: 1/ span 8;
+  @media(max-width: 1176px) {
+    grid-column: 1/ span 12;
+  }
   &-title {
     margin-bottom: var(--mb-40);
   }
-   &-description {
-    margin-bottom: 68px;
-   }
+  
 }
+
 .electronic-svg-arrow {
   width: 10px;
   height: 20px;

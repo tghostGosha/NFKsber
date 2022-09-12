@@ -6,6 +6,7 @@
 
 
 @import "modal-window";
+@import "display";
 @import "mixin";
 @import "breadcrumb.scss";
 @import "nouislider.min.scss";
@@ -96,6 +97,11 @@ a {
   outline: none;
   cursor: pointer;
   transition: var(--animation-transition);
+
+  @media(max-width: 585px) {
+    font-size: 14px;
+    line-height: 19px;
+  }
 }
 
 a:hover {
@@ -128,7 +134,7 @@ h1 {
     line-height: 46px;
     font-size: 40px;
   }
- 
+
   @media(max-width: 585px) {
     line-height: 40px;
     font-size: 32px;
@@ -136,13 +142,15 @@ h1 {
 }
 
 h2 {
-  
+
   margin-bottom: var(--mb-40);
+
   @media(min-width: 1200px) {
     line-height: 46px;
     font-size: 32px;
     line-height: 38px;
   }
+
   @media(max-width: 585px) {
     line-height: 34px;
     font-size: 24px;
@@ -154,6 +162,7 @@ h3 {
     font-size: 24px;
     line-height: 28px;
   }
+
   margin-bottom: var(--mb-24);
 
   @media(max-width: 1176px) {
@@ -192,6 +201,10 @@ img {
   max-height: 100%;
 }
 
+svg {
+  transition: var(--animation-transition);
+}
+
 button {
   outline: 0;
   padding: 0;
@@ -201,6 +214,11 @@ button {
   cursor: pointer;
   transition: var(--animation-transition);
 
+  @media(max-width: 585px) {
+    font-size: 14px;
+    line-height: 19px;
+  }
+
 }
 
 .hide-on-385 {
@@ -208,6 +226,7 @@ button {
     display: none;
   }
 }
+
 .block__margin-bottom {
   margin-bottom: 68px;
 
@@ -219,6 +238,7 @@ button {
     margin-bottom: 48px;
   }
 }
+
 .span__margin-bottom {
   margin-bottom: 8px;
   display: inline-block;
@@ -227,53 +247,6 @@ button {
 .background-style-global {
   background-repeat: no-repeat;
   background-position: right bottom;
-}
-
-
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  column-gap: 32px;
-  row-gap: 28px;
-
-  @media(max-width: 1176px) {
-    column-gap: 16px;
-    row-gap: 32px;
-  }
-
-  @media(max-width: 585px) {
-    column-gap: 12px;
-    row-gap: 24px;
-  }
-}
-
-.section-with-gradient {
-  padding-bottom: 112px;
-  background: linear-gradient(180deg, var(--primary-grey) 0%, rgba(244, 246, 248, 0) 100%);
-
-  @media(max-width: 1176px) {
-    background: var(--white);
-    padding: 0;
-  }
-}
-
-.padding-large {
-  padding-top: 28px !important;
-  padding-bottom: 28px !important;
-}
-
-.section-padding {
-  padding-top: 68px;
-  padding-bottom: 136px;
-  @media(max-width: 1176px) {
-    padding-top: 56px;
-    padding-bottom: 56px;
-  }
-
-  @media(max-width: 585px) {
-    padding-top: 48px;
-    padding-bottom: 48px;
-  }
 }
 
 
@@ -296,6 +269,11 @@ button {
   color: var(--primary-text);
   font-size: 16px;
   line-height: 22px;
+
+  @media(max-width: 585px) {
+    font-size: 14px;
+    line-height: 19px;
+  }
 }
 
 .secondary-text {
@@ -455,6 +433,7 @@ button {
   width: 100%;
   max-width: 168px;
   max-height: 46px;
+
   @media(max-width: 585px) {
     max-width: 156px;
   }
@@ -481,6 +460,3 @@ button {
 .svg-app-store:hover path {
   fill: var(--white);
 }
-
-
-
