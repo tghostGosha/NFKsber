@@ -1,40 +1,36 @@
 .forum {
 
   &-hero {
-    padding-top: 30px;
     padding-bottom: 86px;
-  }
-
-  &-title {
-    margin-bottom: 68px;
-  }
-
-  &__wrapper {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    column-gap: 32px;
-
+    @media(max-width: 1176px) {
+      padding-bottom: 0;
+    }
   }
 
   &__wrapper-cards {
     grid-column: 1/ span 8;
+    @media(max-width: 1176px) {
+      grid-column: 1/ span 12;
+    }
+  }
+
+  &__wrapper-cards > p {
+    margin-bottom: var(--mb-40);
   }
 
   &__list {
-    display: grid;
     grid-template-columns: repeat(8, 1fr);
-    column-gap: 32px;
-    row-gap: 28px;
   }
 
   &__list-item {
     grid-column: span 4;
+    @media(max-width: 585px) {
+      grid-column: span 8;
+    }
   }
 }
 
 .forum__card {
-
-  margin-top: 40px;
   border-radius: 10px;
   border: 1px solid var(--grey-button);
 
@@ -44,18 +40,26 @@
     align-items:center;
     justify-content: center;
     background-color: var(--primary-grey);
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
   }
   
   &-body {
     padding: 26px;
-    background-color: #ffffff;
+    background-color: var(--white);
+    border-bottom-left-radius: 9px;
+    border-bottom-right-radius: 9px;
   }
 
   &-title {
-    margin-bottom: 26px;
+    margin-bottom: var(--mb-24);
   }
 
   &-btn {
     padding: 18px 26px;
+    @media(max-width: 585px) {
+      padding: 11px 15px;
+    }
+
   }
 }

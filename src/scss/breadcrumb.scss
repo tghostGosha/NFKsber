@@ -19,6 +19,9 @@
 
 .breadcrumb-margin-bottom {
   margin-bottom: 56px;
+  @media(max-width: 585px) {
+    margin-bottom: 48px;
+  }
 }
 
 .breadcrumb-link {
@@ -27,7 +30,7 @@
   font-size: 14px;
   line-height: 19px;
   color: var(--secondary-text);
-  transition: all 0.1s ease-in-out 0.1s;
+  transition: var(--animation-transition);
 }
 
 .breadcrumb-link:focus,

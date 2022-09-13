@@ -1,50 +1,44 @@
 .foreign__taxpayers {
 
   &-hero {
-    padding-top: 30px;
+
     padding-bottom: 86px;
+    @media(max-width: 1176px) {
+      padding-bottom: 0;
+    }
   }
-
-  &-title {
-    margin-bottom: 68px;
-  }
-
 
   &-conditions {
     display: flex;
     flex-direction: column;
     grid-column: 1/ span 8;
-     
+    @media(max-width: 1176px) {
+      grid-column: 1/ span 12;
+    }
   }
+
   &-conditions-list {
     margin: 24px 0;
-   }
-  &-conditions-footnote {
-    color: var(--secondary-text);
-    margin-bottom: 68px;
-  }
-  &-request {
-    margin-bottom: 68px;
-  }
-  &-appeal {
-    margin-bottom: 68px;
   }
 }
 
-.foreign__taxpayers-wrapper{
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  column-gap: 32px;
-
-}
-.countries__list-item {
-  margin-bottom: 26px;
-}
 .countries__list {
-  margin-top: 40px;
+  margin-top: var(--mb-40);
   display: flex;
   flex-direction: column;
   max-height: 1020px;
   flex-wrap: wrap;
-  
+  column-gap: 16px;
+  row-gap: 24px;
+  @media(max-width: 585px) {
+    max-height: 1800px;
+  }
+  &-item {
+    flex: 0 1 auto;
+    @media(max-width: 585px) {
+      font-size: 14px;
+      line-height: 20px;
+      width: 60%;
+    } 
+  }
 }
