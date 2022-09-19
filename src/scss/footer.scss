@@ -104,7 +104,7 @@
 
     &-link:hover,
     &-link:focus {
-      color: var(--primary-text);
+      color: var(--primary-green);
     }
 
 
@@ -314,41 +314,35 @@
 .social__list-item:not(:last-child) {
   margin-right: 27px;
 }
-
+.social__list-icon:hover .svg-vk-dims,
+.social__list-icon:focus .svg-vk-dims {
+  color: #4C75A3;
+}
 .social__list-icon {
   display: block;
 }
 
 .svg-social {
-  transition: all 0.1s ease-in-out 0.1s;
+  transition: var(--animation-transition);
 }
 
-// .svg-social:hover,
-// .svg-social:focus {
-//   color: var(--primary-green);
-// }
-.svg-vk-dims:hover,
-.svg-vk-dims:focus {
-  color: #4C75A3;
-}
-
-.svg-fb-dims:hover,
-.svg-fb-dims:focus {
+.social__list-icon:hover .svg-fb-dims,
+.social__list-icon:focus .svg-fb-dims {
   color: #3b5998;
 }
 
-.svg-twitter-dims:hover,
-.svg-twitter-dims:focus {
+.social__list-icon:hover .svg-twitter-dims,
+.social__list-icon:focus .svg-twitter-dims{
   color: #00acee;
 }
 
-.svg-classmates-dims:hover,
-.svg-classmates-dims:focus {
+.social__list-icon:hover .svg-classmates-dims,
+.social__list-icon:focus .svg-classmates-dims {
   color: #ed812b;
 }
 
-.svg-vc-dims:hover,
-.svg-vc-dims:focus {
+.social__list-icon:hover .svg-vc-dims,
+.social__list-icon:focus .svg-vc-dims {
   color: red;
 
 }
