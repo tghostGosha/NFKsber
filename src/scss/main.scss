@@ -80,7 +80,9 @@
   &-markets {
     margin-bottom: var(--mb-40);
   }
-
+  &-link {
+    display: inline-block;
+  }
   &-card {
     grid-column: span 3;
     transition: var(--animation-transition);
@@ -98,6 +100,7 @@
   &-card:focus {
     background-color: var(--primary-grey);
     border-radius: 10px;
+    
   }
 
   &-container {

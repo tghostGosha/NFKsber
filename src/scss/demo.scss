@@ -1,5 +1,5 @@
 .demo__hero {
-  
+
   &-container {
     background-image: var(--desktop-image-banner-top);
     padding: 46px 50% 60px 0;
@@ -18,7 +18,7 @@
   }
 
   &-title {
-    margin-bottom: 24px;
+    margin-bottom: var(--mb-24);
 
     @media(max-width: 585px) {
       margin-bottom: 16px;
@@ -26,8 +26,12 @@
       line-height: 40px;
     }
   }
+
   &-description {
     margin-bottom: 138px;
+    @media(max-width: 1176px) {
+      margin-bottom: 32px;
+    }
   }
 
   &-button {
@@ -38,10 +42,39 @@
     }
   }
 }
+
 .demo__description {
   padding-top: 68px;
   padding-bottom: 136px;
-  &-text {
+  @media(max-width: 1176px) {
+    padding-top: 56px;
+    padding-bottom: 120px;
+  }
+  @media(max-width: 585px) {
+    padding-top: 48px;
+    padding-bottom: 80px;
+  }
+}
 
+.window__account-demo {
+  display: block;
+
+  @media(max-width: 1176px) {
+    padding: 56px 52px;
+    max-width: 802px;
+  }
+
+  @media(max-width: 585px) {
+    max-width: 352px;
+    padding: 24px 12px;
+  }
+}
+
+.section-demo-form {
+  padding-bottom: 112px;
+  background: linear-gradient(180deg, var(--primary-grey) 0%, rgba(244, 246, 248, 0) 100%);
+
+  @media(max-width: 1176px) {
+    padding-bottom: 0;
   }
 }

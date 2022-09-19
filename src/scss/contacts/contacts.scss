@@ -7,40 +7,61 @@
   &__section {
     padding-top: 30px;
     padding-bottom: 112px;
+    @media(max-width: 1176px) {
+      padding-bottom: 0;
+    }
   }
   
-  &__company-title {
-    margin-bottom: 68px;
-  }
   &__company-subtitle {
-    margin-bottom: 28px;
-  }
-  &__cheb-map {
-    margin-bottom: 68px;
+    margin-bottom: var(--mb-24);
   }
  
   &__cheb-title,
   &__msk-title {
     margin-bottom: 16px;
   }
+
   &__img-wrapper {
     position: relative;
-    margin-bottom: 32px;
+    margin-bottom: var(--mb-40);
     margin-top: 32px;
+    @media(max-width: 585px) {
+      margin-top: 24px;
+      height: 424px;
+    }
   }
 
   &__company-wrapper {
     display: flex;
+    align-items: flex-start;
+    @media(max-width: 1176px) {
+      justify-content: space-between;
+    }
+    @media(max-width: 585px) {
+      flex-direction: column;
+    }
   }
 
   &__company-tel {
     margin-right: 138px;
     display: flex;
     flex-direction: column;
+    @media(max-width: 1176px) {
+      margin: 0;
+    }
+    @media(max-width: 585px) {
+      margin-bottom: 24px;
+    }
   }
 
   &__company-schedule {
     margin-right: 138px;
+    @media(max-width: 1176px) {
+      margin: 0;
+    }
+    @media(max-width: 585px) {
+      margin-bottom: 24px;
+    }
   }
 
   &__title {
@@ -50,7 +71,6 @@
 .company__requisites{
   display: flex;
   flex-direction: column;
-  margin-bottom: 68px;
 }
 .cheb-marker {
   color: #DD270F;
