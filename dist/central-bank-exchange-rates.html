@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> -->
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
   <link rel="icon" href="data:;base64,MQoa">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
   <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css"/>
+  href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css">
   <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 
   <link rel="stylesheet" href="css/style.min.css">
@@ -75,7 +75,7 @@
         бесплатную консультанцию</button>
       <div class="nav-search">
         <button type="button" class="fa fa-search" aria-hidden="true"><img src="img/icons/icons.svg#search"
-            class="svg-search-dims" alt="search" /></button>
+          class="svg-search-dims" alt="search"></button>
 
         <form class="search-form wrap">
           <input type="text" class="input" placeholder="Поиск">
@@ -90,10 +90,10 @@
       </a>
       <div class="header__logo">
         <a href="#" class="logo__first">
-          <img src="img/icons/icons.svg#logo-first" class="svg-logo-first-dims" alt="logo-first" />
+          <img src="img/icons/icons.svg#logo-first" class="svg-logo-first-dims" alt="logo-first">
         </a>
         <a href="#" class="logo__second">
-          <img src="img/icons/icons.svg#logo-second" class="svg-logo-second-dims" alt="logo-second" />
+          <img src="img/icons/icons.svg#logo-second" class="svg-logo-second-dims" alt="logo-second">
         </a>
       </div>
       <nav class="header__nav">
@@ -152,13 +152,15 @@
           <li class="header__nav-item">
             <a href="contacts.html" class="dropdown-toggle" role="button">Контакты</a>
           </li>
-          <a href="#" class="button  header__nav-list-btn ">Открыть демо-счет</a>
+          <li >
+            <a href="#" class="button  header__nav-list-btn ">Открыть демо-счет</a>
+          </li>
         </ul>
 
       </nav>
       <nav class="header__nav-app " id="scroller">
         
-        <ul class="accordion accordion-flush header__nav-app-list" id="accordionFlushExample">
+        <div  class="accordion accordion-flush header__nav-app-list" id="accordionFlushExample">
           <h2 class="accordion-title">Меню</h2>
           <button type="button" class="close close-btn" id="closeHeaderNavApp" data-bs-dismiss="modal"
             aria-label="Close">
@@ -166,113 +168,115 @@
               <use xlink:href="img/icons/icons.svg#close"></use>
             </svg>
           </button>
-          <li class="nav-accordion-item">
-            <a href="rates.html" class="dropdown-toggle" role="button">
-              <h4 class="accordion-item-title">Тарифы</h4>
-            </a>
-          </li>
-          <li class="nav-accordion-item">
-            <h2 class="accordion-header" id="flush-headingTwo">
-              <button class="accordion-button collapsed nav-accordion-button " type="button" data-bs-toggle="collapse"
-                data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                <h4 class="accordion-item-title">Услуги</h4>
-                <img src="img/icons/icons.svg#arrow-right" class="header__nav-list-arrow"
-                  alt="arrow-right" />
-              </button>
-            </h2>
-            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
-              data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">
-                <ul class=" nav-dropdown-menu ">
-                  <li class="nav-dropdown-item"><a class="nav-dropdown-link" href="brokerage-services.html">Брокеркое
-                      обслуживание</a></li>
-                  <li class="nav-dropdown-item"><a class="nav-dropdown-link" href="trust-management.html">Доверительное
-                      управление</a></li>
-                  <li class="nav-dropdown-item"><a class="nav-dropdown-link" href="universal-account.html">Универсальный
-                      инвестиционный счёт</a></li>
-                  <li class="nav-dropdown-item"><a class="nav-dropdown-link"
-                      href="individual-account.html">Индивидуальный инвестиционный счёт</a>
-                  </li>
-                  <li class="nav-dropdown-item"><a class="nav-dropdown-link" href="currency-market.html">Обслуживание на
-                      валютном рынке</a></li>
-                  <li class="nav-dropdown-item"><a class="nav-dropdown-link" href="metals-market.html">Обслуживание на
-                      рынке драгоценных металлов</a>
-                  </li>
-                  <li class="nav-dropdown-item"><a class="nav-dropdown-link" href="transactions-repo.html">Заключение
-                      сделок РЕПО</a></li>
-                  <li class="nav-dropdown-item"><a class="nav-dropdown-link"
-                      href="depository-activities.html">Депозитарная деятельность</a></li>
-                  <li class="nav-dropdown-item"><a class="nav-dropdown-link" href="investor-status.html">Статус
-                      квалифицированного инвестора</a></li>
-                </ul>
+          <ul>
+            <li class="nav-accordion-item">
+              <a href="rates.html" class="dropdown-toggle" role="button">
+                <span class="accordion-item-title">Тарифы</span>
+              </a>
+            </li>
+            <li class="nav-accordion-item">
+              <div class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed nav-accordion-button " type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  <span class="accordion-item-title">Услуги</span>
+                  <img src="img/icons/icons.svg#arrow-right" class="header__nav-list-arrow"
+                    alt="arrow-right">
+                </button>
               </div>
-            </div>
-          </li>
-          <li class="nav-accordion-item">
-            <h2 class="accordion-header" id="flush-headingThree">
-              <button class="accordion-button collapsed nav-accordion-button " type="button" data-bs-toggle="collapse"
-                data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                <h4 class="accordion-item-title">Аналитика</h4>
-                <img src="img/icons/icons.svg#arrow-right" class="header__nav-list-arrow"
-                  alt="arrow-right" />
-              </button>
-            </h2>
-            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
-              data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">
-                <ul class="nav-dropdown-menu " aria-labelledby="dropdownMenuAnalitic">
-                  <li class="nav-dropdown-item"><a class="nav-dropdown-link" href="market-news.html">Новости финансового рынка</a></li>
-                  <li class="nav-dropdown-item"><a class="nav-dropdown-link" href="company-news.html">Новости компании</a></li>
-                  <li class="nav-dropdown-item"><a class="nav-dropdown-link" href="analytical-articles.html">Аналитические статьи</a></li>
-                  <li class="nav-dropdown-item"><a class="nav-dropdown-link" href="prognosis-pro.html">Прогнозы PRO</a></li>
-                  <li class="nav-dropdown-item"><a class="nav-dropdown-link" href="investment-ideas.html">Инвестиционные идеи</a></li>
-                  <li class="nav-dropdown-item"><a class="nav-dropdown-link" href="central-bank-exchange-rates.html">Курсы валют ЦБ</a></li>
-                  <li class="nav-dropdown-item"><a class="nav-dropdown-link" href="converter.html">Конвертер валют</a></li>
-                  <li class="nav-dropdown-item"><a class="nav-dropdown-link" href="corporate-actions.html">Корпоративные действия
-                      эмитентов</a></li>
-                  <li class="nav-dropdown-item"><a class="nav-dropdown-link" href="messages__about-securities.html">Сообщения о ценных бумагах</a>
-                  </li>
-                </ul>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  <ul class=" nav-dropdown-menu ">
+                    <li class="nav-dropdown-item"><a class="nav-dropdown-link" href="brokerage-services.html">Брокеркое
+                        обслуживание</a></li>
+                    <li class="nav-dropdown-item"><a class="nav-dropdown-link" href="trust-management.html">Доверительное
+                        управление</a></li>
+                    <li class="nav-dropdown-item"><a class="nav-dropdown-link" href="universal-account.html">Универсальный
+                        инвестиционный счёт</a></li>
+                    <li class="nav-dropdown-item"><a class="nav-dropdown-link"
+                        href="individual-account.html">Индивидуальный инвестиционный счёт</a>
+                    </li>
+                    <li class="nav-dropdown-item"><a class="nav-dropdown-link" href="currency-market.html">Обслуживание на
+                        валютном рынке</a></li>
+                    <li class="nav-dropdown-item"><a class="nav-dropdown-link" href="metals-market.html">Обслуживание на
+                        рынке драгоценных металлов</a>
+                    </li>
+                    <li class="nav-dropdown-item"><a class="nav-dropdown-link" href="transactions-repo.html">Заключение
+                        сделок РЕПО</a></li>
+                    <li class="nav-dropdown-item"><a class="nav-dropdown-link"
+                        href="depository-activities.html">Депозитарная деятельность</a></li>
+                    <li class="nav-dropdown-item"><a class="nav-dropdown-link" href="investor-status.html">Статус
+                        квалифицированного инвестора</a></li>
+                  </ul>
+                </div>
               </div>
-            </div>
-          </li>
-          <li class="nav-accordion-item ">
-            <a href="education.html" class="dropdown-toggle" role="button">
-              <h4 class="accordion-item-title">Обучение</h4>
-            </a>
-          </li>
-          <li class="nav-accordion-item">
-            <h2 class="accordion-header" id="flush-headingFour">
-              <button class="accordion-button collapsed nav-accordion-button " type="button" data-bs-toggle="collapse"
-                data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
-                <h4 class="accordion-item-title">Компания</h4>
-                <img src="img/icons/icons.svg#arrow-right" class="header__nav-list-arrow"
-                  alt="arrow-right" />
-              </button>
-            </h2>
-            <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
-              data-bs-parent="#accordionFlushExample">
-              <div class="nav-accordion-body">
-                <ul class="nav-dropdown-menu " aria-labelledby="dropdownMenuAnalitic">
-                  <li class="nav-dropdown-item"><a class="nav-dropdown-link" href="about.html">О компании</a></li>
-                  <li class="nav-dropdown-item"><a class="nav-dropdown-link" href="disclosure-information.html">Раскрытие информации</a></li>
-                  <li class="nav-dropdown-item"><a class="nav-dropdown-link" href="electronic-document.html">Электронный документооборот</a>
-                  </li>
-                  <li class="nav-dropdown-item"><a class="nav-dropdown-link" href="foreign-taxpayers.html">Иностранным налогоплательщикам</a>
-                  </li>
-                  <li class="nav-dropdown-item"><a class="nav-dropdown-link" href="forum.html">Форум</a></li>
-                  <li class="nav-dropdown-item"><a class="nav-dropdown-link" href="answer-questions.html">Вопрос-ответ</a></li>
-                </ul>
+            </li>
+            <li class="nav-accordion-item">
+              <div class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed nav-accordion-button " type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                  <span class="accordion-item-title">Аналитика</span>
+                  <img src="img/icons/icons.svg#arrow-right" class="header__nav-list-arrow"
+                    alt="arrow-right">
+                </button>
               </div>
-            </div>
-          </li>
-          <li class="nav-accordion-item">
-            <a href="contacts.html" class="dropdown-toggle" role="button">
-              <h5 class="accordion-item-title">Контакты</h5>
-            </a>
-          </li>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  <ul class="nav-dropdown-menu " aria-labelledby="dropdownMenuAnalitic">
+                    <li class="nav-dropdown-item"><a class="nav-dropdown-link" href="market-news.html">Новости финансового рынка</a></li>
+                    <li class="nav-dropdown-item"><a class="nav-dropdown-link" href="company-news.html">Новости компании</a></li>
+                    <li class="nav-dropdown-item"><a class="nav-dropdown-link" href="analytical-articles.html">Аналитические статьи</a></li>
+                    <li class="nav-dropdown-item"><a class="nav-dropdown-link" href="prognosis-pro.html">Прогнозы PRO</a></li>
+                    <li class="nav-dropdown-item"><a class="nav-dropdown-link" href="investment-ideas.html">Инвестиционные идеи</a></li>
+                    <li class="nav-dropdown-item"><a class="nav-dropdown-link" href="central-bank-exchange-rates.html">Курсы валют ЦБ</a></li>
+                    <li class="nav-dropdown-item"><a class="nav-dropdown-link" href="converter.html">Конвертер валют</a></li>
+                    <li class="nav-dropdown-item"><a class="nav-dropdown-link" href="corporate-actions.html">Корпоративные действия
+                        эмитентов</a></li>
+                    <li class="nav-dropdown-item"><a class="nav-dropdown-link" href="messages__about-securities.html">Сообщения о ценных бумагах</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="nav-accordion-item ">
+              <a href="education.html" class="dropdown-toggle" role="button">
+                <span class="accordion-item-title">Обучение</span>
+              </a>
+            </li>
+            <li class="nav-accordion-item">
+              <div class="accordion-header" id="flush-headingFour">
+                <button class="accordion-button collapsed nav-accordion-button " type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                  <span class="accordion-item-title">Компания</span>
+                  <img src="img/icons/icons.svg#arrow-right" class="header__nav-list-arrow"
+                    alt="arrow-right">
+                </button>
+              </div>
+              <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
+                data-bs-parent="#accordionFlushExample">
+                <div class="nav-accordion-body">
+                  <ul class="nav-dropdown-menu " aria-labelledby="dropdownMenuAnalitic">
+                    <li class="nav-dropdown-item"><a class="nav-dropdown-link" href="about.html">О компании</a></li>
+                    <li class="nav-dropdown-item"><a class="nav-dropdown-link" href="disclosure-information.html">Раскрытие информации</a></li>
+                    <li class="nav-dropdown-item"><a class="nav-dropdown-link" href="electronic-document.html">Электронный документооборот</a>
+                    </li>
+                    <li class="nav-dropdown-item"><a class="nav-dropdown-link" href="foreign-taxpayers.html">Иностранным налогоплательщикам</a>
+                    </li>
+                    <li class="nav-dropdown-item"><a class="nav-dropdown-link" href="forum.html">Форум</a></li>
+                    <li class="nav-dropdown-item"><a class="nav-dropdown-link" href="answer-questions.html">Вопрос-ответ</a></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="nav-accordion-item">
+              <a href="contacts.html" class="dropdown-toggle" role="button">
+                <span class="accordion-item-title">Контакты</span>
+              </a>
+            </li>
+          </ul>
           <a href="#" class="button  header__nav-list-btn ">Открыть демо-счет</a>
-        </ul>
+        </div>
         <div class="window__account-app" id="window__account-app">
           <div class="window__account-app-header">
             <h2 class="window__account-title">Открытие брокерского счета</h2>
@@ -284,34 +288,34 @@
           </button>
           </div>
           
-          <form action="#" class="account__form" id="accountform">
+          <form action="#" class="account__form" id="accountformModal">
             <div class="account__form-text">
               <!-- <label for="firstname">Enter your name</label> -->
-              <input type="text" class="account__form-input" id="firstname" placeholder="Фамилия*">
+              <input type="text" class="account__form-input" id="firstnameModal" placeholder="Фамилия*">
             </div>
             <div class="account__form-text">
               <!-- <label for="exampleFormControlInput1" class="form-label">Email address</label> -->
-              <input type="text" class="account__form-input" id="secondname" placeholder="Имя*">
+              <input type="text" class="account__form-input" id="secondnameModal" placeholder="Имя*">
             </div>
             <div class="account__form-text">
               <!-- <label for="exampleFormControlInput1" class="form-label">Email address</label> -->
-              <input type="text" class="account__form-input" id="surname" placeholder="Отчество*">
+              <input type="text" class="account__form-input" id="surnameModal" placeholder="Отчество*">
             </div>
             <div class="account__form-tel">
               <!-- <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label> -->
-              <input type="tel" class="account__form-input " id="tel" placeholder="Мобильный телефон*">
+              <input type="tel" class="account__form-input " id="telModal" placeholder="Мобильный телефон*">
             </div>
             <div class="account__form-mail">
               <!-- <label for="mail">Enter your name</label> -->
-              <input type="email" class="account__form-input " id="mail" placeholder="Электронная почта*">
+              <input type="email" class="account__form-input " id="mailModal" placeholder="Электронная почта*">
             </div>
             <span class="account__form-transcription">* - поля, обязательные для заполнения</span>
             <div class="form-check account__form-check">
-              <input class="form-check-input" type="checkbox" value="" id="accountCheck" checked>
+              <input class="form-check-input" type="checkbox" value="" id="accountCheckModal" checked>
               <!-- <span class="form-check-icon"><svg width="14px" height="10px" class="svg-Check-dims">
                 <use xlink:href="img/icons/icons.svg#Check"></use>
               </svg></span> -->
-              <label class="form-check-label" for="accountCheck">
+              <label class="form-check-label" for="accountCheckModal">
                 <span class="check-span">Даю согласие на</span> <a href="#">обработку персональных данных</a>&nbsp;<span
                   class="check-span">и</span> <a href="#">подтверждаю согласие на
                   коммуникацию</a>
@@ -324,11 +328,11 @@
           <div class=" header__nav-app-btn header__nav-container">
     
             <button class="header-burger header-burger-320" id="header-burger">
-              <ul>
-                <li class="header-burger-marker"></li>
-                <li class="header-burger-marker"></li>
-                <li class="header-burger-marker"></li>
-              </ul>
+              
+                <span class="header-burger-marker"></span>
+                <span class="header-burger-marker"></span>
+                <span class="header-burger-marker"></span>
+              
               <span class="app-btn-text">Меню</span>
             </button>
     
@@ -409,49 +413,49 @@
           <p class="secondary-text choices-title">Выбрать валюту</p>
           <div class="currency__choices-container">
             <select name="currency" id="currency-detail">
-              <option value="AUD"><span>AUD</span> Австралийский доллар</option>
-              <option value="AZN"><span>AZN</span> Азербайджанский манат</option>
-              <option value="AMD"><span>AMD</span> Армянских драмов</option>
-              <option value="GBP"><span>GBP</span> Фунт стерлингов Соединенного королевства</option>
-              <option value="BYN"><span>BYN</span> Белорусский рубль</option>
-              <option value="BGN"><span>BGN</span> Болгарский лев</option>
-              <option value="BRL"><span>BRL</span> Бразильский реал</option>
-              <option value="HUF"><span>HUF</span> Венгерских форинтов</option>
-              <option value="HKD"><span>HKD</span> Гонконгских долларов</option>
-              <option value="DKK"><span>DKK</span> Датских крон</option>
-              <option value="USD" selected><span>USD</span> Доллар США</option>
-              <option value="EUR"><span>EUR</span> Евро</option>
-              <option value="INR"><span>INR</span> Индийских рупий</option>
-              <option value="KZT"><span>KZT</span> Казахстанских тенге</option>
-              <option value="CAD"><span>CAD</span> Канадский доллар</option>
-              <option value="KGS"><span>KGS</span> Киргизских сомов</option>
-              <option value="CNY"><span>CNY</span> Китайских юаней</option>
-              <option value="MDL"><span>MDL</span> Молдавских леев</option>
-              <option value="NOK"><span>NOK</span> Норвежских крон</option>
-              <option value="PLN"><span>PLN</span> Польский злотый</option>
-              <option value="RON"><span>RON</span> Румынский лей</option>
-              <option value="XDR"><span>XDR</span> СДР (специальные права заимствования)</option>
-              <option value="SGD"><span>SGD</span> Сингапурский доллар</option>
-              <option value="TJS"><span>TJS</span> Таджикских сомони</option>
-              <option value="TRY"><span>TRY</span> Турецких лир</option>
-              <option value="TMT"><span>TMT</span> Новый туркменский манат</option>
-              <option value="UZS"><span>UZS</span> Узбекских сумов</option>
-              <option value="UAH"><span>UAH</span> Украинских гривен</option>
-              <option value="CZK"><span>CZK</span> Чешских крон</option>
-              <option value="SEK"><span>SEK</span> Шведских крон</option>
-              <option value="CHF"><span>CHF</span> Швейцарский франк</option>
-              <option value="ZAR"><span>ZAR</span> Южноафриканских рэндов</option>
-              <option value="KRW"><span>KRW</span> Вон Республики Корея</option>
-              <option value="JPY"><span>JPY</span> Японских иен</option>
+              <option value="AUD">AUD Австралийский доллар</option>
+              <option value="AZN">AZN Азербайджанский манат</option>
+              <option value="AMD">AMD Армянских драмов</option>
+              <option value="GBP">GBP Фунт стерлингов Соединенного королевства</option>
+              <option value="BYN">BYN Белорусский рубль</option>
+              <option value="BGN">BGN Болгарский лев</option>
+              <option value="BRL">BRL Бразильский реал</option>
+              <option value="HUF">HUF Венгерских форинтов</option>
+              <option value="HKD">HKD Гонконгских долларов</option>
+              <option value="DKK">DKK Датских крон</option>
+              <option value="USD" selected>USD Доллар США</option>
+              <option value="EUR">EUR Евро</option>
+              <option value="INR">INR Индийских рупий</option>
+              <option value="KZT">KZT Казахстанских тенге</option>
+              <option value="CAD">CAD Канадский доллар</option>
+              <option value="KGS">KGS Киргизских сомов</option>
+              <option value="CNY">CNY Китайских юаней</option>
+              <option value="MDL">MDL Молдавских леев</option>
+              <option value="NOK">NOK Норвежских крон</option>
+              <option value="PLN">PLN Польский злотый</option>
+              <option value="RON">RON Румынский лей</option>
+              <option value="XDR">XDR СДР (специальные права заимствования)</option>
+              <option value="SGD">SGD Сингапурский доллар</option>
+              <option value="TJS">TJS Таджикских сомони</option>
+              <option value="TRY">TRY Турецких лир</option>
+              <option value="TMT">TMT Новый туркменский манат</option>
+              <option value="UZS">UZS Узбекских сумов</option>
+              <option value="UAH">UAH Украинских гривен</option>
+              <option value="CZK">CZK Чешских крон</option>
+              <option value="SEK">SEK Шведских крон</option>
+              <option value="CHF">CHF Швейцарский франк</option>
+              <option value="ZAR">ZAR Южноафриканских рэндов</option>
+              <option value="KRW">KRW Вон Республики Корея</option>
+              <option value="JPY">JPY Японских иен</option>
             </select>
           </div>
           <table class="current-currency__table table">
             <thead>
               <tr  style="border-bottom: 1px solid #E4EAEE">
-                <td class="secondary-text td-padding-default"   align="left" scope="col">Цифр. код / Букв. код</td>
-                <td class="secondary-text td-padding-default" align="left" scope="col">Единиц</td>
-                <td class="secondary-text td-padding-default"  align="left" scope="col">Валюта</td>
-                <td class="secondary-text td-padding-default" align="right" scope="col">Курс</td>
+                <td class="secondary-text td-padding-default"   style="text-align:left;" >Цифр. код / Букв. код</td>
+                <td class="secondary-text td-padding-default" style="text-align:left;" >Единиц</td>
+                <td class="secondary-text td-padding-default"  style="text-align:left;" >Валюта</td>
+                <td class="secondary-text td-padding-default" style="text-align:left;" >Курс</td>
               </tr>
             </thead>
             <tbody>
@@ -459,7 +463,7 @@
                 <td class="weight-text td-padding-default">840 / USD</td>
                 <td class="weight-text td-padding-default">840 / USD</td>
                 <td class="weight-text td-padding-default" >Доллар США</td>
-                <td class="weight-text td-padding-default" align="right">78.6422</td>
+                <td class="weight-text td-padding-default" style="text-align:right;">78.6422</td>
               </tr>
             </tbody>
           </table>
@@ -485,10 +489,10 @@
                     <table class="current-currency__table table">
                       <thead>
                         <tr  style="border-bottom: 1px solid #E4EAEE">
-                          <td class="secondary-text td-padding-default"  align="left" scope="col">Цифр. код / Букв. код</td>
-                          <td class="secondary-text td-padding-default"  align="left" scope="col">Единиц</td>
-                          <td class="secondary-text td-padding-default"  align="left" scope="col">Валюта</td>
-                          <td class="secondary-text td-padding-default"  align="right" scope="col">Курс</td>
+                          <td class="secondary-text td-padding-default"  style="text-align:left;" >Цифр. код / Букв. код</td>
+                          <td class="secondary-text td-padding-default"  style="text-align:left;" >Единиц</td>
+                          <td class="secondary-text td-padding-default"  style="text-align:left;" >Валюта</td>
+                          <td class="secondary-text td-padding-default"  style="text-align:left;" >Курс</td>
                         </tr>
                       </thead>
                       <tbody>
@@ -496,49 +500,49 @@
                           <td class="weight-text td-padding-default">840 / USD</td>
                           <td class="weight-text td-padding-default">1</td>
                           <td class="weight-text td-padding-default">Доллар США</td>
-                          <td class="weight-text td-padding-default" align="right">78.6422</td>
+                          <td class="weight-text td-padding-default" style="text-align:right;">78.6422</td>
                         </tr>
                         <tr style="border-bottom: 1px solid #E4EAEE">
                           <td class="weight-text td-padding-default">978 / EUR</td>
                           <td class="weight-text td-padding-default">1</td>
                           <td class="weight-text td-padding-default">Евро</td>
-                          <td class="weight-text td-padding-default" align="right">90.882</td>
+                          <td class="weight-text td-padding-default" style="text-align:right;">90.882</td>
                         </tr>
                         <tr style="border-bottom: 1px solid #E4EAEE">
                           <td class="weight-text td-padding-default">398 / KZT</td>
                           <td class="weight-text td-padding-default">100</td>
                           <td class="weight-text td-padding-default">Казахстанских тенге</td>
-                          <td class="weight-text td-padding-default" align="right">18.4681</td>
+                          <td class="weight-text td-padding-default" style="text-align:right;">18.4681</td>
                         </tr>
                         <tr style="border-bottom: 1px solid #E4EAEE">
                           <td class="weight-text td-padding-default">356 / INR</td>
                           <td class="weight-text td-padding-default">1</td>
                           <td class="weight-text td-padding-default">Индийских рупий</td>
-                          <td class="weight-text td-padding-default" align="right">10.738</td>
+                          <td class="weight-text td-padding-default" style="text-align:right;">10.738</td>
                         </tr>
                         <tr style="border-bottom: 1px solid #E4EAEE">
                           <td class="weight-text td-padding-default">124 / CAD</td>
                           <td class="weight-text td-padding-default">1</td>
                           <td class="weight-text td-padding-default">Канадский доллар</td>
-                          <td class="weight-text td-padding-default" align="right">63.0938</td>
+                          <td class="weight-text td-padding-default" style="text-align:right;">63.0938</td>
                         </tr>
                         <tr >
                           <td class="weight-text td-padding-default">417 / KGS</td>
                           <td class="weight-text td-padding-default">100</td>
                           <td class="weight-text td-padding-default">Киргизских сомов</td>
-                          <td class="weight-text td-padding-default" align="right">94.8038</td>
+                          <td class="weight-text td-padding-default" style="text-align:right;">94.8038</td>
                         </tr>
                         <tr >
                           <td class="weight-text td-padding-default">417 / KGS</td>
                           <td class="weight-text td-padding-default">100</td>
                           <td class="weight-text td-padding-default">Киргизских сомов</td>
-                          <td class="weight-text td-padding-default" align="right">94.8038</td>
+                          <td class="weight-text td-padding-default" style="text-align:right;">94.8038</td>
                         </tr>
                         <tr >
                           <td class="weight-text td-padding-default">417 / KGS</td>
                           <td class="weight-text td-padding-default">100</td>
                           <td class="weight-text td-padding-default">Киргизских сомов</td>
-                          <td class="weight-text td-padding-default" align="right">94.8038</td>
+                          <td class="weight-text td-padding-default" style="text-align:right;">94.8038</td>
                         </tr>
                       </tbody>
                     </table>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 @@include('html/head.html',{
 "title": "Курсы валют ЦБ"
 })
@@ -49,49 +49,49 @@
           <p class="secondary-text choices-title">Выбрать валюту</p>
           <div class="currency__choices-container">
             <select name="currency" id="currency-detail">
-              <option value="AUD"><span>AUD</span> Австралийский доллар</option>
-              <option value="AZN"><span>AZN</span> Азербайджанский манат</option>
-              <option value="AMD"><span>AMD</span> Армянских драмов</option>
-              <option value="GBP"><span>GBP</span> Фунт стерлингов Соединенного королевства</option>
-              <option value="BYN"><span>BYN</span> Белорусский рубль</option>
-              <option value="BGN"><span>BGN</span> Болгарский лев</option>
-              <option value="BRL"><span>BRL</span> Бразильский реал</option>
-              <option value="HUF"><span>HUF</span> Венгерских форинтов</option>
-              <option value="HKD"><span>HKD</span> Гонконгских долларов</option>
-              <option value="DKK"><span>DKK</span> Датских крон</option>
-              <option value="USD" selected><span>USD</span> Доллар США</option>
-              <option value="EUR"><span>EUR</span> Евро</option>
-              <option value="INR"><span>INR</span> Индийских рупий</option>
-              <option value="KZT"><span>KZT</span> Казахстанских тенге</option>
-              <option value="CAD"><span>CAD</span> Канадский доллар</option>
-              <option value="KGS"><span>KGS</span> Киргизских сомов</option>
-              <option value="CNY"><span>CNY</span> Китайских юаней</option>
-              <option value="MDL"><span>MDL</span> Молдавских леев</option>
-              <option value="NOK"><span>NOK</span> Норвежских крон</option>
-              <option value="PLN"><span>PLN</span> Польский злотый</option>
-              <option value="RON"><span>RON</span> Румынский лей</option>
-              <option value="XDR"><span>XDR</span> СДР (специальные права заимствования)</option>
-              <option value="SGD"><span>SGD</span> Сингапурский доллар</option>
-              <option value="TJS"><span>TJS</span> Таджикских сомони</option>
-              <option value="TRY"><span>TRY</span> Турецких лир</option>
-              <option value="TMT"><span>TMT</span> Новый туркменский манат</option>
-              <option value="UZS"><span>UZS</span> Узбекских сумов</option>
-              <option value="UAH"><span>UAH</span> Украинских гривен</option>
-              <option value="CZK"><span>CZK</span> Чешских крон</option>
-              <option value="SEK"><span>SEK</span> Шведских крон</option>
-              <option value="CHF"><span>CHF</span> Швейцарский франк</option>
-              <option value="ZAR"><span>ZAR</span> Южноафриканских рэндов</option>
-              <option value="KRW"><span>KRW</span> Вон Республики Корея</option>
-              <option value="JPY"><span>JPY</span> Японских иен</option>
+              <option value="AUD">AUD Австралийский доллар</option>
+              <option value="AZN">AZN Азербайджанский манат</option>
+              <option value="AMD">AMD Армянских драмов</option>
+              <option value="GBP">GBP Фунт стерлингов Соединенного королевства</option>
+              <option value="BYN">BYN Белорусский рубль</option>
+              <option value="BGN">BGN Болгарский лев</option>
+              <option value="BRL">BRL Бразильский реал</option>
+              <option value="HUF">HUF Венгерских форинтов</option>
+              <option value="HKD">HKD Гонконгских долларов</option>
+              <option value="DKK">DKK Датских крон</option>
+              <option value="USD" selected>USD Доллар США</option>
+              <option value="EUR">EUR Евро</option>
+              <option value="INR">INR Индийских рупий</option>
+              <option value="KZT">KZT Казахстанских тенге</option>
+              <option value="CAD">CAD Канадский доллар</option>
+              <option value="KGS">KGS Киргизских сомов</option>
+              <option value="CNY">CNY Китайских юаней</option>
+              <option value="MDL">MDL Молдавских леев</option>
+              <option value="NOK">NOK Норвежских крон</option>
+              <option value="PLN">PLN Польский злотый</option>
+              <option value="RON">RON Румынский лей</option>
+              <option value="XDR">XDR СДР (специальные права заимствования)</option>
+              <option value="SGD">SGD Сингапурский доллар</option>
+              <option value="TJS">TJS Таджикских сомони</option>
+              <option value="TRY">TRY Турецких лир</option>
+              <option value="TMT">TMT Новый туркменский манат</option>
+              <option value="UZS">UZS Узбекских сумов</option>
+              <option value="UAH">UAH Украинских гривен</option>
+              <option value="CZK">CZK Чешских крон</option>
+              <option value="SEK">SEK Шведских крон</option>
+              <option value="CHF">CHF Швейцарский франк</option>
+              <option value="ZAR">ZAR Южноафриканских рэндов</option>
+              <option value="KRW">KRW Вон Республики Корея</option>
+              <option value="JPY">JPY Японских иен</option>
             </select>
           </div>
           <table class="current-currency__table table">
             <thead>
               <tr  style="border-bottom: 1px solid #E4EAEE">
-                <td class="secondary-text td-padding-default"   align="left" scope="col">Цифр. код / Букв. код</td>
-                <td class="secondary-text td-padding-default" align="left" scope="col">Единиц</td>
-                <td class="secondary-text td-padding-default"  align="left" scope="col">Валюта</td>
-                <td class="secondary-text td-padding-default" align="right" scope="col">Курс</td>
+                <td class="secondary-text td-padding-default"   style="text-align:left;" >Цифр. код / Букв. код</td>
+                <td class="secondary-text td-padding-default" style="text-align:left;" >Единиц</td>
+                <td class="secondary-text td-padding-default"  style="text-align:left;" >Валюта</td>
+                <td class="secondary-text td-padding-default" style="text-align:left;" >Курс</td>
               </tr>
             </thead>
             <tbody>
@@ -99,7 +99,7 @@
                 <td class="weight-text td-padding-default">840 / USD</td>
                 <td class="weight-text td-padding-default">840 / USD</td>
                 <td class="weight-text td-padding-default" >Доллар США</td>
-                <td class="weight-text td-padding-default" align="right">78.6422</td>
+                <td class="weight-text td-padding-default" style="text-align:right;">78.6422</td>
               </tr>
             </tbody>
           </table>
@@ -125,10 +125,10 @@
                     <table class="current-currency__table table">
                       <thead>
                         <tr  style="border-bottom: 1px solid #E4EAEE">
-                          <td class="secondary-text td-padding-default"  align="left" scope="col">Цифр. код / Букв. код</td>
-                          <td class="secondary-text td-padding-default"  align="left" scope="col">Единиц</td>
-                          <td class="secondary-text td-padding-default"  align="left" scope="col">Валюта</td>
-                          <td class="secondary-text td-padding-default"  align="right" scope="col">Курс</td>
+                          <td class="secondary-text td-padding-default"  style="text-align:left;" >Цифр. код / Букв. код</td>
+                          <td class="secondary-text td-padding-default"  style="text-align:left;" >Единиц</td>
+                          <td class="secondary-text td-padding-default"  style="text-align:left;" >Валюта</td>
+                          <td class="secondary-text td-padding-default"  style="text-align:left;" >Курс</td>
                         </tr>
                       </thead>
                       <tbody>
@@ -136,49 +136,49 @@
                           <td class="weight-text td-padding-default">840 / USD</td>
                           <td class="weight-text td-padding-default">1</td>
                           <td class="weight-text td-padding-default">Доллар США</td>
-                          <td class="weight-text td-padding-default" align="right">78.6422</td>
+                          <td class="weight-text td-padding-default" style="text-align:right;">78.6422</td>
                         </tr>
                         <tr style="border-bottom: 1px solid #E4EAEE">
                           <td class="weight-text td-padding-default">978 / EUR</td>
                           <td class="weight-text td-padding-default">1</td>
                           <td class="weight-text td-padding-default">Евро</td>
-                          <td class="weight-text td-padding-default" align="right">90.882</td>
+                          <td class="weight-text td-padding-default" style="text-align:right;">90.882</td>
                         </tr>
                         <tr style="border-bottom: 1px solid #E4EAEE">
                           <td class="weight-text td-padding-default">398 / KZT</td>
                           <td class="weight-text td-padding-default">100</td>
                           <td class="weight-text td-padding-default">Казахстанских тенге</td>
-                          <td class="weight-text td-padding-default" align="right">18.4681</td>
+                          <td class="weight-text td-padding-default" style="text-align:right;">18.4681</td>
                         </tr>
                         <tr style="border-bottom: 1px solid #E4EAEE">
                           <td class="weight-text td-padding-default">356 / INR</td>
                           <td class="weight-text td-padding-default">1</td>
                           <td class="weight-text td-padding-default">Индийских рупий</td>
-                          <td class="weight-text td-padding-default" align="right">10.738</td>
+                          <td class="weight-text td-padding-default" style="text-align:right;">10.738</td>
                         </tr>
                         <tr style="border-bottom: 1px solid #E4EAEE">
                           <td class="weight-text td-padding-default">124 / CAD</td>
                           <td class="weight-text td-padding-default">1</td>
                           <td class="weight-text td-padding-default">Канадский доллар</td>
-                          <td class="weight-text td-padding-default" align="right">63.0938</td>
+                          <td class="weight-text td-padding-default" style="text-align:right;">63.0938</td>
                         </tr>
                         <tr >
                           <td class="weight-text td-padding-default">417 / KGS</td>
                           <td class="weight-text td-padding-default">100</td>
                           <td class="weight-text td-padding-default">Киргизских сомов</td>
-                          <td class="weight-text td-padding-default" align="right">94.8038</td>
+                          <td class="weight-text td-padding-default" style="text-align:right;">94.8038</td>
                         </tr>
                         <tr >
                           <td class="weight-text td-padding-default">417 / KGS</td>
                           <td class="weight-text td-padding-default">100</td>
                           <td class="weight-text td-padding-default">Киргизских сомов</td>
-                          <td class="weight-text td-padding-default" align="right">94.8038</td>
+                          <td class="weight-text td-padding-default" style="text-align:right;">94.8038</td>
                         </tr>
                         <tr >
                           <td class="weight-text td-padding-default">417 / KGS</td>
                           <td class="weight-text td-padding-default">100</td>
                           <td class="weight-text td-padding-default">Киргизских сомов</td>
-                          <td class="weight-text td-padding-default" align="right">94.8038</td>
+                          <td class="weight-text td-padding-default" style="text-align:right;">94.8038</td>
                         </tr>
                       </tbody>
                     </table>

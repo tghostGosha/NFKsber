@@ -12963,13 +12963,11 @@ input::placeholder {
   font-weight: 400;
   font-size: 10px;
   line-height: 13px;
-  margin-top: 10px;
 }
 @media (max-width: 585px) {
   .header-burger span {
     font-size: 10px;
     line-height: 13px;
-    margin-top: 10px;
     position: relative;
     left: -2px;
   }
@@ -20724,7 +20722,6 @@ th {
 }
 
 .text-link {
-  display: inline-block;
   color: var(--primary-green);
   background-color: inherit;
 }
