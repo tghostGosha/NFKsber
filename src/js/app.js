@@ -88,26 +88,32 @@ const defaultSelect = (classNameEl) => {
   });
 
 }
+try {
 
-defaultSelect('currency')
+  defaultSelect('currency')
+  
+  defaultSelect('currency-2')
+} catch (error) {
+  
+}
 
-defaultSelect('currency-2')
-
-const countrySelect = document.querySelector('#currency-detail');
-const countryChoices = new Choices(countrySelect, {
-  searchEnabled: false,
-  position: 'bottom',
-  placeholder: true,
-  allowHTML: true,
-  classNames: {
-    containerOuter: 'country-choices',
-    containerInner: "countries-wrapper",
-    list: "currency__list",
-    listDropdown: "countries-list-dropdown",
-    item: 'currency__item',
-    itemSelectable: 'currency__item--selectable',
-  }
-});
+try {
+  const countrySelect = document.querySelector('#currency-detail');
+  const countryChoices = new Choices(countrySelect, {
+    searchEnabled: false,
+    position: 'bottom',
+    placeholder: true,
+    allowHTML: true,
+    classNames: {
+      containerOuter: 'country-choices',
+      containerInner: "countries-wrapper",
+      list: "currency__list",
+      listDropdown: "countries-list-dropdown",
+      item: 'currency__item',
+      itemSelectable: 'currency__item--selectable',
+    }
+  });
+} catch(error){}
 
 
 
