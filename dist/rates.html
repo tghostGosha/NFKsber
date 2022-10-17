@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
   <!-- <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> -->
   <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
   <link rel="icon" href="data:;base64,MQoa">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css?_v=20221017161725">
   <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css">
-  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css?_v=20221017161725">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css?_v=20221017161725">
 
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/style.min.css?_v=20221017161725">
 
   <title>Главная</title>
 </head>
@@ -373,7 +373,7 @@
   <main>
     <section class="rates__hero big__banner">
       <div class="container">
-        <nav aria-label="breadcrumb">
+        <nav aria-label="breadcrumb" class="breadcrumb-margin-bottom">
           <ul class="breadcrumb">
             <li class="page-item-mobile">
               <svg width="20px" height="20px" class="svg-arrow-right-dims">
@@ -418,7 +418,7 @@
           </li>
           <li class="rates__nav-item nav-item" role="presentation">
             <button class="nav-link grey-button" id="stock-market-tab" data-bs-toggle="tab" data-bs-target="#stockMarket"
-              type="button" role="tab" aria-controls="stock-market" aria-selected="false">Сделки на биржах</button>
+              type="button" role="tab" aria-controls="stockMarket" aria-selected="false">Сделки на биржах</button>
           </li>
           <li class="rates__nav-item nav-item" role="presentation">
             <button class="nav-link grey-button" id="messages-tab" data-bs-toggle="tab" data-bs-target="#messages" type="button"
@@ -436,23 +436,23 @@
             <table class="table table-hide block__margin-bottom">
               <thead class="">
                 <tr>
-                  <td class="col-3  weight-text" scope="col">Тарифы</td>
-                  <td scope="col" class="col-2 weight-text">Минимальный дневной</td>
-                  <td scope="col" class="col-2 weight-text">Инвестор</td>
-                  <td scope="col" class="col-2 weight-text">Фиксированный</td>
-                  <td scope="col" align="center" class="col-2 weight-text">Нулевая комиссия</td>
+                  <th class="col-3  weight-text">Тарифы</th>
+                  <th scope="col" class="col-2 weight-text">Минимальный дневной</th>
+                  <th scope="col" class="col-2 weight-text">Инвестор</th>
+                  <th scope="col" class="col-2 weight-text">Фиксированный</th>
+                  <th scope="col" style="text-align:center;" class="col-2 weight-text">Нулевая комиссия</th>
                 </tr>
               </thead>
               <tbody>
                 <tr class="tr-border">
-                  <td class="col-2 fw-normal secondary-text-color " scope="row">Абонентская плата</td>
+                  <td class="col-2 fw-normal secondary-text-color">Абонентская плата</td>
                   <td class="weight-text">0 ₽ в месяц</td>
                   <td class="weight-text">0 ₽ в месяц</td>
                   <td class="weight-text">8 000 ₽ в месяц</td>
-                  <td align="center" class="weight-text">0 ₽ в месяц</td>
+                  <td style="text-align:center;" class="weight-text">0 ₽ в месяц</td>
                 </tr>
                 <tr>
-                  <td class="col-2 fw-normal secondary-text-color" scope="row">Кому подходит</td>
+                  <td class="col-2 fw-normal secondary-text-color">Кому подходит</td>
                   <td class="secondary-text">Тариф подходит для активной торговли ликвидными инструментами фондового
                     рынка,
                     а также при совершении достаточно крупных сделок (от 100 тыс. руб.) с менее ликвидными инструментами
@@ -465,33 +465,35 @@
                     предпочитающих оплачивать ежемесячное фиксированное вознаграждение брокеру.</td>
                   <td></td>
                 </tr>
+                
                 <tr>
-                  <th colspan="12" class="tr-title">Фондовый рынок</th>
+                  <td colspan="5" class="tr-title">Фондовый рынок</td>
                 </tr>
-                <tr valign="top" class="tr-border">
-                  <td class="col-3 fw-normal secondary-text-color" scope="row">Абонентская плата</td>
+                <tr style="vertical-align: top;" class="tr-border">
+                  <td class="col-3 fw-normal secondary-text-color">Абонентская плата</td>
                   <td class="col-2 fw-normal primary-text-color">от 0.006% до 0.025%</td>
                   <td class="col-2 fw-normal primary-text-color"> <span>0.2%</span> <br> <span
                       class="secondary-text">включая биржевой<br>
                       и клиринговый сборы</span> </td>
                   <td class="col-2 fw-normal">Отсутствует</td>
-                  <td align="center" class="col-2 fw-normal  primary-text">1 ₽ <br><span class="secondary-text">в
+                  <td style="text-align:center;" class="col-2 fw-normal  primary-text">1 ₽ <br><span class="secondary-text">в
                       месяц <sup class="letter-lowercase-end">1</sup></span></td>
                 </tr>
                 <tr>
-                  <th colspan="12" class="tr-title">Валютный рынок и рынок драгоценных металлов</th>
+                  <td colspan="5" class="tr-title">Валютный рынок и рынок драгоценных металлов</td>
+
                 </tr>
-                <tr valign="top" class="tr-border">
-                  <td class="col-3 fw-normal secondary-text-color" scope="row">Комиссия на валютной секции</td>
+                <tr style="vertical-align: top;" class="tr-border">
+                  <td class="col-3 fw-normal secondary-text-color" >Комиссия на валютной секции</td>
                   <td class="col-2 fw-normal primary-text-color">от 0.008% до 0.032%</td>
                   <td class="col-2 fw-normal primary-text-color"> <span>0.2%</span> <br> <span
                       class="secondary-text">включая биржевой<br>
                       и клиринговый сборы</span> </td>
                   <td class="col-2 fw-normal">Отсутствует</td>
-                  <td align="center" class="col-2 fw-normal  primary-text-color">От 0.008% до 0.032%</td>
+                  <td style="text-align:center;" class="col-2 fw-normal  primary-text-color">От 0.008% до 0.032%</td>
                 </tr>
-                <tr valign="top" class="tr-border">
-                  <td class="col-3 fw-normal secondary-text-color" scope="row">Комиссия за сделки с золотом <br> и
+                <tr style="vertical-align: top;" class="tr-border">
+                  <td class="col-3 fw-normal secondary-text-color" >Комиссия за сделки с золотом <br> и
                     серебром</td>
                   <td class="col-2 fw-normal  primary-text-color">0,1% <br><span class="secondary-text">от
                       оборота</span>
@@ -500,56 +502,56 @@
                       class="secondary-text">включая биржевой<br>
                       и клиринговый сборы</span> </td>
                   <td class="col-2 fw-normal">Отсутствует</td>
-                  <td align="center" class="col-2 fw-normal  primary-text-color">0,1% <br><span
+                  <td style="text-align:center;" class="col-2 fw-normal  primary-text-color">0,1% <br><span
                       class="secondary-text">от
                       оборота</span>
                   </td>
                 </tr>
                 <tr>
-                  <th colspan="12" class="tr-title">Срочный рынок</th>
+                  <td colspan="5" class="tr-title">Срочный рынок</td>
                 </tr>
-                <tr valign="top" class="tr-border">
-                  <td class="col-3 fw-normal secondary-text-color" scope="row">Заключение сделок, исполнение <br>
+                <tr style="vertical-align: top;" class="tr-border">
+                  <td class="col-3 fw-normal secondary-text-color" >Заключение сделок, исполнение <br>
                     срочного контракта на Московской <br>
                     бирже</td>
-                  <td align="center" colspan="6" class=" fw-normal primary-text-color">Комиссия равна биржевому сбору и
+                  <td style="text-align:center;" colspan="4" class="fw-normal primary-text-color">Комиссия равна биржевому сбору и
                     взимается
                     дополнительно к нему</td>
                 </tr>
-                <tr valign="top" class="tr-border">
-                  <td class="col-3 fw-normal secondary-text-color" scope="row">ГО для открытия и поддержания <br>
+                <tr style="vertical-align: top;" class="tr-border">
+                  <td class="col-3 fw-normal secondary-text-color" >ГО для открытия и поддержания <br>
                     открытой
                     позиции по срочному <br> контракту</td>
-                  <td align="center" colspan="6" class="fw-normal primary-text-color">100 % от размера гарантийного
+                  <td style="text-align:center;" colspan="4" class="fw-normal primary-text-color">100 % от размера гарантийного
                     обеспечения,
                     установленного Московской биржей</td>
                 </tr>
                 <tr>
-                  <th colspan="12" class="tr-title">Депозитарий</th>
+                  <td colspan="5" class="tr-title">Депозитарий</td>
                 </tr>
-                <tr valign="top" class="tr-border">
-                  <td class="col-3 fw-normal secondary-text-color" scope="row">Услуги депозитария</td>
+                <tr style="vertical-align: top;" class="tr-border">
+                  <td class="col-3 fw-normal secondary-text-color" >Услуги депозитария</td>
                   <td class="col-2 fw-normal  primary-text-color">35,40 ₽<br><span class="secondary-text">в месяц</span>
                   </td>
                   <td class="col-2 fw-normal primary-text-color">Отсутствует</td>
                   <td class="col-2 fw-normal primary-text-color">Отсутствует</td>
-                  <td align="center" class="col-2 fw-normal  primary-text-color">35,40 ₽<br><span
+                  <td style="text-align:center;" class="col-2 fw-normal  primary-text-color">35,40 ₽<br><span
                       class="secondary-text">в месяц <sup class="letter-lowercase-end">2</sup></span>
                   </td>
                 </tr>
-                <tr valign="top" class="tr-border">
-                  <td class="col-3 fw-normal secondary-text-color" scope="row">Плата за изменение нетто-позиции <br> по
+                <tr style="vertical-align: top;" class="tr-border">
+                  <td class="col-3 fw-normal secondary-text-color" >Плата за изменение нетто-позиции <br> по
                     одному виду ценных бумаг при <br> условии переноса сделки на <br> след.торговый день</td>
                   <td class="col-2 fw-normal  primary-text-color">100 ₽<br><span class="secondary-text">при совершении
                       сделок с ценными бумагами, не включенными в перечень высоколиквидных инструментов</span></td>
                   <td class="col-2 fw-normal primary-text-color">Отсутствует</td>
                   <td class="col-2 fw-normal primary-text-color">Отсутствует</td>
-                  <td align="center" class="col-2 fw-normal  primary-text-color">100 ₽<br><span
+                  <td style="text-align:center;" class="col-2 fw-normal  primary-text-color">100 ₽<br><span
                       class="secondary-text">при совершении
                       сделок с ценными бумагами, не включенными в перечень высоколиквидных инструментов</span></td>
                 </tr>
-                <tr valign="top" class="tr-border">
-                  <td class="col-3 fw-normal secondary-text-color" scope="row">Заключение сделки в следующих <br>
+                <tr style="vertical-align: top;" class="tr-border">
+                  <td class="col-3 fw-normal secondary-text-color" >Заключение сделки в следующих <br>
                     режимах
                     торгов: <br>
                     1. МБ ФР: Первичное размещение <br> (Облигации) PSAU <br>
@@ -560,29 +562,29 @@
                     освобождается от оплаты Дополнительных расходов, связанных с услугами вышестоящего депозитария, при
                     размещении ценных бумаг в размере 100 ₽</td>
                   <!-- <td class="col-2 fw-normal  primary-text-color"></td> -->
-                  <td align="center" class="col-2 fw-normal  primary-text-color">100 ₽<br><span
+                  <td style="text-align:center;" class="col-2 fw-normal  primary-text-color">100 ₽<br><span
                       class="secondary-text">за каждую
                       сделку</span></td>
                 </tr>
                 <tr>
-                  <th colspan="12" class="tr-title">Программное обеспечение</th>
+                  <td colspan="5" class="tr-title">Программное обеспечение</td>
                 </tr>
-                <tr valign="top" class="tr-border">
-                  <td class="col-3 fw-normal secondary-text-color" scope="row">Абонентская плата за ИТС Брокер <br> и
+                <tr style="vertical-align: top;" class="tr-border">
+                  <td class="col-3 fw-normal secondary-text-color" >Абонентская плата за ИТС Брокер <br> и
                     ИТС
                     Нано</td>
                   <td class="col-2 fw-normal  primary-text-color">Отсутствует</td>
                   <td class="col-2 fw-normal primary-text-color">Отсутствует</td>
                   <td class="col-2 fw-normal primary-text-color">Отсутствует</td>
-                  <td align="center" class="col-2 fw-normal  primary-text-color">Отсутствует</td>
+                  <td style="text-align:center;" class="col-2 fw-normal  primary-text-color">Отсутствует</td>
                 </tr>
-                <tr valign="top" class="tr-border">
-                  <td class="col-3 fw-normal secondary-text-color" scope="row">Плата за ИТС QUIK, QUIK X <br> (IOS и
+                <tr style="vertical-align: top;" class="tr-border">
+                  <td class="col-3 fw-normal secondary-text-color">Плата за ИТС QUIK, QUIK X <br> (IOS и
                     Android) и webQUIK</td>
                   <td class="col-2 fw-normal primary-text-color">Отсутствует</td>
                   <td class="col-2 fw-normal primary-text-color">Отсутствует <sup class="letter-lowercase-end">2</sup></td>
                   <td class="col-2 fw-normal primary-text-color">Отсутствует <sup class="letter-lowercase-end">2</sup></td>
-                  <td align="center" class="col-2 fw-normal primary-text-color">Отсутствует <sup class="letter-lowercase-end">2</sup></td>
+                  <td style="text-align:center;" class="col-2 fw-normal primary-text-color">Отсутствует <sup class="letter-lowercase-end">2</sup></td>
                 </tr>
               </tbody>
             </table>
@@ -1030,17 +1032,17 @@
               </div>
             </div>
           </div>
-          <div class="tab-pane" id="stockMarket" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+          <div class="tab-pane" id="stockMarket" role="tabpanel" aria-labelledby="stockMarket" tabindex="0">
             <h4 class="stock-market-title table-hide">Сделки на Московской и Санкт-Петербургской бирже</h4>
             <h3 class="rate-title table-hide">Тарифный план «Минимальный дневной»</h3>
             <table class="table table-hide">
               <thead>
                 <tr>
-                  <th colspan="12" class="tr-title">Фондовый рынок (Московская Биржа, Санкт-Петербургская биржа)</th>
+                  <td colspan="2" class="tr-title">Фондовый рынок (Московская Биржа, Санкт-Петербургская биржа)</td>
                 </tr>
                 <tr>
-                  <td class="col-6" scope="col">Оборот за предыдущую торговую сессию по Брокерскому счету Клиента</td>
-                  <td class="col-6" scope="col">Комиссионное вознаграждение Брокера <br>
+                  <td class="col-6">Оборот за предыдущую торговую сессию по Брокерскому счету Клиента</td>
+                  <td class="col-6">Комиссионное вознаграждение Брокера <br>
                     (% от оборота Клиента <sup class="letter-lowercase-end">1</sup> за предыдущую торговую сессию) <sup class="letter-lowercase-end">2</sup></td>
                 </tr>
               </thead>
@@ -1079,11 +1081,11 @@
             <table class="table table-hide">
               <thead>
                 <tr>
-                  <th colspan="12" class="tr-title">Валютный рынок (Московская Биржа)<sup>3</sup></th>
+                  <th colspan="2" class="tr-title">Валютный рынок (Московская Биржа)<sup>3</sup></th>
                 </tr>
                 <tr>
-                  <td class="col-6" scope="col">Оборот за предыдущую торговую сессию по Брокерскому счету Клиента</td>
-                  <td class="col-6" scope="col">Комиссионное вознаграждение Брокера <br>
+                  <td class="col-6" >Оборот за предыдущую торговую сессию по Брокерскому счету Клиента</td>
+                  <td class="col-6" >Комиссионное вознаграждение Брокера <br>
                     (% от оборота Клиента <sup class="letter-lowercase-end">1</sup> за предыдущую торговую сессию) <sup class="letter-lowercase-end">2</sup></td>
                 </tr>
               </thead>
@@ -1122,11 +1124,11 @@
             <table class="table table-hide">
               <thead>
                 <tr>
-                  <th colspan="12" class="tr-title">Рынок драгоценных металлов (Московская Биржа)<sup>3</sup></th>
+                  <th colspan="2" class="tr-title">Рынок драгоценных металлов (Московская Биржа)<sup>3</sup></th>
                 </tr>
                 <tr>
-                  <td class="col-6" scope="col">Оборот за предыдущую торговую сессию по Брокерскому счету Клиента</td>
-                  <td class="col-6" scope="col">Комиссионное вознаграждение Брокера <br>
+                  <td class="col-6">Оборот за предыдущую торговую сессию по Брокерскому счету Клиента</td>
+                  <td class="col-6">Комиссионное вознаграждение Брокера <br>
                     (% от оборота Клиента <sup class="letter-lowercase-end">1</sup> за предыдущую торговую сессию) <sup class="letter-lowercase-end">2</sup></td>
                 </tr>
               </thead>
@@ -1140,16 +1142,16 @@
             <table class="table table-hide">
               <thead>
                 <tr>
-                  <th colspan="12" class="tr-title">Срочный рынок Московской Биржи</th>
+                  <th colspan="2" class="tr-title">Срочный рынок Московской Биржи</th>
                 </tr>
                 <tr>
-                  <td colspan="12" class="primary-text-market">(сделки заключаются при наличии Гарантийного обеспечения
+                  <td colspan="2" class="primary-text-market">(сделки заключаются при наличии Гарантийного обеспечения
                     для открытия и поддержания открытой позиции по срочному контракту в размере 100% от размера
                     Гарантийного обеспечения, установленного Московской Биржей)</td>
                 </tr>
                 <tr>
-                  <td class="col-6" scope="col">Условие начисления и уплаты вознаграждения</td>
-                  <td class="col-6" scope="col">Комиссионное вознаграждение Брокера <sup class="letter-lowercase-end">2</sup></td>
+                  <td class="col-6" >Условие начисления и уплаты вознаграждения</td>
+                  <td class="col-6" >Комиссионное вознаграждение Брокера <sup class="letter-lowercase-end">2</sup></td>
                 </tr>
               </thead>
               <tbody class="tr-border">
@@ -1168,12 +1170,12 @@
             <table class="table table-hide">
               <thead>
                 <tr>
-                  <th colspan="12" class="tr-title">Торговые системы</th>
+                  <th colspan="2" class="tr-title">Торговые системы</th>
                 </tr>
                 <tr>
-                  <td class="col-6" scope="col">Абонентская плата за использование информационно-торговой системы
+                  <td class="col-6" >Абонентская плата за использование информационно-торговой системы
                     ИТС-Брокер (используется только для совершения сделок на фондовом рынке Московской Биржи)</td>
-                  <td class="col-6 primary-text-market" scope="col">Отсутствует</td>
+                  <td class="col-6 primary-text-market" >Отсутствует</td>
                 </tr>
               </thead>
               <tbody>
@@ -1214,11 +1216,12 @@
             <table class="table table-hide">
               <thead>
                 <tr>
-                  <th colspan="12" class="tr-title">Дополнительные расходы</th>
+                  <th colspan="2" class="tr-title">Дополнительные расходы</th>
                 </tr>
                 <tr>
-                  <td class="col-6 primary-text-market" scope="col">по оплате услуг вышестоящего депозитария при
+                  <td class="col-6 primary-text-market">по оплате услуг вышестоящего депозитария при
                     размещении ценных бумаг</td>
+                    <td></td>
                 </tr>
               </thead>
               <tbody class="">
@@ -1231,7 +1234,7 @@
                   <td class="primary-text-market">100 руб. за каждую сделку</td>
                 </tr>
                 <tr>
-                  <td class="secondary-text" style="padding: 40px 0 40px 0 !important;" colspan="12">Брокер вправе
+                  <td class="secondary-text" style="padding: 40px 0 40px 0 !important;" colspan="2" >Брокер вправе
                     приостановить для Клиента доступ к торговым системам в случае,
                     если совокупная стоимость активов Клиента, находящихся у Брокера по всем договорам, заключенным этим
                     Клиентом с Брокером, составит менее 5 000 руб. <br><br>
@@ -1275,11 +1278,11 @@
             <h3 class="table-hide">Тарифный план «Фиксированный платеж»</h3>
             <table class="table table-hide">
               <tr class="tr-border">
-                <td colspan="5">Сделки, совершенные на организованных торгах фондового рынка <br>
+                <td colspan="1">Сделки, совершенные на организованных торгах фондового рынка <br>
                   Сделки, совершенные на срочном рынке Московской Биржи<br>
                   Плата за использование торговых систем</td>
-                <td colspan="2"></td>
-                <td colspan="5" class="primary-text-market td-padding-20">Клиент ежемесячно уплачивает Брокеру
+
+                <td colspan="1" class="primary-text-market td-padding-20">Клиент ежемесячно уплачивает Брокеру
                   фиксированное вознаграждение в <br> размере 8000 руб. за каждый истекший, в том числе неполный,
                   календарный <br>
                   месяц с момента выбора данного Тарифного плана, а также все платежи, <br> предусмотренные Тарифным
@@ -1287,7 +1290,7 @@
                   «Минимальный дневной», за исключением <br> следующих платежей:</td>
               </tr>
               <tr>
-                <td class="secondary-text" style="padding: 40px 0 40px 0 !important;" colspan="12">
+                <td class="secondary-text" style="padding: 40px 0 40px 0 !important;" colspan="2">
                   1) оплаты вознаграждения Брокера в процентах от оборота по сделкам, совершенным на организованных
                   торгах фондового рынка (на Московской и Санкт-Петербургской биржах) за торговую сессию по счету
                   Клиента, а также оплаты вознаграждения Брокера в процентах от оборота по сделкам, совершенным на
@@ -1310,11 +1313,11 @@
             <h3 class="table-hide">Тарифный план «Инвестор»</h3>
             <table class="table investor-table table-hide">
               <tr class="tr-border">
-                <td colspan="5">Сделки, совершенные на организованных торгах фондового рынка <br>
+                <td colspan="1">Сделки, совершенные на организованных торгах фондового рынка <br>
                   Сделки, совершенные на срочном рынке Московской Биржи<br>
                   Плата за использование торговых систем</td>
-                <td colspan="2"></td>
-                <td colspan="5" class="primary-text-market td-padding-20">Клиент уплачивает Брокеру вознаграждение в
+
+                <td colspan="1" class="primary-text-market td-padding-20">Клиент уплачивает Брокеру вознаграждение в
                   размере 0,2% за
                   каждую сделку, <br> совершенную на организованных торгах фондового рынка, валютного рынка и <br> рынка
                   драгоценных металлов6, а также все платежи, предусмотренные <br> Тарифным планом «Минимальный
@@ -1322,7 +1325,7 @@
                   исключением следующих <br> платежей:</td>
               </tr>
               <tr>
-                <td class="secondary-text" style="padding: 40px 0 0 0 !important;" colspan="12">
+                <td class="secondary-text" style="padding: 40px 0 0 0 !important;" colspan="2">
                   1) оплаты вознаграждения Брокера в процентах от оборота по сделкам, совершенным на организованных
                   торгах фондового рынка (на Московской и Санкт-Петербургской биржах) за торговую сессию по счету
                   Клиента, а также оплаты вознаграждения Брокера в процентах от оборота по сделкам, совершенным на
@@ -1785,29 +1788,29 @@
             <table class="table messahe-table table-hide">
               <thead class="">
                 <tr>
-                  <td scope="col" colspan="5" class="secondary-text-color">Наименование услуг</td>
-                  <td scope="col" colspan="5" class="secondary-text-color">Тарифы АО «НФК-Сбережения»</td>
+                  <td  colspan="1" class="secondary-text-color">Наименование услуг</td>
+                  <td  colspan="1" class="secondary-text-color">Тарифы АО «НФК-Сбережения»</td>
 
                 </tr>
               </thead>
               <tbody>
                 <tr class="tr-border">
-                  <td class="fw-normal col-4 secondary-text-color" colspan="5">Исполнение Брокером Поручений Клиента на
+                  <td class="fw-normal col-4 secondary-text-color" colspan="1">Исполнение Брокером Поручений Клиента на
                     совершение маржинальных <br> сделок в денежных средствах и ценных бумагах внутри торгового дня</td>
                   <!-- <td class="col-1" colspan="2"></td>   -->
-                  <td class="weight-text col-3 " colspan="5">Бесплатно</td>
+                  <td class="weight-text col-3 " colspan="1">Бесплатно</td>
                 </tr>
                 <tr class="tr-border">
-                  <td class="fw-normal col-4 secondary-text-color" colspan="5">Процент за пользование денежными
+                  <td class="fw-normal col-4 secondary-text-color" colspan="1">Процент за пользование денежными
                     средствами, привлеченными <br> для купли ценных бумаг</td>
-                  <td class="weight-text col-3" colspan="5">18,5% годовых</td>
+                  <td class="weight-text col-3" colspan="1">18,5% годовых</td>
                 </tr>
                 <tr class="tr-border">
-                  <td class="fw-normal col-4 secondary-text-color" colspan="5">Плата за пользование ценными бумагами,
+                  <td class="fw-normal col-4 secondary-text-color" colspan="1">Плата за пользование ценными бумагами,
                     предоставленными <br> Клиенту с целью совершения маржинальной сделки, определяемая <br> каждый
                     календарный <span style="position: relative;">день <span
                         class="letter-lowercase-end">7</span></span></td>
-                  <td class="weight-text col-3" colspan="5">13,5% годовых</td>
+                  <td class="weight-text col-3" colspan="1">13,5% годовых</td>
                 </tr>
               </tbody>
             </table>
@@ -1852,30 +1855,30 @@
             <table class="table setting-table table-hide">
               <thead class="">
                 <tr>
-                  <td scope="col" colspan="5" class="secondary-text-color">База для начисления комиссионного
+                  <td  colspan="1" class="secondary-text-color">База для начисления комиссионного
                     вознаграждения</td>
-                  <td scope="col" colspan="5" class="secondary-text-color">Комиссионное вознаграждение Брокера в
+                  <td  colspan="1" class="secondary-text-color">Комиссионное вознаграждение Брокера в
                     процентах годовых</td>
                 </tr>
               </thead>
               <tbody>
                 <tr class="tr-border">
-                  <td class="fw-normal col-4 secondary-text-color" colspan="5">Сумма отрицательных плановых <span
+                  <td class="fw-normal col-4 secondary-text-color" colspan="1">Сумма отрицательных плановых <span
                       style="position: relative;">позиций <sup class="letter-lowercase-end">8</sup></span>, возникших
                     в связи с недостатком у <br> Клиента денежных средств для расчетов по обязательствам, которые должны
                     <br> быть исполнены из портфеля Клиента
                   </td>
-                  <td class="primary-text-market col-3 " colspan="5">18,5% годовых</td>
+                  <td class="primary-text-market col-3 " colspan="1">18,5% годовых</td>
                 </tr>
                 <tr class="tr-border">
-                  <td class="fw-normal col-4 secondary-text-color" colspan="5">Сумма отрицательных плановых <span
+                  <td class="fw-normal col-4 secondary-text-color" colspan="1">Сумма отрицательных плановых <span
                       style="position: relative;">позиций <sup class="letter-lowercase-end">8</sup></span>, возникших
                     в связи с недостатком <br> у Клиента ценных бумаг, являющихся предметом обязательств, которые <br>
                     должны быть исполнены из портфеля Клиента</td>
-                  <td class="primary-text-market col-3" colspan="5">13,5% годовых</td>
+                  <td class="primary-text-market col-3" colspan="1">13,5% годовых</td>
                 </tr>
                 <tr>
-                  <td colspan="12" style="padding: 40px 0 0 0 !important;" class="primary-text-market">
+                  <td colspan="2" style="padding: 40px 0 0 0 !important;" class="primary-text-market">
                     Вознаграждение Брокера взимается ежедневно в соответствующей части исходя из указанной ставки
                     годовых.
                   </td>
@@ -2091,8 +2094,8 @@
   <div class="footer__consult-line top-line"></div>
   <div class="footer__consult-line bottom-line"></div>
 </footer>
-  <script src="js/app.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+  <script src="js/app.min.js?_v=20221017161725"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js?_v=20221017161725"
     integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
     crossorigin="anonymous"></script>
 </body>

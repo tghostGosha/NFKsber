@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 @@include('html/head.html',{
 "title": "Услуги"
 })
@@ -24,12 +24,12 @@
               </svg>
             </li>
             <li class="breadcrumb-item hide-on-mobile"><a class="breadcrumb-link" href="services.html">Услуги</a></li>
-            
+
           </ul>
         </nav>
-          <h1 class="services__title block__margin-bottom">Услуги</h1>
+        <h1 class="services__title block__margin-bottom">Услуги</h1>
         <div class="services-container grid-container">
-          <a href="brokerage-services.html" class="services-card">
+          <div class="services-card">
             <div class="services-card-header">
               <h3 class="services-card-title">Брокерское обслуживание</h3>
               <p class="services-card-text">Совершение операций купли/продажи <br>
@@ -37,17 +37,19 @@
             </div>
             <div class="services-card-body">
               <img src="img/popular-services/Frame-34.png" class="services-card-img" alt="обслуживание">
-              <span class="btn  services-card-btn">Подробнее</span>
+              <a href="brokerage-services.html" class="btn  services-card-btn">Подробнее</a>
             </div>
-          </a>
-          <a href="trust-management.html" class="services-card">
+          </div>
+          <div class="services-card">
             <div class="services-card-header">
               <h3 class="services-card-title">Доверительное управление</h3>
               <p class="services-card-text">Управление вашими активами нашими трейдерами</p>
             </div>
-            <img src="img/popular-services/Frame-35.png" class="services-card-img" alt="обслуживание">
-            <span href="#" class="btn  services-card-btn">Подробнее</span>
-          </a>
+            <div class="services-card-body">
+              <img src="img/popular-services/Frame-35.png" class="services-card-img" alt="управление">
+              <a href="trust-management.html" class="btn  services-card-btn">Подробнее</a>
+            </div>
+          </div>
           <!-- <a href="trust-management.html" class="services-card">
             <div class="services-card-header">
               <h3 class="services-card-title">Магазин финансовых продуктов</h3>
@@ -56,65 +58,80 @@
             <img src="img/popular-services/Frame-36.png" class="services-card-img" alt="обслуживание">
             <span href="#" class="btn  services-card-btn">Подробнее</span>
           </a> -->
-          <a href="individual-account.html" class="services-card">
+          <div class="services-card">
             <div class="services-card-header">
               <h3 class="services-card-title">УИС</h3>
               <p class="services-card-text">Уникальное предложение для тех, кто ещё не выбрал инструменты</p>
             </div>
-            <img src="img/universal-account/hero.png" class="services-card-img" alt="обслуживание">
-            <span href="#" class="btn  services-card-btn">Подробнее</span>
-          </a>
-          <a href="individual-account.html" class="services-card">
+            <div class="services-card-body">
+              <img src="img/universal-account/hero.png" class="services-card-img" alt="Уис">
+              <a href="individual-account.html" class="btn  services-card-btn">Подробнее</a>
+            </div>
+          </div>
+          <div class="services-card">
             <div class="services-card-header">
               <h3 class="services-card-title">ИИС</h3>
               <p class="services-card-text">Получите до 156 000 рублей налоговым вычетом за 3 года</p>
             </div>
-            <img src="img/popular-services/Frame-37.png" class="services-card-img" alt="обслуживание">
-            <span href="#" class="btn  services-card-btn">Подробнее</span>
-          </a>
-          <a href="currency-market.html" class="services-card">
+            <div class="services-card-body">
+              <img src="img/popular-services/Frame-37.png" class="services-card-img" alt="ИИС">
+              <a href="individual-account.html" class="btn  services-card-btn">Подробнее</a>
+            </div>
+          </div>
+          <div class="services-card">
             <div class="services-card-header">
               <h3 class="services-card-title">Валютный рынок</h3>
               <p class="services-card-text">Онлайн-торговля валютой на Московской бирже</p>
             </div>
-            <img src="img/popular-services/Frame-38.png" class="services-card-img" alt="обслуживание">
-            <span href="#" class="btn  services-card-btn">Подробнее</span>
-          </a>
-          <a href="metals-market.html" class="services-card">
+            <div class="services-card-body">
+              <img src="img/popular-services/Frame-38.png" class="services-card-img" alt="Валютный рынок">
+              <a href="currency-market.html" class="btn  services-card-btn">Подробнее</a>
+            </div>
+          </div>
+          <div class="services-card">
             <div class="services-card-header">
               <h3 class="services-card-title">Рынок драгоценных
                 металлов</h3>
               <p class="services-card-text">Приобретайте золото и другие металлы
                 не выходя из дома</p>
             </div>
-            <img src="img/popular-services/Frame-39.png" class="services-card-img" alt="обслуживание">
-            <span href="#" class="btn  services-card-btn">Подробнее</span>
-          </a>
-          <a href="metals-market.html" class="services-card">
+            <div class="services-card-body">
+              <img src="img/popular-services/Frame-39.png" class="services-card-img" alt="Рынок драгоценных металлов">
+              <a href="metals-market.html" class="btn  services-card-btn">Подробнее</a>
+            </div>
+          </div>
+          <div class="services-card">
             <div class="services-card-header">
               <h3 class="services-card-title">Сделки РЕПО</h3>
               <p class="services-card-text">Финансирование без справок и поручителей под залог ценных бумаг</p>
             </div>
-            <img src="img/transactions-repo/repo-hero.png" class="services-card-img" alt="обслуживание">
-            <span href="#" class="btn  services-card-btn">Открыть счет</span>
-          </a>
-          <a href="metals-market.html" class="services-card">
+            <div class="services-card-body">
+              <img src="img/transactions-repo/repo-hero.png" class="services-card-img" alt="Сделки Репо">
+              <a href="metals-market.html" class="btn  services-card-btn">Открыть счет</a>
+            </div>
+          </div>
+          <div class="services-card">
             <div class="services-card-header">
               <h3 class="services-card-title">Депозитарная деятельность</h3>
-              <p class="services-card-text">Услуга учета  и удостоверения прав на ценные бумаги</p>
+              <p class="services-card-text">Услуга учета и удостоверения прав на ценные бумаги</p>
             </div>
-            <img src="img/depositary-activities/depositary-hero.png" class="services-card-img" alt="обслуживание">
-            <span href="#" class="btn  services-card-btn">Открыть счет</span>
-          </a>
-          <a href="metals-market.html" class="services-card">
+            <div class="services-card-body">
+              <img src="img/depositary-activities/depositary-hero.png" class="services-card-img" alt="Депозитарная деятельность">
+              <a href="metals-market.html" class="btn  services-card-btn">Открыть счет</a>
+            </div>
+          </div>
+          <div class="services-card">
             <div class="services-card-header">
               <h3 class="services-card-title">Статус квалифицированного
                 инвестора</h3>
-              <p class="services-card-text">Станьте  квалифицированным инвестором, чтобы использовать все возможости финансового рынка</p>
+              <p class="services-card-text">Станьте квалифицированным инвестором, чтобы использовать все возможости
+                финансового рынка</p>
             </div>
-            <img src="img/investor-status/investor-hero.png" class="services-card-img" alt="обслуживание">
-            <span href="#" class="btn  services-card-btn">Открыть счет</span>
-          </a>
+            <div class="services-card-body">
+              <img src="img/investor-status/investor-hero.png" class="services-card-img" alt="Статус инвестора">
+              <a href="metals-market.html" class="btn  services-card-btn">Открыть счет</a>
+            </div>
+          </div>
 
           <div class="service__card-mobile">
             <div class="service__card-mobile-left">
@@ -131,7 +148,7 @@
               <a href="brokerage-services.html" class="btn grey-button service__card-mobile-btn">Подробнее</a>
             </div>
             <div class="service__card-mobile-right">
-              <img class="service__card-mobile-img" src="img/popular-services/management.png" alt="обслуживание">
+              <img class="service__card-mobile-img" src="img/popular-services/management.png" alt="управление">
             </div>
           </div>
           <div class="service__card-mobile">
@@ -140,7 +157,7 @@
               <a href="brokerage-services.html" class="btn grey-button service__card-mobile-btn">Подробнее</a>
             </div>
             <div class="service__card-mobile-right">
-              <img class="service__card-mobile-img" src="img/popular-services/iis.png" alt="обслуживание">
+              <img class="service__card-mobile-img" src="img/popular-services/iis.png" alt="ИИС">
             </div>
           </div>
           <div class="service__card-mobile hide-385">
@@ -149,12 +166,12 @@
               <a href="brokerage-services.html" class="btn grey-button service__card-mobile-btn">Подробнее</a>
             </div>
             <div class="service__card-mobile-right">
-              <img class="service__card-mobile-img" src="img/popular-services/service.png" alt="обслуживание">
+              <img class="service__card-mobile-img" src="img/popular-services/service.png" alt="Магазин финансовых продуктов">
             </div>
           </div>
         </div>
       </div>
-    
+
     </section>
     <section class="brokers__info section-with-gradient">
       <div class="container">

@@ -1,6 +1,6 @@
 import * as flsFunctions from "./modules/functions.js";
 import $ from "jquery"
-import  { datepicker}  from "jquery-widget"
+import { datepicker } from "jquery-widget"
 import { Inputmask } from "inputmask";
 import Swiper, { Navigation, Pagination } from 'swiper';
 import JustValidate from 'just-validate';
@@ -11,7 +11,6 @@ import Choices from 'choices.js'
 
 //========== Инвестиционные идеи
 
-//========Choices селект
 $('.filter-menu__item').on('click', function (event) {
   event.stopPropagation();
 });
@@ -78,47 +77,38 @@ $('#mediumIconsSort').on('click', function (event) {
 
 //===================================
 ///===========Choices конвертор валют======
+
 const defaultSelect = (classNameEl) => {
   const element = document.getElementById(classNameEl);
+
   const choices = new Choices(element, {
     searchEnabled: false,
     position: 'bottom',
-
+    allowHTML: true,
   });
 
 }
 
-try {
-  defaultSelect('currency')
-} catch (error) {
-  console.log(error)
-}
+defaultSelect('currency')
 
-try {
-  defaultSelect('currency-2')
-} catch (error) {
-  console.log(error)
-}
+defaultSelect('currency-2')
 
-try {
-  const countrySelect = document.querySelector('#currency-detail');
-  const countryChoices = new Choices(countrySelect, {
-    searchEnabled: false,
-    position: 'bottom',
-    placeholder: true,
-  
-    classNames: {
-      containerOuter: 'country-choices',
-      containerInner: "countries-wrapper",
-      list: "currency__list",
-      listDropdown: "countries-list-dropdown",
-      item: 'currency__item',
-      itemSelectable: 'currency__item--selectable',
-    }
-  });
-} catch (error) {
-  console.log(error)
-}
+const countrySelect = document.querySelector('#currency-detail');
+const countryChoices = new Choices(countrySelect, {
+  searchEnabled: false,
+  position: 'bottom',
+  placeholder: true,
+  allowHTML: true,
+  classNames: {
+    containerOuter: 'country-choices',
+    containerInner: "countries-wrapper",
+    list: "currency__list",
+    listDropdown: "countries-list-dropdown",
+    item: 'currency__item',
+    itemSelectable: 'currency__item--selectable',
+  }
+});
+
 
 
 //=====================
@@ -189,7 +179,7 @@ function myFunction() {
       elementShadow.classList.remove('shadow-on-scroll');
     }
   } catch (error) {
-    console.log('тут не нужна функция')
+
   }
 
 }
@@ -327,109 +317,125 @@ if (input.type === 'tel') {
 
 //========Валидация формы открытия счета и маска================
 //======маска телефон
-const accountFormTel = document.getElementById('tel');
-if (accountFormTel.type === 'tel') {
-  accountFormTel.addEventListener('input', mask);
-  accountFormTel.addEventListener('focus', mask);
-  accountFormTel.addEventListener('blur', mask);
-  accountFormTel.addEventListener('keydown', mask);
-}
-//======заглавная буква
-firstLetterToUpperCase('account__form-input');
-//=======Валидация
-const validation = new JustValidate('#accountform', {
-  errorFieldCssClass: 'is-invalid',
-  errorLabelStyle: {
-    fontSize: '14px',
-    color: '#dc3545',
-  },
-  successFieldCssClass: 'is-valid',
-  successLabelStyle: {
-    fontSize: '14px',
-    color: '#20b418',
+try {
 
-  },
-  successFieldStyle: {
-    border: '1px solid #44953D',
-  },
-  focusInvalidField: true,
-  lockForm: true,
-});
-validation
-  .addField('#firstname', [
-    {
-      rule: 'minLength',
-      value: 3,
-      errorMessage: 'Фамилия должна содержать не менее 3-х символов ',
+  const accountFormTel = document.getElementById('tel');
+  if (accountFormTel.type === 'tel') {
+    accountFormTel.addEventListener('input', mask);
+    accountFormTel.addEventListener('focus', mask);
+    accountFormTel.addEventListener('blur', mask);
+    accountFormTel.addEventListener('keydown', mask);
+  }
+} catch (error) {
+
+}
+
+//======заглавная буква
+try {
+
+  firstLetterToUpperCase('account__form-input');
+} catch (error) {
+
+}
+
+//=======Валидация
+try {
+  const validation = new JustValidate('#accountform', {
+    errorFieldCssClass: 'is-invalid',
+    errorLabelStyle: {
+      fontSize: '14px',
+      color: '#dc3545',
     },
-    {
-      rule: 'maxLength',
-      value: 30,
+    successFieldCssClass: 'is-valid',
+    successLabelStyle: {
+      fontSize: '14px',
+      color: '#20b418',
+
     },
-    {
-      rule: 'required',
-      errorMessage: 'Обязательное поле',
+    successFieldStyle: {
+      border: '1px solid #44953D',
     },
-  ])
-  .addField('#secondname', [
-    {
-      rule: 'minLength',
-      value: 2,
-      errorMessage: 'Имя должно содержать не менее 2-х символов ',
-    },
-    {
-      rule: 'maxLength',
-      value: 30,
-    },
-    {
-      rule: 'required',
-      errorMessage: 'Обязательное поле',
-    },
-  ])
-  .addField('#surname', [
-    {
-      rule: 'minLength',
-      value: 3,
-      errorMessage: 'Отчество должно содержать не менее 3-х символов ',
-    },
-    {
-      rule: 'maxLength',
-      value: 30,
-    },
-    {
-      rule: 'required',
-      errorMessage: 'Обязательное поле',
-    },
-  ])
-  .addField('#mail', [
-    {
-      rule: 'required',
-      errorMessage: 'Обязательное поле',
-    },
-    {
-      rule: 'email',
-      errorMessage: 'Не валидный Email',
-    },
-  ])
-  .addField('#tel', [
-    {
-      rule: 'required',
-      errorMessage: 'Обязательное поле',
-    },
-  ])
-  .addField('#accountCheck', [
-    {
-      rule: 'required',
-      errorMessage: 'Подтвердите',
-    },
-  ])
-  // {
-  //   successMessage: 'Силён! с первой попытки'
-  // }
-  .onSuccess((ev) => {
-    ev.preventDefault();
-    window.showNotification();
+    focusInvalidField: true,
+    lockForm: true,
   });
+  validation
+    .addField('#firstname', [
+      {
+        rule: 'minLength',
+        value: 3,
+        errorMessage: 'Фамилия должна содержать не менее 3-х символов ',
+      },
+      {
+        rule: 'maxLength',
+        value: 30,
+      },
+      {
+        rule: 'required',
+        errorMessage: 'Обязательное поле',
+      },
+    ])
+    .addField('#secondname', [
+      {
+        rule: 'minLength',
+        value: 2,
+        errorMessage: 'Имя должно содержать не менее 2-х символов ',
+      },
+      {
+        rule: 'maxLength',
+        value: 30,
+      },
+      {
+        rule: 'required',
+        errorMessage: 'Обязательное поле',
+      },
+    ])
+    .addField('#surname', [
+      {
+        rule: 'minLength',
+        value: 3,
+        errorMessage: 'Отчество должно содержать не менее 3-х символов ',
+      },
+      {
+        rule: 'maxLength',
+        value: 30,
+      },
+      {
+        rule: 'required',
+        errorMessage: 'Обязательное поле',
+      },
+    ])
+    .addField('#mail', [
+      {
+        rule: 'required',
+        errorMessage: 'Обязательное поле',
+      },
+      {
+        rule: 'email',
+        errorMessage: 'Не валидный Email',
+      },
+    ])
+    .addField('#tel', [
+      {
+        rule: 'required',
+        errorMessage: 'Обязательное поле',
+      },
+    ])
+    .addField('#accountCheck', [
+      {
+        rule: 'required',
+        errorMessage: 'Подтвердите',
+      },
+    ])
+    // {
+    //   successMessage: 'Силён! с первой попытки'
+    // }
+    .onSuccess((ev) => {
+      ev.preventDefault();
+      window.showNotification();
+    });
+} catch (error) {
+
+}
 
 // const getStocks = async function () {
 //   const responce = await fetch(`https://zberopolis.ru/`);
@@ -441,32 +447,39 @@ validation
 
 const slider1 = document.getElementById('slider1');
 const slider2 = document.getElementById('slider2');
+try {
+  noUiSlider.create(slider1, {
+    start: [0],
+    connect: [true, false],
+    range: {
+      'min': 10000,
+      'max': 400000
+    },
+    step: 10000,
+    format: wNumb({
+      decimals: 0,
+      thousand: ' '
+    }),
+  });
+} catch (error) {
 
-noUiSlider.create(slider1, {
-  start: [0],
-  connect: [true, false],
-  range: {
-    'min': 10000,
-    'max': 400000
-  },
-  step: 10000,
-  format: wNumb({
-    decimals: 0,
-    thousand: ' '
-  }),
-});
-noUiSlider.create(slider2, {
-  start: [0],
-  connect: [true, false],
-  range: {
-    'min': 1,
-    'max': 12
-  },
-  step: 1,
-  format: wNumb({
-    decimals: 0
-  }),
-});
+}
+try {
+  noUiSlider.create(slider2, {
+    start: [0],
+    connect: [true, false],
+    range: {
+      'min': 1,
+      'max': 12
+    },
+    step: 1,
+    format: wNumb({
+      decimals: 0
+    }),
+  });
+} catch (error) {
+
+}
 
 let slider1Value = document.getElementById('slider1Value');
 let slider2Value = document.getElementById('slider2Value');
@@ -509,44 +522,40 @@ const calc = (depositAmount, years) => {
 
 
 }
-slider2.noUiSlider.on('update', function (values, handle) {
-  years = Math.round(slider2.noUiSlider.get(true))
 
-  if (years <= 4) {
-    slider2Value.innerHTML = `${years} года`;
-    resultYears.textContent = `Мои сбережения за ${years} года`
+try {
 
-  } else {
-    slider2Value.innerHTML = `${years} лет`;
-    resultYears.textContent = `Мои сбережения за ${years} лет`
+  slider2.noUiSlider.on('update', function (values, handle) {
+    years = Math.round(slider2.noUiSlider.get(true))
 
-  }
-  calc(years, depositAmount)
-  return years
-});
+    if (years <= 4) {
+      slider2Value.innerHTML = `${years} года`;
+      resultYears.textContent = `Мои сбережения за ${years} года`
 
-slider1.noUiSlider.on('update', function (values, handle) {
-  slider1Value.innerHTML = `${values[handle]}₽`;
-  depositAmount = Math.round(slider1.noUiSlider.get(true))
+    } else {
+      slider2Value.innerHTML = `${years} лет`;
+      resultYears.textContent = `Мои сбережения за ${years} лет`
 
-  calc(years, depositAmount)
-  console.log(depositAmount)
-  return depositAmount
+    }
+    calc(years, depositAmount)
+    return years
+  });
 
-});
+  slider1.noUiSlider.on('update', function (values, handle) {
+    slider1Value.innerHTML = `${values[handle]}₽`;
+    depositAmount = Math.round(slider1.noUiSlider.get(true))
+
+    calc(years, depositAmount)
+    console.log(depositAmount)
+    return depositAmount
+
+  });
+
+} catch (error) {
+
+}
 
 
 
 
 
-// function addSpaces(nStr) {
-//   nStr += '';
-//   let x = nStr.split('.');
-//   let x1 = x[0];
-//   let x2 = x.length > 1 ? '.' + x[1] : '';
-//   let rgx = /(\d+)(\d{3})/;
-//   while (rgx.test(x1)) {
-//     x1 = x1.replace(rgx, '$1' + ' ' + '$2');
-//   }
-//   return x1 + x2;
-// }

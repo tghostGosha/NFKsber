@@ -2,15 +2,15 @@
 
   &-container {
     background-image: var(--desktop-image-banner-top);
-    padding: 46px 54% 59px 0;
+    padding: 0 54% 59px 0;
 
     @media(max-width: 1176px) {
-      padding: 32px 33% 112px 0;
+      padding: 0 33% 112px 0;
       background-size: 48%;
     }
 
     @media(max-width: 585px) {
-      padding: 24px 0 149px 0;
+      padding: 0 0 149px 0;
     }
   }
 

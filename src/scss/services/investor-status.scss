@@ -1,15 +1,15 @@
 .investor__hero {
   &-container {
     background-image: var(--desktop-image-banner-top);
-    padding: 46px 52% 117px 0;
+    padding: 0 52% 117px 0;
 
     @media(max-width: 1176px) {
-      padding: 32px 9% 85px 0;
+      padding: 0 9% 85px 0;
       background-size: 38%;
     }
 
     @media(max-width: 585px) {
-      padding: 24px 3% 141px 0;
+      padding: 0 3% 141px 0;
       background-size: 58%;
     }
   }

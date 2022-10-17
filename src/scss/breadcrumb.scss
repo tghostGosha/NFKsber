@@ -10,7 +10,7 @@
   margin: 0;
   padding-top: 24px;
 
-  @media(max-width: 1176px) {}
+  
 
   @media(max-width: 585px) {
     padding-top: 8px;
@@ -19,8 +19,11 @@
 
 .breadcrumb-margin-bottom {
   margin-bottom: 56px;
-  @media(max-width: 585px) {
+  @media(max-width: 1176px) {
     margin-bottom: 48px;
+  }
+  @media(max-width: 585px) {
+    margin-bottom: 24px;
   }
 }
 
