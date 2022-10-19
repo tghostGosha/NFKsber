@@ -1,30 +1,22 @@
 .education__hero {
   &-container {
     background-image: var(--desktop-image-banner-top);
-    padding: 0 62% 79px 0;
+    padding: 56px 62% 79px 0;
 
     @media(max-width: 1176px) {
-      padding: 0 9% 85px 0;
+      padding: 48px 9% 85px 0;
       background-size: 53%;
     }
 
     @media(max-width: 585px) {
-      padding: 0 1% 157px 0;
+      padding: 24px 1% 157px 0;
       background-size: 58%;
     }
   }
 
   &-title {
     margin-bottom: var(--mb-24);
-    // @media(max-width: 1176px) {
-    //   font-size: 36px;
-    //   line-height: 42px;
-    // }
 
-    // @media(max-width: 585px) {
-    //   font-size: 28px;
-    //   line-height: 32px;
-    // }
   }
 
   &-description {

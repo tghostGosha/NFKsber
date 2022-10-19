@@ -14803,19 +14803,19 @@ input::placeholder {
 
 .brokers__hero-container {
   background-image: var(--desktop-image-banner-top);
-  padding: 0 50% 48px 0;
+  padding: 56px 50% 48px 0;
   background-repeat: no-repeat;
   background-position: right bottom;
 }
 @media (max-width: 1176px) {
   .brokers__hero-container {
-    padding: 0 33% 38px 0;
+    padding: 48px 33% 38px 0;
     background-size: 38%;
   }
 }
 @media (max-width: 585px) {
   .brokers__hero-container {
-    padding: 0 3% 141px 0;
+    padding: 24px 3% 141px 0;
     background-size: 58%;
   }
 }
@@ -15071,6 +15071,11 @@ input::placeholder {
   }
 }
 
+.education-btn:hover,
+.demo-btn:hover {
+  background-color: var(--grey-button);
+}
+
 .demo-btn {
   background-color: var(--white);
   border: none;
@@ -15109,17 +15114,17 @@ input::placeholder {
 
 .trust__hero-container {
   background-image: var(--desktop-image-banner-top);
-  padding: 0 50% 64px 0;
+  padding: 56px 50% 64px 0;
 }
 @media (max-width: 1176px) {
   .trust__hero-container {
-    padding: 0 6% 46px 0;
+    padding: 48px 6% 46px 0;
     background-size: 50%;
   }
 }
 @media (max-width: 585px) {
   .trust__hero-container {
-    padding: 0 6% 118px 0;
+    padding: 24px 6% 118px 0;
     background-size: 67%;
   }
 }
@@ -15388,17 +15393,17 @@ input::placeholder {
 
 .universal__hero-container {
   background-image: var(--desktop-image-banner-top);
-  padding: 0 52% 43px 0;
+  padding: 56px 52% 43px 0;
 }
 @media (max-width: 1176px) {
   .universal__hero-container {
-    padding: 0 8% 38px 0;
+    padding: 48px 8% 38px 0;
     background-size: 41%;
   }
 }
 @media (max-width: 585px) {
   .universal__hero-container {
-    padding: 0 0 118px 0;
+    padding: 24px 0 118px 0;
     background-size: 64%;
   }
 }
@@ -15638,17 +15643,17 @@ input::placeholder {
 
 .metals__hero-container {
   background-image: var(--desktop-image-banner-top);
-  padding: 0 52% 295px 0;
+  padding: 56px 52% 295px 0;
 }
 @media (max-width: 1176px) {
   .metals__hero-container {
-    padding: 0 39% 199px 0;
+    padding: 48px 39% 199px 0;
     background-size: 40%;
   }
 }
 @media (max-width: 585px) {
   .metals__hero-container {
-    padding: 0 39% 246px 0;
+    padding: 24px 39% 246px 0;
     background-size: 92%;
   }
 }
@@ -15749,17 +15754,17 @@ input::placeholder {
 
 .depositary__hero-container {
   background-image: var(--desktop-image-banner-top);
-  padding: 0 52% 27.4% 0;
+  padding: 56px 52% 27.4% 0;
 }
 @media (max-width: 1176px) {
   .depositary__hero-container {
-    padding: 0 32% 27.2% 0;
+    padding: 48px 32% 27.2% 0;
     background-size: 42%;
   }
 }
 @media (max-width: 585px) {
   .depositary__hero-container {
-    padding: 0 24% 70% 0;
+    padding: 24px 24% 70% 0;
     background-size: 86%;
   }
 }
@@ -15852,17 +15857,17 @@ input::placeholder {
 
 .investor__hero-container {
   background-image: var(--desktop-image-banner-top);
-  padding: 0 52% 117px 0;
+  padding: 56px 52% 117px 0;
 }
 @media (max-width: 1176px) {
   .investor__hero-container {
-    padding: 0 9% 85px 0;
+    padding: 48px 9% 85px 0;
     background-size: 38%;
   }
 }
 @media (max-width: 585px) {
   .investor__hero-container {
-    padding: 0 3% 141px 0;
+    padding: 24px 3% 141px 0;
     background-size: 58%;
   }
 }
@@ -16166,17 +16171,17 @@ input::placeholder {
 
 .individual__hero-container {
   background-image: var(--desktop-image-banner-top);
-  padding: 0 50% 55px 0;
+  padding: 56px 50% 55px 0;
 }
 @media (max-width: 1176px) {
   .individual__hero-container {
-    padding: 0 37% 38px 0;
+    padding: 56px 37% 38px 0;
     background-size: 40%;
   }
 }
 @media (max-width: 585px) {
   .individual__hero-container {
-    padding: 0 2% 179px 0;
+    padding: 56px 2% 179px 0;
     background-size: 78%;
   }
 }
@@ -16930,17 +16935,17 @@ input::placeholder {
 
 .rates__hero-container {
   background-image: var(--desktop-image-banner-top);
-  padding: 0 54% 59px 0;
+  padding: 56px 54% 59px 0;
 }
 @media (max-width: 1176px) {
   .rates__hero-container {
-    padding: 0 33% 112px 0;
+    padding: 48px 33% 112px 0;
     background-size: 48%;
   }
 }
 @media (max-width: 585px) {
   .rates__hero-container {
-    padding: 0 0 149px 0;
+    padding: 24px 0 149px 0;
   }
 }
 .rates__hero-title {
@@ -17329,17 +17334,17 @@ th {
 
 .education__hero-container {
   background-image: var(--desktop-image-banner-top);
-  padding: 0 62% 79px 0;
+  padding: 56px 62% 79px 0;
 }
 @media (max-width: 1176px) {
   .education__hero-container {
-    padding: 0 9% 85px 0;
+    padding: 48px 9% 85px 0;
     background-size: 53%;
   }
 }
 @media (max-width: 585px) {
   .education__hero-container {
-    padding: 0 1% 157px 0;
+    padding: 24px 1% 157px 0;
     background-size: 58%;
   }
 }
@@ -17503,19 +17508,19 @@ th {
 
 .repo__hero-container {
   background-image: var(--desktop-image-banner-top);
-  padding: 0 52% 209px 0;
+  padding: 56px 52% 209px 0;
   background-repeat: no-repeat;
   background-position: right bottom;
 }
 @media (max-width: 1176px) {
   .repo__hero-container {
-    padding: 0 24% 119px 0;
+    padding: 48px 24% 119px 0;
     background-size: 48%;
   }
 }
 @media (max-width: 585px) {
   .repo__hero-container {
-    padding: 0 1% 119px 0;
+    padding: 24px 1% 119px 0;
     background-size: 59%;
   }
 }
@@ -17686,18 +17691,18 @@ th {
 
 .currency__hero-container {
   background-image: var(--desktop-image-banner-top);
-  padding: 0 50% 48px 0;
+  padding: 56px 50% 48px 0;
   background-size: 47%;
 }
 @media (max-width: 1176px) {
   .currency__hero-container {
     background-size: 41%;
-    padding: 0 3% 32px 0;
+    padding: 48px 3% 32px 0;
   }
 }
 @media (max-width: 585px) {
   .currency__hero-container {
-    padding: 0 3% 115px 0;
+    padding: 24px 3% 115px 0;
     background-size: 64%;
   }
 }
@@ -18131,19 +18136,19 @@ th {
 }
 .prognosis__hero-container {
   background-image: url("../img/prognosis/prognosis.png");
-  padding: 0 50% 48px 0;
+  padding: 56px 50% 48px 0;
   background-repeat: no-repeat;
   background-position: right bottom;
 }
 @media (max-width: 1176px) {
   .prognosis__hero-container {
-    padding: 0 33% 38px 0;
+    padding: 48px 33% 38px 0;
     background-size: 38%;
   }
 }
 @media (max-width: 585px) {
   .prognosis__hero-container {
-    padding: 0 3% 141px 0;
+    padding: 24px 3% 141px 0;
     background-size: 58%;
   }
 }
@@ -18575,13 +18580,13 @@ th {
 
 .exchange__rates-hero {
   background-image: var(--desktop-image-banner-top);
-  padding: 0 50% 245px 0;
+  padding: 56px 50% 245px 0;
   background-repeat: no-repeat;
   background-position: right bottom;
 }
 @media (max-width: 1176px) {
   .exchange__rates-hero {
-    padding: 0 33% 38px 0;
+    padding: 48pxpx 33% 38px 0;
     background-size: 38%;
   }
 }
@@ -19780,16 +19785,16 @@ th {
 
 .about__hero-container {
   background-image: var(--desktop-image-banner-top);
-  padding: 0 56% 181px 0;
+  padding: 56px 56% 181px 0;
 }
 @media (max-width: 1176px) {
   .about__hero-container {
-    padding: 0 56% 154px 0;
+    padding: 48px 56% 154px 0;
   }
 }
 @media (max-width: 585px) {
   .about__hero-container {
-    padding: 0 2% 228px 0;
+    padding: 24px 2% 228px 0;
     background-size: 67%;
   }
 }
@@ -20687,6 +20692,7 @@ th {
 .primary-button {
   background-color: var(--primary-green);
   color: var(--white);
+  border-radius: 5px;
 }
 @media (max-width: 585px) {
   .primary-button {
@@ -20706,6 +20712,7 @@ th {
   background-color: var(--grey-button);
   color: var(--primary-text);
   border-radius: 5px;
+  line-height: 22px;
 }
 @media (max-width: 585px) {
   .grey-button {

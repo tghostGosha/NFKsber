@@ -2,17 +2,17 @@
 
   &-container {
     background-image: var(--desktop-image-banner-top);
-    padding: 0 52% 209px 0;
+    padding: 56px 52% 209px 0;
     background-repeat: no-repeat;
     background-position: right bottom;
 
     @media(max-width: 1176px) {
-      padding: 0 24% 119px 0;
+      padding: 48px 24% 119px 0;
       background-size: 48%;
     }
 
     @media(max-width: 585px) {
-      padding: 0 1% 119px 0;
+      padding: 24px 1% 119px 0;
       background-size: 59%;
     }
   }

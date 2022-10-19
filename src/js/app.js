@@ -93,10 +93,11 @@ $('#consultEarnBtn').on('click', function (event) {
   event.preventDefault();
   OpenModalWindow($('.consult-earn'));
 })
-$('#mainConsultModalBtn').on('click', function (event) {
+$('.consult-button').on('click', function (event) {
   event.preventDefault();
   OpenModalWindow($('.main-consult-modal'));
 })
+
 $('#modalCurrencyHistory').on('click', function (event) {
   event.preventDefault();
   OpenModalWindow($('.currency-history-modal'));

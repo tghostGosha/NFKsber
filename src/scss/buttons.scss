@@ -35,7 +35,7 @@
 .primary-button {
   background-color: var(--primary-green);
   color: var(--white);
-
+  border-radius: 5px;
   @media(max-width: 585px) {
     font-size: 14px;
     line-height: 19px;
@@ -53,6 +53,7 @@
   background-color: var(--grey-button);
   color: var(--primary-text);
   border-radius: 5px;
+  line-height: 22px;
 
   @media(max-width: 585px) {
     font-size: 14px;
@@ -97,7 +98,7 @@
   color: var(--secondary-text);
 }
 .grey-color-link {
-  
+
 }
 .grey-color-link:hover,
 .grey-color-link:hover svg {
