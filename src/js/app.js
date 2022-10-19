@@ -1,20 +1,72 @@
 import * as flsFunctions from "./modules/functions.js";
 import $ from "jquery"
-import { datepicker } from "jquery-widget"
+
 import { Inputmask } from "inputmask";
 import Swiper, { Navigation, Pagination } from 'swiper';
 import JustValidate from 'just-validate';
 import noUiSlider from 'nouislider';
 import wNumb from 'wnumb';
-import Choices from 'choices.js'
+import Choices from 'choices.js';
+import bootstrap from 'bootstrap';
+
+import datepickerFactory from 'jquery-datepicker';
 
 
-//========== Инвестиционные идеи
 
 $('.filter-menu__item').on('click', function (event) {
   event.stopPropagation();
 });
 
+//========== Календарь кастомный
+
+datepickerFactory($);
+
+$(function () {
+  $("#datepicker").datepicker({
+    showOn: "button",
+    buttonImage: "img/icons/icons.svg#Calendar",
+    buttonImageOnly: true,
+    showOtherMonths: true,
+  selectOtherMonths: true,
+    // maxDate: "+0d",
+    yearRange: "2010:+0",
+    onSelect: function (dateText, inst) {
+      var date = $(this).datepicker('getDate')
+      date = jQuery.datepicker.formatDate('dd.mm.yy', date);
+      data = 'date=' + date + ',';
+      $.ajax({
+        type: "POST",
+        url: "ajax_calendar",
+        data: { "date": date, "id": 1795 },
+        success: function (content) {
+          var obj = jQuery.parseJSON(content);
+          $.each(obj, function (i, item) {
+            $('table#currency_rate_table [data-charcode="' + item.charcode + '"]').text(item.currency)
+          });
+        }
+      });
+    },
+  }).datepicker("setDate", new Date())
+
+  });
+  $.datepicker.regional['ru'] = {
+    closeText: 'Закрыть',
+    prevText: 'Предыдущий',
+    nextText: 'Следующий',
+    currentText: 'Сегодня',
+    monthNames: ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'],
+    monthNamesShort: ['Янв', 'Фев', 'Мар', 'Апр', 'Май', 'Июн', 'Июл', 'Авг', 'Сен', 'Окт', 'Ноя', 'Дек'],
+    dayNames: ['воскресенье', 'понедельник', 'вторник', 'среда', 'четверг', 'пятница', 'суббота'],
+    dayNamesShort: ['вск', 'пнд', 'втр', 'срд', 'чтв', 'птн', 'сбт'],
+    dayNamesMin: ['Вс', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'],
+    weekHeader: 'Не',
+    dateFormat: 'dd.mm.yy',
+    firstDay: 1,
+    isRTL: false,
+    showMonthAfterYear: false,
+    yearSuffix: ''
+  };
+  $.datepicker.setDefaults($.datepicker.regional['ru']);
 
 //==============Модальные окна
 
@@ -120,7 +172,9 @@ try {
 //=====================
 Swiper.use([Navigation, Pagination])
 
+//======включаем создание WEbp ====
 flsFunctions.isWebp()
+//======включаем создание === 
 const burger = document.querySelector('.header-burger');
 const greyBackground = document.querySelector('.grey-background-640px');
 const nav = document.querySelector('.header__nav-app-list');

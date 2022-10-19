@@ -111,6 +111,8 @@
   height: 143px;
   display: flex;
   margin-bottom: var(--mb-40);
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .about__license {

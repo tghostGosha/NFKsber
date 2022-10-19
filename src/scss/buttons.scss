@@ -96,6 +96,13 @@
 .black-color-link:hover svg {
   color: var(--secondary-text);
 }
+.grey-color-link {
+  
+}
+.grey-color-link:hover,
+.grey-color-link:hover svg {
+  color: var(--primary-text);
+}
 
 // .black-color-link {
 //   align-items: center;

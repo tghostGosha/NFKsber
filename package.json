@@ -1,5 +1,5 @@
 {
-  "name": "gulp-2022",
+  "name": "nfk",
   "version": "1.0.0",
   "description": "",
   "main": "gulpfile.js",
@@ -20,6 +20,7 @@
     "gulp-cli": "^2.3.0",
     "inputmask": "^5.0.7",
     "jquery": "^3.6.0",
+    "jquery-datepicker": "^1.12.3",
     "jquery-widget": "^0.1.8",
     "just-validate": "^3.8.1",
     "nouislider": "^15.6.0",
@@ -51,6 +52,7 @@
     "gulp-webp-html-nosvg": "latest",
     "gulp-webpcss": "latest",
     "gulp-zip": "latest",
+    "jquery-ui": "^1.13.2",
     "sass": "latest",
     "swiper": "^8.2.4",
     "vinyl-ftp": "latest",

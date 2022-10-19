@@ -202,12 +202,15 @@
 
 .modal-background-header {
   position: absolute;
-  width: 100%;
+  width: 106%;
   height: 108px;
   background-color: var(--primary-grey);
   z-index: 5;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  top: -26px;
+  left:  -25px;
+  display: block !important;
   @media(max-width: 585px)  {
     height: 87px;
   }
@@ -217,10 +220,7 @@
   padding: 26px 10px 26px 0;
 }
 
-.currency-modal-window {
-  position: relative;
-  z-index: 4;
-}
+
 
 .currency-history-modal {
   flex-direction: column;
@@ -239,7 +239,7 @@
 //===========Стилизация календаря===============
 .date-picker {
   position: relative;
-  z-index: 76;
+  z-index: 1176;
 }
 
 .ui-datepicker {

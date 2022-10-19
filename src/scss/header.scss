@@ -775,6 +775,7 @@ input::placeholder {
 
 .header__nav-item:hover>.dropdown-menu {
   display: block;
+  z-index: 1001;
 
   @media only screen and (max-device-width: 1176px) {
     display: none;

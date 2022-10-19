@@ -68,13 +68,13 @@ export const scss = () => {
     //   cascade: true
     // }))
     //Раскоментировать если нужен не сжатый дубль файла стилей
-    // .pipe(app.gulp.dest(app.path.build.css))
-    // .pipe(
-    //   app.plugins.if(
-    //     app.isBuild,
-    //     cleanCss()
-    //   )
-    // )
+    .pipe(app.gulp.dest(app.path.build.css))
+    .pipe(
+      app.plugins.if(
+        app.isBuild,
+        cleanCss()
+      )
+    )
     // .pipe(cleanCss())
     .pipe(rename({
       extname: ".min.css"

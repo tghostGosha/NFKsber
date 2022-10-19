@@ -326,11 +326,16 @@
   transition: var(--animation-transition);
 }
 
-.social__list-icon:hover .svg-fb-dims,
-.social__list-icon:focus .svg-fb-dims {
-  color: #3b5998;
+
+.social__list-icon:hover .svg-telegram-logo-dims,
+.social__list-icon:focus .svg-telegram-logo-dims {
+  color: #0088cc;
 }
 
+.social__list-icon:hover .svg-youtube-logo-dims,
+.social__list-icon:focus .svg-youtube-logo-dims {
+  color: #c4302b;
+}
 .social__list-icon:hover .svg-twitter-dims,
 .social__list-icon:focus .svg-twitter-dims{
   color: #00acee;
