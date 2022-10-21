@@ -8,9 +8,7 @@ import noUiSlider from 'nouislider';
 import wNumb from 'wnumb';
 import Choices from 'choices.js';
 import bootstrap from 'bootstrap';
-
 import datepickerFactory from 'jquery-datepicker';
-
 
 
 $('.filter-menu__item').on('click', function (event) {
@@ -183,7 +181,7 @@ const nav = document.querySelector('.header__nav-app-list');
 //==========Меняем svg на акардионе "тарифы" мобилка
 $(".rates__accordion-button").on('click', function () {
   $(this).find("i").toggleClass("bi bi-plus-lg bi bi-dash-lg")
-  console.log(i)
+  
 });
 
 //==============================

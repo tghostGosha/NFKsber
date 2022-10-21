@@ -31,10 +31,12 @@
   background-color: var(--white);
   border-radius: 10px;
   padding: 40px 46px;
-  transition: all 0.2s ease-in-out 0.2s;
+  transition: var(--animation-transition);
+  text-align: start;
 
   &-title {
     margin: 24px 0;
+    
   }
 
   &-source {
@@ -59,6 +61,7 @@
 }
 
 .news__nav {
+  justify-content: space-between;
   &-link {
     font-family: Gilroy;
     font-style: normal;
@@ -74,9 +77,6 @@
   }
 }
 
-.news__nav-item:not(:last-child) {
-  margin-right: 40px;
-}
 
 .news__tab {
   &-item {
@@ -97,6 +97,7 @@
 
   &-link-title {
     margin-bottom: 8px;
+    text-align: start;
   }
 
   &-link-date {

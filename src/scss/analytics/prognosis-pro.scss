@@ -1,11 +1,7 @@
 .prognosis__hero {
-  background-color: var(--primary-grey);
 
   &-container {
-    background-image: url('../img/prognosis/prognosis.png');
-    padding: 56px 50% 48px 0;
-    background-repeat: no-repeat;
-    background-position: right bottom;
+    background-image: var(--desktop-image-banner-top);
 
     @media(max-width: 1176px) {
       padding: 48px 33% 38px 0;
@@ -14,191 +10,54 @@
 
     @media(max-width: 585px) {
       padding: 24px 3% 141px 0;
-      background-size: 58%;
-    }
-  }
-
-  &-title {
-    margin-bottom: 24px;
-
-    @media(max-width: 585px) {
-      margin-bottom: 16px;
-      font-size: 32px;
-      line-height: 40px;
-    }
-  }
-
-  &-buttons {
-    display: inline-block;
-    margin-top: auto;
-
-    &-grey {
-      padding: 14px 32px;
-      margin-right: 32px;
-      border-radius: 5px;
-
-      @media(max-width: 1176px) {
-        margin-right: 16px;
-      }
-
-      @media(max-width: 585px) {
-        display: none;
-      }
-    }
-  }
-
-  &-button {
-    padding: 14px 32px;
-
-    @media(max-width: 585px) {
-      padding: 12px 30px;
+      background-size: 68%;
     }
   }
 }
 
 .prognosis__about {
-  margin-bottom: 68px;
   margin-top: 68px;
-  &-title {
-    text-align: center;
-  }
-
-  &-container {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    column-gap: 32px;
-    row-gap: 28px;
-    margin-bottom: 24px;
-  }
-
-  &-card {
-    background: var(--primary-grey);
-    border-radius: 10px;
-    background-repeat: no-repeat;
-  }
-
-}
-.unlimite__access,
-.free-fro-clients,
-.comfortable-interface,
-.analis-card {
-  grid-column: span 6;
-  background-position: 92% 77%;
-}
-
-.unlimite__access {
-  padding: 40px 38% 56px 46px;
-  background-image: url('../img/prognosis/unlimit.png');
-
-}
-.free-fro-clients {
-  padding: 40px 38% 56px 46px;
-  background-image: url('../img/prognosis/free.png');
-
-}
-.comfortable-interface {
-  padding: 40px 38% 56px 46px;
-  background-image: url('../img/prognosis/interface.png');
-
-}
-.analis-card {
-  padding: 40px 38% 56px 46px;
-  background-image: url('../img/prognosis/analis.png');
-
-}
-.prognosis__conditions {
-  margin-bottom: 64px;
 
   @media(max-width: 1176px) {
-    margin-bottom: 56px;
+    margin-top: 56px;
   }
-
   @media(max-width: 585px) {
-    margin-bottom: 48px;
+    margin-top: 48px;
   }
-
   &-title {
-    margin-bottom: 40px;
     text-align: center;
+  }
+}
 
-    @media(max-width: 1176px) {
-      margin-bottom: 32px;
-    }
+.small__banner-prognosis{
+  grid-column: span 6;
+  background-position: 92% 77%;
+  background-repeat: no-repeat;
+  @media(max-width: 585px) {
+    grid-column: span 12;
+  }
+}
 
-    @media(max-width: 585px) {
-      text-align: start;
-      margin-bottom: 24px;
-    }
+.prognosis-card-left {
+  grid-column: 1 /span 7;
+  @media(max-width: 585px) {
+    grid-column: 1 /span 12;
+    padding-bottom: 0;
+  }
+}
+
+.prognosis-card-right {
+  grid-column: 8 /span 5;
+}
+
+.prognosis__conditions {
+  &-title {
+    text-align: center;
   }
   &-section {
     padding-bottom: 148px;
-  }
-}
-
-.prognosis__conditions-container {
-  display: flex;
-  justify-content: space-between;
-
-  @media(max-width: 585px) {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
-.prognosis__conditions-card {
-  max-width: 392px;
-
-  // grid-column: 4, 1fr;
-  @media(max-width: 1176px) {
-    max-width: 257px;
-  }
-
-  @media(max-width: 585px) {
-    max-width: 352px;
-  }
-
-  &-header {
-    width: 98px;
-    height: 98px;
-    margin: 0 auto;
-    background-color: var(--primary-grey);
-    border-radius: 10px;
-    padding: 22px 27px;
-    margin-bottom: 24px;
-
     @media(max-width: 1176px) {
-      width: 80px;
-      height: 80px;
-      padding: 18px 22px;
+      padding-bottom: 0;
     }
-
-    @media(max-width: 585px) {
-      width: 72px;
-      height: 72px;
-      padding: 16px 20px;
-    }
-  }
-
-  &-title {
-    text-align: center;
-    margin-bottom: 16px;
-  }
-
-  &-description {
-    padding: 0 5px;
-    text-align: center;
-    color: var(--secondary-text);
-
-    @media(max-width: 585px) {
-      font-size: 14px;
-      line-height: 20px;
-    }
-  }
-}
-
-.conditions__card:not(:last-child) {
-
-  @media(max-width: 585px) {
-    margin-bottom: 48px;
   }
 }

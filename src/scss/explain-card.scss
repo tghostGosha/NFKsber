@@ -18,10 +18,8 @@
 .explain__card {
   grid-column: span 4;
   padding: 0 5px;
-  @media(max-width: 1176px) {
-    
-    
-  }
+  display: flex;
+  flex-direction: column;
 
   @media(max-width: 585px) {
     
@@ -56,13 +54,16 @@
   &-title {
     text-align: center;
     margin-bottom: 24px;
+    @media(max-width: 1176px) {
+      line-height: 22px;
+    }
   }
 
   &-description {
     
     text-align: center;
     color: var(--secondary-text);
-
+    margin-top: auto;
     @media(max-width: 585px) {
       font-size: 14px;
       line-height: 20px;

@@ -11,7 +11,7 @@
       padding-bottom: 0;
     }
   }
-  
+   
   &__company-subtitle {
     margin-bottom: var(--mb-24);
   }
@@ -34,18 +34,22 @@
   &__company-wrapper {
     display: flex;
     align-items: flex-start;
-    @media(max-width: 1176px) {
-      justify-content: space-between;
-    }
+    justify-content: space-between;
+    
     @media(max-width: 585px) {
       flex-direction: column;
     }
-  }
 
+    
+  }
+  &__company-wrapper-el:not(:last-child) {
+    margin-right: 5px;
+  }
   &__company-tel {
     margin-right: 138px;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     @media(max-width: 1176px) {
       margin: 0;
     }

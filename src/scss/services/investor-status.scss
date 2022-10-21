@@ -14,32 +14,6 @@
     }
   }
 
-  &-title {
-    margin-bottom: 24px;
-
-    @media(max-width: 1176px) {
-      font-size: 36px;
-      line-height: 42px;
-    }
-
-    @media(max-width: 585px) {
-      font-size: 28px;
-      line-height: 32px;
-    }
-  }
-
-  &-description {
-    @media(max-width: 1176px) {
-      padding-right: 46%;
-    }
-
-    @media(max-width: 585px) {
-      font-size: 16px;
-      line-height: 22px;
-      padding-right: 8%;
-    }
-  }
-
 }
 
 .investor__requirements {

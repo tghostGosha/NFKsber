@@ -22,7 +22,7 @@ a {
   outline: none;
   cursor: pointer;
   transition: var(--animation-transition);
-
+  text-align: center;
   @media(max-width: 585px) {
     font-size: 14px;
     line-height: 19px;

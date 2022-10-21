@@ -37,6 +37,9 @@
 .converter__banner {
   &-left {
     padding: 40px 3% 47px 46px;
+    @media(max-width: 585px) {
+      padding: 12px 3% 0 12px;
+    }
   }
 
   &-description {

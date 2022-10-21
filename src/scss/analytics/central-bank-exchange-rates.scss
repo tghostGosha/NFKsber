@@ -1,13 +1,11 @@
 .exchange__rates-hero {
 
   background-image: var(--desktop-image-banner-top);
-  padding: 56px 50% 245px 0;
-  background-repeat: no-repeat;
-  background-position: right bottom;
+  padding: 56px 50% 130px 0;
 
   @media(max-width: 1176px) {
-    padding: 48pxpx 33% 38px 0;
-    background-size: 38%;
+    padding: 48px 33% 130px 0;
+    background-size: 48%;
   }
 
   @media(max-width: 585px) {
@@ -15,18 +13,12 @@
     background-size: 58%;
   }
 
-
-  &-title {
-    margin-bottom: var(--mb-24);
-
-    @media(max-width: 585px) {
-      font-size: 32px;
-      line-height: 40px;
-    }
-  }
-
 }
-
+.section-courses {
+  @media(max-width: 585px) {
+    padding-bottom: 0;
+  }
+}
 .center-container {
   display: flex;
   flex-direction: column;
@@ -189,8 +181,10 @@
   z-index: 6;
   margin-bottom: var(--mb-40);
   padding: 0 67px 0 14px;
+
   @media(max-width: 585px) {
     padding: 0 26px 0 10px;
+    flex-direction: column;
   }
 }
 
@@ -209,10 +203,23 @@
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   top: -26px;
-  left:  -25px;
+  left: -25px;
   display: block !important;
-  @media(max-width: 585px)  {
-    height: 87px;
+
+  @media(max-width: 1176px) {
+    width: 103.5%;
+    height: 84px;
+    z-index: 5;
+    top: -12px;
+    left: -12px;
+  }
+
+  @media(max-width: 806px) {
+    
+    width: 104.9%;
+  }
+  @media(max-width: 584px) {
+    width: 107.6%;
   }
 }
 
@@ -226,6 +233,7 @@
   flex-direction: column;
   max-height: 596px;
   padding: 0 0 0 26px !important;
+
   @media(max-width: 585px) {
     padding: 0 !important;
   }
@@ -233,7 +241,10 @@
 
 .currency-history-modal-title {
   margin: 0;
-  // margin-right: 20%;
+  // @media(max-width: 585px)  {
+  //   font-size: 16px;
+  //   line-height: 18px;
+  // }
 }
 
 //===========Стилизация календаря===============
@@ -250,6 +261,10 @@
 
 }
 
+.ui-datepicker table {
+  background-color: var(--white);
+}
+
 .ui-datepicker-trigger {
   width: 24px;
   height: 50%;
@@ -257,6 +272,7 @@
   right: 21px;
   top: 13px;
   cursor: pointer;
+
   @media(max-width: 585px) {
     right: 5px;
     top: 10px;
@@ -280,9 +296,11 @@
   @media(max-width: 1176px) {
     max-width: 200px;
   }
+
   @media(max-width: 585px) {
     padding: 8px;
-    max-width: 123px;
+    max-width: 223px;
+   margin-top: 5px;
   }
 }
 
@@ -304,6 +322,10 @@
 .ui-widget.ui-widget-content {
   border: 0;
   padding: 0;
+  border-radius: 5px;
+  @media(max-width: 585px)  {
+    left: 42px !important;
+  }
 }
 
 .ui-datepicker .ui-datepicker-header {
@@ -359,6 +381,7 @@
   @media(max-width: 1176px) {
     padding: 24px 88px;
   }
+
   @media(max-width: 585px) {
     padding: 24px 12px;
   }
@@ -366,6 +389,7 @@
   &-title {
     padding: 0 70px;
     text-align: center;
+
     @media(max-width: 585px) {
       padding: 0;
     }

@@ -3,8 +3,6 @@
   &-container {
     background-image: var(--desktop-image-banner-top);
     padding: 56px 52% 209px 0;
-    background-repeat: no-repeat;
-    background-position: right bottom;
 
     @media(max-width: 1176px) {
       padding: 48px 24% 119px 0;
@@ -14,20 +12,6 @@
     @media(max-width: 585px) {
       padding: 24px 1% 119px 0;
       background-size: 59%;
-    }
-  }
-
-  &-title {
-    margin-bottom: var(--mb-24);
-  }
-
-  &-description {
-    @media(max-width: 1176px) {
-      padding-right: 29%;
-    }
-
-    @media(max-width: 585px) {
-      padding-right: 0;
     }
   }
 }

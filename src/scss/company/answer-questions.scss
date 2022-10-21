@@ -15,6 +15,7 @@
   transform: rotate(90deg);
   color: var(--secondary-text);
   margin-right: 40px;
+  overflow: visible;
   @media(max-width: 585px) {
     margin-right: 16px;
     width: 6px;

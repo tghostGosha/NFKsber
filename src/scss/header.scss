@@ -167,7 +167,7 @@
   object-fit: cover;
   width: 24px;
   height: 24px;
-  top: -1px;
+  top: 0;
   position: relative;
 
   @media(max-width: 585px) {
@@ -198,7 +198,7 @@
 
 .fa {
   display: none;
-  float: left;
+  // float: left;
   width: 34px;
   height: 26px;
   color: inherit;
@@ -211,7 +211,7 @@
   padding: 0;
   transition: all 0.2s ease-in-out 0.2s;
   border-radius: 0;
-  z-index: 10;
+  z-index: 4;
 
   @media(max-width: 1176px) {
     display: block;
@@ -221,7 +221,7 @@
 
   @media(max-width: 805px) {
     top: 14px;
-    text-align: end;
+    // text-align: end;
     grid-column: 6/span 1;
   }
 
@@ -378,8 +378,9 @@ input::placeholder {
   }
 
   @media(max-width: 585px) {
-    width: 87px;
+    width: 100px;
     height: 27px;
+    object-fit: contain;
   }
 }
 

@@ -47,6 +47,7 @@
 .breadcrumb-item {
   outline: none;
   border: none;
+  display: flex;
 }
 
 .breadcrumb-item:not(:last-child) {
@@ -57,7 +58,7 @@
   display: none;
 
   @media(max-width: 1176px) {
-    display: block;
+    display: flex;
     margin-right: 12px;
   }
 }

@@ -1,10 +1,9 @@
 .about__hero {
 
   &-container {
-    background-image:  var(--desktop-image-banner-top);
     padding: 56px 56% 181px 0;
     @media(max-width: 1176px) {
-      padding: 48px 56% 154px 0;
+      padding: 48px 10% 154px 0;
     }
     @media(max-width: 585px)  {
       padding: 24px 2% 228px 0;
@@ -12,9 +11,6 @@
     }
   }
 
-  &-title {
-    margin-bottom: var(--mb-24);
-  }
 }
 
 .about__info {
@@ -105,6 +101,10 @@
     align-items: center;
     object-fit: contain;
   }
+  svg {
+    width: 100%;
+    max-width: 498px;
+  }
 }
 
 .stocks-card-header {
@@ -120,16 +120,9 @@
     margin-bottom: var(--mb-40);
   }
 
-  &-container {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    column-gap: 32px;
-    row-gap: 24px;
-  }
-
   &-card {
     width: 100%;
+    grid-column: span 6;
     max-width: 604px;
     padding: 40px 74px 40px 46px;
     background-color: var(--primary-grey);
@@ -140,6 +133,7 @@
     }
     @media(max-width: 585px) {
       padding: 24px 16px;
+      grid-column: span 12;
     }
   }
 

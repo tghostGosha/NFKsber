@@ -2,46 +2,22 @@
   
   &-container {
     background-image: var(--desktop-image-banner-top);
-    padding: 56px 50% 55px 0;
-
-    @media(max-width: 1176px) {
-      padding: 56px 37% 38px 0;
-      background-size: 40%;
-    }
-
+   
     @media(max-width: 585px) {
-      padding: 56px 2% 179px 0;
+      padding: 24px 2% 193px 0;
       background-size: 78%;
     }
 
-  }
-
-  &-title {
-    margin-bottom: var(--mb-24);
-  }
-
-  &-buttons {
-    display: inline-block;
-    margin-top: auto;
-
-    &-grey {
-      padding: 14px 32px;
-      margin-right: 32px;
-      border-radius: 5px;
+    & ul{
+      padding-right: 120px;
+  
+      @media(max-width: 585px) {
+        padding-right: 0;
+      }
     }
+
   }
 
-  &-button {
-    padding: 14px 32px;
-  }
-
-  &-list {
-    padding-right: 120px;
-
-    @media(max-width: 585px) {
-      padding-right: 0;
-    }
-  }
 }
 
 .individual__about-list-item {
@@ -95,7 +71,7 @@
   &-list {
     column-gap: 84px;
     margin: 0;
-
+    
     @media(max-width: 1176px) {
       row-gap: 12px;
       column-gap: 0;

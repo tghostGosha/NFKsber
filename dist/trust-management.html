@@ -2,16 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
-  <!-- <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> -->
-  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
   <link rel="icon" href="data:;base64,MQoa">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
-  <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css">
-  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-
   <link rel="stylesheet" href="css/style.min.css">
 
   <title>Главная</title>
@@ -424,7 +415,7 @@
               </a>
             </li>
           </ul>
-          <a href="#" class="button  header__nav-list-btn ">Открыть демо-счет</a>
+          <a href="https://lk.nfksber.ru/open_account/?utm_source=nfksber" target="_blank" class="button  header__nav-list-btn ">Открыть демо-счет</a>
         </div>
         <div class="window__account-app" id="window__account-app">
           <div class="window__account-app-header">
@@ -521,7 +512,7 @@
 </header>
 
   <main>
-    <section class="trust__hero big__banner">
+    <section class="big__banner">
       <div class="container ">
         <nav aria-label="breadcrumb" class="">
           <ul class="breadcrumb">
@@ -542,18 +533,23 @@
                 <use xlink:href="img/icons/icons.svg#arrow-right"></use>
               </svg>
             </li>
-            <li class="breadcrumb-item hide-on-mobile"><a class="breadcrumb-link" href="trust-management.html">Доверительное управление</a></li>
+            <li class="breadcrumb-item hide-on-mobile"><a class="breadcrumb-link"
+                href="trust-management.html">Доверительное управление</a></li>
           </ul>
         </nav>
-        <div class="trust__hero-container background-style-global" style="--desktop-image-banner-top: url('../img/trust-management/hero.png');">
-          
-          <h1 class="trust__hero-title">Доверительное управление</h1>
-          <div class="trust__hero-text-container">
-            <p class="trust__hero-description">Новые стратегии доверительного управления, разработанные
-              АО&nbsp;«НФК&nbsp;-&nbsp;Сбережения» в связи с изменением рыночных условий, призваны защитить инвесторов от инфляции.
-              Выберите подходящую именно Вам стратегию в зависимости от ваших финансовых целей</p>
+        <div class="trust__hero-container big__banner-container"
+          style="--desktop-image-banner-top: url('../img/trust-management/hero.png');">
+          <h1>Доверительное управление</h1>
+
+          <p class="trust__hero-description">Новые стратегии доверительного управления, разработанные
+            АО&nbsp;«НФК&nbsp;-&nbsp;Сбережения» в связи с изменением рыночных условий, призваны защитить инвесторов от
+            инфляции.
+            Выберите подходящую именно Вам стратегию в зависимости от ваших финансовых целей</p>
+
+          <div class="big__banner-buttons ">
+            <button type="button" class="grey-button big__banner-btn consult-button">Получить консультанцию</button>
+            <a href="https://trust.nfksber.ru/" target="_blank" class="primary-button big__banner-btn">Подробнее</a>
           </div>
-          <a href="https://trust.nfksber.ru/" target="_blank" class="button trust__hero-button primary-button">Подробнее</a>
         </div>
       </div>
     </section>
@@ -565,10 +561,12 @@
               <img class="small__banner-img" src="img/trust-management/strategy-about.png" alt="стандартные стратегии">
             </div>
             <div class="small__banner-right-text">
-              <h3 class="small__banner-title">Представленные Стандартные стратегии доверительного управления предполагают
+              <h3 class="small__banner-title">Представленные Стандартные стратегии доверительного управления
+                предполагают
                 прямые инвестиции в лизинговые активы посредством внебиржевых финансовых инструментов</h3>
-              <p class="small__banner-description">Это простой и понятный способ вложения денег,&nbsp;не&nbsp;требующий от 
-                инвестора специальных&nbsp;знаний и затрат времени, а также не зависящий  от колебаний биржевых
+              <p class="small__banner-description">Это простой и понятный способ вложения денег,&nbsp;не&nbsp;требующий
+                от
+                инвестора специальных&nbsp;знаний и затрат времени, а также не зависящий от колебаний биржевых
                 котировок.
               </p>
             </div>
@@ -579,7 +577,7 @@
           <div class="trust__strategy-card grid-container">
             <div class="strategy-card__header">
               <h2 class="card__right-title">Накопление</h2>
-              <p class="card__right-description">Стратегия «Накопление» совмещает высокую ожидаемую доходность 
+              <p class="card__right-description">Стратегия «Накопление» совмещает высокую ожидаемую доходность
                 с возможностью
                 досрочного вывода капитала без потери накопленного дохода</p>
             </div>
@@ -609,14 +607,15 @@
               </div>
             </div>
             <div class="strategy-card__footer">
-              <a href="https://trust.nfksber.ru/nakoplenie/" target="_blank" class="card__right-button button primary-button">Подробнее о стратегии</a>
+              <a href="https://trust.nfksber.ru/nakoplenie/" target="_blank"
+                class="card__right-button button primary-button">Подробнее о стратегии</a>
             </div>
           </div>
           <div class="trust__strategy-card grid-container">
             <div class="strategy-card__header">
               <h2 class="card__right-title">Регулярный доход</h2>
               <p class="card__right-description">Стратегия «Регулярный доход» позволяет инвестору получать
-                стабильный  ежемесячный доход с переводом на его собственный
+                стабильный ежемесячный доход с переводом на его собственный
                 банковский счет</p>
             </div>
             <div class="strategy-card__left">
@@ -625,7 +624,7 @@
               </div>
             </div>
             <div class="strategy-card__right">
-              
+
               <div class="card__right-conditions">
                 <div class="conditions-bet conditions-element">
                   <h3 class="conditions-bet-title">26%
@@ -646,14 +645,15 @@
               </div>
             </div>
             <div class="strategy-card__footer">
-              <a href="https://trust.nfksber.ru/regdohod/" target="_blank" class="card__right-button button primary-button">Подробнее о стратегии</a>
+              <a href="https://trust.nfksber.ru/regdohod/" target="_blank"
+                class="card__right-button button primary-button">Подробнее о стратегии</a>
             </div>
           </div>
           <div class="trust__strategy-card grid-container">
             <div class="strategy-card__header">
               <h2 class="card__right-title">Максимум</h2>
               <p class="card__right-description">Стратегия «Максимум» подходит инвесторам, стремящимся получить
-                максимальный 
+                максимальный
                 возможный доход на инвестиционном горизонте не менее одного года</p>
             </div>
             <div class="strategy-card__left">
@@ -662,7 +662,7 @@
               </div>
             </div>
             <div class="strategy-card__right">
-              
+
               <div class="card__right-conditions">
                 <div class="conditions-bet conditions-element">
                   <h3 class="conditions-bet-title">30%
@@ -683,7 +683,8 @@
               </div>
             </div>
             <div class="strategy-card__footer">
-              <a href="https://trust.nfksber.ru/maksimum/" target="_blank" class="card__right-button button primary-button">Подробнее о стратегии</a>
+              <a href="https://trust.nfksber.ru/maksimum/" target="_blank"
+                class="card__right-button button primary-button">Подробнее о стратегии</a>
             </div>
           </div>
         </div>
@@ -721,7 +722,8 @@
                 <use xlink:href="img/icons/icons.svg#Check"></use>
               </svg></span> -->
               <label class="form-check-label" for="accountCheck">
-                <span class="check-span">Даю согласие на</span> <a href="#">обработку персональных данных</a> <br> <span class="check-span">и</span> <a href="#">подтверждаю согласие на
+                <span class="check-span">Даю согласие на</span> <a href="#">обработку персональных данных</a> <br> <span
+                  class="check-span">и</span> <a href="#">подтверждаю согласие на
                   коммуникацию</a>
               </label>
             </div>
@@ -757,7 +759,8 @@
           <p class="trust__about-description">С информацией о стандартных стратегиях управления можно ознакомиться по
             следующей ссылке.
           </p>
-          <p class="trust__about-description text-indent"><sup class="letter-lowercase">1</sup>Ожидаемая доходность в % годовых на инвестиционном горизонте 1 год. Не
+          <p class="trust__about-description text-indent"><sup class="letter-lowercase">1</sup>Ожидаемая доходность в %
+            годовых на инвестиционном горизонте 1 год. Не
             является гарантией или обещанием эффективности деятельности (доходности вложений) Информация подлежит
             раскрытию на основании п. 5.2 Положения Банка России от 03.08.2015 N 482-П.
           </p>
@@ -773,7 +776,7 @@
         <button type="button" class="button primary-button consult-btn consult-button" >Получить консультанцию</button>
       </div>
     </div>
-  </div>
+  </div> 
   <div class="footer__section">
     <div class="container">
       <div class="footer__nav">

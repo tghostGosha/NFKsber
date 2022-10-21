@@ -2,8 +2,6 @@
 
   &-container {
     background-image: var(--desktop-image-banner-top);
-    padding: 56px 50% 48px 0;
-    background-size: 47%;
 
     @media(max-width: 1176px) {
       background-size: 41%;
@@ -16,29 +14,6 @@
     }
   }
 
-  &-title {
-    margin-bottom: var(--mb-24);
-    padding-right: 14%;
-
-    @media(max-width: 1176px) {
-      padding-right: 0;
-    }
-  }
-
-  &-buttons {
-    display: inline-block;
-    margin-top: auto;
-
-    &-grey {
-      padding: 14px 32px;
-      margin-right: 32px;
-      border-radius: 5px;
-    }
-  }
-
-  &-button {
-    padding: 14px 32px;
-  }
 }
 
 .currency__benefit {

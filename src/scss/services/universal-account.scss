@@ -2,57 +2,19 @@
   
   &-container {
     background-image: var(--desktop-image-banner-top);
-    padding: 56px 52% 43px 0;
 
-    @media(max-width: 1176px) {
-      padding: 48px 8% 38px 0;
-      background-size: 41%;
+    & ul {
+      @media(max-width: 1176px) {
+
+        padding-right: 24%;
+      }
     }
-
+  
     @media(max-width: 585px) {
-      padding: 24px 0 118px 0;
       background-size: 64%;
     }
   }
 
-  &-list {
-    margin-bottom: 46px;
-
-    @media(max-width: 1176px) {
-      margin-bottom: 42px;
-      padding-right: 36%;
-    }
-
-    @media(max-width: 585px) {
-      padding-right: 19px;
-      margin-bottom: 26px;
-    }
-  }
-
-  &-buttons {
-    display: inline-block;
-    margin-top: auto;
-
-    &-grey {
-      padding: 14px 32px;
-      margin-right: 32px;
-      border-radius: 5px;
-    }
-  }
-
-  &-btn-open {
-    padding: 14px 32px;
-
-    @media(max-width: 1176px) {
-      padding: 10px 45px;
-    }
-
-    @media(max-width: 585px) {
-      padding: 12px 14px;
-      font-size: 14px;
-      line-height: 19px;
-    }
-  }
 }
 
 .universal__list-item {

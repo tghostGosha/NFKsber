@@ -1,11 +1,18 @@
-@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+
+
+// @import "../../node_modules/bootstrap-icons/font/bootstrap-icons.scss";
 @import "../../node_modules/swiper/swiper-bundle.min";
 @import "../../node_modules/swiper/swiper.scss";
 @import "../../node_modules/swiper/modules/navigation/navigation.scss";
 
 
 @import "normalize";
+@import "bootstrap";
+@import "bootstrap-icons";
 @import "reset";
+@import "choices.min";
+@import "datepicker";
 @import "modal-window";
 @import "display";
 @import "mixin";
@@ -17,9 +24,9 @@
 @import "ideas";
 @import "accordion";
 @import "small__banner";
+@import "big__banner";
 @import "explain-card";
 @import "demo";
-// @import "popular-services";
 @import "services/services.scss";
 @import "services/brokers-hero.scss";
 @import "services/trust-management.scss";
@@ -155,9 +162,67 @@ h4 {
     line-height: 30px;
   }
 }
+.brokers__list {
+  padding-left: 20px;
+  margin-bottom: 92px;
 
+  @media(max-width: 1176px) {
+    margin-bottom: 42px;
+  }
 
+  @media(max-width: 585px) {
+    margin-bottom: 0;
+  }
 
+  &-item {
+    position: relative;
+
+    @media(max-width: 585px) {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+
+  &-item:not(:last-child) {
+    margin-bottom: 16px;
+  }
+
+  &-item::before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: var(--primary-green);
+    top: 10px;
+    left: -20px;
+  }
+}
+.service__list {
+  &-item {
+    position: relative;
+
+    @media(max-width: 1176px) {
+      font-size: 14px;
+      line-height: 20px
+    }
+  }
+
+  &-item:not(:last-child) {
+    margin-bottom: 16px;
+  }
+
+  &-item::before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: var(--primary-green);
+    top: 10px;
+    left: -20px;
+  }
+}
 .hide-on-385 {
   @media(max-width: 585px) {
     display: none;
@@ -377,6 +442,7 @@ input::placeholder {
   max-width: 750px;
   align-items: center;
   transition: var(--animation-transition);
+  text-align: start;
 }
 
 .get__file-link:hover .svg-pdf-dims,

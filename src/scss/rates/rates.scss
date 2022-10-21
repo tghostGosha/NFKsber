@@ -1,8 +1,7 @@
 .rates__hero {
 
   &-container {
-    background-image: var(--desktop-image-banner-top);
-    padding: 56px 54% 59px 0;
+    
 
     @media(max-width: 1176px) {
       padding: 48px 33% 112px 0;
@@ -12,24 +11,6 @@
     @media(max-width: 585px) {
       padding: 24px 0 149px 0;
     }
-  }
-
-  &-title {
-    margin-bottom: 31%;
-
-    @media(max-width: 1176px) {
-      margin-bottom: 42px;
-    }
-
-    @media(max-width: 585px) {
-      font-size: 31px;
-      line-height: 40px;
-      margin-bottom: 24px;
-    }
-  }
-
-  &-button {
-    padding: 14px 32px;
   }
 
 }
@@ -125,7 +106,7 @@
 .rates__accordion.collapsing {
   height: 0;
   overflow: hidden;
-  @include transition(all 0.2s ease-in-out 0.2s);
+   transition: all 0.2s ease-in-out 0.2s;
 }
 
 .rates__column-left {
