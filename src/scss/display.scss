@@ -30,7 +30,38 @@
   padding-top: 28px !important;
   padding-bottom: 28px !important;
 }
+.text-section {
+  padding-top: 68px;
+  padding-bottom: 136px;
+  @media(max-width: 1176px) {
+    padding-top: 56px;
+    padding-bottom: 0;
+  }
 
+  @media(max-width: 585px) {
+    padding-top: 48px;
+   
+  }
+}
+
+.text-subtitle,
+.text-title{
+  // @media(max-width: 1176px) {
+  //   text-align: center;
+  // }
+  @media(max-width: 585px) {
+    font-size: 18px;
+    line-height: 19px;
+    margin-bottom: 8px;
+  }
+}
+.privacy h1 {
+  margin-bottom: 8px;
+}
+.privacy h1,
+.privacy h2 {
+  text-align: center;
+}
 .section-padding {
   padding-top: 68px;
   padding-bottom: 136px;
@@ -45,4 +76,6 @@
     padding-bottom: 48px;
   }
 }
-
+.analytics-container {
+  grid-template-rows: repeat(3, 1fr);
+}

@@ -133,10 +133,15 @@
 
       @media(max-width: 1176px) {
         margin-bottom: 24px;
+        flex-wrap: wrap;
       }
 
       &-item:not(:last-child) {
         margin-right: 30px;
+        
+        @media(max-width: 585px) {
+          margin-bottom: 8px;
+        }
       }
     }
 
