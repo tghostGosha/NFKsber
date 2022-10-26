@@ -49,6 +49,9 @@
   border: none;
   display: flex;
 }
+.breadcrumb-item + .breadcrumb-item {
+  padding: 0;
+}
 
 .breadcrumb-item:not(:last-child) {
   margin-right: 12px;

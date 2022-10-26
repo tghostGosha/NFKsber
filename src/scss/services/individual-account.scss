@@ -20,44 +20,6 @@
 
 }
 
-.individual__about-list-item {
-  position: relative;
-
-  @media(max-width: 585px) {
-    font-size: 14px;
-    line-height: 22px;
-  }
-}
-
-.individual__about-list-item:not(:last-child) {
-  margin-bottom: 16px;
-
-  @media(max-width: 1176px) {
-    margin-bottom: 0;
-  }
-}
-
-.individual__about-list-item {
-  grid-column: span 6;
-  position: relative;
-
-  @media(max-width: 1176px) {
-    grid-column: span 12;
-  }
-
-}
-
-.individual__about-list-item::before {
-  content: '';
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  position: absolute;
-  background-color: var(--primary-green);
-  top: 10px;
-  left: -20px;
-}
-
 .individual__about {
   
   &-card {
@@ -70,7 +32,6 @@
 
   &-list {
     column-gap: 84px;
-    margin: 0;
     
     @media(max-width: 1176px) {
       row-gap: 12px;
@@ -143,12 +104,7 @@
     margin-bottom: var(--mb-40);
   }
 
-  &-list {
-    margin: 0;
-    @media(max-width: 1176px) {
-      padding-right: 20px;
-    }
-  }
+ 
 
   &-question {
     color: var(--secondary-text);

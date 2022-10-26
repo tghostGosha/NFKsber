@@ -172,7 +172,7 @@ try {
 Swiper.use([Navigation, Pagination])
 
 //======включаем создание WEbp ====
-flsFunctions.isWebp()
+// flsFunctions.isWebp()
 //======включаем создание === 
 const burger = document.querySelector('.header-burger');
 const greyBackground = document.querySelector('.grey-background-640px');

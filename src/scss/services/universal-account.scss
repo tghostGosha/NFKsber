@@ -155,9 +155,6 @@
 .universal__possibility {
   grid-column: 1/span 12;
 
-  &-list {
-    margin: 0;
-  }
   &-card {
     margin-top: 0;
     @media(max-width: 585px) {
@@ -178,10 +175,6 @@
     font-size: 14px;
     line-height: 20px;
   }
-}
-
-.possibility-list-item:not(:last-child) {
-  margin-bottom: 16px;
 }
 
 .universal__about {

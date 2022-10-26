@@ -381,6 +381,7 @@
   margin: 0;
   grid-column: 3/span 11;
   grid-row: 1/span 1;
+  text-align: start;
   @media(max-width: 585px) {
     font-size: 18px;
     line-height: 20px;
@@ -390,6 +391,7 @@
   padding-right: 7%;
   grid-column: 3/span 11;
   grid-row: 2/span 1;
+  text-align: start;
   @media(max-width: 585px) {
     grid-column: 1/span 12;
     font-size: 14px;

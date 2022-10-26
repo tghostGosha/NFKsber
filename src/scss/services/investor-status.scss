@@ -86,9 +86,8 @@
 }
 
 .investor__tab-title {
-  max-width: 692px;
   margin-bottom: var(--mb-40);
-
+  padding-right: 44%;
 }
 
 .investor__status {
@@ -257,22 +256,14 @@
   }
 
   &-list {
-    margin: 0;
     margin-top: 24px;
 
     @media(max-width: 1176px) {
       margin-top: 16px;
     }
   }
-
-  &-list-item:not(:last-child) {
-    margin-bottom: 16px;
-  }
 }
 
-.card-right-footnote {
-  color: var(--secondary-text);
-}
 .investor__transactions {
   @media(max-width: 1176px) {
     display: none;

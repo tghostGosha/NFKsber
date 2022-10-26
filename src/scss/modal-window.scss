@@ -8,10 +8,12 @@
       display: block
     }
   }
+
   &-dialog {
     // max-width: 816px;
     width: 100%;
   }
+
   &-bg {
     position: fixed;
     background-color: rgba(58, 56, 56, 0.5);
@@ -30,7 +32,7 @@
     background: var(--white);
     border-radius: 10px;
     position: relative;
-    
+
     @media(max-width: 1176px) {
       max-width: 80%;
     }
@@ -45,25 +47,32 @@
 
   }
 }
+
 .currency-modal-window {
   max-width: 906px;
 }
+
 .modal-title {
   margin-bottom: var(--mb-24);
 }
+
 //=============модальное окно
 
 .main-consult-modal {
   flex-direction: row;
 }
+
 .modal-window-consalt-header {
   width: 344px;
   background-color: var(--primary-grey);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .modal-body {
   position: relative;
-  padding: 40px 40px;
+  padding-left: 40px ;
   width: 472px;
 }
 
@@ -83,7 +92,8 @@
 
 .modal-span {
   color: var(--secondary-text);
-  margin-bottom: 7px;
+  margin-bottom: 12px;
+  display: inline-block;
 }
 
 .modal__form-item,
