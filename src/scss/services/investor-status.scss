@@ -88,6 +88,13 @@
 .investor__tab-title {
   margin-bottom: var(--mb-40);
   padding-right: 44%;
+  @media(max-width: 1176px) {
+    padding-right: 25%;
+  }
+  @media(max-width: 585px) {
+    padding-right: 0;
+    text-align: center;
+  }
 }
 
 .investor__status {
@@ -267,5 +274,10 @@
 .investor__transactions {
   @media(max-width: 1176px) {
     display: none;
+  }
+}
+.investor__requirements {
+  @media(max-width: 1176px) {
+    padding-bottom: 0;
   }
 }

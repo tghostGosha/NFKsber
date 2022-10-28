@@ -15,20 +15,41 @@
     grid-template-rows: 1fr 0.9fr;
   }
 
+  a,
+  button {
+    margin-top: 0.5rem;
+  }
+
+  &-buttons {
+    display: flex;
+    margin-top: 1.5rem;
+    align-items: center;
+    justify-content: flex-start;
+    @media(max-width: 585px) {
+      justify-content: space-between;
+    }
+    svg {
+      width: 100%;
+      max-width: 168px;
+    }
+  }
+
   &-left-img {
     display: flex;
     justify-content: center;
     grid-column: 1/span 6;
     align-items: flex-end;
     padding-left: 10px;
+
     @media(max-width: 585px) {
       grid-column: 2/span 11;
       grid-row: 2/span 1;
 
     }
   }
+
   &-left-text {
-    padding: 40px 10px 40px 46px;
+    padding: 40px 0 40px 46px;
     grid-column: 1/ span 6;
 
     @media(max-width: 1176px) {
@@ -38,26 +59,29 @@
     @media(max-width: 585px) {
       grid-column: 1/ span 12;
       padding: 24px 10px 8px 12px;
-      
+
     }
   }
+
   &-right-img {
     grid-column: 7/ span 6;
     display: flex;
     justify-content: center;
     align-items: flex-end;
     padding-right: 10px;
+
     @media(max-width: 585px) {
       grid-column: 1/ span 12;
       grid-row: 2/ span 1;
     }
   }
+
   &-right-text {
-    padding: 40px 20px 100px 20px;
+    padding: 40px 20px 100px 0;
     grid-column: 7/span 6;
 
     @media(max-width: 1176px) {
-      padding: 24px 24px 46px 16px;
+      padding: 24px 24px 46px 0;
     }
 
     @media(max-width: 585px) {
@@ -78,6 +102,7 @@
     margin-bottom: var(--mb-24);
   }
 }
+
 .brokers__service-small-banner {
   @media(max-width: 585px) {
     grid-template-rows: 1fr 0.6fr;

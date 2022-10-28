@@ -12,7 +12,7 @@
       padding: 24px 3% 115px 0;
       background-size: 64%;
     }
-  }
+  } 
 
 }
 
@@ -27,9 +27,37 @@
   }
 
   &-card {
-    border-radius: 10px;
-    background-repeat: no-repeat;
+  
+    grid-column: span 6;
+    @media(max-width: 1176px)  {
+      grid-column: span 12;
+    }
+    @media(max-width: 585px) {
+      padding: 24px 12px 8px 12px;
+      grid-template-rows: 0.7fr 0.7fr;
+    }
+    &-left {
+      grid-column: 1/span 7;
+      padding-right: 0;
+      @media(max-width: 585px) {
+        grid-column: span 12;
+        padding: 0;
+      }
+    }
+    &-right {
+      grid-column: 8/span 5;
+      padding:0 0 30px 0;
+      @media(max-width: 1176px) {
+        padding: 24px 0 20px 0;
+      }
+      @media(max-width: 585px) {
+        padding: 0;
+      }
+    }
+
   }
+
+  
 }
 
 .profitable-title {
@@ -46,97 +74,16 @@
 
 .profitable__course {
   grid-column: span 12;
-  padding: 40px 50% 62px 46px;
-  background-image: var(--profitable__course-image);
-  background-repeat: no-repeat;
-  background-position: 88% 92%;
 
-  @media(max-width: 1176px) {
-    padding: 24px 46% 20px 24px;
-    background-position: 96% 94%;
-
-  }
-
-  @media(max-width: 585px) {
-    padding: 24px 1% 192px 12px;
-    background-size: 63%;
-    background-position: right bottom;
-  }
 }
 
-.profitable-description {
-  margin-bottom: var(--mb-40);
-
-  @media(max-width: 1176px) {
-    font-size: 14px;
-    line-height: 20px;
-  }
-}
 
 .profitable-btn {
   padding: 18px 26px;
   display: inline-block;
-
+  margin-top: var(--mb-40);
   @media(max-width: 585px) {
     padding: 12px 14px;
-  }
-}
-
-.secure__broker {
-  padding: 40px 38% 56px 46px;
-  background-image: var(--secure__broker-image);
-}
-
-
-
-.own__account {
-  padding: 40px 40% 28px 46px;
-  background-image: var(--own__account-image);
-
-  @media(max-width: 1176px) {
-    padding: 24px 2% 194px 32px;
-  }
-}
-
-.credit__shoulder {
-  padding: 40px 34% 56px 46px;
-  background-image: var(--credit__shoulder-image);
-
-}
-
-.secure__broker,
-.terminal__online,
-.own__account,
-.credit__shoulder {
-  grid-column: span 6;
-  background-position: 92% 77%;
-
-  @media(max-width: 1176px) {
-    background-position: 93% 96%;
-    padding: 24px 2% 174px 32px;
-    background-size: 40%;
-  }
-
-  @media(max-width: 585px) {
-    grid-column: span 12;
-    padding: 24px 2% 188px 12px;
-  }
-}
-
-.terminal__online {
-  padding: 40px 40% 28px 46px;
-  background-image: var(--terminal__online-image);
-
-  @media(max-width: 1176px) {
-    background-image: var(--terminal__online-mobile-image);
-    background-size: 20%;
-    padding: 24px 2% 174px 32px;
-  }
-
-  @media(max-width: 585px) {
-    background-position: 89% 96%;
-    background-size: 23%;
-    padding: 24px 2% 188px 12px;
   }
 }
 
@@ -222,13 +169,13 @@
 .currency__info {
   position: relative;
 
-  &-consult {
-    padding-top: 22px;
-    padding-bottom: 21px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+  // &-consult {
+  //   padding-top: 22px;
+  //   padding-bottom: 21px;
+  //   display: flex;
+  //   justify-content: space-between;
+  //   align-items: center;
+  // }
 
   &-btn {
     grid-column: span 4;

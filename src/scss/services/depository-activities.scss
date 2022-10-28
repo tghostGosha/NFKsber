@@ -18,7 +18,9 @@
 }
 
 .depositiry__about {
-
+  @media(max-width: 1176px) {
+    padding-bottom: 0;
+  }
   &-title {
     margin: 0 auto;
     margin-bottom: var(--mb-40);
@@ -92,11 +94,11 @@
 
   &-btn {
     padding: 18px 26px;
-    margin-top: 62px;
+    // margin-top: 62px;
 
-    @media(max-width: 1176px) {
-      margin-top: 24px;
-    }
+    // @media(max-width: 1176px) {
+    //   margin-top: 24px;
+    // }
   }
 }
 

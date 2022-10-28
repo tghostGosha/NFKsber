@@ -34,7 +34,11 @@
   }
 
 }
-
+.education-section {
+  @media(max-width: 1176px) {
+    padding-bottom: 0;
+  }
+}
 .education__banner {
   @media(max-width: 585px) {
     grid-template-rows: 1fr 0.8fr;

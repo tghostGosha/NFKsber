@@ -7,7 +7,7 @@
   flex-direction: column;
 
   @media(max-width: 1176px) {
-    padding: 48px 33% 38px 0;
+    padding: 48px 33% 38px 0; 
     background-size: 47%;
   }
 
@@ -29,7 +29,6 @@
 
 .big__banner p {
   
-
   @media(max-width: 1176px) {
     padding-right: 43%;
     // margin-bottom: 30px;
@@ -42,8 +41,6 @@
   @media(max-width: 585px) {
     padding-right: 0;
   }
-
-
 
 }
 
@@ -68,24 +65,14 @@
 }
 
 .big__banner-buttons {
-  display: inline-block;
-  margin-top: 95px;
-  @media(max-width: 1176px) {
-
-    margin-top: 30px;
+  display: flex;
+  margin-top: 4rem;
+  align-items: center;
+  @media(max-width: 585px) {
+    margin-top: 2rem;
   }
   &-grey {
     padding: 14px 32px;
-    margin-right: 32px;
-    border-radius: 5px;
-
-    @media(max-width: 1176px) {
-      margin-right: 16px;
-    }
-
-    @media(max-width: 791px) {
-      display: none !important;
-    }
   }
 }
 
@@ -116,4 +103,8 @@
   background-color: var(--primary-green);
   top: 10px;
   left: -20px;
+  @media(max-width: 585px) {
+    top: 7px;
+    left: -15px;
+  }
 }

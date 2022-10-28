@@ -1,16 +1,16 @@
 .individual__hero {
-  
+
   &-container {
     background-image: var(--desktop-image-banner-top);
-   
+
     @media(max-width: 585px) {
       padding: 24px 2% 193px 0;
       background-size: 78%;
     }
 
-    & ul{
+    & ul {
       padding-right: 120px;
-  
+
       @media(max-width: 585px) {
         padding-right: 0;
       }
@@ -21,18 +21,19 @@
 }
 
 .individual__about {
-  
+
   &-card {
-    margin-bottom: 40px;
+    margin-bottom: var(--mb-40);
+
     @media(max-width: 585px) {
       row-gap: 24px;
       grid-template-rows: 1fr 126px;
     }
   }
 
-  &-list {
+  ul {
     column-gap: 84px;
-    
+
     @media(max-width: 1176px) {
       row-gap: 12px;
       column-gap: 0;
@@ -50,14 +51,8 @@
     grid-template-rows: 1fr 133px;
   }
 
-  &-right {
-    padding: 40px 47px 62px 20px;
-    @media(max-width: 585px) {
-      padding: 24px 12px 0 12px;
-    }
-  }
-
-  &-img {
+  .small__banner-left-img,
+  .small__banner-right-img {
     @media(max-width: 585px) {
       grid-column: 2/span 10;
     }
@@ -73,24 +68,6 @@
   }
 }
 
-.individual__list-item {
-  position: relative;
-}
-
-.individual__list-item:not(:last-child) {
-  margin-bottom: 16px;
-}
-
-.individual__list-item::before {
-  content: "";
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  position: absolute;
-  background-color: var(--primary-green);
-  top: 10px;
-  left: -20px;
-}
 
 .tab-content {
   padding: 0;
@@ -104,19 +81,8 @@
     margin-bottom: var(--mb-40);
   }
 
- 
-
   &-question {
-    color: var(--secondary-text);
     margin-bottom: var(--mb-24);
-  }
-
-  &-description {
-    padding-right: 86px;
-   
-    @media(max-width: 585px) {
-      padding: 0;
-    }
   }
 }
 
@@ -348,15 +314,6 @@
   }
 }
 
-.examples-footer__description {
-  color: var(--secondary-text);
-
-  @media(max-width: 1176px) {
-    font-size: 14px;
-    line-height: 19px;
-  }
-}
-
 .individual-accordion {
   --bs-accordion-bg: inherit;
   margin-bottom: var(--mb-40);
@@ -367,6 +324,7 @@
   display: flex;
   align-items: center;
   margin-bottom: var(--mb-40);
+
   @media(max-width: 1176px) {
     margin-left: 16%;
   }
@@ -401,14 +359,6 @@
 .individual__calculator-content {
   @media(max-width: 1176px) {
     padding: 0 !important;
-  }
-}
-
-.calc__brokers-left-card {
-  width: 605px;
-
-  @media(max-width: 1176px) {
-    width: 100%;
   }
 }
 
@@ -453,15 +403,17 @@
   }
 }
 
-.calc__brokers-left-card {
-  display: flex;
-  flex-direction: column;
-  grid-column: 1/ span 6;
+// .calc__brokers-left-card {
+//   width: 100%;
+//   max-width: 609px;
+//   display: flex;
+//   flex-direction: column;
+//   grid-column: 1/ span 6;
 
-  @media(max-width: 1176px) {
-    grid-column: 1/ span 12;
-  }
-}
+//   @media(max-width: 1176px) {
+//     grid-column: 1/ span 12;
+//   }
+// }
 
 .total__sum,
 .total__years {
@@ -590,6 +542,18 @@
     }
   }
 
+  &-left-card {
+    width: 100%;
+    max-width: 609px;
+    display: flex;
+    flex-direction: column;
+    grid-column: 1/ span 6;
+
+    @media(max-width: 1176px) {
+      grid-column: 1/ span 12;
+    }
+  }
+
   &-right-card {
     grid-column: 7/ span 6;
     border: 1px solid var(--grey-button);
@@ -605,61 +569,35 @@
   margin-bottom: 12px;
 }
 
-.saving__sum {
+.calc__brokers-result {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
 }
 
-.increment__asset {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.calc-flex {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.vnecenie-sredstv,
-.chisty-dohod,
-.nalogovy-vichet {
+.calc__brokers-result:not(:last-child) {
   margin-bottom: 16px;
 }
 
-.saving__sum {
-  margin-bottom: 16px;
 
-  &-value {
-    font-family: gilroy;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 28px;
-
-    @media(max-width: 585px) {
-      width: 35%;
-    }
-  }
-}
-
-.calc-value {
+.calc__brokers-value {
+  font-family: gilroy;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
   outline: none;
   text-align: end;
   background-color: inherit;
   border: none;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 22px;
 
   @media(max-width: 585px) {
+    width: 35%;
     font-size: 16px;
     line-height: 22px;
     text-align: start;
-    width: 40%;
   }
+
 }
 
 .calc__brokers-body {
@@ -672,10 +610,9 @@
   }
 }
 
-.calc-btn {
+.calc-block-buttons{
   display: inline-block;
-  margin: 0 auto;
-  margin-top: 28px;
+  margin: 2rem auto 0 auto;
 }
 
 .calc-button {

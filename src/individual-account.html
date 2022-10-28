@@ -61,7 +61,7 @@
               </p>
             </div>
           </div>
-          <ul class="individual__about-list grid-container nfk-dot-list">
+          <ul class="grid-container nfk-dot-list">
             <li class="nfk-dot-list-item">Открывается и ведется лицензированным брокером или УК
             </li>
             <li class="nfk-dot-list-item">Допускается внесение денежных средств частями
@@ -76,11 +76,11 @@
           </ul>
         </div>
         <h3 class="individual__about-title">Варианты ИИС</h3>
-        <div class="small__banner type-a-card ">
-          <div class="small__banner-left-img type-a-card-img">
+        <div class="small__banner type-a-card">
+          <div class="small__banner-left-img">
             <img class="small__banner-img" src="img/individual-account/options-type-a.png" alt="type-a">
           </div>
-          <div class="small__banner-right-text type-a-card-right">
+          <div class="small__banner-right-text">
             <h3 class="small__banner-title">Вычет 13% на взнос (тип А)</h3>
             <ul class="nfk-dot-list">
               <li class="nfk-dot-list-item">Ежегодно возвращается налоговый вычет с внесенной на ИИС суммы
@@ -91,8 +91,8 @@
           </div>
         </div>
 
-        <div class="small__banner type-b-card ">
-          <div class="small__banner-left-text ">
+        <div class="small__banner type-b-card">
+          <div class="small__banner-left-text">
             <h3 class="small__banner-title">Вычет 13% на доход (тип Б)</h3>
             <ul class="nfk-dot-list">
               <li class="nfk-dot-list-item">Полученный от операций с ценными бумагами доход не облагается НДФЛ
@@ -101,17 +101,15 @@
                 ориентированных на долгосрочные инвестиции</li>
             </ul>
           </div>
-          <div class="small__banner-right-img type-a-card-img">
+          <div class="small__banner-right-img">
             <img class="small__banner-img" src="img/individual-account/options-type-a.png" alt="type-a">
           </div>
 
         </div>
-        <p class="individual__options-question">Как получить <a class="text-link" href="#">налоговый вычет на
+        <p class="individual__options-question secondary-text-color">Как получить <a class="text-link" href="#">налоговый вычет на
             взнос?</a></p>
-        <p class="individual__options-description secondary-text block__margin-bottom ">Владелец индивидуального инвестиционного счета может выбрать
-          только один тип вычета, их совмещение не допускается. При расторжении договора на ведение ИИС ранее 3х
-          лет с момента его заключения, инвестор не будет иметь права на инвестиционные налоговые
-          вычеты.Полученные ранее вычеты на взнос нужно будет вернуть в бюджет
+        <p class="secondary-text block__margin-bottom ">Владелец индивидуального инвестиционного счета может выбрать
+          только один тип вычета, их совмещение не допускается. При расторжении договора на ведение ИИС ранее 3х&nbsp;лет с момента его заключения, инвестор не будет иметь права на инвестиционные налоговые вычеты.Полученные ранее вычеты на взнос нужно будет вернуть в бюджет
           с взысканием пеней</p>
         
         <div class="individual__advantages block__margin-bottom ">
@@ -251,7 +249,7 @@
             </div>
           </div>
           <div class="accounts__examples-footer">
-            <p class="examples-footer__description">Брокерское обслуживание предполагает самостоятельное принятие
+            <p class="secondary-text-color">Брокерское обслуживание предполагает самостоятельное принятие
               решений о выборе финансовых инструментов для своего портфеля. Клиент может приобретать как биржевые, так и
               внебиржевые инструменты</p>
           </div>
@@ -314,33 +312,33 @@
                 <form action="#" class="calc__brokers-right-card">
                   <div class="calc__brokers-header">
                     <h3 class="calc__brokers-header-title" id="resultYears"></h3>
-                    <div class="saving__sum">
+                    <div class="calc__brokers-result">
                       <label for="result" class="saving__sum-title ">Накопленная сумма</label>
-                      <input class="saving__sum-value calc-value" id="result">
+                      <input class="calc__brokers-value calc-value" id="result">
                     </div>
-                    <div class="increment__asset ">
+                    <div class="calc__brokers-result">
                       <label for="resultPercent" class="calc-comment">Прирост активов</label>
-                      <input type="text" class="increment__asset-value calc-value" id="resultPercent">
+                      <input type="text" class="calc__brokers-value" id="resultPercent">
                     </div>
                   </div>
                   <div class="calc__brokers-body">
-                    <div class="vnecenie-sredstv calc-flex">
+                    <div class="calc__brokers-result">
                       <label for="resultTotalVnesenie" class="calc-comment">Внесенные средства</label>
-                      <input type="text" class="increment__asset-value calc-value" id="resultTotalVnesenie">
+                      <input type="text" class="calc__brokers-value" id="resultTotalVnesenie">
                     </div>
-                    <div class="chisty-dohod calc-flex">
+                    <div class="calc__brokers-result">
                       <label for="percent" class="calc-comment">Чистый доход за весь срок&nbsp;ведения ИИС</label>
-                      <input type="text" class="increment__asset-value calc-value" id="percent">
+                      <input type="text" class="calc__brokers-value" id="percent">
                     </div>
-                    <div class="nalogovy-vichet calc-flex">
+                    <div class="calc__brokers-result">
                       <label for="vichet" class="calc-comment">Налоговый вычет 13%</label>
-                      <input type="text" class="increment__asset-value calc-value" id="vichet">
+                      <input type="text" class="calc__brokers-value" id="vichet">
                     </div>
-                    <div class="ndfl calc-flex">
+                    <div class="calc__brokers-result">
                       <label for="ndfl" class="calc-comment">НДФЛ, удерживаемый с дохода ДУ</label>
-                      <input type="text" class="calc-value" id="ndfl">
+                      <input type="text" class="calc__brokers-value" id="ndfl">
                     </div>
-                    <div class="calc-btn">
+                    <div class="calc-block-buttons">
                       <a href="#" class="button primary-button calc-button">Оформить ИИС</a>
                     </div>
                   </div>
@@ -484,18 +482,18 @@
 
         </div>
         <div class="info-footnotes">
-          <p class="info-footnotes-text text-indent"><sup class="letter-lowercase">1</sup>Сумма максимального
+          <p class="secondary-text text-indent"><sup>1</sup> Сумма максимального
             налогового вычета
             при внесении на счет 400 тысяч рублей при условии уплаченного НДФЛ на сумму не менее 52 000 рублей за год.
 
           </p>
-          <p class="info-footnotes-text text-indent"><sup class="letter-lowercase">2</sup>Расчет доходности
+          <p class="secondary-text text-indent"><sup>2</sup> Расчет доходности
             произведен в
             качестве примера путем сложения доходности к погашению государственных облигаций в размере 6,65% годовых
             (выпуск: ОФЗ-ПК-29007, данные госрегистрации: №29007RMFS0 от 31.12.2014, МинФин) по состоянию на 11.08.2020
             г. и налогового вычета (возврата) по НДФЛ на инвестируемые средства в размере 13%.
           </p>
-          <p class="info-footnotes-text text-indent"><sup class="letter-lowercase">3</sup>Фактические результаты
+          <p class="secondary-text text-indent"><sup>3</sup> Фактические результаты
             доверительного управления определяются инвестиционной стратегией, которая вырабатывается управляющим на
             основе данных об инвестиционном профиле клиента. Инвестиционный профиль представляет собой сведения об
             ожидаемой доходности, на которую рассчитывает клиент, уровне риска, который способен нести клиент, а также о
@@ -508,35 +506,35 @@
             федеральным законом, условиями управления активами, информацией о доверительном управляющем вы можете
             ознакомиться, обратившись в АО «НФК - Сбережения», а также на сайте www.nfksber.ru
           </p>
-          <p class="info-footnotes-text text-indent"><sup class="letter-lowercase">4</sup>По размеру собственных
+          <p class="secondary-text text-indent"><sup>4</sup> По размеру собственных
             средств по
             состоянию на 31.01.2017 г. из числа некредитных организаций, зарегистрированных в Чувашской Республике.
           </p>
-          <p class="info-footnotes-text text-indent"><sup class="letter-lowercase">5</sup>Доступ предоставляется
+          <p class="secondary-text text-indent"><sup>5</sup> Доступ предоставляется
             программой
             ИТС-Брокер при заключении брокерского договора на ведение индивидуального инвестиционного счета.
           </p>
-          <p class="info-footnotes-text text-indent"><sup class="letter-lowercase">6</sup>В качестве примера
+          <p class="secondary-text text-indent"><sup>6</sup> В качестве примера
             используется
             инвестирование в государственные облигации, выпуск: ОФЗ-29006-ПК. Данные госрегистрации:№29006RMFS от
             31.12.2014, МинФин. Доходность к погашению 13,35% годовых по состоянию на 11.06.2015 г.
           </p>
-          <p class="info-footnotes-text text-indent"><sup class="letter-lowercase">*</sup>Результаты расчета не
+          <p class="secondary-text text-indent"><sup>*</sup> Результаты расчета не
             являются
             публичной офертой и могут быть уточнены при заключении договора. При осуществлении расчетов использованы
             справочно-информационные и аналитические материалы, подготовленные специалистами АО «НФК-Сбережения», не
             имеющие в качестве основной цели продвижение товара на рынке и не являющиеся рекламой, в том числе
             социальной рекламой.
           </p>
-          <p class="info-footnotes-text">Представленная информация составлена исходя из сложившейся на рынке ситуации
+          <p class="secondary-text">Представленная информация составлена исходя из сложившейся на рынке ситуации
             на момент публикации материала, на основе публичных данных, однако АО «НФК-Сбережения» не может нести
             ответственность за их достоверность.
           </p>
-          <p class="info-footnotes-text">Условия инвестирования денежных средств на индивидуальных инвестиционных
+          <p class="secondary-text">Условия инвестирования денежных средств на индивидуальных инвестиционных
             счетах приведены справочно на момент публикации материала, подробнее актуальную информацию можно узнать у
             специалистов АО «НФК-Сбережения».
           </p>
-          <p class="info-footnotes-text">С учетом вышеизложенного, при принятии инвестиционных решений не следует
+          <p class="secondary-text">С учетом вышеизложенного, при принятии инвестиционных решений не следует
             полагаться исключительно на представленные материалы без проведения независимого анализа. АО
             «НФК-Сбережения», сотрудники и иные лица не несут ответственности за достоверность данной информации, а
             также за последствия при ее использовании.</p>

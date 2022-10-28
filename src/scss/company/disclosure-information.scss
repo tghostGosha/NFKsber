@@ -41,17 +41,30 @@
     @media(max-width: 1176px) {
       padding: 0;
     }
+    &-wrapper {
+      grid-template-rows: repeat(7, 1fr);
+      @media(max-width: 1176px)  {
 
+        grid-template-rows: repeat(10, 1fr);
+      }
+      @media(max-width: 585px)  {
+        grid-template-rows: repeat(20, 1fr);
+      }
+    }
     &-title {
       margin-bottom: var(--mb-40);
     }
   }
 
   &-btn {
-    display: flex !important;
-    height: 128px;
-    justify-content: space-between;
+    display: flex;
     grid-column: span 4;
+    @media(max-width: 1176px) {
+      grid-column: span 6;
+    }
+    @media(max-width: 585px)  {
+      grid-column: span 12;
+    }
   }
 }
 

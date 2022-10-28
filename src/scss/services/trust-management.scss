@@ -2,17 +2,9 @@
 
   &-container {
     background-image: var(--desktop-image-banner-top);
-  }
-
-  &-button {
-    display: inline-block;
-    margin-top: auto;
-    border-radius: 5px;
-    text-align: center;
-    padding: 12px 22px;
 
     @media(max-width: 585px) {
-      padding: 14px 32px;
+      background-size: 69%;
     }
   }
 }
@@ -25,20 +17,22 @@
 }
 
 .trust__strategy {
-
+  
   &-cards-container {
     display: flex;
     flex-direction: column;
   }
 
   &-card {
-    border-radius: 10px;
     border: 1px solid var(--grey-button);
     border-radius: 10px;
+    @media(max-width: 1176px) {
+      row-gap: 0;
+    }
   }
 
   &-card:not(:last-child) {
-    margin-bottom: 24px;
+    margin-bottom: var(--mb-24);
   }
 }
 
@@ -79,8 +73,6 @@
 }
 
 .strategy-card__right {
-
-  padding-right: 32px;
   grid-column: 5/span 8;
 
   @media(max-width: 1176px) {
@@ -133,6 +125,7 @@
     padding-top: 16px;
     padding-bottom: 1px;
     margin-bottom: 24px;
+    justify-content: space-between;
 
     @media(max-width: 1176px) {
       flex-direction: column;
@@ -163,61 +156,30 @@
 
 }
 
-.conditions-bet {
-  width: 139px;
-
-  @media(max-width: 585px) {
-    width: 124px;
+.conditions-element {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 247px;
+  @media(max-width: 1176px) {
+    max-width: 100%;
   }
-
   &-title {
     font-family: gilroy;
     position: relative;
     margin: 0;
   }
-
-  &-title span {
-    color: var(--primary-text);
-    position: absolute;
-    top: -5px;
-    font-size: 16px;
-    font-weight: 600;
-  }
-
   &-description {
-    color: var(--secondary-text);
 
     @media(max-width: 585px) {
       font-size: 12px;
       line-height: 16px;
     }
   }
-}
-
-.conditions-horizont {
-  width: 197px;
-
-  @media(max-width: 585px) {
-    width: 124px;
-  }
-}
-
-.conditions-amount {
-  width: 276px;
-
-  @media(max-width: 585px) {
-    width: 124px;
-  }
-}
-
-.conditions-element {
-  display: flex;
-  flex-direction: column;
 
 }
 
 .conditions-element:not(:last-child) {
-  margin-right: 48px;
 
   @media(max-width: 1176px) {
     margin-right: 0;
@@ -227,22 +189,4 @@
   @media(max-width: 585px) {
     margin-bottom: 12px;
   }
-}
-
-.trust__about {
-  position: relative;
-  // @media(max-width: 585px) {
-  //   padding-bottom: 48px !important;
-  // }
-  &-description {
-    color: var(--secondary-text);
-    font-size: 14px;
-    line-height: 19px;
-    position: relative;
-  }
-
-  &-description:not(:last-child) {
-    margin-bottom: 20px;
-  }
-
 }
