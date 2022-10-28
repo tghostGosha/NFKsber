@@ -17,7 +17,7 @@
 }
 
 .investor__requirements {
- 
+
   &-title {
     text-align: center;
     max-width: 578px;
@@ -75,7 +75,7 @@
     max-height: 100%;
   }
 
-  &-item {
+  .nfk-dot-list-item {
     flex: 0 0 50%;
     max-width: 580px;
 
@@ -88,9 +88,11 @@
 .investor__tab-title {
   margin-bottom: var(--mb-40);
   padding-right: 44%;
+
   @media(max-width: 1176px) {
     padding-right: 25%;
   }
+
   @media(max-width: 585px) {
     padding-right: 0;
     text-align: center;
@@ -125,6 +127,7 @@
     row-gap: 88px !important;
     padding-bottom: 0;
   }
+
   @media(max-width: 585px) {
     row-gap: 72px !important;
   }
@@ -153,6 +156,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
     @media(max-width: 1176px) {
       margin: 0;
     }
@@ -210,6 +214,7 @@
       top: 117%;
       right: 43px;
     }
+
     @media(max-width: 585px) {
       height: 48px;
       right: 36px;
@@ -226,7 +231,8 @@
   @media(max-width: 1176px) {
     margin-top: 7px;
   }
-  @media(max-width: 585px)  {
+
+  @media(max-width: 585px) {
     padding: 10px 25px;
   }
 }
@@ -238,37 +244,15 @@
       row-gap: 24px;
     }
 
-    &-left {
-      @media(max-width: 1176px) {
-        grid-column: 1/ span 5;
-      }
-      @media(max-width: 585px) {
-        grid-column: 3/ span 10;
-        grid-row: 2/ span 1;
-      }
-    }
-
-    &-right {
-      padding: 40px 20px 40px 20px;
+    .nfk-dot-list {
+      margin-top: 24px;
 
       @media(max-width: 1176px) {
-        grid-column: 6/ span 7;
-      }
-      @media(max-width: 585px) {
-        grid-column: 1/ span 12;
-        grid-row: 1/ span 1;
-        padding: 24px 12px 0 12px;
+        margin-top: 16px;
       }
     }
   }
 
-  &-list {
-    margin-top: 24px;
-
-    @media(max-width: 1176px) {
-      margin-top: 16px;
-    }
-  }
 }
 
 .investor__transactions {
@@ -276,6 +260,7 @@
     display: none;
   }
 }
+
 .investor__requirements {
   @media(max-width: 1176px) {
     padding-bottom: 0;

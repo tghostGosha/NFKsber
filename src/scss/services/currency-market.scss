@@ -19,7 +19,7 @@
 .currency__benefit {
 
   &-title {
-    text-align: center;
+    text-align: center; 
   }
 
   &-container {
@@ -32,59 +32,12 @@
     @media(max-width: 1176px)  {
       grid-column: span 12;
     }
-    @media(max-width: 585px) {
-      padding: 24px 12px 8px 12px;
-      grid-template-rows: 0.7fr 0.7fr;
-    }
-    &-left {
-      grid-column: 1/span 7;
-      padding-right: 0;
-      @media(max-width: 585px) {
-        grid-column: span 12;
-        padding: 0;
-      }
-    }
-    &-right {
-      grid-column: 8/span 5;
-      padding:0 0 30px 0;
-      @media(max-width: 1176px) {
-        padding: 24px 0 20px 0;
-      }
-      @media(max-width: 585px) {
-        padding: 0;
-      }
-    }
-
-  }
-
-  
-}
-
-.profitable-title {
-  @media(max-width: 1176px) {
-    font-size: 20px;
-    line-height: 24px;
-  }
-
-  @media(max-width: 585px) {
-    text-align: center;
-    margin-bottom: 16px;
   }
 }
 
 .profitable__course {
   grid-column: span 12;
 
-}
-
-
-.profitable-btn {
-  padding: 18px 26px;
-  display: inline-block;
-  margin-top: var(--mb-40);
-  @media(max-width: 585px) {
-    padding: 12px 14px;
-  }
 }
 
 .currency-rates__table-nav {
@@ -116,6 +69,9 @@
   @media(max-width: 1176px) {
     grid-column: 1 / span 8;
   }
+  @media(max-width: 585px) {
+    grid-row: 1/ span 1;
+  }
 }
 
 .rate-title {
@@ -128,7 +84,6 @@
   @media(max-width: 585px) {
     text-align: end;
   }
-
 }
 
 .rates__item-service {
@@ -136,17 +91,17 @@
     grid-row: 2/ span 1;
     grid-column: 1 / span 7;
   }
+  
 }
-.rates__item-award {
-  @media(max-width: 1176px) {
-    grid-row: 1/ span 1;
-    grid-column: 1 / span 8;
-  }
-}
+
 .rates__item-award {
   @media(max-width: 1176px) {
     grid-row: 1/ span 1;
     grid-column: 9 / span 4;
+  }
+  @media(max-width: 585px) {
+    grid-row: 3/ span 1;
+    
   }
 }
 
@@ -155,30 +110,3 @@
     grid-column: 1 / span 12;
   }
 }
-
-.currency__rates {
-  &-title {
-    text-align: center;
-  }
-
-  &-info-description {
-    margin-bottom: var(--mb-24) ;
-  }
-}
-
-.currency__info {
-  position: relative;
-
-  // &-consult {
-  //   padding-top: 22px;
-  //   padding-bottom: 21px;
-  //   display: flex;
-  //   justify-content: space-between;
-  //   align-items: center;
-  // }
-
-  &-btn {
-    grid-column: span 4;
-  }
-}
-

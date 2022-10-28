@@ -16,94 +16,8 @@
   }
 }
 
-.repo__about {
-  
-  &-card {
-    margin-top: 0;
-    @media(max-width: 585px) {
-      row-gap: 16px;
-      grid-template-rows: 1fr 156px;
-    }
-    &-left {
-      @media(max-width: 1176px) {
-        grid-column: 1/span 5;
-      }
-      @media(max-width: 585px) {
-        grid-column: 3 / span 10;
-      }
-    }
-
-    &-right {
-      @media(max-width: 1176px) {
-        grid-column: 6/span 7;
-      }
-      @media(max-width: 585px) {
-        grid-column: 1 / span 12;
-      }
-    }
-  }
-}
-
-.repayment__service {
-  &-card {
-    margin-top: 0;
-    @media(max-width: 585px) {
-      row-gap: 16px;
-      grid-template-rows: 1fr 154px;
-    }
-    &-left {
-      padding: 40px 10px 100px 46px;
-
-      @media(max-width: 1176px) {
-        padding: 24px 0 24px 24px;
-        grid-column: 1/span 7;
-      }
-      @media(max-width: 585px) {
-        grid-column: 1 / span 12;
-        padding: 24px 10px 0 12px;
-      }
-    }
-
-    &-right {
-      @media(max-width: 1176px) {
-        grid-column: 8/span 6;
-      }
-      @media(max-width: 585px) {
-        grid-column: 2 / span 11;
-      }
-    }
-
-  }
-
-  &-description {
-    margin-bottom: var(--mb-24);
-  }
-}
-
-.taxes__about {
-  &-card {
-    margin-top: 0;
-    @media(max-width: 585px) {
-      row-gap: 16px;
-      grid-template-rows: 1fr 154px;
-    }
-    &-left {
-      @media(max-width: 585px) {
-        grid-row: 2/span 1;
-        grid-column: 3 / span 10;
-      }
-      
-    }
-    &-right {
-      padding: 40px 20px 34px 20px;
-      @media(max-width: 585px) {
-        grid-row: 1/span 1;
-        grid-column: 1 / span 12;
-        padding: 24px 10px 0 12px;
-      }
-    }
-  }
-
+.repayment__service-card .small__banner-description {
+  margin-bottom: var(--mb-24);
 }
 
 .nfk__direction-title {
@@ -131,11 +45,16 @@
     border-radius: 10px;
     background-color: var(--primary-grey);
     padding: 40px 10% 40px 46px;
+    grid-column: span 6;
+    
 
     @media(max-width: 1176px) {
       padding: 30px 10% 30px 24px;
       justify-content: space-between;
       max-height: 204px;
+    }
+    @media(max-width: 585px) {
+      grid-column: span 12;
     }
 
     &-body {
@@ -145,20 +64,6 @@
 
     &-title {
       margin-bottom: var(--mb-24);
-    }
-  }
-
-  .first-adress {
-    grid-column: 1/ span 6;
-    @media(max-width: 585px) {
-      grid-column: 1/ span 12;
-    }
-  }
-
-  .second-adress {
-    grid-column: 7/ span 6;
-    @media(max-width: 585px) {
-      grid-column: 1/ span 12;
     }
   }
 }

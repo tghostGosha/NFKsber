@@ -7,6 +7,25 @@
   width: 18px;
   height: 18px;
 }
+
+.type-card-tooltip {
+  position: relative;
+  margin: 24px 0;
+}
+.type-card-tooltip .tooltip-content {
+  width: 30rem;  
+  left: 41px;
+  text-align: start;
+  @media(max-width: 1176px) {
+    left: 0;
+  }
+  @media(max-width: 585px) {
+    width: 22rem; 
+  }
+}
+.type-card-tooltip .nfk-dot-list-item::before {
+  top: 7px;
+}
 .tooltip-btn {
   position: absolute;
   right: 0;
@@ -37,7 +56,7 @@
   opacity: 0;
   width: 10rem;
   box-shadow: 0px 0px 16px rgba(29, 37, 44, 0.16);
-  transition: all 0.2s ease-in-out 0.1s;
+  transition: var(--animation-transition);
   @media(max-width: 701px) {
     left: -94px;
     width: 8rem;
@@ -62,9 +81,16 @@
 }
 
 .tooltip-1:hover .tooltip-content,
-.tooltip-1:hover .tooltip-content::after {
+.tooltip-1:hover .tooltip-content::after,
+.tooltip-1:active .tooltip-content,
+.tooltip-1:active .tooltip-content::after,
+.type-card-tooltip:hover .tooltip-content,
+.type-card-tooltip:hover .tooltip-content::after,
+.type-card-tooltip:active .tooltip-content,
+.type-card-tooltip:active .tooltip-content::after {
   visibility: visible;
   opacity: 1;
 }
+
 
 //========================================//

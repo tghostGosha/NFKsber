@@ -22,32 +22,12 @@
 .brokers__about-title,
 .brokers__conditions-title {
   text-align: center;
+}
 
+.brokers__about-title  {
   @media(max-width: 585px) {
     text-align: start;
   }
-}
-
-.brokers__app {
-
-  &-card {
-    padding-top: 40px;
-
-    @media(max-width: 1176px) {
-      padding-top: 24px;
-    }
-
-    @media(max-width: 585px) {
-      column-gap: 12px;
-      grid-template-rows: 1fr 0.7fr;
-      padding-top: 0;
-    }
-  }
-
-  &-list {
-    margin-bottom: 24px;
-  }
-
 }
 
 .google-button {
@@ -80,42 +60,8 @@
   fill: var(--primary-text);
 }
 
-
-.brokers__service {
-
-  &-list {
-    margin: 0;
-  }
-}
-.brokers__service .small__banner {
-  @media(max-width: 585px) {
-    grid-template-rows: 1fr 0.4fr;
-  }
-}
-
 .brokers__education {
   
-  &-card .small__banner-left-text {
-    @media(max-width: 1176px) {
-      grid-column: 1/ span 7;
-    }
-
-    @media(max-width: 585px) {
-      grid-column: 1/ span 12;
-    }
-  }
-
-  &-card .small__banner-right-img {
-    @media(max-width: 1176px) {
-      grid-column: 8/ span 5;
-    }
-
-    @media(max-width: 585px) {
-      grid-column: 1/ span 12;
-      grid-row: 2/ span 1;
-    }
-  }
-
   &-card .small__banner-title,
   &-card .small__banner-description {
     color: var(--white);
@@ -123,15 +69,14 @@
 
   &-card {
     background-color: var(--primary-text);
-
-    @media(max-width: 585px) {
-      grid-template-rows: 1fr 172px;
-      row-gap: 24px;
-    }
   }
 
 }
-
+.small__banner-terms {
+  @media(max-width: 585px) {
+    grid-template-rows: 1fr 0.4fr;
+  }
+}
 .education-btn {
   border: 1px solid var(--grey-button);
   background-color: inherit;
@@ -178,14 +123,6 @@
 
   @media(max-width: 585px) {
     display: none;
-  }
-
-  &-consult {
-    padding-top: 22px;
-    padding-bottom: 21px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
   }
 }
 

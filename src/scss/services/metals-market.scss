@@ -18,7 +18,7 @@
 }
 
 .metals__about {
-  
+
   &-first-article {
     grid-column: 1/span 6;
 
@@ -34,84 +34,19 @@
       grid-column: span 12;
     }
   }
-
-}
-
-.metals__service-card {
-  margin: 0;
-
-  @media(max-width: 585px) {
-    grid-template-rows: 1fr 140px;
-  }
-
-  &-left {
-    @media(max-width: 1176px) {
-      grid-column: 1/ span 7;
-    }
-
-    @media(max-width: 585px) {
-      grid-column: 1/ span 12;
-    }
-  }
-
-  &-right {
-    @media(max-width: 1176px) {
-      grid-column: 8/ span 5;
-    }
-
-    @media(max-width: 585px) {
-      grid-column: 1/ span 12;
-    }
-  }
-
-  &-description {
-    @media(max-width: 1176px) {
-      font-size: 14px;
-      line-height: 20px;
-    }
-  }
-}
-
-.metals__conditions {
-  &-card {
-    @media(max-width: 585px) {
-      grid-template-rows: 1fr 274px;
-    }
-  }
-
-
 }
 
 .metals__commission-title {
   margin-bottom: var(--mb-24);
 }
 
+.metals__trade-card {
 
-.metals__trade {
-  &-card {
-    @media(max-width: 585px) {
-      grid-template-rows: 1fr 168px;
-      row-gap: 16px;
-    }
-  }
-  &-card-description {
-    margin-bottom: var(--mb-40);
-    @media(max-width: 1176px) {
-      font-size: 14px;
-      line-height: 20px;
-    }
-  }
-  &-btn {
+  a {
     padding: 18px 26px;
+
     @media(max-width: 585px) {
       display: none !important;
     }
-  }
-}
-
-.metals__transactions {
-  &-footnote {
-    padding-left: 10px;
-    position: relative;
   }
 }

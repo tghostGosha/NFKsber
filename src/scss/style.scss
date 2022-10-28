@@ -160,7 +160,9 @@ h4 {
     line-height: 30px;
   }
 }
-
+.files-list li:not(:last-child) {
+  margin-bottom: 49px;
+}
 .nfk-dot-list {
   padding-left: 20px;
 

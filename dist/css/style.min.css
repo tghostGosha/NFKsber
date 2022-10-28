@@ -23002,8 +23002,8 @@ input::placeholder {
 @media (max-width: 585px) {
   .small__banner {
     column-gap: 12px;
-    row-gap: 24px;
-    grid-template-rows: 1fr 0.9fr;
+    row-gap: 16px;
+    grid-template-rows: 1fr 0.7fr;
   }
 }
 .small__banner a,
@@ -23025,22 +23025,25 @@ input::placeholder {
   width: 100%;
   max-width: 168px;
 }
+.small__banner-btn {
+  padding: 18px 26px;
+}
 .small__banner-left-img {
   display: flex;
   justify-content: center;
-  grid-column: 1/span 6;
+  grid-column: 1/span 5;
   align-items: flex-end;
   padding-left: 10px;
 }
 @media (max-width: 585px) {
   .small__banner-left-img {
-    grid-column: 2/span 11;
+    grid-column: 4/span 9;
     grid-row: 2/span 1;
   }
 }
 .small__banner-left-text {
   padding: 40px 0 40px 46px;
-  grid-column: 1/span 6;
+  grid-column: 1/span 7;
 }
 @media (max-width: 1176px) {
   .small__banner-left-text {
@@ -23050,11 +23053,11 @@ input::placeholder {
 @media (max-width: 585px) {
   .small__banner-left-text {
     grid-column: 1/span 12;
-    padding: 24px 10px 8px 12px;
+    padding: 24px 10px 0 12px;
   }
 }
 .small__banner-right-img {
-  grid-column: 7/span 6;
+  grid-column: 8/span 5;
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -23062,13 +23065,13 @@ input::placeholder {
 }
 @media (max-width: 585px) {
   .small__banner-right-img {
-    grid-column: 1/span 12;
+    grid-column: 4/span 9;
     grid-row: 2/span 1;
   }
 }
 .small__banner-right-text {
   padding: 40px 20px 100px 0;
-  grid-column: 7/span 6;
+  grid-column: 6/span 7;
 }
 @media (max-width: 1176px) {
   .small__banner-right-text {
@@ -23490,6 +23493,31 @@ input::placeholder {
   height: 18px;
 }
 
+.type-card-tooltip {
+  position: relative;
+  margin: 24px 0;
+}
+
+.type-card-tooltip .tooltip-content {
+  width: 30rem;
+  left: 41px;
+  text-align: start;
+}
+@media (max-width: 1176px) {
+  .type-card-tooltip .tooltip-content {
+    left: 0;
+  }
+}
+@media (max-width: 585px) {
+  .type-card-tooltip .tooltip-content {
+    width: 22rem;
+  }
+}
+
+.type-card-tooltip .nfk-dot-list-item::before {
+  top: 7px;
+}
+
 .tooltip-btn {
   position: absolute;
   right: 0;
@@ -23520,7 +23548,7 @@ input::placeholder {
   opacity: 0;
   width: 10rem;
   box-shadow: 0px 0px 16px rgba(29, 37, 44, 0.16);
-  transition: all 0.2s ease-in-out 0.1s;
+  transition: var(--animation-transition);
 }
 @media (max-width: 701px) {
   .tooltip-content {
@@ -23549,7 +23577,13 @@ input::placeholder {
 }
 
 .tooltip-1:hover .tooltip-content,
-.tooltip-1:hover .tooltip-content::after {
+.tooltip-1:hover .tooltip-content::after,
+.tooltip-1:active .tooltip-content,
+.tooltip-1:active .tooltip-content::after,
+.type-card-tooltip:hover .tooltip-content,
+.type-card-tooltip:hover .tooltip-content::after,
+.type-card-tooltip:active .tooltip-content,
+.type-card-tooltip:active .tooltip-content::after {
   visibility: visible;
   opacity: 1;
 }
@@ -23754,30 +23788,11 @@ input::placeholder {
 .brokers__conditions-title {
   text-align: center;
 }
+
 @media (max-width: 585px) {
-  .brokers__about-title,
-.brokers__conditions-title {
+  .brokers__about-title {
     text-align: start;
   }
-}
-
-.brokers__app-card {
-  padding-top: 40px;
-}
-@media (max-width: 1176px) {
-  .brokers__app-card {
-    padding-top: 24px;
-  }
-}
-@media (max-width: 585px) {
-  .brokers__app-card {
-    column-gap: 12px;
-    grid-template-rows: 1fr 0.7fr;
-    padding-top: 0;
-  }
-}
-.brokers__app-list {
-  margin-bottom: 24px;
 }
 
 .google-button {
@@ -23811,47 +23826,16 @@ input::placeholder {
   fill: var(--primary-text);
 }
 
-.brokers__service-list {
-  margin: 0;
-}
-
-@media (max-width: 585px) {
-  .brokers__service .small__banner {
-    grid-template-rows: 1fr 0.4fr;
-  }
-}
-
-@media (max-width: 1176px) {
-  .brokers__education-card .small__banner-left-text {
-    grid-column: 1/span 7;
-  }
-}
-@media (max-width: 585px) {
-  .brokers__education-card .small__banner-left-text {
-    grid-column: 1/span 12;
-  }
-}
-@media (max-width: 1176px) {
-  .brokers__education-card .small__banner-right-img {
-    grid-column: 8/span 5;
-  }
-}
-@media (max-width: 585px) {
-  .brokers__education-card .small__banner-right-img {
-    grid-column: 1/span 12;
-    grid-row: 2/span 1;
-  }
-}
 .brokers__education-card .small__banner-title, .brokers__education-card .small__banner-description {
   color: var(--white);
 }
 .brokers__education-card {
   background-color: var(--primary-text);
 }
+
 @media (max-width: 585px) {
-  .brokers__education-card {
-    grid-template-rows: 1fr 172px;
-    row-gap: 24px;
+  .small__banner-terms {
+    grid-template-rows: 1fr 0.4fr;
   }
 }
 
@@ -23907,13 +23891,6 @@ input::placeholder {
     display: none;
   }
 }
-.brokers__info-consult {
-  padding-top: 22px;
-  padding-bottom: 21px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 
 .trust__hero-container {
   background-image: var(--desktop-image-banner-top);
@@ -23921,13 +23898,6 @@ input::placeholder {
 @media (max-width: 585px) {
   .trust__hero-container {
     background-size: 69%;
-  }
-}
-
-@media (max-width: 585px) {
-  .small__banner-strategy {
-    row-gap: 24px;
-    grid-template-rows: 1fr 0.5fr;
   }
 }
 
@@ -24123,19 +24093,6 @@ input::placeholder {
   }
 }
 
-@media (max-width: 585px) {
-  .universal__info-small-banner {
-    grid-template-rows: 1fr 153px;
-  }
-}
-
-@media (max-width: 585px) {
-  .universal__possibility-card {
-    row-gap: 24px;
-    grid-template-rows: 1fr 184px;
-  }
-}
-
 .metals__hero-container {
   background-image: var(--desktop-image-banner-top);
   padding: 56px 52% 275px 0;
@@ -24170,78 +24127,17 @@ input::placeholder {
   }
 }
 
-.metals__service-card {
-  margin: 0;
-}
-@media (max-width: 585px) {
-  .metals__service-card {
-    grid-template-rows: 1fr 140px;
-  }
-}
-@media (max-width: 1176px) {
-  .metals__service-card-left {
-    grid-column: 1/span 7;
-  }
-}
-@media (max-width: 585px) {
-  .metals__service-card-left {
-    grid-column: 1/span 12;
-  }
-}
-@media (max-width: 1176px) {
-  .metals__service-card-right {
-    grid-column: 8/span 5;
-  }
-}
-@media (max-width: 585px) {
-  .metals__service-card-right {
-    grid-column: 1/span 12;
-  }
-}
-@media (max-width: 1176px) {
-  .metals__service-card-description {
-    font-size: 14px;
-    line-height: 20px;
-  }
-}
-
-@media (max-width: 585px) {
-  .metals__conditions-card {
-    grid-template-rows: 1fr 274px;
-  }
-}
-
 .metals__commission-title {
   margin-bottom: var(--mb-24);
 }
 
-@media (max-width: 585px) {
-  .metals__trade-card {
-    grid-template-rows: 1fr 168px;
-    row-gap: 16px;
-  }
-}
-.metals__trade-card-description {
-  margin-bottom: var(--mb-40);
-}
-@media (max-width: 1176px) {
-  .metals__trade-card-description {
-    font-size: 14px;
-    line-height: 20px;
-  }
-}
-.metals__trade-btn {
+.metals__trade-card a {
   padding: 18px 26px;
 }
 @media (max-width: 585px) {
-  .metals__trade-btn {
+  .metals__trade-card a {
     display: none !important;
   }
-}
-
-.metals__transactions-footnote {
-  padding-left: 10px;
-  position: relative;
 }
 
 .depositary__hero-container {
@@ -24271,79 +24167,6 @@ input::placeholder {
   margin-bottom: var(--mb-40);
   text-align: center;
   max-width: 568px;
-}
-@media (max-width: 1176px) {
-  .depositiry__about-title {
-    text-align: start;
-  }
-}
-@media (max-width: 585px) {
-  .depositiry__about-title {
-    text-align: start;
-  }
-}
-
-@media (max-width: 585px) {
-  .depositiry__payments-card {
-    grid-template-rows: 1fr 156px;
-  }
-}
-@media (max-width: 1176px) {
-  .depositiry__payments-card-left {
-    grid-column: 1/span 5;
-  }
-}
-@media (max-width: 585px) {
-  .depositiry__payments-card-left {
-    grid-column: 2/span 11;
-    grid-row: 2/span 1;
-  }
-}
-@media (max-width: 1176px) {
-  .depositiry__payments-card-right {
-    grid-column: 6/span 7;
-  }
-}
-@media (max-width: 585px) {
-  .depositiry__payments-card-right {
-    grid-column: 1/span 12;
-    grid-row: 1/span 1;
-  }
-}
-
-@media (max-width: 585px) {
-  .depositiry__access-card {
-    grid-template-rows: 1fr 134px;
-  }
-}
-@media (max-width: 1176px) {
-  .depositiry__access-card-left {
-    grid-column: 1/span 7;
-  }
-}
-@media (max-width: 585px) {
-  .depositiry__access-card-left {
-    grid-column: 1/span 12;
-    grid-row: 1/span 1;
-  }
-}
-@media (max-width: 1176px) {
-  .depositiry__access-card-right {
-    grid-column: 8/span 5;
-  }
-}
-@media (max-width: 585px) {
-  .depositiry__access-card-right {
-    grid-column: 2/span 11;
-    grid-row: 2/span 1;
-  }
-}
-.depositiry__access-btn {
-  padding: 18px 26px;
-}
-
-.depositiry__transactions-item:not(:last-child) {
-  margin-bottom: 49px;
 }
 
 .investor__hero-container {
@@ -24421,12 +24244,12 @@ input::placeholder {
     max-height: 100%;
   }
 }
-.investor-list-item {
+.investor-list .nfk-dot-list-item {
   flex: 0 0 50%;
   max-width: 580px;
 }
 @media (max-width: 1176px) {
-  .investor-list-item {
+  .investor-list .nfk-dot-list-item {
     max-width: 100%;
   }
 }
@@ -24595,37 +24418,11 @@ input::placeholder {
     row-gap: 24px;
   }
 }
-@media (max-width: 1176px) {
-  .status__statement-card-left {
-    grid-column: 1/span 5;
-  }
-}
-@media (max-width: 585px) {
-  .status__statement-card-left {
-    grid-column: 3/span 10;
-    grid-row: 2/span 1;
-  }
-}
-.status__statement-card-right {
-  padding: 40px 20px 40px 20px;
-}
-@media (max-width: 1176px) {
-  .status__statement-card-right {
-    grid-column: 6/span 7;
-  }
-}
-@media (max-width: 585px) {
-  .status__statement-card-right {
-    grid-column: 1/span 12;
-    grid-row: 1/span 1;
-    padding: 24px 12px 0 12px;
-  }
-}
-.status__statement-list {
+.status__statement-card .nfk-dot-list {
   margin-top: 24px;
 }
 @media (max-width: 1176px) {
-  .status__statement-list {
+  .status__statement-card .nfk-dot-list {
     margin-top: 16px;
   }
 }
@@ -24663,12 +24460,6 @@ input::placeholder {
 .individual__about-card {
   margin-bottom: var(--mb-40);
 }
-@media (max-width: 585px) {
-  .individual__about-card {
-    row-gap: 24px;
-    grid-template-rows: 1fr 126px;
-  }
-}
 .individual__about ul {
   column-gap: 84px;
 }
@@ -24679,29 +24470,10 @@ input::placeholder {
   }
 }
 
-.type-a-card {
-  margin-bottom: var(--mb-40);
-}
 @media (max-width: 585px) {
-  .type-a-card {
-    row-gap: 24px;
-    grid-template-rows: 1fr 133px;
-  }
-}
-@media (max-width: 585px) {
-  .type-a-card .small__banner-left-img,
-.type-a-card .small__banner-right-img {
+  .type-card .small__banner-left-img,
+.type-card .small__banner-right-img {
     grid-column: 2/span 10;
-  }
-}
-
-.type-b-card {
-  margin-bottom: var(--mb-24);
-}
-@media (max-width: 585px) {
-  .type-b-card {
-    row-gap: 24px;
-    grid-template-rows: 1fr 133px;
   }
 }
 
@@ -25176,6 +24948,7 @@ input::placeholder {
 @media (max-width: 1176px) {
   .calc__brokers-left-card {
     grid-column: 1/span 12;
+    max-width: 100%;
   }
 }
 .calc__brokers-right-card {
@@ -25247,10 +25020,6 @@ input::placeholder {
   .calc-button {
     padding: 14px 72px;
   }
-}
-
-.ndfl {
-  margin: 0;
 }
 
 .rates__hero-container {
@@ -25828,98 +25597,8 @@ th {
   }
 }
 
-.repo__about-card {
-  margin-top: 0;
-}
-@media (max-width: 585px) {
-  .repo__about-card {
-    row-gap: 16px;
-    grid-template-rows: 1fr 156px;
-  }
-}
-@media (max-width: 1176px) {
-  .repo__about-card-left {
-    grid-column: 1/span 5;
-  }
-}
-@media (max-width: 585px) {
-  .repo__about-card-left {
-    grid-column: 3/span 10;
-  }
-}
-@media (max-width: 1176px) {
-  .repo__about-card-right {
-    grid-column: 6/span 7;
-  }
-}
-@media (max-width: 585px) {
-  .repo__about-card-right {
-    grid-column: 1/span 12;
-  }
-}
-
-.repayment__service-card {
-  margin-top: 0;
-}
-@media (max-width: 585px) {
-  .repayment__service-card {
-    row-gap: 16px;
-    grid-template-rows: 1fr 154px;
-  }
-}
-.repayment__service-card-left {
-  padding: 40px 10px 100px 46px;
-}
-@media (max-width: 1176px) {
-  .repayment__service-card-left {
-    padding: 24px 0 24px 24px;
-    grid-column: 1/span 7;
-  }
-}
-@media (max-width: 585px) {
-  .repayment__service-card-left {
-    grid-column: 1/span 12;
-    padding: 24px 10px 0 12px;
-  }
-}
-@media (max-width: 1176px) {
-  .repayment__service-card-right {
-    grid-column: 8/span 6;
-  }
-}
-@media (max-width: 585px) {
-  .repayment__service-card-right {
-    grid-column: 2/span 11;
-  }
-}
-.repayment__service-description {
+.repayment__service-card .small__banner-description {
   margin-bottom: var(--mb-24);
-}
-
-.taxes__about-card {
-  margin-top: 0;
-}
-@media (max-width: 585px) {
-  .taxes__about-card {
-    row-gap: 16px;
-    grid-template-rows: 1fr 154px;
-  }
-}
-@media (max-width: 585px) {
-  .taxes__about-card-left {
-    grid-row: 2/span 1;
-    grid-column: 3/span 10;
-  }
-}
-.taxes__about-card-right {
-  padding: 40px 20px 34px 20px;
-}
-@media (max-width: 585px) {
-  .taxes__about-card-right {
-    grid-row: 1/span 1;
-    grid-column: 1/span 12;
-    padding: 24px 10px 0 12px;
-  }
 }
 
 .nfk__direction-title {
@@ -25947,6 +25626,7 @@ th {
   border-radius: 10px;
   background-color: var(--primary-grey);
   padding: 40px 10% 40px 46px;
+  grid-column: span 6;
 }
 @media (max-width: 1176px) {
   .nfk__direction-card {
@@ -25955,28 +25635,17 @@ th {
     max-height: 204px;
   }
 }
+@media (max-width: 585px) {
+  .nfk__direction-card {
+    grid-column: span 12;
+  }
+}
 .nfk__direction-card-body {
   display: flex;
   flex-direction: column;
 }
 .nfk__direction-card-title {
   margin-bottom: var(--mb-24);
-}
-.nfk__direction .first-adress {
-  grid-column: 1/span 6;
-}
-@media (max-width: 585px) {
-  .nfk__direction .first-adress {
-    grid-column: 1/span 12;
-  }
-}
-.nfk__direction .second-adress {
-  grid-column: 7/span 6;
-}
-@media (max-width: 585px) {
-  .nfk__direction .second-adress {
-    grid-column: 1/span 12;
-  }
 }
 
 .currency__hero-container {
@@ -26009,63 +25678,9 @@ th {
     grid-column: span 12;
   }
 }
-@media (max-width: 585px) {
-  .currency__benefit-card {
-    padding: 24px 12px 8px 12px;
-    grid-template-rows: 0.7fr 0.7fr;
-  }
-}
-.currency__benefit-card-left {
-  grid-column: 1/span 7;
-  padding-right: 0;
-}
-@media (max-width: 585px) {
-  .currency__benefit-card-left {
-    grid-column: span 12;
-    padding: 0;
-  }
-}
-.currency__benefit-card-right {
-  grid-column: 8/span 5;
-  padding: 0 0 30px 0;
-}
-@media (max-width: 1176px) {
-  .currency__benefit-card-right {
-    padding: 24px 0 20px 0;
-  }
-}
-@media (max-width: 585px) {
-  .currency__benefit-card-right {
-    padding: 0;
-  }
-}
-
-@media (max-width: 1176px) {
-  .profitable-title {
-    font-size: 20px;
-    line-height: 24px;
-  }
-}
-@media (max-width: 585px) {
-  .profitable-title {
-    text-align: center;
-    margin-bottom: 16px;
-  }
-}
 
 .profitable__course {
   grid-column: span 12;
-}
-
-.profitable-btn {
-  padding: 18px 26px;
-  display: inline-block;
-  margin-top: var(--mb-40);
-}
-@media (max-width: 585px) {
-  .profitable-btn {
-    padding: 12px 14px;
-  }
 }
 
 .currency-rates__table-nav {
@@ -26100,6 +25715,11 @@ th {
     grid-column: 1/span 8;
   }
 }
+@media (max-width: 585px) {
+  .rates__item-deal {
+    grid-row: 1/span 1;
+  }
+}
 
 @media (max-width: 585px) {
   .rate-title {
@@ -26123,14 +25743,12 @@ th {
 @media (max-width: 1176px) {
   .rates__item-award {
     grid-row: 1/span 1;
-    grid-column: 1/span 8;
+    grid-column: 9/span 4;
   }
 }
-
-@media (max-width: 1176px) {
+@media (max-width: 585px) {
   .rates__item-award {
-    grid-row: 1/span 1;
-    grid-column: 9/span 4;
+    grid-row: 3/span 1;
   }
 }
 
@@ -26138,20 +25756,6 @@ th {
   .rates__nav-item {
     grid-column: 1/span 12;
   }
-}
-
-.currency__rates-title {
-  text-align: center;
-}
-.currency__rates-info-description {
-  margin-bottom: var(--mb-24);
-}
-
-.currency__info {
-  position: relative;
-}
-.currency__info-btn {
-  grid-column: span 4;
 }
 
 .market-news__hero {
@@ -28822,6 +28426,10 @@ h4 {
     font-size: 16px;
     line-height: 30px;
   }
+}
+
+.files-list li:not(:last-child) {
+  margin-bottom: 49px;
 }
 
 .nfk-dot-list {

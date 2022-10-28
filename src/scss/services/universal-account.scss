@@ -5,7 +5,6 @@
 
     & ul {
       @media(max-width: 1176px) {
-
         padding-right: 24%;
       }
     }
@@ -14,20 +13,5 @@
       background-size: 64%;
     }
   }
-}
+} 
 
-.universal__info-small-banner {
-
-  @media(max-width: 585px) {
-
-    grid-template-rows: 1fr 153px;
-  }
-}
-
-.universal__possibility-card {
-
-  @media(max-width: 585px) {
-    row-gap: 24px;
-    grid-template-rows: 1fr 184px;
-  }
-}

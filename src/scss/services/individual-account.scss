@@ -24,11 +24,6 @@
 
   &-card {
     margin-bottom: var(--mb-40);
-
-    @media(max-width: 585px) {
-      row-gap: 24px;
-      grid-template-rows: 1fr 126px;
-    }
   }
 
   ul {
@@ -43,31 +38,14 @@
 }
 
 
-.type-a-card {
-  margin-bottom: var(--mb-40);
+.type-card .small__banner-left-img,
+.type-card .small__banner-right-img {
 
   @media(max-width: 585px) {
-    row-gap: 24px;
-    grid-template-rows: 1fr 133px;
+    grid-column: 2/span 10;
   }
 
-  .small__banner-left-img,
-  .small__banner-right-img {
-    @media(max-width: 585px) {
-      grid-column: 2/span 10;
-    }
-  }
 }
-
-.type-b-card {
-  margin-bottom: var(--mb-24);
-
-  @media(max-width: 585px) {
-    row-gap: 24px;
-    grid-template-rows: 1fr 133px;
-  }
-}
-
 
 .tab-content {
   padding: 0;
@@ -403,18 +381,6 @@
   }
 }
 
-// .calc__brokers-left-card {
-//   width: 100%;
-//   max-width: 609px;
-//   display: flex;
-//   flex-direction: column;
-//   grid-column: 1/ span 6;
-
-//   @media(max-width: 1176px) {
-//     grid-column: 1/ span 12;
-//   }
-// }
-
 .total__sum,
 .total__years {
   display: flex;
@@ -551,6 +517,7 @@
 
     @media(max-width: 1176px) {
       grid-column: 1/ span 12;
+      max-width: 100%;
     }
   }
 
@@ -610,7 +577,7 @@
   }
 }
 
-.calc-block-buttons{
+.calc-block-buttons {
   display: inline-block;
   margin: 2rem auto 0 auto;
 }
@@ -622,8 +589,4 @@
   @media(max-width: 585px) {
     padding: 14px 72px;
   }
-}
-
-.ndfl {
-  margin: 0;
 }

@@ -8,14 +8,7 @@
     }
   }
 }
-
-.small__banner-strategy {
-  @media(max-width: 585px) {
-    row-gap: 24px;
-    grid-template-rows: 1fr 0.5fr;
-  }
-}
-
+ 
 .trust__strategy {
   
   &-cards-container {
