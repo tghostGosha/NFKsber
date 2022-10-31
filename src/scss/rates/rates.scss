@@ -5,12 +5,12 @@
 
     @media(max-width: 1176px) {
       padding: 48px 33% 112px 0;
-      background-size: 48%;
+
     }
 
     @media(max-width: 585px) {
       padding: 24px 0 149px 0;
-      background-size: 59%;
+
     }
   }
 
@@ -322,9 +322,6 @@ th {
     }
   }
 
-  // &-footnotes p:not(:last-child) {
-  //   margin-bottom: var(--mb-24);
-  // }
 }
 
 .show-on-mobile {

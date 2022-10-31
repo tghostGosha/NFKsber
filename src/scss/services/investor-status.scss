@@ -76,7 +76,7 @@
   }
 
   .nfk-dot-list-item {
-    flex: 0 0 50%;
+    flex: 0 0 48%;
     max-width: 580px;
 
     @media(max-width: 1176px) {
@@ -235,7 +235,7 @@
   @media(max-width: 585px) {
     padding: 10px 25px;
   }
-}
+}  
 
 .status__statement {
   &-card {

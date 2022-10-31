@@ -4,56 +4,19 @@
 
     @media(max-width: 1176px) {
       padding: 48px 9% 85px 0;
-      background-size: 53%;
+
     }
 
     @media(max-width: 585px) {
       padding: 24px 1% 157px 0;
-      background-size: 58%;
+
     }
   }
-
-  &-title {
-    margin-bottom: var(--mb-24);
-
-  }
-
-  &-description {
-    margin-bottom: 94px;
-
-    @media(max-width: 1176px) {
-      margin-bottom: 42px;
-      padding-right: 46%;
-    }
-
-    @media(max-width: 585px) {
-      padding: 0;
-      margin-bottom: 32px;
-      line-height: 22px;
-    }
-  }
-
 }
+
 .education-section {
   @media(max-width: 1176px) {
     padding-bottom: 0;
-  }
-}
-.education__banner {
-  @media(max-width: 585px) {
-    grid-template-rows: 1fr 0.8fr;
-  }
-
-  &-description {
-    margin-bottom: var(--mb-40);
-  }
-
-  &-btn {
-    padding: 18px 26px;
-
-    @media(max-width: 585px) {
-      padding: 12px 14px;
-    }
   }
 }
 
@@ -96,7 +59,7 @@
   border-radius: 10px;
   margin-bottom: var(--mb-24);
 }
-
+ 
 //============Страница  обучением видео=====
 .education__video-container {
   grid-column: 1/ span 8;

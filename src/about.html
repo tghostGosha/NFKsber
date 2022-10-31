@@ -2,7 +2,7 @@
 <html lang="ru">
 @@include('html/head.html',{
 "title": "О Компании"
-})
+}) 
 
 <body>
   @@include('html/header.html',{})
@@ -36,14 +36,14 @@
     </section>
     <section class="about__info">
       <div class="container">
-        <div class="about__info-card small__banner block__margin-bottom">
-          <div class="about__info-card-left small__banner-left-img">
+        <div class="small__banner block__margin-bottom">
+          <div class="small__banner-left-img">
             <img class="small__banner-img" src="@img/company/map.png" alt="Накопления">
           </div>
-          <div class="about__info-card-right small__banner-right-text">
+          <div class="small__banner-right-text">
             <h3 class="small__banner-title">АО «НФК-Сбережения» оказывает финансовые услуги на всей территории
               Российской Федерации</h3>
-            <p>как физическим лицам, так и организациям посредством удаленного заключения договоров с использованием
+            <p class="small__banner-description">как физическим лицам, так и организациям посредством удаленного заключения договоров с использованием
               электронной подписи.
               В настоящее время любой гражданин РФ может стать клиентом компании и начать работать на финансовых
               рынках, заключив договор через Интернет, не выходя из дома или офиса.</p>
@@ -130,18 +130,20 @@
     </section>
     <section class="about__director block__margin-bottom">
       <div class="container">
-        <div class="about__director-card small__banner">
-          <div class="about__director-card-left small__banner-left-img">
-            <img class="small__banner-img" src="@img/company/naumov.png" alt="Накопления">
+        <div class="small__banner">
+          <div class="small__banner-left-img">
+            <img class="small__banner-img" src="@img/company/naumov.png" alt="Директор">
           </div>
-          <div class="about__director-card-right small__banner-right-text">
+          <div class="small__banner-right-text">
             <h3 class="small__banner-title">Наумов Евгений Леонидович</h3>
-            <p class="about__director-post">Один из основателей и директор АО «НФК-Сбережения»</p>
-            <p class="about__director-bio">Руководит компанией с момента ее основания в 2003-м году. Начиная работу на
+            <p class="small__banner-description">Один из основателей и директор АО «НФК-Сбережения».</p>
+            <p class="small__banner-description">Руководит компанией с момента ее основания в 2003-м году. Начиная работу на
               финансовых рынках в качестве агента крупнейших российских инвестиционных холдингов, за этот период времени
               АО «НФК-Сбережения» выросло до самостоятельной компании, имеющей прямой доступ к основным биржевым
               площадкам страны и вошедшей в узкий круг Прайм-брокеров валютного рынка Московской биржи.</p>
-            <a href="#" class="button grey-button about__director-btn">Биография</a>
+              <div class="small__banner-buttons">
+                <a href="#" class="grey-button small__banner-btn">Биография</a>
+              </div>
           </div>
         </div>
       </div>

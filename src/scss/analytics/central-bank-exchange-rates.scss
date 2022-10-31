@@ -1,19 +1,16 @@
 .exchange__rates-hero {
-
   background-image: var(--desktop-image-banner-top);
   padding: 56px 50% 130px 0;
 
   @media(max-width: 1176px) {
     padding: 48px 33% 130px 0;
-    background-size: 48%;
   }
 
   @media(max-width: 585px) {
     padding: 0 3% 141px 0;
-    background-size: 58%;
   }
 
-}
+} 
 .section-courses {
   @media(max-width: 1176px) {
     padding-bottom: 0;
@@ -47,9 +44,6 @@
 
 .country-choices {
   outline: none;
-  // width: 100%;
-  // max-width: 816px;
-  // margin: 0 auto;
   position: relative;
 }
 
@@ -241,10 +235,6 @@
 
 .currency-history-modal-title {
   margin: 0;
-  // @media(max-width: 585px)  {
-  //   font-size: 16px;
-  //   line-height: 18px;
-  // }
 }
 
 //===========Стилизация календаря===============

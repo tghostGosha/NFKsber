@@ -11,7 +11,7 @@
     }
   }
 
-}
+} 
 
 .about__info {
   padding-top: 68px;
@@ -20,29 +20,7 @@
     padding-top: 48px;
     padding-bottom: 48px;
   }
-  &-card {
-    @media(max-width: 585px) {
-      row-gap: 0;
-      grid-template-rows: 1fr 0.6fr;
-    }
-    &-left {
-      padding: 34px 10px 0 40px;
-      @media(max-width: 585px) {
-        grid-row: 2/ span 1;
-        grid-column: 3/ span 9;
-        padding: 0;
-      }
-    }
 
-    &-right {
-      padding: 40px 46px 40px 0;
-      @media(max-width: 585px) {
-        grid-row: 1/ span 1;
-        grid-column: 1/ span 12;
-        padding: 24px 12px 0 12px;
-      }
-    }
-  }
 }
 
 .stocks__container {
@@ -157,61 +135,6 @@
   }
 }
 
-.about__director {
-  background-color: var(--primary-grey);
-  &-card {
-    @media(max-width: 585px) {
-      grid-template-rows: 1fr 0.6fr;
-      row-gap: 0;
-    }
-    &-left {
-      padding: 0 10px 0 40px;
-      @media(max-width: 1176px) {
-        grid-column: 1/ span 5;
-        padding: 0;
-      }
-      @media(max-width: 585px) {
-        grid-column: 3/ span 9;
-        grid-row: 2/span 1;
-      }
-    }
-
-    &-right {
-      padding: 68px 0;
-      @media(max-width: 1176px) {
-        padding: 24px 22px 24px 0;
-        grid-column: 6/ span 7;
-      }
-      @media(max-width: 585px) {
-        padding: 24px 12px 0 12px;
-        grid-column: 1/ span 12;
-        grid-row: 1/span 1;
-      }
-    }
-  }
-
-  &-post {
-    font-family: gilroy;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 22px;
-    margin-bottom: var(--mb-24);
-  }
-
-  &-bio {
-    margin-bottom: var(--mb-40);
-  }
-
-  &-btn {
-    padding: 18px 26px;
-    @media(max-width: 1176px) {
-      padding: 18px 51px;
-    }
-    @media(max-width: 585px) {
-      padding: 12px 14px;
-    }
-  }
-}
 .news__company-wrapper {
   margin-bottom: var(--mb-40);
 }
