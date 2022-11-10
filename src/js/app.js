@@ -222,26 +222,37 @@ const heroSwiper = new Swiper('.hero-swiper', {
 
 });
 //=============Добавление плашки в таблице при скролле
-let elementShadow = document.querySelector(".shadow-on-scroll-hide")
-let tabPaneShadow = document.querySelector(".tab-pane-shadow")
+let rs = document.querySelector(".shadow-on-scroll-hide"),
+                ss = document.querySelector(".tab-pane-shadow");
+(window.onscroll = function () {
+  !(function () {
+     try {
+         document.documentElement.scrollTop > 710 && (document.documentElement.scrollTop - rs.offsetHeight) < 2600 && window.innerWidth > 1176 && ss.classList.contains("active")
+             ? (rs.classList.remove("shadow-on-scroll-hide"), rs.classList.add("shadow-on-scroll"))
+             : (rs.classList.add("shadow-on-scroll-hide"), rs.classList.remove("shadow-on-scroll"));
+     } catch (e) {}
+ })();
+})
+// let elementShadow = document.querySelector(".shadow-on-scroll-hide")
+// let tabPaneShadow = document.querySelector(".tab-pane-shadow")
 
-window.onscroll = function () { myFunction() };
+// window.onscroll = function () { myFunction() };
 
-function myFunction() {
-  try {
-    if (document.documentElement.scrollTop > 710 && document.documentElement.scrollTop <= 2670 && window.innerWidth > 1176 && tabPaneShadow.classList.contains('active')) {
+// function myFunction() {
+//   try {
+//     if (document.documentElement.scrollTop > 710 && document.documentElement.scrollTop < 2600 && window.innerWidth > 1176 && tabPaneShadow.classList.contains('active')) {
 
-      elementShadow.classList.remove('shadow-on-scroll-hide');
-      elementShadow.classList.add('shadow-on-scroll');
-    } else {
-      elementShadow.classList.add('shadow-on-scroll-hide');
-      elementShadow.classList.remove('shadow-on-scroll');
-    }
-  } catch (error) {
+//       elementShadow.classList.remove('shadow-on-scroll-hide');
+//       elementShadow.classList.add('shadow-on-scroll');
+//     } else {
+//       elementShadow.classList.add('shadow-on-scroll-hide');
+//       elementShadow.classList.remove('shadow-on-scroll');
+//     }
+//   } catch (error) {
 
-  }
+//   }
 
-}
+// }
 //=======Запрос на сервер с инвистиционными идеями
 // let url = 'https://invest-idei.ru/'
 // const ideas = async () => {

@@ -1,7 +1,6 @@
 .individual__hero {
 
   &-container {
-    background-image: var(--desktop-image-banner-top);
 
     @media(max-width: 585px) {
       padding: 24px 2% 193px 0;

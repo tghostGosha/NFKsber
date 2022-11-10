@@ -4,7 +4,7 @@
 }
 
 .swiper-slide {
-  padding: 88px 70% 122px 0;
+  padding: 88px 70% 125px 0;
   background-image: var(--desktop-image-banner-top);
   background-size: 42%;
 
@@ -23,19 +23,15 @@
 
 .slide-title {
   margin-bottom: var(--mb-24);
-
+  line-height: 46px;
+  font-size: 40px;
+  font-family: Gilroy;
+  font-weight: 600;
 }
 
 .slide-description {
-  margin-bottom: 89px;
-
-  @media(max-width: 1176px) {
-    margin-bottom: 56px;
-  }
-
   @media(max-width: 585px) {
     padding-right: 43px;
-    margin-bottom: 48px;
   }
 }
 

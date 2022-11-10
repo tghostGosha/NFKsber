@@ -1,17 +1,14 @@
 .repo__hero {
 
   &-container {
-    background-image: var(--desktop-image-banner-top);
     padding: 56px 52% 209px 0;
 
     @media(max-width: 1176px) {
       padding: 48px 24% 119px 0;
-      background-size: 48%;
     }
 
     @media(max-width: 585px) {
       padding: 24px 1% 119px 0;
-      background-size: 59%;
     }
   }
 }
@@ -40,30 +37,27 @@
   }
 
   &-card {
-    display: flex;
-    flex-direction: column;
-    border-radius: 10px;
-    background-color: var(--primary-grey);
-    padding: 40px 10% 40px 46px;
     grid-column: span 6;
-    
+    grid-template-rows: 1fr;
 
-    @media(max-width: 1176px) {
-      padding: 30px 10% 30px 24px;
-      justify-content: space-between;
-      max-height: 204px;
-    }
     @media(max-width: 585px) {
       grid-column: span 12;
+
     }
 
-    &-body {
+    .small__banner-left-text {
+      padding: 40px 46px 40px 46px;
+      grid-column: span 12;
       display: flex;
       flex-direction: column;
+      justify-content: space-between;
+      @media(max-width: 1176px) {
+        padding: 40px 24px 40px 24px;
+      }
+      @media(max-width: 585px) {
+        padding: 24px 29% 24px 16px;
+      }
     }
 
-    &-title {
-      margin-bottom: var(--mb-24);
-    }
   }
 }

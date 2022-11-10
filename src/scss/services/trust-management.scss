@@ -1,7 +1,6 @@
 .trust__hero {
 
   &-container {
-    background-image: var(--desktop-image-banner-top);
 
     @media(max-width: 585px) {
       background-size: 69%;

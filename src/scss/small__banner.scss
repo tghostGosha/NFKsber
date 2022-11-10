@@ -25,17 +25,21 @@
     margin-top: 1.5rem;
     align-items: center;
     justify-content: flex-start;
+
     @media(max-width: 585px) {
       justify-content: space-between;
     }
+
     svg {
       width: 100%;
       max-width: 168px;
     }
   }
+
   &-btn {
     padding: 18px 26px;
   }
+
   &-left-img {
     display: flex;
     justify-content: center;
@@ -99,11 +103,46 @@
 
   &-title {
     margin-bottom: var(--mb-24);
+    font-size: 24px;
+    line-height: 28px;
+    font-family: Gilroy;
+    font-weight: 600;
+    @media(max-width: 1176px) {
+      line-height: 28px;
+      font-size: 20px;
+    }
+  
+    @media(max-width: 585px) {
+      line-height: 24px;
+      font-size: 20px;
+    }
   }
 }
 
-.brokers__service-small-banner {
+.small__banner-big-title .small__banner-title {
+  font-family: Gilroy;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 38px;
+  @media(min-width: 1200px) {
+    font-size: 32px;
+    line-height: 38px;
+  }
+
   @media(max-width: 585px) {
-    grid-template-rows: 1fr 0.6fr;
+    line-height: 34px;
+    font-size: 24px;
   }
 }
+.small__banner-black .small__banner-title,
+.small__banner-black .small__banner-description{
+  color: var(--white);
+}
+.small__banner-black {
+  background-color: var(--primary-text);
+}
+// .brokers__service-small-banner {
+//   @media(max-width: 585px) {
+//     grid-template-rows: 1fr 0.6fr;
+//   }
+// }

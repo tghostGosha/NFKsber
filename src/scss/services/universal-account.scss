@@ -1,7 +1,5 @@
 .universal__hero {
-
   &-container {
-    background-image: var(--desktop-image-banner-top);
 
     & ul {
       @media(max-width: 1176px) {

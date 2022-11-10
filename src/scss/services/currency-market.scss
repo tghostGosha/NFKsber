@@ -1,7 +1,6 @@
 .currency__hero {
 
   &-container {
-    background-image: var(--desktop-image-banner-top);
 
     @media(max-width: 1176px) {
       background-size: 41%;

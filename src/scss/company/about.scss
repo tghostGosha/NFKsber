@@ -97,20 +97,23 @@
   &-title {
     margin-bottom: var(--mb-40);
   }
-
+  &-container {
+    grid-template-rows: 1fr 1fr;
+  }
   &-card {
-    width: 100%;
     grid-column: span 6;
-    max-width: 604px;
+    grid-template-rows: 1fr;
     padding: 40px 74px 40px 46px;
-    background-color: var(--primary-grey);
-    border-radius: 10px;
+   
     @media(max-width: 1176px) {
-      max-width: 100%;
       padding: 24px;
-    }
+    } 
     @media(max-width: 585px) {
       padding: 24px 16px;
+      grid-column: span 12;
+    }
+    .small__banner-left-text {
+      padding: 0;
       grid-column: span 12;
     }
   }

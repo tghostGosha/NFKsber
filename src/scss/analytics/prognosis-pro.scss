@@ -1,15 +1,8 @@
 .prognosis__hero {
 
   &-container {
-    background-image: var(--desktop-image-banner-top);
-
-    @media(max-width: 1176px) {
-      padding: 48px 33% 38px 0;
-      background-size: 38%;
-    }
 
     @media(max-width: 585px) {
-      padding: 24px 3% 141px 0;
       background-size: 68%;
     }
   }
@@ -36,18 +29,16 @@
   @media(max-width: 585px) {
     grid-column: span 12;
   }
-}
-
-.prognosis-card-left {
-  grid-column: 1 /span 7;
+  .small__banner-left-text {
+    grid-column: 1 /span 7;
   @media(max-width: 585px) {
     grid-column: 1 /span 12;
     padding-bottom: 0;
   }
-}
-
-.prognosis-card-right {
-  grid-column: 8 /span 5;
+  }
+  .small__banner-right-img {
+    grid-column: 8 /span 5;
+  }
 }
 
 .prognosis__conditions {
