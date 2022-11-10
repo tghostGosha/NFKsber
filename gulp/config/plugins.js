@@ -4,6 +4,7 @@ import notify from "gulp-notify"; //Сообщения(подсказки)
 import browsersync from "browser-sync"; //Локальный сервер
 import newer from "gulp-newer"; //проверка обновления
 import ifPlugin from "gulp-if"; //Условное ветвление
+import chokidar from "chokidar"
 
 //Экспортирует объект
 export const plugins = {
@@ -12,5 +13,6 @@ export const plugins = {
   notify: notify,
   browsersync: browsersync,
   newer: newer,
-  if: ifPlugin
+  if: ifPlugin,
+  chokidar: chokidar
 }
