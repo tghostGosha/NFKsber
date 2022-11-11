@@ -797,6 +797,9 @@ input::placeholder {
   @media(max-width: 585px) {
     padding: 10px 12px;
   }
+  .accordion-collapse {
+    padding: 0;
+  }
 }
 
 .nav-accordion-item:not(:last-child) {
@@ -805,10 +808,6 @@ input::placeholder {
   @media(max-width: 585px) {
     margin-bottom: 12px;
   }
-}
-
-.accordion-collapse {
-  padding: 0 !important;
 }
 
 .nav-dropdown-item {

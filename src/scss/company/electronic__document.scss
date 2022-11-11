@@ -1,7 +1,8 @@
 .electronic__document {
   &-hero {
-    
+
     padding-bottom: 112px;
+
     @media(max-width: 1176px) {
       padding-bottom: 0;
     }
@@ -12,13 +13,15 @@
   display: flex;
   flex-direction: column;
   grid-column: 1/ span 8;
+
   @media(max-width: 1176px) {
     grid-column: 1/ span 12;
   }
+
   &-title {
     margin-bottom: var(--mb-40);
   }
-  
+
 }
 
 .electronic-svg-arrow {
@@ -26,6 +29,53 @@
   height: 20px;
   columns: var(--primary-green);
 }
+
 .electronic__files-item:not(:last-child) {
   margin-bottom: var(--mb-40);
+}
+
+.document-about-investor {
+  --bs-accordion-bg: inherit;
+  margin-top: 40px;
+
+  // .accordion-button:not(.collapsed) .accordion-header {
+  //   margin-bottom: var(--mb-24);
+  // }
+
+  .accordion-button:not(.collapsed) {
+    color: var(--primary-green);
+  }
+
+  .accordion-button:not(.collapsed) .svg-arrow-accordion-dims {
+    color: var(--primary-green);
+  }
+  .accordion-collapse {
+    padding-top: 40px;
+    padding-bottom: 2px;
+  }
+  .accordion-button {
+    padding: 0;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+
+    svg {
+      margin: 0;
+      margin-left: 12px;
+    }
+  }
+
+  .accordion-item-title {
+    font-size: 16px;
+    font-weight: 400;
+  }
+}
+
+.public-file-link {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.risk__information {
+  margin-bottom: var(--mb-40);
+  
 }

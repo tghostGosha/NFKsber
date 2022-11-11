@@ -22,13 +22,15 @@
     // padding: 16px 12px;
   }
 }
-.large__button-grey span{
+
+.large__button-grey span {
   text-align: start;
   display: inline-block;
   margin-right: 12px;
 }
+
 .large__button-grey:hover,
-.large__button-grey:focus{
+.large__button-grey:focus {
   background-color: var(--grey-button-hover);
 }
 
@@ -40,6 +42,7 @@
   background-color: var(--primary-green);
   color: var(--white);
   border-radius: 5px;
+
   @media(max-width: 585px) {
     font-size: 14px;
     line-height: 19px;
@@ -65,8 +68,8 @@
   }
 }
 
-.grey-button:hover, 
-.grey-button:focus{
+.grey-button:hover,
+.grey-button:focus {
   background-color: var(--grey-button-hover);
 }
 
@@ -87,12 +90,19 @@
     font-size: 14px;
     line-height: 19px;
   }
+
+  &-svg {
+    width: 6px;
+    height: 12px;
+    object-fit: cover;
+    margin-left: 8px ;
+    transition: var(--animation-transition);
+  }
 }
 
 .text-link:hover,
-.text-link:hover  .text-link-svg
-.text-link:focus,
-.text-link:focus  .text-link-svg {
+.text-link:hover .text-link-svg .text-link:focus,
+.text-link:focus .text-link-svg {
   color: var(--secondary-green);
 }
 
@@ -101,20 +111,20 @@
 .black-color-link:hover svg {
   color: var(--secondary-text);
 }
-.grey-color-link {
 
-}
+
 .grey-color-link:hover,
 .grey-color-link:hover svg {
   color: var(--primary-text);
 }
+
 .mobile__app {
   background-color: var(--primary-text);
 
   @media(max-width: 1176px) {
     margin-bottom: 0 !important;
   }
-  
+
   &-card {
     background-color: inherit;
 
@@ -150,6 +160,7 @@
   }
 
 }
+
 // .black-color-link {
 //   align-items: center;
 //   display: flex;

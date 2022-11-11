@@ -20788,6 +20788,13 @@ button {
     line-height: 19px;
   }
 }
+.text-link-svg {
+  width: 6px;
+  height: 12px;
+  object-fit: cover;
+  margin-left: 8px;
+  transition: var(--animation-transition);
+}
 
 .text-link:hover,
 .text-link:hover .text-link-svg .text-link:focus,
@@ -22010,6 +22017,9 @@ input::placeholder {
     padding: 10px 12px;
   }
 }
+.nav-accordion-item .accordion-collapse {
+  padding: 0;
+}
 
 .nav-accordion-item:not(:last-child) {
   margin-bottom: 16px;
@@ -22018,10 +22028,6 @@ input::placeholder {
   .nav-accordion-item:not(:last-child) {
     margin-bottom: 12px;
   }
-}
-
-.accordion-collapse {
-  padding: 0 !important;
 }
 
 .nav-dropdown-item {
@@ -22942,10 +22948,6 @@ input::placeholder {
   .accordion-button {
     padding: 12px 0 12px 6px;
   }
-}
-
-.accordion-collapse {
-  padding-left: 86px;
 }
 
 .accordion-item-title {
@@ -25716,7 +25718,6 @@ th {
 }
 
 .market-news__hero {
-  padding-top: 30px;
   padding-bottom: 68px;
 }
 
@@ -25812,31 +25813,6 @@ th {
   font-size: 14px;
   line-height: 19px;
   color: var(--secondary-text);
-}
-
-.news__text-link {
-  display: flex;
-  align-items: center;
-  transition: all 0.1s ease-in-out 0.2s;
-  color: var(--primary-green);
-  line-height: 21px;
-}
-.news__text-link:hover {
-  color: var(--primary-text);
-}
-.news__text-link-svg {
-  width: 6px;
-  height: 12px;
-  object-fit: cover;
-  margin-left: 20px !important;
-}
-
-.news__text-link-svg {
-  transition: all 0.1s ease-in-out 0.1s;
-}
-
-.news__text-link:hover .news__text-link-svg {
-  color: var(--primary-text);
 }
 
 .tab-pane {
@@ -27698,6 +27674,44 @@ th {
   margin-bottom: var(--mb-40);
 }
 
+.document-about-investor {
+  --bs-accordion-bg: inherit;
+  margin-top: 40px;
+}
+.document-about-investor .accordion-button:not(.collapsed) {
+  color: var(--primary-green);
+}
+.document-about-investor .accordion-button:not(.collapsed) .svg-arrow-accordion-dims {
+  color: var(--primary-green);
+}
+.document-about-investor .accordion-collapse {
+  padding-top: 40px;
+  padding-bottom: 2px;
+}
+.document-about-investor .accordion-button {
+  padding: 0;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+.document-about-investor .accordion-button svg {
+  margin: 0;
+  margin-left: 12px;
+}
+.document-about-investor .accordion-item-title {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.public-file-link {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.risk__information {
+  margin-bottom: var(--mb-40);
+}
+
 .foreign__taxpayers-hero {
   padding-bottom: 86px;
 }
@@ -28542,21 +28556,39 @@ sup {
   align-items: center;
   transition: var(--animation-transition);
   text-align: start;
+  position: relative;
+}
+.get__file-link .file-link-svg-container {
+  position: relative;
 }
 
-.svg-pdf-dims {
-  width: 48px;
-  height: 48px;
+.file-link-svg-container span {
+  color: var(--primary-green);
+  position: absolute;
+  font-size: 12px;
+  top: 15px;
+  left: 7px;
+}
+@media (max-width: 585px) {
+  .file-link-svg-container span {
+    left: 22px;
+    top: 18px;
+  }
+}
+
+.svg-file-download-dims {
   color: var(--primary-green);
 }
 @media (max-width: 585px) {
-  .svg-pdf-dims {
+  .svg-file-download-dims {
     width: 78px;
   }
 }
 
-.get__file-link:hover .svg-pdf-dims,
-.get__file-link:focus .svg-pdf-dims {
+.get__file-link:hover .svg-file-download-dims,
+.get__file-link:focus .svg-file-download-dims,
+.get__file-link:hover .file-link-svg-container span,
+.get__file-link:focus .file-link-svg-container span {
   color: #3eb30f;
 }
 
@@ -28567,16 +28599,19 @@ sup {
 
 .file__link-text {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   margin-left: 18px;
+}
+.file__link-text span:nth-child(1) {
+  flex: 1 1 100%;
+}
+.file__link-text span:not(:first-child), .file__link-text span:not(:last-child) {
+  margin-right: 12px;
 }
 
 .brief-info {
   margin-bottom: 2px;
-}
-
-.file-size {
-  color: var(--secondary-text);
 }
 
 .svg-google-play,
