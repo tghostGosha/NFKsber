@@ -20,9 +20,9 @@
   }
 }
 
-.education__materials {
+.education__materials-list {
 
-  &-item {
+  li {
     grid-column: span 4;
 
     @media(max-width: 1176px) {

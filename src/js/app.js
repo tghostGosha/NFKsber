@@ -221,6 +221,29 @@ const heroSwiper = new Swiper('.hero-swiper', {
   },
 
 });
+
+//=============Появление Header при скролле
+let lastScroll = 0;
+const defaultOffset = 200;
+const header = document.querySelector('.header');
+
+const scrollPosition = () =>  window.pageYOffset || document.documentElement.scrollTop;
+const containHeight = () => header.classList.contains('header-hide');
+
+window.addEventListener('scroll', () => {
+  if(scrollPosition() > lastScroll && !containHeight() && scrollPosition() > defaultOffset) {
+    header.classList.add('header-hide');
+    // header.style.boxShadow = '0px -2px 5px rgb(0 0 0 / 69%)';
+  } 
+  else if (scrollPosition() < lastScroll && containHeight()) {
+    header.classList.remove('header-hide');
+   
+  }
+  
+  
+  lastScroll = scrollPosition()
+})
+
 //=============Добавление плашки в таблице при скролле
 let rs = document.querySelector(".shadow-on-scroll-hide"),
                 ss = document.querySelector(".tab-pane-shadow");

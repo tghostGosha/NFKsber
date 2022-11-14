@@ -512,15 +512,14 @@
         </div>
 
         <div class=" header__nav-app-btn header__nav-container">
-
-          <button class="header-burger header-burger-320" id="header-burger">
-
-            <span class="header-burger-marker"></span>
-            <span class="header-burger-marker"></span>
-            <span class="header-burger-marker"></span>
-
+          <div class="burger">
+            <button class="header-burger header-burger-320" id="header-burger">
+              <span class="header-burger-marker"></span>
+              <span class="header-burger-marker"></span>
+              <span class="header-burger-marker"></span>
+            </button>
             <span class="app-btn-text">Меню</span>
-          </button>
+          </div>
 
           <div class="header__nav-button-open" id="btnOpen">
             <button class="app-btn-open">
@@ -1008,7 +1007,7 @@
           </form>
         </div>
         <div class="block__margin-bottom grid-container ">
-          <a href="#" class="large__button-grey ">
+          <a href="sdelki_s_neponym_pokrytiem.html" class="large__button-grey ">
             <span>Сделки с неполным покрытием</span>
             <div>
               <svg width="10px" height="20px" class="grey__button-svg">
@@ -1033,18 +1032,23 @@
             </div>
           </a>
         </div>
-        <a href="#" class="get__file-link">
-          <div class="file-link-svg-container">
-            <span>PDF</span>
-            <svg width="48px" height="48px" class="svg-file-download-dims">
-              <use xlink:href="img/icons/icons.svg#file-download"></use>
-            </svg>
-          </div>
-          <div class="file__link-text">
-            <span class="brief-info">Подробная информация о тарифах</span>
-            <span class="file-size"> 200,7 кб</span>
-          </div>
-        </a>
+        <ul class="electronic__files-list">
+          <li>
+            <a href="#" class="get__file-link">
+              <div class="file-link-svg-container">
+                <span>PDF</span>
+                <svg width="48px" height="48px" class="svg-file-download-dims">
+                  <use xlink:href="img/icons/icons.svg#file-download"></use>
+                </svg>
+              </div>
+              <div class="file__link-text">
+                <span>Подробная информация о тарифах</span>
+                <span class="secondary-text">Публикация: 03.11.2021</span>
+                <span class="secondary-text">Актуальность: с 10.11.2021 по настоящее время</span>
+              </div>
+            </a>
+          </li>
+        </ul>
       </div>
     </section>
   </main>

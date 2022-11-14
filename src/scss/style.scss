@@ -159,9 +159,7 @@ h4 {
     line-height: 30px;
   }
 }
-.files-list li:not(:last-child) {
-  margin-bottom: 49px;
-}
+
 .nfk-dot-list {
   padding-left: 20px;
 
@@ -204,7 +202,12 @@ h4 {
 .info-footnotes a {
   display: contents;
 }
-
+.no-justefy {
+  justify-content: flex-start;
+  .news__nav-item:not(:last-child) {
+    margin-right: 40px;
+  }
+}
 .hide-on-mobile {
   @media(max-width: 1176px) {
     display: none !important;
@@ -308,9 +311,6 @@ input::placeholder {
   }
 }
 
-.big__banner {
-  background-color: var(--primary-grey);
-}
 
 //======левуый аппостроф
 
@@ -457,6 +457,7 @@ sup {
   margin-left: 18px;
   & span:nth-child(1) {
     flex: 1 1 100%;
+    transition: var(--animation-transition);
   }
   & span:not(:first-child),
   & span:not(:last-child){
@@ -465,13 +466,6 @@ sup {
 
 }
 
-.brief-info {
-  margin-bottom: 2px;
-}
-
-// .file-size {
-//   color: var(--secondary-text);
-// }
 
 //========
 
