@@ -1,4 +1,3 @@
-
 @import "../../node_modules/swiper/swiper-bundle.min";
 @import "../../node_modules/swiper/swiper.scss";
 @import "../../node_modules/swiper/modules/navigation/navigation.scss";
@@ -82,6 +81,17 @@ body {
   height: 10px;
   border-radius: 5px;
   width: 4px;
+}
+
+main {
+  padding-top: 127px;
+
+  @media(max-width: 1176px) {
+    padding-top: 84px;
+  }
+  @media(max-width: 585px) {
+    padding-top: 56px;
+  }
 }
 
 .container {
@@ -190,34 +200,42 @@ h4 {
     background-color: var(--primary-green);
     top: 10px;
     left: -20px;
+
     @media(max-width: 585px) {
       top: 7px;
       left: -15px;
     }
   }
 }
+
 .info-footnotes p:not(:last-child) {
   margin-bottom: var(--mb-24);
 }
+
 .info-footnotes a {
   display: contents;
 }
+
 .no-justefy {
   justify-content: flex-start;
+
   .news__nav-item:not(:last-child) {
     margin-right: 40px;
   }
 }
+
 .hide-on-mobile {
   @media(max-width: 1176px) {
     display: none !important;
   }
 }
+
 .hide-on-385 {
   @media(max-width: 585px) {
     display: none;
   }
 }
+
 .hide {
   display: none;
 }
@@ -324,7 +342,8 @@ input::placeholder {
 
 sup {
   vertical-align: super;
-    font-size: 8px;
+  font-size: 8px;
+
   @media(max-width: 585px) {
     font-size: 7px;
   }
@@ -416,28 +435,34 @@ sup {
   transition: var(--animation-transition);
   text-align: start;
   position: relative;
+
   .file-link-svg-container {
     position: relative;
   }
 }
+
 .file-link-svg-container span {
   color: var(--primary-green);
   position: absolute;
   font-size: 12px;
   top: 15px;
   left: 7px;
-  @media(max-width: 585px)  {
+
+  @media(max-width: 585px) {
     left: 22px;
     top: 18px;
   }
 
 }
+
 .svg-file-download-dims {
   color: var(--primary-green);
+
   @media(max-width: 585px) {
     width: 78px;
   }
 }
+
 .get__file-link:hover .svg-file-download-dims,
 .get__file-link:focus .svg-file-download-dims,
 .get__file-link:hover .file-link-svg-container span,
@@ -455,12 +480,14 @@ sup {
   flex-direction: row;
   flex-wrap: wrap;
   margin-left: 18px;
+
   & span:nth-child(1) {
     flex: 1 1 100%;
     transition: var(--animation-transition);
   }
+
   & span:not(:first-child),
-  & span:not(:last-child){
+  & span:not(:last-child) {
     margin-right: 12px;
   }
 

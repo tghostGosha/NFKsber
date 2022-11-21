@@ -23129,7 +23129,6 @@ input::placeholder {
 
 .big__banner {
   background-color: var(--primary-grey);
-  padding-top: 127px;
 }
 
 .big__banner-container {
@@ -28185,6 +28184,20 @@ body {
   height: 10px;
   border-radius: 5px;
   width: 4px;
+}
+
+main {
+  padding-top: 127px;
+}
+@media (max-width: 1176px) {
+  main {
+    padding-top: 84px;
+  }
+}
+@media (max-width: 585px) {
+  main {
+    padding-top: 56px;
+  }
 }
 
 .container {
