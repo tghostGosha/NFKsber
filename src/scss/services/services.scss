@@ -30,9 +30,6 @@
   flex-direction: column;
   grid-column: span 4;
   position: relative;
-  // height: 446px;
-  // width: 100%;
-  // max-width: 392px;
   padding: 40px 40px 0 40px;
   background-color: var(--primary-grey);
   border-radius: 10px;
@@ -41,7 +38,6 @@
   overflow: hidden;
 
   @media(max-width: 1176px) {
-    // display: none;
     grid-column: span 6;
     flex-direction: row;
     padding: 12px 12px 0 12px;
@@ -146,7 +142,7 @@
   bottom: 0;
   width: 96%;
   left: 10%;
-  transition: all 0.4s ease-out 0.3s;
+  transition: all 0.4s ease-out 0s;
   @media(max-width: 1176px) {
     width: 100%;
     align-self: flex-end;
