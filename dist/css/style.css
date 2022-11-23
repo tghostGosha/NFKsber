@@ -20636,17 +20636,76 @@ button {
   grid-template-rows: repeat(3, 1fr);
 }
 
-@font-face {
-  font-family: gilroy;
-  font-display: swap;
-  src: url("../fonts/gilroy-regular.woff2") format("woff2"), url("../fonts/gilroy-regular.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
+.pagination {
+  padding: 0;
 }
+.pagination-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.pagination svg {
+  color: var(--primary-text);
+}
+.pagination__page-item {
+  margin-right: 5px;
+}
+@media (max-width: 585px) {
+  .pagination__page-item {
+    margin-right: 3px;
+  }
+}
+.pagination__page-link {
+  padding: 0 8px;
+  line-height: 21px;
+  transition: var(--animation-transition);
+}
+.pagination__page-link:hover {
+  color: var(--primary-green);
+  background-color: var(--primary-grey);
+  border-radius: 2px;
+}
+.pagination__page-next:hover, .pagination__page-prev:hover {
+  color: var(--primary-green);
+}
+.pagination__page-prev span {
+  display: none;
+}
+.pagination__page-next svg {
+  margin-left: 8px;
+}
+@media (max-width: 585px) {
+  .pagination__page-next span {
+    display: none;
+  }
+}
+.pagination__page-input {
+  outline: 0;
+  width: 49px;
+  height: 28px;
+  border: 0;
+  border-radius: 5px;
+  background-color: var(--primary-grey);
+  margin: 0 12px 0 24px;
+  text-align: center;
+}
+@media (max-width: 585px) {
+  .pagination__page-input {
+    margin: 0 6px 0 12px;
+  }
+}
+
 @font-face {
   font-family: bootstrap;
   font-display: swap;
   src: url("../fonts/bootstrap-icons.woff2") format("woff2"), url("../fonts/bootstrap-icons.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: gilroy;
+  font-display: swap;
+  src: url("../fonts/gilroy-regular.woff2") format("woff2"), url("../fonts/gilroy-regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
@@ -20661,6 +20720,13 @@ button {
   font-family: Segoe UI;
   font-display: swap;
   src: url("../fonts/Segoe UI.woff2") format("woff2"), url("../fonts/Segoe UI.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: RedHatDisplay;
+  font-display: swap;
+  src: url("../fonts/RedHatDisplay.woff2") format("woff2"), url("../fonts/RedHatDisplay.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
@@ -22976,6 +23042,10 @@ input::placeholder {
 .accordion {
   border: none;
   --bs-accordion-border-color: none;
+}
+
+.accordion-collapse.collapse.show {
+  flex-direction: column;
 }
 
 .small__banner {
@@ -27689,8 +27759,9 @@ th {
   margin-bottom: var(--mb-40);
 }
 
-.electronic__document-wrapper .accordion ul {
+.electronic__document-wrapper .accordion .electronic__files-list {
   padding: 40px 0;
+  margin-bottom: 28px;
 }
 
 .foreign__taxpayers-hero {
@@ -28160,7 +28231,7 @@ th {
 }
 
 body {
-  font-family: Segoe UI;
+  font-family: RedHatDisplay;
   font-size: 16px;
   line-height: 22px;
   background-color: var(--white);

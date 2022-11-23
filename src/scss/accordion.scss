@@ -86,3 +86,6 @@
   border: none;
   --bs-accordion-border-color: none;
 }
+.accordion-collapse.collapse.show {
+  flex-direction: column;
+}

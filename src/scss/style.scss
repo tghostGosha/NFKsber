@@ -11,6 +11,7 @@
 @import "datepicker";
 @import "modal-window";
 @import "display";
+@import "pagination";
 @import "mixin";
 @import "fonts";
 @import "root";
@@ -58,7 +59,7 @@
 
 
 body {
-  font-family: Segoe UI;
+  font-family: RedHatDisplay;
   font-size: 16px;
   line-height: 22px;
   background-color: var(--white);

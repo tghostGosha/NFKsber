@@ -38,10 +38,6 @@
   --bs-accordion-bg: inherit;
   margin-top: 40px;
 
-  // .accordion-button:not(.collapsed) .accordion-header {
-  //   margin-bottom: var(--mb-24);
-  // }
-
   .accordion-button:not(.collapsed) {
     color: var(--primary-green);
    
@@ -51,7 +47,6 @@
     color: var(--primary-green);
   }
   .accordion-collapse {
-    // padding-top: 40px;
     padding-bottom: 2px;
   }
   .accordion-button {
@@ -81,6 +76,7 @@
   margin-bottom: var(--mb-40);
   
 }
-.electronic__document-wrapper .accordion ul {
+.electronic__document-wrapper .accordion .electronic__files-list {
   padding: 40px 0;
+  margin-bottom: 28px;
 }
