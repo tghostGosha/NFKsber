@@ -172,7 +172,7 @@ try {
 Swiper.use([Navigation, Pagination])
 
 //======включаем создание WEbp ====
-// flsFunctions.isWebp()
+flsFunctions.isWebp()
 //======включаем создание === 
 const burger = document.querySelector('.header-burger');
 const greyBackground = document.querySelector('.grey-background-640px');
@@ -256,41 +256,7 @@ let rs = document.querySelector(".shadow-on-scroll-hide"),
      } catch (e) {}
  })();
 })
-// let elementShadow = document.querySelector(".shadow-on-scroll-hide")
-// let tabPaneShadow = document.querySelector(".tab-pane-shadow")
 
-// window.onscroll = function () { myFunction() };
-
-// function myFunction() {
-//   try {
-//     if (document.documentElement.scrollTop > 710 && document.documentElement.scrollTop < 2600 && window.innerWidth > 1176 && tabPaneShadow.classList.contains('active')) {
-
-//       elementShadow.classList.remove('shadow-on-scroll-hide');
-//       elementShadow.classList.add('shadow-on-scroll');
-//     } else {
-//       elementShadow.classList.add('shadow-on-scroll-hide');
-//       elementShadow.classList.remove('shadow-on-scroll');
-//     }
-//   } catch (error) {
-
-//   }
-
-// }
-//=======Запрос на сервер с инвистиционными идеями
-// let url = 'https://invest-idei.ru/'
-// const ideas = async () => {
-//   const response = await fetch(url, {
-//     method: 'GET',
-//     headers: {
-//     'Content-Type': 'application/json',
-//     'API-Key': 'secret',
-//     'Access-Control-Allow-Origin': 'https://invest-idei.ru/'
-//   }
-//   })
-
-//   const data =  await response.json()
-//   console.log(data)
-// }
 
 //===========swiper ideas======
 const ideasSwiper = new Swiper('.ideas-swiper', {
@@ -530,13 +496,6 @@ try {
 
 }
 
-// const getStocks = async function () {
-//   const responce = await fetch(`https://zberopolis.ru/`);
-//   const object = await responce.json();
-//   console.log(object);
-//   return object;
-// };
-// getStocks()
 
 const slider1 = document.getElementById('slider1');
 const slider2 = document.getElementById('slider2');
