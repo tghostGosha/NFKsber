@@ -1,0 +1,65 @@
+.pagination {
+  padding: 0;
+  &-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  svg {
+    color: var(--primary-text);
+  }
+
+  &__page {
+
+    &-item {
+      margin-right: 5px;
+      @media(max-width: 585px) {
+        margin-right: 3px;
+      }
+    }
+
+    &-link {
+      padding: 0 8px;
+      line-height: 21px;
+      transition: var(--animation-transition);
+    }
+
+    &-link:hover {
+      color: var(--primary-green);
+      background-color: var(--primary-grey);
+      border-radius: 2px;
+    }
+
+    &-next:hover,
+    &-prev:hover {
+      color: var(--primary-green);
+    }
+
+    &-prev span {
+      display: none;
+    }
+
+    &-next svg {
+      margin-left: 8px;
+    }
+    &-next span {
+      @media(max-width: 585px) {
+        display: none;
+      }
+    }
+    &-input {
+      outline: 0;
+      width: 49px;
+      height: 28px;
+      border: 0;
+      border-radius: 5px;
+      background-color: var(--primary-grey);
+      margin: 0 12px 0 24px;
+      text-align: center;
+      @media(max-width: 585px) {
+        margin: 0 6px 0 12px;
+      }
+    }
+  }
+}

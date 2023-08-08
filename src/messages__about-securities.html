@@ -34,7 +34,7 @@
             <p class="block__margin-bottom secondary-text-color">
               Актуальная информация о ценных бумагах, принятых на обслуживание в депозитарий АО "НФК-Сбережения", размещена в личном кабинете клиента на сайте Компании
             </p>
-            <ul class="electronic__files-list">
+            <ul class="electronic__files-list block__margin-bottom">
               <li>
                 <a href="#" class="get__file-link">
                   <div class="file-link-svg-container">
@@ -126,6 +126,40 @@
                 </a>
               </li>
             </ul>
+            <div class="pagination-wrapper">
+
+              <ul class="pagination">
+                <li class="pagination__page-item">
+                  <a class="pagination__page-prev" href="#" aria-label="Previous">
+                    <svg width="6px" height="12px" class="svg-arrow-left-dims ">
+                      <use xlink:href="img/icons/icons.svg#arrow-left"></use>
+                    </svg>
+                    <span>В начало</span>
+                  </a>
+                </li>
+                <li class="pagination__page-item"><a class="pagination__page-link" href="#">1</a></li>
+                <li class="pagination__page-item"><a class="pagination__page-link" href="#">2</a></li>
+                <li class="pagination__page-item"><a class="pagination__page-link" href="#">3</a></li>
+                <li class="pagination__page-item">
+                  <a class="pagination__page-next" href="#" aria-label="Next">
+                    <span>Следующая страница</span>
+                    <svg width="6px" height="12px" class="svg-arrow-right-dims">
+                      <use xlink:href="img/icons/icons.svg#arrow-right"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+              <form action="#" class="pagination__page-search">
+                <span>Перейти на страницу</span>
+                <input type="text" class="pagination__page-input">
+                <a class="pagination__page-next" href="#" aria-label="Next">
+                  <span>Перейти</span>
+                  <svg width="6px" height="12px" class="svg-arrow-right-dims">
+                    <use xlink:href="img/icons/icons.svg#arrow-right"></use>
+                  </svg>
+                </a>
+              </form>
+            </div>
           </div>
           <div class="news__wrapper-tab" id="tabs">
             <ul class="nav nav-pills news__nav" id="myTab" role="tablist">
