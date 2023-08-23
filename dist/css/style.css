@@ -17061,6 +17061,7 @@ button {
   --secondary-green: #2D7A26;
   --primary-grey: #F4F6F8;
   --grey-button: #E4EAEE;
+  --greyCC: #BEC5CC;
   --grey-button-hover: #D8E1E8;
   --white: #ffffff;
   --primary-text: #1D252C;
@@ -23021,6 +23022,16 @@ sup {
 .svg-google-play:hover path,
 .svg-app-store:hover path {
   fill: var(--white);
+}
+
+.mistake-info {
+  text-align: center;
+}
+
+.mistake-info h1 {
+  color: var(--greyCC);
+  margin-bottom: 10px;
+  margin-top: 20px;
 }
 
 @media (min-width: 576px) {

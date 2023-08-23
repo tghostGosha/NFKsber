@@ -529,3 +529,14 @@ sup {
 .svg-app-store:hover path {
   fill: var(--white);
 }
+
+.mistake-info {
+  
+  text-align: center;
+  & h1 {
+    color: var(--greyCC);
+    margin-bottom: 10px;
+    margin-top: 20px;
+  }
+}
+

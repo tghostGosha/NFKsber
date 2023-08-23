@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html',{
+"title": "404"
+})
+
+<body>
+
+  @@include('html/header.html',{})
+  <main>
+    
+    <section class="news__container">
+      <div class="container">
+        <div class="news__wrapper grid-container">
+          <div class="news__wrapper-cards">
+            
+            <div class="mistake-info">
+                <img src="img/404.png" alt="404">
+                <h1>Страница не найдена</h1>
+                <p>Неправильно набран адрес, или такой страницы не существует</p>
+              </div>
+          </div>
+          <div class="news__wrapper-tab" id="tabs">
+            <ul class="nav nav-pills news__nav no-justefy" id="myTab" role="tablist">
+              <li class="news__nav-item" role="presentation">
+                <button class="news__nav-link active" id="marketNews-tab" data-bs-toggle="tab"
+                  data-bs-target="#marketNews" type="button" role="tab" aria-controls="marketNews"
+                  aria-selected="true">Новости</button>
+              </li>
+              <li class="news__nav-item" role="presentation">
+                <button class="news__nav-link" id="analysisNews-tab" data-bs-toggle="tab" data-bs-target="#analysisNews"
+                  type="button" role="tab" aria-controls="analysisNews" aria-selected="false">Анализ</button>
+              </li>
+            </ul>
+            <div class="news__tab-content">
+              <div class="tab-pane active" id="marketNews" role="tabpanel" tabindex="0" aria-labelledby="marketNews-tab">
+                <ul class="news__tab-pane " >
+                  <li class="news__tab-item">
+                    <a class="news__tab-link" href="#">
+                      <p class="news__tab-link-title">ЦБ 24 января купил валюту на 23,5 млрд рублей – меньше на 35,8%
+                      </p>
+                      <span class="news__tab-link-date">26.01.2022</span>
+                    </a>
+                  </li>
+                  <li class="news__tab-item">
+                    <a class="news__tab-link" href="#">
+                      <p class="news__tab-link-title">Berkshire проведет "Вудсток для капиталистов" очно впервые с 2019
+                        года</p>
+                      <span class="news__tab-link-date">26.01.2022</span>
+                    </a>
+                  </li>
+                  <li class="news__tab-item">
+                    <a class="news__tab-link" href="#">
+                      <p class="news__tab-link-title">ФАС согласовала ходатайство УГМК о приобретении 100% акций
+                        золотодобытчика "Высочайший"</p>
+                      <span class="news__tab-link-date">26.01.2022</span>
+                    </a>
+                  </li>
+                </ul>
+                <a href="#" class="text-link">Все новости рынка
+                  <svg class="text-link-svg" xmlns="http://www.w3.org/2000/svg">
+                    <use xlink:href="img/icons/icons.svg#arrow-right"></use>
+                  </svg>
+                </a>
+              </div>
+              <div class="tab-pane" id="analysisNews" role="tabpanel" tabindex="0" aria-labelledby="analysisNews-tab">
+                <ul class="news__tab-pane " >
+                  <li class="news__tab-item">
+                    <a class="news__tab-link" href="#">
+                      <p class="news__tab-link-title">ЦБ 24 января купил валюту на 23,5 млрд рублей – меньше на 35,8%
+                      </p>
+                      <span class="news__tab-link-date">26.01.2022</span>
+                    </a>
+                  </li>
+                  <li class="news__tab-item">
+                    <a class="news__tab-link" href="#">
+                      <p class="news__tab-link-title">Berkshire проведет "Вудсток для капиталистов" очно впервые с 2019
+                        года</p>
+                      <span class="news__tab-link-date">26.01.2022</span>
+                    </a>
+                  </li>
+                  <li class="news__tab-item">
+                    <a class="news__tab-link" href="#">
+                      <p class="news__tab-link-title">ФАС согласовала ходатайство УГМК о приобретении 100% акций
+                        золотодобытчика "Высочайший"</p>
+                      <span class="news__tab-link-date">26.01.2022</span>
+                    </a>
+                  </li>
+                </ul>
+                <a href="#" class="text-link">Все аналитические статьи
+                  <svg class="text-link-svg" xmlns="http://www.w3.org/2000/svg">
+                    <use xlink:href="img/icons/icons.svg#arrow-right"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  @@include('html/footer.html',{})
+
+  <script src="js/app.min.js"></script>
+
+
+</body>
+
+</html>
