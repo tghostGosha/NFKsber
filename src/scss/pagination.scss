@@ -1,65 +1,89 @@
-.pagination {
+.nav__pagination {
   padding: 0;
-  &-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @media (max-width: 1176px) {
+    margin: 0 auto;
   }
 
   svg {
     color: var(--primary-text);
   }
 
-  &__page {
-
-    &-item {
-      margin-right: 5px;
-      @media(max-width: 585px) {
-        margin-right: 3px;
+  & .page-item {
+    margin: 0 4px;
+    @media (max-width: 585px) {
+      margin: 0 3px;
+    }
+    &.next {
+      margin-left: 0.5em;
+      @media (max-width: 991.98px) {
+        margin-left: 0.05em;
       }
     }
-
-    &-link {
-      padding: 0 8px;
-      line-height: 21px;
-      transition: var(--animation-transition);
+    &.previous {
+      margin-right: 0.5em;
+      @media (max-width: 991.98px) {
+        margin-right: 0.05em;
+      }
     }
-
-    &-link:hover {
-      color: var(--primary-green);
-      background-color: var(--primary-grey);
-      border-radius: 2px;
-    }
-
-    &-next:hover,
-    &-prev:hover {
+    & .next:hover,
+    & .previous:hover {
       color: var(--primary-green);
     }
 
-    &-prev span {
+    & .previous span {
       display: none;
     }
 
-    &-next svg {
+    & .next svg {
       margin-left: 8px;
     }
-    &-next span {
-      @media(max-width: 585px) {
+    & .next span {
+      @media (max-width: 585px) {
         display: none;
       }
     }
-    &-input {
-      outline: 0;
-      width: 49px;
-      height: 28px;
-      border: 0;
-      border-radius: 5px;
-      background-color: var(--primary-grey);
-      margin: 0 12px 0 24px;
-      text-align: center;
-      @media(max-width: 585px) {
-        margin: 0 6px 0 12px;
-      }
+  }
+
+  & .page-link {
+    background: transparent;
+    color: inherit;
+    border-radius: 5px;
+    line-height: 21px;
+    transition: var(--animation-transition);
+    outline: none;
+    border: none;
+    @media (max-width: 991.98px) {
+      padding: 6px 10px;
+    }
+  }
+
+  & .page-link:hover {
+    color: var(--primary-green);
+    background-color: var(--primary-grey);
+    background-color: var(--bs-pagination-focus-bg);
+    border-radius: 5px;
+  }
+  & .page-link.active,
+  & .page-link.active:hover {
+    background: var(--bs-white);
+    color: var(--bs-pagination-font-size);
+  }
+  
+  &-input {
+    outline: 0;
+    width: 49px;
+    height: 28px;
+    border: 0;
+    border-radius: 5px;
+    background-color: var(--primary-grey);
+    margin: 0 12px 0 24px;
+    text-align: center;
+    @media (max-width: 585px) {
+      margin: 0 6px 0 12px;
     }
   }
 }

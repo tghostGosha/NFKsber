@@ -1,56 +1,51 @@
 <!DOCTYPE html>
 <html lang="ru">
 @@include('html/head.html',{
-"title": "Новости компании"
+"title": "search"
 })
 
 <body>
 
   @@include('html/header.html',{})
   <main>
-    <section class="market-news__hero">
-      <div class="container ">
-        <nav aria-label="breadcrumb " class="breadcrumb-margin-bottom">
-          <ul class="breadcrumb">
-            <li class="breadcrumb-item"><a class="breadcrumb-link" href="index.html">Главная</a></li>
-            <li class="breadcrumb-item">
-              <svg width="20px" height="20px" class="svg-arrow-right-dims breadcrumb-svg">
-                <use xlink:href="img/icons/icons.svg#arrow-right"></use>
-              </svg>
-            </li>
-            <li class="breadcrumb-item"><a class="breadcrumb-link" href="analytics.html">Аналитика</a></li>
-            <li class="breadcrumb-item">
-              <svg width="20px" height="20px" class="svg-arrow-right-dims breadcrumb-svg">
-                <use xlink:href="img/icons/icons.svg#arrow-right"></use>
-              </svg>
-            </li>
-            <li class="breadcrumb-item"><a class="breadcrumb-link" href="company-news.html">Новости компании</a></li>
-          </ul>
-        </nav>
-        <div class="market-news__hero-container">
-          <h1 class="market-news__title">Новости компании</h1>
-        </div>
-      </div>
-    </section>
+    
     <section class="news__container">
       <div class="container">
         <div class="news__wrapper grid-container">
           <div class="news__wrapper-cards">
-            <a class="news__card">
-              <span class="news__card-source">Компания</span>
-              <h3 class="news__card-title">Уведомление о внесении изменений в «Порядок идентификации клиентов АО «НФК-Сбережения»</h3>
-              <span class="news__card-date">10.01.2022</span>
-            </a>
-            <a class="news__card">
-              <span class="news__card-source">Компания</span>
-              <h3 class="news__card-title">Итоги работы компании в 2021 году</h3>
-              <span class="news__card-date">10.01.2022</span>
-            </a>
-            <a class="news__card">
-              <span class="news__card-source">Компания</span>
-              <h3 class="news__card-title">График работы АО «НФК-Сбережения» и организаторов торгов в праздничный период (31.12.21 - 10.01.22)</h3>
-              <span class="news__card-date">10.01.2022</span>
-            </a>
+            <h1>Результаты поиска</h1>
+            <form class="search-form ">
+              <input type="text" class="search-form-input" placeholder="Поиск...">
+              <button type="button" class="close close-btn"
+                aria-label="Close">
+                <svg width="14px" height="14px" class="svg-close-dims">
+                  <use xlink:href="img/icons/icons.svg#close"></use>
+                </svg>
+              </button>
+            </form>
+            <p class="secondary-text search__result">671 результатов найдено для "московская биржа"</p>
+            <ul class="result__list">
+              <li class="result__list-item">
+                <a href="#">Азиопа на российском фондовом рынке</a>
+                <p>...часовых поясах сделала ее ареной противостояния между "доморощенностью" и "западничеством". Московская биржа versus (или супротив?) "СПБ биржа" - конфликт, который оживил это противостояние
+                  в новой плоскости...</p>
+              </li>
+              <li class="result__list-item">
+                <a href="#">Нефть сорта "WTF?", или как биржа и инвесторы обменялись лекциями о финграмотности в суде</a>
+                <p>...часовых поясах сделала ее ареной противостояния между "доморощенностью" и "западничеством". Московская биржа versus (или супротив?) "СПБ биржа" - конфликт, который оживил это противостояние
+                  в новой плоскости...</p>
+              </li>
+              <li class="result__list-item">
+                <a href="#">Мосбиржа частично распустила резерв на 505 млн руб. по краже зерна с элеваторов</a>
+                <p>...часовых поясах сделала ее ареной противостояния между "доморощенностью" и "западничеством". Московская биржа versus (или супротив?) "СПБ биржа" - конфликт, который оживил это противостояние
+                  в новой плоскости...</p>
+              </li>
+              <li class="result__list-item">
+                <a href="#">Набсовет "Мосбиржи" 7 марта определится с рекомендацией по дивидендам за 2022 год</a>
+                <p>...часовых поясах сделала ее ареной противостояния между "доморощенностью" и "западничеством". Московская биржа versus (или супротив?) "СПБ биржа" - конфликт, который оживил это противостояние
+                  в новой плоскости...</p>
+              </li>
+            </ul>
             <nav aria-label="Page navigation example" class="nav__pagination">
               <ul class="pagination justify-content-center">
                 <li class="page-item previous">

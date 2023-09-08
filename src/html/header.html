@@ -1,5 +1,6 @@
 <header class="header">
   <div class="header__line"></div>
+  <div class="header__line search-line"></div>
 <!-- modal windows-->
   <div class="modal-block">
     <div class="modal-bg">
@@ -233,12 +234,18 @@
             </a>
           </li>
         </ul> -->
-      <div class="nav-search">
         <button type="button" class="fa fa-search" aria-hidden="true"><img src="img/icons/icons.svg#search"
             class="svg-search-dims" alt="search"></button>
+      <div class="nav-search">
 
-        <form class="search-form wrap">
-          <input type="text" class="input" placeholder="Поиск">
+        <form class="search-form ">
+          <input type="text" class="search-form-input" placeholder="Поиск...">
+          <button type="button" class="close close-btn" id="closeSearch" 
+            aria-label="Close">
+            <svg width="14px" height="14px" class="svg-close-dims">
+              <use xlink:href="img/icons/icons.svg#close"></use>
+            </svg>
+          </button>
         </form>
       </div>
       <a href="demo.html" class="header__link-demo text-link"> Демо счет</a>

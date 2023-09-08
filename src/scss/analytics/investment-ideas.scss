@@ -1,48 +1,55 @@
 .investment__ideas {
   padding-bottom: 112px;
 
-  @media(max-width: 1176px) {
+  @media (max-width: 1176px) {
     padding-bottom: 56px;
   }
 
-  @media(max-width: 585px) {
+  @media (max-width: 585px) {
     padding-bottom: 48px;
   }
-
+  & .nav__pagination {
+    margin-top: 48px;
+    & .page-link.active,
+    & .page-link.active:hover {
+      background: var(--bs-pagination-focus-bg);
+      color: var(--bs-pagination-font-size);
+    }
+  }
   &-header {
     align-items: center;
 
-    @media(max-width: 585px) {
+    @media (max-width: 585px) {
       margin-bottom: 24px;
     }
   }
 
   &-header-title {
-    grid-column: 1/ span 6;
+    grid-column: 1 / span 6;
 
-    @media(max-width: 1176px) {
-      grid-column: 1/ span 12;
+    @media (max-width: 1176px) {
+      grid-column: 1 / span 12;
       margin-bottom: 56px;
     }
 
-    @media(max-width: 585px) {
+    @media (max-width: 585px) {
       margin-bottom: 48px;
     }
   }
 
   &-filtres {
-    grid-column: 7/ span 6;
+    grid-column: 7 / span 6;
     display: flex;
     align-items: center;
     justify-content: space-between;
 
-    @media(max-width: 1176px) {
-      grid-row: 2/span 1;
-      grid-column: 1/ span 12;
+    @media (max-width: 1176px) {
+      grid-row: 2 / span 1;
+      grid-column: 1 / span 12;
       justify-content: flex-start;
     }
 
-    @media(max-width: 585px) {
+    @media (max-width: 585px) {
       flex-wrap: wrap;
     }
   }
@@ -51,15 +58,14 @@
     display: none;
     flex-direction: column;
   }
-
 }
 
 .investment__ideas-filtres-item:not(:last-child) {
-  @media(max-width: 1176px) {
+  @media (max-width: 1176px) {
     margin-right: 16px;
   }
 
-  @media(max-width: 585px) {
+  @media (max-width: 585px) {
     margin: 0;
   }
 }
@@ -77,60 +83,59 @@
   padding: 26px 0;
 
   &-logo {
-    grid-column: 1/ span 1;
+    grid-column: 1 / span 1;
   }
 
   &-header {
-    grid-column: 2/ span 3;
+    grid-column: 2 / span 3;
   }
 
   &-stars {
-    grid-column: 5/ span 2;
+    grid-column: 5 / span 2;
   }
 
   &-possbility {
-    grid-column: 7/ span 2;
+    grid-column: 7 / span 2;
   }
 
   &-profitability {
-    grid-column: 9/ span 1;
+    grid-column: 9 / span 1;
   }
 
   &-date {
-    grid-column: 11/ span 2;
+    grid-column: 11 / span 2;
   }
 }
 
 .ideas__list {
   &-title {
-    grid-column: 1/ span 1;
+    grid-column: 1 / span 1;
   }
 
   &-possbility {
-    grid-column: 7/ span 2;
+    grid-column: 7 / span 2;
   }
 
   &-profitability {
-    grid-column: 9/ span 2;
+    grid-column: 9 / span 2;
   }
 
   &-date {
-    grid-column: 11/ span 2;
+    grid-column: 11 / span 2;
   }
 }
 
 .ideas__card {
   grid-column: span 4;
 
-  @media(max-width: 1176px) {
+  @media (max-width: 1176px) {
     grid-column: span 6;
   }
 
-  @media(max-width: 585px) {
+  @media (max-width: 585px) {
     grid-column: span 12;
     width: 352px;
   }
-
 }
 
 .ideas__card-list:nth-child(odd) {
@@ -139,20 +144,20 @@
 }
 
 .dropdown {
-  @media(max-width: 585px) {
+  @media (max-width: 585px) {
     margin: 0;
   }
 }
 
 .dropdown:nth-child(1) {
-  @media(max-width: 585px) {
+  @media (max-width: 585px) {
     margin-right: 16px;
     margin-bottom: 12px;
   }
 }
 
 .dropdown:nth-child(2) {
-  @media(max-width: 585px) {
+  @media (max-width: 585px) {
     margin-bottom: 12px;
   }
 }
@@ -163,7 +168,7 @@
   padding: 14px 1.5rem;
   background-color: var(--primary-grey);
 
-  @media(max-width: 585px) {
+  @media (max-width: 585px) {
     padding: 14px 2.5rem;
   }
 }
@@ -182,7 +187,6 @@
 
 .dropdown-filter.show .svg-arrow-filter-dims {
   color: var(--white);
-
 }
 .dropdown-menu {
   box-shadow: 0px 0px 16px rgb(29 37 44 / 16%);
@@ -196,18 +200,18 @@
 }
 .dropdown-filter-menu {
   width: 248px;
-  
-  @media(max-width: 1176px) {
+
+  @media (max-width: 1176px) {
     width: 210px;
   }
 
-  @media(max-width: 585px) {
+  @media (max-width: 585px) {
     width: 200px;
   }
 }
 
 .dropdown-menu-country {
-  @media(max-width: 585px) {
+  @media (max-width: 585px) {
     width: 150px;
   }
 }
@@ -232,7 +236,7 @@
   cursor: pointer;
   transition: all 0.1s ease-in-out 0.1s;
 
-  @media(max-width: 585px) {
+  @media (max-width: 585px) {
     padding: 10px 2px 10px 2px;
   }
 }
@@ -242,7 +246,7 @@
   line-height: 21px;
   cursor: pointer;
 
-  @media(max-width: 585px) {
+  @media (max-width: 585px) {
     font-size: 14px;
     line-height: 19px;
   }
@@ -273,14 +277,14 @@
   box-shadow: none;
 }
 
-.custom-checkbox+label {
+.custom-checkbox + label {
   display: inline-flex;
   align-items: center;
   user-select: none;
 }
 
-.filter-check+label::before {
-  content: '';
+.filter-check + label::before {
+  content: "";
   display: inline-block;
   width: 24px;
   height: 13px;
@@ -290,13 +294,13 @@
   background-repeat: no-repeat;
   background-position: center center;
 
-  @media(max-width: 1176px) {
+  @media (max-width: 1176px) {
     margin-right: 5px;
   }
 }
 
-.filter-check:checked+label::before {
-  background-image: url('../img/icons/icons.svg#Check');
+.filter-check:checked + label::before {
+  background-image: url("../img/icons/icons.svg#Check");
 }
 
 .btn-sort {
@@ -304,7 +308,7 @@
   height: 49px;
   background-color: var(--primary-grey);
 
-  @media(max-width: 585px) {
+  @media (max-width: 585px) {
     display: none;
   }
 }
@@ -313,8 +317,8 @@
   background-color: var(--primary-text);
 }
 
-.btn-sort.choisen>.svg-list-dims,
-.btn-sort.choisen>.svg-medium-icons-dims {
+.btn-sort.choisen > .svg-list-dims,
+.btn-sort.choisen > .svg-medium-icons-dims {
   color: var(--white);
 }
 
@@ -331,60 +335,11 @@
 
 
 
-///==================Пагинация=================
-.nav__pagination {
-  margin-top: 48px;
-}
-
-.pagination {
-  display: flex;
-  align-items: center;
-}
-
-.page-link {
-  color: var(--secondary-text);
-  border: none;
-  border-radius: 10px;
-  outline: none;
-
-}
-
-.page-link:focus {
-  box-shadow: none;
-  color: var(--secondary-text);
-}
-
-.page-link.active,
-.active>.page-link {
-  z-index: 3;
-  color: var(--secondary-text);
-  background-color: var(--primary-grey);
-  border-color: none;
-}
-
-.page-link:hover {
-  z-index: 2;
-  color: var(--secondary-text);
-  background-color: var(--bs-pagination-hover-bg);
-  border-color: none;
-}
-
-.page-item {
-  margin: 0 3px;
-}
-
-.previous {
-  margin-right: 17px;
-}
-
-.next {
-  margin-left: 17px;
-}
 
 #tradingview_1158d {
   height: 652px;
 
-  @media(max-width: 585px) {
+  @media (max-width: 585px) {
     height: 541px;
   }
 }

@@ -201,10 +201,13 @@ $("#closeWindowAccountApp").on("click", function () {
   $("#window__account-app").slideToggle();
 
 });
-
+//=========Search=======
 $(".fa-search").on("click", function () {
   $(".wrap").toggle("drop");
-  $(".wrap, .input, .fa").toggleClass("active");
+  $(".nav-search, .search-form , #closeSearch,  .search-form-input, .search-line").toggleClass("active");
+});
+$("#closeSearch").on("click", function () {
+  $(".nav-search, .search-form , #closeSearch,  .search-form-input, .search-line").toggleClass("active");
 });
 //=========swiper hero=======
 const heroSwiper = new Swiper('.hero-swiper', {
