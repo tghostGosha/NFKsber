@@ -16839,7 +16839,7 @@ button {
   position: fixed;
   background-color: rgba(58, 56, 56, 0.5);
   width: 100%;
-  height: 100%;
+  height: 1000%;
   top: 0;
   left: 0;
   z-index: 10;
@@ -17045,34 +17045,53 @@ button {
 }
 
 .search-form .close-btn {
-  top: 10px;
+  top: 20%;
   height: 14px;
-  display: none;
 }
 
-.search-form .close-btn.active {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.search-form .search-btn {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  background-color: transparent;
+  position: absolute;
+  left: 20px;
+  top: 20%;
+  z-index: 30;
+}
+
+.search-form .search-btn svg {
+  width: 24px;
+  height: 24px;
 }
 
 .search-form-input {
-  border: 1px solid var(--secondary-text);
   background: inherit;
+  border: none;
   width: 0%;
   outline: none;
   font-family: gilroy;
-  font-size: 12px;
-  color: var(--primary-text);
+  font-size: 14px;
+  color: var(--primary-grey);
   width: 100%;
-  padding-left: 20px;
+  padding: 0.6em 50px 0.6em 64px;
   background-color: var(--white);
   border-radius: 5px;
-  height: 40px;
+  height: auto;
+  -webkit-transition: var(--animation-transition);
+  -o-transition: var(--animation-transition);
+  transition: var(--animation-transition);
+}
+
+.search-form-input:focus,
+.search-form-input:hover {
+  outline: 1px solid var(--greyCC);
 }
 
 .search-form .close-btn {
   top: 12px;
+  right: 20px;
   height: 14px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -17181,8 +17200,8 @@ button {
   margin-right: 12px;
 }
 
-.large__button-grey:hover,
-.large__button-grey:focus {
+.large__button-grey:focus,
+.large__button-grey:hover {
   background-color: var(--grey-button-hover);
 }
 
@@ -17196,8 +17215,8 @@ button {
   border-radius: 5px;
 }
 
-.primary-button:hover,
-.primary-button:focus {
+.primary-button:focus,
+.primary-button:hover {
   background-color: var(--secondary-green);
   color: var(--white);
 }
@@ -17210,8 +17229,8 @@ button {
   line-height: 22px;
 }
 
-.grey-button:hover,
-.grey-button:focus {
+.grey-button:focus,
+.grey-button:hover {
   background-color: var(--grey-button-hover);
 }
 
@@ -17239,18 +17258,23 @@ button {
   transition: var(--animation-transition);
 }
 
+.text-link:focus,
 .text-link:hover,
-.text-link:hover .text-link-svg .text-link:focus,
-.text-link:focus .text-link-svg {
+.text-link:focus .text-link-svg,
+.text-link:hover .text-link-svg {
   color: var(--secondary-green);
 }
 
-.black-color-link:hover,
-.black-color-link:hover svg {
+.black-color-link:focus,
+.black-color-link:focus svg,
+.black-color-link:focus span .black-color-link:hover,
+.black-color-link:hover svg,
+.black-color-link:hover span {
   color: var(--secondary-text);
 }
 
-.grey-color-link:hover,
+.grey-color-link:focus,
+.grey-color-link:focus svg .grey-color-link:hover,
 .grey-color-link:hover svg {
   color: var(--primary-text);
 }
@@ -17635,16 +17659,16 @@ button {
 }
 
 .header.header-hide {
-  -webkit-transform: translateY(-127px);
-      -ms-transform: translateY(-127px);
-          transform: translateY(-127px);
+  -webkit-transform: translateY(-227px);
+      -ms-transform: translateY(-227px);
+          transform: translateY(-227px);
 }
 
 .header .search-form {
   height: 0;
-  -webkit-transition: all 0.2s ease-in-out 0s;
-  -o-transition: all 0.2s ease-in-out 0s;
-  transition: all 0.2s ease-in-out 0s;
+  -webkit-transition: all 0.2s ease 0s;
+  -o-transition: all 0.2s ease 0s;
+  transition: all 0.2s ease 0s;
   position: relative;
 }
 
@@ -17660,19 +17684,28 @@ button {
   display: flex;
 }
 
+.header .search-form .search-btn {
+  display: none;
+}
+
+.header .search-form .search-btn.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .header .search-form.active {
   height: 40px;
   margin-top: 28px;
 }
 
 .header .search-form-input {
-  -webkit-transition: all 0.2s ease-in-out 0s;
-  -o-transition: all 0.2s ease-in-out 0s;
-  transition: all 0.2s ease-in-out 0s;
+  -webkit-transition: all 0.1s ease-in-out 0s;
+  -o-transition: all 0.1s ease-in-out 0s;
+  transition: all 0.1s ease-in-out 0s;
   position: relative;
   opacity: 0;
-  height: 36px;
-  background-color: var(--grey-button);
+  background-color: var(--primary-grey);
 }
 
 .header .search-form-input.active {
@@ -17768,8 +17801,8 @@ button {
 .svg-search-dims {
   -o-object-fit: cover;
      object-fit: cover;
-  width: 24px;
-  height: 24px;
+  width: 30px;
+  height: 30px;
   top: 0;
   position: relative;
 }
@@ -17862,7 +17895,6 @@ input::placeholder {
   background-color: inherit;
   width: 281px;
   padding: 0;
-  color: var(--secondary-text);
   -ms-grid-column: 3;
   -ms-grid-column-span: 5;
   grid-column: 3/span 5;
@@ -17870,6 +17902,9 @@ input::placeholder {
   -ms-grid-row-span: 1;
   grid-row: 1/span 1;
   text-align: start;
+  -webkit-transition: var(--animation-transition);
+  -o-transition: var(--animation-transition);
+  transition: var(--animation-transition);
 }
 
 .header__link-demo {
@@ -18179,7 +18214,7 @@ input::placeholder {
 }
 
 .header__nav-item:not(:last-child) {
-  margin-right: 54px;
+  margin-right: 12%;
 }
 
 .dropdown-toggle::after {
@@ -20507,7 +20542,7 @@ th {
 }
 
 .shadow-on-scroll {
-  z-index: 1000;
+  z-index: 100;
   display: block;
   -webkit-box-shadow: 4px 14px 31px rgba(29, 37, 44, 0.08);
           box-shadow: 4px 14px 31px rgba(29, 37, 44, 0.08);
@@ -20797,7 +20832,7 @@ th {
 }
 
 .news__tab-item {
-  padding: 24px 0;
+  padding: 24px 12px;
   -webkit-transition: all 0.1s ease-in-out 0.1s;
   -o-transition: all 0.1s ease-in-out 0.1s;
   transition: all 0.1s ease-in-out 0.1s;
@@ -20806,6 +20841,7 @@ th {
 .news__tab-item:hover {
   -webkit-box-shadow: 0px 0px 16px rgba(127, 127, 128, 0.16);
           box-shadow: 0px 0px 16px rgba(127, 127, 128, 0.16);
+  background-color: var(--primary-grey);
 }
 
 .news__tab-item:nth-child(even) {
@@ -20830,6 +20866,10 @@ th {
 
 .tab-pane {
   display: none;
+}
+
+.tab-pane > a {
+  padding-left: 12px;
 }
 
 .tab-pane.active {
@@ -22776,6 +22816,12 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+span {
+  -webkit-transition: var(--animation-transition);
+  -o-transition: var(--animation-transition);
+  transition: var(--animation-transition);
 }
 
 ::-webkit-scrollbar {
@@ -29364,6 +29410,11 @@ sup {
     opacity: 1;
     float: left;
     width: 220px;
+  }
+
+  .svg-search-dims {
+    width: 24px;
+    height: 24px;
   }
 
   .fa {

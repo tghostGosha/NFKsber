@@ -73,7 +73,9 @@ body {
     line-height: 19px;
   }
 }
-
+span {
+  transition: var(--animation-transition);
+}
 ::-webkit-scrollbar {
   width: 7px;
 }

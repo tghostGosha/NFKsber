@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="data:;base64,MQoa">
-  <link rel="stylesheet" href="css/style.min.css?_v=20230911103715">
+  <link rel="stylesheet" href="css/style.min.css?_v=20230911164451">
 
   <title>Главная</title>
 </head>
@@ -201,8 +201,8 @@
           <use xlink:href="img/icons/icons.svg#phone"></use>
         </svg>
         8 800 200-84-84</a>
-      <button type="button" class="header__link-consalt grey-color-link consult-button" id="mainConsultModalBtn">Получить
-        бесплатную консультанцию</button>
+      <button type="button" class="header__link-consalt black-color-link" id="mainConsultModalBtn">Получить
+        бесплатную консультацию</button>
         <!-- <ul class="footer__contacts-social-list">
           <li class="social__list-item">
             <a href="#" class="social__list-icon">
@@ -253,7 +253,12 @@
       <div class="nav-search">
 
         <form class="search-form ">
-          <input type="text" class="search-form-input" placeholder="Поиск...">
+          <button type="button" class="search-btn" id="search" >
+            <svg width="14px" height="14px" class="svg-search-dims">
+              <use xlink:href="img/icons/icons.svg#search"></use>
+            </svg>
+          </button>
+          <input type="text" class="search-form-input" id="headerSearch" placeholder="Поиск...">
           <button type="button" class="close close-btn" id="closeSearch" 
             aria-label="Close">
             <svg width="14px" height="14px" class="svg-close-dims">
@@ -263,7 +268,7 @@
         </form>
       </div>
       <a href="demo.html" class="header__link-demo text-link"> Демо счет</a>
-      <a href="#" class="header__link-login">
+      <a href="#" class="header__link-login black-color-link">
         <svg width="20px" height="20px" class="svg-LogIn-dims">
           <use xlink:href="img/icons/icons.svg#LogIn"></use>
         </svg>
@@ -333,9 +338,9 @@
           <li class="header__nav-item">
             <a href="contacts.html" class="dropdown-toggle" role="button">Контакты</a>
           </li>
-          <li>
+          <!-- <li>
             <a href="https://lk.nfksber.ru/open_account/?utm_source=nfksber" target="_blank" class="button  header__nav-list-btn ">Открыть демо-счет</a>
-          </li>
+          </li> -->
         </ul>
 
       </nav>
@@ -855,7 +860,7 @@
   <div class="footer__consult-line bottom-line"></div>
 </footer>
 
-  <script src="js/app.min.js?_v=20230911103715"></script>
+  <script src="js/app.min.js?_v=20230911164451"></script>
 
 </body>
 
