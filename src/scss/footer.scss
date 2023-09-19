@@ -146,7 +146,7 @@
         margin-bottom: 24px;
         flex-wrap: wrap;
       }
-
+     
       &-item:not(:last-child) {
         margin-right: 30px;
         
@@ -159,7 +159,9 @@
     &-social-list {
       display: flex;
       align-items: center;
-
+      flex-wrap: wrap;
+      row-gap: 12px;
+      column-gap: 27px;
     }
 
   }
@@ -327,15 +329,13 @@
   }
 }
 
-.social__list-item:not(:last-child) {
-  margin-right: 27px;
-}
 .social__list-icon:hover .svg-vk-dims,
 .social__list-icon:focus .svg-vk-dims {
   color: #4C75A3;
 }
 .social__list-icon {
   display: block;
+  padding: 6px;
 }
 
 .svg-social {

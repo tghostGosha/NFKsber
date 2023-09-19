@@ -39,10 +39,12 @@
       outline: 1px solid var(--greyCC);
     }
     @media (max-width: 1176px) {
-      height: 30px;
+      // height: 30px;
     }
   }
   & .close-btn {
+    position: absolute;
+    background-color: transparent;
     top: 12px;
     right: 20px;
     height: 14px;

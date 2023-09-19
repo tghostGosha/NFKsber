@@ -9,7 +9,6 @@
 @import "reset";
 @import "choices.min";
 @import "datepicker";
-@import "modal-window";
 @import "display";
 @import "pagination";
 @import "search";
@@ -17,6 +16,7 @@
 @import "fonts";
 @import "root";
 @import "buttons";
+@import "modal-window";
 @import "nouislider.min.scss";
 @import "header";
 @import "footer";
@@ -58,7 +58,6 @@
 @import "main";
 
 
-
 body {
   font-family: Segoe UI;
   font-size: 16px;
@@ -67,11 +66,16 @@ body {
   color: var(--primary-text);
   display: flex;
   flex-direction: column;
+  height: 100vh;
 
   @media(max-width: 585px) {
     font-size: 14px;
     line-height: 19px;
   }
+}
+body.modal-block.open {
+  height: 100vh;
+  overflow-y: hidden;
 }
 span {
   transition: var(--animation-transition);

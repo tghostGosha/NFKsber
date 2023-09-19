@@ -85,26 +85,32 @@ function CloseModalWindow() {
 }
 $('#consultModalBtn').on('click', function (event) {
   event.preventDefault();
+  document.body.style.overflowY = 'hidden';
   OpenModalWindow($('.consult-modal'));
 })
 $('#consultEarnBtn').on('click', function (event) {
   event.preventDefault();
+  document.body.style.overflowY = 'hidden';
   OpenModalWindow($('.consult-earn'));
 })
 $('.consult-button').on('click', function (event) {
   event.preventDefault();
+  document.body.style.overflowY = 'hidden';
   OpenModalWindow($('.main-consult-modal'));
 })
 
 $('#modalCurrencyHistory').on('click', function (event) {
   event.preventDefault();
+  document.body.style.overflowY = 'hidden';
   OpenModalWindow($('.currency-history-modal'));
 })
 
 $(document).on('click', '.btn-close, .modal-bg', function () {
+  document.body.style.overflowY = 'visible';
   CloseModalWindow();
 });
 $(document).on('click', '.modal-window', function (e) {
+  document.body.style.overflowY = 'visible';
   e.stopPropagation();
 });
 //================================================

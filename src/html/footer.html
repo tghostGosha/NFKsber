@@ -195,4 +195,183 @@
   </div>
   <div class="footer__consult-line top-line"></div>
   <div class="footer__consult-line bottom-line"></div>
+  <!-- modal windows-->
+  <div class="modal-block">
+    <div class="modal-bg">
+      <div class="modal-window">
+        <div class="modal-window-content">
+          <!-- =========Модальное окно в header===============-->
+          <div class="modal-window-wrapper  main-consult-modal">
+            <button type="button" class="btn-close" ></button>
+            <div class="modal-window-consalt-header">
+              <img src="img/modal-img.png" alt="modal-img" class="modal-img">
+            </div>
+            <div class="modal-body">
+              <span class="modal-span">Получить бесплатную консультацию</span>
+              <h3 class="modal-title">Контактные данные</h3>
+
+              <form class="modal__form">
+                <div class="modal__form-item">
+                  <input type="text" class="form-control" id="exampleFormControlInput1"
+                    placeholder="Фамилия, имя и отчество*">
+                </div>
+                <div class="modal__form-item">
+                  <input type="tel" class="form-control" id="exampleFormControlInput" placeholder="Мобильный телефон*">
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                  <!-- <span class="form-check-icon"><svg width="14px" height="10px" class="svg-Check-dims">
+                    <use xlink:href="img/icons/icons.svg#Check"></use>
+                  </svg></span> -->
+                  <label class="form-check-label" for="flexCheckChecked">
+                    Даю согласие на <a href="#">обработку персональных данных</a> и <a href="#">подтверждаю
+                      согласие на
+                      коммуникацию</a>
+                  </label>
+                </div>
+                <div class="col-auto">
+                  <button type="submit" class="button primary-button modal__form-btn">Отправить</button>
+                </div>
+              </form>
+            </div>
+
+          </div>
+          <!-- =========Модальное окно в инвестиционной карточке 'Посоветоваться'===============-->
+          <div class="modal-window-wrapper consult-modal">
+            <div class="modal-window-header">
+              <h3 class="modal-title">Посоветоваться со специалистами</h3>
+              <button type="button" class="btn-close"></button>
+              <p class="modal-link-descr">Вы можете получать дивиденды и доходы от роста курсовой стоимости,
+                воспользовавшись
+                брокерским счетом в нашей компании</p>
+            </div>
+            <form action="#" class="account__form modal__account-form">
+              <div class="account__form-text">
+                <input type="text" class="account__form-input" id="secondname" placeholder="Имя*">
+              </div>
+              <div class="account__form-tel consult-form-tel">
+                <input type="tel" class="account__form-input " id="tel" placeholder="Мобильный телефон*">
+              </div>
+              <div class="form-check account__form-check">
+                <input class="form-check-input" type="checkbox" value="" id="accountCheck" checked>
+
+                <label class="form-check-label" for="accountCheck">
+                  <span class="check-span">Даю согласие на</span> <a href="#">обработку персональных данных</a>
+                  <br>
+                  <span class="check-span">и</span> <a href="#">подтверждаю согласие на
+                    коммуникацию</a>
+                </label>
+              </div>
+              <button type="submit" class="button primary-button account__form-btn">Открыть счет</button>
+            </form>
+
+          </div>
+          <!-- =========Модальное окно в инвестиционной карточке 'заработать на идее'===============-->
+          <div class="modal-window-wrapper consult-earn">
+            <div class="modal-window-header">
+              <h3 class="modal-title">Заработать на идее</h3>
+              <button type="button" class="btn-close"></button>
+              <p class="modal-link-descr">Вы можете получать дивиденды и доходы от роста курсовой стоимости,
+                воспользовавшись брокерским счетом в нашей компании</p>
+            </div>
+            <div class="modal-window-body">
+              <a href="#" class="modal-window-link grid-container">
+                <div class="modal-link-icon">
+                  <svg width="24px" height="25px" class="svg-modal-user-dims">
+                    <use xlink:href="@img/icons/icons.svg#user"></use>
+                  </svg>
+                </div>
+                <h3 class="modal-link-title">Уже есть счет в НФК-Сбережения</h3>
+                <p class="modal-link-descr">Просто купите перспективный финансовый инструмент в своем торговом
+                  терминале или зайдите в личный кабинет, чтобы подать поручение на покупку</p>
+              </a>
+              <a href="#" class="modal-window-link grid-container">
+                <div class="modal-link-icon">
+                  <svg width="24px" height="25px" class="svg-login-modal-dims">
+                    <use xlink:href="@img/icons/icons.svg#LogIn"></use>
+                  </svg>
+                </div>
+                <h3 class="modal-link-title">Открыть счет</h3>
+                <p class="modal-link-descr">Это не займет более 10 минут</p>
+              </a>
+            </div>
+
+          </div>
+          <!-- =========Модальное окно в конверторе валют 'История курсов'===============-->
+          <div class="modal-window-wrapper currency-history-modal">
+            <div class="modal-background-header"></div>
+            <button type="button" class="btn-close" ></button>
+            <div class="currency-history-header-modal">
+              <h3 class="currency-history-modal-title">История курсов валют</h3>
+              <p class="date-picker"><input type="text" id="datepicker"></p>
+
+            </div>
+            <div class="currency-history-body-modal">
+              <table class="current-currency__table table">
+                <thead>
+                  <tr style="border-bottom: 1px solid #E4EAEE">
+                    <td class="secondary-text td-padding-default" style="text-align:left;">Цифр. код / Букв. код</td>
+                    <td class="secondary-text td-padding-default" style="text-align:left;">Единиц</td>
+                    <td class="secondary-text td-padding-default" style="text-align:left;">Валюта</td>
+                    <td class="secondary-text td-padding-default" style="text-align:left;">Курс</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr style="border-bottom: 1px solid #E4EAEE">
+                    <td class="weight-text td-padding-default">840 / USD</td>
+                    <td class="weight-text td-padding-default">1</td>
+                    <td class="weight-text td-padding-default">Доллар США</td>
+                    <td class="weight-text td-padding-default" style="text-align:right;">78.6422</td>
+                  </tr>
+                  <tr style="border-bottom: 1px solid #E4EAEE">
+                    <td class="weight-text td-padding-default">978 / EUR</td>
+                    <td class="weight-text td-padding-default">1</td>
+                    <td class="weight-text td-padding-default">Евро</td>
+                    <td class="weight-text td-padding-default" style="text-align:right;">90.882</td>
+                  </tr>
+                  <tr style="border-bottom: 1px solid #E4EAEE">
+                    <td class="weight-text td-padding-default">398 / KZT</td>
+                    <td class="weight-text td-padding-default">100</td>
+                    <td class="weight-text td-padding-default">Казахстанских тенге</td>
+                    <td class="weight-text td-padding-default" style="text-align:right;">18.4681</td>
+                  </tr>
+                  <tr style="border-bottom: 1px solid #E4EAEE">
+                    <td class="weight-text td-padding-default">356 / INR</td>
+                    <td class="weight-text td-padding-default">1</td>
+                    <td class="weight-text td-padding-default">Индийских рупий</td>
+                    <td class="weight-text td-padding-default" style="text-align:right;">10.738</td>
+                  </tr>
+                  <tr style="border-bottom: 1px solid #E4EAEE">
+                    <td class="weight-text td-padding-default">124 / CAD</td>
+                    <td class="weight-text td-padding-default">1</td>
+                    <td class="weight-text td-padding-default">Канадский доллар</td>
+                    <td class="weight-text td-padding-default" style="text-align:right;">63.0938</td>
+                  </tr>
+                  <tr>
+                    <td class="weight-text td-padding-default">417 / KGS</td>
+                    <td class="weight-text td-padding-default">100</td>
+                    <td class="weight-text td-padding-default">Киргизских сомов</td>
+                    <td class="weight-text td-padding-default" style="text-align:right;">94.8038</td>
+                  </tr>
+                  <tr>
+                    <td class="weight-text td-padding-default">417 / KGS</td>
+                    <td class="weight-text td-padding-default">100</td>
+                    <td class="weight-text td-padding-default">Киргизских сомов</td>
+                    <td class="weight-text td-padding-default" style="text-align:right;">94.8038</td>
+                  </tr>
+                  <tr>
+                    <td class="weight-text td-padding-default">417 / KGS</td>
+                    <td class="weight-text td-padding-default">100</td>
+                    <td class="weight-text td-padding-default">Киргизских сомов</td>
+                    <td class="weight-text td-padding-default" style="text-align:right;">94.8038</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ================================-->
 </footer>
