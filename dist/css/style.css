@@ -17773,6 +17773,10 @@ button {
           justify-content: center;
 }
 
+.header__button img {
+  width: 17px;
+}
+
 .wrap {
   display: block;
 }
