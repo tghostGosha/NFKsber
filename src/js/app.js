@@ -22,7 +22,7 @@ datepickerFactory($);
 $(function () {
   $("#datepicker").datepicker({
     showOn: "button",
-    buttonImage: "img/icons/icons.svg#Calendar",
+    buttonImage: "/local/templates/main/static/img/icons/icons.svg#Calendar",
     buttonImageOnly: true,
     showOtherMonths: true,
   selectOtherMonths: true,

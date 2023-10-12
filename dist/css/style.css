@@ -17759,6 +17759,18 @@ button {
   grid-row: 2/span 1;
   padding: 10px 26px;
   margin-top: 28px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 10px;
+     -moz-column-gap: 10px;
+          column-gap: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .wrap {
@@ -29349,7 +29361,7 @@ sup {
     -ms-grid-row: 1;
     -ms-grid-row-span: 1;
     grid-row: 1/span 1;
-    padding: 10px 40px;
+    padding: 10px 20px;
     width: 187px;
     margin: 0;
     justify-self: flex-end;
