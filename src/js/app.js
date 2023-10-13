@@ -22,7 +22,7 @@ datepickerFactory($);
 $(function () {
   $("#datepicker").datepicker({
     showOn: "button",
-    buttonImage: "img/icons/icons.svg#Calendar",
+    buttonImage: "/local/templates/main/static/img/icons/icons.svg#Calendar",
     buttonImageOnly: true,
     showOtherMonths: true,
   selectOtherMonths: true,
@@ -215,11 +215,10 @@ $("#closeWindowAccountApp").on("click", function () {
 //=========Search=======
 $(".fa-search").on("click", function () {
   $(".wrap").toggle("drop");
-  $(".nav-search, .search-form , #closeSearch, .search-btn, .search-form-input, .search-line").toggleClass("active");
-  $('#headerSearch').focus()
+  $(".nav-search, .search-form , #closeSearch,  .search-form-input, .search-line").toggleClass("active");
 });
 $("#closeSearch").on("click", function () {
-  $(".nav-search, .search-form , #closeSearch, .search-btn, .search-form-input, .search-line").toggleClass("active");
+  $(".nav-search, .search-form , #closeSearch,  .search-form-input, .search-line").toggleClass("active");
 });
 //=========swiper hero=======
 const heroSwiper = new Swiper('.hero-swiper', {

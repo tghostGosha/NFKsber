@@ -68,13 +68,6 @@
 	border-collapse: collapse;
 	margin: 0 0 .4em;
 }
-.ui-datepicker-calendar tbody {
-  border-left: 20px solid transparent;
-  border-right: 20px solid transparent;
-  border-bottom: 20px solid transparent;
-    border-collapse: collapse;
-    text-align: center;
-}
 .ui-datepicker th {
 	padding: .7em .3em;
 	text-align: center;
@@ -83,8 +76,7 @@
 }
 .ui-datepicker td {
 	border: 0;
-	// padding: 1px;
-  padding: .3em .3em;
+	padding: 1px;
 }
 .ui-datepicker td span,
 .ui-datepicker td a {
