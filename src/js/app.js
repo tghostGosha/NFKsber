@@ -22,7 +22,7 @@ datepickerFactory($);
 $(function () {
   $("#datepicker").datepicker({
     showOn: "button",
-    buttonImage: "/local/templates/main/static/img/icons/icons.svg#Calendar",
+    buttonImage: "img/icons/icons.svg#Calendar",
     buttonImageOnly: true,
     showOtherMonths: true,
   selectOtherMonths: true,
@@ -85,32 +85,32 @@ function CloseModalWindow() {
 }
 $('#consultModalBtn').on('click', function (event) {
   event.preventDefault();
-  $('body').toggleClass("overflow")
+  document.body.style.overflowY = 'hidden';
   OpenModalWindow($('.consult-modal'));
 })
 $('#consultEarnBtn').on('click', function (event) {
   event.preventDefault();
-  $('body').toggleClass("overflow")
+  document.body.style.overflowY = 'hidden';
   OpenModalWindow($('.consult-earn'));
 })
 $('.consult-button').on('click', function (event) {
   event.preventDefault();
-  $('body').toggleClass("overflow")
+  document.body.style.overflowY = 'hidden';
   OpenModalWindow($('.main-consult-modal'));
 })
 
 $('#modalCurrencyHistory').on('click', function (event) {
   event.preventDefault();
-  $('body').toggleClass("overflow")
+  document.body.style.overflowY = 'hidden';
   OpenModalWindow($('.currency-history-modal'));
 })
 
 $(document).on('click', '.btn-close, .modal-bg', function () {
-  $('body').removeClass("overflow")
+  document.body.style.overflowY = 'visible';
   CloseModalWindow();
 });
 $(document).on('click', '.modal-window', function (e) {
-  $('body').removeClass("overflow")
+  document.body.style.overflowY = 'visible';
   e.stopPropagation();
 });
 //================================================
@@ -193,16 +193,11 @@ $(".rates__accordion-button").on('click', function () {
 //==============================
 $("#header-burger").on("click", function () {
   $(".header__nav-app-list").slideToggle("up");
-
-  $('body').toggleClass("overflow")
   $(" .header-burger-marker, .header-burger").toggleClass("is-active");
   $("#window__account-app").hide(500);
 });
-
 $("#closeHeaderNavApp").on("click", function () {
   $(".header__nav-app-list").slideToggle();
-  
-  $('body').toggleClass("overflow")
 });
 $("#btnOpen").on("click", function () {
   $("#window__account-app").slideToggle("down")
@@ -215,10 +210,11 @@ $("#closeWindowAccountApp").on("click", function () {
 //=========Search=======
 $(".fa-search").on("click", function () {
   $(".wrap").toggle("drop");
-  $(".nav-search, .search-form , #closeSearch,  .search-form-input, .search-line").toggleClass("active");
+  $(".nav-search, .search-form , #closeSearch, .search-btn, .search-form-input, .search-line").toggleClass("active");
+  $('#headerSearch').focus()
 });
 $("#closeSearch").on("click", function () {
-  $(".nav-search, .search-form , #closeSearch,  .search-form-input, .search-line").toggleClass("active");
+  $(".nav-search, .search-form , #closeSearch, .search-btn, .search-form-input, .search-line").toggleClass("active");
 });
 //=========swiper hero=======
 const heroSwiper = new Swiper('.hero-swiper', {

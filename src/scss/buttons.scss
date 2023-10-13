@@ -10,14 +10,14 @@
   grid-column: span 4;
   transition: var(--animation-transition);
 
-  @media(max-width: 1176px) {
+  @media (max-width: 1176px) {
     grid-column: span 6;
     padding: 16px 12px;
     font-size: 14px;
     line-height: 19px;
   }
 
-  @media(max-width: 585px) {
+  @media (max-width: 585px) {
     grid-column: span 12;
     // padding: 16px 12px;
   }
@@ -28,9 +28,8 @@
   display: inline-block;
   margin-right: 12px;
 }
-
-.large__button-grey:hover,
-.large__button-grey:focus {
+.large__button-grey:focus,
+.large__button-grey:hover {
   background-color: var(--grey-button-hover);
 }
 
@@ -43,14 +42,13 @@
   color: var(--white);
   border-radius: 5px;
 
-  @media(max-width: 585px) {
+  @media (max-width: 585px) {
     font-size: 14px;
     line-height: 19px;
   }
 }
-
-.primary-button:hover,
-.primary-button:focus {
+.primary-button:focus,
+.primary-button:hover {
   background-color: var(--secondary-green);
   color: var(--white);
 }
@@ -62,14 +60,13 @@
   border-radius: 5px;
   line-height: 22px;
 
-  @media(max-width: 585px) {
+  @media (max-width: 585px) {
     font-size: 14px;
     line-height: 19px;
   }
 }
-
-.grey-button:hover,
-.grey-button:focus {
+.grey-button:focus,
+.grey-button:hover {
   background-color: var(--grey-button-hover);
 }
 
@@ -80,13 +77,12 @@
   border-radius: 5px;
 }
 
-
 .text-link {
   display: inline-block;
   color: var(--primary-green);
   background-color: inherit;
 
-  @media(max-width: 585px) {
+  @media (max-width: 585px) {
     font-size: 14px;
     line-height: 19px;
   }
@@ -95,25 +91,27 @@
     width: 6px;
     height: 12px;
     object-fit: cover;
-    margin-left: 8px ;
+    margin-left: 8px;
     transition: var(--animation-transition);
   }
 }
-
+.text-link:focus,
 .text-link:hover,
-.text-link:hover .text-link-svg .text-link:focus,
-.text-link:focus .text-link-svg {
+.text-link:focus .text-link-svg,
+.text-link:hover .text-link-svg {
   color: var(--secondary-green);
 }
 
-
-.black-color-link:hover,
-.black-color-link:hover svg {
+.black-color-link:focus,
+.black-color-link:focus svg,
+.black-color-link:focus span .black-color-link:hover,
+.black-color-link:hover svg,
+.black-color-link:hover span {
   color: var(--secondary-text);
 }
 
-
-.grey-color-link:hover,
+.grey-color-link:focus,
+.grey-color-link:focus svg .grey-color-link:hover,
 .grey-color-link:hover svg {
   color: var(--primary-text);
 }
@@ -121,25 +119,25 @@
 .mobile__app {
   background-color: var(--primary-text);
 
-  @media(max-width: 1176px) {
+  @media (max-width: 1176px) {
     margin-bottom: 0 !important;
   }
 
   &-card {
     background-color: inherit;
 
-    @media(max-width: 585px) {
+    @media (max-width: 585px) {
       grid-template-rows: 1fr 1fr;
     }
 
     &-left {
       padding: 56px 18% 56px 0;
 
-      @media(max-width: 1176px) {
+      @media (max-width: 1176px) {
         padding: 46px 2% 46px 0;
       }
 
-      @media(max-width: 585px) {
+      @media (max-width: 585px) {
         padding: 40px 0 20px 0;
       }
     }
@@ -158,10 +156,5 @@
     color: var(--primary-grey);
     margin-bottom: var(--mb-40);
   }
-
 }
 
-// .black-color-link {
-//   align-items: center;
-//   display: flex;
-// }
