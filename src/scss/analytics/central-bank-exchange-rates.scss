@@ -162,7 +162,79 @@
   color: var(--secondary-text);
 }
 
+//=============Модальное окно история курсов
+.currency-history-header-modal {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: var(--primary-grey);
+  align-items: center;
+  padding-right: 5%;
+  z-index: 6;
+  margin-bottom: var(--mb-40);
+  padding: 0 67px 0 14px;
 
+  @media(max-width: 585px) {
+    padding: 0 26px 0 10px;
+    flex-direction: column;
+  }
+}
+
+.currency-history-body-modal {
+  max-height: 488px;
+  overflow: auto;
+  padding: 0 14px 0 14px;
+}
+
+.modal-background-header {
+  position: absolute;
+  width: 106%;
+  height: 108px;
+  background-color: var(--primary-grey);
+  z-index: 5;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  top: -26px;
+  left: -25px;
+  display: block !important;
+
+  @media(max-width: 1176px) {
+    width: 103.5%;
+    height: 84px;
+    z-index: 5;
+    top: -12px;
+    left: -12px;
+  }
+
+  @media(max-width: 806px) {
+    
+    width: 104.9%;
+  }
+  @media(max-width: 584px) {
+    width: 107.6%;
+  }
+}
+
+.currency-history-modal-content {
+  padding: 26px 10px 26px 0;
+}
+
+
+
+.currency-history-modal {
+  flex-direction: column;
+  max-height: 596px;
+  padding: 0 0 0 26px !important;
+
+  @media(max-width: 585px) {
+    padding: 0 !important;
+  }
+}
+
+.currency-history-modal-title {
+  margin: 0;
+}
 
 //===========Стилизация календаря===============
 .date-picker {
