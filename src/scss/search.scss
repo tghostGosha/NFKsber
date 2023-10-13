@@ -19,6 +19,10 @@
   & .search-btn svg{
     width: 24px;
     height: 24px;
+    @media (max-width: 585px) {
+      width: 18px;
+      height: 18px;
+    }
   }
   &-input {
     background: inherit;
@@ -41,6 +45,9 @@
     @media (max-width: 1176px) {
       // height: 30px;
     }
+    @media (max-width: 585px) {
+      padding: 0.6em 50px 0.6em 54px;
+    }
   }
   & .close-btn {
     position: absolute;
@@ -50,7 +57,7 @@
     height: 14px;
     display: flex;
     @media (max-width: 1176px) {
-      top: 8px;
+      top: 12px;
     }
   }
 }

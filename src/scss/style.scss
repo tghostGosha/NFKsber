@@ -11,7 +11,6 @@
 @import "datepicker";
 @import "display";
 @import "pagination";
-@import "search";
 @import "mixin";
 @import "fonts";
 @import "root";
@@ -19,6 +18,7 @@
 @import "modal-window";
 @import "nouislider.min.scss";
 @import "header";
+@import "search";
 @import "footer";
 @import "window-account";
 @import "ideas";
@@ -72,6 +72,9 @@ body {
     font-size: 14px;
     line-height: 19px;
   }
+}
+body.overflow {
+  overflow: hidden;
 }
 body.modal-block.open {
   height: 100vh;
