@@ -154,4 +154,12 @@
 .investor__info-file:not(:last-child) {
   margin-bottom: var(--mb-40);
 }
+.about__director {
+  & .small__banner {
+    @media (max-width: 585px) {
+      grid-template-rows: 1fr 0.6fr;
+    }
+  }
+}
+
 
