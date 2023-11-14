@@ -52,24 +52,12 @@
   }
 }
 
-.moex {
-  grid-column: 1/ span 6;
-  grid-row: 2/ span 1;
-  @media(max-width: 585px)  {
-    grid-column: 1/ span 12;
-  }
-}
-
-.spb-stock {
-  grid-column: 7/ span 6;
-  grid-row: 2/ span 1;
-  @media(max-width: 585px)  {
-    grid-column: 1/ span 12;
-    grid-row: 3/ span 1;
-  }
-}
-
 .stocks-card {
+  grid-column: span 6;
+
+  @media(max-width: 585px) {
+    grid-column: span 12;
+  }
   &-title {
    padding-right: 7%;
   }
