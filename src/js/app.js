@@ -83,23 +83,23 @@ function CloseModalWindow() {
   forms.each(function () { this.reset() });
   formsBlocks.each(function () { $(this).hide() });
 }
-$('#consultModalBtn').on('click', function (event) {
+$('*[data-modal="#consultWithSpecialist"]').on('click', function (event) {
   event.preventDefault();
   document.body.style.overflowY = 'hidden';
   OpenModalWindow($('.consult-modal'));
 })
-$('#consultEarnBtn').on('click', function (event) {
+$('*[data-modal="#consult-earn"]').on('click', function (event) {
   event.preventDefault();
   document.body.style.overflowY = 'hidden';
   OpenModalWindow($('.consult-earn'));
 })
-$('.consult-button').on('click', function (event) {
+$('*[data-modal="#consult"]').on('click', function (event) {
   event.preventDefault();
   document.body.style.overflowY = 'hidden';
   OpenModalWindow($('.main-consult-modal'));
 })
 
-$('#modalCurrencyHistory').on('click', function (event) {
+$('*[data-modal="#modalCurrencyHistory"]').on('click', function (event) {
   event.preventDefault();
   document.body.style.overflowY = 'hidden';
   OpenModalWindow($('.currency-history-modal'));

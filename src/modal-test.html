@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html',{
+"title": "Модалки тест"
+})
+
+<body>
+
+  @@include('html/header.html',{})
+  <main>
+    <div class="container">
+
+      <button class="text-link currency-history" id="modalCurrencyHistory" data-modal="#modalCurrencyHistory">История курсов</button>
+      <button type="button" id="consultModalBtn" data-modal="#consultWithSpecialist"
+      class="grey-button investment__card-btn">Посоветоваться</button>
+    <button type="button" id="consultEarnBtn" data-modal="#consult-earn" class="primary-button investment__card-btn">Заработать на
+      идее</button>
+      
+        <button type="button" data-modal="#consult" class="button primary-button consult-btn consult-button">Получить консультанцию</button>
+      
+    </div>
+  </main>
+  @@include('html/footer.html',{})
+  <script src="js/app.min.js"></script>
+
+</body>
+
+</html>

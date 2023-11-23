@@ -211,6 +211,9 @@
 }
 .consult-modal {
   flex-direction: column;
+   & .modal__account-form {
+    padding: 0 7% 0 0;
+}
 }
 .modal__form {
   display: flex;
