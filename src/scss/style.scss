@@ -104,6 +104,7 @@ main {
 
 .container {
   max-width: 1280px;
+  width: 100%;
   padding: 0 20px;
   margin: 0 auto;
 
@@ -231,7 +232,23 @@ h4 {
     margin-right: 40px;
   }
 }
-
+.block__about {
+  
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    column-gap: 32px;
+    row-gap: 24px;
+    @media(max-width: 768px) {
+      row-gap: 16px;
+    }
+   & p {
+    flex: 0 0 48%;
+    @media(max-width: 768px) {
+      flex: 0 0 100%;
+    }
+  }
+}
 .hide-on-mobile {
   @media(max-width: 1176px) {
     display: none !important;
@@ -484,7 +501,7 @@ sup {
 }
 
 .file__link-text {
-  display: flex;
+  display: flex; 
   flex-direction: row;
   flex-wrap: wrap;
   margin-left: 18px;

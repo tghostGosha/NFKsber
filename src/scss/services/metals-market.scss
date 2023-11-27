@@ -12,28 +12,10 @@
       padding: 24px 39% 246px 0;
       background-size: 92%;
     }
-  }
+  } 
 
 }
 
-.metals__about {
-
-  &-first-article {
-    grid-column: 1/span 6;
-
-    @media(max-width: 1176px) {
-      grid-column: span 12;
-    }
-  }
-
-  &-second-article {
-    grid-column: 7/span 6;
-
-    @media(max-width: 1176px) {
-      grid-column: span 12;
-    }
-  }
-}
 
 .metals__commission-title {
   margin-bottom: var(--mb-24);

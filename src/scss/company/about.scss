@@ -86,14 +86,17 @@
     margin-bottom: var(--mb-40);
   }
   &-container {
-    grid-template-rows: 1fr 1fr;
+    // grid-template-rows: 1fr 1fr;
+    // @media(max-width: 585px) {
+    //   grid-template-rows: 1fr;
+    // }
     & .small__banner {
       grid-column: span 6;
       grid-template-rows: 1fr;
       padding: 40px 74px 40px 46px;
      
       @media(max-width: 1176px) {
-        padding: 24px;
+        padding: 24px; 
       } 
       @media(max-width: 585px) {
         padding: 24px 16px;
@@ -106,22 +109,6 @@
     }
   }
 
-}
-
-.why__us {
-  &-answer {
-    display: flex;
-    width: 100%;
-    flex-wrap: wrap;
-    column-gap: 32px;
-    row-gap: 24px;
-  }
-   & p {
-    flex: 0 0 47%;
-    @media(max-width: 1176px) {
-      flex: 0 0 100%;
-    }
-   }
 }
 
 .news__company-wrapper {

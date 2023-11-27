@@ -128,40 +128,27 @@
                 </a>
               </li>
             </ul>
-            <div class="pagination-wrapper">
-
-              <ul class="pagination">
-                <li class="pagination__page-item">
-                  <a class="pagination__page-prev" href="#" aria-label="Previous">
-                    <svg width="6px" height="12px" class="svg-arrow-left-dims ">
-                      <use xlink:href="img/icons/icons.svg#arrow-left"></use>
-                    </svg>
-                    <span>В начало</span>
+            <nav aria-label="Page navigation example" class="nav__pagination">
+              <ul class="pagination justify-content-center">
+                <li class="page-item previous">
+                  <a class="page-link" href="#" aria-label="Назад">
+                    ←<span>&nbsp;Назад</span>
                   </a>
                 </li>
-                <li class="pagination__page-item"><a class="pagination__page-link" href="#">1</a></li>
-                <li class="pagination__page-item"><a class="pagination__page-link" href="#">2</a></li>
-                <li class="pagination__page-item"><a class="pagination__page-link" href="#">3</a></li>
-                <li class="pagination__page-item">
-                  <a class="pagination__page-next" href="#" aria-label="Next">
-                    <span>Следующая страница</span>
-                    <svg width="6px" height="12px" class="svg-arrow-right-dims">
-                      <use xlink:href="img/icons/icons.svg#arrow-right"></use>
-                    </svg>
+                <li class="page-item"><a class="page-link active" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                <li class="page-item"><a class="page-link" href="#">5</a></li>
+                <li class="page-item"><a class="page-link" href="#">6</a></li>
+                <li class="page-item"><a class="page-link" href="#">7</a></li>
+                <li class="page-item next">
+                  <a class="page-link" href="#" aria-label="Next">
+                    <span>Дальше&nbsp;</span>→
                   </a>
                 </li>
               </ul>
-              <form action="#" class="pagination__page-search">
-                <span>Перейти на страницу</span>
-                <input type="text" class="pagination__page-input">
-                <a class="pagination__page-next" href="#" aria-label="Next">
-                  <span>Перейти</span>
-                  <svg width="6px" height="12px" class="svg-arrow-right-dims">
-                    <use xlink:href="img/icons/icons.svg#arrow-right"></use>
-                  </svg>
-                </a>
-              </form>
-            </div>
+            </nav>
           </div>
           <div class="news__wrapper-tab" id="tabs">
             <ul class="nav nav-pills news__nav" id="myTab" role="tablist">
