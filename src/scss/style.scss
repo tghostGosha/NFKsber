@@ -69,14 +69,14 @@ body {
   height: 100vh;
 
   @media(max-width: 585px) {
-    font-size: 14px;
+    font-size: 14px; 
     line-height: 19px;
   }
 }
-body.modal-block.open {
-  height: 100vh;
-  overflow-y: hidden;
-}
+// body.modal-block.open {
+//   height: 100vh;
+//   overflow-y: hidden;
+// }
 span {
   transition: var(--animation-transition);
 }
@@ -85,6 +85,7 @@ span {
 }
 
 ::-webkit-scrollbar-thumb {
+
   background: var(--primary-text);
   height: 10px;
   border-radius: 5px;

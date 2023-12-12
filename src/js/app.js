@@ -68,9 +68,15 @@ $(function () {
 
 //==============Модальные окна
 
+
+
 function OpenModalWindow(el) {
   CloseModalWindow();
+  let paddingOffset = window.innerWidth - document.body.offsetWidth + 'px'
   let modal = $('.modal-block');
+  document.body.style.overflowY = 'hidden';
+  document.body.style.paddingRight = paddingOffset;
+  document.querySelector('header').style.paddingRight = paddingOffset;
   modal.addClass('open');
   el.show();
 }
@@ -79,34 +85,34 @@ function CloseModalWindow() {
   let modal = $('.modal-block');
   let forms = $('form', modal);
   let formsBlocks = $('.modal-window-content > div', modal)
+  document.body.style.paddingRight = '0';
+  document.body.style.overflowY = 'visible';
+  document.querySelector('header').style.paddingRight = '0';
   modal.removeClass('open');
   forms.each(function () { this.reset() });
   formsBlocks.each(function () { $(this).hide() });
 }
 $('*[data-modal="#consultWithSpecialist"]').on('click', function (event) {
   event.preventDefault();
-  document.body.style.overflowY = 'hidden';
   OpenModalWindow($('.consult-modal'));
 })
 $('*[data-modal="#consult-earn"]').on('click', function (event) {
   event.preventDefault();
-  document.body.style.overflowY = 'hidden';
   OpenModalWindow($('.consult-earn'));
 })
+
 $('*[data-modal="#consult"]').on('click', function (event) {
   event.preventDefault();
-  document.body.style.overflowY = 'hidden';
   OpenModalWindow($('.main-consult-modal'));
 })
 
 $('*[data-modal="#modalCurrencyHistory"]').on('click', function (event) {
   event.preventDefault();
-  document.body.style.overflowY = 'hidden';
   OpenModalWindow($('.currency-history-modal'));
 })
 
 $(document).on('click', '.btn-close, .modal-bg', function () {
-  document.body.style.overflowY = 'visible';
+ 
   CloseModalWindow();
 });
 $(document).on('click', '.modal-window', function (e) {
