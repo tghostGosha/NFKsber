@@ -512,11 +512,30 @@ try {
 
 }
 
-
-const slider1 = document.getElementById('slider1');
-const slider2 = document.getElementById('slider2');
-try {
-  noUiSlider.create(slider1, {
+/////===============Калькулятор ИИС==================
+function slowScroll(id) { 
+  var offset = 0;
+  $('html, body').animate({ 
+       scrollTop: $(id).offset().top - offset 
+  }, 100);
+  return false; 
+} 
+    //=======Прокрутка к калькулятору
+$('#trustCalcBtn').on('click', function(event) {
+  event.preventDefault();
+  $('#brokersService, #brokers-service').removeClass('active')
+  $('#trustManagement, #trust-management').addClass('active')
+  slowScroll('#trustManagement')
+})
+$('#brokerCalcBtn').on('click', function(event) {
+  event.preventDefault();
+  $('#trustManagement, #trust-management').removeClass('active')
+  $('#brokersService, #brokers-service').addClass('active')
+  slowScroll('#brokersService')
+})
+/////===============инициализация калькулятора==================
+const calcIndividualAccountInit = (calcSum, calcYears) => {
+  noUiSlider.create(calcSum, {
     start: [0],
     connect: [true, false],
     range: {
@@ -529,11 +548,7 @@ try {
       thousand: ' '
     }),
   });
-} catch (error) {
-
-}
-try {
-  noUiSlider.create(slider2, {
+  noUiSlider.create(calcYears, {
     start: [0],
     connect: [true, false],
     range: {
@@ -545,26 +560,75 @@ try {
       decimals: 0
     }),
   });
-} catch (error) {
 
+  
+}
+let brokerSum = document.querySelector('[data-calc="brokerSum"]');
+let brokerDuration = document.querySelector('[data-calc="brokerDuration"]');
+let trustSum = document.querySelector('[data-calc="trustSum"]');
+let trustDuration = document.querySelector('[data-calc="trustDuration"]');
+/////===============события калькулятора==================
+const calcIndividualAccountEvent = (calcSum, calcYears) => {
+  calcYears.noUiSlider.on('update', function (values, handle) {
+    years = Math.round(calcYears.noUiSlider.get(true))
+    valueDuration.forEach((el) => {
+    
+
+        if (years <= 4) {
+         el.innerHTML = `${years} года`;
+         resultYears.textContent = `Мои сбережения за ${years} года`
+    
+        } else {
+          el = `${years} лет`;
+          resultYears.textContent = `Мои сбережения за ${years} лет`
+    
+        }
+      
+    })
+    // if (years <= 4) {
+    //   valueDuration.innerHTML = `${years} года`;
+    //   resultYears.textContent = `Мои сбережения за ${years} года`
+
+    // } else {
+    //   valueDuration.innerHTML = `${years} лет`;
+    //   resultYears.textContent = `Мои сбережения за ${years} лет`
+
+    // }
+    calc(years, depositAmount)
+    return years
+  });
+
+  calcSum.noUiSlider.on('update', function (values, handle) {
+    valueSum.forEach((el) => {
+      el.innerHTML = `${values[handle]}₽`;
+    })
+    // valueSum.innerHTML = `${values[handle]}₽`;
+    depositAmount = Math.round(calcSum.noUiSlider.get(true))
+
+    calc(years, depositAmount)
+    return depositAmount
+
+  });
 }
 
-let slider1Value = document.getElementById('slider1Value');
-let slider2Value = document.getElementById('slider2Value');
-let resultYears = document.getElementById('resultYears');
-let resultTotalVnesenie = document.getElementById('resultTotalVnesenie');
-let resultPercent = document.getElementById('resultPercent');
-let vichet = document.getElementById('vichet')
+let valueSum = document.querySelectorAll('[data-calc="valueSum"]');
+let valueDuration = document.querySelectorAll('[data-calc="valueDuration"]');
+let resultYears = document.querySelector('[data-calc="resultYears"]');
+let resultTotalVnesenie = document.querySelector('[data-calc="resultTotalVnesenie"]');
+let resultPercent = document.querySelector('[data-calc="resultPercent"]');
+let resultNetIncome = document.querySelector('[data-calc="resultNetIncome"]');
+let vichet = document.querySelector('[data-calc="resultVichet"]')
+let resultNdfl = document.querySelector('[data-calc="resultNdfl"]')
 let depositAmount
 let years
 
 const calc = (depositAmount, years) => {
-  let deposit = Math.round(slider1.noUiSlider.get(true))
+  
+  let deposit = Math.round(brokerSum.noUiSlider.get(true))
   resultTotalVnesenie.value = `${depositAmount * years}₽`;
   // resultPercent = Math.round(((result / (resultTotalVnesenie / 2)) - 1) * 1000 / years) / 10;
 
   vichet.value = Math.round((depositAmount * 0.13) * years) + '₽';
-  console.log(deposit)
   // if (years <= 3.1) {
   //   years = 3;
   //   $("#years").val("3");
@@ -576,54 +640,28 @@ const calc = (depositAmount, years) => {
   // };
   let dohodDU = Math.round(deposit * 1.322)
   // let dohod = dohodDU + depositAmount
-  console.log(dohodDU)
   // let totalDohodDU = Math.round((years * depositAmount + dohod) * 1.322)
-
-  // console.log(totalDohodDU)
-
 
   // for (let i = 1; i < years + 1; i++) {
   //   depositAmount+=(depositAmount*13.22)
-  //   console.log(depositAmount)
   // }
 
 
 
 }
-
 try {
-
-  slider2.noUiSlider.on('update', function (values, handle) {
-    years = Math.round(slider2.noUiSlider.get(true))
-
-    if (years <= 4) {
-      slider2Value.innerHTML = `${years} года`;
-      resultYears.textContent = `Мои сбережения за ${years} года`
-
-    } else {
-      slider2Value.innerHTML = `${years} лет`;
-      resultYears.textContent = `Мои сбережения за ${years} лет`
-
-    }
-    calc(years, depositAmount)
-    return years
-  });
-
-  slider1.noUiSlider.on('update', function (values, handle) {
-    slider1Value.innerHTML = `${values[handle]}₽`;
-    depositAmount = Math.round(slider1.noUiSlider.get(true))
-
-    calc(years, depositAmount)
-    console.log(depositAmount)
-    return depositAmount
-
-  });
-
-} catch (error) {
-
+  calcIndividualAccountInit(brokerSum, brokerDuration)
+  calcIndividualAccountInit(trustSum, trustDuration)
+} catch(err) {
+console.log(err)
 }
 
 
 
-
-
+try {
+  calcIndividualAccountEvent(brokerSum, brokerDuration)
+  calcIndividualAccountEvent(trustSum, trustDuration)
+  
+} catch(err) {
+  console.log(err)
+}
