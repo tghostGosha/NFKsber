@@ -1,17 +1,16 @@
 import * as flsFunctions from "./modules/functions.js";
-import $ from "jquery"
+import $ from "jquery";
 
 import { Inputmask } from "inputmask";
-import Swiper, { Navigation, Pagination } from 'swiper';
-import JustValidate from 'just-validate';
-import noUiSlider from 'nouislider';
-import wNumb from 'wnumb';
-import Choices from 'choices.js';
-import bootstrap from 'bootstrap';
-import datepickerFactory from 'jquery-datepicker';
+import Swiper, { Navigation, Pagination } from "swiper";
+import JustValidate from "just-validate";
+import noUiSlider from "nouislider";
+import wNumb from "wnumb";
+import Choices from "choices.js";
+import bootstrap from "bootstrap";
+import datepickerFactory from "jquery-datepicker";
 
-
-$('.filter-menu__item').on('click', function (event) {
+$(".filter-menu__item").on("click", function (event) {
   event.stopPropagation();
 });
 
@@ -20,122 +19,162 @@ $('.filter-menu__item').on('click', function (event) {
 datepickerFactory($);
 
 $(function () {
-  $("#datepicker").datepicker({
-    showOn: "button",
-    buttonImage: "/local/templates/main/static/img/icons/icons.svg#Calendar",
-    buttonImageOnly: true,
-    showOtherMonths: true,
-  selectOtherMonths: true,
-    // maxDate: "+0d",
-    yearRange: "2010:+0",
-    onSelect: function (dateText, inst) {
-      var date = $(this).datepicker('getDate')
-      date = jQuery.datepicker.formatDate('dd.mm.yy', date);
-      data = 'date=' + date + ',';
-      $.ajax({
-        type: "POST",
-        url: "ajax_calendar",
-        data: { "date": date, "id": 1795 },
-        success: function (content) {
-          var obj = jQuery.parseJSON(content);
-          $.each(obj, function (i, item) {
-            $('table#currency_rate_table [data-charcode="' + item.charcode + '"]').text(item.currency)
-          });
-        }
-      });
-    },
-  }).datepicker("setDate", new Date())
-
-  });
-  $.datepicker.regional['ru'] = {
-    closeText: 'Закрыть',
-    prevText: 'Предыдущий',
-    nextText: 'Следующий',
-    currentText: 'Сегодня',
-    monthNames: ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'],
-    monthNamesShort: ['Янв', 'Фев', 'Мар', 'Апр', 'Май', 'Июн', 'Июл', 'Авг', 'Сен', 'Окт', 'Ноя', 'Дек'],
-    dayNames: ['воскресенье', 'понедельник', 'вторник', 'среда', 'четверг', 'пятница', 'суббота'],
-    dayNamesShort: ['вск', 'пнд', 'втр', 'срд', 'чтв', 'птн', 'сбт'],
-    dayNamesMin: ['Вс', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'],
-    weekHeader: 'Не',
-    dateFormat: 'dd.mm.yy',
-    firstDay: 1,
-    isRTL: false,
-    showMonthAfterYear: false,
-    yearSuffix: ''
-  };
-  $.datepicker.setDefaults($.datepicker.regional['ru']);
+  $("#datepicker")
+    .datepicker({
+      showOn: "button",
+      buttonImage: "/local/templates/main/static/img/icons/icons.svg#Calendar",
+      buttonImageOnly: true,
+      showOtherMonths: true,
+      selectOtherMonths: true,
+      // maxDate: "+0d",
+      yearRange: "2010:+0",
+      onSelect: function (dateText, inst) {
+        var date = $(this).datepicker("getDate");
+        date = jQuery.datepicker.formatDate("dd.mm.yy", date);
+        data = "date=" + date + ",";
+        $.ajax({
+          type: "POST",
+          url: "ajax_calendar",
+          data: { date: date, id: 1795 },
+          success: function (content) {
+            var obj = jQuery.parseJSON(content);
+            $.each(obj, function (i, item) {
+              $(
+                'table#currency_rate_table [data-charcode="' +
+                  item.charcode +
+                  '"]'
+              ).text(item.currency);
+            });
+          },
+        });
+      },
+    })
+    .datepicker("setDate", new Date());
+});
+$.datepicker.regional["ru"] = {
+  closeText: "Закрыть",
+  prevText: "Предыдущий",
+  nextText: "Следующий",
+  currentText: "Сегодня",
+  monthNames: [
+    "Январь",
+    "Февраль",
+    "Март",
+    "Апрель",
+    "Май",
+    "Июнь",
+    "Июль",
+    "Август",
+    "Сентябрь",
+    "Октябрь",
+    "Ноябрь",
+    "Декабрь",
+  ],
+  monthNamesShort: [
+    "Янв",
+    "Фев",
+    "Мар",
+    "Апр",
+    "Май",
+    "Июн",
+    "Июл",
+    "Авг",
+    "Сен",
+    "Окт",
+    "Ноя",
+    "Дек",
+  ],
+  dayNames: [
+    "воскресенье",
+    "понедельник",
+    "вторник",
+    "среда",
+    "четверг",
+    "пятница",
+    "суббота",
+  ],
+  dayNamesShort: ["вск", "пнд", "втр", "срд", "чтв", "птн", "сбт"],
+  dayNamesMin: ["Вс", "Пн", "Вт", "Ср", "Чт", "Пт", "Сб"],
+  weekHeader: "Не",
+  dateFormat: "dd.mm.yy",
+  firstDay: 1,
+  isRTL: false,
+  showMonthAfterYear: false,
+  yearSuffix: "",
+};
+$.datepicker.setDefaults($.datepicker.regional["ru"]);
 
 //==============Модальные окна
 
-
-
 function OpenModalWindow(el) {
   CloseModalWindow();
-  let paddingOffset = window.innerWidth - document.body.offsetWidth + 'px'
-  let modal = $('.modal-block');
-  document.body.style.overflowY = 'hidden';
+  let paddingOffset = window.innerWidth - document.body.offsetWidth + "px";
+  let modal = $(".modal-block");
+  document.body.style.overflowY = "hidden";
   document.body.style.paddingRight = paddingOffset;
-  document.querySelector('header').style.paddingRight = paddingOffset;
-  modal.addClass('open');
+  document.querySelector("header").style.paddingRight = paddingOffset;
+  modal.addClass("open");
   el.show();
 }
 
 function CloseModalWindow() {
-  let modal = $('.modal-block');
-  let forms = $('form', modal);
-  let formsBlocks = $('.modal-window-content > div', modal)
-  document.body.style.paddingRight = '0';
-  document.body.style.overflowY = 'visible';
-  document.querySelector('header').style.paddingRight = '0';
-  modal.removeClass('open');
-  forms.each(function () { this.reset() });
-  formsBlocks.each(function () { $(this).hide() });
+  let modal = $(".modal-block");
+  let forms = $("form", modal);
+  let formsBlocks = $(".modal-window-content > div", modal);
+  document.body.style.paddingRight = "0";
+  document.body.style.overflowY = "visible";
+  document.querySelector("header").style.paddingRight = "0";
+  modal.removeClass("open");
+  forms.each(function () {
+    this.reset();
+  });
+  formsBlocks.each(function () {
+    $(this).hide();
+  });
 }
-$('*[data-modal="#consultWithSpecialist"]').on('click', function (event) {
+$('*[data-modal="#consultWithSpecialist"]').on("click", function (event) {
   event.preventDefault();
-  OpenModalWindow($('.consult-modal'));
-})
-$('*[data-modal="#consult-earn"]').on('click', function (event) {
+  OpenModalWindow($(".consult-modal"));
+});
+$('*[data-modal="#consult-earn"]').on("click", function (event) {
   event.preventDefault();
-  OpenModalWindow($('.consult-earn'));
-})
+  OpenModalWindow($(".consult-earn"));
+});
 
-$('*[data-modal="#consult"]').on('click', function (event) {
+$('*[data-modal="#consult"]').on("click", function (event) {
   event.preventDefault();
-  OpenModalWindow($('.main-consult-modal'));
-})
+  OpenModalWindow($(".main-consult-modal"));
+});
 
-$('*[data-modal="#modalCurrencyHistory"]').on('click', function (event) {
+$('*[data-modal="#modalCurrencyHistory"]').on("click", function (event) {
   event.preventDefault();
-  OpenModalWindow($('.currency-history-modal'));
-})
+  OpenModalWindow($(".currency-history-modal"));
+});
 
-$(document).on('click', '.btn-close, .modal-bg', function () {
- 
+$(document).on("click", ".btn-close, .modal-bg", function () {
   CloseModalWindow();
 });
-$(document).on('click', '.modal-window', function (e) {
-  document.body.style.overflowY = 'visible';
+$(document).on("click", ".modal-window", function (e) {
+  document.body.style.overflowY = "visible";
   e.stopPropagation();
 });
 //================================================
 
 //============Сортировка списка идей
-$('#listSort ').on('click', function (event) {
+$("#listSort ").on("click", function (event) {
   event.preventDefault();
-  $(' #listSort').addClass('choisen')
-  $('#mediumIconsSort').removeClass('choisen')
-  $('.investment__ideas-body').addClass('hide');
-  $('.investment__ideas-list').addClass('show');
+  $(" #listSort").addClass("choisen");
+  $("#mediumIconsSort").removeClass("choisen");
+  $(".investment__ideas-body").addClass("hide");
+  $(".investment__ideas-list").addClass("show");
 });
 
-$('#mediumIconsSort').on('click', function (event) {
+$("#mediumIconsSort").on("click", function (event) {
   event.preventDefault();
-  $('#mediumIconsSort').addClass('choisen')
-  $('#listSort').removeClass('choisen')
-  $('.investment__ideas-body').removeClass('hide');
-  $('.investment__ideas-list').removeClass('show');
+  $("#mediumIconsSort").addClass("choisen");
+  $("#listSort").removeClass("choisen");
+  $(".investment__ideas-body").removeClass("hide");
+  $(".investment__ideas-list").removeClass("show");
 });
 
 //===================================
@@ -146,54 +185,47 @@ const defaultSelect = (classNameEl) => {
 
   const choices = new Choices(element, {
     searchEnabled: false,
-    position: 'bottom',
+    position: "bottom",
     allowHTML: true,
   });
-
-}
+};
 try {
+  defaultSelect("currency");
 
-  defaultSelect('currency')
-  
-  defaultSelect('currency-2')
-} catch (error) {
-  
-}
+  defaultSelect("currency-2");
+} catch (error) {}
 
 try {
-  const countrySelect = document.querySelector('#currency-detail');
+  const countrySelect = document.querySelector("#currency-detail");
   const countryChoices = new Choices(countrySelect, {
     searchEnabled: false,
-    position: 'bottom',
+    position: "bottom",
     placeholder: true,
     allowHTML: true,
     classNames: {
-      containerOuter: 'country-choices',
+      containerOuter: "country-choices",
       containerInner: "countries-wrapper",
       list: "currency__list",
       listDropdown: "countries-list-dropdown",
-      item: 'currency__item',
-      itemSelectable: 'currency__item--selectable',
-    }
+      item: "currency__item",
+      itemSelectable: "currency__item--selectable",
+    },
   });
-} catch(error){}
-
-
+} catch (error) {}
 
 //=====================
-Swiper.use([Navigation, Pagination])
+Swiper.use([Navigation, Pagination]);
 
 //======включаем создание WEbp ====
-flsFunctions.isWebp()
-//======включаем создание === 
-const burger = document.querySelector('.header-burger');
-const greyBackground = document.querySelector('.grey-background-640px');
-const nav = document.querySelector('.header__nav-app-list');
+flsFunctions.isWebp();
+//======включаем создание ===
+const burger = document.querySelector(".header-burger");
+const greyBackground = document.querySelector(".grey-background-640px");
+const nav = document.querySelector(".header__nav-app-list");
 
 //==========Меняем svg на акардионе "тарифы" мобилка
-$(".rates__accordion-button").on('click', function () {
-  $(this).find("i").toggleClass("bi bi-plus-lg bi bi-dash-lg")
-  
+$(".rates__accordion-button").on("click", function () {
+  $(this).find("i").toggleClass("bi bi-plus-lg bi bi-dash-lg");
 });
 
 //==============================
@@ -206,24 +238,27 @@ $("#closeHeaderNavApp").on("click", function () {
   $(".header__nav-app-list").slideToggle();
 });
 $("#btnOpen").on("click", function () {
-  $("#window__account-app").slideToggle("down")
+  $("#window__account-app").slideToggle("down");
   $(".header__nav-app-list").hide(500);
 });
 $("#closeWindowAccountApp").on("click", function () {
   $("#window__account-app").slideToggle();
-
 });
 //=========Search=======
 $(".fa-search").on("click", function () {
   $(".wrap").toggle("drop");
-  $(".nav-search, .search-form , #closeSearch, .search-btn, .search-form-input, .search-line").toggleClass("active");
-  $('#headerSearch').focus()
+  $(
+    ".nav-search, .search-form , #closeSearch, .search-btn, .search-form-input, .search-line"
+  ).toggleClass("active");
+  $("#headerSearch").focus();
 });
 $("#closeSearch").on("click", function () {
-  $(".nav-search, .search-form , #closeSearch, .search-btn, .search-form-input, .search-line").toggleClass("active");
+  $(
+    ".nav-search, .search-form , #closeSearch, .search-btn, .search-form-input, .search-line"
+  ).toggleClass("active");
 });
 //=========swiper hero=======
-const heroSwiper = new Swiper('.hero-swiper', {
+const heroSwiper = new Swiper(".hero-swiper", {
   modules: [Navigation, Pagination],
   slidesPerView: 1,
   slidesPerColumn: 1,
@@ -232,52 +267,57 @@ const heroSwiper = new Swiper('.hero-swiper', {
   loop: true,
 
   pagination: {
-    el: '.swiper-pagination',
+    el: ".swiper-pagination",
     clickable: true,
   },
-
 });
 
 //=============Появление Header при скролле
 let lastScroll = 0;
 const defaultOffset = 200;
-const header = document.querySelector('.header');
+const header = document.querySelector(".header");
 
-const scrollPosition = () =>  window.pageYOffset || document.documentElement.scrollTop;
-const containHeight = () => header.classList.contains('header-hide');
+const scrollPosition = () =>
+  window.pageYOffset || document.documentElement.scrollTop;
+const containHeight = () => header.classList.contains("header-hide");
 
-window.addEventListener('scroll', () => {
-  if(scrollPosition() > lastScroll && !containHeight() && scrollPosition() > defaultOffset) {
-    header.classList.add('header-hide');
+window.addEventListener("scroll", () => {
+  if (
+    scrollPosition() > lastScroll &&
+    !containHeight() &&
+    scrollPosition() > defaultOffset
+  ) {
+    header.classList.add("header-hide");
     // header.style.boxShadow = '0px -2px 5px rgb(0 0 0 / 69%)';
-  } 
-  else if (scrollPosition() < lastScroll && containHeight()) {
-    header.classList.remove('header-hide');
-   
+  } else if (scrollPosition() < lastScroll && containHeight()) {
+    header.classList.remove("header-hide");
   }
-  
-  
-  lastScroll = scrollPosition()
-})
+
+  lastScroll = scrollPosition();
+});
 
 //=============Добавление плашки в таблице при скролле
 let rs = document.querySelector(".shadow-on-scroll-hide"),
-                ss = document.querySelector(".tab-pane-shadow");
-(window.onscroll = function () {
+  ss = document.querySelector(".tab-pane-shadow");
+window.onscroll = function () {
   !(function () {
-     try {
-         document.documentElement.scrollTop > 710 && (document.documentElement.scrollTop - rs.offsetHeight) < 2600 && window.innerWidth > 1176 && ss.classList.contains("active")
-             ? (rs.classList.remove("shadow-on-scroll-hide"), rs.classList.add("shadow-on-scroll"))
-             : (rs.classList.add("shadow-on-scroll-hide"), rs.classList.remove("shadow-on-scroll"));
-     } catch (e) {}
- })();
-})
-
+    try {
+      document.documentElement.scrollTop > 710 &&
+      document.documentElement.scrollTop - rs.offsetHeight < 2600 &&
+      window.innerWidth > 1176 &&
+      ss.classList.contains("active")
+        ? (rs.classList.remove("shadow-on-scroll-hide"),
+          rs.classList.add("shadow-on-scroll"))
+        : (rs.classList.add("shadow-on-scroll-hide"),
+          rs.classList.remove("shadow-on-scroll"));
+    } catch (e) {}
+  })();
+};
 
 //===========swiper ideas======
-const ideasSwiper = new Swiper('.ideas-swiper', {
+const ideasSwiper = new Swiper(".ideas-swiper", {
   modules: [Navigation, Pagination],
-  slideClass: 'ideas__slide',
+  slideClass: "ideas__slide",
   slidesPerView: 1,
   slidesPerGroup: 1,
   slidesPerColumn: 1,
@@ -285,11 +325,11 @@ const ideasSwiper = new Swiper('.ideas-swiper', {
   // spaceBetween: 16,
   // modifierClass: 'ideas-swiper-pagination',
   pagination: {
-    el: '.ideas-swiper-pagination',
+    el: ".ideas-swiper-pagination",
     clickable: true,
-    bulletClass: 'ideas-swiper-pagination-bullet',
-    horizontalClass: 'ideas-swiper-pagination-horizontal',
-    bulletActiveClass: 'swiper-bullet-active'
+    bulletClass: "ideas-swiper-pagination-bullet",
+    horizontalClass: "ideas-swiper-pagination-horizontal",
+    bulletActiveClass: "swiper-bullet-active",
   },
   navigation: {
     hideOnClick: true,
@@ -319,186 +359,177 @@ const ideasSwiper = new Swiper('.ideas-swiper', {
       centeredSlides: true,
       slidesPerGroup: 1,
       slidesPerColumn: 1,
-      spaceBetween: 16
-    }
-  }
-})
+      spaceBetween: 16,
+    },
+  },
+});
 
 //====делаем первую букву  в Верхнем регистре
 const regex = /[A-Za-z0-0]/;
 let firstLetterToUpperCase = (className) => {
-  const inputs = document.getElementsByClassName(className)
-
+  const inputs = document.getElementsByClassName(className);
 
   for (let i = 0; i < inputs.length; ++i) {
     inputs[i].onblur = () => {
       // if (regex.test(inputs[i].value)) inputs[i].value='';
-      if (inputs[i].value === '') return;
+      if (inputs[i].value === "") return;
 
       let str = inputs[i].value
         .trim()
-        .replace(/-+/g, '-')
-        .replace(/^-|-$/g, '')
-        .replace(/\s+/g, ' ')
-        .trim()
-      inputs[i].value = str[0].toUpperCase() + str.substr(1).toLowerCase()
-    }
+        .replace(/-+/g, "-")
+        .replace(/^-|-$/g, "")
+        .replace(/\s+/g, " ")
+        .trim();
+      inputs[i].value = str[0].toUpperCase() + str.substr(1).toLowerCase();
+    };
   }
-
-}
-firstLetterToUpperCase('form-control')
-
-
+};
+firstLetterToUpperCase("form-control");
 
 //=====Input mask
-const mask = event => {
+const mask = (event) => {
   const { target, keyCode, type } = event;
 
   const pos = target.selectionStart;
   if (pos < 3) event.preventDefault();
-  const matrix = '+7 (___) ___-__-__';
+  const matrix = "+7 (___) ___-__-__";
   let i = 0;
-  const def = matrix.replace(/\D/g, '');
-  const val = target.value.replace(/\D/g, '');
-  let newValue = matrix.replace(/[_\d]/g,
-    a => (i < val.length ? val[i++] || def[i] : a));
-  i = newValue.indexOf('_');
+  const def = matrix.replace(/\D/g, "");
+  const val = target.value.replace(/\D/g, "");
+  let newValue = matrix.replace(/[_\d]/g, (a) =>
+    i < val.length ? val[i++] || def[i] : a
+  );
+  i = newValue.indexOf("_");
   if (i !== -1) {
     i < 5 && (i = 3);
     newValue = newValue.slice(0, i);
   }
-  let reg = matrix.substring(0, target.value.length).replace(/_+/g,
-    (a) => `\\d{1,${a.length}}`).replace(/[+()]/g, '\\$&');
+  let reg = matrix
+    .substring(0, target.value.length)
+    .replace(/_+/g, (a) => `\\d{1,${a.length}}`)
+    .replace(/[+()]/g, "\\$&");
   reg = new RegExp(`^${reg}$`);
-  if (!reg.test(target.value) || target.value.length < 5 ||
-    keyCode > 47 && keyCode < 58) {
+  if (
+    !reg.test(target.value) ||
+    target.value.length < 5 ||
+    (keyCode > 47 && keyCode < 58)
+  ) {
     target.value = newValue;
   }
-  if (type === 'blur' && target.value.length < 5) target.value = '';
+  if (type === "blur" && target.value.length < 5) target.value = "";
 };
 
-const input = document.getElementById('exampleFormControlInput');
+const input = document.getElementById("exampleFormControlInput");
 
-if (input.type === 'tel') {
-  input.addEventListener('input', mask);
-  input.addEventListener('focus', mask);
-  input.addEventListener('blur', mask);
-  input.addEventListener('keydown', mask);
+if (input.type === "tel") {
+  input.addEventListener("input", mask);
+  input.addEventListener("focus", mask);
+  input.addEventListener("blur", mask);
+  input.addEventListener("keydown", mask);
 }
-
-
-
-
 
 //========Валидация формы открытия счета и маска================
 //======маска телефон
 try {
-
-  const accountFormTel = document.getElementById('tel');
-  if (accountFormTel.type === 'tel') {
-    accountFormTel.addEventListener('input', mask);
-    accountFormTel.addEventListener('focus', mask);
-    accountFormTel.addEventListener('blur', mask);
-    accountFormTel.addEventListener('keydown', mask);
+  const accountFormTel = document.getElementById("tel");
+  if (accountFormTel.type === "tel") {
+    accountFormTel.addEventListener("input", mask);
+    accountFormTel.addEventListener("focus", mask);
+    accountFormTel.addEventListener("blur", mask);
+    accountFormTel.addEventListener("keydown", mask);
   }
-} catch (error) {
-
-}
+} catch (error) {}
 
 //======заглавная буква
 try {
-
-  firstLetterToUpperCase('account__form-input');
-} catch (error) {
-
-}
+  firstLetterToUpperCase("account__form-input");
+} catch (error) {}
 
 //=======Валидация
 try {
-  const validation = new JustValidate('#accountform', {
-    errorFieldCssClass: 'is-invalid',
+  const validation = new JustValidate("#accountform", {
+    errorFieldCssClass: "is-invalid",
     errorLabelStyle: {
-      fontSize: '14px',
-      color: '#dc3545',
+      fontSize: "14px",
+      color: "#dc3545",
     },
-    successFieldCssClass: 'is-valid',
+    successFieldCssClass: "is-valid",
     successLabelStyle: {
-      fontSize: '14px',
-      color: '#20b418',
-
+      fontSize: "14px",
+      color: "#20b418",
     },
     successFieldStyle: {
-      border: '1px solid #44953D',
+      border: "1px solid #44953D",
     },
     focusInvalidField: true,
     lockForm: true,
   });
   validation
-    .addField('#firstname', [
+    .addField("#firstname", [
       {
-        rule: 'minLength',
+        rule: "minLength",
         value: 3,
-        errorMessage: 'Фамилия должна содержать не менее 3-х символов ',
+        errorMessage: "Фамилия должна содержать не менее 3-х символов ",
       },
       {
-        rule: 'maxLength',
+        rule: "maxLength",
         value: 30,
       },
       {
-        rule: 'required',
-        errorMessage: 'Обязательное поле',
+        rule: "required",
+        errorMessage: "Обязательное поле",
       },
     ])
-    .addField('#secondname', [
+    .addField("#secondname", [
       {
-        rule: 'minLength',
+        rule: "minLength",
         value: 2,
-        errorMessage: 'Имя должно содержать не менее 2-х символов ',
+        errorMessage: "Имя должно содержать не менее 2-х символов ",
       },
       {
-        rule: 'maxLength',
+        rule: "maxLength",
         value: 30,
       },
       {
-        rule: 'required',
-        errorMessage: 'Обязательное поле',
+        rule: "required",
+        errorMessage: "Обязательное поле",
       },
     ])
-    .addField('#surname', [
+    .addField("#surname", [
       {
-        rule: 'minLength',
+        rule: "minLength",
         value: 3,
-        errorMessage: 'Отчество должно содержать не менее 3-х символов ',
+        errorMessage: "Отчество должно содержать не менее 3-х символов ",
       },
       {
-        rule: 'maxLength',
+        rule: "maxLength",
         value: 30,
       },
       {
-        rule: 'required',
-        errorMessage: 'Обязательное поле',
+        rule: "required",
+        errorMessage: "Обязательное поле",
       },
     ])
-    .addField('#mail', [
+    .addField("#mail", [
       {
-        rule: 'required',
-        errorMessage: 'Обязательное поле',
+        rule: "required",
+        errorMessage: "Обязательное поле",
       },
       {
-        rule: 'email',
-        errorMessage: 'Не валидный Email',
-      },
-    ])
-    .addField('#tel', [
-      {
-        rule: 'required',
-        errorMessage: 'Обязательное поле',
+        rule: "email",
+        errorMessage: "Не валидный Email",
       },
     ])
-    .addField('#accountCheck', [
+    .addField("#tel", [
       {
-        rule: 'required',
-        errorMessage: 'Подтвердите',
+        rule: "required",
+        errorMessage: "Обязательное поле",
+      },
+    ])
+    .addField("#accountCheck", [
+      {
+        rule: "required",
+        errorMessage: "Подтвердите",
       },
     ])
     // {
@@ -508,127 +539,115 @@ try {
       ev.preventDefault();
       window.showNotification();
     });
-} catch (error) {
-
-}
+} catch (error) {}
 
 /////===============Калькулятор ИИС==================
-function slowScroll(id) { 
+function slowScroll(id) {
   var offset = 0;
-  $('html, body').animate({ 
-       scrollTop: $(id).offset().top - offset 
-  }, 100);
-  return false; 
-} 
-    //=======Прокрутка к калькулятору
-$('#trustCalcBtn').on('click', function(event) {
+  $("html, body").animate(
+    {
+      scrollTop: $(id).offset().top - offset,
+    },
+    100
+  );
+  return false;
+}
+//=======Прокрутка к калькулятору
+$("#trustCalcBtn").on("click", function (event) {
   event.preventDefault();
-  $('#brokersService, #brokers-service').removeClass('active')
-  $('#trustManagement, #trust-management').addClass('active')
-  slowScroll('#trustManagement')
-})
-$('#brokerCalcBtn').on('click', function(event) {
+  $("#brokersService, #brokers-service").removeClass("active");
+  $("#trustManagement, #trust-management").addClass("active");
+  slowScroll("#trustManagement");
+});
+$("#brokerCalcBtn").on("click", function (event) {
   event.preventDefault();
-  $('#trustManagement, #trust-management').removeClass('active')
-  $('#brokersService, #brokers-service').addClass('active')
-  slowScroll('#brokersService')
-})
+  $("#trustManagement, #trust-management").removeClass("active");
+  $("#brokersService, #brokers-service").addClass("active");
+  slowScroll("#brokersService");
+});
 /////===============инициализация калькулятора==================
 const calcIndividualAccountInit = (calcSum, calcYears) => {
   noUiSlider.create(calcSum, {
     start: [0],
     connect: [true, false],
     range: {
-      'min': 10000,
-      'max': 400000
+      min: 10000,
+      max: 400000,
     },
     step: 10000,
     format: wNumb({
       decimals: 0,
-      thousand: ' '
+      thousand: " ",
     }),
   });
   noUiSlider.create(calcYears, {
     start: [0],
     connect: [true, false],
     range: {
-      'min': 1,
-      'max': 12
+      min: 1,
+      max: 12,
     },
     step: 1,
     format: wNumb({
-      decimals: 0
+      decimals: 0,
     }),
   });
-
-  
-}
+};
 let brokerSum = document.querySelector('[data-calc="brokerSum"]');
 let brokerDuration = document.querySelector('[data-calc="brokerDuration"]');
 let trustSum = document.querySelector('[data-calc="trustSum"]');
 let trustDuration = document.querySelector('[data-calc="trustDuration"]');
+let valueDuration = document.querySelectorAll('[data-calc="valueDuration"]');
 /////===============события калькулятора==================
 const calcIndividualAccountEvent = (calcSum, calcYears) => {
-  calcYears.noUiSlider.on('update', function (values, handle) {
-    years = Math.round(calcYears.noUiSlider.get(true))
+  calcYears.noUiSlider.on("update", function (values, handle) {
+    // years = Math.round(calcYears.noUiSlider.get(true));
     valueDuration.forEach((el) => {
-    
+      if (values <= 4) {
+        el.textContent = `${values[handle]} года`;
 
-        if (years <= 4) {
-         el.innerHTML = `${years} года`;
-         resultYears.textContent = `Мои сбережения за ${years} года`
-    
-        } else {
-          el = `${years} лет`;
-          resultYears.textContent = `Мои сбережения за ${years} лет`
-    
-        }
-      
-    })
-    // if (years <= 4) {
-    //   valueDuration.innerHTML = `${years} года`;
-    //   resultYears.textContent = `Мои сбережения за ${years} года`
-
-    // } else {
-    //   valueDuration.innerHTML = `${years} лет`;
-    //   resultYears.textContent = `Мои сбережения за ${years} лет`
-
-    // }
-    calc(years, depositAmount)
-    return years
+        resultYears.textContent = `Мои сбережения за ${values} года`;
+      } else{
+        el.textContent = `${values[handle]} лет`;
+        resultYears.textContent = `Мои сбережения за ${values} лет`;
+      }
+    });
+  
+    calc(years, depositAmount);
+    return years;
   });
 
-  calcSum.noUiSlider.on('update', function (values, handle) {
+  calcSum.noUiSlider.on("update", function (values, handle) {
     valueSum.forEach((el) => {
       el.innerHTML = `${values[handle]}₽`;
-    })
+    });
     // valueSum.innerHTML = `${values[handle]}₽`;
-    depositAmount = Math.round(calcSum.noUiSlider.get(true))
+    depositAmount = Math.round(calcSum.noUiSlider.get(true));
 
-    calc(years, depositAmount)
-    return depositAmount
-
+    calc(years, depositAmount);
+    return depositAmount;
   });
-}
+};
 
 let valueSum = document.querySelectorAll('[data-calc="valueSum"]');
-let valueDuration = document.querySelectorAll('[data-calc="valueDuration"]');
+
 let resultYears = document.querySelector('[data-calc="resultYears"]');
-let resultTotalVnesenie = document.querySelector('[data-calc="resultTotalVnesenie"]');
+let resultTotalVnesenie = document.querySelector(
+  '[data-calc="resultTotalVnesenie"]'
+);
 let resultPercent = document.querySelector('[data-calc="resultPercent"]');
 let resultNetIncome = document.querySelector('[data-calc="resultNetIncome"]');
-let vichet = document.querySelector('[data-calc="resultVichet"]')
-let resultNdfl = document.querySelector('[data-calc="resultNdfl"]')
-let depositAmount
-let years
+let vichet = document.querySelector('[data-calc="resultVichet"]');
+let resultNdfl = document.querySelector('[data-calc="resultNdfl"]');
+let depositAmount;
+let years;
 
 const calc = (depositAmount, years) => {
-  
-  let deposit = Math.round(brokerSum.noUiSlider.get(true))
+  let deposit = Math.round(brokerSum.noUiSlider.get(true));
   resultTotalVnesenie.value = `${depositAmount * years}₽`;
   // resultPercent = Math.round(((result / (resultTotalVnesenie / 2)) - 1) * 1000 / years) / 10;
 
-  vichet.value = Math.round((depositAmount * 0.13) * years) + '₽';
+  vichet.value = Math.round(depositAmount * 0.13 * years) + "₽";
   // if (years <= 3.1) {
   //   years = 3;
   //   $("#years").val("3");
@@ -638,30 +657,20 @@ const calc = (depositAmount, years) => {
   //   years = 12;
   //   $("#years").val("10");
   // };
-  let dohodDU = Math.round(deposit * 1.322)
+  let dohodDU = Math.round(deposit * 1.322);
   // let dohod = dohodDU + depositAmount
   // let totalDohodDU = Math.round((years * depositAmount + dohod) * 1.322)
 
   // for (let i = 1; i < years + 1; i++) {
   //   depositAmount+=(depositAmount*13.22)
   // }
-
-
-
-}
+};
 try {
-  calcIndividualAccountInit(brokerSum, brokerDuration)
-  calcIndividualAccountInit(trustSum, trustDuration)
-} catch(err) {
-console.log(err)
-}
-
-
+  calcIndividualAccountInit(brokerSum, brokerDuration);
+  calcIndividualAccountInit(trustSum, trustDuration);
+} catch (err) {}
 
 try {
-  calcIndividualAccountEvent(brokerSum, brokerDuration)
-  calcIndividualAccountEvent(trustSum, trustDuration)
-  
-} catch(err) {
-  console.log(err)
-}
+  calcIndividualAccountEvent(brokerSum, brokerDuration);
+  calcIndividualAccountEvent(trustSum, trustDuration);
+} catch (err) {}
