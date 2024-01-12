@@ -603,10 +603,14 @@ const calcIndividualAccountEvent = (calcSum, calcYears) => {
   calcYears.noUiSlider.on("update", function (values, handle) {
     // years = Math.round(calcYears.noUiSlider.get(true));
     valueDuration.forEach((el) => {
-      if (values <= 4) {
+      if (values > 1 && values <= 4 ) {
         el.textContent = `${values[handle]} года`;
 
         resultYears.textContent = `Мои сбережения за ${values} года`;
+      } else if (values == 1){
+        el.textContent = `${values[handle]} год`;
+
+        resultYears.textContent = `Мои сбережения за ${values} год`;
       } else{
         el.textContent = `${values[handle]} лет`;
         resultYears.textContent = `Мои сбережения за ${values} лет`;
