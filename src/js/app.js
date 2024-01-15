@@ -584,7 +584,7 @@ const calcIndividualAccountInit = (calcSum, calcYears) => {
     start: [0],
     connect: [true, false],
     range: {
-      min: 1,
+      min: 3,
       max: 12,
     },
     step: 1,
