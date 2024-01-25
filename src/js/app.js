@@ -566,38 +566,33 @@ $("#brokerCalcBtn").on("click", function (event) {
   slowScroll("#brokersService");
 });
 /////===============инициализация калькулятора==================
-const calcIndividualAccountInit = (calcSum, calcYears) => {
-  noUiSlider.create(calcSum, {
+
+
+const calcIndividualAccountInit = (calcValue, minValue, maxValue, stepValue) => {
+  let min = parseInt(minValue)
+  let max = parseInt(maxValue)
+  let step = parseInt(stepValue)
+  noUiSlider.create(calcValue, {
     start: [0],
     connect: [true, false],
     range: {
-      min: 10000,
-      max: 400000,
+      min: min,
+      max: max,
     },
-    step: 10000,
+    step: step,
     format: wNumb({
       decimals: 0,
       thousand: " ",
     }),
   });
-  noUiSlider.create(calcYears, {
-    start: [0],
-    connect: [true, false],
-    range: {
-      min: 3,
-      max: 12,
-    },
-    step: 1,
-    format: wNumb({
-      decimals: 0,
-    }),
-  });
 };
+
 let brokerSum = document.querySelector('[data-calc="brokerSum"]');
 let brokerDuration = document.querySelector('[data-calc="brokerDuration"]');
 let trustSum = document.querySelector('[data-calc="trustSum"]');
 let trustDuration = document.querySelector('[data-calc="trustDuration"]');
 let valueDuration = document.querySelectorAll('[data-calc="valueDuration"]');
+
 /////===============события калькулятора==================
 const calcIndividualAccountEvent = (calcSum, calcYears) => {
   calcYears.noUiSlider.on("update", function (values, handle) {
@@ -616,7 +611,7 @@ const calcIndividualAccountEvent = (calcSum, calcYears) => {
         resultYears.textContent = `Мои сбережения за ${values} лет`;
       }
     });
-  
+
     calc(years, depositAmount);
     return years;
   });
@@ -661,17 +656,19 @@ const calc = (depositAmount, years) => {
   //   years = 12;
   //   $("#years").val("10");
   // };
-  let dohodDU = Math.round(deposit * 1.322);
-  // let dohod = dohodDU + depositAmount
-  // let totalDohodDU = Math.round((years * depositAmount + dohod) * 1.322)
 
-  // for (let i = 1; i < years + 1; i++) {
-  //   depositAmount+=(depositAmount*13.22)
-  // }
 };
+let initMinYear = document.querySelector('.total__years').getAttribute('init-min');
+let initMaxYear = document.querySelector('.total__years').getAttribute('init-max');
+let initStepYear = document.querySelector('.total__years').getAttribute('init-step');
+let initMinSum = document.querySelector('.total__sum').getAttribute('init-min');
+let initMaxSum = document.querySelector('.total__sum').getAttribute('init-max');
+let initStepSum = document.querySelector('.total__sum').getAttribute('init-step');
 try {
-  calcIndividualAccountInit(brokerSum, brokerDuration);
-  calcIndividualAccountInit(trustSum, trustDuration);
+
+  calcIndividualAccountInit(brokerSum, initMinSum, initMaxSum, initStepSum);
+  calcIndividualAccountInit(brokerDuration, initMinYear, initMaxYear, initStepYear);
+
 } catch (err) {}
 
 try {

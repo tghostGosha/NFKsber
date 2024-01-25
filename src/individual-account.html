@@ -16,7 +16,7 @@
             <li class="breadcrumb-item">
               <svg width="20px" height="20px" class="svg-arrow-right-dims breadcrumb-svg">
                 <use xlink:href="img/icons/icons.svg#arrow-right"></use>
-              </svg> 
+              </svg>
             </li>
             <li class="breadcrumb-item"><a class="breadcrumb-link" href="services.html">Услуги</a></li>
             <li class="breadcrumb-item">
@@ -330,7 +330,7 @@
               tabindex="0">
               <div class="calc__brokers-service grid-container">
                 <div class="calc__brokers-left-card">
-                  <div class="total__sum">
+                  <div class="total__sum" init-min="10000" init-max="400000" init-step="10000">
                     <div class="total__sum-header">
                       <span class="total__sum-span">Сумма, внесенная за год</span>
                       <span data-calc="valueSum" class="slider-value"></span>
@@ -344,7 +344,7 @@
                       <span class="secondary-text">400 000₽</span>
                     </div>
                   </div>
-                  <div class="total__years">
+                  <div class="total__years" init-min="3" init-max="12" init-step="3" >
                     <div class="total__years-header">
                       <span class="total__years-span">Срок ведения ИИС</span>
                       <span data-calc="valueDuration" class="slider-value"></span>
