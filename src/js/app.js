@@ -565,6 +565,9 @@ $("#brokerCalcBtn").on("click", function (event) {
   $("#brokersService, #brokers-service").addClass("active");
   slowScroll("#brokersService");
 });
+
+
+
 /////===============инициализация калькулятора==================
 
 
@@ -586,7 +589,9 @@ const calcIndividualAccountInit = (calcValue, minValue, maxValue, stepValue) => 
     }),
   });
 };
+const calcStepsRender = (minValue, maxValue) => {
 
+}
 let brokerSum = document.querySelector('[data-calc="brokerSum"]');
 let brokerDuration = document.querySelector('[data-calc="brokerDuration"]');
 let trustSum = document.querySelector('[data-calc="trustSum"]');
@@ -668,6 +673,8 @@ try {
 
   calcIndividualAccountInit(brokerSum, initMinSum, initMaxSum, initStepSum);
   calcIndividualAccountInit(brokerDuration, initMinYear, initMaxYear, initStepYear);
+  calcIndividualAccountInit(trustSum, initMinSum, initMaxSum, initStepSum);
+  calcIndividualAccountInit(trustDuration, initMinYear, initMaxYear, initStepYear);
 
 } catch (err) {}
 

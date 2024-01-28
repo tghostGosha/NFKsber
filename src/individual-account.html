@@ -344,7 +344,7 @@
                       <span class="secondary-text">400 000₽</span>
                     </div>
                   </div>
-                  <div class="total__years" init-min="3" init-max="12" init-step="3" >
+                  <div class="total__years" init-min="4" init-max="12" init-step="1" >
                     <div class="total__years-header">
                       <span class="total__years-span">Срок ведения ИИС</span>
                       <span data-calc="valueDuration" class="slider-value"></span>
@@ -369,7 +369,7 @@
                     <h3 class="calc__brokers-header-title" data-calc="resultYears"></h3>
                     <div class="calc__brokers-result">
                       <label for="result" class="saving__sum-title ">Накопленная сумма</label>
-                      <input class="calc__brokers-value calc-value" data-calc="result">
+                      <input class="calc__brokers-value calc-value"  data-calc="result">
                     </div>
                     <div class="calc__brokers-result">
                       <label for="resultPercent" class="calc-comment">Прирост активов</label>
@@ -403,7 +403,7 @@
             <div class="tab-pane " id="trustManagement" role="tabpanel" aria-labelledby="trust-management" tabindex="0">
               <div class="calc__brokers-service grid-container">
                 <div class="calc__brokers-left-card">
-                  <div class="total__sum">
+                  <div class="total__sum" init-min="10000" init-max="400000" init-step="10000">
                     <div class="total__sum-header">
                       <span class="total__sum-span">Сумма, внесенная за год</span>
                       <span data-calc="valueSum" class="slider-value"></span>
@@ -417,7 +417,7 @@
                       <span class="secondary-text">400 000₽</span>
                     </div>
                   </div>
-                  <div class="total__years">
+                  <div class="total__years" init-min="3" init-max="12" init-step="3">
                     <div class="total__years-header">
                       <span class="total__years-span">Срок ведения ИИС</span>
                       <span data-calc="valueDuration" class="slider-value"></span>
