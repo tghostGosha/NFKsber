@@ -543,7 +543,7 @@ try {
 
 /////===============Калькулятор ИИС==================
 function slowScroll(id) {
-  var offset = 0;
+  let offset = 0;
   $("html, body").animate(
     {
       scrollTop: $(id).offset().top - offset,
@@ -571,10 +571,11 @@ $("#brokerCalcBtn").on("click", function (event) {
 /////===============инициализация калькулятора==================
 
 
-const calcIndividualAccountInit = (calcValue, minValue, maxValue, stepValue) => {
+const calcSliderSum = (calcValue, minValue, maxValue, stepValue, countStep) => {
   let min = parseInt(minValue)
   let max = parseInt(maxValue)
   let step = parseInt(stepValue)
+
   noUiSlider.create(calcValue, {
     start: [0],
     connect: [true, false],
@@ -582,16 +583,75 @@ const calcIndividualAccountInit = (calcValue, minValue, maxValue, stepValue) => 
       min: min,
       max: max,
     },
+    pips: {
+      mode: 'count',
+      values: countStep,
+      stepped: true,
+      density: 4,
+      format: wNumb({
+        decimals: 0,
+        suffix: ' ₽'
+      })
+
+    },
     step: step,
     format: wNumb({
       decimals: 0,
       thousand: " ",
+
     }),
   });
 };
-const calcStepsRender = (minValue, maxValue) => {
 
-}
+const calcSliderYears = (calcValue, minValue, maxValue, stepValue, countStep) => {
+  let min = parseInt(minValue)
+  let max = parseInt(maxValue)
+  let step = parseInt(stepValue)
+  var Format = wNumb({
+    suffix: 'лет',
+
+  });
+
+  noUiSlider.create(calcValue, {
+
+    start: [0],
+    connect: [true, false],
+    range: {
+      min: min,
+      max: max,
+    },
+    pips: {
+      mode: 'count',
+      values: countStep,
+      stepped: true,
+      density: 4,
+      format: {
+        to: function (value) {
+          if (Number(value) > 1 && Number(value) <= 4 ) {
+              return Number(value)+ ' года'
+            } else if (Number(value) === 1){
+              return value + 'год'
+            } else{
+              return  Number(value) + ' лет'
+            }
+          },
+
+        from: function (value) {
+          console.log(value, 'from')
+
+          return parseInt(value)
+        }
+      },
+
+    },
+    step: step,
+    format: wNumb({
+      decimals: 0,
+    }),
+  });
+};
+
+
 let brokerSum = document.querySelector('[data-calc="brokerSum"]');
 let brokerDuration = document.querySelector('[data-calc="brokerDuration"]');
 let trustSum = document.querySelector('[data-calc="trustSum"]');
@@ -599,6 +659,7 @@ let trustDuration = document.querySelector('[data-calc="trustDuration"]');
 let valueDuration = document.querySelectorAll('[data-calc="valueDuration"]');
 
 /////===============события калькулятора==================
+
 const calcIndividualAccountEvent = (calcSum, calcYears) => {
   calcYears.noUiSlider.on("update", function (values, handle) {
     // years = Math.round(calcYears.noUiSlider.get(true));
@@ -663,18 +724,22 @@ const calc = (depositAmount, years) => {
   // };
 
 };
-let initMinYear = document.querySelector('.total__years').getAttribute('init-min');
-let initMaxYear = document.querySelector('.total__years').getAttribute('init-max');
-let initStepYear = document.querySelector('.total__years').getAttribute('init-step');
-let initMinSum = document.querySelector('.total__sum').getAttribute('init-min');
-let initMaxSum = document.querySelector('.total__sum').getAttribute('init-max');
-let initStepSum = document.querySelector('.total__sum').getAttribute('init-step');
-try {
 
-  calcIndividualAccountInit(brokerSum, initMinSum, initMaxSum, initStepSum);
-  calcIndividualAccountInit(brokerDuration, initMinYear, initMaxYear, initStepYear);
-  calcIndividualAccountInit(trustSum, initMinSum, initMaxSum, initStepSum);
-  calcIndividualAccountInit(trustDuration, initMinYear, initMaxYear, initStepYear);
+
+try {
+  let initMinYear = document.querySelector('.total__years').getAttribute('init-min');
+  let initMaxYear = document.querySelector('.total__years').getAttribute('init-max');
+  let initStepYear = document.querySelector('.total__years').getAttribute('init-step');
+  let initCountStepYear = document.querySelector('.total__years').getAttribute('init-count-step');
+  let initMinSum = document.querySelector('.total__sum').getAttribute('init-min');
+  let initMaxSum = document.querySelector('.total__sum').getAttribute('init-max');
+  let initStepSum = document.querySelector('.total__sum').getAttribute('init-step');
+  let initCountStepSum = document.querySelector('.total__sum').getAttribute('init-count-step');
+
+  calcSliderSum(brokerSum, initMinSum, initMaxSum, initStepSum, initCountStepSum);
+  calcSliderYears(brokerDuration, initMinYear, initMaxYear, initStepYear, initCountStepYear);
+  calcSliderSum(trustSum, initMinSum, initMaxSum, initStepSum, initCountStepSum);
+  calcSliderYears(trustDuration, initMinYear, initMaxYear, initStepYear, initCountStepYear);
 
 } catch (err) {}
 

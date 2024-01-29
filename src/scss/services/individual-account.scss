@@ -356,6 +356,29 @@
     max-width: 100%;
   }
 }
+.noUi-pips-horizontal {
+  padding: 10px 0;
+  height: 80px;
+  top: -14px;
+  left: 5px;
+  width: 100%;
+}
+.noUi-marker.noUi-marker-horizontal.noUi-marker-normal {
+  display: none;
+}
+.noUi-marker.noUi-marker-horizontal.noUi-marker-large {
+  background: var(--white);
+
+}
+.noUi-value-horizontal {
+
+  transform: translate(-50%, 85%);
+}
+.noUi-value.noUi-value-horizontal.noUi-value-large {
+  color: var(--secondary-text);
+  font-size: 14px;
+  line-height: 19px;
+}
 
 .noUi-horizontal .noUi-handle {
   width: 18px;
